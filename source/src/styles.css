@@ -1,21 +1,22 @@
 :root {
-  --bg: #ECEEF1;
+  color-scheme: light;
+  --bg: #F6F6F3;
   --surface: #FFFFFF;
-  --surface-2: #F5F6F8;
+  --surface-2: #F3F3F0;
   --ink: #14161B;
   --ink-2: #363B46;
   --muted: #5E6573;
-  --line: #D3D8DF;
-  --line-strong: #A9B0BC;
+  --line: #DEDFDB;
+  --line-strong: #B3B6B1;
   --accent: #24468F;
   --accent-ink: #FFFFFF;
   --accent-soft: #DCE4F4;
-  --kraft: #D9C29C;
-  --kraft-2: #CFB68C;
-  --kraft-ink: #34270F;
-  --kraft-muted: rgba(52, 39, 15, .62);
-  --kraft-line: rgba(52, 39, 15, .22);
-  --band-alpha: .45;
+  --kraft: #FCFCFA;
+  --kraft-2: #F6F6F3;
+  --kraft-ink: #1B1D22;
+  --kraft-muted: rgba(27, 29, 34, .58);
+  --kraft-line: rgba(27, 29, 34, .13);
+  --band-alpha: .11;
   --t-legislation: #13805A;
   --t-policy: #2766B3;
   --t-crisis: #C3302F;
@@ -40,29 +41,6 @@
   --shadow: 0 1px 2px rgba(20, 22, 27, .06), 0 8px 24px rgba(20, 22, 27, .06);
   --radius: 10px;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0F1115; --surface: #171A20; --surface-2: #1D2128; --ink: #ECEDEF; --ink-2: #C9CDD4; --muted: #9AA1AD;
-    --line: #2A2F38; --line-strong: #444B57; --accent: #93B2F2; --accent-ink: #0F1115; --accent-soft: #1F2B44;
-    --kraft: #2A2319; --kraft-2: #241E15; --kraft-ink: #EBDCC2; --kraft-muted: rgba(235, 220, 194, .62); --kraft-line: rgba(235, 220, 194, .16);
-    --band-alpha: .16;
-    --t-legislation: #4CC79C; --t-policy: #6FA9EF; --t-crisis: #F07171; --t-movement: #E5A449; --t-context: #9BA1AB; --t-seed: #A99EF4; --t-lens: #52C4CE;
-    --ok: #4CC79C; --bad: #F07171;
-    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0F1115; --surface: #171A20; --surface-2: #1D2128; --ink: #ECEDEF; --ink-2: #C9CDD4; --muted: #9AA1AD;
-  --line: #2A2F38; --line-strong: #444B57; --accent: #93B2F2; --accent-ink: #0F1115; --accent-soft: #1F2B44;
-  --kraft: #2A2319; --kraft-2: #241E15; --kraft-ink: #EBDCC2; --kraft-muted: rgba(235, 220, 194, .62); --kraft-line: rgba(235, 220, 194, .16);
-  --band-alpha: .16;
-  --t-legislation: #4CC79C; --t-policy: #6FA9EF; --t-crisis: #F07171; --t-movement: #E5A449; --t-context: #9BA1AB; --t-seed: #A99EF4; --t-lens: #52C4CE;
-  --ok: #4CC79C; --bad: #F07171;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25);
-  color-scheme: dark;
-}
-/* Layout: the whole site is one left-to-right strip of kraft paper (the author's own medium). Eras and events are clicked into; every click-in view also reads left to right. */
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }
 body { background: var(--bg); color: var(--ink); font-family: var(--f-ui); font-size: 15px; line-height: 1.5; margin: 0; overflow: hidden; -webkit-font-smoothing: antialiased; }
@@ -106,7 +84,7 @@ p { margin: 0; }
 
 /* ---------- the stage (horizontal) */
 .stage { position: relative; min-height: 0; background: var(--kraft); color: var(--kraft-ink); }
-.stage::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5; background-image: radial-gradient(var(--kraft-line) .6px, transparent .7px); background-size: 5px 5px; z-index: 0; }
+
 .viewport { position: absolute; inset: 0; overflow-x: auto; overflow-y: auto; scrollbar-width: thin; cursor: grab; z-index: 1; overscroll-behavior-x: contain; }
 .viewport.dragging { cursor: grabbing; user-select: none; }
 .track { position: relative; display: flex; align-items: stretch; height: 100%; min-height: var(--canvas-h); }
@@ -119,7 +97,7 @@ p { margin: 0; }
 .watching { font-family: var(--f-type); font-size: 14px; }
 .watching::before { content: "▌"; color: var(--t-crisis); margin-right: 6px; animation: blink 1.2s steps(2) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
-.kcard { background: color-mix(in srgb, var(--kraft) 55%, var(--surface)); border: 1px solid var(--kraft-line); border-radius: 12px; padding: 16px 18px; color: var(--kraft-ink); }
+.kcard { background: var(--surface); border: 1px solid var(--kraft-line); border-radius: 12px; padding: 16px 18px; color: var(--kraft-ink); }
 .kcard.click { cursor: pointer; text-align: left; display: block; width: 100%; font: inherit; transition: transform .15s, border-color .15s; }
 .kcard.click:hover { transform: translateY(-2px); border-color: var(--kraft-ink); }
 .kcard .k-eyebrow { font-family: var(--f-type); font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--kraft-muted); }

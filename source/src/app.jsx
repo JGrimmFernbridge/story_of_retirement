@@ -338,6 +338,7 @@ function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeo
               {D.eras.map(e => (
                 <g key={e.id}>
                   <rect x={X(e.start)} y={0} width={X(e.end) - X(e.start)} height={axisY} style={{ fill: eraColor(e.id), fillOpacity: "var(--band-alpha)" }} />
+                  <rect x={X(e.start)} y={0} width={X(e.end) - X(e.start)} height={6} style={{ fill: eraColor(e.id) }} />
                   <line x1={X(e.start)} x2={X(e.start)} y1={0} y2={axisY} style={{ stroke: "var(--kraft-ink)", strokeOpacity: .25 }} />
                 </g>
               ))}
