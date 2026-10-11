@@ -1,0 +1,13 @@
+{
+  "name": "story-of-retirement-builder",
+  "private": true,
+  "description": "Builds public/ from the chapter text and course content. Run: npm install && python3 build.py && python3 make_pdfs.py",
+  "devDependencies": {
+    "esbuild": "0.23.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@fontsource-variable/archivo": "5.0.19",
+    "@fontsource-variable/newsreader": "5.0.19",
+    "@fontsource/courier-prime": "5.0.12"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "story-of-retirement",
+  "private": true,
+  "description": "The Story of Retirement: Jonathan Grimm's horizontal course site on the history of retirement.",
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "11.1.1"
+  }
+}

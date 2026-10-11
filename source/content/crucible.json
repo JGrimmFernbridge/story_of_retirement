@@ -1,0 +1,489 @@
+{
+  "id": "crucible",
+  "number": 3,
+  "title": "Crucible",
+  "years": "1920–1950",
+  "definition": "cru·ci·ble (noun) the forging of something",
+  "tagline": "Retirement was forged in catastrophe, then inherited as comfort.",
+  "bigQuestion": "What happens when a promise forged in emergency is inherited as if it were permanent?",
+  "overview": "The book argues that retirement was not born in prosperity but forged in crisis. The 1920s ran on credit and confidence: a consumer boom, margin buying, and a stock market that seemed to sell the future today. Underneath, industrialization was dissolving the multigenerational household that had always cared for the old. When the Dow lost 89 percent of its value between 1929 and 1932 and unemployment passed 25 percent, the question industrialization had deferred became unavoidable: what do we do with old people who can no longer work?\n\nAmerica’s answer came in layers. Mass movements—Townsend’s pension clubs, Huey Long’s Share Our Wealth, the Bonus Army—proved the problem was undeniable. Frances Perkins’s Committee on Economic Security shaped the Social Security Act of 1935, a contributory floor against destitution rather than a promise of leisure. Then World War II froze wages and turned pensions into a tax-favored benefit, and postwar unions won the right to bargain over them.\n\nGrimm’s framing is that this era wrote a covenant in the language of permanence on the scaffolding of emergency. As you work through the module, notice who was inside the covenant, who was left outside it, and what the generation that inherited it never had to learn.",
+  "learningObjectives": [
+    "Explain how the 1929–1932 collapse and the Great Depression turned elder poverty from a private family problem into a national policy question.",
+    "Trace the design choices of the Social Security Act of 1935 and its 1939 amendments—age 65, payroll-tax financing, occupational exclusions, family benefits—and evaluate their long-run consequences.",
+    "Analyze how the tax code, wartime wage controls, and labor law converted employer pensions into a mainstream bargained benefit by 1950.",
+    "Evaluate competing scholarly explanations for the exclusion of agricultural and domestic workers, using demographic evidence.",
+    "Apply the Two-Person Lens to compare how the 1890 and 1930 birth cohorts experienced the same retirement bargain in 1950."
+  ],
+  "policyEvents": [
+    {
+      "year": 1926,
+      "title": "Revenue Act of 1926 exempts pension trusts",
+      "type": "legislation",
+      "detail": "Building on the Revenue Act of 1921, which shielded income of stock-bonus and profit-sharing trusts from current tax, the 1926 Act exempted the income of employer pension trusts from current taxation. Employer contributions were treated as a deductible payroll cost, and workers owed no tax on contributions or trust earnings until benefits were paid.",
+      "significance": "Retirement saving entered the tax code half a century before the 401(k): Washington began subsidizing private pensions through tax deferral, an early and quiet form of Government Involvement (seed 2) whose benefits went only to workers whose employers offered a plan."
+    },
+    {
+      "year": 1934,
+      "endYear": 1937,
+      "title": "Railroad Retirement Acts",
+      "type": "legislation",
+      "detail": "Congress passed the first federal railroad retirement law in 1934; the Supreme Court struck it down in Railroad Retirement Board v. Alton Railroad (1935). Replacement acts in 1935 and 1937 created a national industry program that began paying annuities in July 1936 and absorbed about 50,000 private railroad pensions.",
+      "significance": "A separate federal system for one industry, using age 65, helped set the threshold the Committee on Economic Security adopted—and showed how retirement protection could be organized around particular kinds of work (Two Americas, seed 7)."
+    },
+    {
+      "year": 1935,
+      "title": "Social Security Act",
+      "type": "legislation",
+      "detail": "Signed by Franklin Roosevelt on August 14, 1935, the Act created federal old-age insurance (Title II), financed by a payroll tax of 1 percent each on employers and workers on the first $3,000 of annual wages beginning in 1937, alongside federal grants for means-tested state old-age assistance (Title I). Section 210(b) excluded agricultural labor, domestic service in private homes, government work, and nonprofit employment, among others. Planners chose 65 because about half of existing state pension systems used it, Railroad Retirement used it, and actuarial studies showed it could be financed with modest payroll taxes.",
+      "significance": "The floor against destitution the Depression demanded—and the moment Government Involvement (seed 2), 65 = Old and Done (seed 3), and Segregation & Boundaries (seed 1) were written into the same statute."
+    },
+    {
+      "year": 1937,
+      "title": "Helvering v. Davis",
+      "type": "policy",
+      "detail": "On May 24, 1937, the Supreme Court upheld Social Security’s old-age benefits as a valid exercise of Congress’s power to tax and spend for the general welfare; Justice Benjamin Cardozo wrote for the majority over the dissents of Justices McReynolds and Butler. A companion case decided the same day, Steward Machine Co. v. Davis, upheld the Act’s unemployment-insurance tax.",
+      "significance": "Cardozo’s line that “the discretion belongs to Congress, unless the choice is clearly wrong” gave federal retirement policy its constitutional footing."
+    },
+    {
+      "year": 1939,
+      "title": "Social Security Amendments of 1939",
+      "type": "legislation",
+      "detail": "The amendments turned an individual retirement program into a family one, adding benefits for a retired worker’s wife and minor children and for survivors—widows, children, and dependent parents. They also moved the start of monthly benefits up to 1940 and cancelled a payroll-tax increase scheduled for that year.",
+      "significance": "Family benefits built the one-earner, male-breadwinner household into the system—the assumption the book later calls a “design specification.”"
+    },
+    {
+      "year": 1940,
+      "title": "First monthly benefit check",
+      "type": "policy",
+      "detail": "On January 31, 1940, Ida May Fuller received the first monthly Social Security retirement check, for $22.54. She had paid $24.75 in payroll taxes over three years of covered work; she lived to 100 and collected $22,888.92 in benefits.",
+      "significance": "Early retirees received far more than they paid in—possible because, at the start, there were vastly more covered workers than beneficiaries, a demographic gift the book counts among the later anomaly’s pillars."
+    },
+    {
+      "year": 1942,
+      "title": "Stabilization Act of 1942",
+      "type": "legislation",
+      "detail": "Signed October 2, 1942, the Act directed the President to stabilize wages and salaries at their September 15, 1942 levels but excluded “insurance and pension benefits in a reasonable amount.” Barred from competing on pay, employers competing for scarce wartime labor offered pensions, health insurance, and paid vacations instead.",
+      "significance": "Pensions became a workaround to wage controls, planting The Promise (seed 8) as an employer fringe benefit rather than a public right."
+    },
+    {
+      "year": 1942,
+      "title": "Revenue Act of 1942: qualified-plan rules",
+      "type": "legislation",
+      "detail": "Some early-1940s plans covered only officers and managers, letting them defer tax on much of their income. The 1942 Act set the first requirements for a tax-“qualified” plan: it must exist for the exclusive benefit of employees, may not divert trust funds, and may not discriminate in favor of officers or highly paid workers. Congress left these statutory rules essentially unchanged until ERISA in 1974.",
+      "significance": "Tax deferral now came with conditions—but the subsidy still reached only workers whose employers chose to sponsor a plan."
+    },
+    {
+      "year": 1944,
+      "title": "Servicemen’s Readjustment Act (GI Bill)",
+      "type": "legislation",
+      "detail": "Signed June 22, 1944, the GI Bill funded education and training, unemployment pay, and loans for homes and businesses. About eight million veterans used its education benefits within seven years, and 4.3 million home loans worth $33 billion had been made by 1955.",
+      "significance": "It built the asset base—degrees and home equity—that would sit beside pensions in the postwar middle class, but its local administration made it a channel for Segregation & Boundaries (seed 1)."
+    },
+    {
+      "year": 1948,
+      "title": "Inland Steel: pensions become bargainable",
+      "type": "policy",
+      "detail": "In 1948 the National Labor Relations Board ruled that Inland Steel had to bargain with the United Steelworkers over its retirement plan. On September 23, 1948, the Seventh Circuit Court of Appeals upheld the ruling, reasoning that pensions are part of the wage structure and a condition of employment.",
+      "significance": "Once pensions were a mandatory subject of bargaining, unions could strike for them—opening the way to the 1949–1950 pension settlements in steel and autos."
+    }
+  ],
+  "marketDrops": [
+    {
+      "year": 1929,
+      "endYear": 1932,
+      "name": "The Great Crash",
+      "decline": "−89% (Dow, Sept. 3, 1929 – July 8, 1932)",
+      "detail": "The Dow peaked at 381.17 on September 3, 1929, fell nearly 13 percent on Black Monday (Oct. 28) and nearly 12 percent on Black Tuesday (Oct. 29), and bottomed at 41.22 on July 8, 1932; many buyers had put down only about 10 percent and borrowed the rest. The index did not regain its 1929 high until November 23, 1954.",
+      "retirementImpact": "A 25-year recovery meant anyone counting on stocks to fund old age in 1929 never got their money back during a working lifetime—the first great test of the Market Growth seed (4)."
+    },
+    {
+      "year": 1937,
+      "endYear": 1938,
+      "name": "The Recession of 1937–38",
+      "decline": "≈ −41% (Dow, monthly averages, Feb. 1937 – Apr. 1938)",
+      "detail": "Between May 1937 and June 1938 real GDP fell 10 percent, industrial production fell 32 percent, and unemployment climbed back to about 20 percent. Economists cite tighter monetary policy and fiscal tightening—including the first collection of Social Security payroll taxes in 1937—among the causes.",
+      "retirementImpact": "A new retirement tax arrived at the worst possible moment, an early lesson that how a pension system is financed has economy-wide consequences."
+    },
+    {
+      "year": 1946,
+      "name": "Postwar reconversion slump",
+      "decline": "−26.6% (S&P 500, May 29 – Oct. 9, 1946)",
+      "detail": "As the wartime economy reconverted, the S&P 500 fell 26.6 percent in about four months, and fell another 20.6 percent between June 1948 and June 1949. The Dow’s monthly average ended 1949 (196.62) roughly where it had begun 1946 (198.12).",
+      "retirementImpact": "Four flat, volatile years gave postwar workers little reason to trust individual stock portfolios with their old age—one reason the era’s security was built on pooled, employer-guaranteed pensions instead."
+    }
+  ],
+  "socialMovements": [
+    {
+      "year": 1932,
+      "name": "Bonus Army",
+      "detail": "In the summer of 1932, thousands of World War I veterans and their families—by one estimate about 17,000 veterans and 26,000 others—camped in Washington to demand early payment of a bonus Congress had made payable in 1945. After the Senate rejected early payment on June 17, police shot two veterans on July 28, and President Hoover ordered the Army under General Douglas MacArthur to clear the camps, which were burned.",
+      "significance": "Troops routing veterans showed how a deferred promise to aging men could become a crisis of legitimacy; in 1936 Congress paid the bonus early over Roosevelt’s veto."
+    },
+    {
+      "year": 1933,
+      "endYear": 1936,
+      "name": "Townsend Movement",
+      "detail": "In early 1933 Dr. Francis Townsend, a 66-year-old retired physician in Long Beach, California, proposed a $200 monthly pension for every American 60 and older, financed by a 2 percent tax on business transactions and required to be spent within 30 days. Within about two years some 7,000 Townsend Clubs claimed more than 2.2 million members.",
+      "significance": "Economically impractical but politically undeniable, the movement helped prod Roosevelt toward Social Security, and its followers’ disappointment with the Act’s modest, earned benefits kept the pressure on."
+    },
+    {
+      "year": 1934,
+      "endYear": 1935,
+      "name": "Share Our Wealth",
+      "detail": "Louisiana Senator Huey Long’s “Every Man a King” program proposed capping private fortunes, guaranteeing every family a basic standard of living, and paying a pension to everyone over 60. By 1935 the movement claimed 27,000 local clubs and 7.7 million members.",
+      "significance": "Alongside Townsend, it demonstrated that if Washington did not answer the old-age question, more radical answers were ready."
+    },
+    {
+      "year": 1949,
+      "endYear": 1950,
+      "name": "Labor’s pension drive",
+      "detail": "Armed with the Inland Steel ruling, unions made pensions a central demand: in September 1949 Ford agreed to pay the full cost of a funded plan paying $100 a month to workers with 30 years of service. After a steel strike that autumn, Bethlehem Steel’s October 31, 1949 settlement set a pattern of $100 a month at 65 with 25 years of service, again counting Social Security.",
+      "significance": "The Promise (seed 8) became a contract, stacking private pensions on top of Social Security and tying a worker’s old age to one employer’s long-term health."
+    }
+  ],
+  "inequities": [
+    {
+      "title": "Excluded by occupation",
+      "detail": "The 1935 Act excluded agricultural and domestic workers; using 1930 Census data, an SSA historian estimates about 65 percent of Black workers and 27 percent of white workers held such jobs, though most of the roughly 15.5 million excluded workers were white. The book calls the exclusion a political concession to Southern Democrats, while SSA historian Larry DeWitt argues it reflected the difficulty of collecting payroll taxes from scattered workers. Regularly employed farm and domestic workers were not covered until 1950, and the rest not until 1954."
+    },
+    {
+      "title": "Redlining the road to home equity",
+      "detail": "The Home Owners’ Loan Corporation (1933) produced “residential security” maps for 239 cities, grading neighborhoods from A (green) to D (red, “hazardous”). The Federal Housing Administration (1934) went further: its Underwriting Manual told appraisers to look for “incompatible racial and social groups” and favored racially restrictive covenants, language that stayed until 1952. Historians note HOLC’s maps arrived too late to shape most of its own rescue loans, but FHA’s rules shaped decades of mortgage insurance—and therefore who could build the home equity that supplemented retirement income."
+    },
+    {
+      "title": "A GI Bill run locally",
+      "detail": "At the insistence of Mississippi Congressman John Rankin, who chaired the House Veterans Committee, GI Bill benefits ran through state and local institutions. In 1947 Black borrowers received 2 of more than 3,200 VA home loans made in 13 Mississippi cities; in New York and northern New Jersey, historian Ira Katznelson reports, fewer than 100 of 67,000 such mortgages went to nonwhite buyers."
+    },
+    {
+      "title": "Private pensions for the few",
+      "detail": "In 1932 only about 5 percent of older Americans received an employer pension, and in 1935 only about 3 percent received a state old-age pension, averaging about 65 cents a day. Some early tax-favored plans covered only officers and managers—the abuse the 1942 nondiscrimination rules targeted—and even in 1950 private pensions covered only about 22 percent of private wage and salary workers."
+    },
+    {
+      "title": "Women inside the family, not the program",
+      "detail": "The 1939 amendments protected most women through their husbands: wives and widows qualified as dependents of a covered worker (under today’s rules a spouse may receive up to 50 percent of the worker’s benefit). Because domestic service was excluded outright, many women who worked for wages earned no credits of their own, so a woman’s security depended on whom she married and what kind of work he did."
+    }
+  ],
+  "historicalContext": [
+    {
+      "year": 1918,
+      "title": "The 1918 influenza pandemic",
+      "detail": "The pandemic killed at least 50 million people worldwide and about 675,000 Americans, with unusually high mortality among adults aged 20 to 40. The book argues it further fractured the family networks that had cared for the old."
+    },
+    {
+      "year": 1933,
+      "title": "The Depression’s floor",
+      "detail": "Unemployment exceeded 25 percent, roughly 10,000 banks had failed, and gross national product had fallen from $105 billion in 1929 to $55 billion in 1932. By 1934 more than half of older Americans lacked enough income to support themselves."
+    },
+    {
+      "year": 1942,
+      "title": "The National War Labor Board",
+      "detail": "Created by executive order on January 12, 1942, the Board limited raises under the “Little Steel formula,” keyed to a 15 percent rise in living costs since January 1941. With cash wages capped, fringe benefits became the currency of competition for workers."
+    },
+    {
+      "year": 1944,
+      "title": "Bretton Woods",
+      "detail": "In July 1944, delegates from 44 nations created the International Monetary Fund and the World Bank and fixed the dollar to gold at $35 an ounce, anchoring a postwar order centered on the U.S. economy."
+    },
+    {
+      "year": 1946,
+      "title": "The baby boom begins",
+      "detail": "The Census Bureau dates the baby boom to births from 1946 through 1964. Combined with a still-small pool of retirees, it helped put the ratio of covered workers to Social Security beneficiaries at 16.5 in 1950—the demographic dividend the book counts among the anomaly’s pillars."
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 1,
+      "stage": "growing",
+      "detail": "Segregation & Boundaries is older than retirement itself, but in this era it is written into law. The 1935 exclusions, HOLC and FHA mapping, and local administration of the GI Bill drew lines around who would be protected—lines that tracked race, region, occupation, and sex."
+    },
+    {
+      "seed": 2,
+      "stage": "growing",
+      "detail": "Government Involvement grows from tax preferences for pension trusts (1926) into Railroad Retirement, the Social Security Act, wartime wage controls, and the GI Bill. The book stresses its ambivalence: the state both protected the old and managed their exit from the labor market."
+    },
+    {
+      "seed": 3,
+      "stage": "sprouting",
+      "detail": "Age 65 enters American law in 1935—borrowed from state pension systems and Railroad Retirement and justified by affordability, not by any finding about when people stop being capable. In 1940 a man reaching 65 could expect about 12.7 more years; the cultural meaning of 65 would harden even as that figure rose."
+    },
+    {
+      "seed": 4,
+      "stage": "planted",
+      "detail": "The book places this seed in 1924: the Roaring Twenties persuaded ordinary Americans that equities reliably rise and could be a path to wealth. The 89 percent collapse and 25-year recovery buried the belief for a generation, but did not kill it."
+    },
+    {
+      "seed": 5,
+      "stage": "planted",
+      "detail": "The 1920s consumer economy—radios, automobiles, department stores—introduced the idea that accumulation and enjoyment could themselves be a destination. In this era it remains a seed: for most older Americans in the 1930s the issue was survival, not leisure."
+    },
+    {
+      "seed": 6,
+      "stage": "planted",
+      "detail": "Margin buying—about 10 percent down, the rest borrowed—let ordinary investors feel like capitalists. The crash punished speculation so severely that this seed went dormant for decades."
+    },
+    {
+      "seed": 7,
+      "stage": "growing",
+      "detail": "The book’s Two Americas are visible in the 1920s: an urban, industrial, increasingly unionized America that roared, and a rural, agricultural, domestic-labor America that did not. The New Deal and wartime retirement systems were built around the first."
+    },
+    {
+      "seed": 8,
+      "stage": "planted",
+      "detail": "Pensions move from tax shelter and wartime perk to bargained right. Inland Steel (1948) and the 1949 Ford and steel settlements set the terms of the coming era: work long enough for one employer and it will pay you for life."
+    }
+  ],
+  "twoPersonLens": {
+    "year": 1950,
+    "older": {
+      "born": 1890,
+      "headline": "Survival insurance, signed with open eyes",
+      "text": "Born in 1890, they grew up without electricity or running water, in a world where the old were cared for by the people around them because no other structure existed. At 24, Europe went to war. At 28, the flu came. At 39, the market collapsed; in their early forties, one in four workers had no job. At 51, the country went to war again; at 55, a single bomb erased a city. Now 60, they watch Congress raise benefits for current retirees by 77 percent; a union pension may be coming on top. They are not buying a leisure program. They are buying survival insurance, and they know exactly what its absence looks like. They buried people it consumed."
+    },
+    "younger": {
+      "born": 1930,
+      "headline": "The contract, mistaken for gravity",
+      "text": "Born in 1930, they have no memory of a world without electricity; the car and the telephone are ordinary household facts. Crisis was the weather of their childhood, not the rupture of something stable. Now 20, they watch suburbs rise and consumer goods flood the stores, and expansion feels like simply how things are. They will spend their working years in the postwar boom. Defined-benefit pensions will be normal and corporate loyalty assumed; thirty years with one company that then takes care of you will feel less like a hard-won social contract than a law of nature. They will retire around 1990, and by then the contract will already be slipping out from under them. Standing at the threshold in 1950, they have no reason to examine what they are walking into. It simply looks like the future."
+    },
+    "irony": "The 60-year-old who signed the contract knew exactly what they were buying; the 20-year-old who inherited it had no idea what it cost."
+  },
+  "keyTerms": [
+    {
+      "term": "Old-age insurance vs. old-age assistance",
+      "definition": "Title II of the 1935 Act created contributory insurance, with benefits earned through payroll taxes; Title I funded means-tested state assistance for the already-poor elderly. The distinction framed Social Security as an earned right rather than relief."
+    },
+    {
+      "term": "Payroll tax",
+      "definition": "A tax on wages, split between employer and worker, that finances Social Security. In 1937 it was 1 percent each on the first $3,000 of annual wages."
+    },
+    {
+      "term": "Defined-benefit (DB) pension",
+      "definition": "An employer plan that promises a set monthly income for life, typically based on years of service and salary. The employer, not the worker, bears the investment and longevity risk."
+    },
+    {
+      "term": "Pension trust",
+      "definition": "A legally separate fund that holds an employer’s pension contributions and pays benefits. After 1926 its investment earnings were exempt from current federal income tax."
+    },
+    {
+      "term": "Qualified plan",
+      "definition": "A retirement plan that meets tax-code conditions—exclusive benefit of employees, no diversion of funds, no discrimination in favor of highly paid workers—in exchange for tax deferral. Congress first defined these conditions in 1942."
+    },
+    {
+      "term": "Fringe benefit",
+      "definition": "Compensation paid in a form other than cash wages, such as a pension or health insurance. Wartime wage controls made fringe benefits a principal way for employers to compete for workers."
+    },
+    {
+      "term": "Mandatory subject of bargaining",
+      "definition": "A topic an employer must negotiate with a union under federal labor law. The Inland Steel decisions of 1948 placed pensions in this category."
+    },
+    {
+      "term": "Margin buying",
+      "definition": "Purchasing stock with borrowed money, using the shares as collateral. In the late 1920s buyers often put down about 10 percent of the price."
+    },
+    {
+      "term": "Redlining",
+      "definition": "Rating neighborhoods, often by racial composition, as poor lending risks, which cut residents off from mortgage credit and the home equity it builds."
+    }
+  ],
+  "keyFigures": [
+    {
+      "name": "Frances Perkins",
+      "role": "Secretary of Labor from 1933 to 1945 and the first woman to serve in a U.S. cabinet. She chaired the Committee on Economic Security, whose work produced the Social Security Act of 1935."
+    },
+    {
+      "name": "Franklin D. Roosevelt",
+      "role": "President from 1933 to 1945, who proposed and signed the Social Security Act. The chapter’s epigraph, from his 1937 Second Inaugural, sets the era’s moral test: providing enough for those who have too little."
+    },
+    {
+      "name": "Francis Townsend",
+      "role": "A retired Long Beach physician whose 1933 plan for $200 monthly pensions to everyone over 60 sparked one of the largest mass movements of the Depression. The book reads his movement as proof that the problem had become undeniable."
+    },
+    {
+      "name": "Huey Long",
+      "role": "Louisiana senator whose Share Our Wealth clubs promised pensions for everyone over 60 as part of a broader redistribution program, adding to the pressure on Roosevelt to act."
+    },
+    {
+      "name": "Ida May Fuller",
+      "role": "Recipient of the first monthly Social Security check, $22.54, on January 31, 1940. Her lifetime benefits of $22,888.92 on $24.75 in taxes illustrate how generously the system treated its first generation."
+    }
+  ],
+  "primarySources": [
+    {
+      "title": "Social Security Act of 1935 (full text)",
+      "year": 1935,
+      "source": "SSA History",
+      "url": "https://www.ssa.gov/history/35act.html",
+      "why": "Read Section 210(b) and list who is excluded from “employment”: what kind of worker did the drafters imagine?"
+    },
+    {
+      "title": "Helvering v. Davis, opinion of Justice Cardozo",
+      "year": 1937,
+      "source": "SSA History",
+      "url": "https://www.ssa.gov/history/supreme1.html",
+      "why": "Find how Cardozo describes the problem of old age in an industrial economy and why he thinks it is a national, not local, problem."
+    },
+    {
+      "title": "The Townsend Plan Movement",
+      "year": 1933,
+      "source": "SSA Historian’s Office",
+      "url": "https://www.ssa.gov/history/towns5.html",
+      "why": "Compare what Townsend promised with what the 1935 Act delivered, and note why his followers were disappointed."
+    },
+    {
+      "title": "Servicemen’s Readjustment Act (GI Bill)",
+      "year": 1944,
+      "source": "National Archives",
+      "url": "https://www.archives.gov/milestone-documents/servicemens-readjustment-act",
+      "why": "Note what the law promised on paper; then compare it with the evidence on how it was administered."
+    },
+    {
+      "title": "Truman letter to steel industry and labor leaders",
+      "year": 1949,
+      "source": "Harry S. Truman Library",
+      "url": "https://www.trumanlibrary.gov/library/public-papers/213/letter-steel-industry-labor-and-management-leaders-urging-early",
+      "why": "See how pensions had become a matter of national industrial policy, important enough for presidential intervention."
+    }
+  ],
+  "discussionQuestions": [
+    "The book argues retirement was “forged in crisis.” Which features of the 1935 Act—age 65, payroll-tax financing, earned benefits, occupational exclusions—reflect emergency conditions, and which reflect long-term design choices?",
+    "Townsend’s plan was economically impractical, yet it shaped history. What does the Townsend Movement suggest about how mass movements influence policy design? Identify a present-day parallel.",
+    "Test the book’s argument: Grimm calls the agricultural and domestic exclusions a political concession to Southern Democrats, while SSA historian Larry DeWitt argues they reflected tax-collection feasibility and notes most excluded workers were white. Using the evidence in this module and at least one additional scholarly source, which explanation is better supported—and does the motive change the consequences?",
+    "Tax law, wartime wage controls, and a labor-law ruling—not a single pension statute—made employer pensions mainstream by 1950. What are the consequences of building retirement security as a by-product of other policies?",
+    "Ida May Fuller paid $24.75 in payroll taxes and collected $22,888.92. Was that a windfall, a fair return for a generation that lived through depression and war, or the first sign of an intergenerational bargain later cohorts would question?",
+    "Using the Two-Person Lens, what did the 1890 cohort know about the retirement contract that the 1930 cohort did not? How might that knowledge gap shape retirement politics over the next three decades?"
+  ],
+  "assignment": {
+    "title": "What They Knew: A Two-Person Lens Oral History",
+    "type": "Two-Person Lens oral-history interview",
+    "prompt": "Interview an elder, ideally 75 or older, about how their family experienced the Depression, World War II, or the early postwar years; if no such elder is available, work from a published oral-history collection with instructor approval. Obtain consent, record at least 30 minutes, and transcribe the most important passages. Then write a Two-Person Lens essay: place your narrator (or their parent) at a threshold year and pair them with a 20-year-old of the same moment. Connect at least three specifics from the interview to verified events in this module—such as the 1935 exclusions, the GI Bill, or a 1949 pension settlement—and identify at least two of the nine seeds at work. Close by reflecting on what your narrator’s generation learned through hardship that the next generation inherited without learning.",
+    "deliverable": "Annotated transcript excerpt (2–3 pages) with a signed consent note, plus a 1,200–1,500 word essay citing at least three sources, one of them a primary source.",
+    "points": 100,
+    "rubric": [
+      {
+        "criterion": "Historical accuracy & evidence",
+        "points": 30,
+        "exemplary": "Ties at least three interview details to precisely dated, correctly cited events; distinguishes clearly between memory and documented fact.",
+        "proficient": "Ties three details to events with minor imprecision in dates or sourcing.",
+        "developing": "Connects interview to history only loosely; some claims unsourced or inaccurate.",
+        "beginning": "Little or no historical grounding; significant factual errors."
+      },
+      {
+        "criterion": "Oral-history method & ethics",
+        "points": 20,
+        "exemplary": "Documented consent, thoughtful open-ended questions, accurate transcription, and reflection on the limits of memory and the interviewer’s influence.",
+        "proficient": "Consent and transcript present; questions adequate; limited reflection on method.",
+        "developing": "Transcript thin or questions mostly closed; consent documentation incomplete.",
+        "beginning": "No consent documentation or no usable transcript."
+      },
+      {
+        "criterion": "Two-Person Lens analysis",
+        "points": 30,
+        "exemplary": "Constructs a vivid, evidence-based pairing of a 60-year-old and a 20-year-old at the same threshold and draws a precise, original irony from the contrast.",
+        "proficient": "Clear pairing and contrast; irony present but somewhat predictable.",
+        "developing": "Pairing described but contrast underdeveloped or mostly summary.",
+        "beginning": "Lens missing or misapplied."
+      },
+      {
+        "criterion": "Seed connections & writing",
+        "points": 20,
+        "exemplary": "Names at least two seeds by number and shows how each operates in the narrator’s story; prose is polished and well organized.",
+        "proficient": "Two seeds identified with reasonable explanation; minor writing issues.",
+        "developing": "Seeds named but not explained; organization uneven.",
+        "beginning": "Seeds absent; writing impedes understanding."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why did the Committee on Economic Security choose age 65 for Social Security?",
+      "options": [
+        "Because Bismarck’s 1889 pension began at 65",
+        "Because about half of state pension systems and Railroad Retirement used 65, and actuaries found it affordable",
+        "Because life expectancy at birth was 65 in 1935",
+        "Because the Townsend Plan demanded 65"
+      ],
+      "answer": 1,
+      "explain": "The choice was pragmatic: prevailing state systems and Railroad Retirement used 65, and actuarial studies showed it could be financed with modest payroll taxes. Bismarck’s pension began at 70, and Townsend proposed 60."
+    },
+    {
+      "q": "Which kinds of work did the 1935 Social Security Act exclude from old-age insurance?",
+      "options": [
+        "Steel and automobile work",
+        "Agricultural labor and domestic service in private homes, among others",
+        "Any job held by a worker over 45",
+        "All jobs held by women"
+      ],
+      "answer": 1,
+      "explain": "Section 210(b) excluded agricultural labor, domestic service in private homes, government employment, and nonprofit work, among other categories."
+    },
+    {
+      "q": "How did the Stabilization Act of 1942 encourage the growth of employer pensions?",
+      "options": [
+        "It required every employer to offer a pension",
+        "It froze wages while excluding reasonable insurance and pension benefits",
+        "It created the 401(k)",
+        "It taxed pension trusts at 50 percent"
+      ],
+      "answer": 1,
+      "explain": "With cash wages frozen, employers could still compete for workers with pensions and insurance, which the Act excluded from stabilization."
+    },
+    {
+      "q": "How long did it take the Dow to regain its September 1929 high?",
+      "options": [
+        "About 3 years (1932)",
+        "About 10 years (1939)",
+        "About 25 years (1954)",
+        "It never recovered"
+      ],
+      "answer": 2,
+      "explain": "The Dow did not close above its 1929 peak until November 23, 1954—a quarter-century later."
+    },
+    {
+      "q": "What did the Social Security Amendments of 1939 change?",
+      "options": [
+        "They lowered the retirement age to 62",
+        "They added benefits for wives, children, and survivors and moved monthly benefits up to 1940",
+        "They created Medicare",
+        "They extended coverage to all farm workers"
+      ],
+      "answer": 1,
+      "explain": "The 1939 amendments made Social Security a family program and accelerated monthly payments to 1940; farm workers were not covered until 1950–1954."
+    }
+  ],
+  "sources": [
+    {"label": "SSA — Brief History of Social Security", "url": "https://www.ssa.gov/history/briefhistory3.html"},
+    {"label": "SSA — Social Security Act of 1935 (text)", "url": "https://www.ssa.gov/history/35act.html"},
+    {"label": "SSA — Why age 65?", "url": "https://www.ssa.gov/history/age65.html"},
+    {"label": "SSA — Helvering v. Davis opinion", "url": "https://www.ssa.gov/history/supreme1.html"},
+    {"label": "SSA — The Townsend Plan Movement", "url": "https://www.ssa.gov/history/towns5.html"},
+    {"label": "SSA — Huey Long’s Share Our Wealth", "url": "https://www.ssa.gov/history/hlong1.html"},
+    {"label": "SSA — Frances Perkins", "url": "https://www.ssa.gov/history/fperkins.html"},
+    {"label": "SSA — Ratio of covered workers to beneficiaries", "url": "https://www.ssa.gov/history/ratios.html"},
+    {"label": "SSA — Life expectancy at 65 by cohort", "url": "https://www.ssa.gov/history/lifeexpect.html"},
+    {"label": "DeWitt, “The Decision to Exclude Agricultural and Domestic Workers,” Social Security Bulletin 70(4)", "url": "https://www.ssa.gov/policy/docs/ssb/v70n4/v70n4p49.html"},
+    {"label": "Social Security Bulletin 68(2) — Overview of the Railroad Retirement Program", "url": "https://ssa.gov/policy/docs/ssb/v68n2/v68n2p41.html"},
+    {"label": "Social Security Bulletin 46(8) — history of qualified-plan rules", "url": "https://www.ssa.gov/policy/docs/ssb/v46n8/v46n8p3.pdf"},
+    {"label": "Social Security Bulletin 22(1) — coverage and tax rates under the 1935 Act", "url": "https://ssa.gov/policy/docs/ssb/v22n1/v22n1p15.pdf"},
+    {"label": "Skolnik, “Private Pension Plans, 1950–74,” Social Security Bulletin", "url": "https://www.ssa.gov/policy/docs/ssb/v39n6/v39n6p3.pdf"},
+    {"label": "Workforce — Legislative history of employee benefits", "url": "https://www.workforce.com/news/legislative-history-of-employee-benefits"},
+    {"label": "Stabilization Act of 1942 (statute summary)", "url": "https://en.wikipedia.org/wiki/Stabilization_Act_of_1942"},
+    {"label": "BLS — Compensation from World War II through the Great Society", "url": "https://www.bls.gov/opub/mlr/cwc/compensation-from-world-war-ii-through-the-great-society.pdf"},
+    {"label": "NLRB brief (1949) citing Inland Steel Co. v. NLRB, 170 F.2d 247", "url": "https://briefs2.lonedissent.org/1949/communications-assn-v-douds/Memorandum%20for%20the%20National%20Labor%20Relations%20Board-2.pdf"},
+    {"label": "CaseMine — Inland Steel Co. v. NLRB commentary", "url": "https://www.casemine.com/commentary/us/inland-steel-co.-v.-nlrb:-constitutional-implications-of-collective-bargaining-over-pension-plans/view"},
+    {"label": "Truman Library — 1949 steel letter and settlements", "url": "https://www.trumanlibrary.gov/library/public-papers/213/letter-steel-industry-labor-and-management-leaders-urging-early"},
+    {"label": "Reuther’s Treaty of Detroit (1949 Ford pension)", "url": "https://en.wikipedia.org/wiki/Reuther%27s_Treaty_of_Detroit"},
+    {"label": "Federal Reserve History — Stock Market Crash of 1929", "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1929"},
+    {"label": "Federal Reserve History — Recession of 1937–38", "url": "https://www.federalreservehistory.org/essays/recession-of-1937-38"},
+    {"label": "FRED — Dow-Jones Industrial Stock Price Index (monthly, NBER)", "url": "https://fred.stlouisfed.org/data/M1109BUSM293NNBR"},
+    {"label": "Yardeni Research — S&P 500 bear market tables", "url": "https://archive.yardeni.com/pub/sp500corrbeartables.pdf"},
+    {"label": "National Park Service — Bonus Expeditionary Forces", "url": "https://www.nps.gov/articles/bonus-expeditionary-forces-march-on-washington.htm"},
+    {"label": "Bonus Army (estimates, 1936 payment)", "url": "https://en.wikipedia.org/wiki/Bonus_Army"},
+    {"label": "VCU Social Welfare History — Dr. Francis Townsend", "url": "https://socialwelfare.library.vcu.edu/people/townsend-dr-francis/"},
+    {"label": "National Archives — Servicemen’s Readjustment Act", "url": "https://www.archives.gov/milestone-documents/servicemens-readjustment-act"},
+    {"label": "History.com — GI Bill and Black veterans", "url": "https://www.history.com/news/gi-bill-black-wwii-veterans-benefits"},
+    {"label": "Trinity College On The Line — Federal lending and redlining", "url": "https://ontheline.trincoll.edu/lending.html"},
+    {"label": "Federal Reserve History — Creation of Bretton Woods", "url": "https://www.federalreservehistory.org/essays/bretton-woods-created"},
+    {"label": "CDC — 1918 Pandemic (H1N1)", "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-pandemic-h1n1.html"},
+    {"label": "Census Bureau — Baby boomers turning 65", "url": "https://www.census.gov/library/stories/2019/12/by-2030-all-baby-boomers-will-be-age-65-or-older.html"},
+    {"label": "Grimm, A Concise History of Retirement (draft), Chapter 3", "url": "https://docs.google.com/document/d/1P0EMAca6c4jzB47BAsQLuZUq3Jdl3hvQ3nMszjFixXA"}
+  ]
+}

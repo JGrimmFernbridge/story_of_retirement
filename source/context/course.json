@@ -1,0 +1,305 @@
+{
+  "title": "The Story of Retirement",
+  "subtitle": "A history of an idea that hasn't been around that long",
+  "description": "Retirement as most Americans picture it (stop working around 65 and live off your money) is about 130 years old, and it is coming apart. This course starts where we are: the collapse of the retirement system most Americans were promised, 2010 to 2040. Then it works backward to see how we got here, through the 401(k) era, the postwar golden age, the Depression and Social Security, Bismarck's pension, and the world that had no word for retirement. Only then does it turn forward again, to where the current path leads and what a correction could look like. Students read Jonathan Grimm's history, work with an interactive timeline of policy, markets, movements and inequities, and follow nine 'seeds' from today's harvest back to their roots. The course ends with the question the book asks every reader: who gave you that dream, and what would a better answer to the human question of aging look like?",
+  "outcomes": [
+    "Trace today's retirement system back to its origins, from the 401(k) era through Social Security and Bismarck to pre-industrial community care, using dated evidence.",
+    "Explain how policy, markets, social movements and exclusions interacted in each era, and identify who each system served and who it left out.",
+    "Apply the nine-seeds framework to analyze how an idea becomes an institution, and evaluate where the framework is strong or weak.",
+    "Distinguish the humanitarian question (how do we care for people as they age?) from the structural question (what systems do we build to do it?), and analyze how the two were conflated.",
+    "Use primary sources and quantitative data (Trustees Reports, the Survey of Consumer Finances, market history) to test claims about retirement security.",
+    "Design and defend a corrective proposal grounded in evidence and in the principles of Not Poverty, Community and Generativity."
+  ],
+  "schedule": [
+    {
+      "weeks": "Weeks 1–2",
+      "module": "collapse",
+      "focus": "Where we are: living inside the collapse"
+    },
+    {
+      "weeks": "Week 3",
+      "module": "conclusion",
+      "focus": "How to read this story: a history that begins at the end"
+    },
+    {
+      "weeks": "Weeks 4–5",
+      "module": "codify",
+      "focus": "How we got here: the 401(k) and the great risk transfer"
+    },
+    {
+      "weeks": "Weeks 6–7",
+      "module": "climax",
+      "focus": "How we got here: the golden age and its boundaries"
+    },
+    {
+      "weeks": "Week 8",
+      "module": "crucible",
+      "focus": "How we got here: Depression, Social Security and war"
+    },
+    {
+      "weeks": "Week 9",
+      "module": null,
+      "focus": "Timeline Annotation Project due; mid-course review"
+    },
+    {
+      "weeks": "Week 10",
+      "module": "conception",
+      "focus": "How we got here: Bismarck, the Civil War pension, the factory gate"
+    },
+    {
+      "weeks": "Week 11",
+      "module": "classical",
+      "focus": "The root: a world with no word for retirement"
+    },
+    {
+      "weeks": "Week 12",
+      "module": "catastrophe",
+      "focus": "Where it's heading: projections, scenarios and choices"
+    },
+    {
+      "weeks": "Weeks 13–14",
+      "module": "correction",
+      "focus": "What we do now: untying the knot"
+    },
+    {
+      "weeks": "Week 15",
+      "module": null,
+      "focus": "Capstone presentations"
+    }
+  ],
+  "grading": [
+    {
+      "component": "Unit assignments",
+      "weight": 40,
+      "detail": "Eight assignments (Units 1–8), 100 points each, graded with the rubric on each unit page."
+    },
+    {
+      "component": "Seed Journal",
+      "weight": 15,
+      "detail": "Twelve weekly entries tracing one or more of the nine seeds through the week's reading and a current news item."
+    },
+    {
+      "component": "Timeline Annotation Project",
+      "weight": 15,
+      "detail": "Mid-course project: add five well-sourced events to the timeline and argue which seed each one waters."
+    },
+    {
+      "component": "Self-checks and discussion",
+      "weight": 10,
+      "detail": "Unit self-check quizzes completed before class, plus contributions to discussion."
+    },
+    {
+      "component": "Capstone: Design a Correction",
+      "weight": 20,
+      "detail": "The Unit 9 (Correction) assignment, submitted in writing and presented in Week 15."
+    }
+  ],
+  "scale": [
+    {
+      "grade": "A",
+      "range": "93–100"
+    },
+    {
+      "grade": "A−",
+      "range": "90–92"
+    },
+    {
+      "grade": "B+",
+      "range": "87–89"
+    },
+    {
+      "grade": "B",
+      "range": "83–86"
+    },
+    {
+      "grade": "B−",
+      "range": "80–82"
+    },
+    {
+      "grade": "C+",
+      "range": "77–79"
+    },
+    {
+      "grade": "C",
+      "range": "73–76"
+    },
+    {
+      "grade": "C−",
+      "range": "70–72"
+    },
+    {
+      "grade": "D",
+      "range": "60–69"
+    },
+    {
+      "grade": "F",
+      "range": "below 60"
+    }
+  ],
+  "projects": [
+    {
+      "id": "seed-journal",
+      "title": "Seed Journal",
+      "weight": 15,
+      "prompt": "Each week, write one entry (300–400 words) that follows at least one of the nine seeds, starting from where it shows up today and tracing it back toward its root. Name the seed, quote or cite the passage from that week's chapter where you see it, then connect it to one current news story, policy debate, advertisement or conversation from your own life. End each entry with one question you can't yet answer. By Week 14 your journal should show how at least five different seeds grow across time.",
+      "deliverable": "12 entries, 300–400 words each, submitted weekly. Each entry cites the chapter and one outside source.",
+      "rubric": [
+        {
+          "criterion": "Seed identification",
+          "points": 30,
+          "exemplary": "Names the seed precisely and shows exactly where it appears in the reading, distinguishing it from neighboring seeds.",
+          "proficient": "Names the seed and points to a relevant passage.",
+          "developing": "Names a seed but the connection to the reading is loose.",
+          "beginning": "Seed is missing or misidentified."
+        },
+        {
+          "criterion": "Present-day connection",
+          "points": 30,
+          "exemplary": "Links the seed to a specific, sourced present-day example and explains the mechanism connecting past and present.",
+          "proficient": "Links to a relevant present-day example with a source.",
+          "developing": "Present-day example is general or unsourced.",
+          "beginning": "No present-day connection."
+        },
+        {
+          "criterion": "Growth over time",
+          "points": 25,
+          "exemplary": "Entries build on one another; the journal shows how seeds change stage across eras.",
+          "proficient": "Most entries refer back to earlier ones.",
+          "developing": "Entries stand alone with little development.",
+          "beginning": "Entries are missing or repetitive."
+        },
+        {
+          "criterion": "Questions and clarity",
+          "points": 15,
+          "exemplary": "Clear prose; closing questions are specific and push the inquiry forward.",
+          "proficient": "Clear prose; questions are relevant.",
+          "developing": "Some unclear writing; questions are generic.",
+          "beginning": "Hard to follow; no questions."
+        }
+      ]
+    },
+    {
+      "id": "timeline-project",
+      "title": "Timeline Annotation Project",
+      "weight": 15,
+      "prompt": "The timeline on this site is an argument, and every argument leaves things out. Find five events (a law, court case, market event, movement, corporate decision or cultural moment) that are not on the timeline but belong in the story of retirement. For each event, write an entry in the timeline's format: year, title, a factual description and a significance statement. Then argue which seed the event waters and whether it strengthens or complicates the book's thesis. At least two of your five events must concern people the system excluded or under-served.",
+      "deliverable": "Five entries (150–250 words each) plus a 500-word reflection on what the missing events reveal. Minimum one primary source per entry.",
+      "rubric": [
+        {
+          "criterion": "Accuracy and sourcing",
+          "points": 30,
+          "exemplary": "Every date and fact is correct and supported by a primary or authoritative source.",
+          "proficient": "Facts are correct with minor sourcing gaps.",
+          "developing": "One or two factual errors or weak sources.",
+          "beginning": "Multiple errors or unsourced claims."
+        },
+        {
+          "criterion": "Selection and significance",
+          "points": 25,
+          "exemplary": "Events are genuinely consequential and their significance is argued, not asserted.",
+          "proficient": "Events are relevant and significance is explained.",
+          "developing": "Some events are marginal or significance is thin.",
+          "beginning": "Events are trivial or significance is missing."
+        },
+        {
+          "criterion": "Seed analysis",
+          "points": 25,
+          "exemplary": "Each event is mapped to a seed with a persuasive mechanism; the student notes where the framework fits poorly.",
+          "proficient": "Each event is mapped to a plausible seed.",
+          "developing": "Seed mapping is vague or forced.",
+          "beginning": "No seed analysis."
+        },
+        {
+          "criterion": "Reflection and inclusion",
+          "points": 20,
+          "exemplary": "The reflection draws a real insight about what the timeline leaves out; excluded groups are treated with specificity.",
+          "proficient": "Thoughtful reflection; excluded groups are addressed.",
+          "developing": "Reflection is general; inclusion requirement only partly met.",
+          "beginning": "Reflection missing or inclusion requirement unmet."
+        }
+      ]
+    },
+    {
+      "id": "participation",
+      "title": "Self-checks and discussion",
+      "weight": 10,
+      "prompt": "Complete each unit's self-check before the first class session on that unit, and come ready to use the discussion questions. Good discussion builds on classmates' points, brings evidence from the reading and the timeline, and is willing to disagree with the book.",
+      "deliverable": "Self-checks completed on time; regular, evidence-based contributions to discussion.",
+      "rubric": [
+        {
+          "criterion": "Preparation",
+          "points": 40,
+          "exemplary": "All self-checks completed before class; contributions show close reading.",
+          "proficient": "Nearly all self-checks completed; contributions show reading.",
+          "developing": "Several self-checks missed; preparation uneven.",
+          "beginning": "Rarely prepared."
+        },
+        {
+          "criterion": "Use of evidence",
+          "points": 35,
+          "exemplary": "Regularly cites the chapter, timeline data or primary sources.",
+          "proficient": "Often refers to evidence.",
+          "developing": "Mostly opinion with occasional evidence.",
+          "beginning": "No evidence."
+        },
+        {
+          "criterion": "Engagement with others",
+          "points": 25,
+          "exemplary": "Builds on and respectfully challenges classmates, including challenging the book.",
+          "proficient": "Responds to classmates.",
+          "developing": "Speaks without engaging others.",
+          "beginning": "Rarely participates."
+        }
+      ]
+    },
+    {
+      "id": "capstone-presentation",
+      "title": "Capstone presentation",
+      "weight": 0,
+      "prompt": "In Week 15, present your Correction proposal (the Unit 9 assignment) in 8 minutes, followed by 4 minutes of questions. Open with the community or family you designed for, show the evidence that defines their problem, walk through your proposal through the three principles, and name the hardest objection to it.",
+      "deliverable": "8-minute presentation with no more than 6 slides; graded as part of the capstone (one-quarter of the capstone grade).",
+      "rubric": [
+        {
+          "criterion": "Clarity of problem",
+          "points": 25,
+          "exemplary": "The audience understands exactly who the proposal serves and why, with data.",
+          "proficient": "Problem is clear.",
+          "developing": "Problem is general.",
+          "beginning": "Problem unclear."
+        },
+        {
+          "criterion": "Proposal and principles",
+          "points": 35,
+          "exemplary": "Proposal is concrete and visibly organized around Not Poverty, Community and Generativity.",
+          "proficient": "Proposal is concrete and references the principles.",
+          "developing": "Proposal is vague or principles are named but not applied.",
+          "beginning": "No coherent proposal."
+        },
+        {
+          "criterion": "Objections and evidence",
+          "points": 25,
+          "exemplary": "States the strongest objection fairly and answers it with evidence.",
+          "proficient": "Addresses an objection.",
+          "developing": "Objection is a straw man.",
+          "beginning": "No objections addressed."
+        },
+        {
+          "criterion": "Delivery",
+          "points": 15,
+          "exemplary": "On time, well paced, handles questions with evidence.",
+          "proficient": "On time and clear.",
+          "developing": "Over time or hard to follow.",
+          "beginning": "Unprepared."
+        }
+      ]
+    }
+  ],
+  "howToUse": [
+    "Start where we are. Each unit opens on the timeline: find its era, switch on the Seeds and Two-Person Lens layers, and click through the events before you read.",
+    "Read the chapter, which runs sideways in the unit view, or download it. The text is the author's working draft, so you are reading a book in progress.",
+    "Use the unit's study guide, events, inequities and primary sources panels.",
+    "Listen to the podcast and watch the lecture for the era when they are posted.",
+    "Take the self-check, then complete the assignment using its rubric as your checklist."
+  ],
+  "integrity": "Cite every source you use, including AI tools, with the prompt you gave and how you used the output. Quoting the book or the course site requires a citation like any other source. The author's chapters are a draft shared for this course: please don't redistribute them outside the class."
+}

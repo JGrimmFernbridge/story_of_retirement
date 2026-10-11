@@ -1,0 +1,33 @@
+# The Story of Retirement
+
+A horizontal course site on the history of retirement by Jonathan Grimm (Fernbridge Advisors). Visitors land on today, the Collapse era (2010–2040), travel left through how we got here, and right into what's coming and the Correction. Eras and events open into their own views; the course runs in the same order.
+
+## What's in this repository
+
+| Folder | What it is |
+| --- | --- |
+| `public/` | The finished site Netlify publishes: `index.html` plus `downloads/` (chapter PDFs, the full draft, the course guide). |
+| `netlify/functions/media.mts` + `lib/media-core.mjs` | The podcast & lecture library. Recordings are stored in this site's own Netlify storage (Netlify Blobs). No outside database. |
+| `source/` | Everything used to build `public/`: chapter text (`chapters/`), course content (`content/`, `context/course.json`), the page code (`src/`) and build scripts. |
+| `netlify.toml` | Tells Netlify to publish `public/` and where the function lives. |
+
+## Podcasts and lectures
+
+- Students listen and watch on each unit's **Podcast & lecture** panel.
+- Instructors select the lock icon at the top right and enter the **instructor password**. Then every unit's Podcast & lecture panel shows a form to upload an audio or video file (up to 750 MB) or paste a YouTube, Vimeo or podcast link. Uploads go up in 3 MB pieces, so keep the page open until it says "Posted."
+- The password is the `INSTRUCTOR_PASSWORD` environment variable on the Netlify project. To change it: Netlify → the project → **Project configuration → Environment variables** → edit `INSTRUCTOR_PASSWORD` → then **Deploys → Trigger deploy → Deploy project** so the change takes effect.
+- Long video lectures play best from YouTube (unlisted) or Vimeo: paste the link instead of uploading the file.
+- Stored recordings are visible in Netlify under **Data & Storage → Blobs → course-media**.
+
+## Updating the content
+
+Chapter text and course content live in `source/`. After editing, rebuild from `source/`:
+
+```bash
+npm install
+python3 -m pip install markdown playwright && python3 -m playwright install chromium
+python3 build.py      # rebuilds public/index.html
+python3 make_pdfs.py  # rebuilds the PDFs in public/downloads/
+```
+
+Then commit and push; Netlify publishes the new version.

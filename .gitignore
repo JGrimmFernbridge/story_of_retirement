@@ -1,0 +1,7 @@
+node_modules/
+.netlify/
+source/node_modules/
+source/build/
+source/dist/
+source/preview/
+.DS_Store

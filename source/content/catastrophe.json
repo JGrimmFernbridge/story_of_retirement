@@ -1,0 +1,423 @@
+{
+  "id": "catastrophe",
+  "number": 7,
+  "title": "Catastrophe",
+  "years": "Beyond 2040",
+  "definition": "ca·tas·tro·phe (noun) the misfortune of something",
+  "tagline": "The bill for 130 years arrives — unless someone pays it first.",
+  "bigQuestion": "What do the official projections say the 2040s and beyond will look like, and which parts of that future are still a choice?",
+  "overview": "The Catastrophe chapter of A Concise History of Retirement has not yet been written. Its synopsis promises to carry the story “from projection to reality”: the demographic wave completing its passage, the trust fund clock running out, and the first generation that spent its whole working life inside the defined-contribution system reaching old age. This module therefore works differently from the others. Nothing here has happened yet. Every date is a projection, and every projection has an author, a method and assumptions you can question.\n\nThe official numbers are sobering. Under current law, the 2026 Social Security Trustees project that the combined trust funds will be depleted in 2034, after which payable benefits slide toward 65% of scheduled by 2100. The population aged 85 and older is projected to more than double between 2022 and 2040. The number of potential family caregivers for each person aged 80 and older is projected to fall by more than half between 2010 and 2050. A year in a private nursing-home room already costs more than the median retirement account balance among families that have one.\n\nBut a projection is not a prophecy. Congress rewrote Social Security in 1983 and can do so again, and some readiness measures improved after 2019. Grimm calls catastrophe “the necessary darkness before the correction.” Your task is to see that darkness clearly and to ask which parts of it are fixed and which are still being chosen.",
+  "learningObjectives": [
+    "Distinguish historical data from official projections, and identify the source, assumptions and uncertainty range behind each projection used in this module.",
+    "Explain what happens under current law when Social Security and Medicare trust funds are depleted, and compare the Trustees’ and CBO’s estimates.",
+    "Analyze projected demographic and care-economy pressures (the 85+ population, caregiver support ratios, direct-care workforce demand) and connect them to the book’s Natural Order principles.",
+    "Evaluate competing retirement-adequacy projections (the National Retirement Risk Index and Morningstar’s model) for what they include, what they leave out and whom they show at greatest risk.",
+    "Construct and defend two evidence-based scenarios for 2050: one in which Congress acts and one in which it does not."
+  ],
+  "policyEvents": [
+    {
+      "year": 2034,
+      "title": "Projected: Combined Social Security Trust Funds Depleted",
+      "type": "policy",
+      "detail": "Projected. The 2026 Trustees Report projects that the combined OASI and DI reserves will be depleted in the third quarter of 2034, after which 83% of scheduled benefits would be payable, falling to 65% by 2100. CBO’s September 2026 projections are earlier and deeper: combined exhaustion in 2033, a 23% cut rising to 37% by 2100.",
+      "significance": "Under current law the program does not end; it shrinks automatically to fit its revenue. The Promise seed becomes a percentage."
+    },
+    {
+      "year": 2034,
+      "title": "Scenario: Congress Raises Revenue",
+      "type": "policy",
+      "detail": "Projected scenario, not current law. The 2026 Trustees calculate that raising the combined payroll tax from 12.4% to 16.83% immediately and permanently would eliminate the 75-year deficit; 16.65% would be enough for bare solvency. The 1983 Amendments (P.L. 98-21) are the precedent: Congress combined accelerated payroll-tax increases, taxation of some benefits and coverage of new federal employees with benefit-side changes.",
+      "significance": "On this path, catastrophe is averted through Community, with costs shared across today’s workers and employers. Students should weigh who pays and what it would do to wages."
+    },
+    {
+      "year": 2034,
+      "title": "Scenario: Congress Reduces Benefits",
+      "type": "policy",
+      "detail": "Projected scenario, not current law. The 2026 Trustees calculate that an immediate, permanent 25.9% cut in all scheduled benefits would also eliminate the 75-year deficit, or 25.2% for bare solvency. In practice, reform proposals usually mix the levers: retirement-age changes, benefit-formula changes, a higher taxable-earnings cap and revenue increases. CRS estimates cited in August 2026 show the cost of waiting: if Congress acts only at depletion, the change grows to roughly a 4.9-point payroll tax increase or a 28.5% benefit cut.",
+      "significance": "The choice of levers decides whose old age absorbs the shortfall. It is the Two Americas question restated as policy design."
+    },
+    {
+      "year": 2040,
+      "title": "Projected: Medicare Hospital Insurance Cut Deepens",
+      "type": "policy",
+      "detail": "Projected. The 2026 Medicare Trustees project that the Hospital Insurance (Part A) trust fund will be depleted in 2033, when payroll taxes and other income would cover about 89% of costs. CRFB calculates that the resulting automatic cut would grow from 11% to 16% by 2040.",
+      "significance": "Healthcare, the book’s “hidden enemy” of old age, returns just as the 85+ population surges."
+    },
+    {
+      "year": 2050,
+      "title": "Projected: Hospital Insurance Covers About 85% of Costs",
+      "type": "policy",
+      "detail": "Projected. Under the 2026 Medicare Trustees’ intermediate assumptions, Hospital Insurance income would cover about 85% of scheduled Part A benefits by 2050, recovering to about 93% by 2100. The fund’s 75-year deficit widened to 0.56% of taxable payroll in 2026, from 0.42% a year earlier.",
+      "significance": "The projected gap peaks just as the last Boomers enter their late 80s."
+    },
+    {
+      "year": 2056,
+      "title": "Projected: Federal Debt Reaches 175% of GDP",
+      "type": "policy",
+      "detail": "Projected. CBO’s extended February 2026 baseline projects debt held by the public at 175% of GDP by 2056, with interest costs rising from 3.2% of GDP in 2025 to 6.9%. Social Security spending grows by 0.8% of GDP and major health programs by 2.1% of GDP over the same period.",
+      "significance": "Any rescue of the trust funds through general revenue would compete with interest costs. The fiscal room for Government Involvement narrows."
+    },
+    {
+      "year": 2084,
+      "title": "Projected: Social Security Cost Peaks",
+      "type": "policy",
+      "detail": "Projected. The 2026 Trustees project that Social Security costs rise from about 5.3% of GDP in 2026 to a peak of about 6.9% in 2084. Non-interest income stays between about 4.4% and 4.8% of GDP.",
+      "significance": "The gap is structural, built into the age profile of the population rather than caused by a single downturn. This fits the book’s claim that the problem is arithmetic rather than bad luck."
+    },
+    {
+      "year": 2100,
+      "title": "Projected: Retirement Benefits Payable Fall to 62%",
+      "type": "policy",
+      "detail": "Projected. If no law changes, the 2026 Trustees project that the retirement (OASI) program could pay 62% of scheduled benefits by 2100, and the combined program 65%. The 75-year actuarial deficit stood at 4.42% of taxable payroll in 2026, up from 3.82% in 2025.",
+      "significance": "This is the long tail of inaction, the projection the book’s title names. Today’s college students would be in their nineties."
+    }
+  ],
+  "marketDrops": [
+    {
+      "year": 2007,
+      "endYear": 2009,
+      "name": "Historical analog: The Global Financial Crisis",
+      "decline": "−56.8% (S&P 500, Oct 9, 2007 – Mar 9, 2009)",
+      "detail": "Historical analog, not a projection. The S&P 500 fell from 1,565.15 to 676.53 and did not close above its 2007 record until March 28, 2013, five and a half years later.",
+      "retirementImpact": "Stress-test your 2050 scenario: a similar crash in the early 2040s would hit the first generation to retire almost entirely on 401(k)s."
+    },
+    {
+      "year": 1989,
+      "endYear": 2024,
+      "name": "Historical analog: Japan’s Lost Decades",
+      "decline": "≈ −82% (Nikkei 225, Dec 29, 1989 close to Oct 28, 2008 intraday low)",
+      "detail": "Historical analog, not a projection. The Nikkei 225 closed at a record 38,915.87 at the end of 1989, fell to an intraday low of 6,994.90 in 2008 and did not set a new record close until February 22, 2024, 34 years later.",
+      "retirementImpact": "It is the strongest counterexample to the Market Growth seed: in a major economy, an entire working lifetime passed without the index regaining its peak."
+    }
+  ],
+  "socialMovements": [
+    {
+      "year": 1933,
+      "endYear": 1935,
+      "name": "Precedent: The Townsend Plan",
+      "detail": "In early 1933, Dr. Francis Townsend of Long Beach, California, proposed a $200-a-month pension for every senior citizen, and the idea grew into a mass movement. SSA historians note some evidence that its popularity pushed Roosevelt to advance his own old-age proposal.",
+      "significance": "It is the historical template for the book’s warning about “political pressure of a magnitude we have not yet experienced” when elder poverty spreads."
+    },
+    {
+      "year": 1970,
+      "name": "Precedent: The Gray Panthers",
+      "detail": "Maggie Kuhn founded the Gray Panthers in 1970 after being forced out of her church job at 65. From the start the group was intergenerational, under the slogan “Age and Youth in Action.”",
+      "significance": "It offers an alternative to the generational blame the book describes: a post-2040 elder movement could organize with the young instead of against them."
+    }
+  ],
+  "inequities": [
+    {
+      "title": "Gen X and Millennials: Projected Shortfalls",
+      "detail": "Morningstar’s 2024 retirement-outcomes model projects that 45% of U.S. households will run short of money in retirement, including 52% of Boomer, 47% of Gen X, 44% of Millennial and 37% of Gen Z households. The model assumes Social Security is paid in full, so a cut after depletion would make these projections worse. By contrast, Boston College’s National Retirement Risk Index fell from 47% of households at risk in 2019 to 39% in 2022, though its authors warn the gain may not last."
+    },
+    {
+      "title": "Single Women and Non-Savers Face the Steepest Odds",
+      "detail": "In the same Morningstar model, 55% of single women are projected to run short, compared with 41% of couples and 40% of single men. Workers who never participate in a workplace plan face a projected 57% shortfall rate, versus 21% for those with 20 or more years of participation."
+    },
+    {
+      "title": "The Care Cliff",
+      "detail": "AARP’s Public Policy Institute calculated 7.2 potential family caregivers aged 45–64 for every person aged 80 and older in 2010, and projected 4.1 by 2030 and 2.9 by 2050. PHI projects 9.7 million direct-care job openings from 2024 to 2034, in a workforce of about 5.4 million whose median wage in 2024 was $17.36 an hour."
+    },
+    {
+      "title": "Care Costs Outrun Savings",
+      "detail": "The 2024 national median cost of a private nursing-home room was $127,750 a year, home health aide services $77,792 and assisted living $70,800 (CareScout/Genworth, 2025). The Federal Reserve’s 2025 survey puts the median retirement account balance among families that have one at $106,000, less than one year in a private nursing-home room."
+    },
+    {
+      "title": "Cutting the Floor",
+      "detail": "Census data show Social Security moved 28.8 million people out of poverty in 2025, more than any other program. An automatic across-the-board cut after depletion would shrink that floor most painfully for those with the least else to fall back on, and the 2016 Chetty study found that the poorest also have the fewest years to collect."
+    }
+  ],
+  "historicalContext": [
+    {
+      "year": 2040,
+      "title": "Projected: 78 Million Americans Aged 65+",
+      "detail": "Projected. The Administration for Community Living’s 2023 Profile of Older Americans, using Census projections, puts the 65+ population at 78.3 million in 2040 (57.8 million in 2022) and the 85+ population at 13.7 million (6.5 million in 2022)."
+    },
+    {
+      "year": 2044,
+      "title": "All Surviving Boomers Are 80 or Older",
+      "detail": "By definition, the Baby Boom cohort born from 1946 through 1964 is entirely 80 or older by 2044, the decade when care needs rise most steeply."
+    },
+    {
+      "year": 2045,
+      "title": "Projected: 2.2 Workers per Beneficiary",
+      "detail": "Projected. The 2026 Trustees Report projects 2.2 covered workers per Social Security beneficiary in 2045 and 2050, falling to 2.1 in 2060 and 1.9 by 2075. In 1960 the figure was 5.1."
+    },
+    {
+      "year": 2060,
+      "title": "Projected: The Old-Age Dependency Ratio Climbs",
+      "detail": "Projected. Census projections show the old-age dependency ratio (people 65+ per 100 working-age adults) rising from 28 in 2020 to 41 in 2060. The 2017-series projections put the 85+ population at about 19 million in 2060."
+    },
+    {
+      "year": 2100,
+      "title": "Projected: Nearly 3 in 10 Americans Aged 65+",
+      "detail": "Projected. In the Census Bureau’s 2023 middle series, 29.1% of the U.S. population is 65 or older in 2100, and as much as 35.6% in a zero-immigration scenario."
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 1,
+      "stage": "harvest",
+      "detail": "The boundaries drawn around who gets protection decide who falls furthest. Workers left outside workplace plans (only 48% of the lowest-paid private-sector quarter have access) arrive at the 2040s with Social Security as nearly their whole floor, the floor that an automatic cut would lower."
+    },
+    {
+      "seed": 2,
+      "stage": "harvest",
+      "detail": "Government’s ambivalence reaches its test. Doing nothing is also a policy, because current law schedules an automatic cut. The 1983 precedent shows Congress can act, while CBO’s debt projections show the room to act shrinking."
+    },
+    {
+      "seed": 3,
+      "stage": "harvest",
+      "detail": "A system built around stopping at 65 meets a population in which 85+ is the fastest-growing age group. “Old” now covers three decades with very different needs, and a single cut-off age no longer describes anyone’s actual life."
+    },
+    {
+      "seed": 4,
+      "stage": "harvest",
+      "detail": "The first generation to rely almost entirely on 401(k)s retires with its income tied to market timing. Japan’s 34-year wait shows the risk of the belief that markets always come back over a single lifetime."
+    },
+    {
+      "seed": 5,
+      "stage": "harvest",
+      "detail": "The leisure dream turns into a care obligation. With the caregiver support ratio projected at 2.9 by 2050, many of the “golden years” are likely to be spent caring for parents and partners rather than traveling."
+    },
+    {
+      "seed": 6,
+      "stage": "harvest",
+      "detail": "The book argues that when saving cannot close the gap, speculation becomes the plan. A household facing a shortfall it cannot save its way out of is the natural customer for the next promise of fast money."
+    },
+    {
+      "seed": 7,
+      "stage": "harvest",
+      "detail": "Projected outcomes split along familiar lines: single women (55% projected shortfall) versus couples, non-participants (57%) versus long-term savers (21%), and the poorest, who live years less than the richest. A uniform cut does not land uniformly."
+    },
+    {
+      "seed": 8,
+      "stage": "harvest",
+      "detail": "After corporate pensions, the last large promise is the federal one, the gap between “scheduled” and “payable.” If that promise breaks automatically, the book predicts it will feel like the deepest betrayal of all."
+    },
+    {
+      "seed": 9,
+      "stage": "harvest",
+      "detail": "The book’s synopsis names the first full generation of defined-contribution retirees reaching old age “with wholly inadequate resources.” Individualism’s final harvest is millions of private shortfalls that will look, in aggregate, like a public crisis."
+    }
+  ],
+  "twoPersonLens": {
+    "year": 2045,
+    "older": {
+      "born": 1985,
+      "headline": "Graduated Into the Crash, Aging Into the Gap",
+      "text": "She was 23 when Lehman failed. She entered the job market carrying student debt in the worst hiring climate in decades, the book’s “second clock.” She was 47 in 2032, the year the Trustees project the retirement trust fund will run dry. She belongs to the first generation to spend an entire career inside the 401(k) system. A 2024 Morningstar model projected that 44% of Millennial households would run short in retirement, and that was assuming Social Security pays in full. By 2045 her parents, if living, are in their late 80s, while the projected caregiver support ratio falls toward 2.9. At 60 she is working, saving and caregiving at the same time. Retirement is the fourth job she cannot fit in."
+    },
+    "younger": {
+      "born": 2025,
+      "headline": "Born Into the Projection",
+      "text": "He was born the year Congress repealed WEP and GPO, and his family could claim a $1,000 federal seed deposit in a new retirement-style account for minors. He turns four in 2029, the year Census projections say older Americans first outnumber children. At 20, in 2045, he is one of about 2.2 covered workers per Social Security beneficiary (projected). CBO projects federal debt at 175% of GDP by 2056, when he will be 31. He reaches 67 in 2092. Under current law, the Trustees project payable retirement benefits sliding toward 62% of scheduled by 2100. So far, nearly every number in his life story is a projection. Which ones come true depends on choices, many of them made before he could vote."
+    },
+    "irony": "She paid into every promise and may collect only part of it; he was handed an account at birth and told the future is his to fund."
+  },
+  "keyTerms": [
+    {
+      "term": "Projection (intermediate assumptions)",
+      "definition": "The Trustees’ best estimate, bracketed by “low-cost” and “high-cost” alternatives. A projection describes what happens if current law and assumptions hold; it is not a forecast of what Congress will do."
+    },
+    {
+      "term": "Current-law payable benefits",
+      "definition": "The benefits Social Security could pay from incoming revenue alone after reserves are depleted. Because the program cannot borrow, the result is an automatic across-the-board cut."
+    },
+    {
+      "term": "Actuarial deficit",
+      "definition": "The average change in income or cost, as a percentage of taxable payroll, needed to keep a program solvent for 75 years: 4.42% for Social Security in the 2026 Trustees Report."
+    },
+    {
+      "term": "Old-age dependency ratio",
+      "definition": "The number of people aged 65 and older for every 100 working-age adults, projected by Census to rise from 28 in 2020 to 41 in 2060."
+    },
+    {
+      "term": "Caregiver support ratio",
+      "definition": "AARP’s measure of potential family caregivers aged 45–64 for each person aged 80 and older: 7.2 in 2010, projected to fall to 2.9 by 2050."
+    },
+    {
+      "term": "Long-term services and supports (LTSS)",
+      "definition": "Help with daily activities such as bathing, dressing and eating, provided at home, in assisted living or in nursing homes. Medicare does not generally cover it."
+    },
+    {
+      "term": "Direct care worker",
+      "definition": "A home health aide, personal care aide or nursing assistant. This workforce of about 5.4 million is projected to need 9.7 million job openings filled from 2024 to 2034."
+    },
+    {
+      "term": "National Retirement Risk Index (NRRI)",
+      "definition": "Boston College’s estimate of the share of working-age households at risk of being unable to maintain their pre-retirement living standard: 39% in 2022."
+    }
+  ],
+  "keyFigures": [
+    {
+      "name": "Alicia H. Munnell",
+      "role": "Economist at Boston College’s Center for Retirement Research and co-author of the 2024 National Retirement Risk Index update, which showed improvement while warning it may not last."
+    },
+    {
+      "name": "Donald Redfoot",
+      "role": "Lead author of AARP’s 2013 analysis that introduced the caregiver support ratio and projected the “care gap” facing aging Boomers."
+    },
+    {
+      "name": "Francis Townsend",
+      "role": "Long Beach physician whose 1933 pension plan became a mass movement. He is the historical model for what organized elder poverty can do to national politics."
+    },
+    {
+      "name": "Maggie Kuhn",
+      "role": "Founder of the Gray Panthers (1970) after a forced retirement at 65. Her “Age and Youth in Action” suggests an intergenerational alternative to generational blame."
+    }
+  ],
+  "primarySources": [
+    {
+      "title": "2026 Trustees Report, Section IV.B: Long-Range Estimates",
+      "year": 2026,
+      "source": "Social Security Administration, Office of the Chief Actuary",
+      "url": "https://www.ssa.gov/oact/TR/2026/IV_B_LRest.html",
+      "why": "Find the payroll-tax and benefit-cut figures that would close the 75-year gap, and notice how the Trustees present the options neutrally."
+    },
+    {
+      "title": "CBO’s 2026 Long-Term Projections for Social Security",
+      "year": 2026,
+      "source": "Congressional Budget Office",
+      "url": "https://www.cbo.gov/publication/62556",
+      "why": "Compare CBO’s exhaustion date and benefit cut with the Trustees’, and identify which assumptions drive the difference."
+    },
+    {
+      "title": "The National Retirement Risk Index: An Update from the 2022 SCF",
+      "year": 2024,
+      "source": "Center for Retirement Research at Boston College",
+      "url": "https://crr.bc.edu/the-national-retirement-risk-index-an-update-from-the-2022-scf/",
+      "why": "Look for why the index improved and for the authors’ caveats about housing prices and pandemic-era saving."
+    },
+    {
+      "title": "2023 Profile of Older Americans",
+      "year": 2024,
+      "source": "Administration for Community Living (HHS)",
+      "url": "https://acl.gov/sites/default/files/Profile%20of%20OA/ACL_ProfileOlderAmericans2023_508.pdf",
+      "why": "Note the projected growth of the 65+ and 85+ populations and the scale of unpaid family caregiving."
+    },
+    {
+      "title": "Demographic Turning Points for the United States: Population Projections for 2020 to 2060",
+      "year": 2020,
+      "source": "U.S. Census Bureau (P25-1144)",
+      "url": "https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf",
+      "why": "Trace the old-age dependency ratio and the 85+ population to 2060, and consider how immigration assumptions shape them."
+    }
+  ],
+  "discussionQuestions": [
+    "Every number in this module is a projection. Pick one and identify who produced it, what it assumes and what would have to change for it to be wrong. How confident should we be?",
+    "Challenge the book: Congress acted in 1983 when Social Security faced a shortfall, and the National Retirement Risk Index improved from 47% to 39% between 2019 and 2022. Does this evidence weaken the claim that catastrophe is coming, or does it show only that the catastrophe can be postponed?",
+    "If Congress must close the gap, should the burden fall mainly on today’s workers (higher payroll taxes) or today’s and tomorrow’s retirees (benefit changes)? Use the Natural Order principles of Not Poverty and Community to defend your answer.",
+    "The care cliff (fewer family caregivers, millions of direct-care openings, high costs) gets less public attention than the trust funds. Why might that be, and which is the bigger threat to dignity in old age?",
+    "Morningstar projects better outcomes for Gen Z (37% short) than for Boomers (52%), largely because of longer 401(k) participation. Does that support the defined-contribution system, or the book’s critique of it?",
+    "The book’s synopsis asks what the ancient question (what does a society owe its aging members?) looks like after the improvised answers fail. Draft your own one-paragraph answer for 2060."
+  ],
+  "assignment": {
+    "title": "Two Futures: A 2050 Scenario Memo",
+    "type": "Scenario-forecast policy memo",
+    "prompt": "Write a forecast memo to a member of Congress describing two futures for a specific community in 2050, such as your hometown, county or a group of workers. Future A: Congress does not act, and Social Security and Medicare Part A pay only current-law payable benefits. Future B: Congress enacts a solvency package of your design, using at least two levers from the Trustees’ or CBO’s menu. For each future, project at least four indicators (for example income, poverty, caregiving, housing and the labor force), grounding each in a cited official projection and clearly marking your own extrapolations. End by recommending one future and applying at least one of the book’s Natural Order principles (Not Poverty, Community, Generativity) to justify it.",
+    "deliverable": "A 1,500–1,800-word memo with a side-by-side indicator table for Futures A and B and at least six sources, including at least three official projections (SSA Trustees, CBO, Census, ACL or similar).",
+    "points": 100,
+    "rubric": [
+      {
+        "criterion": "Evidence & projection literacy",
+        "points": 30,
+        "exemplary": "Every projection is cited, dated and labeled with its assumptions; the memo clearly separates official projections from the student’s own extrapolations and notes uncertainty ranges.",
+        "proficient": "Projections are cited and mostly well labeled; uncertainty is mentioned but not explored.",
+        "developing": "Some projections are uncited or presented as certainties; official and personal estimates are blurred.",
+        "beginning": "Few or no credible sources; predictions are stated as facts."
+      },
+      {
+        "criterion": "Scenario design & internal logic",
+        "points": 30,
+        "exemplary": "Both futures are concrete, internally consistent and traceable from assumptions to outcomes; the reform package in Future B is specific and plausibly sized.",
+        "proficient": "Both futures are coherent, with minor gaps in logic or in how the reform package is specified.",
+        "developing": "One future is underdeveloped, or the reform package is vague or implausible.",
+        "beginning": "Scenarios are missing, contradictory or purely rhetorical."
+      },
+      {
+        "criterion": "Application of the book’s framework",
+        "points": 25,
+        "exemplary": "Uses at least one Natural Order principle and one seed precisely, testing the book’s argument rather than merely echoing it.",
+        "proficient": "Applies the framework accurately but somewhat generally.",
+        "developing": "Mentions the framework without using it to analyze the scenarios.",
+        "beginning": "No meaningful engagement with the book’s framework."
+      },
+      {
+        "criterion": "Policy writing & presentation",
+        "points": 15,
+        "exemplary": "Concise, persuasive memo voice suited to a legislator, with a clear table, a firm recommendation and clean citations.",
+        "proficient": "Clear and organized, with minor issues of concision or formatting.",
+        "developing": "Wordy or disorganized; the table is hard to read.",
+        "beginning": "Not in memo form, missing the table or lacking citations."
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Under the 2026 Trustees Report, about what share of scheduled benefits would the combined Social Security trust funds be able to pay after depletion in 2034?",
+      "options": ["About 50%", "About 65%", "About 83%", "100%"],
+      "answer": 2,
+      "explain": "About 83% would be payable at combined depletion in 2034, declining to 65% by 2100 if Congress does not act."
+    },
+    {
+      "q": "What does a Trustees “projection” represent?",
+      "options": ["A prediction of what Congress will do", "What happens if current law and the stated assumptions hold", "A guaranteed outcome", "The worst-case scenario only"],
+      "answer": 1,
+      "explain": "Projections model current law under a set of assumptions (intermediate, low-cost and high-cost); they do not predict legislation."
+    },
+    {
+      "q": "AARP projected the caregiver support ratio, potential caregivers aged 45–64 per person aged 80 and older, at what level by 2050?",
+      "options": ["7.2", "4.1", "2.9", "1.0"],
+      "answer": 2,
+      "explain": "The ratio was 7.2 in 2010 and is projected to fall to 4.1 by 2030 and 2.9 by 2050."
+    },
+    {
+      "q": "According to the 2026 Trustees, which change, by itself, would eliminate Social Security’s 75-year deficit?",
+      "options": ["Raising the payroll tax from 12.4% to about 16.83% immediately", "Raising the payroll tax to 13%", "Cutting benefits by 5%", "Raising the retirement age to 68"],
+      "answer": 0,
+      "explain": "An immediate, permanent rise to 16.83%, or an immediate 25.9% benefit cut, or some combination, would close the gap."
+    },
+    {
+      "q": "Which group did Morningstar’s 2024 model project to be most likely to run short of money in retirement?",
+      "options": ["Couples", "Single men", "Single women", "Public-sector workers"],
+      "answer": 2,
+      "explain": "Morningstar projected 55% of single women would run short, compared with 41% of couples and 40% of single men."
+    }
+  ],
+  "sources": [
+    {"label": "SSA — 2026 Trustees Report Highlights", "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html"},
+    {"label": "SSA — 2026 Trustees Report, Long-Range Estimates (IV.B)", "url": "https://www.ssa.gov/oact/TR/2026/IV_B_LRest.html"},
+    {"label": "SSA — 2026 Trustees Report, Projected Future Financial Status (II.D)", "url": "https://www.ssa.gov/oact/TR/2026/II_D_project.html"},
+    {"label": "SSA — 2026 Trustees Report, Table IV.B4 (workers per beneficiary)", "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html"},
+    {"label": "SSA History — 1983 Social Security Amendments", "url": "https://www.ssa.gov/history/1983amend.html"},
+    {"label": "SSA History — The Townsend Movement", "url": "https://www.ssa.gov/history/towns5.html"},
+    {"label": "CRFB — Analysis of the 2026 Social Security Trustees’ Report", "url": "https://www.crfb.org/papers/analysis-2026-social-security-trustees-report"},
+    {"label": "CRFB — Analysis of the 2026 Medicare Trustees’ Report", "url": "https://www.crfb.org/papers/analysis-2026-medicare-trustees-report"},
+    {"label": "Becker’s — 2026 Medicare Trustees notes", "url": "https://www.beckershospitalreview.com/finance/medicare-advantage-spending-flagged-as-hospital-fund-depletion-moves-up-5-notes/"},
+    {"label": "AHA — Medicare HI trust fund projected insolvent in 2033", "url": "https://www.aha.org/news/headline/2026-06-10-medicare-trustees-project-hospital-insurance-trust-fund-become-insolvent-2033"},
+    {"label": "CBO — 2026 Long-Term Projections for Social Security", "url": "https://www.cbo.gov/publication/62556"},
+    {"label": "CBO — Testimony on Social Security’s Finances (Mar. 2026)", "url": "https://www.cbo.gov/publication/62271"},
+    {"label": "401(k) Specialist — CBO projects 26% cut in 2032", "url": "https://401kspecialistmag.com/social-security-benefit-cut-could-reach-26-in-2032-cbo-projects/"},
+    {"label": "CRFB — Debt Rises to 175% of GDP Under CBO’s Long-Term Outlook", "url": "https://www.crfb.org/blogs/debt-rises-175-gdp-under-cbos-long-term-outlook"},
+    {"label": "FedWeek — Growing cost of delaying Social Security action", "url": "https://www.fedweek.com/retirement-financial-planning/reports-show-growing-cost-of-delaying-action-on-social-security-funding/"},
+    {"label": "ACL — 2023 Profile of Older Americans", "url": "https://acl.gov/sites/default/files/Profile%20of%20OA/ACL_ProfileOlderAmericans2023_508.pdf"},
+    {"label": "Census Bureau — Demographic Turning Points (P25-1144)", "url": "https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf"},
+    {"label": "Census Bureau — 2023 National Population Projections", "url": "https://www.census.gov/newsroom/press-releases/2023/population-projections.html"},
+    {"label": "Census Bureau — Poverty in the United States: 2025", "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html"},
+    {"label": "PHI — Caregiver support ratio (AARP PPI, 2013) summary", "url": "https://www.phinational.org/study-fewer-family-caregivers-will-be-available-to-assist-aged-baby-boomers"},
+    {"label": "PHI — Direct Care Workers in the U.S.: Key Facts 2025", "url": "https://www.phinational.org/wp-content/uploads/2025/09/PHI-DCW-Key-Facts-Report-2025.pdf"},
+    {"label": "Genworth/CareScout — 2024 Cost of Care Survey", "url": "https://investor.genworth.com/news-events/press-releases/detail/982/"},
+    {"label": "Federal Reserve — Changes in U.S. Family Finances 2022–2025 (SCF)", "url": "https://www.federalreserve.gov/publications/files/scf26.pdf"},
+    {"label": "CRR Boston College — NRRI Update from the 2022 SCF", "url": "https://crr.bc.edu/the-national-retirement-risk-index-an-update-from-the-2022-scf/"},
+    {"label": "InvestmentNews — Morningstar retirement-outcomes model (2024)", "url": "https://investmentnews.com/retirement-planning/dc-plans-crucial-against-retirement-income-shortfalls-says-morningstar-report/255894"},
+    {"label": "Fortune — Morningstar model by generation (2024)", "url": "https://fortune.com/2024/08/05/half-of-boomers-and-gen-x-are-poised-to-run-out-of-money-in-retirement-but-millennials-are-in-a-better-spot-says-report"},
+    {"label": "Harvard — Chetty et al., Income and Life Expectancy (2016)", "url": "https://hcp.hms.harvard.edu/publication/association-between-income-and-life-expectancy-united-states-2001-2014"},
+    {"label": "U.S. bear market of 2007–2009 — overview", "url": "https://en.wikipedia.org/wiki/United_States_bear_market_of_2007%E2%80%932009"},
+    {"label": "S&P 500 closing milestones", "url": "https://en.wikipedia.org/wiki/Closing_milestones_of_the_S%26P_500"},
+    {"label": "Nikkei 225 — overview", "url": "https://en.wikipedia.org/wiki/Nikkei_225"},
+    {"label": "Gray Panthers — overview", "url": "https://en.wikipedia.org/wiki/Gray_Panthers"},
+    {"label": "Social Security Fairness Act — overview", "url": "https://en.wikipedia.org/wiki/Social_Security_Fairness_Act"},
+    {"label": "The College Investor — IRS: 4 million children enrolled in Trump Accounts", "url": "https://thecollegeinvestor.com/78011/trump-accounts-4-million-kids-enrolled-irs-says/"}
+  ]
+}

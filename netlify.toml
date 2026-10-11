@@ -1,0 +1,14 @@
+# The site is pre-built into public/ (see source/README for how to rebuild it).
+# Netlify only installs @netlify/blobs and bundles the media function.
+[build]
+  publish = "public"
+  command = "echo 'Site is pre-built in public/'"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/downloads/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
