@@ -164,7 +164,7 @@ function itemLabel(it) {
   if (it.lane === "lens") { const l = D.lens.find(x => x.id === it.lens); return l && l.source === "author" ? `${it.year}: ${l.label}` : `${it.year}: two lives`; }
   return it.title.replace(/^Projected: /, "");
 }
-const LABEL_MAX = 34;
+const LABEL_MAX = 30;
 
 /* ================================================================ TIMELINE STAGE */
 function Marker({ it, x, x2, y, sel, onPick, fs }) {
@@ -261,7 +261,20 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
   const { X } = scale;
   const LEAD_W = Math.round(Math.min(440, Math.max(300, size.w * (phone ? .9 : .32))));
   const CLOSE_W = Math.round(Math.min(980, Math.max(340, size.w * (phone ? 1 : .8))));
-  const HEAD = phone ? 112 : 136;
+  // the era header band is as tall as its tallest header (name, tagline, link), measured after render
+  const [headMeasured, setHeadMeasured] = useState(0);
+  const HEAD = Math.max(phone ? 96 : 100, headMeasured);
+  useLayoutEffect(() => {
+    const el = stageRef.current; if (!el) return;
+    const measure = () => {
+      let h = 0; el.querySelectorAll(".era-sticky").forEach(n => { h = Math.max(h, n.offsetHeight); });
+      if (h) setHeadMeasured(prev => (Math.abs(prev - (h + 10)) > 1 ? h + 10 : prev));
+    };
+    measure();
+    const ro = new ResizeObserver(measure); el.querySelectorAll(".era-sticky").forEach(n => ro.observe(n));
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+    return () => ro.disconnect();
+  }, [size.w, phone]);
   const visible = useMemo(() => D.items.filter(it => layers[it.lane] && (!layers.masterOnly || it.master)), [layers]);
   const ordered = useMemo(() => [...visible].sort((a, b) => a.year - b.year || LANE_ORDER[a.lane] - LANE_ORDER[b.lane]), [visible]);
 
@@ -282,11 +295,17 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
       });
       rowsByLane[l.id] = Math.max(1, ends.length);
     });
-    const SPH = layers.sp ? (phone ? 80 : 98) : 0, AXIS = 38, GAP = 10;
+    const AXIS = 38, GAP = 7;
     const totalRows = Object.values(rowsByLane).reduce((a, b) => a + b, 0);
     const nl = Object.keys(rowsByLane).length;
-    const fixed = HEAD + AXIS + SPH + (layers.sp ? 26 : 6) + nl * GAP + (rowsByLane.notes ? rowsByLane.notes * NOTE_EXTRA : 0);
-    const rowH = Math.max(15, Math.min(23, Math.floor((size.h - fixed) / Math.max(1, totalRows))));
+    // everything should fit the stage's height, because the wheel scrolls sideways.
+    // on a short window the S&P strip shrinks, then steps aside; the rows never go below 15px.
+    const fixedFor = (sph, on) => HEAD + AXIS + sph + (on ? 22 : 6) + nl * GAP + (rowsByLane.notes ? rowsByLane.notes * NOTE_EXTRA : 0);
+    let SPH = layers.sp ? (phone ? 80 : 98) : 0, spShown = !!layers.sp;
+    let rowH = Math.floor((size.h - fixedFor(SPH, spShown)) / Math.max(1, totalRows));
+    if (spShown && rowH < 17) { SPH = phone ? 56 : 64; rowH = Math.floor((size.h - fixedFor(SPH, spShown)) / Math.max(1, totalRows)); }
+    if (spShown && rowH < 15) { SPH = 0; spShown = false; rowH = Math.floor((size.h - fixedFor(0, false)) / Math.max(1, totalRows)); }
+    rowH = Math.max(15, Math.min(23, rowH));
     let top = HEAD; const lanes = [], pos = {};
     LANES.forEach(l => {
       if (!rowsByLane[l.id]) return;
@@ -298,11 +317,11 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
       });
       top += h;
     });
-    const spTop = top + (layers.sp ? 22 : 0), axisY = spTop + SPH + (layers.sp ? 6 : 4);
-    return { lanes, pos, spTop, SPH, axisY, H: Math.max(size.h, axisY + AXIS), fs: rowH >= 18 ? 11 : 10 };
-  }, [visible, scale, size.h, phone, layers.sp]);
+    const spTop = top + (spShown ? 18 : 0), axisY = spTop + SPH + (spShown ? 4 : 4);
+    return { lanes, pos, spTop, SPH, spShown, axisY, AXIS, H: Math.max(size.h, axisY + AXIS), fs: rowH >= 18 ? 11 : 10, overflow: axisY + AXIS > size.h + 2 };
+  }, [visible, scale, size.h, phone, layers.sp, HEAD]);
 
-  useEffect(() => { setGeom({ OPEN_W: LEAD_W, CLOSE_W, scale, total: LEAD_W + scale.W + CLOSE_W }); }, [LEAD_W, CLOSE_W, scale]);
+  useEffect(() => { setGeom({ OPEN_W: LEAD_W, CLOSE_W, scale, total: LEAD_W + scale.W + CLOSE_W, spHidden: !!layers.sp && !layout.spShown }); }, [LEAD_W, CLOSE_W, scale, layout.spShown, layers.sp]);
 
   // where "today" sits when the story opens: 2010 just right of the welcome panel
   const todayLeft = useCallback(() => {
@@ -388,7 +407,7 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
         <div className="track" style={{ "--canvas-h": layout.H + "px" }}>
           <LeadIn width={LEAD_W} toToday={() => navRef.current.today()} openSheet={openSheet} />
           <div className="canvas" style={{ width: W }}>
-            <svg width={W} height={layout.H} role="img" aria-label="Timeline lanes">
+            <svg width={W} height={axisY} role="img" aria-label="Timeline lanes">
               <defs>
                 <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
                   <line x1="0" y1="0" x2="0" y2="7" style={{ stroke: "var(--kraft-ink)", strokeOpacity: .12, strokeWidth: 3 }} />
@@ -404,9 +423,9 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
               <rect x={X(2026)} y={0} width={W - X(2026)} height={axisY} style={{ fill: "url(#hatch)" }} />
               {layout.lanes.map(l => <line key={l.id} x1={0} x2={W} y1={l.top} y2={l.top} style={{ stroke: "var(--kraft-line)", strokeDasharray: "3 4" }} />)}
               <line x1={X(2026)} x2={X(2026)} y1={0} y2={axisY} style={{ stroke: "var(--kraft-ink)", strokeWidth: 1.5, strokeDasharray: "5 3" }} />
-              {layers.sp && (
+              {layout.spShown && (
                 <g>
-                  <line x1={0} x2={W} y1={layout.spTop - 16} y2={layout.spTop - 16} style={{ stroke: "var(--kraft-line)" }} />
+                  <line x1={0} x2={W} y1={layout.spTop - 14} y2={layout.spTop - 14} style={{ stroke: "var(--kraft-line)" }} />
                   {D.items.filter(i => i.lane === "markets" && i.year >= 1871 && i.year <= 2026).map(i => (
                     <rect key={"sh" + i.id} x={X(i.year)} y={layout.spTop} width={Math.max(3, X(i.endYear || i.year) - X(i.year))} height={layout.SPH} style={{ fill: "var(--t-crisis)", fillOpacity: .13 }} />
                   ))}
@@ -427,19 +446,24 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
                 ? <NoteMark key={it.id} it={it} x={layout.pos[it.id].x} x2={layout.pos[it.id].x2} y={layout.pos[it.id].y} fs={layout.fs} sel={it.id === selId} onPick={pick} />
                 : <Marker key={it.id} it={it} x={layout.pos[it.id].x} x2={layout.pos[it.id].x2} y={layout.pos[it.id].y} fs={layout.fs} sel={it.id === selId} onPick={pick} />
               ))}
-              <line x1={0} x2={W} y1={axisY} y2={axisY} style={{ stroke: "var(--kraft-ink)", strokeOpacity: .5 }} />
-              {ticks.map(t => (
-                <g key={t.y}>
-                  <line x1={X(t.y)} x2={X(t.y)} y1={axisY} y2={axisY + (t.major ? 7 : 4)} style={{ stroke: "var(--kraft-ink)", strokeOpacity: .6 }} />
-                  <text x={X(t.y)} y={axisY + 21} textAnchor="middle" style={{ fill: "var(--kraft-ink)", fontSize: t.major ? 11.5 : 10, fontFamily: "var(--f-type)", fontWeight: t.major ? 700 : 400, fillOpacity: t.major ? 1 : .75 }}>{t.y}</text>
-                </g>
-              ))}
-              {[1770, 1890, 2040].map(y => <text key={"br" + y} x={X(y)} y={axisY + 4} textAnchor="middle" style={{ fill: "var(--kraft-ink)", fontSize: 12, fontWeight: 700 }}>//</text>)}
-              <text x={X(1340) + 4} y={axisY + 33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>compressed</text>
-              <text x={X(1772)} y={axisY + 33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>1770–1890 drawn at one-third scale</text>
-              <text x={X(1892)} y={axisY + 33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>1890–2040 at full scale: every year the same width</text>
-              <text x={X(2042)} y={axisY + 33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>projections, one-third scale</text>
             </svg>
+            {/* the year axis sits at the foot of the canvas and stays in view if a short window has to scroll */}
+            <div className="axis-strip" style={{ marginTop: axisY, height: layout.AXIS }}>
+              <svg width={W} height={layout.AXIS} role="img" aria-label="Years">
+                <line x1={0} x2={W} y1={0.5} y2={0.5} style={{ stroke: "var(--kraft-ink)", strokeOpacity: .5 }} />
+                {ticks.map(t => (
+                  <g key={t.y}>
+                    <line x1={X(t.y)} x2={X(t.y)} y1={0} y2={t.major ? 7 : 4} style={{ stroke: "var(--kraft-ink)", strokeOpacity: .6 }} />
+                    <text x={X(t.y)} y={21} textAnchor="middle" style={{ fill: "var(--kraft-ink)", fontSize: t.major ? 11.5 : 10, fontFamily: "var(--f-type)", fontWeight: t.major ? 700 : 400, fillOpacity: t.major ? 1 : .75 }}>{t.y}</text>
+                  </g>
+                ))}
+                {[1770, 1890, 2040].map(y => <text key={"br" + y} x={X(y)} y={4} textAnchor="middle" style={{ fill: "var(--kraft-ink)", fontSize: 12, fontWeight: 700 }}>//</text>)}
+                <text x={X(1340) + 4} y={33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>compressed</text>
+                <text x={X(1772)} y={33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>1770–1890 drawn at one-third scale</text>
+                <text x={X(1892)} y={33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>1890–2040 at full scale: every year the same width</text>
+                <text x={X(2042)} y={33} style={{ fill: "var(--kraft-muted)", fontSize: 9.5, fontFamily: "var(--f-type)" }}>projections, one-third scale</text>
+              </svg>
+            </div>
 
             {D.eras.map(e => {
               const m = MOD[e.id];
@@ -448,13 +472,13 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
                   <div className="era-sticky">
                     <div className="era-meta"><span className="chipdot" style={{ background: eraColor(e.id) }} />Unit {m.unit} · {m.years} · {m.role.toLowerCase()}</div>
                     <button className="era-name" onClick={() => openModule(e.id, "overview")} aria-label={`Open ${m.title}, ${m.years}`}>{m.title}</button>
-                    {!phone && <div className="era-tag">{m.tagline}</div>}
+                    {!phone && size.h >= 720 && <div className="era-tag">{m.tagline}</div>}
                     <button className="era-open" onClick={() => openModule(e.id, "chapter")}>Read the chapter{Icon.right}</button>
                   </div>
                 </div>
               );
             })}
-            <div className="today-tag" style={{ left: X(2026), top: layers.sp ? layout.spTop + 4 : layout.axisY - 54 }}>
+            <div className="today-tag" style={{ left: X(2026), top: layout.spShown ? layout.spTop + 4 : layout.axisY - 54 }}>
               <span>TODAY · {new Date().getFullYear()}</span>
               <button onClick={() => openModule("correction", "overview")}>Correction: the book's answer →</button>
             </div>
@@ -464,7 +488,7 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
       </div>
       <div className="rail" style={{ opacity: railOn ? 1 : 0 }} aria-hidden="true">
         {layout.lanes.map(l => <div key={l.id} style={{ top: l.top - sx.top + 2 }}>{l.label}</div>)}
-        {layers.sp && <div style={{ top: layout.spTop - sx.top - 12 }}>S&amp;P 500<br />log scale</div>}
+        {layout.spShown && <div style={{ top: layout.spTop - sx.top - 12 }}>S&amp;P 500<br />log scale</div>}
       </div>
       {welcome && <Welcome close={() => setWelcome(false)} openModule={openModule} openSheet={openSheet} nav={navRef} />}
       {!welcome && !sel && <button className="btn small about-chip" onClick={() => { setWelcome(true); navRef.current.today(); }}>{Icon.info}About this story</button>}
@@ -638,12 +662,19 @@ function Drawer({ sel, idx, total, step, go, close, openModule, openSheet }) {
 }
 
 /* ================================================================ MINIMAP */
+const MIN_SHARE = .105; // every era gets at least this much of the bar, so its name is never cut off
+function fitLabel(label, px) {
+  // Archivo 800 uppercase is about 0.70em per letter at normal width; the face condenses to 62%
+  const base = label.length * .70;
+  for (const [fs, st] of [[10, 100], [10, 88], [9.5, 78], [9, 68], [8.5, 62]]) if (base * fs * st / 100 + 8 <= px) return { fontSize: fs, fontStretch: st + "%" };
+  return { fontSize: 8, fontStretch: "62%" };
+}
 function Minimap({ viewportRef, geom }) {
-  const [v, setV] = useState({ l: 0, w: 0 });
+  const [v, setV] = useState({ l: 0, w: 0, bw: 0 });
   const bar = useRef(null), dragging = useRef(false);
   useEffect(() => {
     const el = viewportRef.current; if (!el) return;
-    const upd = () => setV({ l: el.scrollLeft, w: el.clientWidth });
+    const upd = () => setV({ l: el.scrollLeft, w: el.clientWidth, bw: bar.current ? bar.current.getBoundingClientRect().width : 0 });
     upd(); el.addEventListener("scroll", upd, { passive: true }); window.addEventListener("resize", upd);
     return () => { el.removeEventListener("scroll", upd); window.removeEventListener("resize", upd); };
   }, [geom]);
@@ -655,12 +686,18 @@ function Minimap({ viewportRef, geom }) {
     segs.push({ id: e.id, label: MOD[e.id].title, x: x0, w: x1 - x0, color: eraColor(e.id) });
   });
   segs.push({ id: "correction", label: "Correction", x: OPEN_W + scale.W, w: CLOSE_W, color: eraColor("correction") });
+  // bar shares: proportional to time, with a floor for each named era
+  const sum = segs.reduce((a, s) => a + (s.color ? Math.max(MIN_SHARE, s.w / total) : s.w / total), 0);
+  let acc = 0; segs.forEach(s => { s.bw = (s.color ? Math.max(MIN_SHARE, s.w / total) : s.w / total) / sum; s.bx = acc; acc += s.bw; });
+  const toBar = x => { const s = segs.find(q => x >= q.x && x < q.x + q.w) || segs[segs.length - 1]; return s.bx + Math.min(1, Math.max(0, (x - s.x) / s.w)) * s.bw; };
+  const fromBar = f => { const s = segs.find(q => f >= q.bx && f < q.bx + q.bw) || segs[segs.length - 1]; return s.x + Math.min(1, Math.max(0, (f - s.bx) / s.bw)) * s.w; };
   const center = v.l + v.w / 2;
   const cur = segs.find(s => center >= s.x && center < s.x + s.w) || segs[segs.length - 1];
   const yearAt = center > OPEN_W && center < OPEN_W + scale.W ? Math.round(scale.Y(center - OPEN_W)) : null;
   const go = x => viewportRef.current.scrollTo({ left: Math.max(0, x), behavior: smooth });
   const ci = segs.indexOf(cur);
-  const fromPointer = e => { const r = bar.current.getBoundingClientRect(); viewportRef.current.scrollLeft = (e.clientX - r.left) / r.width * total - v.w / 2; };
+  const fromPointer = e => { const r = bar.current.getBoundingClientRect(); viewportRef.current.scrollLeft = fromBar((e.clientX - r.left) / r.width) - v.w / 2; };
+  const winL = toBar(v.l), winR = toBar(v.l + v.w);
   return (
     <div className="minimap" aria-label="Where you are in the story">
       <div className="where">
@@ -673,8 +710,8 @@ function Minimap({ viewportRef, geom }) {
         onPointerMove={e => { if (dragging.current) fromPointer(e); }}
         onPointerUp={() => { dragging.current = false; }}
         onKeyDown={e => { if (e.key === "ArrowRight") go(v.l + v.w * .8); if (e.key === "ArrowLeft") go(v.l - v.w * .8); }}>
-        {segs.map(s => <div key={s.id} className="seg" style={{ width: (s.w / total * 100) + "%", background: s.color || "var(--surface-2)" }}>{s.color && <span>{s.label}</span>}</div>)}
-        <div className="win" style={{ left: (v.l / total * 100) + "%", width: (v.w / total * 100) + "%" }} />
+        {segs.map(s => <div key={s.id} className="seg" style={{ width: (s.bw * 100) + "%", background: s.color || "var(--surface-2)" }} title={s.label}>{s.color && <span style={fitLabel(s.label.toUpperCase(), s.bw * v.bw)}>{s.label}</span>}</div>)}
+        <div className="win" style={{ left: (winL * 100) + "%", width: ((winR - winL) * 100) + "%" }} />
       </div>
       <div className="mapnav">
         <button className="icon-btn" aria-label="Previous era" disabled={ci <= 0} onClick={() => go(ci - 1 === 0 ? 0 : segs[ci - 1].x - 10)}>{Icon.left}</button>
@@ -1387,6 +1424,7 @@ function App() {
               {[...LANES, { id: "sp", label: "S&P 500 line", color: "var(--kraft-ink)" }].map(l => (
                 <label key={l.id} htmlFor={"layer-" + l.id}><input id={"layer-" + l.id} type="checkbox" checked={!!layers[l.id]} onChange={() => setLayers(s => ({ ...s, [l.id]: !s[l.id] }))} /><span className="sw" style={{ background: l.color }} />{l.label}</label>
               ))}
+              {layers.sp && geom && geom.spHidden && <div className="eyebrow" style={{ fontSize: 11, textTransform: "none", letterSpacing: 0 }}>The S&P line is stepping aside because this window is short; make the window taller to see it.</div>}
               <label htmlFor="layer-master" className="master-toggle"><input id="layer-master" type="checkbox" checked={!!layers.masterOnly} onChange={() => setLayers(s => ({ ...s, masterOnly: !s.masterOnly }))} /><span className="ring-demo" aria-hidden="true" /><span>Only what's on the author's master timeline</span></label>
               <button className="btn small" style={{ justifySelf: "end" }} onClick={() => setLayersOpen(false)}>Done</button>
             </div>

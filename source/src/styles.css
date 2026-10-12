@@ -129,19 +129,21 @@ p { margin: 0; }
 
 .canvas { flex: none; position: relative; height: 100%; min-height: var(--canvas-h); }
 .canvas > svg { position: absolute; left: 0; top: 0; display: block; overflow: visible; }
+.axis-strip { position: sticky; bottom: 0; z-index: 3; background: linear-gradient(180deg, transparent, var(--kraft) 30%); }
+.axis-strip svg { display: block; overflow: visible; }
 .canvas text { font-family: var(--f-ui); }
 .mk { cursor: pointer; }
 .mk:focus { outline: none; }
 .mk:focus-visible .halo, .mk.sel .halo { stroke: var(--kraft-ink); stroke-width: 2; }
 .mk:hover .lab { text-decoration: underline; }
 .era-box { position: absolute; top: 0; }
-.era-sticky { position: sticky; left: var(--sticky-left, 14px); transition: left .25s; display: inline-flex; flex-direction: column; align-items: flex-start; gap: 3px; padding: 14px 16px 0 2px; max-width: min(560px, 82vw); }
+.era-sticky { position: sticky; left: var(--sticky-left, 14px); transition: left .25s; display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 10px 16px 6px 2px; max-width: min(520px, 82vw); }
 .era-meta { font-family: var(--f-type); font-size: 12px; color: var(--kraft-muted); display: flex; gap: 8px; align-items: center; }
 .era-meta .chipdot { width: 10px; height: 10px; border-radius: 3px; }
-.era-name { all: unset; cursor: pointer; font-family: var(--f-display); font-stretch: 125%; font-weight: 800; font-size: clamp(26px, 4.2vh, 44px); line-height: .95; text-transform: uppercase; color: var(--kraft-ink); }
+.era-name { all: unset; cursor: pointer; font-family: var(--f-display); font-stretch: 125%; font-weight: 800; font-size: clamp(24px, 3.9vh, 40px); line-height: .95; text-transform: uppercase; color: var(--kraft-ink); }
 .era-name:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .era-name:focus-visible { outline: 2px solid var(--kraft-ink); outline-offset: 3px; }
-.era-tag { font-family: var(--f-read); font-style: italic; font-size: 15.5px; line-height: 1.3; max-width: 46ch; }
+.era-tag { font-family: var(--f-read); font-style: italic; font-size: 15px; line-height: 1.25; max-width: 44ch; }
 .era-open { all: unset; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; font-size: 13px; font-weight: 700; margin-top: 4px; border-bottom: 1.5px solid currentColor; }
 .era-open svg { width: 14px; height: 14px; }
 .era-open:focus-visible { outline: 2px solid var(--kraft-ink); outline-offset: 3px; }
@@ -161,7 +163,7 @@ p { margin: 0; }
 .where span { font-family: var(--f-type); font-size: 12px; color: var(--muted); white-space: nowrap; }
 .mapbar { position: relative; height: 30px; border-radius: 6px; overflow: hidden; display: flex; cursor: pointer; border: 1px solid var(--line); touch-action: none; }
 .mapbar .seg { height: 100%; position: relative; border-right: 1px solid color-mix(in srgb, var(--bg) 70%, transparent); display: grid; place-items: center; overflow: hidden; }
-.mapbar .seg span { font-family: var(--f-display); font-stretch: 100%; font-weight: 800; font-size: 10px; text-transform: uppercase; color: #2a2a2a; white-space: nowrap; letter-spacing: .02em; }
+.mapbar .seg span { font-family: var(--f-display); font-stretch: 100%; font-weight: 800; font-size: 10px; text-transform: uppercase; color: #2a2a2a; white-space: nowrap; letter-spacing: .01em; }
 .mapbar .win { position: absolute; top: 0; bottom: 0; border: 2px solid var(--ink); border-radius: 5px; background: color-mix(in srgb, var(--ink) 10%, transparent); pointer-events: none; }
 .mapnav { display: flex; gap: 6px; }
 @media (max-width: 760px) { .where { width: auto; } .where span, .mapbar .seg span { display: none; } .minimap { grid-template-columns: minmax(0, auto) minmax(0, 1fr) auto; } }
