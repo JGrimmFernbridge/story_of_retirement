@@ -35,7 +35,7 @@ const LANES = [
   { id: "notes", label: "Author's notes", color: "var(--t-note)" },
 ];
 const ITEM = Object.fromEntries(D.items.map(i => [i.id, i]));
-const LINKS = D.links || [], THREADS = D.threads || [], MASTER = D.master || { legend: [], quotes: [] };
+const LINKS = D.links || [], THREADS = D.threads || [], MASTER = D.master || { legend: [], quotes: [] }, NOTEBOOK = D.notebook || null;
 const linksOf = id => LINKS.filter(l => l.from === id || l.to === id);
 const threadOf = id => THREADS.find(t => t.items.includes(id)) || null;
 const VAR_LABEL = { income: "Wealth & income", race: "Race & ethnicity", gender: "Sex & gender", education: "Education", job: "Job", place: "Place", immigration: "Immigration", longevity: "Longevity", generation: "Generation" };
@@ -557,7 +557,7 @@ function Closing({ width, openModule, openSheet }) {
     ["course", "The course", "Schedule, grading, every assignment and its rubric."],
     ["media", "Podcasts & lectures", "Listen to and watch each era's episode and lecture."],
     ["index", "Every event", "The whole timeline as a list, era by era."],
-    ["master", "The master timeline", "The author's hand-drawn original, and where each note landed."],
+    ["master", "Master timeline & notebook", "The hand-drawn original, where each note landed, and the author's working notes."],
   ];
   return (
     <section className="closing scroll-y" style={{ width, overflowY: "auto" }} aria-label="Correction and course materials">
@@ -618,9 +618,9 @@ function Drawer({ sel, idx, total, step, go, close, openModule, openSheet }) {
         )}
         {sel.hand && (
           <div className="master-block">
-            <div className="eyebrow">{isNote ? "His note, as written" : seed ? "Where he planted it" : "On the master timeline"}</div>
+            <div className="eyebrow">{sel.src === "notebook" ? "From the author's notebook" : isNote ? "His note, as written" : seed ? "Where he planted it" : "On the master timeline"}</div>
             <p className="hand">{sel.hand}</p>
-            <button className="linkish" onClick={() => openSheet("master", "photo")}>See the hand-drawn original</button>
+            <button className="linkish" onClick={() => openSheet("master", sel.src === "notebook" ? "nb-pages" : "photo")}>{sel.src === "notebook" ? "See the notebook pages" : "See the hand-drawn original"}</button>
           </div>
         )}
         {conns.length > 0 && (
@@ -847,6 +847,12 @@ function LensCard({ lens }) {
         ))}
       </div>
       <div className="foot">{lens.irony}</div>
+      {lens.authorNotes && lens.authorNotes.length > 0 && (
+        <div className="master-block" style={{ borderRadius: 0 }}>
+          <div className="eyebrow">From the author's notebook</div>
+          {lens.authorNotes.map((t, i) => <p key={i} className="hand" style={{ fontSize: 16 }}>{t}</p>)}
+        </div>
+      )}
     </div>
   );
 }
@@ -1316,7 +1322,61 @@ function ThreadPanel({ t, showItem }) {
     </div>
   );
 }
-function masterSheet(showItem, showMasterOnly) {
+// his seesaw diagrams: income on one side, what pays for it on the other
+function Seesaw({ s }) {
+  const W = 200, H = 96, cx = 100, cy = 62, half = 78;
+  const tilt = { left: -11, right: 11, level: 0, broken: 0 }[s.tilt] || 0;
+  const broken = s.tilt === "broken";
+  return (
+    <div className={"seesaw" + (broken ? " broken" : "")}>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${s.name}: ${s.left || "nothing"} against ${s.right || "nothing"}, ${s.tilt}`}>
+        <path d={`M${cx - 11} ${cy + 20} L${cx} ${cy} L${cx + 11} ${cy + 20} Z`} className="pivot" />
+        {broken ? (
+          <g className="beam"><path d={`M${cx - half} ${cy + 16} L${cx - 4} ${cy}`} /><path d={`M${cx + 4} ${cy} L${cx + half} ${cy + 16}`} /><path d={`M${cx - 6} ${cy - 6} l4 6 l-5 5 l6 3`} className="crack" /></g>
+        ) : (
+          <g className="beam" transform={`rotate(${tilt} ${cx} ${cy})`}><line x1={cx - half} x2={cx + half} y1={cy} y2={cy} />
+            {s.left && <text x={cx - half + 2} y={cy - 7} className="lbl" style={{ fontSize: s.left.length > 14 ? 8.5 : 11 }}>{s.left}</text>}
+            {s.right && <text x={cx + half - 2} y={cy - 7} textAnchor="end" className="lbl" style={{ fontSize: s.right.length > 14 ? 8.5 : 11 }}>{s.right}</text>}
+          </g>
+        )}
+        <text x={cx} y={H - 4} textAnchor="middle" className="yr">{s.label}</text>
+      </svg>
+      <b>{s.name}</b>
+      <span>{s.note}</span>
+    </div>
+  );
+}
+function NotebookTheme({ t, go }) {
+  return (
+    <>
+      <div className="nb-head"><span className="chipdot" style={{ background: bandOf(t.era) }} /><h3 style={{ margin: 0 }}>{t.title}</h3></div>
+      {t.tag && <div className="eyebrow">{t.tag}</div>}
+      <div className="master-block">
+        {t.his.map((line, i) => <p key={i} className="hand" style={{ fontSize: 16.5 }}>{line}</p>)}
+      </div>
+      {t.seesaw && <div className="seesaw-grid">{t.seesaw.map(s => <Seesaw key={s.label} s={s} />)}</div>}
+      <p style={{ color: "var(--ink-2)", fontSize: 15, lineHeight: 1.5 }}>{t.gloss}</p>
+      {t.links && <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>{t.links.map((l, i) => <button key={i} className="btn small" onClick={() => go(l)}>{l.label}{Icon.right}</button>)}</div>}
+    </>
+  );
+}
+function NotebookPages({ pages }) {
+  const [open, setOpen] = useState(null);
+  return (
+    <>
+      <h3>The pages · {pages.length} scans · select one to read it</h3>
+      <div className="nb-pages">
+        {pages.map(p => (
+          <figure key={p.n} className={open === p.n ? "open" : ""}>
+            <button onClick={() => setOpen(open === p.n ? null : p.n)} aria-expanded={open === p.n} aria-label={`Page ${p.n}: ${p.caption}`}><img src={p.file} alt="" loading="lazy" /></button>
+            <figcaption><span className="tnum">{p.n}</span> {p.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </>
+  );
+}
+function masterSheet(showItem, showMasterOnly, go) {
   const P = [];
   P.push({ id: "about", tab: "The original", w: 560, cls: "scroll-y", node: (
     <>
@@ -1326,12 +1386,32 @@ function masterSheet(showItem, showMasterOnly) {
       <div className="legend-grid">{MASTER.legend.map(l => <span key={l.key}><i style={{ background: l.color }} />{l.label}</span>)}</div>
       <div className="quotes">{MASTER.quotes.map((q, i) => <p key={i} className="hand">{q}</p>)}<div className="eyebrow" style={{ marginTop: 4 }}>Written across the top of the sheet</div></div>
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}><button className="btn primary" onClick={showMasterOnly}>Show only his entries on the line {Icon.right}</button></div>
-      <p className="eyebrow">Scroll right for the photograph, then every note and where it landed →</p>
+      <p className="eyebrow">Scroll right for the photograph, every note and where it landed, the threads, and his notebook →</p>
     </>
   ) });
   P.push({ id: "photo", tab: "Photograph", cls: "photo", label: "The photograph", node: <PhotoStrip /> });
   P.push({ id: "landed", tab: "Every note", w: 560, cls: "scroll-y", node: <MasterList showItem={showItem} /> });
   THREADS.forEach(t => P.push({ id: "t-" + t.id, tab: "Threads", w: 500, cls: "scroll-y", label: t.title, node: <ThreadPanel t={t} showItem={showItem} /> }));
+  if (NOTEBOOK) {
+    P.push({ id: "nb-intro", tab: "Notebook", w: 520, cls: "scroll-y", label: "The author's notebook", node: (
+      <>
+        <h3>{NOTEBOOK.title}</h3>
+        <p className="hand" style={{ fontSize: 22, lineHeight: 1.3, color: "var(--paper-ink)" }}>“{NOTEBOOK.epigram}”</p>
+        <p className="big">{NOTEBOOK.intro}</p>
+        <div className="eyebrow">In these pages</div>
+        <ol className="nb-toc">{NOTEBOOK.themes.map(t => <li key={t.id}><span className="chipdot" style={{ background: bandOf(t.era) }} />{t.title}</li>)}</ol>
+        <p className="eyebrow">Scroll right through the ideas, then the margin notes and the scanned pages →</p>
+      </>
+    ) });
+    NOTEBOOK.themes.forEach(t => P.push({ id: "nb-" + t.id, tab: "Notebook", w: t.seesaw ? 760 : 520, cls: "scroll-y nb", label: t.title, node: <NotebookTheme t={t} go={go} /> }));
+    P.push({ id: "nb-margins", tab: "Notebook", w: 520, cls: "scroll-y", label: "Margin notes on the draft", node: (
+      <>
+        <h3>Margin notes on the first printout of the draft</h3>
+        <ul className="evlist">{NOTEBOOK.margins.map(m => <li key={m.page}><div className="yr tnum"><span className="chipdot" style={{ background: bandOf(m.chapter), marginRight: 6 }} />{MOD[m.chapter].title} · page {m.page} of the scans</div><div className="hand-line hand">{m.text}</div></li>)}</ul>
+      </>
+    ) });
+    P.push({ id: "nb-pages", tab: "Pages", w: 980, cls: "scroll-y", label: "The scanned pages", node: <NotebookPages pages={NOTEBOOK.pages} /> });
+  }
   return P;
 }
 
@@ -1399,7 +1479,7 @@ function App() {
     } else if (sheet.type === "seeds") sheetEl = <Sheet key={"s" + sheet.k} band="var(--t-seed)" eyebrow="Sowing and reaping" title="The nine seeds" onClose={closeSheet} start={sheet.panel} panels={seedsSheet()} />;
     else if (sheet.type === "course") sheetEl = <Sheet key={"c" + sheet.k} band="var(--accent)" eyebrow="For students and instructors" title="The course" onClose={closeSheet} start={sheet.panel} panels={courseSheet(openModule)} />;
     else if (sheet.type === "media") sheetEl = <Sheet key={"m" + sheet.k} band="var(--t-lens)" eyebrow="Listen and watch" title="Podcasts & lectures" onClose={closeSheet} start={sheet.panel} panels={mediaSheet(openModule, () => setIns(true))} />;
-    else if (sheet.type === "master") sheetEl = <Sheet key={"mt" + sheet.k} band="var(--t-note)" eyebrow="In the author's hand" title="The master timeline" onClose={closeSheet} start={sheet.panel} panels={masterSheet(showItem, () => { setLayers(l => ({ ...l, masterOnly: true, notes: true, seeds: true })); closeSheet(); pick(null); navRef.current.today(); })} />;
+    else if (sheet.type === "master") sheetEl = <Sheet key={"mt" + sheet.k} band="var(--t-note)" eyebrow="In the author's hand" title="Master timeline & notebook" onClose={closeSheet} start={sheet.panel} panels={masterSheet(showItem, () => { setLayers(l => ({ ...l, masterOnly: true, notes: true, seeds: true })); closeSheet(); pick(null); navRef.current.today(); }, l => (l.module ? openModule(l.module, l.panel) : openSheet(l.sheet, l.panel)))} />;
     else if (sheet.type === "index") sheetEl = <Sheet key={"i" + sheet.k} band="var(--kraft-ink)" eyebrow="The whole line as a list" title="Every event" onClose={closeSheet} start={sheet.panel || "collapse"} panels={indexSheet(showItem)} />;
   }
 
@@ -1412,7 +1492,7 @@ function App() {
             <button onClick={() => navRef.current.today()}><span>Today</span></button>
             <button onClick={() => openSheet("index")}>{Icon.list}<span className="hide-sm">Every event</span></button>
             <button onClick={() => openSheet("seeds")}>{Icon.seed}<span className="hide-sm">Nine seeds</span></button>
-            <button onClick={() => openSheet("master")}>{Icon.pen}<span className="hide-sm">Master timeline</span></button>
+            <button onClick={() => openSheet("master")}>{Icon.pen}<span className="hide-sm">His hand</span></button>
             <button onClick={() => openSheet("course")}>{Icon.book}<span>Course</span></button>
             <button onClick={() => openSheet("media")}>{Icon.mic}<span className="hide-sm">Podcasts & lectures</span></button>
             <button aria-expanded={layersOpen} onClick={() => setLayersOpen(o => !o)}>{Icon.layers}<span className="hide-sm">Layers</span></button>

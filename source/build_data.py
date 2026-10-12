@@ -76,6 +76,9 @@ def main():
         m["chapterLabel"] = "The book's opening" if m["id"] == "conclusion" else f"Chapter {m['number']} of the book"
     seeds_lens = json.load(open(f"{BASE}/context/seeds_lens.json", encoding="utf-8"))
     course = json.load(open(f"{BASE}/context/course.json", encoding="utf-8"))
+    notebook = json.load(open(f"{BASE}/context/notebook.json", encoding="utf-8"))
+    for pg in notebook["pages"]:
+        pg["file"] = f"notes/p{pg['n']:02d}.jpg"
 
     # ---- timeline items
     MT = json.load(open(f"{BASE}/context/master_timeline.json", encoding="utf-8"))
@@ -136,7 +139,7 @@ def main():
         mod = era_of(a["year"])
         items.append({"id": a["id"], "lane": a["lane"], "type": a["type"], "year": a["year"], "endYear": a.get("endYear"),
                       "title": a["title"], "detail": a["detail"], "significance": a.get("significance", ""), "decline": a.get("decline"),
-                      "module": mod, "projected": a["year"] > 2026, "master": True, "hand": a["hand"]})
+                      "module": mod, "projected": a["year"] > 2026, "master": True, "hand": a["hand"], "src": a.get("src", "sheet")})
         m = next(x for x in modules if x["id"] == mod)
         m.setdefault(LIST_OF[a["lane"]], []).append({"year": a["year"], "endYear": a.get("endYear"), "title": a["title"], "detail": a["detail"],
                                                    "significance": a.get("significance", ""), "decline": a.get("decline"), "type": a["type"],
@@ -149,7 +152,7 @@ def main():
     for n in MT["notes"]:
         items.append({"id": n["id"], "lane": "notes", "type": "note", "year": n["year"], "endYear": n.get("endYear"), "title": n["text"],
                       "detail": n["detail"], "significance": "", "decline": None, "color": n.get("color"), "module": era_of(n["year"]),
-                      "projected": False, "master": True, "hand": n["text"]})
+                      "projected": False, "master": True, "hand": n["text"], "src": n.get("src", "sheet")})
     # one addition from the author's own timeline
     items.append({"id": "grimm-pension-peak", "lane": "policy", "type": "policy", "year": 1979, "endYear": None,
                   "title": "Pension coverage peaks",
@@ -191,7 +194,7 @@ def main():
         "eras": [{"id": k, **v} for k, v in ERAS.items()],
         "modules": sorted(modules, key=lambda m: m["unit"]), "seeds": seeds_lens["seeds"], "lens": lens, "items": items,
         "sp": sp, "course": course,
-        "links": MT["links"], "threads": MT["threads"],
+        "links": MT["links"], "threads": MT["threads"], "notebook": notebook,
         "master": {"legend": MT["legend"], "quotes": MT["quotes"], "source": MT["source"], "photo": "master-timeline.jpg",
                    "thumb": "master-timeline-thumb.jpg", "count": sum(1 for i in items if i.get("master"))},
     }

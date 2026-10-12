@@ -35,5 +35,10 @@ open(f"{OUTDIR}/index.html", "w", encoding="utf-8").write(full)
 for f in ("master-timeline.jpg", "master-timeline-thumb.jpg"):
     if os.path.exists(f"assets/{f}"):
         shutil.copy(f"assets/{f}", f"{OUTDIR}/{f}"); shutil.copy(f"assets/{f}", f"preview/{f}")
+if os.path.isdir("assets/notes"):
+    for d in (f"{OUTDIR}/notes", "preview/notes"):
+        os.makedirs(d, exist_ok=True)
+        for f in os.listdir("assets/notes"):
+            shutil.copy(f"assets/notes/{f}", f"{d}/{f}")
 open("preview/index.html", "w", encoding="utf-8").write(head() + body())
 print(f"{OUTDIR}/index.html", len(full.encode()) // 1024, "KB")

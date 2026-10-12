@@ -480,3 +480,33 @@ ol.levels { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .level .his { margin: 0; font-family: var(--f-read); font-style: italic; font-size: 16.5px; line-height: 1.45; color: var(--ink); }
 .level .ev { font-size: 14px; color: var(--ink-2); line-height: 1.5; }
 .level .ev b { color: var(--ink); font-family: var(--f-type); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+
+/* ---------- the author's notebook */
+.nb-head { display: flex; align-items: center; gap: 10px; }
+.nb-head .chipdot { width: 12px; height: 12px; border-radius: 3px; flex: none; }
+.nb-head h3 { font-family: var(--f-display); font-stretch: 112%; font-weight: 800; font-size: 20px; text-transform: none; letter-spacing: 0; color: var(--ink); }
+.panel.nb .master-block { gap: 10px; }
+.panel.nb .master-block .hand { line-height: 1.35; }
+ol.nb-toc { margin: 0; padding-left: 22px; display: grid; gap: 6px; font-size: 15px; }
+ol.nb-toc .chipdot { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 8px; vertical-align: -1px; }
+.seesaw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+.seesaw { display: grid; gap: 2px; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px 10px; background: var(--paper); color: var(--paper-ink); }
+.seesaw svg { width: 100%; display: block; overflow: visible; }
+.seesaw .pivot { fill: var(--paper-ink); }
+.seesaw .beam line, .seesaw .beam path { stroke: var(--paper-ink); stroke-width: 3; stroke-linecap: round; fill: none; }
+.seesaw .beam .crack { stroke: var(--t-crisis); stroke-width: 2.2; }
+.seesaw .lbl { font-family: var(--f-hand); font-size: 11px; fill: var(--paper-ink); }
+.seesaw .yr { font-family: var(--f-type); font-size: 10.5px; fill: #7d6a52; }
+.seesaw b { font-family: var(--f-display); font-stretch: 112%; font-weight: 800; font-size: 13px; text-transform: uppercase; }
+.seesaw span { font-size: 12.5px; line-height: 1.3; color: #5f4e3c; }
+.seesaw.broken .pivot { fill: var(--t-crisis); }
+.nb-pages { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+.nb-pages figure { margin: 0; display: grid; gap: 6px; }
+.nb-pages figure button { all: unset; cursor: zoom-in; display: block; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface-2); }
+.nb-pages figure button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.nb-pages figure img { width: 100%; display: block; }
+.nb-pages figure.open { grid-column: 1 / -1; }
+.nb-pages figure.open button { cursor: zoom-out; }
+.nb-pages figure.open img { width: 100%; }
+.nb-pages figcaption { font-size: 12.5px; color: var(--muted); line-height: 1.35; }
+.nb-pages figcaption .tnum { font-family: var(--f-type); font-weight: 700; color: var(--ink-2); margin-right: 4px; }

@@ -273,7 +273,11 @@
    "headline": "Already improvising",
    "text": "Born in 1990, he has never known a world without the 401(k). He was eleven when Enron’s employees watched their retirement accounts collapse with the company’s stock, and a teenager when the longest recession since World War II began. Now 20, he enters a labor market where unemployment recently peaked at 10 percent, carrying student debt that shapes what any first job can offer. The wealth-building decade earlier generations used to lay a foundation has been lost at the start—not to bad choices, but to timing. His full retirement age is 67, his employer offers an account rather than a pension, and his planning app tells him to save more than he earns. He has moved past grief into improvisation."
   },
-  "irony": "The 60-year-old still has time to panic; the 20-year-old has already moved past grief into improvisation—and neither was ever asked who gave them the dream."
+  "irony": "The 60-year-old still has time to panic; the 20-year-old has already moved past grief into improvisation—and neither was ever asked who gave them the dream.",
+  "authorNotes": [
+   "His ladder for the 60-year-old of 1980, born 1920: horse and buggy to personal computers. Age 10, the Great Depression. 20, World War II. 30, nukes. 40, space. 50, Vietnam, the Summer of Love, Watergate. 60, 1980.",
+   "For those entering the system in 1980: a young-worker boom. Boomers born 1946–64 are the workforce of 1980 at ages 16–34 and of 2010 at 46–64, born in stability and earning in the boom. The newborns of 1980 enter work at the dot-com peak."
+  ]
  },
  "keyTerms": [
   {
@@ -374,7 +378,9 @@
   "Social Security survived two very different reform efforts in this era—a bipartisan rescue in 1983 and a failed privatization push in 2005. Why did one succeed and the other fail, and what does that say about the public’s view of pooled versus individual risk?",
   "Tax incentives for retirement saving flow mostly to higher earners. Is that an unavoidable feature of tax-based incentives or a design choice? Propose one change and predict its effects.",
   "Enron employees held 62 percent of their 401(k) assets in company stock. Was that a failure of individual judgment, of plan design, or of the system’s premise that workers should manage their own risk?",
-  "Compare the two people in the 2010 Two-Person Lens. Which risks did each face that a defined-benefit pension would have absorbed, and which would remain even with a pension?"
+  "Compare the two people in the 2010 Two-Person Lens. Which risks did each face that a defined-benefit pension would have absorbed, and which would remain even with a pension?",
+  "In the margin of this chapter the author asks: stock market investment from 1930 to 1980, low? Why? Faith? Need? Using the Markets & money lane and the S&P line, answer him. What changed in 1980 that pulled ordinary households into the market, and which seeds did the pulling?",
+  "Rebuild his 1980 ladder for someone born in 1960: at 10, 20, 30, 40, 50 and 60, what did the economy and the news teach them to expect? Then do it for someone born in 2000. Where do the two ladders disagree about what retirement is?"
  ],
  "assignment": {
   "title": "Following the Risk: A DB-to-DC Data Investigation",

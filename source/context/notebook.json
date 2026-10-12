@@ -1,0 +1,224 @@
+{
+  "title": "The author's notebook",
+  "source": "Eighteen pages of Jonathan Grimm's early handwritten notes and marked-up draft pages, scanned October 2026",
+  "epigram": "What everyone gets “wrong” about retirement is that it isn’t examined but expected.",
+  "intro": "Before the master timeline and before the chapters there were these pages: notes on a legal pad, diagrams, and a first printout of the draft with his pen all over the margins. They are organized here by the idea each one carries. His words are set in his hand; the plain text underneath says where the idea lives on this site.",
+  "themes": [
+    {
+      "id": "conflation",
+      "title": "The great conflation",
+      "tag": "Very important · central to the story",
+      "era": "conclusion",
+      "his": [
+        "Great conflation: Retirement = Senior Care. ‘Exit work at 65’ is treated as the answer to: in a high-capital-need society, how do we care for people as they age out of, or are circumstantially forced out of, earning capital.",
+        "These are two things. The structural question and the humanitarian question.",
+        "Intellectual challenge: untangling this is the great challenge. The association between retiring at 65, living off assets, and old age and mortality are linked in an unbelievably difficult way to tear apart.",
+        "Now: model = fail. Retire = fail. Care for old vs. retire: conflation. The original questions come full circle."
+      ],
+      "gloss": "The book’s opening separates the humanitarian question (how do we care for people who can no longer earn) from the structural question (what happens to human beings when the economic model that sustains them is designed to discard them). His notes say the whole crisis lives in treating the two as one. Read the Conclusion unit with this in hand.",
+      "links": [{"module": "conclusion", "panel": "overview", "label": "Open the Conclusion unit"}]
+    },
+    {
+      "id": "zero",
+      "title": "R = 0: the model and the math",
+      "tag": "Bad math",
+      "era": "codify",
+      "his": [
+        "Zero 1:1. Retirement planning and strategy has almost zero correlation with what made retirement work in the past, with how people retire now, and with the retirement model.",
+        "r = 0 vs r = 1. A high confidence interval plus a hypothetical, theoretical, imaginary r = 1 equals bad math.",
+        "Every firm, advisor, guru: theories ≠ reality.",
+        "Very few retire off the ‘model.’ So how are there retirees?",
+        "Who does the model ‘work’ for? Most current and pre-retirees are not retiring because they followed the advice. They did not max out 401(k)s. They did not max out Roth IRAs."
+      ],
+      "gloss": "The planning industry’s model assumes its own inputs produced the retirements we see. His claim is that the correlation is close to zero: the people who actually retired did it on a paid-off home, low expenses, a limited budget and, for the lucky cohort, a pension. The Codify and Collapse units carry the evidence.",
+      "links": [{"module": "codify", "panel": "overview", "label": "Open Codify"}, {"module": "collapse", "panel": "inequities", "label": "Collapse: who was left out"}]
+    },
+    {
+      "id": "capital",
+      "title": "A capital-heavy society",
+      "tag": "Why the stakes are what they are",
+      "era": "collapse",
+      "his": [
+        "In a capital-heavy society you need lots of capital. Why: income #1, money/capital #2, growth #3, medical #4.",
+        "Cost of living, 50% → 90%. Flat wages. Inflation.",
+        "Generational divide: young → old, not old → young. A fundamental violation. 16:1 → 2:1, the Social Security paradigm.",
+        "Low housing, low expense, low savings, low medical: that was the ground the model grew on. Not doubling down on a bad model."
+      ],
+      "gloss": "His ranking of what a person needs once the paycheck stops, and his note that the generational flow of support has reversed. The worker-to-beneficiary ratio he cites runs from roughly 16 to 1 in 1950 toward about 2 to 1 by the 2030s; the Trustees Report items on the line carry the current figures.",
+      "links": [{"module": "catastrophe", "panel": "overview", "label": "Open Catastrophe"}]
+    },
+    {
+      "id": "balance",
+      "title": "The balance, era by era",
+      "tag": "His seesaw diagrams, redrawn",
+      "era": "climax",
+      "his": [
+        "Death of retirement: income on one side, everything that has to pay for it on the other.",
+        "Pre-retirement era (pre-1890): there was really no concept of retirement like we currently have before the 1900s. Family farm economy → factory. No globalization, no modern medicine, low life expectancy.",
+        "1890–1950, government support: Germany, WWI, forced retirement; Roaring 20’s, Great Depression, WWII, Social Security.",
+        "Optional retirement era, 1950–1970: five pillars. It worked. Income, low expense (asset cost), life expectancy, medical, simplicity.",
+        "Individual retirement era, 1970–1990: 1950s support, expansion, asset acquisition, a new money mind.",
+        "The shift, 1990–2010: same game with no ability to play it. Those that began work after 1990. Exact opposite conditions from what worked.",
+        "Death of retirement era, 2010–2040: broken. Flat income, rising cost, long life, medical $$$, complex.",
+        "R.I.P., 2040. What can we do? Work. Five pillars: social community. A new money model."
+      ],
+      "seesaw": [
+        {"label": "Pre-1890", "name": "Pre-retirement era", "left": "Work", "right": "Income", "tilt": "left", "note": "no concept of retirement; farm to factory"},
+        {"label": "1890–1950", "name": "Government support", "left": "Work · assets · Social Security", "right": "Income", "tilt": "left", "note": "Germany, WWI, the 20s, the Depression, WWII"},
+        {"label": "1950–1970", "name": "Optional retirement era", "left": "Five pillars", "right": "Income", "tilt": "level", "note": "it worked: income, low expense, life expectancy, medical, simplicity"},
+        {"label": "1970–1990", "name": "Individual retirement era", "left": "Assets", "right": "Income", "tilt": "left", "note": "expansion, asset acquisition, a new money mind"},
+        {"label": "1990–2010", "name": "The shift", "left": "Fewer assets", "right": "Opposite five pillars", "tilt": "right", "note": "same game, no ability to play it"},
+        {"label": "2010–2040", "name": "Death of retirement era", "left": "", "right": "", "tilt": "broken", "note": "flat income, rising cost, long life, medical, complex"},
+        {"label": "2040", "name": "R.I.P.", "left": "", "right": "Income", "tilt": "right", "note": "what can we do? work, five pillars, a new model"}
+      ],
+      "gloss": "The same story the timeline tells, drawn as a scale. The one era where the beam sits level is the one the book calls an anomaly.",
+      "links": [{"module": "climax", "panel": "overview", "label": "Open Climax"}]
+    },
+    {
+      "id": "moral",
+      "title": "A morally good retirement",
+      "tag": "Engagement · Evolution · Exit",
+      "era": "correction",
+      "his": [
+        "For those approaching retirement: if you are 60 or older, you are most likely the last generation of retirees in the U.S. If you are, what makes for a ‘good’ retirement? Not good in the fun, exciting, travel, leisure, freedom, golf sense, but a morally good retirement? Not a question that has been asked.",
+        "The last generation of retirees fortunate enough to transition: free from earned income, and bodily time for many.",
+        "Often thought of as a doorway, or crossing the threshold. The hero’s journey. The transition is one that leaves people at a fork in the road that is of deep moral significance.",
+        "Sadly, for most, retirement is a moral regression and the crowning achievement of individualism’s influence. By-products: anxiety, loneliness, isolation, sedentary.",
+        "Most made retirement the exit. More sustainable in 1950 when life expectancy was low. The uncomfortable conversation: not the end but the beginning.",
+        "Three doors: engagement, evolution, exit.",
+        "Flourish and joyspan. 65: old, done, exit.",
+        "Human moral aim is to exit work at 65?"
+      ],
+      "gloss": "This is the Correction unit’s question in its earliest form. The capstone asks students to design for a community; these notes ask what the person crossing the threshold owes, and is owed.",
+      "links": [{"module": "correction", "panel": "discussion", "label": "Correction: discussion"}]
+    },
+    {
+      "id": "short",
+      "title": "How do I short R?",
+      "tag": "The Big Short, applied to retirement",
+      "era": "collapse",
+      "his": [
+        "Bubble. Data. Burst in ’90 for those who started work then; fifty years to see the full result (2040).",
+        "Big Short moment: they shorted housing. How do I short R?",
+        "What if the idea of R is the problem, and we got rid of it?",
+        "The entire industry is still trying to make ‘R’ work. That is nonsense, and it is making people poor.",
+        "Two problems: still trying to make it work; and it is a socioeconomic issue, not just a financial one.",
+        "Use our proven method. Six steps. Annuities, no annuities. I set out.",
+        "Uncapped opportunity: ‘to the moon,’ ‘diamond hands,’ GameStop. Betting against: the Big Short. The illusion that it works for everyone equally."
+      ],
+      "gloss": "The Collapse unit’s claim that the building is falling slowly, written as a trade. The Get Rich Quick seed shows up here in its newest clothes.",
+      "links": [{"module": "collapse", "panel": "overview", "label": "Open Collapse"}, {"sheet": "seeds", "panel": "seed-6", "label": "Seed 6: Get Rich Quick"}]
+    },
+    {
+      "id": "reframe",
+      "title": "Build them as bad, then reframe them for the future",
+      "tag": "His instruction for the nine seeds",
+      "era": "correction",
+      "his": [
+        "Nine seeds: segregation, 65/old, gov’t, market, leisure, 2 Americas, possibility, promise, individual.",
+        "Build them as bad, then reframe them for the future.",
+        "Market = hope, rise, speed, speculation, opportunity, risk/reward, quick.",
+        "Individualism: less gov, more you. The seed connected to the shift from shareholder to stakeholder. An important economic reversal.",
+        "From ‘we’ to ‘me.’",
+        "Not communism → no protection. History beyond the need for capital."
+      ],
+      "gloss": "Every seed on this site is described first as what it did. His instruction is that each one also gets turned over: what the same impulse could grow into. The Seed Journal now ends with that reframe.",
+      "links": [{"sheet": "seeds", "panel": "chart", "label": "The nine seeds"}, {"sheet": "course", "panel": "p-seed-journal", "label": "The Seed Journal"}]
+    },
+    {
+      "id": "lens1980",
+      "title": "Two lives at 1980, his ladder",
+      "tag": "The Two-Person Lens in its first form",
+      "era": "codify",
+      "his": [
+        "For those entering this system in 1980: young workers boom. Newborns of 1980 will enter work at the dot-com peak.",
+        "Boomers born 1946–64 are the workforce of 1980 (ages 16–34) and of 2010 (ages 46–64). Born in stability, earned in the boom.",
+        "The 60-year-old of 1980 was born in 1920: horse and buggy to personal computers. Age 10, the Great Depression. 20, World War II. 30, nukes. 40, space. 50, Vietnam, the Summer of Love, Watergate. 60, 1980.",
+        "Look at our 60-year-old whose career began in 1980: cost of living low, assets low, education low. The largest accumulation of wealth got stuck. Paid-off home, low expense, limited budget.",
+        "Two people: born 1981, born 2008."
+      ],
+      "gloss": "The lens the book uses at every threshold began as this ladder. The Codify unit’s Two Lives panel now carries it.",
+      "links": [{"module": "codify", "panel": "lens", "label": "Codify: two lives"}]
+    },
+    {
+      "id": "markets",
+      "title": "A mini history of markets",
+      "tag": "Questions he wrote in the margins",
+      "era": "crucible",
+      "his": [
+        "A mini history of markets: stocks, East India Trade, U.S. markets.",
+        "Stock market investment from 1930 to 1980: low? Why? Faith? Need?",
+        "1929: $8.5 billion on margin.",
+        "Two seeds, leisure and market. Big to see them show up, leave, and come back: leisure 1950, market 1980.",
+        "Fear behind: the Great Depression and WWII. Fear ahead: the Cold War and nuclear war. Russia and space."
+      ],
+      "gloss": "The first stock, the tulip bubble and the Buttonwood Agreement are on the line because of this note. His question about 1930–1980 is now a Codify discussion question.",
+      "links": [{"module": "codify", "panel": "discussion", "label": "Codify: discussion"}]
+    },
+    {
+      "id": "altadena",
+      "title": "A local case: Altadena",
+      "tag": "A note in the margin of the GI Bill paragraph",
+      "era": "crucible",
+      "his": [
+        "Note about Altadena history.",
+        "Almost zero equality within retirement.",
+        "Civil Rights Movement → seed: the nuclear family, the single-earner house. To this day.",
+        "Two Americas: the great wealth transfer? Equal distribution? Not even close."
+      ],
+      "gloss": "Altadena, California, is a case study in three of the course’s threads at once. Black families moved there in the 1960s because it was one of the few places near Pasadena where they could get a mortgage; one family profiled in 2025 bought in 1968 with help from the GI Bill, the year the Fair Housing Act passed. Before the January 2025 Eaton Fire about 81 percent of Altadena’s Black residents owned their homes, nearly double the national rate; a UCLA study found 58 percent of Black households were severely damaged, against 46 percent of all homeowners. Home equity, the second pillar of a middle-class retirement, built over fifty years and lost in a night.",
+      "links": [{"module": "crucible", "panel": "discussion", "label": "Crucible: discussion"}]
+    },
+    {
+      "id": "names",
+      "title": "Earlier names for the eras, earlier numbers for the seeds",
+      "tag": "How the structure settled",
+      "era": "classical",
+      "his": [
+        "1890–1920 gov’t abroad · 1920–1950 gov’t U.S. · 1950–1980 optional · 1980–2010 entitled · 2010–2040 death.",
+        "Classical · Conception/Birth · Crucible · Climax/Anomaly · Codify · Collapse · Catastrophe.",
+        "Four layers: seeds; key historical events and context; key socio-economic context; retirement-specific moves.",
+        "Seeds, first numbering: 1 age 65, done/old (1889) · 2 leisure (1920s–50s) · 3 market, possible solutions · 4 gov’t, community substitute · 5 individual · 6 boundaries, segregation? · 7 promise · 8 two Americas · 9 possibility.",
+        "1950–1980 stool: pension (men), gov’t (benefits), savings (nothing).",
+        "Inflection point at 1980: civil rights, women’s rights. Pivot.",
+        "Model vs anomaly: ’74 IRA, ’78 401(k), ’94 Roth.",
+        "2040: 9 in 10 will be at or below poverty in their senior years. 1890 all over again.",
+        "A concise history → the story of retirement."
+      ],
+      "gloss": "The four layers became the lanes on the timeline. The era names kept their C’s; the seeds were renumbered so the Foundation seeds come first. His 2040 line is a projection of his own, not a forecast from the Trustees.",
+      "links": [{"sheet": "index", "panel": "classical", "label": "Every event"}]
+    }
+  ],
+  "margins": [
+    {"page": 8, "chapter": "conclusion", "text": "Conflation: these are two things. Untangling this is the great challenge."},
+    {"page": 9, "chapter": "crucible", "text": "How did COVID hit? For context, beside the Spanish Flu."},
+    {"page": 10, "chapter": "crucible", "text": "The Two Americas: a seed. Not slavery and civil rights alone; the economy’s more obvious elements, separate but converging soon after. Old-age poverty arrives to a modern America. 1935: included, and not in."},
+    {"page": 11, "chapter": "crucible", "text": "The promise, at ‘America takes care of you at the end.’ Leisure landing, possibility taking off."},
+    {"page": 12, "chapter": "climax", "text": "The golden age was an anomaly, not carefully planned. From ‘we’ to ‘me.’"},
+    {"page": 13, "chapter": "climax", "text": "It worked; it created a recipe. Note about Altadena history. Almost zero equality within retirement. Civil Rights Movement → the nuclear family, single-earner house."},
+    {"page": 14, "chapter": "climax", "text": "It worked for the largest number of people at any point in human history. So it would make sense to make a model based on what was working. Unfortunately, for us, the exact opposite was created. 16:1 → 2:1, one household per beneficiary."},
+    {"page": 15, "chapter": "codify", "text": "What we built instead. The seeds bloom: the blossoming of all nine. A product of its environment. Huge pivot in expectations."},
+    {"page": 17, "chapter": "collapse", "text": "Very few retire off the ‘model,’ so how are there retirees? Look at the 60-year-old whose career began in 1980: paid-off home, low expense, limited budget."},
+    {"page": 18, "chapter": "correction", "text": "Who does the model work for? Most current and pre-retirees did not max out 401(k)s or Roth IRAs. Vacuum. Generational divide: young → old, not old → young."}
+  ],
+  "pages": [
+    {"n": 1, "caption": "Getting clear on the retirement crisis: the great conflation, R = 0, a capital-heavy society"},
+    {"n": 2, "caption": "The Codify era sketched, 1980–2010: deregulation, CNBC, the crashes, the 16.65% and 6.29% runs"},
+    {"n": 3, "caption": "The whole arc in one line: four layers, seven eras, nine seeds, and ‘build them as bad, then reframe them’"},
+    {"n": 4, "caption": "What makes a morally good retirement: engagement, evolution, exit"},
+    {"n": 5, "caption": "The balance, era by era: his seesaw diagrams from pre-1890 to R.I.P."},
+    {"n": 6, "caption": "‘The Big Short’: how do I short R?"},
+    {"n": 7, "caption": "The title page, renamed by hand, and the first numbering of the seeds"},
+    {"n": 8, "caption": "Draft, Conclusion: the great conflation in the margin"},
+    {"n": 9, "caption": "Draft, Crucible opening: ‘how did COVID hit? for context’"},
+    {"n": 10, "caption": "Draft, the Two Americas and Black Tuesday: ‘a mini history of markets’"},
+    {"n": 11, "caption": "Draft, what was built and assumed: the promise, fear behind and fear ahead"},
+    {"n": 12, "caption": "Draft, Climax: ‘anomaly, not carefully planned’; ‘from we to me’"},
+    {"n": 13, "caption": "Draft, the pillars and the boundaries of the bloom: ‘note about Altadena history’"},
+    {"n": 14, "caption": "Draft, model or anomaly: ‘the exact opposite was created’"},
+    {"n": 15, "caption": "Draft, Codify: ‘what we built instead’; the 1980 ladder"},
+    {"n": 16, "caption": "The crashes, the sixties, the stool, flourish and joyspan: ‘it isn’t examined but expected’"},
+    {"n": 17, "caption": "Draft, Collapse: ‘very few retire off the model, so how are there retirees?’"},
+    {"n": 18, "caption": "Draft, Correction and Catastrophe: who the model works for, and the generational divide"}
+  ]
+}

@@ -25,6 +25,10 @@ A horizontal course site on the history of retirement by Jonathan Grimm (Fernbri
 
 The author's hand-drawn master timeline is in the site three ways: as the photograph (`public/master-timeline.jpg`, shown on the **Master timeline** view), as entries on the interactive line (each one ringed, with his words in its "On the master timeline" note), and as the **Author's notes** lane. The transcription lives in `source/context/master_timeline.json`: `matches` attach his words to entries that already existed, `add` holds the entries that came only from the sheet, `notes` are his bracketed notes, `links` are his arrows and `threads` are the sequences he underlined (redlining; money in your own name). Edit that file and rebuild to change any of it.
 
+## The notebook
+
+The author's early handwritten notes and marked-up draft pages (18 scanned pages in `public/notes/`) are organized by idea in `source/context/notebook.json` and shown on the **His hand** view under the Notebook and Pages tabs. Entries on the line that came from the notebook rather than the kraft sheet carry `"src": "notebook"` in `master_timeline.json`.
+
 ## Updating the content
 
 Chapter text and course content live in `source/`. After editing, rebuild from `source/`:

@@ -141,7 +141,7 @@
    "id": "seed-journal",
    "title": "Seed Journal",
    "weight": 15,
-   "prompt": "Each week, write one entry (300–400 words) that follows at least one of the nine seeds, starting from where it shows up today and tracing it back toward its root. Name the seed, quote or cite the passage from that week's chapter where you see it, then connect it to one current news story, policy debate, advertisement or conversation from your own life. End each entry with one question you can't yet answer. By Week 14 your journal should show how at least five different seeds grow across time.",
+   "prompt": "Each week, write one entry (300–400 words) that follows at least one of the nine seeds, starting from where it shows up today and tracing it back toward its root. Name the seed, quote or cite the passage from that week's chapter where you see it, then connect it to one current news story, policy debate, advertisement or conversation from your own life. End each entry with one question you can't yet answer. By Week 14 your journal should show how at least five different seeds grow across time. Your final entry follows the author’s instruction for the nine seeds, ‘build them as bad, then reframe them for the future’: take the seed you followed longest and write what the same impulse could grow into if it were pointed somewhere that does not end in poverty.",
    "deliverable": "12 entries, 300–400 words each, submitted weekly. Each entry cites the chapter and one outside source.",
    "rubric": [
     {
