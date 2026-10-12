@@ -1,5 +1,7 @@
 # The Story of Retirement
 
+Live at https://story-of-retitrement.netlify.app (Netlify project `story-of-retitrement`, deployed from `main`).
+
 A horizontal course site on the history of retirement by Jonathan Grimm (Fernbridge Advisors). Visitors land on today, the Collapse era (2010–2040), travel left through how we got here, and right into what's coming and the Correction. Eras and events open into their own views; the course runs in the same order.
 
 ## What's in this repository
