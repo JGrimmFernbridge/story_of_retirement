@@ -1,336 +1,639 @@
 {
-  "id": "conception",
-  "number": 2,
-  "title": "Conception",
-  "years": "1890–1920",
-  "definition": "con·cep·tion (noun) the beginning of something",
-  "tagline": "Retirement wasn’t born as a reward. It was conceived to clear a position.",
-  "bigQuestion": "Was retirement invented to honor aging workers, or to manage them?",
-  "overview": "This chapter opens on a myth. Bismarck did not set retirement at 65 because he was 65. Germany’s 1889 old-age and disability insurance law started paying at 70, when Bismarck was 74, and the age dropped to 65 only in 1916. Grimm reads the design as a political tool and an exit subsidy. It was meant to weaken the socialists, and it paid out mainly to the few who survived long enough to collect.\n\nThe chapter’s central claim is the ‘Zero-Sum Machine.’ A factory had a fixed number of jobs. An old worker who could not afford to leave blocked a young one at the gate. On the farm, a father could slow down and change roles. In the mill he could only be replaced. In this reading retirement started as a vacancy mechanism. The United States took a different road to the same place. Union Army pensions took more than 40 percent of federal spending in 1893, and by 1907 a veteran with 90 days’ service qualified at 62 on age alone.\n\nThis module puts that argument next to the era’s turmoil. It covers the Panics of 1893 and 1907, the Pullman strike, Progressive campaigns for social insurance, the first state pension laws, railroad pensions with mandatory retirement, World War I, the 1918 influenza, and the 1920 Civil Service Retirement Act.",
-  "learningObjectives": [
-    "Explain the actual design of Bismarck’s 1889 pension (age 70, lowered to 65 in 1916) and correct the common myth about its origin.",
-    "Evaluate the book’s ‘vacancy mechanism’ and ‘exit subsidy’ thesis using evidence from German, American public and corporate pension design.",
-    "Trace how Union Army pensions moved from compensation for disability (1862) to support based on age (1904–1912).",
-    "Analyze how race, region, sex and immigrant status shaped who could stop working between 1890 and 1920.",
-    "Compare the first employer pensions (Pennsylvania Railroad 1900, Civil Service Retirement Act 1920) with public pensions of the same era in terms of who bore the risk and who controlled the exit."
-  ],
-  "policyEvents": [
-    {
-      "year": 1889,
-      "title": "Germany’s Old Age and Disability Insurance Law",
-      "type": "legislation",
-      "detail": "Germany adopted the world’s first national old-age social insurance program in 1889, under Chancellor Otto von Bismarck. Benefits began at age 70, and Bismarck was 74. It completed his series of insurance laws: sickness insurance in 1883 and accident insurance in 1884. The Anti-Socialist Law of 1878 lapsed in 1890.",
-      "significance": "This is Seed 2 (Government Involvement). The book reads the law as political pacification and an ‘exit subsidy’ designed for exceptional survivors, not a phase of life for everyone."
-    },
-    {
-      "year": 1890,
-      "title": "Dependent Pension Act",
-      "type": "legislation",
-      "detail": "Signed by Benjamin Harrison on June 27, 1890. It pensioned any Union veteran with 90 days’ service and an honorable discharge who was permanently disabled and unable to earn a living by manual labor, whether or not the war caused the disability. It paid $6 to $12 a month, and $8 a month to dependent widows, plus $2 for each child under 16. The number of veterans on the rolls rose from 537,944 in 1890 to 966,012 by 1893.",
-      "significance": "Pensions broke loose from wartime injury. The Pension Bureau soon began treating old age itself as a disability, the book’s ‘proto-retirement industry.’"
-    },
-    {
-      "year": 1900,
-      "title": "Pennsylvania Railroad pension plan",
-      "type": "policy",
-      "detail": "In 1900 the Pennsylvania Railroad combined age limits, mandatory retirement and pensions in one program. A pension required thirty years of service, and retirement was compulsory at age 70. Historian Brian Gratton traces its immediate cause to managers’ belief that the seniority system had made older workers less efficient.",
-      "significance": "This is the clearest American case for the book’s vacancy-mechanism thesis. The pension was the price of a forced exit."
-    },
-    {
-      "year": 1904,
-      "title": "Old age treated as disability for Union veterans",
-      "type": "policy",
-      "detail": "In 1904, under President Theodore Roosevelt, the Pension Bureau made veterans aged 62 and older eligible under the 1890 law. It treated old age itself as a disability and granted $6, $8, $10 and $12 a month at ages 62, 65, 68 and 70.",
-      "significance": "For the first time a federal benefit was tied explicitly to birthdays. This is a precursor of Seed 3 (65 = Old and Done)."
-    },
-    {
-      "year": 1907,
-      "title": "Service and Age Pension Act",
-      "type": "legislation",
-      "detail": "Approved February 6, 1907, the act pensioned veterans of the Civil War (90 days’ service) and the Mexican War (60 days) on age alone. It paid $12 a month at 62, $15 at 70 and $20 at 75. The Sherwood Act of May 11, 1912 raised rates by both age and length of service.",
-      "significance": "As the book says, ‘old age itself was declared sufficient cause for a pension’: the line between payment for sacrifice and payment for being old had been erased."
-    },
-    {
-      "year": 1908,
-      "title": "Old-Age Pensions Act (United Kingdom)",
-      "type": "legislation",
-      "detail": "Britain’s first state pension, paid from January 1, 1909, gave 5 shillings a week to people over 70 whose yearly means were no more than £31 10s. A ‘character’ test excluded people on poor relief, those recently imprisoned and those judged to habitually avoid work. Within months, 596,038 pensions had been granted.",
-      "significance": "A means-tested, noncontributory model chose a different route from Bismarck’s insurance. Its character test is a vivid case of Seed 1 (Segregation & Boundaries)."
-    },
-    {
-      "year": 1913,
-      "title": "Sixteenth Amendment and Federal Reserve Act",
-      "type": "legislation",
-      "detail": "The Sixteenth Amendment, allowing a federal income tax, was ratified on February 3, 1913. The Federal Reserve Act passed on December 23, 1913, after the Panic of 1907 drove the reform movement for a central bank.",
-      "significance": "Together they created the tax base and the monetary system that later pension policy runs through. Tax treatment would eventually help turn employer pensions, and later the 401(k), into retirement policy."
-    },
-    {
-      "year": 1914,
-      "endYear": 1915,
-      "title": "First state old-age pension laws",
-      "type": "legislation",
-      "detail": "Arizona passed the first state old-age pension law in 1914; it also abolished almshouses. The state supreme court struck it down in 1916 because it was so loosely worded. In 1915 the Territory of Alaska passed assistance for its aged pioneers, and that law was never challenged on constitutional grounds.",
-      "significance": "Experiments began in the states. By the end of 1934, 28 states and two territories had old-age assistance laws, many with a pension age of 70."
-    },
-    {
-      "year": 1916,
-      "title": "Germany lowers its pension age to 65",
-      "type": "policy",
-      "detail": "Twenty-seven years after the program began, Germany lowered its old-age pension age from 70 to 65. Bismarck had died 18 years earlier.",
-      "significance": "The age most people credit to Bismarck was set after his death. The SSA notes that U.S. planners in 1935 picked 65 for their own practical reasons."
-    },
-    {
-      "year": 1920,
-      "title": "Civil Service Retirement Act",
-      "type": "legislation",
-      "detail": "Approved May 22, 1920, the act let classified federal employees with 15 years of service retire at 70. Mechanics, letter carriers and post office clerks could retire at 65, and railway postal clerks at 62. Employees paid 2.5 percent of salary, and annuities ranged from $180 to $720 a year. Almost 6,000 employees were retired for age on August 20, 1920.",
-      "significance": "The federal government became an employer with its own pension plan and mandatory retirement. It shows that the vacancy logic was not limited to private industry."
-    }
-  ],
-  "marketDrops": [
-    {
-      "year": 1893,
-      "endYear": 1897,
-      "name": "Panic of 1893",
-      "decline": "Industrial production −15.3% (1892–1894); unemployment est. 17–19%",
-      "detail": "Treasury gold reserves fell to about $100 million, and more than 100 banks suspended in June 1893. From mid-July to mid-August another 340 suspended. The NBER contraction ran from January 1893 to June 1894, and a second recession followed from late 1895 to mid-1897.",
-      "retirementImpact": "Older workers with no pension had nowhere to go when they lost wages. Their only fallbacks were family, mutual aid or the county poorhouse."
-    },
-    {
-      "year": 1906,
-      "endYear": 1908,
-      "name": "Panic of 1907",
-      "decline": "≈ −49% (Dow, 103.00 on Jan 19, 1906 to 53.00 on Nov 15, 1907)",
-      "detail": "After the Knickerbocker Trust Company suspended on October 22, 1907, runs on New York trust companies forced J.P. Morgan to organize private rescues. Unemployment rose from under 3 percent to about 8 percent, and the real economy recovered in a little over a year.",
-      "retirementImpact": "A private banker had to rescue the financial system, which pushed reformers toward the Federal Reserve. It also showed how exposed savers were in a system with no backstop."
-    },
-    {
-      "year": 1919,
-      "endYear": 1921,
-      "name": "Postwar depression of 1920–1921",
-      "decline": "−47% (Dow, 119.62 on Nov 3, 1919 to 63.90 on Aug 24, 1921)",
-      "detail": "The NBER dates the recession from January 1920 to July 1921, an 18-month contraction in which wholesale prices fell 36.8 percent. Unemployment estimates for 1921 range from 8.7 percent (Romer) to 11.7 percent (Lebergott).",
-      "retirementImpact": "The era closed with a severe deflationary bust just before the speculative 1920s, when Seed 4 (Market Growth) is first planted."
-    }
-  ],
-  "socialMovements": [
-    {
-      "year": 1892,
-      "name": "The Populist revolt",
-      "detail": "At its founding convention in Omaha, the People’s Party adopted its platform on July 4, 1892. It demanded a graduated income tax, government ownership of the railroads, telegraph and telephones, and free coinage of silver.",
-      "significance": "Indebted farmers voiced the grievances of the agrarian America. The industrial retirement system then being built would mostly pass them by (Seed 7)."
-    },
-    {
-      "year": 1894,
-      "name": "Coxey’s Army",
-      "detail": "Jacob Coxey’s ‘petition in boots’ left Massillon, Ohio, on March 25, 1894 and reached Washington on April 30. Its demand was federal public-works jobs for workers left unemployed by the Panic of 1893. Coxey was arrested the next day for walking on the Capitol grounds.",
-      "significance": "It was an early demand that the federal government answer for unemployment, a question the New Deal would take up forty years later."
-    },
-    {
-      "year": 1894,
-      "name": "Pullman Strike",
-      "detail": "Workers at the Pullman factories struck on May 11, 1894, after wage cuts. Eugene V. Debs’s American Railway Union, which grew to 150,000 members, launched a national boycott of Pullman cars. A federal injunction citing the Sherman Antitrust Act and federal troops sent over Governor Altgeld’s objection broke the strike. Fighting in the rail yards left dozens dead.",
-      "significance": "The strike showed how far workers had come to depend on one employer: Pullman controlled wages and the company town at once. Corporate paternalism, including pensions, became a tool of labor control."
-    },
-    {
-      "year": 1906,
-      "endYear": 1920,
-      "name": "Progressive campaigns for social insurance",
-      "detail": "The American Association for Labor Legislation, chartered in 1906, campaigned for workers’ compensation and later for health insurance. Massachusetts set up the first public commission on aging in 1909, the same year the first federal old-age pension bill was introduced. The Progressive Party’s 1912 platform called for ‘a system of social insurance adapted to American use’ against ‘sickness, irregular employment, and old age.’",
-      "significance": "Reformers named the problem of old-age poverty decades before Congress acted on it. Nearly all of their health and old-age proposals failed in this era."
-    }
-  ],
-  "inequities": [
-    {
-      "title": "Who could afford to stop working",
-      "detail": "In 1900, 84.1 percent of Black men aged 65 and older were in the labor force, compared with 64.4 percent of white men. Older Southerners worked at 82.9 percent versus 66.0 percent in the North, and farm residents at 80.6 percent versus 62.7 percent off the farm (Costa)."
-    },
-    {
-      "title": "A pension system with a regional map",
-      "detail": "Confederate veterans could not draw federal pensions. Southern states built their own systems later and paid less: by 1910 the average Confederate pension was about one-third of the average Union pension. In 1900 about 90 percent of Black Americans still lived in the South, far from most federal pension spending. Black Union veterans were eligible, but white officials decided their claims, and they were approved less often."
-    },
-    {
-      "title": "Women’s security through a husband’s service",
-      "detail": "Under the 1890 act a widow qualified only if she had no means of support other than her daily labor and had married the soldier before the law passed. She received $8 a month plus $2 per child under 16. Missouri and Illinois passed the first state ‘mothers’ aid’ laws in 1911, and women won the national vote only in 1920."
-    },
-    {
-      "title": "Immigrant workers in unprotected jobs",
-      "detail": "Nearly 15 percent of Americans were foreign-born in 1910, and 1,285,349 European immigrants arrived in 1907 alone. The Triangle Shirtwaist fire of March 25, 1911 killed 146 garment workers, 123 of them women and girls, most of them recent Italian and Jewish immigrants. Workers like them were the least likely to stay with one employer long enough to earn a pension."
-    },
-    {
-      "title": "Pensions as discretionary gifts",
-      "detail": "Only twelve private pension plans existed in 1900. Most early plans were noncontributory, unfunded and discretionary: a gift the employer could reduce or end at will. Requirements like the Pennsylvania Railroad’s thirty years of service left out anyone who changed jobs or was laid off. Even by 1930, private plans covered only about 10 percent of private wage and salary workers."
-    }
-  ],
-  "historicalContext": [
-    {
-      "year": 1913,
-      "title": "Ford’s moving assembly line",
-      "detail": "The Model T, introduced October 1, 1908, went onto a moving assembly line on October 7, 1913, cutting assembly time from about 12.5 hours to 93 minutes by 1914. Mass production made the pace of the line, not the experience of the worker, the measure of value."
-    },
-    {
-      "year": 1910,
-      "endYear": 1940,
-      "title": "The Great Migration begins",
-      "detail": "About 1.6 million Black Southerners moved to Northern industrial cities in the first Great Migration. They left the agricultural South, where about 90 percent of Black Americans had lived in 1900, for factory work."
-    },
-    {
-      "year": 1917,
-      "endYear": 1918,
-      "title": "World War I",
-      "detail": "The United States declared war on Germany on April 6, 1917. About 4.7 million Americans served, with 53,402 battle deaths and 63,114 other deaths in service. The war also accustomed Americans to federal mobilization at scale."
-    },
-    {
-      "year": 1918,
-      "endYear": 1919,
-      "title": "The 1918 influenza pandemic",
-      "detail": "The CDC estimates that about one-third of the world’s population was infected, at least 50 million people died worldwide and about 675,000 died in the United States. Unusually, it killed many healthy adults aged 20 to 40, the generation that would otherwise support aging parents."
-    },
-    {
-      "year": 1920,
-      "title": "Nineteenth Amendment ratified",
-      "detail": "Tennessee’s vote on August 18, 1920 completed ratification of women’s suffrage, and the amendment was certified on August 26. Women entered the next era as voters on old-age policy that still treated them mainly as dependents."
-    }
-  ],
-  "seeds": [
-    {
-      "seed": 1,
-      "stage": "sprouting",
-      "detail": "Boundaries harden into pension rules. Only Union veterans qualified, widows only if destitute and married before 1890, and Britain screened claimants on ‘character.’ Railroads used age limits to decide who stayed and who was pushed out."
-    },
-    {
-      "seed": 2,
-      "stage": "planted",
-      "detail": "Government Involvement begins with Bismarck in 1889. The state pays people to leave work in order to manage a political threat. In the United States the federal government became the largest pension payer through veterans’ benefits, and with the Civil Service Retirement Act of 1920 it became a pension-paying employer."
-    },
-    {
-      "seed": 3,
-      "stage": "planted",
-      "detail": "This is the precursor of 65 = Old and Done. The numbers arrive first: 70 in Germany (1889) and 65 there in 1916; 62, 65, 68 and 70 in the Pension Bureau’s 1904 schedule; 62 in the 1907 act; 70, 65 and 62 in the 1920 civil service law. Age begins to replace ability as the line for leaving work."
-    },
-    {
-      "seed": 7,
-      "stage": "sprouting",
-      "detail": "The industrial, urban, pensioned America separates from the agricultural, rural, unpensioned one. Railroad workers and federal clerks got pensions while farmers, sharecroppers and domestic workers did not. In 1900, older farm men worked at 80.6 percent and others at 62.7 percent."
-    },
-    {
-      "seed": 8,
-      "stage": "planted",
-      "detail": "This is a precursor of The Promise, which the book dates to after 1946. The Pennsylvania Railroad’s plan (1900) and the federal civil service law (1920) offer a pension for long service in exchange for a forced exit. Carnegie’s 1905 promise of free pensions for professors proved too costly by 1917 and was replaced by the funded TIAA in 1918: an early promise that had to be rewritten."
-    }
-  ],
-  "twoPersonLens": {
-    "year": 1920,
-    "older": {
-      "born": 1860,
-      "headline": "Built the factories, no exit in sight",
-      "text": "Born in 1860, they were a child during the Civil War and too young to fight in it, so the age pensions Congress passed in 1907 were never theirs. They were thirteen in the Panic of 1873 and thirty-three when the Panic of 1893 pushed unemployment toward one in five. They spent their prime in mills and on rail lines, and in 1918 they saw influenza kill people half their age. Now, in 1920, they are sixty. Their employer almost certainly has no pension plan; even ten years later, private plans will cover only about one in ten private-sector workers. Their state has no old-age law. If they stop, they lose their income. Most men their age keep working, and they will too, for as long as the line lets them."
-    },
-    "younger": {
-      "born": 1900,
-      "headline": "The first to be paid to stop",
-      "text": "Born in 1900, they have never known a world without the automobile, and the assembly line was running by the time they turned thirteen. At seventeen they watched the country go to war, and at eighteen they survived a flu that killed people their own age. In 1920 they are twenty and entering a wage economy that is still volatile. Ahead are the 1929 crash at twenty-nine and the Social Security Act at thirty-five. They turn sixty-five in 1965, the year Medicare is signed. For many in their generation, especially white men in industrial jobs, stopping at 65 will feel like the natural shape of a life. Nobody will tell them that the forced exit at a fixed age is a corporate invention as young as they are."
-    },
-    "irony": "The sixty-year-old built the industrial economy that made retirement necessary and will never have one; the twenty-year-old will take that economy’s exit as a birthright."
+ "id": "conception",
+ "number": 2,
+ "title": "Conception",
+ "years": "1890–1920",
+ "definition": "con·cep·tion (noun) the beginning of something",
+ "tagline": "Retirement wasn’t born as a reward. It was conceived to clear a position.",
+ "bigQuestion": "Was retirement invented to honor aging workers, or to manage them?",
+ "overview": "This chapter opens on a myth. Bismarck did not set retirement at 65 because he was 65. Germany’s 1889 old-age and disability insurance law started paying at 70, when Bismarck was 74, and the age dropped to 65 only in 1916. Grimm reads the design as a political tool and an exit subsidy. It was meant to weaken the socialists, and it paid out mainly to the few who survived long enough to collect.\n\nThe chapter’s central claim is the ‘Zero-Sum Machine.’ A factory had a fixed number of jobs. An old worker who could not afford to leave blocked a young one at the gate. On the farm, a father could slow down and change roles. In the mill he could only be replaced. In this reading retirement started as a vacancy mechanism. The United States took a different road to the same place. Union Army pensions took more than 40 percent of federal spending in 1893, and by 1907 a veteran with 90 days’ service qualified at 62 on age alone.\n\nThis module puts that argument next to the era’s turmoil. It covers the Panics of 1893 and 1907, the Pullman strike, Progressive campaigns for social insurance, the first state pension laws, railroad pensions with mandatory retirement, World War I, the 1918 influenza, and the 1920 Civil Service Retirement Act.",
+ "learningObjectives": [
+  "Explain the actual design of Bismarck’s 1889 pension (age 70, lowered to 65 in 1916) and correct the common myth about its origin.",
+  "Evaluate the book’s ‘vacancy mechanism’ and ‘exit subsidy’ thesis using evidence from German, American public and corporate pension design.",
+  "Trace how Union Army pensions moved from compensation for disability (1862) to support based on age (1904–1912).",
+  "Analyze how race, region, sex and immigrant status shaped who could stop working between 1890 and 1920.",
+  "Compare the first employer pensions (Pennsylvania Railroad 1900, Civil Service Retirement Act 1920) with public pensions of the same era in terms of who bore the risk and who controlled the exit."
+ ],
+ "policyEvents": [
+  {
+   "year": 1889,
+   "title": "Germany’s Old Age and Disability Insurance Law",
+   "type": "legislation",
+   "detail": "Germany adopted the world’s first national old-age social insurance program in 1889, under Chancellor Otto von Bismarck. Benefits began at age 70, and Bismarck was 74. It completed his series of insurance laws: sickness insurance in 1883 and accident insurance in 1884. The Anti-Socialist Law of 1878 lapsed in 1890.",
+   "significance": "This is Seed 2 (Government Involvement). The book reads the law as political pacification and an ‘exit subsidy’ designed for exceptional survivors, not a phase of life for everyone."
   },
-  "keyTerms": [
-    {"term": "Vacancy mechanism", "definition": "Grimm’s term for the original function of retirement: a way to open positions in an industrial labor market with no natural turnover by moving older workers out."},
-    {"term": "Exit subsidy", "definition": "The book’s reading of Bismarck’s pension. It was not a reward for a life’s work but a payment that made leaving work survivable, and so made it possible."},
-    {"term": "Zero-Sum Machine", "definition": "The book’s image of the factory economy, where a fixed number of jobs meant an old worker who could not afford to leave blocked a young one at the gate."},
-    {"term": "Social insurance", "definition": "A compulsory, usually government-run system that pools risks such as sickness, injury, disability or old age, funded by contributions or taxes, and pays benefits as a right when the risk occurs."},
-    {"term": "Dependent pension", "definition": "Under the 1890 act, a Union veteran’s pension based on present inability to do manual labor, from any cause, rather than an injury suffered in the war."},
-    {"term": "Service and age pension", "definition": "A pension awarded for military service plus reaching a set age, as in the 1907 act (62 and older), with no disability required."},
-    {"term": "Mandatory retirement", "definition": "An employer rule forcing workers out at a set age, such as 70 at the Pennsylvania Railroad (1900) and in the 1920 federal civil service law."},
-    {"term": "Labor force participation rate", "definition": "The share of a population group that is working or looking for work. For men 65 and older it fell from about 78 percent in 1880 to about 60 percent in 1920 (Costa)."},
-    {"term": "Noncontributory, unfunded pension", "definition": "An early employer plan paid out of current revenues with no worker contributions and no money set aside, and usually revocable at the employer’s discretion."}
-  ],
-  "keyFigures": [
-    {"name": "Otto von Bismarck", "role": "German chancellor whose government enacted old-age and disability insurance in 1889 at age 70. The book reads the law as a political weapon against socialism and a vacancy mechanism."},
-    {"name": "Theodore Roosevelt", "role": "His administration’s 1904 Pension Bureau order treated age 62 as grounds for a veteran’s pension. In 1912 his Progressive Party platform called for American social insurance against old age."},
-    {"name": "Eugene V. Debs", "role": "Leader of the 150,000-member American Railway Union in the 1894 Pullman boycott. He was indicted for defying the federal injunction that broke the strike."},
-    {"name": "Andrew Carnegie", "role": "Endowed a $10 million fund in 1905 to give free pensions to college teachers. When the promise proved unaffordable, his Carnegie Corporation helped found the funded TIAA in 1918."},
-    {"name": "Frances Perkins", "role": "Witnessed the 1911 Triangle Shirtwaist fire and led New York’s Committee on Public Safety afterward. As Secretary of Labor she later chaired the committee that drafted the Social Security Act."}
-  ],
-  "primarySources": [
-    {"title": "Dependent Pension Act of 1890 (26 Stat. 182)", "year": 1890, "source": "GovInfo, U.S. Statutes at Large", "url": "https://www.govinfo.gov/link/statute/26/182", "why": "Notice the wording ‘unable to earn a support by manual labor’ and the conditions placed on widows. Ask who the law imagines as deserving."},
-    {"title": "Act of February 6, 1907: Service and Age Pensions (34 Stat. 879)", "year": 1907, "source": "GovInfo, U.S. Statutes at Large", "url": "https://www.govinfo.gov/link/statute/34/879", "why": "Find the exact sentence where age replaces disability as the qualifying condition."},
-    {"title": "Progressive Party Platform", "year": 1912, "source": "Teaching American History", "url": "https://teachingamericanhistory.org/document/the-progressive-party-platform-1912/", "why": "Compare its social-insurance plank with Bismarck’s design. Who would pay, and who would be protected?"},
-    {"title": "Civil Service Retirement Act of 1920 (41 Stat.)", "year": 1920, "source": "GovInfo, U.S. Statutes at Large", "url": "https://www.govinfo.gov/link/statute/41/618", "why": "Look at how retirement ages vary by occupation and how the annuity scale rewards long service. Both are evidence for or against the vacancy-mechanism thesis."},
-    {"title": "Age 65 Retirement (the Bismarck myth)", "year": 1889, "source": "SSA Historian’s Office", "url": "https://www.ssa.gov/history/age65.html", "why": "Use the SSA’s account to separate what Bismarck did from what popular history credits him with."}
-  ],
-  "discussionQuestions": [
-    "Test the vacancy-mechanism thesis. If Germany’s 1889 law paid at 70 and, as the book argues, most contributors died before collecting, how many jobs could it actually have opened? Does the 1889 law fit the thesis as well as the Pennsylvania Railroad’s mandatory retirement at 70 does? Use evidence from both.",
-    "The book calls Bismarck’s pension ‘a political weapon wrapped in social welfare.’ Can a policy be both politically motivated and genuinely humanitarian? Use the 1881 imperial message and the 1878 Anti-Socialist Law in your answer.",
-    "Union pensions grew from 537,944 recipients in 1890 to 966,012 in 1893 under pressure from the Grand Army of the Republic. Was this a fair expansion of support to aging veterans, or the template the book describes of ‘costs that escalate far beyond original projections’? What evidence would settle it?",
-    "In 1900, 84.1 percent of older Black men and 64.4 percent of older white men were in the labor force. What explains the gap: occupation, region, wealth, pension access or discrimination? What would you need to know to separate these causes?",
-    "Compare the German (insurance), British (means-tested pension with a character test) and American (veterans’ pension) answers to old age. Which one best honors the Natural Order principles of Not Poverty, Community and Generativity?",
-    "The book argues ‘a man who had grown old on a farm had a role; a man who had grown old in a factory had a problem.’ Does the evidence from this era support that contrast, or does it romanticize farm life? Consider sharecroppers and farm widows."
-  ],
-  "assignment": {
-    "title": "Policy Brief: Was Retirement Born as a Vacancy Mechanism?",
-    "type": "Policy brief",
-    "prompt": "Write to a modern congressional committee as a staff historian. Your brief evaluates the book’s thesis that the first retirement systems were ‘a vacancy mechanism… designed to clear a position’ rather than to honor a life. Examine at least two of these cases: Bismarck’s 1889 law and its 1916 change; the Dependent Pension Act of 1890 and the age-based pensions of 1904 and 1907; the Pennsylvania Railroad plan of 1900; the Civil Service Retirement Act of 1920. For each, identify the stated purpose, the design features (age, service, funding, mandatory exit) and the evidence of actual purpose. Reach a verdict: supported, partly supported, or not supported. Close with one lesson for today’s debate over retirement ages.",
-    "deliverable": "1,000–1,300 word policy brief with an executive summary (≤150 words), a findings section, a verdict and one recommendation; at least four sources, including two primary sources.",
-    "points": 100,
-    "rubric": [
-      {"criterion": "Evidence & historical accuracy", "points": 30, "exemplary": "Uses precise, correctly cited facts from primary statutes and scholarship, such as ages, rates, dates and coverage, with no errors.", "proficient": "Evidence is accurate and relevant, with minor gaps or a missing citation.", "developing": "Evidence is general or partly inaccurate, or relies on a single source.", "beginning": "Little evidence, or significant factual errors."},
-      {"criterion": "Evaluation of the thesis", "points": 30, "exemplary": "Tests the thesis case by case, engages the strongest counter-evidence, and reaches a nuanced verdict that follows from the evidence.", "proficient": "Reaches a clear verdict supported by evidence, with some attention to counterarguments.", "developing": "The verdict is asserted more than demonstrated, or counter-evidence is ignored.", "beginning": "No clear verdict, or the brief simply restates the book."},
-      {"criterion": "Policy relevance & recommendation", "points": 20, "exemplary": "Draws a specific, well-reasoned lesson for today’s retirement-age debate that follows from the findings.", "proficient": "Offers a reasonable lesson loosely tied to the findings.", "developing": "The lesson is generic or disconnected from the evidence.", "beginning": "No recommendation."},
-      {"criterion": "Brief format & clarity", "points": 20, "exemplary": "Tight executive summary, scannable structure, plain professional prose, and correct citations.", "proficient": "Follows the format with minor clarity or citation issues.", "developing": "Format is partly followed; the prose is wordy or unclear.", "beginning": "Does not follow the brief format."}
-    ]
+  {
+   "year": 1890,
+   "title": "Dependent Pension Act",
+   "type": "legislation",
+   "detail": "Signed by Benjamin Harrison on June 27, 1890. It pensioned any Union veteran with 90 days’ service and an honorable discharge who was permanently disabled and unable to earn a living by manual labor, whether or not the war caused the disability. It paid $6 to $12 a month, and $8 a month to dependent widows, plus $2 for each child under 16. The number of veterans on the rolls rose from 537,944 in 1890 to 966,012 by 1893.",
+   "significance": "Pensions broke loose from wartime injury. The Pension Bureau soon began treating old age itself as a disability, the book’s ‘proto-retirement industry.’"
   },
-  "quiz": [
-    {"q": "At what age did Germany’s 1889 old-age pension originally begin paying?", "options": ["60", "65", "70", "75"], "answer": 2, "explain": "The original age was 70, and Bismarck was 74. Germany lowered it to 65 in 1916, eighteen years after his death."},
-    {"q": "What did the Act of February 6, 1907 make sufficient for a Union veteran’s pension?", "options": ["Any wound received in battle", "Reaching age 62, with 90 days’ service and an honorable discharge", "Proof of poverty", "Thirty years of federal employment"], "answer": 1, "explain": "The 1907 act paid veterans on age alone: $12 a month at 62, $15 at 70 and $20 at 75. No disability was required."},
-    {"q": "Roughly what share of federal expenditures went to Union Army pensions in 1893?", "options": ["About 5 percent", "About 15 percent", "More than 40 percent", "About 75 percent"], "answer": 2, "explain": "Economic historian Dora Costa estimates Union Army pensions took more than 40 percent of federal expenditures in 1893."},
-    {"q": "Which 1920 law created a retirement system for federal civil servants?", "options": ["The Social Security Act", "The Railroad Retirement Act", "The Civil Service Retirement Act", "The Revenue Act"], "answer": 2, "explain": "The Civil Service Retirement Act, approved May 22, 1920, set retirement ages of 70, 65 or 62 depending on occupation, with at least 15 years of service."},
-    {"q": "In 1900, about what share of Black men aged 65 and older were in the labor force?", "options": ["About 25 percent", "About 45 percent", "About 64 percent", "About 84 percent"], "answer": 3, "explain": "Costa’s census data show 84.1 percent of older Black men in the labor force in 1900, compared with 64.4 percent of older white men."}
-  ],
-  "sources": [
-    {"label": "SSA Historian’s Office — Otto von Bismarck", "url": "https://www.ssa.gov/history/ottob.html"},
-    {"label": "SSA Historian’s Office — Age 65 Retirement", "url": "https://www.ssa.gov/history/age65.html"},
-    {"label": "SSA Historian’s Office — Pre-Social Security period timeline", "url": "https://www.ssa.gov/history/1900.html"},
-    {"label": "SSA Historian’s Office — Frances Perkins", "url": "https://www.ssa.gov/history/fperkins.html"},
-    {"label": "GovInfo — Dependent Pension Act, June 27, 1890 (26 Stat. 182)", "url": "https://www.govinfo.gov/link/statute/26/182"},
-    {"label": "GovInfo — Act of February 6, 1907 (34 Stat. 879)", "url": "https://www.govinfo.gov/link/statute/34/879"},
-    {"label": "GovInfo — Civil Service Retirement Act, May 22, 1920", "url": "https://www.govinfo.gov/link/statute/41/618"},
-    {"label": "SSA Social Security Bulletin — Civil Service Retirement (1941)", "url": "https://ssa.gov/policy/docs/ssb/v4n4/v4n4p29.pdf"},
-    {"label": "SSA Social Security Bulletin — early private pension plans", "url": "https://ssa.gov/policy/docs/ssb/v16n3/v16n3p7.pdf"},
-    {"label": "Costa, The Evolution of Retirement, ch. 2 (NBER)", "url": "https://www.nber.org/chapters/c6108.pdf"},
-    {"label": "Costa, Union Army pensions chapter (NBER)", "url": "https://www.nber.org/chapters/c6114.pdf"},
-    {"label": "EH.Net — Economic History of Retirement in the United States", "url": "https://eh.net/encyclopedia/economic-history-of-retirement-in-the-united-states/"},
-    {"label": "Gratton, ‘A Triumph in Modern Philanthropy’: Age Criteria at the Pennsylvania Railroad, Business History Review (1990)", "url": "https://ideas.repec.org/a/cup/buhirw/v64y1990i04p630-656_05.html"},
-    {"label": "Essays in Economic & Business History — Pennsylvania Railroad pension plan", "url": "https://ebhsoc.org/journal/index.php/ebhs/article/view/180"},
-    {"label": "VCU Social Welfare History Project — Veteran’s Pensions", "url": "https://socialwelfare.library.vcu.edu/social-security/veterans-pensions-early-history/"},
-    {"label": "VCU Social Welfare History Project — Old Age Assistance: A Brief History", "url": "https://socialwelfare.library.vcu.edu/public-welfare/old-age-assistance-a-brief-history/"},
-    {"label": "Dependent and Disability Pension Act (citing McConnell, Quadagno, Linker)", "url": "https://en.wikipedia.org/wiki/Dependent_and_Disability_Pension_Act"},
-    {"label": "Sherwood Act (1912)", "url": "https://en.wikipedia.org/wiki/Sherwood_Act"},
-    {"label": "Essential Civil War Curriculum — Civil War Pensions", "url": "https://www.essentialcivilwarcurriculum.com/civil-war-pensions.html"},
-    {"label": "EBSCO Research Starters — Anti-Socialist Law of 1878", "url": "https://www.ebsco.com/research-starters/history/anti-socialist-law-1878"},
-    {"label": "Old Age Pensions Act 1908 (UK)", "url": "https://en.wikipedia.org/wiki/Old_Age_Pensions_Act_1908"},
-    {"label": "Carnegie Corporation of New York — Carnegie Teachers Pension Fund and TIAA", "url": "https://carnegie.org/?p=3744"},
-    {"label": "TIAA", "url": "https://en.wikipedia.org/wiki/TIAA"},
-    {"label": "National Archives (Reagan Library blog) — Sixteenth Amendment", "url": "https://reagan.blogs.archives.gov/2022/09/20/constitutional-amendments-series-amendment-xvi-income-taxes"},
-    {"label": "FRASER — Federal Reserve Act", "url": "https://fraser.stlouisfed.org/blog/2016/12/federal-reserve-act"},
-    {"label": "Federal Reserve History — Banking Panics of the Gilded Age", "url": "https://www.federalreservehistory.org/essays/banking_panics_of_the_gilded_age"},
-    {"label": "Federal Reserve History — The Panic of 1907", "url": "https://www.federalreservehistory.org/essays/panic-of-1907"},
-    {"label": "Panic of 1907 (citing Bruner & Carr 2007)", "url": "https://en.wikipedia.org/wiki/Panic_of_1907"},
-    {"label": "Closing milestones of the Dow Jones Industrial Average", "url": "https://en.wikipedia.org/wiki/Closing_milestones_of_the_Dow_Jones_Industrial_Average"},
-    {"label": "Recession of 1920–1921 (citing NBER, Romer, Lebergott)", "url": "https://en.wikipedia.org/wiki/Recession_of_1920%E2%80%931921"},
-    {"label": "NBER — U.S. Business Cycle Expansions and Contractions", "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"},
-    {"label": "National Park Service — The Strike of 1894 (Pullman)", "url": "https://home.nps.gov/pull/learn/historyculture/the-strike-of-1894.htm"},
-    {"label": "Coxey’s Army", "url": "https://en.wikipedia.org/wiki/Coxey%27s_Army"},
-    {"label": "Omaha Platform (1892)", "url": "https://en.wikipedia.org/wiki/Omaha_Platform"},
-    {"label": "American Association for Labor Legislation", "url": "https://en.wikipedia.org/wiki/American_Association_for_Labor_Legislation"},
-    {"label": "Teaching American History — Progressive Party Platform (1912)", "url": "https://teachingamericanhistory.org/document/the-progressive-party-platform-1912/"},
-    {"label": "Triangle Shirtwaist Factory fire", "url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire"},
-    {"label": "Immigration to the United States (historical tables)", "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"},
-    {"label": "Great Migration (African American)", "url": "https://en.wikipedia.org/wiki/Great_Migration_(African_American)"},
-    {"label": "Ford Model T", "url": "https://en.wikipedia.org/wiki/Ford_Model_T"},
-    {"label": "American entry into World War I", "url": "https://en.wikipedia.org/wiki/American_entry_into_World_War_I"},
-    {"label": "U.S. Department of Veterans Affairs — America’s Wars fact sheet", "url": "https://www.va.gov/opa/publications/factsheets/fs_americas_wars.pdf"},
-    {"label": "CDC — 1918 Pandemic (H1N1 virus)", "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-pandemic-h1n1.html"},
-    {"label": "National Archives — 19th Amendment", "url": "https://www.archives.gov/milestone-documents/19th-amendment"},
-    {"label": "SSA Historian’s Office — Medicare signed July 30, 1965", "url": "https://www.ssa.gov/history/1960.html"}
+  {
+   "year": 1900,
+   "title": "Pennsylvania Railroad pension plan",
+   "type": "policy",
+   "detail": "In 1900 the Pennsylvania Railroad combined age limits, mandatory retirement and pensions in one program. A pension required thirty years of service, and retirement was compulsory at age 70. Historian Brian Gratton traces its immediate cause to managers’ belief that the seniority system had made older workers less efficient.",
+   "significance": "This is the clearest American case for the book’s vacancy-mechanism thesis. The pension was the price of a forced exit."
+  },
+  {
+   "year": 1904,
+   "title": "Old age treated as disability for Union veterans",
+   "type": "policy",
+   "detail": "In 1904, under President Theodore Roosevelt, the Pension Bureau made veterans aged 62 and older eligible under the 1890 law. It treated old age itself as a disability and granted $6, $8, $10 and $12 a month at ages 62, 65, 68 and 70.",
+   "significance": "For the first time a federal benefit was tied explicitly to birthdays. This is a precursor of Seed 3 (65 = Old and Done)."
+  },
+  {
+   "year": 1907,
+   "title": "Service and Age Pension Act",
+   "type": "legislation",
+   "detail": "Approved February 6, 1907, the act pensioned veterans of the Civil War (90 days’ service) and the Mexican War (60 days) on age alone. It paid $12 a month at 62, $15 at 70 and $20 at 75. The Sherwood Act of May 11, 1912 raised rates by both age and length of service.",
+   "significance": "As the book says, ‘old age itself was declared sufficient cause for a pension’: the line between payment for sacrifice and payment for being old had been erased."
+  },
+  {
+   "year": 1908,
+   "title": "Old-Age Pensions Act (United Kingdom)",
+   "type": "legislation",
+   "detail": "Britain’s first state pension, paid from January 1, 1909, gave 5 shillings a week to people over 70 whose yearly means were no more than £31 10s. A ‘character’ test excluded people on poor relief, those recently imprisoned and those judged to habitually avoid work. Within months, 596,038 pensions had been granted.",
+   "significance": "A means-tested, noncontributory model chose a different route from Bismarck’s insurance. Its character test is a vivid case of Seed 1 (Segregation & Boundaries)."
+  },
+  {
+   "year": 1913,
+   "title": "Sixteenth Amendment and Federal Reserve Act",
+   "type": "legislation",
+   "detail": "The Sixteenth Amendment, allowing a federal income tax, was ratified on February 3, 1913. The Federal Reserve Act passed on December 23, 1913, after the Panic of 1907 drove the reform movement for a central bank.",
+   "significance": "Together they created the tax base and the monetary system that later pension policy runs through. Tax treatment would eventually help turn employer pensions, and later the 401(k), into retirement policy."
+  },
+  {
+   "year": 1914,
+   "endYear": 1915,
+   "title": "First state old-age pension laws",
+   "type": "legislation",
+   "detail": "Arizona passed the first state old-age pension law in 1914; it also abolished almshouses. The state supreme court struck it down in 1916 because it was so loosely worded. In 1915 the Territory of Alaska passed assistance for its aged pioneers, and that law was never challenged on constitutional grounds.",
+   "significance": "Experiments began in the states. By the end of 1934, 28 states and two territories had old-age assistance laws, many with a pension age of 70."
+  },
+  {
+   "year": 1916,
+   "title": "Germany lowers its pension age to 65",
+   "type": "policy",
+   "detail": "Twenty-seven years after the program began, Germany lowered its old-age pension age from 70 to 65. Bismarck had died 18 years earlier.",
+   "significance": "The age most people credit to Bismarck was set after his death. The SSA notes that U.S. planners in 1935 picked 65 for their own practical reasons."
+  },
+  {
+   "year": 1920,
+   "title": "Civil Service Retirement Act",
+   "type": "legislation",
+   "detail": "Approved May 22, 1920, the act let classified federal employees with 15 years of service retire at 70. Mechanics, letter carriers and post office clerks could retire at 65, and railway postal clerks at 62. Employees paid 2.5 percent of salary, and annuities ranged from $180 to $720 a year. Almost 6,000 employees were retired for age on August 20, 1920.",
+   "significance": "The federal government became an employer with its own pension plan and mandatory retirement. It shows that the vacancy logic was not limited to private industry."
+  }
+ ],
+ "marketDrops": [
+  {
+   "year": 1893,
+   "endYear": 1897,
+   "name": "Panic of 1893",
+   "decline": "Industrial production −15.3% (1892–1894); unemployment est. 17–19%",
+   "detail": "Treasury gold reserves fell to about $100 million, and more than 100 banks suspended in June 1893. From mid-July to mid-August another 340 suspended. The NBER contraction ran from January 1893 to June 1894, and a second recession followed from late 1895 to mid-1897.",
+   "retirementImpact": "Older workers with no pension had nowhere to go when they lost wages. Their only fallbacks were family, mutual aid or the county poorhouse."
+  },
+  {
+   "year": 1906,
+   "endYear": 1908,
+   "name": "Panic of 1907",
+   "decline": "≈ −49% (Dow, 103.00 on Jan 19, 1906 to 53.00 on Nov 15, 1907)",
+   "detail": "After the Knickerbocker Trust Company suspended on October 22, 1907, runs on New York trust companies forced J.P. Morgan to organize private rescues. Unemployment rose from under 3 percent to about 8 percent, and the real economy recovered in a little over a year.",
+   "retirementImpact": "A private banker had to rescue the financial system, which pushed reformers toward the Federal Reserve. It also showed how exposed savers were in a system with no backstop."
+  },
+  {
+   "year": 1919,
+   "endYear": 1921,
+   "name": "Postwar depression of 1920–1921",
+   "decline": "−47% (Dow, 119.62 on Nov 3, 1919 to 63.90 on Aug 24, 1921)",
+   "detail": "The NBER dates the recession from January 1920 to July 1921, an 18-month contraction in which wholesale prices fell 36.8 percent. Unemployment estimates for 1921 range from 8.7 percent (Romer) to 11.7 percent (Lebergott).",
+   "retirementImpact": "The era closed with a severe deflationary bust just before the speculative 1920s, when Seed 4 (Market Growth) is first planted."
+  }
+ ],
+ "socialMovements": [
+  {
+   "year": 1892,
+   "name": "The Populist revolt",
+   "detail": "At its founding convention in Omaha, the People’s Party adopted its platform on July 4, 1892. It demanded a graduated income tax, government ownership of the railroads, telegraph and telephones, and free coinage of silver.",
+   "significance": "Indebted farmers voiced the grievances of the agrarian America. The industrial retirement system then being built would mostly pass them by (Seed 7)."
+  },
+  {
+   "year": 1894,
+   "name": "Coxey’s Army",
+   "detail": "Jacob Coxey’s ‘petition in boots’ left Massillon, Ohio, on March 25, 1894 and reached Washington on April 30. Its demand was federal public-works jobs for workers left unemployed by the Panic of 1893. Coxey was arrested the next day for walking on the Capitol grounds.",
+   "significance": "It was an early demand that the federal government answer for unemployment, a question the New Deal would take up forty years later."
+  },
+  {
+   "year": 1894,
+   "name": "Pullman Strike",
+   "detail": "Workers at the Pullman factories struck on May 11, 1894, after wage cuts. Eugene V. Debs’s American Railway Union, which grew to 150,000 members, launched a national boycott of Pullman cars. A federal injunction citing the Sherman Antitrust Act and federal troops sent over Governor Altgeld’s objection broke the strike. Fighting in the rail yards left dozens dead.",
+   "significance": "The strike showed how far workers had come to depend on one employer: Pullman controlled wages and the company town at once. Corporate paternalism, including pensions, became a tool of labor control."
+  },
+  {
+   "year": 1906,
+   "endYear": 1920,
+   "name": "Progressive campaigns for social insurance",
+   "detail": "The American Association for Labor Legislation, chartered in 1906, campaigned for workers’ compensation and later for health insurance. Massachusetts set up the first public commission on aging in 1909, the same year the first federal old-age pension bill was introduced. The Progressive Party’s 1912 platform called for ‘a system of social insurance adapted to American use’ against ‘sickness, irregular employment, and old age.’",
+   "significance": "Reformers named the problem of old-age poverty decades before Congress acted on it. Nearly all of their health and old-age proposals failed in this era."
+  }
+ ],
+ "inequities": [
+  {
+   "title": "Who could afford to stop working",
+   "detail": "In 1900, 84.1 percent of Black men aged 65 and older were in the labor force, compared with 64.4 percent of white men. Older Southerners worked at 82.9 percent versus 66.0 percent in the North, and farm residents at 80.6 percent versus 62.7 percent off the farm (Costa).",
+   "vars": [
+    "race",
+    "place",
+    "job"
+   ]
+  },
+  {
+   "title": "A pension system with a regional map",
+   "detail": "Confederate veterans could not draw federal pensions. Southern states built their own systems later and paid less: by 1910 the average Confederate pension was about one-third of the average Union pension. In 1900 about 90 percent of Black Americans still lived in the South, far from most federal pension spending. Black Union veterans were eligible, but white officials decided their claims, and they were approved less often.",
+   "vars": [
+    "place"
+   ]
+  },
+  {
+   "title": "Women’s security through a husband’s service",
+   "detail": "Under the 1890 act a widow qualified only if she had no means of support other than her daily labor and had married the soldier before the law passed. She received $8 a month plus $2 per child under 16. Missouri and Illinois passed the first state ‘mothers’ aid’ laws in 1911, and women won the national vote only in 1920.",
+   "vars": [
+    "gender"
+   ]
+  },
+  {
+   "title": "Immigrant workers in unprotected jobs",
+   "detail": "Nearly 15 percent of Americans were foreign-born in 1910, and 1,285,349 European immigrants arrived in 1907 alone. The Triangle Shirtwaist fire of March 25, 1911 killed 146 garment workers, 123 of them women and girls, most of them recent Italian and Jewish immigrants. Workers like them were the least likely to stay with one employer long enough to earn a pension.",
+   "vars": [
+    "immigration",
+    "job"
+   ]
+  },
+  {
+   "title": "Pensions as discretionary gifts",
+   "detail": "Only twelve private pension plans existed in 1900. Most early plans were noncontributory, unfunded and discretionary: a gift the employer could reduce or end at will. Requirements like the Pennsylvania Railroad’s thirty years of service left out anyone who changed jobs or was laid off. Even by 1930, private plans covered only about 10 percent of private wage and salary workers.",
+   "vars": [
+    "job"
+   ]
+  }
+ ],
+ "historicalContext": [
+  {
+   "year": 1913,
+   "title": "Ford’s moving assembly line",
+   "detail": "The Model T, introduced October 1, 1908, went onto a moving assembly line on October 7, 1913, cutting assembly time from about 12.5 hours to 93 minutes by 1914. Mass production made the pace of the line, not the experience of the worker, the measure of value."
+  },
+  {
+   "year": 1910,
+   "endYear": 1940,
+   "title": "The Great Migration begins",
+   "detail": "About 1.6 million Black Southerners moved to Northern industrial cities in the first Great Migration. They left the agricultural South, where about 90 percent of Black Americans had lived in 1900, for factory work."
+  },
+  {
+   "year": 1917,
+   "endYear": 1918,
+   "title": "World War I",
+   "detail": "The United States declared war on Germany on April 6, 1917. About 4.7 million Americans served, with 53,402 battle deaths and 63,114 other deaths in service. The war also accustomed Americans to federal mobilization at scale."
+  },
+  {
+   "year": 1918,
+   "endYear": 1919,
+   "title": "The 1918 influenza pandemic",
+   "detail": "The CDC estimates that about one-third of the world’s population was infected, at least 50 million people died worldwide and about 675,000 died in the United States. Unusually, it killed many healthy adults aged 20 to 40, the generation that would otherwise support aging parents."
+  },
+  {
+   "year": 1920,
+   "title": "Nineteenth Amendment ratified",
+   "detail": "Tennessee’s vote on August 18, 1920 completed ratification of women’s suffrage, and the amendment was certified on August 26. Women entered the next era as voters on old-age policy that still treated them mainly as dependents."
+  }
+ ],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "sprouting",
+   "detail": "Boundaries harden into pension rules. Only Union veterans qualified, widows only if destitute and married before 1890, and Britain screened claimants on ‘character.’ Railroads used age limits to decide who stayed and who was pushed out."
+  },
+  {
+   "seed": 2,
+   "stage": "planted",
+   "detail": "Government Involvement begins with Bismarck in 1889. The state pays people to leave work in order to manage a political threat. In the United States the federal government became the largest pension payer through veterans’ benefits, and with the Civil Service Retirement Act of 1920 it became a pension-paying employer."
+  },
+  {
+   "seed": 3,
+   "stage": "planted",
+   "detail": "This is the precursor of 65 = Old and Done. The numbers arrive first: 70 in Germany (1889) and 65 there in 1916; 62, 65, 68 and 70 in the Pension Bureau’s 1904 schedule; 62 in the 1907 act; 70, 65 and 62 in the 1920 civil service law. Age begins to replace ability as the line for leaving work."
+  },
+  {
+   "seed": 7,
+   "stage": "sprouting",
+   "detail": "The industrial, urban, pensioned America separates from the agricultural, rural, unpensioned one. Railroad workers and federal clerks got pensions while farmers, sharecroppers and domestic workers did not. In 1900, older farm men worked at 80.6 percent and others at 62.7 percent."
+  },
+  {
+   "seed": 8,
+   "stage": "planted",
+   "detail": "This is a precursor of The Promise, which the book dates to after 1946. The Pennsylvania Railroad’s plan (1900) and the federal civil service law (1920) offer a pension for long service in exchange for a forced exit. Carnegie’s 1905 promise of free pensions for professors proved too costly by 1917 and was replaced by the funded TIAA in 1918: an early promise that had to be rewritten."
+  }
+ ],
+ "twoPersonLens": {
+  "year": 1920,
+  "older": {
+   "born": 1860,
+   "headline": "Built the factories, no exit in sight",
+   "text": "Born in 1860, they were a child during the Civil War and too young to fight in it, so the age pensions Congress passed in 1907 were never theirs. They were thirteen in the Panic of 1873 and thirty-three when the Panic of 1893 pushed unemployment toward one in five. They spent their prime in mills and on rail lines, and in 1918 they saw influenza kill people half their age. Now, in 1920, they are sixty. Their employer almost certainly has no pension plan; even ten years later, private plans will cover only about one in ten private-sector workers. Their state has no old-age law. If they stop, they lose their income. Most men their age keep working, and they will too, for as long as the line lets them."
+  },
+  "younger": {
+   "born": 1900,
+   "headline": "The first to be paid to stop",
+   "text": "Born in 1900, they have never known a world without the automobile, and the assembly line was running by the time they turned thirteen. At seventeen they watched the country go to war, and at eighteen they survived a flu that killed people their own age. In 1920 they are twenty and entering a wage economy that is still volatile. Ahead are the 1929 crash at twenty-nine and the Social Security Act at thirty-five. They turn sixty-five in 1965, the year Medicare is signed. For many in their generation, especially white men in industrial jobs, stopping at 65 will feel like the natural shape of a life. Nobody will tell them that the forced exit at a fixed age is a corporate invention as young as they are."
+  },
+  "irony": "The sixty-year-old built the industrial economy that made retirement necessary and will never have one; the twenty-year-old will take that economy’s exit as a birthright."
+ },
+ "keyTerms": [
+  {
+   "term": "Vacancy mechanism",
+   "definition": "Grimm’s term for the original function of retirement: a way to open positions in an industrial labor market with no natural turnover by moving older workers out."
+  },
+  {
+   "term": "Exit subsidy",
+   "definition": "The book’s reading of Bismarck’s pension. It was not a reward for a life’s work but a payment that made leaving work survivable, and so made it possible."
+  },
+  {
+   "term": "Zero-Sum Machine",
+   "definition": "The book’s image of the factory economy, where a fixed number of jobs meant an old worker who could not afford to leave blocked a young one at the gate."
+  },
+  {
+   "term": "Social insurance",
+   "definition": "A compulsory, usually government-run system that pools risks such as sickness, injury, disability or old age, funded by contributions or taxes, and pays benefits as a right when the risk occurs."
+  },
+  {
+   "term": "Dependent pension",
+   "definition": "Under the 1890 act, a Union veteran’s pension based on present inability to do manual labor, from any cause, rather than an injury suffered in the war."
+  },
+  {
+   "term": "Service and age pension",
+   "definition": "A pension awarded for military service plus reaching a set age, as in the 1907 act (62 and older), with no disability required."
+  },
+  {
+   "term": "Mandatory retirement",
+   "definition": "An employer rule forcing workers out at a set age, such as 70 at the Pennsylvania Railroad (1900) and in the 1920 federal civil service law."
+  },
+  {
+   "term": "Labor force participation rate",
+   "definition": "The share of a population group that is working or looking for work. For men 65 and older it fell from about 78 percent in 1880 to about 60 percent in 1920 (Costa)."
+  },
+  {
+   "term": "Noncontributory, unfunded pension",
+   "definition": "An early employer plan paid out of current revenues with no worker contributions and no money set aside, and usually revocable at the employer’s discretion."
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Otto von Bismarck",
+   "role": "German chancellor whose government enacted old-age and disability insurance in 1889 at age 70. The book reads the law as a political weapon against socialism and a vacancy mechanism."
+  },
+  {
+   "name": "Theodore Roosevelt",
+   "role": "His administration’s 1904 Pension Bureau order treated age 62 as grounds for a veteran’s pension. In 1912 his Progressive Party platform called for American social insurance against old age."
+  },
+  {
+   "name": "Eugene V. Debs",
+   "role": "Leader of the 150,000-member American Railway Union in the 1894 Pullman boycott. He was indicted for defying the federal injunction that broke the strike."
+  },
+  {
+   "name": "Andrew Carnegie",
+   "role": "Endowed a $10 million fund in 1905 to give free pensions to college teachers. When the promise proved unaffordable, his Carnegie Corporation helped found the funded TIAA in 1918."
+  },
+  {
+   "name": "Frances Perkins",
+   "role": "Witnessed the 1911 Triangle Shirtwaist fire and led New York’s Committee on Public Safety afterward. As Secretary of Labor she later chaired the committee that drafted the Social Security Act."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "Dependent Pension Act of 1890 (26 Stat. 182)",
+   "year": 1890,
+   "source": "GovInfo, U.S. Statutes at Large",
+   "url": "https://www.govinfo.gov/link/statute/26/182",
+   "why": "Notice the wording ‘unable to earn a support by manual labor’ and the conditions placed on widows. Ask who the law imagines as deserving."
+  },
+  {
+   "title": "Act of February 6, 1907: Service and Age Pensions (34 Stat. 879)",
+   "year": 1907,
+   "source": "GovInfo, U.S. Statutes at Large",
+   "url": "https://www.govinfo.gov/link/statute/34/879",
+   "why": "Find the exact sentence where age replaces disability as the qualifying condition."
+  },
+  {
+   "title": "Progressive Party Platform",
+   "year": 1912,
+   "source": "Teaching American History",
+   "url": "https://teachingamericanhistory.org/document/the-progressive-party-platform-1912/",
+   "why": "Compare its social-insurance plank with Bismarck’s design. Who would pay, and who would be protected?"
+  },
+  {
+   "title": "Civil Service Retirement Act of 1920 (41 Stat.)",
+   "year": 1920,
+   "source": "GovInfo, U.S. Statutes at Large",
+   "url": "https://www.govinfo.gov/link/statute/41/618",
+   "why": "Look at how retirement ages vary by occupation and how the annuity scale rewards long service. Both are evidence for or against the vacancy-mechanism thesis."
+  },
+  {
+   "title": "Age 65 Retirement (the Bismarck myth)",
+   "year": 1889,
+   "source": "SSA Historian’s Office",
+   "url": "https://www.ssa.gov/history/age65.html",
+   "why": "Use the SSA’s account to separate what Bismarck did from what popular history credits him with."
+  }
+ ],
+ "discussionQuestions": [
+  "Test the vacancy-mechanism thesis. If Germany’s 1889 law paid at 70 and, as the book argues, most contributors died before collecting, how many jobs could it actually have opened? Does the 1889 law fit the thesis as well as the Pennsylvania Railroad’s mandatory retirement at 70 does? Use evidence from both.",
+  "The book calls Bismarck’s pension ‘a political weapon wrapped in social welfare.’ Can a policy be both politically motivated and genuinely humanitarian? Use the 1881 imperial message and the 1878 Anti-Socialist Law in your answer.",
+  "Union pensions grew from 537,944 recipients in 1890 to 966,012 in 1893 under pressure from the Grand Army of the Republic. Was this a fair expansion of support to aging veterans, or the template the book describes of ‘costs that escalate far beyond original projections’? What evidence would settle it?",
+  "In 1900, 84.1 percent of older Black men and 64.4 percent of older white men were in the labor force. What explains the gap: occupation, region, wealth, pension access or discrimination? What would you need to know to separate these causes?",
+  "Compare the German (insurance), British (means-tested pension with a character test) and American (veterans’ pension) answers to old age. Which one best honors the Natural Order principles of Not Poverty, Community and Generativity?",
+  "The book argues ‘a man who had grown old on a farm had a role; a man who had grown old in a factory had a problem.’ Does the evidence from this era support that contrast, or does it romanticize farm life? Consider sharecroppers and farm widows."
+ ],
+ "assignment": {
+  "title": "Policy Brief: Was Retirement Born as a Vacancy Mechanism?",
+  "type": "Policy brief",
+  "prompt": "Write to a modern congressional committee as a staff historian. Your brief evaluates the book’s thesis that the first retirement systems were ‘a vacancy mechanism… designed to clear a position’ rather than to honor a life. Examine at least two of these cases: Bismarck’s 1889 law and its 1916 change; the Dependent Pension Act of 1890 and the age-based pensions of 1904 and 1907; the Pennsylvania Railroad plan of 1900; the Civil Service Retirement Act of 1920. For each, identify the stated purpose, the design features (age, service, funding, mandatory exit) and the evidence of actual purpose. Reach a verdict: supported, partly supported, or not supported. Close with one lesson for today’s debate over retirement ages.",
+  "deliverable": "1,000–1,300 word policy brief with an executive summary (≤150 words), a findings section, a verdict and one recommendation; at least four sources, including two primary sources.",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Evidence & historical accuracy",
+    "points": 30,
+    "exemplary": "Uses precise, correctly cited facts from primary statutes and scholarship, such as ages, rates, dates and coverage, with no errors.",
+    "proficient": "Evidence is accurate and relevant, with minor gaps or a missing citation.",
+    "developing": "Evidence is general or partly inaccurate, or relies on a single source.",
+    "beginning": "Little evidence, or significant factual errors."
+   },
+   {
+    "criterion": "Evaluation of the thesis",
+    "points": 30,
+    "exemplary": "Tests the thesis case by case, engages the strongest counter-evidence, and reaches a nuanced verdict that follows from the evidence.",
+    "proficient": "Reaches a clear verdict supported by evidence, with some attention to counterarguments.",
+    "developing": "The verdict is asserted more than demonstrated, or counter-evidence is ignored.",
+    "beginning": "No clear verdict, or the brief simply restates the book."
+   },
+   {
+    "criterion": "Policy relevance & recommendation",
+    "points": 20,
+    "exemplary": "Draws a specific, well-reasoned lesson for today’s retirement-age debate that follows from the findings.",
+    "proficient": "Offers a reasonable lesson loosely tied to the findings.",
+    "developing": "The lesson is generic or disconnected from the evidence.",
+    "beginning": "No recommendation."
+   },
+   {
+    "criterion": "Brief format & clarity",
+    "points": 20,
+    "exemplary": "Tight executive summary, scannable structure, plain professional prose, and correct citations.",
+    "proficient": "Follows the format with minor clarity or citation issues.",
+    "developing": "Format is partly followed; the prose is wordy or unclear.",
+    "beginning": "Does not follow the brief format."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "At what age did Germany’s 1889 old-age pension originally begin paying?",
+   "options": [
+    "60",
+    "65",
+    "70",
+    "75"
+   ],
+   "answer": 2,
+   "explain": "The original age was 70, and Bismarck was 74. Germany lowered it to 65 in 1916, eighteen years after his death."
+  },
+  {
+   "q": "What did the Act of February 6, 1907 make sufficient for a Union veteran’s pension?",
+   "options": [
+    "Any wound received in battle",
+    "Reaching age 62, with 90 days’ service and an honorable discharge",
+    "Proof of poverty",
+    "Thirty years of federal employment"
+   ],
+   "answer": 1,
+   "explain": "The 1907 act paid veterans on age alone: $12 a month at 62, $15 at 70 and $20 at 75. No disability was required."
+  },
+  {
+   "q": "Roughly what share of federal expenditures went to Union Army pensions in 1893?",
+   "options": [
+    "About 5 percent",
+    "About 15 percent",
+    "More than 40 percent",
+    "About 75 percent"
+   ],
+   "answer": 2,
+   "explain": "Economic historian Dora Costa estimates Union Army pensions took more than 40 percent of federal expenditures in 1893."
+  },
+  {
+   "q": "Which 1920 law created a retirement system for federal civil servants?",
+   "options": [
+    "The Social Security Act",
+    "The Railroad Retirement Act",
+    "The Civil Service Retirement Act",
+    "The Revenue Act"
+   ],
+   "answer": 2,
+   "explain": "The Civil Service Retirement Act, approved May 22, 1920, set retirement ages of 70, 65 or 62 depending on occupation, with at least 15 years of service."
+  },
+  {
+   "q": "In 1900, about what share of Black men aged 65 and older were in the labor force?",
+   "options": [
+    "About 25 percent",
+    "About 45 percent",
+    "About 64 percent",
+    "About 84 percent"
+   ],
+   "answer": 3,
+   "explain": "Costa’s census data show 84.1 percent of older Black men in the labor force in 1900, compared with 64.4 percent of older white men."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SSA Historian’s Office — Otto von Bismarck",
+   "url": "https://www.ssa.gov/history/ottob.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Age 65 Retirement",
+   "url": "https://www.ssa.gov/history/age65.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Pre-Social Security period timeline",
+   "url": "https://www.ssa.gov/history/1900.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Frances Perkins",
+   "url": "https://www.ssa.gov/history/fperkins.html"
+  },
+  {
+   "label": "GovInfo — Dependent Pension Act, June 27, 1890 (26 Stat. 182)",
+   "url": "https://www.govinfo.gov/link/statute/26/182"
+  },
+  {
+   "label": "GovInfo — Act of February 6, 1907 (34 Stat. 879)",
+   "url": "https://www.govinfo.gov/link/statute/34/879"
+  },
+  {
+   "label": "GovInfo — Civil Service Retirement Act, May 22, 1920",
+   "url": "https://www.govinfo.gov/link/statute/41/618"
+  },
+  {
+   "label": "SSA Social Security Bulletin — Civil Service Retirement (1941)",
+   "url": "https://ssa.gov/policy/docs/ssb/v4n4/v4n4p29.pdf"
+  },
+  {
+   "label": "SSA Social Security Bulletin — early private pension plans",
+   "url": "https://ssa.gov/policy/docs/ssb/v16n3/v16n3p7.pdf"
+  },
+  {
+   "label": "Costa, The Evolution of Retirement, ch. 2 (NBER)",
+   "url": "https://www.nber.org/chapters/c6108.pdf"
+  },
+  {
+   "label": "Costa, Union Army pensions chapter (NBER)",
+   "url": "https://www.nber.org/chapters/c6114.pdf"
+  },
+  {
+   "label": "EH.Net — Economic History of Retirement in the United States",
+   "url": "https://eh.net/encyclopedia/economic-history-of-retirement-in-the-united-states/"
+  },
+  {
+   "label": "Gratton, ‘A Triumph in Modern Philanthropy’: Age Criteria at the Pennsylvania Railroad, Business History Review (1990)",
+   "url": "https://ideas.repec.org/a/cup/buhirw/v64y1990i04p630-656_05.html"
+  },
+  {
+   "label": "Essays in Economic & Business History — Pennsylvania Railroad pension plan",
+   "url": "https://ebhsoc.org/journal/index.php/ebhs/article/view/180"
+  },
+  {
+   "label": "VCU Social Welfare History Project — Veteran’s Pensions",
+   "url": "https://socialwelfare.library.vcu.edu/social-security/veterans-pensions-early-history/"
+  },
+  {
+   "label": "VCU Social Welfare History Project — Old Age Assistance: A Brief History",
+   "url": "https://socialwelfare.library.vcu.edu/public-welfare/old-age-assistance-a-brief-history/"
+  },
+  {
+   "label": "Dependent and Disability Pension Act (citing McConnell, Quadagno, Linker)",
+   "url": "https://en.wikipedia.org/wiki/Dependent_and_Disability_Pension_Act"
+  },
+  {
+   "label": "Sherwood Act (1912)",
+   "url": "https://en.wikipedia.org/wiki/Sherwood_Act"
+  },
+  {
+   "label": "Essential Civil War Curriculum — Civil War Pensions",
+   "url": "https://www.essentialcivilwarcurriculum.com/civil-war-pensions.html"
+  },
+  {
+   "label": "EBSCO Research Starters — Anti-Socialist Law of 1878",
+   "url": "https://www.ebsco.com/research-starters/history/anti-socialist-law-1878"
+  },
+  {
+   "label": "Old Age Pensions Act 1908 (UK)",
+   "url": "https://en.wikipedia.org/wiki/Old_Age_Pensions_Act_1908"
+  },
+  {
+   "label": "Carnegie Corporation of New York — Carnegie Teachers Pension Fund and TIAA",
+   "url": "https://carnegie.org/?p=3744"
+  },
+  {
+   "label": "TIAA",
+   "url": "https://en.wikipedia.org/wiki/TIAA"
+  },
+  {
+   "label": "National Archives (Reagan Library blog) — Sixteenth Amendment",
+   "url": "https://reagan.blogs.archives.gov/2022/09/20/constitutional-amendments-series-amendment-xvi-income-taxes"
+  },
+  {
+   "label": "FRASER — Federal Reserve Act",
+   "url": "https://fraser.stlouisfed.org/blog/2016/12/federal-reserve-act"
+  },
+  {
+   "label": "Federal Reserve History — Banking Panics of the Gilded Age",
+   "url": "https://www.federalreservehistory.org/essays/banking_panics_of_the_gilded_age"
+  },
+  {
+   "label": "Federal Reserve History — The Panic of 1907",
+   "url": "https://www.federalreservehistory.org/essays/panic-of-1907"
+  },
+  {
+   "label": "Panic of 1907 (citing Bruner & Carr 2007)",
+   "url": "https://en.wikipedia.org/wiki/Panic_of_1907"
+  },
+  {
+   "label": "Closing milestones of the Dow Jones Industrial Average",
+   "url": "https://en.wikipedia.org/wiki/Closing_milestones_of_the_Dow_Jones_Industrial_Average"
+  },
+  {
+   "label": "Recession of 1920–1921 (citing NBER, Romer, Lebergott)",
+   "url": "https://en.wikipedia.org/wiki/Recession_of_1920%E2%80%931921"
+  },
+  {
+   "label": "NBER — U.S. Business Cycle Expansions and Contractions",
+   "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+  },
+  {
+   "label": "National Park Service — The Strike of 1894 (Pullman)",
+   "url": "https://home.nps.gov/pull/learn/historyculture/the-strike-of-1894.htm"
+  },
+  {
+   "label": "Coxey’s Army",
+   "url": "https://en.wikipedia.org/wiki/Coxey%27s_Army"
+  },
+  {
+   "label": "Omaha Platform (1892)",
+   "url": "https://en.wikipedia.org/wiki/Omaha_Platform"
+  },
+  {
+   "label": "American Association for Labor Legislation",
+   "url": "https://en.wikipedia.org/wiki/American_Association_for_Labor_Legislation"
+  },
+  {
+   "label": "Teaching American History — Progressive Party Platform (1912)",
+   "url": "https://teachingamericanhistory.org/document/the-progressive-party-platform-1912/"
+  },
+  {
+   "label": "Triangle Shirtwaist Factory fire",
+   "url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire"
+  },
+  {
+   "label": "Immigration to the United States (historical tables)",
+   "url": "https://en.wikipedia.org/wiki/Immigration_to_the_United_States"
+  },
+  {
+   "label": "Great Migration (African American)",
+   "url": "https://en.wikipedia.org/wiki/Great_Migration_(African_American)"
+  },
+  {
+   "label": "Ford Model T",
+   "url": "https://en.wikipedia.org/wiki/Ford_Model_T"
+  },
+  {
+   "label": "American entry into World War I",
+   "url": "https://en.wikipedia.org/wiki/American_entry_into_World_War_I"
+  },
+  {
+   "label": "U.S. Department of Veterans Affairs — America’s Wars fact sheet",
+   "url": "https://www.va.gov/opa/publications/factsheets/fs_americas_wars.pdf"
+  },
+  {
+   "label": "CDC — 1918 Pandemic (H1N1 virus)",
+   "url": "https://archive.cdc.gov/www_cdc_gov/flu/pandemic-resources/1918-pandemic-h1n1.html"
+  },
+  {
+   "label": "National Archives — 19th Amendment",
+   "url": "https://www.archives.gov/milestone-documents/19th-amendment"
+  },
+  {
+   "label": "SSA Historian’s Office — Medicare signed July 30, 1965",
+   "url": "https://www.ssa.gov/history/1960.html"
+  }
+ ]
 }

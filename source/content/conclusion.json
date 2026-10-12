@@ -1,173 +1,413 @@
 {
-  "id": "conclusion",
-  "number": 0,
-  "title": "Conclusion",
-  "years": "Orientation",
-  "definition": "con·clu·sion (noun) the ending of something",
-  "tagline": "A history that begins at the end. Are you watching closely?",
-  "bigQuestion": "Who gave you the dream of retirement, and what would change if you knew where it came from?",
-  "overview": "Most history books start at the beginning. This one starts with its ending, the way Christopher Nolan’s Memento runs backward so the audience can understand how it ends. Grimm states his destination on the cover: catastrophe. His earlier book, The Future Poor, argued that about 9 in 10 Americans under 50 who earn less than $150,000 a year are on track to live at or below the poverty level in old age. This course asks how we got here. Retirement, which Grimm defines as leaving work at 65 and living off your money, is only about 130 years old.\n\nThe orientation hands you the tools for reading the book. The C’s mark its chapters, from Classical to Correction. The nine seeds are ideas planted at different moments that grew together into what we now call retirement. The conflation is the merging of a humanitarian question (how do we care for people as they age?) with a structural one (what systems do we build to do it?). Today the structural answer, in a nod to an early-2000s rock lyric, is: you.\n\nTwo Nolan films frame the book. In Inception, an idea planted in a dreamer’s mind feels like their own, and ‘the kick’ wakes them up; this book means to be the kick. From The Prestige comes the question that recurs through every chapter: Are you watching closely?",
-  "learningObjectives": [
-    "Explain the book’s reverse structure and how its framing devices work: the C’s, the seeds, Nolan’s films and the question ‘Are you watching closely?’",
-    "Distinguish the humanitarian question from the structural question, and explain what the book means by their ‘conflation.’",
-    "Identify the nine seeds by number and name, and give the era in which the book says each first appears.",
-    "State the Future Poor thesis precisely and identify the data that would be needed to test it.",
-    "Apply the Two-Person Lens to your own family by comparing how a 60-year-old and a 20-year-old face retirement in the same year."
-  ],
-  "policyEvents": [
-    {
-      "year": 1889,
-      "title": "Germany’s old-age and disability insurance",
-      "type": "legislation",
-      "detail": "Under Otto von Bismarck, Germany adopted the world’s first national old-age social insurance program, with benefits starting at age 70. The age was lowered to 65 in 1916, after Bismarck’s death.",
-      "significance": "The book treats this as the start of the 130-year experiment and of Seed 2 (Government Involvement). the Conception unit examines it in depth."
-    },
-    {
-      "year": 1935,
-      "title": "Social Security Act",
-      "type": "legislation",
-      "detail": "Approved August 14, 1935. It created federal grants for state old-age assistance and a federal old-age benefit program starting at 65. The old-age insurance program left out agricultural and domestic workers; coverage was extended to them in 1950 and 1954.",
-      "significance": "It fixed 65 as the national definition of old age (Seed 3). Its exclusions also became a case study for Seeds 1 and 7."
-    },
-    {
-      "year": 1974,
-      "title": "Employee Retirement Income Security Act (ERISA)",
-      "type": "legislation",
-      "detail": "President Gerald Ford signed ERISA on September 2, 1974. It set minimum standards for private-sector pension plans and created the Pension Benefit Guaranty Corporation to insure the benefits of workers in failed, underfunded plans.",
-      "significance": "Federal law took on the job of backing The Promise (Seed 8) at about the moment the book’s 1950–1980 ‘anomaly’ was ending."
-    },
-    {
-      "year": 1978,
-      "title": "Revenue Act adds Section 401(k)",
-      "type": "legislation",
-      "detail": "Enacted November 6, 1978, the Revenue Act added Section 401(k) to the Internal Revenue Code. The change let employees defer part of their pay into tax-advantaged accounts.",
-      "significance": "This was the legal basis for the Great Risk Transfer. The book dates Seed 9 (Individualism) to 1981 and the first 401(k) plans."
-    },
-    {
-      "year": 1983,
-      "title": "Social Security Amendments of 1983",
-      "type": "legislation",
-      "detail": "President Reagan signed the amendments on April 20, 1983. Among other changes, they gradually raised the age for full benefits from 65 to 67. For anyone born in 1960 or later, full retirement age is 67, and claiming at 62 cuts benefits by 30 percent.",
-      "significance": "The age was raised, but the cultural expectation of 65 stayed where it was, which is the book’s ‘65 = Old and Done’ (Seed 3)."
-    },
-    {
-      "year": 2026,
-      "title": "2026 Trustees Report (projected depletion dates)",
-      "type": "policy",
-      "detail": "The 2026 Social Security Trustees Report projects that the retirement (OASI) trust fund reserves will run out in the fourth quarter of 2032. At that point incoming revenue would pay about 78 percent of scheduled benefits. Combined OASDI reserves are projected to run out in 2034, after which about 83 percent would be payable. These are projections, under the Trustees’ intermediate assumptions.",
-      "significance": "The book points to this kind of projection when it calls the catastrophe ‘a projection of what is already underway.’ Notice that the projection is of reduced benefits, not zero benefits."
-    }
-  ],
-  "marketDrops": [],
-  "socialMovements": [],
-  "inequities": [
-    {
-      "title": "Retirement plan access tracks pay",
-      "detail": "In March 2025, 48 percent of civilian workers in the lowest-paid quarter had access to a defined-contribution plan, and 22 percent participated. In the highest-paid quarter, 77 percent had access and 64 percent participated (BLS). Access to a defined-benefit pension ran from 8 percent to 43 percent across the same groups."
-    },
-    {
-      "title": "The racial gap in retirement accounts",
-      "detail": "In the Federal Reserve’s 2022 Survey of Consumer Finances, 62 percent of White families had a retirement account, compared with 35 percent of Black families and 28 percent of Hispanic families. Median balances among account holders were $100,000, $39,000 and $55,600, respectively."
-    },
-    {
-      "title": "The 1935 exclusions",
-      "detail": "Social Security’s original old-age insurance left out agricultural and domestic workers. An SSA analysis estimates that 65 percent of employed African Americans worked in those sectors, though 74 percent of the excluded workers were white. Its author attributes the exclusion to tax-collection feasibility rather than racial intent. Historians still debate that conclusion."
-    }
-  ],
-  "historicalContext": [],
-  "seeds": [
-    {"seed": 1, "stage": "planted", "detail": "Segregation & Boundaries: who deserves protection and who does not. The book says this seed is older than retirement itself, and it runs from poor laws and coverture to the 1935 exclusion of agricultural and domestic workers."},
-    {"seed": 2, "stage": "planted", "detail": "Government Involvement: retirement as political management, beginning with Bismarck’s pension in 1889. The state wavers between protecting older people and abandoning them."},
-    {"seed": 3, "stage": "planted", "detail": "65 = Old and Done: a number that became a cultural endpoint for identity. It has never been updated in people’s minds, even though longevity grew and the law moved full benefits to 67."},
-    {"seed": 4, "stage": "planted", "detail": "Market Growth: the belief that stock markets reliably rise and can do the work of saving. The book places its first appearance in the Roaring Twenties, at 1924."},
-    {"seed": 5, "stage": "planted", "detail": "Search for Leisure: retirement as an earned vacation. It first appears in the consumer economy of the 1920s and blooms after the war with Sun City (1960) and the ‘golden years.’"},
-    {"seed": 6, "stage": "planted", "detail": "Get Rich Quick: speculation, speed and the hope of a big score. It runs from 1920s margin buying to the bull markets of the 1980s and 1990s, day trading and crypto."},
-    {"seed": 7, "stage": "planted", "detail": "Two Americas: industrial, urban and unionized America on one side; agricultural, rural and domestic-work America on the other. The system was built for the first and leaves out the second."},
-    {"seed": 8, "stage": "planted", "detail": "The Promise: the corporate pension bargain after 1946, ‘work here 30 years and we’ll take care of you.’ When it fails, people experience it as betrayal, a moral wound and not only a financial one."},
-    {"seed": 9, "stage": "planted", "detail": "Individualism: from 1981, with the first 401(k) plans and the Reagan and Thatcher era, collective security gives way to personal responsibility. Systemic failure gets recast as personal failure: ‘The plan didn’t fail you. You failed the plan.’"}
-  ],
-  "twoPersonLens": {
-    "year": 2026,
-    "older": {
-      "born": 1966,
-      "headline": "Trying to exit a system that keeps moving",
-      "text": "Born in 1966, they were twelve when Congress added Section 401(k) to the tax code and a teenager when the 1983 amendments quietly moved their full retirement age to 67. They grew up hearing about the 30-years-and-a-pension bargain many of their parents’ employers offered, and spent their career with a 401(k) instead. They were forty-two in the 2008 crash. Now, in 2026, they are sixty and can see the finish line. Full benefits arrive at 67, in 2033. That is about a year after the date the Trustees project the retirement trust fund to run out, when about 78 percent of scheduled benefits would be payable. They are still trying to exit a system that keeps moving the exit."
-    },
-    "younger": {
-      "born": 2006,
-      "headline": "Never entered the system at all",
-      "text": "Born in 2006, they have no memory of a world before smartphones and none of the 2008 crash, which happened when they were two. They were barely a teenager when the pandemic shut down their schools. In 2026 they are twenty: maybe in a classroom, maybe in this course, maybe working jobs that do not offer a retirement plan. Among the lowest-paid quarter of workers, fewer than half have access to a defined-contribution plan and only about one in five participates. The traditional pension their grandparents knew is something they have only heard about. Their full retirement age is 67, in 2073. Nobody has asked them where their picture of the future came from."
-    },
-    "irony": "The sixty-year-old is trying to finish a dream that was handed to them; the twenty-year-old may be the first generation free to ask who handed it out."
+ "id": "conclusion",
+ "number": 0,
+ "title": "Conclusion",
+ "years": "Orientation",
+ "definition": "con·clu·sion (noun) the ending of something",
+ "tagline": "A history that begins at the end. Are you watching closely?",
+ "bigQuestion": "Who gave you the dream of retirement, and what would change if you knew where it came from?",
+ "overview": "Most history books start at the beginning. This one starts with its ending, the way Christopher Nolan’s Memento runs backward so the audience can understand how it ends. Grimm states his destination on the cover: catastrophe. His earlier book, The Future Poor, argued that about 9 in 10 Americans under 50 who earn less than $150,000 a year are on track to live at or below the poverty level in old age. This course asks how we got here. Retirement, which Grimm defines as leaving work at 65 and living off your money, is only about 130 years old.\n\nThe orientation hands you the tools for reading the book. The C’s mark its chapters, from Classical to Correction. The nine seeds are ideas planted at different moments that grew together into what we now call retirement. The conflation is the merging of a humanitarian question (how do we care for people as they age?) with a structural one (what systems do we build to do it?). Today the structural answer, in a nod to an early-2000s rock lyric, is: you.\n\nTwo Nolan films frame the book. In Inception, an idea planted in a dreamer’s mind feels like their own, and ‘the kick’ wakes them up; this book means to be the kick. From The Prestige comes the question that recurs through every chapter: Are you watching closely?",
+ "learningObjectives": [
+  "Explain the book’s reverse structure and how its framing devices work: the C’s, the seeds, Nolan’s films and the question ‘Are you watching closely?’",
+  "Distinguish the humanitarian question from the structural question, and explain what the book means by their ‘conflation.’",
+  "Identify the nine seeds by number and name, and give the era in which the book says each first appears.",
+  "State the Future Poor thesis precisely and identify the data that would be needed to test it.",
+  "Apply the Two-Person Lens to your own family by comparing how a 60-year-old and a 20-year-old face retirement in the same year."
+ ],
+ "policyEvents": [
+  {
+   "year": 1889,
+   "title": "Germany’s old-age and disability insurance",
+   "type": "legislation",
+   "detail": "Under Otto von Bismarck, Germany adopted the world’s first national old-age social insurance program, with benefits starting at age 70. The age was lowered to 65 in 1916, after Bismarck’s death.",
+   "significance": "The book treats this as the start of the 130-year experiment and of Seed 2 (Government Involvement). the Conception unit examines it in depth."
   },
-  "keyTerms": [
-    {"term": "Retirement (as the book defines it)", "definition": "Leaving work at 65 and living the remaining years off one’s money. Grimm argues this idea is only about 130 years old."},
-    {"term": "The Conflation", "definition": "The merging of two different questions. One is humanitarian: how do we care for people as they age? The other is structural: what systems do we build to do it? Today’s structural answer is ‘you.’"},
-    {"term": "Seeds", "definition": "Nine ideas, each planted in a particular era, that grew together into the modern idea of retirement. The book groups them as foundation, culture and mechanism seeds."},
-    {"term": "The C’s", "definition": "The alliterative device that names every chapter, from Conclusion and Classical through Correction. The book uses it to train readers to notice patterns once they have been pointed out."},
-    {"term": "Inception", "definition": "From Nolan’s 2010 film: planting an idea in someone’s mind so that it feels like their own. The book argues retirement is an idea of this kind."},
-    {"term": "The Kick", "definition": "In Inception, the jolt (like the feeling of falling) that wakes a dreamer. The book calls itself ‘the kick,’ and calls the client question ‘Who gave you that dream?’ a small one."},
-    {"term": "Are you watching closely?", "definition": "The book’s epigraph and recurring refrain, taken from The Prestige (2006). It asks readers to watch for the trick inside a familiar story."},
-    {"term": "The Future Poor thesis", "definition": "The claim from Grimm’s first book that about 9 in 10 people under 50 earning less than $150,000 a year (‘sub-50, sub-150’) are on track to live at or below poverty level in old age."},
-    {"term": "Two-Person Lens", "definition": "The course’s comparison device. At each turning-point year it pairs a 60-year-old leaving work with a 20-year-old entering it: the same moment, two realities."}
-  ],
-  "keyFigures": [
-    {"name": "Jonathan Grimm", "role": "Financial ethicist, founder of Fernbridge Advisors and author of The Future Poor: How families and communities can survive the looming retirement crisis. This course is built on his book."},
-    {"name": "Christopher Nolan", "role": "Director of Memento (2000), The Prestige (2006) and Inception (2010). His nonlinear storytelling is the model for the book’s ending-first structure."},
-    {"name": "Christopher Priest", "role": "Author of the 1995 novel The Prestige, which Nolan adapted. He is another of the book’s C’s."},
-    {"name": "Otto von Bismarck", "role": "German chancellor whose 1889 old-age pension the book treats as the moment retirement was conceived. the Conception unit examines him closely."}
-  ],
-  "primarySources": [
-    {"title": "2026 OASDI Trustees Report: Conclusion", "year": 2026, "source": "Social Security Administration, Office of the Chief Actuary", "url": "https://www.ssa.gov/oact/tr/2026/II_E_conclu.html", "why": "Read the projected depletion dates and payable percentages yourself. Does ‘catastrophe’ describe what the Trustees project?"},
-    {"title": "Retirement benefits: access, participation and take-up by wage, March 2025", "year": 2025, "source": "U.S. Bureau of Labor Statistics", "url": "https://www.bls.gov/charts/employee-benefits/percent-access-participation-takeup-retirement-benefits-by-wage.htm", "why": "Look for Seed 7 (Two Americas) in the gap between the lowest-paid and highest-paid quarters of workers."},
-    {"title": "Age 65 Retirement", "year": 1935, "source": "SSA Historian’s Office", "url": "https://www.ssa.gov/history/age65.html", "why": "Find out how the United States actually chose 65, and test the common Bismarck story against it."},
-    {"title": "Normal Retirement Age by year of birth", "year": 1983, "source": "SSA Office of the Chief Actuary", "url": "https://www.ssa.gov/oact/progdata/nra.html", "why": "Look up your own full retirement age and a parent’s or grandparent’s, then compare both with the age of 65 that people still assume."}
-  ],
-  "discussionQuestions": [
-    "Before reading further, write your own definition of retirement. Where did each part of it come from: family, employers, media, school, finance apps?",
-    "The book opens by giving away its ending. In this course, what do you gain and what do you lose by knowing the destination (‘catastrophe’) before you see the evidence?",
-    "Restate the conflation in your own words. Can the humanitarian question (how do we care for people as they age?) be answered without also answering the structural one? Give an example.",
-    "Test the book’s framing. Social Security has sharply reduced poverty among older Americans, and the 2026 Trustees Report projects that about 83 percent of scheduled benefits would still be payable after 2034, not zero. Does ‘catastrophe’ fit the evidence, or does it overstate it? What would you need to know to decide?",
-    "The Future Poor thesis makes a specific prediction (about 9 in 10 ‘sub-50, sub-150’ Americans at or below poverty in old age). What data, definitions and assumptions would you need to verify or refute it?",
-    "Which of the nine seeds do you expect to matter most to your own generation? Write down your prediction now; you will revisit it at the end of the course."
-  ],
-  "assignment": {
-    "title": "Who Gave You That Dream?",
-    "type": "Two-Person Lens interview + seed hypothesis",
-    "prompt": "Interview someone at least 25 years older than you, ideally a parent, grandparent or mentor near 60, and then interview yourself with the same questions. Ask: What does retirement mean to you? When did you first picture it? Who or what gave you that picture? What would you want instead, if money were not the issue? Record and transcribe the key answers. Then write a reflective essay comparing the two ‘dreams’ through the Two-Person Lens. Close with a seed hypothesis: name the two or three seeds (by number and name) that you predict shaped each person’s dream most, and say what evidence from later modules would confirm or overturn your prediction. Keep the essay; you will revise the hypothesis in the final module.",
-    "deliverable": "900–1,200 word reflective essay, plus an appendix of interview notes or transcript excerpts (1–2 pages) and a one-paragraph seed hypothesis. Get the interviewee’s consent; use first names or pseudonyms only.",
-    "points": 100,
-    "rubric": [
-      {"criterion": "Interview quality & evidence", "points": 25, "exemplary": "Asks all the core questions plus good follow-ups. Quotes and paraphrases are specific and revealing, and consent and privacy are handled properly.", "proficient": "Covers the core questions with useful quotations.", "developing": "Covers some questions; the answers are thin or mostly summarized.", "beginning": "The interview is missing, superficial or undocumented."},
-      {"criterion": "Two-Person Lens comparison", "points": 25, "exemplary": "Shows clearly how one moment looks different to two generations, with concrete details from each person’s life and era.", "proficient": "Makes a clear comparison with some generational context.", "developing": "Describes the two interviews side by side without much comparison.", "beginning": "No meaningful comparison."},
-      {"criterion": "Use of course frameworks", "points": 30, "exemplary": "Uses the conflation, the ‘Who gave you that dream?’ question and the nine seeds accurately and insightfully. The seed hypothesis is specific and can be tested.", "proficient": "Uses the frameworks accurately; the hypothesis is reasonable but general.", "developing": "Mentions the frameworks loosely or with minor errors; the hypothesis is vague.", "beginning": "Frameworks are missing or misused, or there is no hypothesis."},
-      {"criterion": "Reflection & writing", "points": 20, "exemplary": "Honest, thoughtful reflection on the student’s own assumptions, in clear and well-organized prose.", "proficient": "Some genuine reflection; clear writing with minor issues.", "developing": "Little reflection, or the writing gets in the way of the meaning.", "beginning": "No reflection; disorganized."}
-    ]
+  {
+   "year": 1935,
+   "title": "Social Security Act",
+   "type": "legislation",
+   "detail": "Approved August 14, 1935. It created federal grants for state old-age assistance and a federal old-age benefit program starting at 65. The old-age insurance program left out agricultural and domestic workers; coverage was extended to them in 1950 and 1954.",
+   "significance": "It fixed 65 as the national definition of old age (Seed 3). Its exclusions also became a case study for Seeds 1 and 7."
   },
-  "quiz": [
-    {"q": "What two questions does the book say have been ‘conflated’?", "options": ["How to save and how to invest", "How we care for people as they age, and what systems we build to do it", "When to retire and where to live", "Whether to claim Social Security early or late"], "answer": 1, "explain": "The humanitarian question (caring for people as they age) has been merged with the structural question (the systems that do it). Today the structural answer is ‘you.’"},
-    {"q": "According to the Future Poor thesis, about how many people under 50 earning under $150,000 are on track to live at or below poverty in old age?", "options": ["1 in 10", "3 in 10", "5 in 10", "9 in 10"], "answer": 3, "explain": "Grimm’s thesis in The Future Poor is that about 9 out of 10 ‘sub-50, sub-150’ Americans are on that track."},
-    {"q": "In Inception, and in the book’s use of it, what is ‘the kick’?", "options": ["The idea planted in the dreamer’s mind", "The jolt that wakes a dreamer from the dream", "The architect who designs the dream", "A financial penalty for early withdrawal"], "answer": 1, "explain": "The kick, like the feeling of falling, wakes the dreamer. The book calls itself ‘the kick’ that wakes readers from the retirement dream."},
-    {"q": "Which seed does the book say begins with Bismarck’s pension in 1889?", "options": ["Seed 2: Government Involvement", "Seed 4: Market Growth", "Seed 8: The Promise", "Seed 9: Individualism"], "answer": 0, "explain": "Government Involvement begins with Bismarck in 1889: retirement as political management, wavering between protection and abandonment."},
-    {"q": "According to the 2026 Social Security Trustees Report, when are combined OASDI trust fund reserves projected to be depleted?", "options": ["2028", "2034", "2041", "Never"], "answer": 1, "explain": "The Trustees project combined reserves will run out in 2034, after which about 83 percent of scheduled benefits would be payable. The retirement (OASI) fund alone is projected to run out in late 2032."}
-  ],
-  "sources": [
-    {"label": "SSA — 2026 OASDI Trustees Report, Conclusion", "url": "https://www.ssa.gov/oact/tr/2026/II_E_conclu.html"},
-    {"label": "SSA press release — 2026 Trustees Report (June 9, 2026)", "url": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html"},
-    {"label": "SSA Historian’s Office — Otto von Bismarck", "url": "https://www.ssa.gov/history/ottob.html"},
-    {"label": "SSA Historian’s Office — Age 65 Retirement", "url": "https://www.ssa.gov/history/age65.html"},
-    {"label": "SSA Historian’s Office — Social Security Act of 1935", "url": "https://www.ssa.gov/history/35act.html"},
-    {"label": "SSA — Normal Retirement Age by year of birth", "url": "https://www.ssa.gov/oact/progdata/nra.html"},
-    {"label": "SSA — Benefit reduction for early retirement", "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"},
-    {"label": "SSA Social Security Bulletin — 1983 Amendments: Legislative History and Summary", "url": "https://www.ssa.gov/policy/docs/ssb/v46n7/v46n7p3.pdf"},
-    {"label": "SSA Historian’s Office — 1980s timeline", "url": "https://www.ssa.gov/history/1980.html"},
-    {"label": "SSA Social Security Bulletin — DeWitt, The Decision to Exclude Agricultural and Domestic Workers", "url": "https://www.ssa.gov/policy/docs/ssb/v70n4/v70n4p49.html"},
-    {"label": "BLS — Retirement benefits by wage category, March 2025", "url": "https://www.bls.gov/charts/employee-benefits/percent-access-participation-takeup-retirement-benefits-by-wage.htm"},
-    {"label": "Pew Research Center — Stock and retirement account ownership by race (SCF 2022)", "url": "https://www.pewresearch.org/short-reads/2024/03/06/a-booming-us-stock-market-doesnt-benefit-all-racial-and-ethnic-groups-equally/"},
-    {"label": "Employee Retirement Income Security Act of 1974", "url": "https://en.wikipedia.org/wiki/Employee_Retirement_Income_Security_Act_of_1974"},
-    {"label": "401(k) — Revenue Act of 1978", "url": "https://en.wikipedia.org/wiki/401(k)"},
-    {"label": "Inception (2010 film)", "url": "https://en.wikipedia.org/wiki/Inception"},
-    {"label": "The Prestige (2006 film)", "url": "https://en.wikipedia.org/wiki/The_Prestige_(film)"},
-    {"label": "Wikiquote — The Prestige", "url": "https://en.wikiquote.org/wiki/The_Prestige_(film)"}
+  {
+   "year": 1974,
+   "title": "Employee Retirement Income Security Act (ERISA)",
+   "type": "legislation",
+   "detail": "President Gerald Ford signed ERISA on September 2, 1974. It set minimum standards for private-sector pension plans and created the Pension Benefit Guaranty Corporation to insure the benefits of workers in failed, underfunded plans.",
+   "significance": "Federal law took on the job of backing The Promise (Seed 8) at about the moment the book’s 1950–1980 ‘anomaly’ was ending."
+  },
+  {
+   "year": 1978,
+   "title": "Revenue Act adds Section 401(k)",
+   "type": "legislation",
+   "detail": "Enacted November 6, 1978, the Revenue Act added Section 401(k) to the Internal Revenue Code. The change let employees defer part of their pay into tax-advantaged accounts.",
+   "significance": "This was the legal basis for the Great Risk Transfer. The book dates Seed 9 (Individualism) to 1981 and the first 401(k) plans."
+  },
+  {
+   "year": 1983,
+   "title": "Social Security Amendments of 1983",
+   "type": "legislation",
+   "detail": "President Reagan signed the amendments on April 20, 1983. Among other changes, they gradually raised the age for full benefits from 65 to 67. For anyone born in 1960 or later, full retirement age is 67, and claiming at 62 cuts benefits by 30 percent.",
+   "significance": "The age was raised, but the cultural expectation of 65 stayed where it was, which is the book’s ‘65 = Old and Done’ (Seed 3)."
+  },
+  {
+   "year": 2026,
+   "title": "2026 Trustees Report (projected depletion dates)",
+   "type": "policy",
+   "detail": "The 2026 Social Security Trustees Report projects that the retirement (OASI) trust fund reserves will run out in the fourth quarter of 2032. At that point incoming revenue would pay about 78 percent of scheduled benefits. Combined OASDI reserves are projected to run out in 2034, after which about 83 percent would be payable. These are projections, under the Trustees’ intermediate assumptions.",
+   "significance": "The book points to this kind of projection when it calls the catastrophe ‘a projection of what is already underway.’ Notice that the projection is of reduced benefits, not zero benefits."
+  }
+ ],
+ "marketDrops": [],
+ "socialMovements": [],
+ "inequities": [
+  {
+   "title": "Retirement plan access tracks pay",
+   "detail": "In March 2025, 48 percent of civilian workers in the lowest-paid quarter had access to a defined-contribution plan, and 22 percent participated. In the highest-paid quarter, 77 percent had access and 64 percent participated (BLS). Access to a defined-benefit pension ran from 8 percent to 43 percent across the same groups.",
+   "vars": [
+    "income",
+    "job"
+   ]
+  },
+  {
+   "title": "The racial gap in retirement accounts",
+   "detail": "In the Federal Reserve’s 2022 Survey of Consumer Finances, 62 percent of White families had a retirement account, compared with 35 percent of Black families and 28 percent of Hispanic families. Median balances among account holders were $100,000, $39,000 and $55,600, respectively.",
+   "vars": [
+    "race"
+   ]
+  },
+  {
+   "title": "The 1935 exclusions",
+   "detail": "Social Security’s original old-age insurance left out agricultural and domestic workers. An SSA analysis estimates that 65 percent of employed African Americans worked in those sectors, though 74 percent of the excluded workers were white. Its author attributes the exclusion to tax-collection feasibility rather than racial intent. Historians still debate that conclusion.",
+   "vars": [
+    "job",
+    "race",
+    "place"
+   ]
+  }
+ ],
+ "historicalContext": [],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "planted",
+   "detail": "Segregation & Boundaries: who deserves protection and who does not. The book says this seed is older than retirement itself, and it runs from poor laws and coverture to the 1935 exclusion of agricultural and domestic workers."
+  },
+  {
+   "seed": 2,
+   "stage": "planted",
+   "detail": "Government Involvement: retirement as political management, beginning with Bismarck’s pension in 1889. The state wavers between protecting older people and abandoning them."
+  },
+  {
+   "seed": 3,
+   "stage": "planted",
+   "detail": "65 = Old and Done: a number that became a cultural endpoint for identity. It has never been updated in people’s minds, even though longevity grew and the law moved full benefits to 67."
+  },
+  {
+   "seed": 4,
+   "stage": "planted",
+   "detail": "Market Growth: the belief that stock markets reliably rise and can do the work of saving. The book places its first appearance in the Roaring Twenties, at 1924."
+  },
+  {
+   "seed": 5,
+   "stage": "planted",
+   "detail": "Search for Leisure: retirement as an earned vacation. It first appears in the consumer economy of the 1920s and blooms after the war with Sun City (1960) and the ‘golden years.’"
+  },
+  {
+   "seed": 6,
+   "stage": "planted",
+   "detail": "Get Rich Quick: speculation, speed and the hope of a big score. It runs from 1920s margin buying to the bull markets of the 1980s and 1990s, day trading and crypto."
+  },
+  {
+   "seed": 7,
+   "stage": "planted",
+   "detail": "Two Americas: industrial, urban and unionized America on one side; agricultural, rural and domestic-work America on the other. The system was built for the first and leaves out the second."
+  },
+  {
+   "seed": 8,
+   "stage": "planted",
+   "detail": "The Promise: the corporate pension bargain after 1946, ‘work here 30 years and we’ll take care of you.’ When it fails, people experience it as betrayal, a moral wound and not only a financial one."
+  },
+  {
+   "seed": 9,
+   "stage": "planted",
+   "detail": "Individualism: from 1981, with the first 401(k) plans and the Reagan and Thatcher era, collective security gives way to personal responsibility. Systemic failure gets recast as personal failure: ‘The plan didn’t fail you. You failed the plan.’"
+  }
+ ],
+ "twoPersonLens": {
+  "year": 2026,
+  "older": {
+   "born": 1966,
+   "headline": "Trying to exit a system that keeps moving",
+   "text": "Born in 1966, they were twelve when Congress added Section 401(k) to the tax code and a teenager when the 1983 amendments quietly moved their full retirement age to 67. They grew up hearing about the 30-years-and-a-pension bargain many of their parents’ employers offered, and spent their career with a 401(k) instead. They were forty-two in the 2008 crash. Now, in 2026, they are sixty and can see the finish line. Full benefits arrive at 67, in 2033. That is about a year after the date the Trustees project the retirement trust fund to run out, when about 78 percent of scheduled benefits would be payable. They are still trying to exit a system that keeps moving the exit."
+  },
+  "younger": {
+   "born": 2006,
+   "headline": "Never entered the system at all",
+   "text": "Born in 2006, they have no memory of a world before smartphones and none of the 2008 crash, which happened when they were two. They were barely a teenager when the pandemic shut down their schools. In 2026 they are twenty: maybe in a classroom, maybe in this course, maybe working jobs that do not offer a retirement plan. Among the lowest-paid quarter of workers, fewer than half have access to a defined-contribution plan and only about one in five participates. The traditional pension their grandparents knew is something they have only heard about. Their full retirement age is 67, in 2073. Nobody has asked them where their picture of the future came from."
+  },
+  "irony": "The sixty-year-old is trying to finish a dream that was handed to them; the twenty-year-old may be the first generation free to ask who handed it out."
+ },
+ "keyTerms": [
+  {
+   "term": "Retirement (as the book defines it)",
+   "definition": "Leaving work at 65 and living the remaining years off one’s money. Grimm argues this idea is only about 130 years old."
+  },
+  {
+   "term": "The Conflation",
+   "definition": "The merging of two different questions. One is humanitarian: how do we care for people as they age? The other is structural: what systems do we build to do it? Today’s structural answer is ‘you.’"
+  },
+  {
+   "term": "Seeds",
+   "definition": "Nine ideas, each planted in a particular era, that grew together into the modern idea of retirement. The book groups them as foundation, culture and mechanism seeds."
+  },
+  {
+   "term": "The C’s",
+   "definition": "The alliterative device that names every chapter, from Conclusion and Classical through Correction. The book uses it to train readers to notice patterns once they have been pointed out."
+  },
+  {
+   "term": "Inception",
+   "definition": "From Nolan’s 2010 film: planting an idea in someone’s mind so that it feels like their own. The book argues retirement is an idea of this kind."
+  },
+  {
+   "term": "The Kick",
+   "definition": "In Inception, the jolt (like the feeling of falling) that wakes a dreamer. The book calls itself ‘the kick,’ and calls the client question ‘Who gave you that dream?’ a small one."
+  },
+  {
+   "term": "Are you watching closely?",
+   "definition": "The book’s epigraph and recurring refrain, taken from The Prestige (2006). It asks readers to watch for the trick inside a familiar story."
+  },
+  {
+   "term": "The Future Poor thesis",
+   "definition": "The claim from Grimm’s first book that about 9 in 10 people under 50 earning less than $150,000 a year (‘sub-50, sub-150’) are on track to live at or below poverty level in old age."
+  },
+  {
+   "term": "Two-Person Lens",
+   "definition": "The course’s comparison device. At each turning-point year it pairs a 60-year-old leaving work with a 20-year-old entering it: the same moment, two realities."
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Jonathan Grimm",
+   "role": "Financial ethicist, founder of Fernbridge Advisors and author of The Future Poor: How families and communities can survive the looming retirement crisis. This course is built on his book."
+  },
+  {
+   "name": "Christopher Nolan",
+   "role": "Director of Memento (2000), The Prestige (2006) and Inception (2010). His nonlinear storytelling is the model for the book’s ending-first structure."
+  },
+  {
+   "name": "Christopher Priest",
+   "role": "Author of the 1995 novel The Prestige, which Nolan adapted. He is another of the book’s C’s."
+  },
+  {
+   "name": "Otto von Bismarck",
+   "role": "German chancellor whose 1889 old-age pension the book treats as the moment retirement was conceived. the Conception unit examines him closely."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "2026 OASDI Trustees Report: Conclusion",
+   "year": 2026,
+   "source": "Social Security Administration, Office of the Chief Actuary",
+   "url": "https://www.ssa.gov/oact/tr/2026/II_E_conclu.html",
+   "why": "Read the projected depletion dates and payable percentages yourself. Does ‘catastrophe’ describe what the Trustees project?"
+  },
+  {
+   "title": "Retirement benefits: access, participation and take-up by wage, March 2025",
+   "year": 2025,
+   "source": "U.S. Bureau of Labor Statistics",
+   "url": "https://www.bls.gov/charts/employee-benefits/percent-access-participation-takeup-retirement-benefits-by-wage.htm",
+   "why": "Look for Seed 7 (Two Americas) in the gap between the lowest-paid and highest-paid quarters of workers."
+  },
+  {
+   "title": "Age 65 Retirement",
+   "year": 1935,
+   "source": "SSA Historian’s Office",
+   "url": "https://www.ssa.gov/history/age65.html",
+   "why": "Find out how the United States actually chose 65, and test the common Bismarck story against it."
+  },
+  {
+   "title": "Normal Retirement Age by year of birth",
+   "year": 1983,
+   "source": "SSA Office of the Chief Actuary",
+   "url": "https://www.ssa.gov/oact/progdata/nra.html",
+   "why": "Look up your own full retirement age and a parent’s or grandparent’s, then compare both with the age of 65 that people still assume."
+  }
+ ],
+ "discussionQuestions": [
+  "Before reading further, write your own definition of retirement. Where did each part of it come from: family, employers, media, school, finance apps?",
+  "The book opens by giving away its ending. In this course, what do you gain and what do you lose by knowing the destination (‘catastrophe’) before you see the evidence?",
+  "Restate the conflation in your own words. Can the humanitarian question (how do we care for people as they age?) be answered without also answering the structural one? Give an example.",
+  "Test the book’s framing. Social Security has sharply reduced poverty among older Americans, and the 2026 Trustees Report projects that about 83 percent of scheduled benefits would still be payable after 2034, not zero. Does ‘catastrophe’ fit the evidence, or does it overstate it? What would you need to know to decide?",
+  "The Future Poor thesis makes a specific prediction (about 9 in 10 ‘sub-50, sub-150’ Americans at or below poverty in old age). What data, definitions and assumptions would you need to verify or refute it?",
+  "Which of the nine seeds do you expect to matter most to your own generation? Write down your prediction now; you will revisit it at the end of the course."
+ ],
+ "assignment": {
+  "title": "Who Gave You That Dream?",
+  "type": "Two-Person Lens interview + seed hypothesis",
+  "prompt": "Interview someone at least 25 years older than you, ideally a parent, grandparent or mentor near 60, and then interview yourself with the same questions. Ask: What does retirement mean to you? When did you first picture it? Who or what gave you that picture? What would you want instead, if money were not the issue? Record and transcribe the key answers. Then write a reflective essay comparing the two ‘dreams’ through the Two-Person Lens. Close with a seed hypothesis: name the two or three seeds (by number and name) that you predict shaped each person’s dream most, and say what evidence from later modules would confirm or overturn your prediction. Keep the essay; you will revise the hypothesis in the final module.",
+  "deliverable": "900–1,200 word reflective essay, plus an appendix of interview notes or transcript excerpts (1–2 pages) and a one-paragraph seed hypothesis. Get the interviewee’s consent; use first names or pseudonyms only.",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Interview quality & evidence",
+    "points": 25,
+    "exemplary": "Asks all the core questions plus good follow-ups. Quotes and paraphrases are specific and revealing, and consent and privacy are handled properly.",
+    "proficient": "Covers the core questions with useful quotations.",
+    "developing": "Covers some questions; the answers are thin or mostly summarized.",
+    "beginning": "The interview is missing, superficial or undocumented."
+   },
+   {
+    "criterion": "Two-Person Lens comparison",
+    "points": 25,
+    "exemplary": "Shows clearly how one moment looks different to two generations, with concrete details from each person’s life and era.",
+    "proficient": "Makes a clear comparison with some generational context.",
+    "developing": "Describes the two interviews side by side without much comparison.",
+    "beginning": "No meaningful comparison."
+   },
+   {
+    "criterion": "Use of course frameworks",
+    "points": 30,
+    "exemplary": "Uses the conflation, the ‘Who gave you that dream?’ question and the nine seeds accurately and insightfully. The seed hypothesis is specific and can be tested.",
+    "proficient": "Uses the frameworks accurately; the hypothesis is reasonable but general.",
+    "developing": "Mentions the frameworks loosely or with minor errors; the hypothesis is vague.",
+    "beginning": "Frameworks are missing or misused, or there is no hypothesis."
+   },
+   {
+    "criterion": "Reflection & writing",
+    "points": 20,
+    "exemplary": "Honest, thoughtful reflection on the student’s own assumptions, in clear and well-organized prose.",
+    "proficient": "Some genuine reflection; clear writing with minor issues.",
+    "developing": "Little reflection, or the writing gets in the way of the meaning.",
+    "beginning": "No reflection; disorganized."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "What two questions does the book say have been ‘conflated’?",
+   "options": [
+    "How to save and how to invest",
+    "How we care for people as they age, and what systems we build to do it",
+    "When to retire and where to live",
+    "Whether to claim Social Security early or late"
+   ],
+   "answer": 1,
+   "explain": "The humanitarian question (caring for people as they age) has been merged with the structural question (the systems that do it). Today the structural answer is ‘you.’"
+  },
+  {
+   "q": "According to the Future Poor thesis, about how many people under 50 earning under $150,000 are on track to live at or below poverty in old age?",
+   "options": [
+    "1 in 10",
+    "3 in 10",
+    "5 in 10",
+    "9 in 10"
+   ],
+   "answer": 3,
+   "explain": "Grimm’s thesis in The Future Poor is that about 9 out of 10 ‘sub-50, sub-150’ Americans are on that track."
+  },
+  {
+   "q": "In Inception, and in the book’s use of it, what is ‘the kick’?",
+   "options": [
+    "The idea planted in the dreamer’s mind",
+    "The jolt that wakes a dreamer from the dream",
+    "The architect who designs the dream",
+    "A financial penalty for early withdrawal"
+   ],
+   "answer": 1,
+   "explain": "The kick, like the feeling of falling, wakes the dreamer. The book calls itself ‘the kick’ that wakes readers from the retirement dream."
+  },
+  {
+   "q": "Which seed does the book say begins with Bismarck’s pension in 1889?",
+   "options": [
+    "Seed 2: Government Involvement",
+    "Seed 4: Market Growth",
+    "Seed 8: The Promise",
+    "Seed 9: Individualism"
+   ],
+   "answer": 0,
+   "explain": "Government Involvement begins with Bismarck in 1889: retirement as political management, wavering between protection and abandonment."
+  },
+  {
+   "q": "According to the 2026 Social Security Trustees Report, when are combined OASDI trust fund reserves projected to be depleted?",
+   "options": [
+    "2028",
+    "2034",
+    "2041",
+    "Never"
+   ],
+   "answer": 1,
+   "explain": "The Trustees project combined reserves will run out in 2034, after which about 83 percent of scheduled benefits would be payable. The retirement (OASI) fund alone is projected to run out in late 2032."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SSA — 2026 OASDI Trustees Report, Conclusion",
+   "url": "https://www.ssa.gov/oact/tr/2026/II_E_conclu.html"
+  },
+  {
+   "label": "SSA press release — 2026 Trustees Report (June 9, 2026)",
+   "url": "https://www.ssa.gov/news/en/press/releases/2026-06-09.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Otto von Bismarck",
+   "url": "https://www.ssa.gov/history/ottob.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Age 65 Retirement",
+   "url": "https://www.ssa.gov/history/age65.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Social Security Act of 1935",
+   "url": "https://www.ssa.gov/history/35act.html"
+  },
+  {
+   "label": "SSA — Normal Retirement Age by year of birth",
+   "url": "https://www.ssa.gov/oact/progdata/nra.html"
+  },
+  {
+   "label": "SSA — Benefit reduction for early retirement",
+   "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+  },
+  {
+   "label": "SSA Social Security Bulletin — 1983 Amendments: Legislative History and Summary",
+   "url": "https://www.ssa.gov/policy/docs/ssb/v46n7/v46n7p3.pdf"
+  },
+  {
+   "label": "SSA Historian’s Office — 1980s timeline",
+   "url": "https://www.ssa.gov/history/1980.html"
+  },
+  {
+   "label": "SSA Social Security Bulletin — DeWitt, The Decision to Exclude Agricultural and Domestic Workers",
+   "url": "https://www.ssa.gov/policy/docs/ssb/v70n4/v70n4p49.html"
+  },
+  {
+   "label": "BLS — Retirement benefits by wage category, March 2025",
+   "url": "https://www.bls.gov/charts/employee-benefits/percent-access-participation-takeup-retirement-benefits-by-wage.htm"
+  },
+  {
+   "label": "Pew Research Center — Stock and retirement account ownership by race (SCF 2022)",
+   "url": "https://www.pewresearch.org/short-reads/2024/03/06/a-booming-us-stock-market-doesnt-benefit-all-racial-and-ethnic-groups-equally/"
+  },
+  {
+   "label": "Employee Retirement Income Security Act of 1974",
+   "url": "https://en.wikipedia.org/wiki/Employee_Retirement_Income_Security_Act_of_1974"
+  },
+  {
+   "label": "401(k) — Revenue Act of 1978",
+   "url": "https://en.wikipedia.org/wiki/401(k)"
+  },
+  {
+   "label": "Inception (2010 film)",
+   "url": "https://en.wikipedia.org/wiki/Inception"
+  },
+  {
+   "label": "The Prestige (2006 film)",
+   "url": "https://en.wikipedia.org/wiki/The_Prestige_(film)"
+  },
+  {
+   "label": "Wikiquote — The Prestige",
+   "url": "https://en.wikiquote.org/wiki/The_Prestige_(film)"
+  }
+ ]
 }

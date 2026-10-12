@@ -1,45 +1,132 @@
 {
-  "seeds": [
-    {"n": 1, "name": "Segregation & Boundaries", "group": "Foundation", "year": 1935,
-     "short": "Who deserves protection, and who is left outside the line.",
-     "root": "The structural exclusions of American labor life became federal law. Domestic workers and agricultural laborers were left out of Social Security in 1935, categories that covered most Black workers at the time. The book reads this as the political price of Southern Democratic support; some historians stress administrative reasons. Either way, the seed is older than retirement itself: the boundaries defining who deserves protection were drawn before retirement existed as a concept. The Act made them permanent."},
-    {"n": 2, "name": "Government Involvement", "group": "Mechanism", "year": 1889,
-     "short": "Retirement as a tool of the state, caught between protection and political management.",
-     "root": "Bismarck created old-age insurance as political pacification as much as worker protection. Eligibility began at 70 while life expectancy at birth was under 45. From its origin, government involvement in retirement has been about managing political stability, and that founding ambivalence between protection and abandonment has never been resolved."},
-    {"n": 3, "name": "65 = Old and Done", "group": "Culture", "year": 1935,
-     "short": "An actuarial threshold that became an identity endpoint.",
-     "root": "When the United States set 65 as the retirement threshold, average life expectancy at birth was about 61. The number was practical then. It became cultural: a deadline written into every American worker's sense of their own life. As longevity grew and the nature of work changed, no one updated the number in the culture. Age became an identity endpoint, not a condition of incapacity."},
-    {"n": 4, "name": "Market Growth", "group": "Mechanism", "year": 1924,
-     "short": "The belief that markets reliably rise, and can stand in for a pension.",
-     "root": "The Roaring Twenties were the first moment ordinary Americans believed markets could reliably make them wealthy. Brokerages opened Main Street offices and stocks became dinner-table conversation. The assumption that equity markets go up, and that this growth could be depended upon as a savings mechanism, was born here. Black Tuesday buried it temporarily. The 401(k) era dug it back up and built a retirement system on top of it."},
-    {"n": 5, "name": "Search for Leisure", "group": "Culture", "year": 1925,
-     "short": "Retirement reimagined as an earned vacation.",
-     "root": "The 1920s consumer economy gave the middle class its first taste of leisure as something you could buy. After the war the seed bloomed: retirement was reimagined as earned vacation, and Del Webb's Sun City (1960) built not just retirement housing but a retirement ideology. Retirement became reward, deserved rest, the Dream's final chapter. The aspiration outpaced the math for most Americans long before they realized it."},
-    {"n": 6, "name": "Get Rich Quick", "group": "Mechanism", "year": 1926,
-     "short": "Speculation, opportunity, possibility, speed.",
-     "root": "The 1920s democratized speculation. Ordinary people bought stocks on margin and chased tips, convinced timing and instinct could beat patience. Black Tuesday buried the impulse for two generations. It returned in the 1980s and 1990s with mutual funds and day trading, and again with crypto. Speculation and retirement saving are incompatible impulses wearing the same financial clothes."},
-    {"n": 7, "name": "Two Americas", "group": "Foundation", "year": 1908,
-     "short": "Industrial, urban and unionized America versus rural, agricultural and domestic America.",
-     "root": "Before Social Security codified it, the divide was structural: industrial, urban, unionized workers on one side; agricultural, rural and domestic workers on the other. The retirement system was designed for the first America and excluded the second. Rural workers, service workers and care workers, the people who need retirement security most, have always been least served."},
-    {"n": 8, "name": "The Promise", "group": "Culture", "year": 1946,
-     "short": "\"Work here thirty years and we'll take care of you.\"",
-     "root": "The corporate pension era made the promise tangible: work here for thirty years and we will take care of you. A promise made at that scale, and believed at that scale, creates an expectation that cannot be quietly withdrawn. When the system began failing, it didn't feel like a policy adjustment. It felt like betrayal, which is a moral category, not just an economic one."},
-    {"n": 9, "name": "Individualism", "group": "Mechanism", "year": 1981,
-     "short": "Collective security becomes personal responsibility.",
-     "root": "The first 401(k) plans, launched in 1981, completed the ideological shift: collective retirement security became individual retirement responsibility. The politics of the era supplied the philosophy, the 401(k) supplied the mechanism, and the financial services industry supplied the marketing. The book calls it the most consequential seed because it converts every systemic failure into a personal one. The plan didn't fail you. You failed the plan."}
-  ],
-  "extraLens": [
-    {"year": 1935, "label": "The Social Security Invention",
-     "older": {"born": 1875, "headline": "A floor against destitution", "text": "The 60-year-old lived through the industrialization that displaced agrarian security, the rise of company loyalty as the new form of work identity, and then watched the Great Depression dismantle even that. They are weathered, suspicious of promises, and deeply aware that security is fragile. Social Security arrives not as a retirement program but as a survival mechanism: a floor against destitution, not a door to leisure. They didn't dream of retirement. They dreamed of not dying broke."},
-     "younger": {"born": 1915, "headline": "Earning into hardship, retiring into abundance", "text": "The 20-year-old grew up in the Depression, learned scarcity as a native language, and is now watching FDR rewrite the social contract. They will benefit from the most generous years of Social Security, having paid in during their prime earning years as the program matures. Within a decade they will be working in the greatest economic expansion in American history. They will retire into abundance after earning into hardship."},
-     "irony": "Social Security was designed for the 60-year-old's desperation but will be perfected for the 20-year-old's comfort."},
-    {"year": 1960, "label": "The Golden Age",
-     "older": {"born": 1900, "headline": "The anomaly, told it is the template", "text": "Born at the turn of the century, the 60-year-old endured two world wars and the Depression and spent an entire working life in industrial employment. Now they are entering something genuinely new: corporate pensions, a mature Social Security, and a cultural story of the golden years as earned reward. They are the first generation to experience retirement as it was theoretically designed, a dignified exit funded by a system that worked. They are the anomaly, though they're told they're the template."},
-     "younger": {"born": 1940, "headline": "Someone else is handling it", "text": "Born into wartime, the 20-year-old is stepping into postwar prosperity. They will join companies expecting to stay for decades. The defined-benefit pension is assumed and the social contract feels permanent. They are among the best-positioned workers for retirement in American history, and they don't have to think about it at all. Their job is to show up, accrue years, and collect."},
-     "irony": "This is the moment the retirement promise looks most stable, just as the conditions that made it possible begin to erode."},
-    {"year": 1985, "label": "The 401(k) Pivot",
-     "older": {"born": 1925, "headline": "Cashing out a promise", "text": "The 60-year-old fought in the Second World War or came of age in its shadow, entered a manufacturing or corporate economy with union protections and pension guarantees, and built a working life on the premise that loyalty would be rewarded with security. They are five years from retirement and they know what they are getting, because someone promised it to them in writing when they were hired. They are leaving a world where retirement was an institutional responsibility."},
-     "younger": {"born": 1965, "headline": "Handed a calculator", "text": "The 20-year-old was born into the 1960s boom, grew up through stagflation and the Reagan revolution, and is entering a workforce mid-transition, just as the 401(k) is being normalized. No one tells them the pension era is ending, or that the shift from defined benefit to defined contribution moves the risk of old age onto them. They are handed a brochure about investment options and told it is better: more freedom, more control. They are the first generation enrolled in the experiment of self-funded retirement."},
-     "irony": "The 60-year-old is cashing out a promise made in a different economic era. The 20-year-old is being handed a calculator and told good luck."}
-  ]
+ "seeds": [
+  {
+   "n": 1,
+   "name": "Segregation & Boundaries",
+   "group": "Foundation",
+   "year": 1861,
+   "short": "Who deserves protection, and who is left outside the line.",
+   "root": "On the master timeline the author plants this seed at the Civil War, 1861–1865: the boundaries that decide who deserves protection were drawn in blood before retirement existed as an idea. Seventy years later they became federal law. Domestic workers and agricultural laborers were left out of Social Security in 1935, categories that covered most Black workers at the time, and his note beside the Act reads “Not for all.” The book reads the exclusion as the political price of Southern Democratic support; some historians stress administrative reasons. Either way, the Act did not invent the line. It made an old one permanent.",
+   "hand": "Civil War 1861–1865 → seed: Segregation / Boundaries. (1935: “Not for all”)"
+  },
+  {
+   "n": 2,
+   "name": "Government Involvement",
+   "group": "Mechanism",
+   "year": 1862,
+   "short": "Retirement as a tool of the state, caught between protection and political management.",
+   "root": "The author plants this seed at the Civil War pension of 1862, when the federal government first promised income to a mass of citizens who could no longer work, and the promise outgrew every estimate of its cost. Bismarck’s 1889 old-age insurance repeated the pattern in Germany: pacification as much as protection, with eligibility at 70 while life expectancy at birth was under 45. From its origin, government involvement in retirement has been about managing political stability, and that founding ambivalence between protection and abandonment has never been resolved.",
+   "hand": "Civil War Pension → seed: Gov’t"
+  },
+  {
+   "n": 3,
+   "name": "65 = Old and Done",
+   "group": "Culture",
+   "year": 1890,
+   "short": "An actuarial threshold that became an identity endpoint.",
+   "root": "The author places this seed in the 1890s, the transition decade on his master timeline, when industry overtook the farm and a worker’s value began to be measured by pace. An older man who had changed roles on the land now lost his job in the factory, and the idea that there is an age at which a person is finished took hold. In 1935 the United States wrote the number down: 65, when average life expectancy at birth was about 61. The number was practical then. It became cultural, a deadline written into every American worker’s sense of their own life, and no one updated it as longevity grew.",
+   "hand": "1890 · Transition decade → seed: 65 = Old + Done"
+  },
+  {
+   "n": 4,
+   "name": "Market Growth",
+   "group": "Mechanism",
+   "year": 1924,
+   "short": "The belief that markets reliably rise, and can stand in for a pension.",
+   "root": "The Roaring Twenties were the first moment ordinary Americans believed markets could reliably make them wealthy. Brokerages opened Main Street offices and stocks became dinner-table conversation. The assumption that equity markets go up, and that this growth could be depended upon as a savings mechanism, was born here. Black Tuesday buried it temporarily. The 401(k) era dug it back up and built a retirement system on top of it.",
+   "hand": "Roaring 20’s → seed: Market"
+  },
+  {
+   "n": 5,
+   "name": "Search for Leisure",
+   "group": "Culture",
+   "year": 1925,
+   "short": "Retirement reimagined as an earned vacation.",
+   "root": "The 1920s consumer economy gave the middle class its first taste of leisure as something you could buy. After the war the seed bloomed: retirement was reimagined as earned vacation, and Del Webb's Sun City (1960) built not just retirement housing but a retirement ideology. Retirement became reward, deserved rest, the Dream's final chapter. The aspiration outpaced the math for most Americans long before they realized it.",
+   "hand": "Roaring 20’s → seed: Leisure"
+  },
+  {
+   "n": 6,
+   "name": "Get Rich Quick",
+   "group": "Mechanism",
+   "year": 1926,
+   "short": "Speculation, opportunity, possibility, speed.",
+   "root": "The 1920s democratized speculation. Ordinary people bought stocks on margin and chased tips, convinced timing and instinct could beat patience. Black Tuesday buried the impulse for two generations. It returned in the 1980s and 1990s with mutual funds and day trading, and again with crypto. Speculation and retirement saving are incompatible impulses wearing the same financial clothes.",
+   "hand": "Market → Speculative · Opportunity · Possibility · Speed → Get Rich Quick. Seed so rooted in our humanity."
+  },
+  {
+   "n": 7,
+   "name": "Two Americas",
+   "group": "Foundation",
+   "year": 1929,
+   "short": "Industrial, urban and unionized America versus rural, agricultural and domestic America.",
+   "root": "On the master timeline this seed is planted at Black Tuesday and the Great Depression, 1929–1939, with his note: rich / rural. The divide was already structural: industrial, urban, unionized workers on one side; agricultural, rural and domestic workers on the other. In 1930 two-thirds of American homes had electricity and about a quarter of rural ones did. The Depression pulled both Americas into the same catastrophe with very different resources, and the system built in response was designed for the first America and excluded the second. Rural workers, service workers and care workers, the people who need retirement security most, have always been least served.",
+   "hand": "Black Tuesday · Great Depression 1929–39 → seed: 2 Americas (rich / rural)"
+  },
+  {
+   "n": 8,
+   "name": "The Promise",
+   "group": "Culture",
+   "year": 1950,
+   "short": "\"Work here thirty years and we'll take care of you.\"",
+   "root": "The author plants the Promise at 1950, beside his sketch of the three-legged stool: Social Security, an employer pension and personal savings, with the words “for some…” The corporate pension era made the promise tangible: work here for thirty years and we will take care of you. A promise made at that scale, and believed at that scale, creates an expectation that cannot be quietly withdrawn. When the system began failing, it didn’t feel like a policy adjustment. It felt like betrayal, which is a moral category, not just an economic one.",
+   "hand": "Promise — 3 leg stool (for some…)"
+  },
+  {
+   "n": 9,
+   "name": "Individualism",
+   "group": "Mechanism",
+   "year": 1981,
+   "short": "Collective security becomes personal responsibility.",
+   "root": "The first 401(k) plans, launched in 1981, completed the ideological shift: collective retirement security became individual retirement responsibility. The politics of the era supplied the philosophy, the 401(k) supplied the mechanism, and the financial services industry supplied the marketing. The book calls it the most consequential seed because it converts every systemic failure into a personal one. The plan didn't fail you. You failed the plan.",
+   "hand": "401K → seed: Individualism"
+  }
+ ],
+ "extraLens": [
+  {
+   "year": 1935,
+   "label": "The Social Security Invention",
+   "older": {
+    "born": 1875,
+    "headline": "A floor against destitution",
+    "text": "The 60-year-old lived through the industrialization that displaced agrarian security, the rise of company loyalty as the new form of work identity, and then watched the Great Depression dismantle even that. They are weathered, suspicious of promises, and deeply aware that security is fragile. Social Security arrives not as a retirement program but as a survival mechanism: a floor against destitution, not a door to leisure. They didn't dream of retirement. They dreamed of not dying broke."
+   },
+   "younger": {
+    "born": 1915,
+    "headline": "Earning into hardship, retiring into abundance",
+    "text": "The 20-year-old grew up in the Depression, learned scarcity as a native language, and is now watching FDR rewrite the social contract. They will benefit from the most generous years of Social Security, having paid in during their prime earning years as the program matures. Within a decade they will be working in the greatest economic expansion in American history. They will retire into abundance after earning into hardship."
+   },
+   "irony": "Social Security was designed for the 60-year-old's desperation but will be perfected for the 20-year-old's comfort."
+  },
+  {
+   "year": 1960,
+   "label": "The Golden Age",
+   "older": {
+    "born": 1900,
+    "headline": "The anomaly, told it is the template",
+    "text": "Born at the turn of the century, the 60-year-old endured two world wars and the Depression and spent an entire working life in industrial employment. Now they are entering something genuinely new: corporate pensions, a mature Social Security, and a cultural story of the golden years as earned reward. They are the first generation to experience retirement as it was theoretically designed, a dignified exit funded by a system that worked. They are the anomaly, though they're told they're the template."
+   },
+   "younger": {
+    "born": 1940,
+    "headline": "Someone else is handling it",
+    "text": "Born into wartime, the 20-year-old is stepping into postwar prosperity. They will join companies expecting to stay for decades. The defined-benefit pension is assumed and the social contract feels permanent. They are among the best-positioned workers for retirement in American history, and they don't have to think about it at all. Their job is to show up, accrue years, and collect."
+   },
+   "irony": "This is the moment the retirement promise looks most stable, just as the conditions that made it possible begin to erode."
+  },
+  {
+   "year": 1985,
+   "label": "The 401(k) Pivot",
+   "older": {
+    "born": 1925,
+    "headline": "Cashing out a promise",
+    "text": "The 60-year-old fought in the Second World War or came of age in its shadow, entered a manufacturing or corporate economy with union protections and pension guarantees, and built a working life on the premise that loyalty would be rewarded with security. They are five years from retirement and they know what they are getting, because someone promised it to them in writing when they were hired. They are leaving a world where retirement was an institutional responsibility."
+   },
+   "younger": {
+    "born": 1965,
+    "headline": "Handed a calculator",
+    "text": "The 20-year-old was born into the 1960s boom, grew up through stagflation and the Reagan revolution, and is entering a workforce mid-transition, just as the 401(k) is being normalized. No one tells them the pension era is ending, or that the shift from defined benefit to defined contribution moves the risk of old age onto them. They are handed a brochure about investment options and told it is better: more freedom, more control. They are the first generation enrolled in the experiment of self-funded retirement."
+   },
+   "irony": "The 60-year-old is cashing out a promise made in a different economic era. The 20-year-old is being handed a calculator and told good luck."
+  }
+ ]
 }

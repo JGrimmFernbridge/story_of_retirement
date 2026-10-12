@@ -8,7 +8,7 @@ A horizontal course site on the history of retirement by Jonathan Grimm (Fernbri
 | --- | --- |
 | `public/` | The finished site Netlify publishes: `index.html` plus `downloads/` (chapter PDFs, the full draft, the course guide). |
 | `netlify/functions/media.mts` + `lib/media-core.mjs` | The podcast & lecture library. Recordings are stored in this site's own Netlify storage (Netlify Blobs). No outside database. |
-| `source/` | Everything used to build `public/`: chapter text (`chapters/`), course content (`content/`, `context/course.json`), the page code (`src/`) and build scripts. |
+| `source/` | Everything used to build `public/`: chapter text (`chapters/`), course content (`content/`, `context/course.json`), the hand-drawn master timeline as data (`context/master_timeline.json`) and as a photo (`assets/`), the page code (`src/`) and build scripts. |
 | `netlify.toml` | Tells Netlify to publish `public/` and where the function lives. |
 
 ## Podcasts and lectures
@@ -18,6 +18,10 @@ A horizontal course site on the history of retirement by Jonathan Grimm (Fernbri
 - The password is the `INSTRUCTOR_PASSWORD` environment variable on the Netlify project. To change it: Netlify → the project → **Project configuration → Environment variables** → edit `INSTRUCTOR_PASSWORD` → then **Deploys → Trigger deploy → Deploy project** so the change takes effect.
 - Long video lectures play best from YouTube (unlisted) or Vimeo: paste the link instead of uploading the file.
 - Stored recordings are visible in Netlify under **Data & Storage → Blobs → course-media**.
+
+## The master timeline
+
+The author's hand-drawn master timeline is in the site three ways: as the photograph (`public/master-timeline.jpg`, shown on the **Master timeline** view), as entries on the interactive line (each one ringed, with his words in its "On the master timeline" note), and as the **Author's notes** lane. The transcription lives in `source/context/master_timeline.json`: `matches` attach his words to entries that already existed, `add` holds the entries that came only from the sheet, `notes` are his bracketed notes, `links` are his arrows and `threads` are the sequences he underlined (redlining; money in your own name). Edit that file and rebuild to change any of it.
 
 ## Updating the content
 

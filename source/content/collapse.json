@@ -1,475 +1,668 @@
 {
-  "id": "collapse",
-  "number": 6,
-  "title": "Collapse",
-  "years": "2010–2040",
-  "definition": "col·lapse (noun) the fall of something",
-  "tagline": "We are not approaching the collapse. We are in it.",
-  "bigQuestion": "When a system fails slowly, how do we know it is failing — and who carries the cost while it does?",
-  "overview": "The book calls 2010–2040 the Collapse, and it insists on the present tense: “We are not approaching the collapse. We are in it.” Grimm’s image is a building that falls slowly. Cracks appear, engineers file reports, someone repaints the lobby, and people keep walking in. The 2008 crash could have been the moment to ask whether the retirement system works. Instead, the book argues, the recovery was a fresh coat of paint rather than a reckoning.\n\nThis module follows the cracks as they widen. The first Baby Boomers turned 65 in 2011; from 2024 through 2027 more than 4.1 million Americans a year reach that age. Detroit cut retiree pensions in bankruptcy, multiemployer plans neared insolvency until taxpayers rescued them, and Congress kept tuning the individual-account system it inherited from the Codify era. Three sharp market drops, in 2020, 2022 and 2025, tested savers who had been told markets always come back.\n\nThe era ends in projection. The 2026 Social Security Trustees Report projects that the retirement trust fund (OASI) will be depleted in late 2032. Unless Congress acts, about 78% of scheduled benefits would then be payable. Your job is to separate what has happened from what is projected, and to test the book’s claim that the collapse is “a mathematical inevitability.”",
-  "learningObjectives": [
-    "Explain how the 2026 Trustees Report arrives at its projections (OASI depletion in 2032, about 78% of scheduled benefits payable) and distinguish “scheduled” from “payable” benefits.",
-    "Trace the defined-benefit failures of the era (Detroit, Central States and the 2021 Special Financial Assistance rescue) and evaluate who absorbed the losses.",
-    "Analyze how the SECURE Act (2019) and SECURE 2.0 (2022) extended the individual-account model through nudges such as automatic enrollment.",
-    "Compare the book’s savings-gap arithmetic with current Federal Reserve (SCF 2025) and BLS data, identifying where the evidence supports or complicates the argument.",
-    "Evaluate how the Two Americas seed shows up in unequal access to workplace plans, unequal wealth and unequal life expectancy."
-  ],
-  "policyEvents": [
-    {
-      "year": 2010,
-      "title": "Affordable Care Act",
-      "type": "legislation",
-      "detail": "Enacted in March 2010, the ACA created premium tax credits for households with incomes from 100% to 400% of the federal poverty level. It also expanded Medicaid to adults below 138% of poverty, although not every state has adopted the expansion.",
-      "significance": "Healthcare is the book’s “hidden enemy” of old age. Subsidized individual coverage gave workers who leave a job before Medicare eligibility at 65 an option outside employer insurance, an instance of the Government Involvement seed acting as protection."
-    },
-    {
-      "year": 2013,
-      "endYear": 2014,
-      "title": "Detroit’s Chapter 9 Bankruptcy",
-      "type": "policy",
-      "detail": "Detroit filed for Chapter 9 bankruptcy on July 18, 2013, with an estimated $18–20 billion in debts and obligations. A “Grand Bargain” of about $816 million from the State of Michigan, foundations and the Detroit Institute of Arts limited the damage. General retirees lost 4.5% of their pensions and their annual cost-of-living increases, and police and fire retirees lost part of theirs. Judge Steven Rhodes confirmed the plan on November 7, 2014.",
-      "significance": "Public pensions, the last widespread defined-benefit promise, proved cuttable in bankruptcy. This is the harvest of The Promise seed: a pension is only as secure as the institution behind it."
-    },
-    {
-      "year": 2014,
-      "title": "Multiemployer Pension Reform Act (MPRA)",
-      "type": "legislation",
-      "detail": "Enacted in December 2014 as Division O of the Consolidated and Further Continuing Appropriations Act, 2015 (P.L. 113-235), MPRA let severely underfunded multiemployer plans apply to the Treasury to cut benefits already being paid, provided the cuts would restore solvency. Retirees aged 80 and older and disabled participants were protected, and no benefit could fall below 110% of the PBGC guarantee.",
-      "significance": "Federal law now allowed earned pension benefits to be cut for people already retired. The Promise was rewritten after the fact."
-    },
-    {
-      "year": 2016,
-      "title": "Treasury Rejects Central States Benefit Cuts",
-      "type": "policy",
-      "detail": "The Teamsters’ Central States pension fund applied under MPRA to cut benefits for about 270,000 of its nearly 400,000 participants, totaling about $11 billion. On May 6, 2016, the Treasury rejected the application, citing an unreasonable 7.5% return assumption, an inequitable distribution of the cuts and notices that participants could not understand. The fund expected to become insolvent around 2026.",
-      "significance": "The rejection bought time without solving anything, and the plan’s fate passed to Congress. It shows the Government Involvement seed as protector and bystander at once."
-    },
-    {
-      "year": 2019,
-      "title": "SECURE Act",
-      "type": "legislation",
-      "detail": "Signed December 20, 2019, as part of the Further Consolidated Appropriations Act, 2020 (P.L. 116-94). The law raised the required minimum distribution age from 70½ to 72 and ended the “stretch IRA” for most non-spouse heirs by imposing a 10-year payout rule. It also opened 401(k)s to long-term part-time workers, let unrelated small employers share pooled plans and created a safe harbor for offering annuities inside 401(k)s.",
-      "significance": "The first major retirement law of the Collapse era tuned the individual-account machine rather than questioning it: the Individualism seed with better plumbing."
-    },
-    {
-      "year": 2021,
-      "title": "American Rescue Plan: Special Financial Assistance for Multiemployer Pensions",
-      "type": "legislation",
-      "detail": "The American Rescue Plan Act, signed March 11, 2021, incorporated the multiemployer rescue championed as the Butch Lewis Act. It created non-repayable Special Financial Assistance, paid from general taxpayer funds, for severely underfunded plans. Central States received about $35.8 billion in December 2022 for 357,056 participants; without it, the plan was projected to run out of money in 2025 and benefits would have dropped roughly 60% below plan terms. By May 2026, the PBGC had approved about $77.9 billion for 161 plans covering roughly 1.8 million people.",
-      "significance": "The Promise was kept, but by taxpayers rather than by the employers who made it. The Community principle reappeared as a federal backstop."
-    },
-    {
-      "year": 2022,
-      "title": "SECURE 2.0 Act",
-      "type": "legislation",
-      "detail": "Signed December 29, 2022. From 2025, most new 401(k) and 403(b) plans must automatically enroll workers at 3–10% of pay with annual increases. The law also raised the RMD age to 73, rising to 75 in 2033, and allowed employers to match student-loan payments. Its federal Saver’s Match pays 50% of up to $2,000 in contributions for lower- and moderate-income savers, starting with 2027 contributions.",
-      "significance": "Automatic enrollment uses a collective tool, the default, to rescue an individual system. Students should ask whether nudges answer the structural question or only make it quieter."
-    },
-    {
-      "year": 2025,
-      "title": "Social Security Fairness Act",
-      "type": "legislation",
-      "detail": "Signed January 5, 2025 (P.L. 118-273), after votes of 327–75 in the House and 76–20 in the Senate, the Act repealed the Windfall Elimination Provision and the Government Pension Offset. Those rules had reduced or eliminated Social Security benefits for more than 3.2 million people with pensions from jobs not covered by Social Security. By late April 2025, the SSA had paid more than $14.8 billion in retroactive benefits to over 2.2 million people.",
-      "significance": "The law redrew a boundary (Seed 1) in favor of public workers. The 2025 Trustees named it the primary contributor to the change in the combined trust fund depletion date, so generosity and solvency pulled in opposite directions."
-    },
-    {
-      "year": 2025,
-      "title": "One Big Beautiful Bill Act: Senior Deduction",
-      "type": "legislation",
-      "detail": "Signed July 4, 2025 (P.L. 119-21), the law added a temporary $6,000 deduction for each taxpayer aged 65 or older for tax years 2025–2028, phasing out above $75,000 in modified adjusted gross income ($150,000 for joint filers). The Committee for a Responsible Federal Budget’s analysis of the 2026 Trustees Report finds that the law cut Social Security’s 75-year balance by 0.16% of taxable payroll, about a quarter of that year’s deterioration, by lowering revenue from income taxes on benefits.",
-      "significance": "Tax relief for today’s seniors came partly at the cost of the trust fund’s future. Students can test whether this fits the book’s pattern of “accountability without proximity.”"
-    },
-    {
-      "year": 2032,
-      "title": "Projected: Social Security Retirement Trust Fund (OASI) Depleted",
-      "type": "policy",
-      "detail": "Projected. The 2026 Trustees Report (released June 9, 2026) projects that OASI reserves will be depleted in the fourth quarter of 2032. Payroll taxes would then cover about 78% of scheduled benefits, falling to 62% by 2100. CBO’s September 2026 projections are more pessimistic, with exhaustion in fiscal 2032 and a 26% cut. Medicare’s Hospital Insurance fund is projected to be depleted in 2033, when 89% of costs would be payable.",
-      "significance": "The book wrote “mid-2030s” and “75–80%,” and the newest official projections move the date earlier. This is the hinge between Collapse and Catastrophe. It is a projection under current law, not a certainty, because Congress can act."
-    }
-  ],
-  "marketDrops": [
-    {
-      "year": 2020,
-      "endYear": 2020,
-      "name": "The COVID Crash",
-      "decline": "−34% (S&P 500, Feb 19 – Mar 23, 2020)",
-      "detail": "Pandemic shutdowns produced what was then the fastest bear market on record, a nearly 34% fall that lasted barely more than a month. The S&P 500 closed at a new record on August 18, 2020, about five months after the bottom.",
-      "retirementImpact": "Savers who had to sell near the bottom, including newly displaced older workers, locked in losses that the averages quickly erased."
-    },
-    {
-      "year": 2022,
-      "endYear": 2022,
-      "name": "The 2022 Bear Market",
-      "decline": "≈ −25% (U.S. stocks, Jan 3 – mid-Oct 2022; Morningstar US Market Index −25.4% from peak)",
-      "detail": "Rising inflation and interest rates pushed U.S. stocks down about a quarter from their January peak. Bonds offered no shelter: the Morningstar US Core Bond Index fell 12.9% in 2022, its worst year on record.",
-      "retirementImpact": "Stocks and bonds fell together, so the “balanced” portfolios sold to near-retirees as the safe option lost value on both sides."
-    },
-    {
-      "year": 2025,
-      "endYear": 2025,
-      "name": "The Tariff Shock",
-      "decline": "≈ −19% (S&P 500, Feb 19 – Apr 8, 2025)",
-      "detail": "After sweeping tariff announcements, the S&P 500 closed almost 19% below its February 19 record on April 8, 2025, just short of a bear market. It recovered to a record close by June 27, 2025.",
-      "retirementImpact": "Peak 65 retirees saw a fifth of their equity value threatened within weeks of leaving work: sequence-of-returns risk in real time."
-    }
-  ],
-  "socialMovements": [
-    {
-      "year": 2011,
-      "endYear": 2011,
-      "name": "Occupy Wall Street",
-      "detail": "Occupy began on September 17, 2011, in Zuccotti Park in Lower Manhattan, after a call from the Canadian magazine Adbusters, and popularized the slogan “We are the 99%.” Police cleared the encampment on November 15, 2011.",
-      "significance": "It named the Two Americas seed in the language of mass politics just as the first Boomers reached 65."
-    },
-    {
-      "year": 2011,
-      "name": "FIRE: Financial Independence, Retire Early",
-      "detail": "FIRE draws on the 1992 book Your Money or Your Life by Joe Dominguez and Vicki Robin and spread through blogs. Pete Adeney’s Mr. Money Mustache, launched in 2011 by a blogger who had stopped full-time work at 30, became a hub for followers who save aggressively in order to exit paid work decades early.",
-      "significance": "FIRE rebels against 65 = Old and Done while doubling down on Individualism and Market Growth: it is still an escape financed by a personal portfolio."
-    },
-    {
-      "year": 2021,
-      "endYear": 2022,
-      "name": "The Great Resignation and the Pandemic Retirement Wave",
-      "detail": "Quits reached a then-series high of 4.5 million in November 2021 (BLS JOLTS). One estimate counted more than 2.4 million “excess” retirements by August 2021. The St. Louis Fed found that the excess peaked in late 2021 and had disappeared by late 2024.",
-      "significance": "The surge and its fade suggest that retirement timing tracks markets and circumstances rather than a fixed plan or age."
-    }
-  ],
-  "inequities": [
-    {
-      "title": "Access Depends on the Job",
-      "detail": "In March 2026, 72% of private-industry workers had access to an employer retirement plan and 52% participated. Among the lowest-paid quarter of workers, 48% had access and 22% participated, compared with 92% and 81% among the highest-paid quarter. For part-time workers the figures were 44% and 20% (BLS National Compensation Survey)."
-    },
-    {
-      "title": "The Longevity Gap",
-      "detail": "A 2016 JAMA study led by Raj Chetty found that at age 40, men in the richest 1% live 14.6 years longer than men in the poorest 1%, and women 10.1 years longer. From 2001 to 2014, the top 5% of earners gained 2.34 (men) and 2.91 (women) years of life expectancy, while the bottom 5% gained only 0.32 and 0.04."
-    },
-    {
-      "title": "The Racial Wealth Gap Widened",
-      "detail": "The Federal Reserve’s 2025 Survey of Consumer Finances found that median net worth for Black families fell 25% between 2022 and 2025, to $36,800. Over the same period, median wealth rose to $332,100 for White families and $79,600 for Hispanic families (2025 dollars)."
-    },
-    {
-      "title": "Elder Poverty Is Rising Again",
-      "detail": "An AARP Foundation analysis of Census data puts Supplemental Poverty Measure poverty among Americans aged 65 and older at 15.4% in 2025, up from 9.4% in 2020: more than 10 million people. For older women the rate is nearly 17%. Census data show Social Security moved 28.8 million people out of poverty in 2025."
-    },
-    {
-      "title": "Aging Into Homelessness",
-      "detail": "Using HUD data, the GAO reported in January 2025 that about 146,000 adults aged 55 and older were homeless, about one in five of all people experiencing homelessness and roughly 6% more than in 2023. A 2019 multi-university study projected that the homeless population aged 65 and older would nearly triple, from about 40,000 to 106,000, by 2030 (projected)."
-    }
-  ],
-  "historicalContext": [
-    {
-      "year": 2010,
-      "title": "Uber and the Gig Economy",
-      "detail": "Founded in 2009 as UberCab, Uber began service in San Francisco on July 5, 2010. By July 2023, the BLS counted 11.9 million independent contractors, 7.4% of total employment, workers who generally fall outside employer-sponsored retirement plans."
-    },
-    {
-      "year": 2011,
-      "endYear": 2029,
-      "title": "Boomers Begin Turning 65",
-      "detail": "The oldest Baby Boomers turned 65 on January 1, 2011, and Pew estimated that about 10,000 a day would follow for 19 years. The Census Bureau projects that all Boomers will be 65 or older by 2030."
-    },
-    {
-      "year": 2024,
-      "endYear": 2027,
-      "title": "Peak 65",
-      "detail": "From 2024 through 2027, more than 4.1 million Americans a year, about 11,200 a day, turn 65, according to the Alliance for Lifetime Income’s Retirement Income Institute. The institute notes that most of these households lack a pension."
-    },
-    {
-      "year": 2025,
-      "title": "Student Debt Goes Gray",
-      "detail": "Borrowers aged 50 and older held about 26% of outstanding federal student debt in early 2025. The Fed’s 2025 survey found that 20% of families carry student debt, with a median balance of $25,600."
-    },
-    {
-      "year": 2029,
-      "title": "Projected: Older Americans Outnumber Children",
-      "detail": "Projected. In the Census Bureau’s 2023 middle-series projections, Americans aged 65 and older outnumber children under 18 for the first time in 2029."
-    }
-  ],
-  "seeds": [
-    {
-      "seed": 1,
-      "stage": "harvest",
-      "detail": "The boundaries drawn in 1935 still sort who is protected. Part-time, low-wage and gig workers have the least access to workplace plans. The 2025 repeal of WEP/GPO shows that boundaries can be redrawn, but only for groups organized enough to demand it."
-    },
-    {
-      "seed": 2,
-      "stage": "harvest",
-      "detail": "Government shows both faces at once. It rescues multiemployer pensions with $77.9 billion and restores benefits to public workers, yet passes tax relief that weakens trust fund revenue and leaves the 2032 depletion unaddressed. Protection and abandonment arrive in the same decade."
-    },
-    {
-      "seed": 3,
-      "stage": "harvest",
-      "detail": "Peak 65 makes the age a demographic wave as well as a cultural endpoint: over 4.1 million Americans a year reach it. Full Social Security retirement age has risen to 67 under the 1983 Amendments, yet 65 remains the cultural finish line, even as the longevity gap means the extra years are not shared equally."
-    },
-    {
-      "seed": 4,
-      "stage": "harvest",
-      "detail": "Three sharp drops (2020, 2022, 2025) all recovered, which reinforces the belief that markets always come back. The harvest falls on those who had to sell at the bottom, and on 2022’s lesson that stocks and bonds can fall together."
-    },
-    {
-      "seed": 5,
-      "stage": "harvest",
-      "detail": "Leisure splits in two. FIRE recasts it as escape at 35, and the pandemic wave of excess retirements shows how quickly people leave work when markets allow it. For most Peak 65 households, though, the “golden years” image now runs up against the savings data."
-    },
-    {
-      "seed": 6,
-      "stage": "blooming",
-      "detail": "Speed and speculation flourish in app-based trading and crypto. The seed is still growing rather than harvested, and its appeal rises as the gap between what people have and what they need widens."
-    },
-    {
-      "seed": 7,
-      "stage": "harvest",
-      "detail": "The two Americas now differ in lifespan (a 14.6-year gap for men), plan access (92% vs. 48% across wage quartiles) and wealth (Black median net worth fell 25% from 2022 to 2025). The system works best for those who already need it least."
-    },
-    {
-      "seed": 8,
-      "stage": "harvest",
-      "detail": "Detroit retirees took cuts, and Central States retirees were nearly cut by law before taxpayers stepped in. The betrayal the book describes becomes literal: promised benefits were reduced, suspended or bailed out."
-    },
-    {
-      "seed": 9,
-      "stage": "harvest",
-      "detail": "SECURE and SECURE 2.0 respond to failure with more individual accounts, made better through defaults and matches. A shortfall is still framed as a personal savings problem, which the book calls converting systemic failure into personal failure."
-    }
-  ],
-  "twoPersonLens": {
-    "year": 2025,
-    "older": {
-      "born": 1965,
-      "headline": "Trying to Exit a System That No Longer Functions",
-      "text": "She turned 20 in 1985, in the early years of the 401(k), and was handed a calculator instead of a pension. She was 43 when the 2008 crash cut the market by more than half, 55 when COVID briefly erased a third of it, and 57 when stocks and bonds fell together in 2022. Now 60, she stands just behind the Peak 65 wave. Her full Social Security retirement age is 67, and she reaches it in 2032, the very year the Trustees project the retirement trust fund will run dry. If Congress does nothing, her check could arrive about 22% smaller than her statement promised. She is not behind because she failed the plan. She is leaving a system whose exit door is moving."
-    },
-    "younger": {
-      "born": 2005,
-      "headline": "Never Entered It",
-      "text": "He was a toddler when Lehman failed and fifteen when the pandemic shut his school. At 20 he works two jobs, one of them through an app. As a part-timer, he belongs to a group in which only 44% of private-sector workers have access to a retirement plan and only 20% take part. He has no pension to lose and no 401(k) to watch, because the system his grandparents retired on never reached him. He turns 67 in 2072. Without reform, the Trustees project that payable retirement benefits will slide from about 78% of scheduled at depletion toward 62% by 2100. He is not grieving the dream. He never downloaded it."
-    },
-    "irony": "The 60-year-old is racing to leave a system as its exit narrows, while the 20-year-old is told to save for a system that never let him in."
+ "id": "collapse",
+ "number": 6,
+ "title": "Collapse",
+ "years": "2010–2040",
+ "definition": "col·lapse (noun) the fall of something",
+ "tagline": "We are not approaching the collapse. We are in it.",
+ "bigQuestion": "When a system fails slowly, how do we know it is failing — and who carries the cost while it does?",
+ "overview": "The book calls 2010–2040 the Collapse, and it insists on the present tense: “We are not approaching the collapse. We are in it.” Grimm’s image is a building that falls slowly. Cracks appear, engineers file reports, someone repaints the lobby, and people keep walking in. The 2008 crash could have been the moment to ask whether the retirement system works. Instead, the book argues, the recovery was a fresh coat of paint rather than a reckoning.\n\nThis module follows the cracks as they widen. The first Baby Boomers turned 65 in 2011; from 2024 through 2027 more than 4.1 million Americans a year reach that age. Detroit cut retiree pensions in bankruptcy, multiemployer plans neared insolvency until taxpayers rescued them, and Congress kept tuning the individual-account system it inherited from the Codify era. Three sharp market drops, in 2020, 2022 and 2025, tested savers who had been told markets always come back.\n\nThe era ends in projection. The 2026 Social Security Trustees Report projects that the retirement trust fund (OASI) will be depleted in late 2032. Unless Congress acts, about 78% of scheduled benefits would then be payable. Your job is to separate what has happened from what is projected, and to test the book’s claim that the collapse is “a mathematical inevitability.”",
+ "learningObjectives": [
+  "Explain how the 2026 Trustees Report arrives at its projections (OASI depletion in 2032, about 78% of scheduled benefits payable) and distinguish “scheduled” from “payable” benefits.",
+  "Trace the defined-benefit failures of the era (Detroit, Central States and the 2021 Special Financial Assistance rescue) and evaluate who absorbed the losses.",
+  "Analyze how the SECURE Act (2019) and SECURE 2.0 (2022) extended the individual-account model through nudges such as automatic enrollment.",
+  "Compare the book’s savings-gap arithmetic with current Federal Reserve (SCF 2025) and BLS data, identifying where the evidence supports or complicates the argument.",
+  "Evaluate how the Two Americas seed shows up in unequal access to workplace plans, unequal wealth and unequal life expectancy."
+ ],
+ "policyEvents": [
+  {
+   "year": 2010,
+   "title": "Affordable Care Act",
+   "type": "legislation",
+   "detail": "Enacted in March 2010, the ACA created premium tax credits for households with incomes from 100% to 400% of the federal poverty level. It also expanded Medicaid to adults below 138% of poverty, although not every state has adopted the expansion.",
+   "significance": "Healthcare is the book’s “hidden enemy” of old age. Subsidized individual coverage gave workers who leave a job before Medicare eligibility at 65 an option outside employer insurance, an instance of the Government Involvement seed acting as protection."
   },
-  "keyTerms": [
-    {
-      "term": "Trust fund depletion",
-      "definition": "The point at which a Social Security or Medicare trust fund’s reserves run out. The program does not end; it can pay only what incoming revenue covers."
-    },
-    {
-      "term": "Scheduled vs. payable benefits",
-      "definition": "Scheduled benefits are what the current benefit formula promises. Payable benefits are what incoming revenue can fund after depletion: about 78% for OASI in 2032 under the 2026 Trustees’ intermediate assumptions."
-    },
-    {
-      "term": "Worker-to-beneficiary ratio",
-      "definition": "The number of covered workers paying into Social Security for each beneficiary: 5.1 in 1960, 2.9 in 2010 and 2.6 in 2025, with 2.3 projected by 2035 (2026 Trustees Report)."
-    },
-    {
-      "term": "Multiemployer pension plan",
-      "definition": "A defined-benefit plan jointly funded by many employers in an industry under a collective-bargaining agreement, such as the Teamsters’ Central States fund."
-    },
-    {
-      "term": "Special Financial Assistance (SFA)",
-      "definition": "Non-repayable federal funds created by the American Rescue Plan Act of 2021 to keep severely underfunded multiemployer plans paying benefits, administered by the PBGC."
-    },
-    {
-      "term": "Automatic enrollment",
-      "definition": "A plan design that enrolls workers by default unless they opt out. SECURE 2.0 requires it for most new 401(k) and 403(b) plans starting in 2025."
-    },
-    {
-      "term": "Required minimum distribution (RMD)",
-      "definition": "The minimum that must be withdrawn each year from tax-deferred retirement accounts after a set age: 72 under the SECURE Act, then 73 under SECURE 2.0, rising to 75 in 2033."
-    },
-    {
-      "term": "Supplemental Poverty Measure (SPM)",
-      "definition": "A Census poverty measure that counts taxes, government benefits and necessary expenses such as medical costs. It shows higher poverty among older adults than the official measure (14.1% vs. 10.2% in 2022)."
-    },
-    {
-      "term": "Peak 65",
-      "definition": "The years 2024–2027, when more than 4.1 million Americans a year turn 65 and the Baby Boom’s arrival at retirement age reaches its height."
-    }
-  ],
-  "keyFigures": [
-    {
-      "name": "Steven Rhodes",
-      "role": "The federal bankruptcy judge who presided over Detroit’s Chapter 9 case and confirmed its plan of adjustment on November 7, 2014, including the Grand Bargain that limited pension cuts."
-    },
-    {
-      "name": "Raj Chetty",
-      "role": "Economist who led the 2016 JAMA study linking income to life expectancy. Its finding of a 14.6-year gap for men between the richest and poorest 1% changes the question of whom a uniform retirement age actually serves."
-    },
-    {
-      "name": "Pete Adeney (“Mr. Money Mustache”)",
-      "role": "A blogger who stopped full-time work at 30 and in 2011 launched the site that became a hub of the FIRE movement, a test case for both rejecting and reinforcing the retirement dream."
-    },
-    {
-      "name": "Kalle Lasn",
-      "role": "Co-founder of Adbusters, whose 2011 call launched Occupy Wall Street and its “99%” framing of inequality."
-    }
-  ],
-  "primarySources": [
-    {
-      "title": "2026 OASDI Trustees Report — Highlights",
-      "year": 2026,
-      "source": "Social Security Administration, Office of the Chief Actuary",
-      "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html",
-      "why": "Find the official depletion dates, the payable percentages and the 75-year deficit, and note the phrase “absent legislative action.”"
-    },
-    {
-      "title": "Table IV.B4: Covered Workers and Beneficiaries, 1945–2100",
-      "year": 2026,
-      "source": "Social Security Administration, 2026 Trustees Report",
-      "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html",
-      "why": "Trace the worker-to-beneficiary ratio from 41.9 in 1945 to its projected 1.9, and identify where history ends and projection begins."
-    },
-    {
-      "title": "Changes in U.S. Family Finances from 2022 to 2025: Evidence from the Survey of Consumer Finances",
-      "year": 2026,
-      "source": "Board of Governors of the Federal Reserve System",
-      "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
-      "why": "Compare retirement-account ownership (54.9% of families) and median balances with the book’s savings-gap claims."
-    },
-    {
-      "title": "Employee Benefits in the United States, March 2026",
-      "year": 2026,
-      "source": "U.S. Bureau of Labor Statistics",
-      "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
-      "why": "Note who has access to retirement plans and who actually participates, by wage level and full- or part-time status."
-    },
-    {
-      "title": "Association Between Income and Life Expectancy in the United States, 2001–2014",
-      "year": 2016,
-      "source": "JAMA (Chetty et al.)",
-      "url": "https://jamanetwork.com/journals/jama/fullarticle/2513561",
-      "why": "Consider what the income–longevity gap implies for a single retirement age applied to everyone."
-    }
-  ],
-  "discussionQuestions": [
-    "The book argues that 2008 should have prompted a reckoning but produced only “a fresh coat of paint.” Judging by the laws in this module (SECURE, SECURE 2.0 and the 2021 pension rescue), was the post-2008 response repair, renovation or denial?",
-    "Challenge the book: markets regained their prior highs within months of the 2020 and 2025 drops, and the Fed’s 2025 survey shows the median retirement balance among holders rising to $106,000. Does this evidence undercut the claim that the collapse is “a mathematical inevitability,” or do averages hide the people the book is writing about?",
-    "Detroit retirees took cuts, while Central States retirees were made whole by taxpayers. What explains the different outcomes, and what do they reveal about The Promise as a moral category?",
-    "The Social Security Fairness Act and the 2025 senior deduction both helped current retirees while worsening long-range trust fund finances. How should lawmakers weigh obligations to today’s 65-year-olds against tomorrow’s 20-year-olds?",
-    "FIRE and the pandemic retirement wave both rejected the forty-years-then-stop script. Are they signs of the awakening the book calls “who gave you that dream?”, or new versions of the Leisure and Individualism seeds?",
-    "Which matters most for the Two Americas seed in this era: unequal access to plans, unequal wealth or unequal lifespans? Defend your choice with data."
-  ],
-  "assignment": {
-    "title": "Your Number vs. the Data",
-    "type": "Quantitative data investigation",
-    "prompt": "The Collapse chapter makes a simple calculation: a $20,000 income at a 4% withdrawal rate requires $500,000, while median savings near retirement are about $65,000. Rebuild and stress-test that argument with official data. Pull at least three figures from each of three sources: (1) the Federal Reserve’s 2025 Survey of Consumer Finances, including its interactive data on medians by age; (2) the 2026 Social Security Trustees Report (depletion dates, payable percentages, worker-to-beneficiary ratios); and (3) either the BLS National Compensation Survey or the current HHS poverty guidelines. Calculate a “number” for a hypothetical 60-year-old under two scenarios, scheduled benefits and payable benefits after 2032, and explain what the gap means. Conclude by stating where the data confirm, sharpen or complicate the book’s claim.",
-    "deliverable": "A 1,200–1,500-word data memo with at least one table or chart, a methods paragraph stating every assumption, and at least four cited official sources (APA or Chicago).",
-    "points": 100,
-    "rubric": [
-      {
-        "criterion": "Data accuracy & sourcing",
-        "points": 30,
-        "exemplary": "Every figure is correct, dated and traced to an official table; the memo distinguishes historical data from projections and medians from means.",
-        "proficient": "Figures are mostly accurate and sourced, with minor dating or labeling gaps.",
-        "developing": "Several figures are unsourced, outdated or mislabeled (for example, means presented as medians).",
-        "beginning": "Data are missing, invented or impossible to trace."
-      },
-      {
-        "criterion": "Quantitative reasoning",
-        "points": 30,
-        "exemplary": "Calculations are correct and transparent, assumptions are stated, and the scheduled-vs.-payable scenarios are modeled clearly, with a sensitivity check.",
-        "proficient": "Calculations are correct, with some assumptions left implicit.",
-        "developing": "Calculations contain errors or skip steps, and the two scenarios are not clearly compared.",
-        "beginning": "Little or no calculation, or the math is fundamentally wrong."
-      },
-      {
-        "criterion": "Engagement with the book’s argument",
-        "points": 25,
-        "exemplary": "Fairly states the book’s claim, then shows precisely where the data confirm, sharpen or complicate it, including who is hidden by the averages.",
-        "proficient": "Connects the data to the book’s claim, with a reasonable but general evaluation.",
-        "developing": "Mentions the book but does not test its claim against the data.",
-        "beginning": "Ignores the book’s argument or simply restates it."
-      },
-      {
-        "criterion": "Clarity & presentation",
-        "points": 15,
-        "exemplary": "Concise memo structure, with a well-labeled chart or table a non-specialist can read and clean citations.",
-        "proficient": "Clear overall, with minor formatting or labeling issues.",
-        "developing": "Disorganized, or visuals are hard to interpret.",
-        "beginning": "Missing visual, unclear writing or no citations."
-      }
-    ]
+  {
+   "year": 2013,
+   "endYear": 2014,
+   "title": "Detroit’s Chapter 9 Bankruptcy",
+   "type": "policy",
+   "detail": "Detroit filed for Chapter 9 bankruptcy on July 18, 2013, with an estimated $18–20 billion in debts and obligations. A “Grand Bargain” of about $816 million from the State of Michigan, foundations and the Detroit Institute of Arts limited the damage. General retirees lost 4.5% of their pensions and their annual cost-of-living increases, and police and fire retirees lost part of theirs. Judge Steven Rhodes confirmed the plan on November 7, 2014.",
+   "significance": "Public pensions, the last widespread defined-benefit promise, proved cuttable in bankruptcy. This is the harvest of The Promise seed: a pension is only as secure as the institution behind it."
   },
-  "quiz": [
-    {
-      "q": "According to the 2026 Social Security Trustees Report, when is the OASI (retirement) trust fund projected to be depleted?",
-      "options": ["2029", "Late 2032", "2035", "2041"],
-      "answer": 1,
-      "explain": "The 2026 Trustees project OASI depletion in the fourth quarter of 2032, after which about 78% of scheduled benefits would be payable without congressional action."
-    },
-    {
-      "q": "What does SECURE 2.0 (2022) require of most new 401(k) and 403(b) plans beginning in 2025?",
-      "options": ["Guaranteed lifetime pensions", "Automatic enrollment of eligible workers", "A mandatory 6% employer match", "Investment only in index funds"],
-      "answer": 1,
-      "explain": "New plans must auto-enroll workers at 3–10% of pay, with annual increases. Workers can still opt out."
-    },
-    {
-      "q": "About how many covered workers were paying into Social Security for each beneficiary in 2025?",
-      "options": ["About 5.1", "About 3.4", "About 2.6", "About 1.9"],
-      "answer": 2,
-      "explain": "Table IV.B4 of the 2026 Trustees Report shows 2.6 in 2025, down from 5.1 in 1960. The ratio is projected to fall to 1.9 by 2075."
-    },
-    {
-      "q": "What did the American Rescue Plan Act’s Special Financial Assistance program (2021) do?",
-      "options": ["Cut multiemployer pension benefits to restore solvency", "Provided non-repayable federal funds to severely underfunded multiemployer pension plans", "Converted pensions into 401(k) accounts", "Raised the Social Security payroll tax"],
-      "answer": 1,
-      "explain": "SFA grants from general taxpayer funds kept plans like Central States paying benefits. By May 2026 about $77.9 billion had been approved."
-    },
-    {
-      "q": "In March 2026, what share of the lowest-paid quarter of private-industry workers had access to an employer retirement plan?",
-      "options": ["About 92%", "About 72%", "About 48%", "About 10%"],
-      "answer": 2,
-      "explain": "The BLS reported 48% access, and only 22% participation, for the lowest wage quartile, compared with 92% access for the highest."
-    }
-  ],
-  "sources": [
-    {"label": "SSA — 2026 Trustees Report Highlights", "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html"},
-    {"label": "SSA — 2026 Trustees Report, Table IV.B4 (workers per beneficiary)", "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html"},
-    {"label": "SSA — Summary of the 2025 Trustees Reports", "url": "https://www.ssa.gov/oact/TRSUM/"},
-    {"label": "CRFB — Analysis of the 2026 Social Security Trustees’ Report", "url": "https://www.crfb.org/papers/analysis-2026-social-security-trustees-report"},
-    {"label": "CRFB — Analysis of the 2026 Medicare Trustees’ Report", "url": "https://www.crfb.org/papers/analysis-2026-medicare-trustees-report"},
-    {"label": "Becker’s — 2026 Medicare Trustees notes", "url": "https://www.beckershospitalreview.com/finance/medicare-advantage-spending-flagged-as-hospital-fund-depletion-moves-up-5-notes/"},
-    {"label": "CBO — 2026 Long-Term Projections for Social Security", "url": "https://www.cbo.gov/publication/62556"},
-    {"label": "401(k) Specialist — CBO projects 26% cut in 2032", "url": "https://401kspecialistmag.com/social-security-benefit-cut-could-reach-26-in-2032-cbo-projects/"},
-    {"label": "Federal Reserve — Changes in U.S. Family Finances 2022–2025 (SCF)", "url": "https://www.federalreserve.gov/publications/files/scf26.pdf"},
-    {"label": "Federal Reserve — Survey of Consumer Finances index", "url": "https://www.federalreserve.gov/econres/scfindex.htm"},
-    {"label": "BLS — Employee Benefits in the U.S., March 2026", "url": "https://www.bls.gov/news.release/ebs2.nr0.htm"},
-    {"label": "BLS — Retirement benefits table, March 2026", "url": "https://www.bls.gov/news.release/ebs2.t01.htm"},
-    {"label": "BLS — Contingent and Alternative Employment Arrangements, July 2023", "url": "https://www.bls.gov/news.release/conemp.nr0.htm"},
-    {"label": "BLS — JOLTS, November 2021", "url": "https://www.bls.gov/news.release/archives/jolts_01042022.htm"},
-    {"label": "St. Louis Fed — U.S. Retirement Normalization after COVID-19", "url": "https://www.stlouisfed.org/on-the-economy/2025/jul/us-retirement-normalization-covid19-pandemic"},
-    {"label": "Pew Research — Baby Boomers Retire (2010)", "url": "https://www.pewresearch.org/short-reads/2010/12/29/baby-boomers-retire/"},
-    {"label": "Alliance for Lifetime Income — Peak 65 release", "url": "https://www.protectedincome.org/wp-content/uploads/2024/01/Peak-65-Release-final-011024.pdf"},
-    {"label": "Census Bureau — 2023 National Population Projections", "url": "https://www.census.gov/newsroom/press-releases/2023/population-projections.html"},
-    {"label": "Census Bureau — Demographic Turning Points (P25-1144)", "url": "https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf"},
-    {"label": "Detroit bankruptcy — overview", "url": "https://en.wikipedia.org/wiki/Detroit_bankruptcy"},
-    {"label": "CBS News — Detroit retirees approve pension cuts", "url": "https://www.cbsnews.com/news/detroit-retirees-workers-overwhelmingly-ok-pension-cuts"},
-    {"label": "CRS — Treasury denial of Central States MPRA application (2016)", "url": "https://www.everycrsreport.com/files/20160518_IN10491_c198d9e75b09385c3f23fa7e55fc81ed9def8f17.html"},
-    {"label": "PBGC — Central States SFA approval (2022)", "url": "https://www.pbgc.gov/news/press/pr22-45"},
-    {"label": "PBGC — American Rescue Plan Act SFA program", "url": "https://www.pbgc.gov/arpa"},
-    {"label": "CRS — PBGC: A Primer (Sept. 2026)", "url": "https://www.everycrsreport.com/files/2026-09-02_95-118_13cb409298842e6b6c9452cb940520aff8ee9329.html"},
-    {"label": "SECURE Act — overview", "url": "https://en.wikipedia.org/wiki/SECURE_Act"},
-    {"label": "JD Supra — SECURE 2.0 as enacted", "url": "https://www.jdsupra.com/legalnews/secure-2-0-act-of-2022-as-enacted-5325428/"},
-    {"label": "Social Security Fairness Act — overview", "url": "https://en.wikipedia.org/wiki/Social_Security_Fairness_Act"},
-    {"label": "SSA — 2025 press releases (WEP/GPO implementation)", "url": "https://www.ssa.gov/news/press/releases/2025/"},
-    {"label": "IRS — One, Big, Beautiful Bill provisions for individuals", "url": "https://irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers"},
-    {"label": "IRS — Publication on the enhanced senior deduction", "url": "https://www.irs.gov/pub/irs-pdf/p6142.pdf"},
-    {"label": "News On 6 — Trump signs ‘big beautiful bill’ into law", "url": "https://newson6.com/story/6868292acb11631e7db31499/president-trump-signs-big-beautiful-bill-white-house"},
-    {"label": "HealthCare.gov — Affordable Care Act", "url": "https://www.healthcare.gov/glossary/affordable-care-act/"},
-    {"label": "PBS NewsHour — S&P 500 erases pandemic losses", "url": "https://www.pbs.org/newshour/economy/sp-500-closes-at-a-record-erasing-last-of-pandemic-losses"},
-    {"label": "Morningstar — 15 Charts Explaining an Extreme Year (2022)", "url": "https://www.morningstar.com/markets/15-charts-explaining-an-extreme-year-investors"},
-    {"label": "Investing.com — S&P 500 close, April 8, 2025", "url": "https://www.investing.com/news/economy-news/futures-rise-after-heavy-losses-on-hopes-of-talks-over-tariffs-3972893"},
-    {"label": "ColoradoBiz — U.S. stocks hit record after tariff plunge", "url": "https://coloradobiz.com/us-stocks-record-high-tariff-recovery/"},
-    {"label": "Occupy Wall Street — overview", "url": "https://en.wikipedia.org/wiki/Occupy_Wall_Street"},
-    {"label": "Financial Samurai — Who started the FIRE movement?", "url": "https://www.financialsamurai.com/?p=86249"},
-    {"label": "The Tilt — Pete Adeney / Mr. Money Mustache", "url": "https://www.thetilt.com/content-entrepreneur/peter-adeny-mr-money-mustache-blog"},
-    {"label": "EBSCO — Uber (company)", "url": "https://ebsco.com/research-starters/business-and-management/uber-company"},
-    {"label": "Harvard — Chetty et al., Income and Life Expectancy (2016)", "url": "https://hcp.hms.harvard.edu/publication/association-between-income-and-life-expectancy-united-states-2001-2014"},
-    {"label": "AARP Foundation — Response to 2025 Census poverty data", "url": "https://www.aarp.org/press/releases/2026-09-15-aarp-foundation-responds-to-new-census-data-on-rising-poverty-among-older-adults/"},
-    {"label": "St. Louis Public Radio/NPR — Rising poverty among older adults", "url": "https://stlpr.org/npr/2026-09-24/the-economic-squeeze-is-pushing-up-poverty-rates-for-older-adults"},
-    {"label": "Census Bureau — Poverty in the United States: 2025", "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html"},
-    {"label": "ACL — 2023 Profile of Older Americans", "url": "https://acl.gov/sites/default/files/Profile%20of%20OA/ACL_ProfileOlderAmericans2023_508.pdf"},
-    {"label": "GAO — More Older Adults Are Homeless (2025)", "url": "https://www.gao.gov/blog/more-older-adults-are-homeless-what-can-be-done-help-vulnerable-population-unique-needs"},
-    {"label": "Penn Today — Aging homeless population to nearly triple by 2030", "url": "https://penntoday.upenn.edu/news/report-predicts-aging-homeless-population-will-nearly-triple-2030"},
-    {"label": "PLANSPONSOR — Student debt not just a young person’s problem", "url": "https://www.plansponsor.com/student-debt-not-just-a-young-persons-problem/"}
+  {
+   "year": 2014,
+   "title": "Multiemployer Pension Reform Act (MPRA)",
+   "type": "legislation",
+   "detail": "Enacted in December 2014 as Division O of the Consolidated and Further Continuing Appropriations Act, 2015 (P.L. 113-235), MPRA let severely underfunded multiemployer plans apply to the Treasury to cut benefits already being paid, provided the cuts would restore solvency. Retirees aged 80 and older and disabled participants were protected, and no benefit could fall below 110% of the PBGC guarantee.",
+   "significance": "Federal law now allowed earned pension benefits to be cut for people already retired. The Promise was rewritten after the fact."
+  },
+  {
+   "year": 2016,
+   "title": "Treasury Rejects Central States Benefit Cuts",
+   "type": "policy",
+   "detail": "The Teamsters’ Central States pension fund applied under MPRA to cut benefits for about 270,000 of its nearly 400,000 participants, totaling about $11 billion. On May 6, 2016, the Treasury rejected the application, citing an unreasonable 7.5% return assumption, an inequitable distribution of the cuts and notices that participants could not understand. The fund expected to become insolvent around 2026.",
+   "significance": "The rejection bought time without solving anything, and the plan’s fate passed to Congress. It shows the Government Involvement seed as protector and bystander at once."
+  },
+  {
+   "year": 2019,
+   "title": "SECURE Act",
+   "type": "legislation",
+   "detail": "Signed December 20, 2019, as part of the Further Consolidated Appropriations Act, 2020 (P.L. 116-94). The law raised the required minimum distribution age from 70½ to 72 and ended the “stretch IRA” for most non-spouse heirs by imposing a 10-year payout rule. It also opened 401(k)s to long-term part-time workers, let unrelated small employers share pooled plans and created a safe harbor for offering annuities inside 401(k)s.",
+   "significance": "The first major retirement law of the Collapse era tuned the individual-account machine rather than questioning it: the Individualism seed with better plumbing."
+  },
+  {
+   "year": 2021,
+   "title": "American Rescue Plan: Special Financial Assistance for Multiemployer Pensions",
+   "type": "legislation",
+   "detail": "The American Rescue Plan Act, signed March 11, 2021, incorporated the multiemployer rescue championed as the Butch Lewis Act. It created non-repayable Special Financial Assistance, paid from general taxpayer funds, for severely underfunded plans. Central States received about $35.8 billion in December 2022 for 357,056 participants; without it, the plan was projected to run out of money in 2025 and benefits would have dropped roughly 60% below plan terms. By May 2026, the PBGC had approved about $77.9 billion for 161 plans covering roughly 1.8 million people.",
+   "significance": "The Promise was kept, but by taxpayers rather than by the employers who made it. The Community principle reappeared as a federal backstop."
+  },
+  {
+   "year": 2022,
+   "title": "SECURE 2.0 Act",
+   "type": "legislation",
+   "detail": "Signed December 29, 2022. From 2025, most new 401(k) and 403(b) plans must automatically enroll workers at 3–10% of pay with annual increases. The law also raised the RMD age to 73, rising to 75 in 2033, and allowed employers to match student-loan payments. Its federal Saver’s Match pays 50% of up to $2,000 in contributions for lower- and moderate-income savers, starting with 2027 contributions.",
+   "significance": "Automatic enrollment uses a collective tool, the default, to rescue an individual system. Students should ask whether nudges answer the structural question or only make it quieter."
+  },
+  {
+   "year": 2025,
+   "title": "Social Security Fairness Act",
+   "type": "legislation",
+   "detail": "Signed January 5, 2025 (P.L. 118-273), after votes of 327–75 in the House and 76–20 in the Senate, the Act repealed the Windfall Elimination Provision and the Government Pension Offset. Those rules had reduced or eliminated Social Security benefits for more than 3.2 million people with pensions from jobs not covered by Social Security. By late April 2025, the SSA had paid more than $14.8 billion in retroactive benefits to over 2.2 million people.",
+   "significance": "The law redrew a boundary (Seed 1) in favor of public workers. The 2025 Trustees named it the primary contributor to the change in the combined trust fund depletion date, so generosity and solvency pulled in opposite directions."
+  },
+  {
+   "year": 2025,
+   "title": "One Big Beautiful Bill Act: Senior Deduction",
+   "type": "legislation",
+   "detail": "Signed July 4, 2025 (P.L. 119-21), the law added a temporary $6,000 deduction for each taxpayer aged 65 or older for tax years 2025–2028, phasing out above $75,000 in modified adjusted gross income ($150,000 for joint filers). The Committee for a Responsible Federal Budget’s analysis of the 2026 Trustees Report finds that the law cut Social Security’s 75-year balance by 0.16% of taxable payroll, about a quarter of that year’s deterioration, by lowering revenue from income taxes on benefits.",
+   "significance": "Tax relief for today’s seniors came partly at the cost of the trust fund’s future. Students can test whether this fits the book’s pattern of “accountability without proximity.”"
+  },
+  {
+   "year": 2032,
+   "title": "Projected: Social Security Retirement Trust Fund (OASI) Depleted",
+   "type": "policy",
+   "detail": "Projected. The 2026 Trustees Report (released June 9, 2026) projects that OASI reserves will be depleted in the fourth quarter of 2032. Payroll taxes would then cover about 78% of scheduled benefits, falling to 62% by 2100. CBO’s September 2026 projections are more pessimistic, with exhaustion in fiscal 2032 and a 26% cut. Medicare’s Hospital Insurance fund is projected to be depleted in 2033, when 89% of costs would be payable.",
+   "significance": "The book wrote “mid-2030s” and “75–80%,” and the newest official projections move the date earlier. This is the hinge between Collapse and Catastrophe. It is a projection under current law, not a certainty, because Congress can act."
+  }
+ ],
+ "marketDrops": [
+  {
+   "year": 2020,
+   "endYear": 2020,
+   "name": "The COVID Crash",
+   "decline": "−34% (S&P 500, Feb 19 – Mar 23, 2020)",
+   "detail": "Pandemic shutdowns produced what was then the fastest bear market on record, a nearly 34% fall that lasted barely more than a month. The S&P 500 closed at a new record on August 18, 2020, about five months after the bottom.",
+   "retirementImpact": "Savers who had to sell near the bottom, including newly displaced older workers, locked in losses that the averages quickly erased."
+  },
+  {
+   "year": 2022,
+   "endYear": 2022,
+   "name": "The 2022 Bear Market",
+   "decline": "≈ −25% (U.S. stocks, Jan 3 – mid-Oct 2022; Morningstar US Market Index −25.4% from peak)",
+   "detail": "Rising inflation and interest rates pushed U.S. stocks down about a quarter from their January peak. Bonds offered no shelter: the Morningstar US Core Bond Index fell 12.9% in 2022, its worst year on record.",
+   "retirementImpact": "Stocks and bonds fell together, so the “balanced” portfolios sold to near-retirees as the safe option lost value on both sides."
+  },
+  {
+   "year": 2025,
+   "endYear": 2025,
+   "name": "The Tariff Shock",
+   "decline": "≈ −19% (S&P 500, Feb 19 – Apr 8, 2025)",
+   "detail": "After sweeping tariff announcements, the S&P 500 closed almost 19% below its February 19 record on April 8, 2025, just short of a bear market. It recovered to a record close by June 27, 2025.",
+   "retirementImpact": "Peak 65 retirees saw a fifth of their equity value threatened within weeks of leaving work: sequence-of-returns risk in real time."
+  }
+ ],
+ "socialMovements": [
+  {
+   "year": 2011,
+   "endYear": 2011,
+   "name": "Occupy Wall Street",
+   "detail": "Occupy began on September 17, 2011, in Zuccotti Park in Lower Manhattan, after a call from the Canadian magazine Adbusters, and popularized the slogan “We are the 99%.” Police cleared the encampment on November 15, 2011.",
+   "significance": "It named the Two Americas seed in the language of mass politics just as the first Boomers reached 65."
+  },
+  {
+   "year": 2011,
+   "name": "FIRE: Financial Independence, Retire Early",
+   "detail": "FIRE draws on the 1992 book Your Money or Your Life by Joe Dominguez and Vicki Robin and spread through blogs. Pete Adeney’s Mr. Money Mustache, launched in 2011 by a blogger who had stopped full-time work at 30, became a hub for followers who save aggressively in order to exit paid work decades early.",
+   "significance": "FIRE rebels against 65 = Old and Done while doubling down on Individualism and Market Growth: it is still an escape financed by a personal portfolio."
+  },
+  {
+   "year": 2021,
+   "endYear": 2022,
+   "name": "The Great Resignation and the Pandemic Retirement Wave",
+   "detail": "Quits reached a then-series high of 4.5 million in November 2021 (BLS JOLTS). One estimate counted more than 2.4 million “excess” retirements by August 2021. The St. Louis Fed found that the excess peaked in late 2021 and had disappeared by late 2024.",
+   "significance": "The surge and its fade suggest that retirement timing tracks markets and circumstances rather than a fixed plan or age."
+  }
+ ],
+ "inequities": [
+  {
+   "title": "Access Depends on the Job",
+   "detail": "In March 2026, 72% of private-industry workers had access to an employer retirement plan and 52% participated. Among the lowest-paid quarter of workers, 48% had access and 22% participated, compared with 92% and 81% among the highest-paid quarter. For part-time workers the figures were 44% and 20% (BLS National Compensation Survey).",
+   "vars": [
+    "job",
+    "income"
+   ]
+  },
+  {
+   "title": "The Longevity Gap",
+   "detail": "A 2016 JAMA study led by Raj Chetty found that at age 40, men in the richest 1% live 14.6 years longer than men in the poorest 1%, and women 10.1 years longer. From 2001 to 2014, the top 5% of earners gained 2.34 (men) and 2.91 (women) years of life expectancy, while the bottom 5% gained only 0.32 and 0.04.",
+   "vars": [
+    "income",
+    "longevity",
+    "gender"
+   ]
+  },
+  {
+   "title": "The Racial Wealth Gap Widened",
+   "detail": "The Federal Reserve’s 2025 Survey of Consumer Finances found that median net worth for Black families fell 25% between 2022 and 2025, to $36,800. Over the same period, median wealth rose to $332,100 for White families and $79,600 for Hispanic families (2025 dollars).",
+   "vars": [
+    "race",
+    "income"
+   ]
+  },
+  {
+   "title": "Elder Poverty Is Rising Again",
+   "detail": "An AARP Foundation analysis of Census data puts Supplemental Poverty Measure poverty among Americans aged 65 and older at 15.4% in 2025, up from 9.4% in 2020: more than 10 million people. For older women the rate is nearly 17%. Census data show Social Security moved 28.8 million people out of poverty in 2025.",
+   "vars": [
+    "income",
+    "generation"
+   ]
+  },
+  {
+   "title": "Aging Into Homelessness",
+   "detail": "Using HUD data, the GAO reported in January 2025 that about 146,000 adults aged 55 and older were homeless, about one in five of all people experiencing homelessness and roughly 6% more than in 2023. A 2019 multi-university study projected that the homeless population aged 65 and older would nearly triple, from about 40,000 to 106,000, by 2030 (projected).",
+   "vars": [
+    "income",
+    "generation"
+   ]
+  }
+ ],
+ "historicalContext": [
+  {
+   "year": 2010,
+   "title": "Uber and the Gig Economy",
+   "detail": "Founded in 2009 as UberCab, Uber began service in San Francisco on July 5, 2010. By July 2023, the BLS counted 11.9 million independent contractors, 7.4% of total employment, workers who generally fall outside employer-sponsored retirement plans."
+  },
+  {
+   "year": 2011,
+   "endYear": 2029,
+   "title": "Boomers Begin Turning 65",
+   "detail": "The oldest Baby Boomers turned 65 on January 1, 2011, and Pew estimated that about 10,000 a day would follow for 19 years. The Census Bureau projects that all Boomers will be 65 or older by 2030."
+  },
+  {
+   "year": 2024,
+   "endYear": 2027,
+   "title": "Peak 65",
+   "detail": "From 2024 through 2027, more than 4.1 million Americans a year, about 11,200 a day, turn 65, according to the Alliance for Lifetime Income’s Retirement Income Institute. The institute notes that most of these households lack a pension."
+  },
+  {
+   "year": 2025,
+   "title": "Student Debt Goes Gray",
+   "detail": "Borrowers aged 50 and older held about 26% of outstanding federal student debt in early 2025. The Fed’s 2025 survey found that 20% of families carry student debt, with a median balance of $25,600."
+  },
+  {
+   "year": 2029,
+   "title": "Projected: Older Americans Outnumber Children",
+   "detail": "Projected. In the Census Bureau’s 2023 middle-series projections, Americans aged 65 and older outnumber children under 18 for the first time in 2029."
+  }
+ ],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "harvest",
+   "detail": "The boundaries drawn in 1935 still sort who is protected. Part-time, low-wage and gig workers have the least access to workplace plans. The 2025 repeal of WEP/GPO shows that boundaries can be redrawn, but only for groups organized enough to demand it."
+  },
+  {
+   "seed": 2,
+   "stage": "harvest",
+   "detail": "Government shows both faces at once. It rescues multiemployer pensions with $77.9 billion and restores benefits to public workers, yet passes tax relief that weakens trust fund revenue and leaves the 2032 depletion unaddressed. Protection and abandonment arrive in the same decade."
+  },
+  {
+   "seed": 3,
+   "stage": "harvest",
+   "detail": "Peak 65 makes the age a demographic wave as well as a cultural endpoint: over 4.1 million Americans a year reach it. Full Social Security retirement age has risen to 67 under the 1983 Amendments, yet 65 remains the cultural finish line, even as the longevity gap means the extra years are not shared equally."
+  },
+  {
+   "seed": 4,
+   "stage": "harvest",
+   "detail": "Three sharp drops (2020, 2022, 2025) all recovered, which reinforces the belief that markets always come back. The harvest falls on those who had to sell at the bottom, and on 2022’s lesson that stocks and bonds can fall together."
+  },
+  {
+   "seed": 5,
+   "stage": "harvest",
+   "detail": "Leisure splits in two. FIRE recasts it as escape at 35, and the pandemic wave of excess retirements shows how quickly people leave work when markets allow it. For most Peak 65 households, though, the “golden years” image now runs up against the savings data."
+  },
+  {
+   "seed": 6,
+   "stage": "blooming",
+   "detail": "Speed and speculation flourish in app-based trading and crypto. The seed is still growing rather than harvested, and its appeal rises as the gap between what people have and what they need widens."
+  },
+  {
+   "seed": 7,
+   "stage": "harvest",
+   "detail": "The two Americas now differ in lifespan (a 14.6-year gap for men), plan access (92% vs. 48% across wage quartiles) and wealth (Black median net worth fell 25% from 2022 to 2025). The system works best for those who already need it least."
+  },
+  {
+   "seed": 8,
+   "stage": "harvest",
+   "detail": "Detroit retirees took cuts, and Central States retirees were nearly cut by law before taxpayers stepped in. The betrayal the book describes becomes literal: promised benefits were reduced, suspended or bailed out."
+  },
+  {
+   "seed": 9,
+   "stage": "harvest",
+   "detail": "SECURE and SECURE 2.0 respond to failure with more individual accounts, made better through defaults and matches. A shortfall is still framed as a personal savings problem, which the book calls converting systemic failure into personal failure."
+  }
+ ],
+ "twoPersonLens": {
+  "year": 2025,
+  "older": {
+   "born": 1965,
+   "headline": "Trying to Exit a System That No Longer Functions",
+   "text": "She turned 20 in 1985, in the early years of the 401(k), and was handed a calculator instead of a pension. She was 43 when the 2008 crash cut the market by more than half, 55 when COVID briefly erased a third of it, and 57 when stocks and bonds fell together in 2022. Now 60, she stands just behind the Peak 65 wave. Her full Social Security retirement age is 67, and she reaches it in 2032, the very year the Trustees project the retirement trust fund will run dry. If Congress does nothing, her check could arrive about 22% smaller than her statement promised. She is not behind because she failed the plan. She is leaving a system whose exit door is moving."
+  },
+  "younger": {
+   "born": 2005,
+   "headline": "Never Entered It",
+   "text": "He was a toddler when Lehman failed and fifteen when the pandemic shut his school. At 20 he works two jobs, one of them through an app. As a part-timer, he belongs to a group in which only 44% of private-sector workers have access to a retirement plan and only 20% take part. He has no pension to lose and no 401(k) to watch, because the system his grandparents retired on never reached him. He turns 67 in 2072. Without reform, the Trustees project that payable retirement benefits will slide from about 78% of scheduled at depletion toward 62% by 2100. He is not grieving the dream. He never downloaded it."
+  },
+  "irony": "The 60-year-old is racing to leave a system as its exit narrows, while the 20-year-old is told to save for a system that never let him in."
+ },
+ "keyTerms": [
+  {
+   "term": "Trust fund depletion",
+   "definition": "The point at which a Social Security or Medicare trust fund’s reserves run out. The program does not end; it can pay only what incoming revenue covers."
+  },
+  {
+   "term": "Scheduled vs. payable benefits",
+   "definition": "Scheduled benefits are what the current benefit formula promises. Payable benefits are what incoming revenue can fund after depletion: about 78% for OASI in 2032 under the 2026 Trustees’ intermediate assumptions."
+  },
+  {
+   "term": "Worker-to-beneficiary ratio",
+   "definition": "The number of covered workers paying into Social Security for each beneficiary: 5.1 in 1960, 2.9 in 2010 and 2.6 in 2025, with 2.3 projected by 2035 (2026 Trustees Report)."
+  },
+  {
+   "term": "Multiemployer pension plan",
+   "definition": "A defined-benefit plan jointly funded by many employers in an industry under a collective-bargaining agreement, such as the Teamsters’ Central States fund."
+  },
+  {
+   "term": "Special Financial Assistance (SFA)",
+   "definition": "Non-repayable federal funds created by the American Rescue Plan Act of 2021 to keep severely underfunded multiemployer plans paying benefits, administered by the PBGC."
+  },
+  {
+   "term": "Automatic enrollment",
+   "definition": "A plan design that enrolls workers by default unless they opt out. SECURE 2.0 requires it for most new 401(k) and 403(b) plans starting in 2025."
+  },
+  {
+   "term": "Required minimum distribution (RMD)",
+   "definition": "The minimum that must be withdrawn each year from tax-deferred retirement accounts after a set age: 72 under the SECURE Act, then 73 under SECURE 2.0, rising to 75 in 2033."
+  },
+  {
+   "term": "Supplemental Poverty Measure (SPM)",
+   "definition": "A Census poverty measure that counts taxes, government benefits and necessary expenses such as medical costs. It shows higher poverty among older adults than the official measure (14.1% vs. 10.2% in 2022)."
+  },
+  {
+   "term": "Peak 65",
+   "definition": "The years 2024–2027, when more than 4.1 million Americans a year turn 65 and the Baby Boom’s arrival at retirement age reaches its height."
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Steven Rhodes",
+   "role": "The federal bankruptcy judge who presided over Detroit’s Chapter 9 case and confirmed its plan of adjustment on November 7, 2014, including the Grand Bargain that limited pension cuts."
+  },
+  {
+   "name": "Raj Chetty",
+   "role": "Economist who led the 2016 JAMA study linking income to life expectancy. Its finding of a 14.6-year gap for men between the richest and poorest 1% changes the question of whom a uniform retirement age actually serves."
+  },
+  {
+   "name": "Pete Adeney (“Mr. Money Mustache”)",
+   "role": "A blogger who stopped full-time work at 30 and in 2011 launched the site that became a hub of the FIRE movement, a test case for both rejecting and reinforcing the retirement dream."
+  },
+  {
+   "name": "Kalle Lasn",
+   "role": "Co-founder of Adbusters, whose 2011 call launched Occupy Wall Street and its “99%” framing of inequality."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "2026 OASDI Trustees Report — Highlights",
+   "year": 2026,
+   "source": "Social Security Administration, Office of the Chief Actuary",
+   "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html",
+   "why": "Find the official depletion dates, the payable percentages and the 75-year deficit, and note the phrase “absent legislative action.”"
+  },
+  {
+   "title": "Table IV.B4: Covered Workers and Beneficiaries, 1945–2100",
+   "year": 2026,
+   "source": "Social Security Administration, 2026 Trustees Report",
+   "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html",
+   "why": "Trace the worker-to-beneficiary ratio from 41.9 in 1945 to its projected 1.9, and identify where history ends and projection begins."
+  },
+  {
+   "title": "Changes in U.S. Family Finances from 2022 to 2025: Evidence from the Survey of Consumer Finances",
+   "year": 2026,
+   "source": "Board of Governors of the Federal Reserve System",
+   "url": "https://www.federalreserve.gov/publications/files/scf26.pdf",
+   "why": "Compare retirement-account ownership (54.9% of families) and median balances with the book’s savings-gap claims."
+  },
+  {
+   "title": "Employee Benefits in the United States, March 2026",
+   "year": 2026,
+   "source": "U.S. Bureau of Labor Statistics",
+   "url": "https://www.bls.gov/news.release/ebs2.nr0.htm",
+   "why": "Note who has access to retirement plans and who actually participates, by wage level and full- or part-time status."
+  },
+  {
+   "title": "Association Between Income and Life Expectancy in the United States, 2001–2014",
+   "year": 2016,
+   "source": "JAMA (Chetty et al.)",
+   "url": "https://jamanetwork.com/journals/jama/fullarticle/2513561",
+   "why": "Consider what the income–longevity gap implies for a single retirement age applied to everyone."
+  }
+ ],
+ "discussionQuestions": [
+  "The book argues that 2008 should have prompted a reckoning but produced only “a fresh coat of paint.” Judging by the laws in this module (SECURE, SECURE 2.0 and the 2021 pension rescue), was the post-2008 response repair, renovation or denial?",
+  "Challenge the book: markets regained their prior highs within months of the 2020 and 2025 drops, and the Fed’s 2025 survey shows the median retirement balance among holders rising to $106,000. Does this evidence undercut the claim that the collapse is “a mathematical inevitability,” or do averages hide the people the book is writing about?",
+  "Detroit retirees took cuts, while Central States retirees were made whole by taxpayers. What explains the different outcomes, and what do they reveal about The Promise as a moral category?",
+  "The Social Security Fairness Act and the 2025 senior deduction both helped current retirees while worsening long-range trust fund finances. How should lawmakers weigh obligations to today’s 65-year-olds against tomorrow’s 20-year-olds?",
+  "FIRE and the pandemic retirement wave both rejected the forty-years-then-stop script. Are they signs of the awakening the book calls “who gave you that dream?”, or new versions of the Leisure and Individualism seeds?",
+  "Which matters most for the Two Americas seed in this era: unequal access to plans, unequal wealth or unequal lifespans? Defend your choice with data."
+ ],
+ "assignment": {
+  "title": "Your Number vs. the Data",
+  "type": "Quantitative data investigation",
+  "prompt": "The Collapse chapter makes a simple calculation: a $20,000 income at a 4% withdrawal rate requires $500,000, while median savings near retirement are about $65,000. Rebuild and stress-test that argument with official data. Pull at least three figures from each of three sources: (1) the Federal Reserve’s 2025 Survey of Consumer Finances, including its interactive data on medians by age; (2) the 2026 Social Security Trustees Report (depletion dates, payable percentages, worker-to-beneficiary ratios); and (3) either the BLS National Compensation Survey or the current HHS poverty guidelines. Calculate a “number” for a hypothetical 60-year-old under two scenarios, scheduled benefits and payable benefits after 2032, and explain what the gap means. Conclude by stating where the data confirm, sharpen or complicate the book’s claim.",
+  "deliverable": "A 1,200–1,500-word data memo with at least one table or chart, a methods paragraph stating every assumption, and at least four cited official sources (APA or Chicago).",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Data accuracy & sourcing",
+    "points": 30,
+    "exemplary": "Every figure is correct, dated and traced to an official table; the memo distinguishes historical data from projections and medians from means.",
+    "proficient": "Figures are mostly accurate and sourced, with minor dating or labeling gaps.",
+    "developing": "Several figures are unsourced, outdated or mislabeled (for example, means presented as medians).",
+    "beginning": "Data are missing, invented or impossible to trace."
+   },
+   {
+    "criterion": "Quantitative reasoning",
+    "points": 30,
+    "exemplary": "Calculations are correct and transparent, assumptions are stated, and the scheduled-vs.-payable scenarios are modeled clearly, with a sensitivity check.",
+    "proficient": "Calculations are correct, with some assumptions left implicit.",
+    "developing": "Calculations contain errors or skip steps, and the two scenarios are not clearly compared.",
+    "beginning": "Little or no calculation, or the math is fundamentally wrong."
+   },
+   {
+    "criterion": "Engagement with the book’s argument",
+    "points": 25,
+    "exemplary": "Fairly states the book’s claim, then shows precisely where the data confirm, sharpen or complicate it, including who is hidden by the averages.",
+    "proficient": "Connects the data to the book’s claim, with a reasonable but general evaluation.",
+    "developing": "Mentions the book but does not test its claim against the data.",
+    "beginning": "Ignores the book’s argument or simply restates it."
+   },
+   {
+    "criterion": "Clarity & presentation",
+    "points": 15,
+    "exemplary": "Concise memo structure, with a well-labeled chart or table a non-specialist can read and clean citations.",
+    "proficient": "Clear overall, with minor formatting or labeling issues.",
+    "developing": "Disorganized, or visuals are hard to interpret.",
+    "beginning": "Missing visual, unclear writing or no citations."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "According to the 2026 Social Security Trustees Report, when is the OASI (retirement) trust fund projected to be depleted?",
+   "options": [
+    "2029",
+    "Late 2032",
+    "2035",
+    "2041"
+   ],
+   "answer": 1,
+   "explain": "The 2026 Trustees project OASI depletion in the fourth quarter of 2032, after which about 78% of scheduled benefits would be payable without congressional action."
+  },
+  {
+   "q": "What does SECURE 2.0 (2022) require of most new 401(k) and 403(b) plans beginning in 2025?",
+   "options": [
+    "Guaranteed lifetime pensions",
+    "Automatic enrollment of eligible workers",
+    "A mandatory 6% employer match",
+    "Investment only in index funds"
+   ],
+   "answer": 1,
+   "explain": "New plans must auto-enroll workers at 3–10% of pay, with annual increases. Workers can still opt out."
+  },
+  {
+   "q": "About how many covered workers were paying into Social Security for each beneficiary in 2025?",
+   "options": [
+    "About 5.1",
+    "About 3.4",
+    "About 2.6",
+    "About 1.9"
+   ],
+   "answer": 2,
+   "explain": "Table IV.B4 of the 2026 Trustees Report shows 2.6 in 2025, down from 5.1 in 1960. The ratio is projected to fall to 1.9 by 2075."
+  },
+  {
+   "q": "What did the American Rescue Plan Act’s Special Financial Assistance program (2021) do?",
+   "options": [
+    "Cut multiemployer pension benefits to restore solvency",
+    "Provided non-repayable federal funds to severely underfunded multiemployer pension plans",
+    "Converted pensions into 401(k) accounts",
+    "Raised the Social Security payroll tax"
+   ],
+   "answer": 1,
+   "explain": "SFA grants from general taxpayer funds kept plans like Central States paying benefits. By May 2026 about $77.9 billion had been approved."
+  },
+  {
+   "q": "In March 2026, what share of the lowest-paid quarter of private-industry workers had access to an employer retirement plan?",
+   "options": [
+    "About 92%",
+    "About 72%",
+    "About 48%",
+    "About 10%"
+   ],
+   "answer": 2,
+   "explain": "The BLS reported 48% access, and only 22% participation, for the lowest wage quartile, compared with 92% access for the highest."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SSA — 2026 Trustees Report Highlights",
+   "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html"
+  },
+  {
+   "label": "SSA — 2026 Trustees Report, Table IV.B4 (workers per beneficiary)",
+   "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html"
+  },
+  {
+   "label": "SSA — Summary of the 2025 Trustees Reports",
+   "url": "https://www.ssa.gov/oact/TRSUM/"
+  },
+  {
+   "label": "CRFB — Analysis of the 2026 Social Security Trustees’ Report",
+   "url": "https://www.crfb.org/papers/analysis-2026-social-security-trustees-report"
+  },
+  {
+   "label": "CRFB — Analysis of the 2026 Medicare Trustees’ Report",
+   "url": "https://www.crfb.org/papers/analysis-2026-medicare-trustees-report"
+  },
+  {
+   "label": "Becker’s — 2026 Medicare Trustees notes",
+   "url": "https://www.beckershospitalreview.com/finance/medicare-advantage-spending-flagged-as-hospital-fund-depletion-moves-up-5-notes/"
+  },
+  {
+   "label": "CBO — 2026 Long-Term Projections for Social Security",
+   "url": "https://www.cbo.gov/publication/62556"
+  },
+  {
+   "label": "401(k) Specialist — CBO projects 26% cut in 2032",
+   "url": "https://401kspecialistmag.com/social-security-benefit-cut-could-reach-26-in-2032-cbo-projects/"
+  },
+  {
+   "label": "Federal Reserve — Changes in U.S. Family Finances 2022–2025 (SCF)",
+   "url": "https://www.federalreserve.gov/publications/files/scf26.pdf"
+  },
+  {
+   "label": "Federal Reserve — Survey of Consumer Finances index",
+   "url": "https://www.federalreserve.gov/econres/scfindex.htm"
+  },
+  {
+   "label": "BLS — Employee Benefits in the U.S., March 2026",
+   "url": "https://www.bls.gov/news.release/ebs2.nr0.htm"
+  },
+  {
+   "label": "BLS — Retirement benefits table, March 2026",
+   "url": "https://www.bls.gov/news.release/ebs2.t01.htm"
+  },
+  {
+   "label": "BLS — Contingent and Alternative Employment Arrangements, July 2023",
+   "url": "https://www.bls.gov/news.release/conemp.nr0.htm"
+  },
+  {
+   "label": "BLS — JOLTS, November 2021",
+   "url": "https://www.bls.gov/news.release/archives/jolts_01042022.htm"
+  },
+  {
+   "label": "St. Louis Fed — U.S. Retirement Normalization after COVID-19",
+   "url": "https://www.stlouisfed.org/on-the-economy/2025/jul/us-retirement-normalization-covid19-pandemic"
+  },
+  {
+   "label": "Pew Research — Baby Boomers Retire (2010)",
+   "url": "https://www.pewresearch.org/short-reads/2010/12/29/baby-boomers-retire/"
+  },
+  {
+   "label": "Alliance for Lifetime Income — Peak 65 release",
+   "url": "https://www.protectedincome.org/wp-content/uploads/2024/01/Peak-65-Release-final-011024.pdf"
+  },
+  {
+   "label": "Census Bureau — 2023 National Population Projections",
+   "url": "https://www.census.gov/newsroom/press-releases/2023/population-projections.html"
+  },
+  {
+   "label": "Census Bureau — Demographic Turning Points (P25-1144)",
+   "url": "https://www.census.gov/content/dam/Census/library/publications/2020/demo/p25-1144.pdf"
+  },
+  {
+   "label": "Detroit bankruptcy — overview",
+   "url": "https://en.wikipedia.org/wiki/Detroit_bankruptcy"
+  },
+  {
+   "label": "CBS News — Detroit retirees approve pension cuts",
+   "url": "https://www.cbsnews.com/news/detroit-retirees-workers-overwhelmingly-ok-pension-cuts"
+  },
+  {
+   "label": "CRS — Treasury denial of Central States MPRA application (2016)",
+   "url": "https://www.everycrsreport.com/files/20160518_IN10491_c198d9e75b09385c3f23fa7e55fc81ed9def8f17.html"
+  },
+  {
+   "label": "PBGC — Central States SFA approval (2022)",
+   "url": "https://www.pbgc.gov/news/press/pr22-45"
+  },
+  {
+   "label": "PBGC — American Rescue Plan Act SFA program",
+   "url": "https://www.pbgc.gov/arpa"
+  },
+  {
+   "label": "CRS — PBGC: A Primer (Sept. 2026)",
+   "url": "https://www.everycrsreport.com/files/2026-09-02_95-118_13cb409298842e6b6c9452cb940520aff8ee9329.html"
+  },
+  {
+   "label": "SECURE Act — overview",
+   "url": "https://en.wikipedia.org/wiki/SECURE_Act"
+  },
+  {
+   "label": "JD Supra — SECURE 2.0 as enacted",
+   "url": "https://www.jdsupra.com/legalnews/secure-2-0-act-of-2022-as-enacted-5325428/"
+  },
+  {
+   "label": "Social Security Fairness Act — overview",
+   "url": "https://en.wikipedia.org/wiki/Social_Security_Fairness_Act"
+  },
+  {
+   "label": "SSA — 2025 press releases (WEP/GPO implementation)",
+   "url": "https://www.ssa.gov/news/press/releases/2025/"
+  },
+  {
+   "label": "IRS — One, Big, Beautiful Bill provisions for individuals",
+   "url": "https://irs.gov/newsroom/one-big-beautiful-bill-provisions-individuals-and-workers"
+  },
+  {
+   "label": "IRS — Publication on the enhanced senior deduction",
+   "url": "https://www.irs.gov/pub/irs-pdf/p6142.pdf"
+  },
+  {
+   "label": "News On 6 — Trump signs ‘big beautiful bill’ into law",
+   "url": "https://newson6.com/story/6868292acb11631e7db31499/president-trump-signs-big-beautiful-bill-white-house"
+  },
+  {
+   "label": "HealthCare.gov — Affordable Care Act",
+   "url": "https://www.healthcare.gov/glossary/affordable-care-act/"
+  },
+  {
+   "label": "PBS NewsHour — S&P 500 erases pandemic losses",
+   "url": "https://www.pbs.org/newshour/economy/sp-500-closes-at-a-record-erasing-last-of-pandemic-losses"
+  },
+  {
+   "label": "Morningstar — 15 Charts Explaining an Extreme Year (2022)",
+   "url": "https://www.morningstar.com/markets/15-charts-explaining-an-extreme-year-investors"
+  },
+  {
+   "label": "Investing.com — S&P 500 close, April 8, 2025",
+   "url": "https://www.investing.com/news/economy-news/futures-rise-after-heavy-losses-on-hopes-of-talks-over-tariffs-3972893"
+  },
+  {
+   "label": "ColoradoBiz — U.S. stocks hit record after tariff plunge",
+   "url": "https://coloradobiz.com/us-stocks-record-high-tariff-recovery/"
+  },
+  {
+   "label": "Occupy Wall Street — overview",
+   "url": "https://en.wikipedia.org/wiki/Occupy_Wall_Street"
+  },
+  {
+   "label": "Financial Samurai — Who started the FIRE movement?",
+   "url": "https://www.financialsamurai.com/?p=86249"
+  },
+  {
+   "label": "The Tilt — Pete Adeney / Mr. Money Mustache",
+   "url": "https://www.thetilt.com/content-entrepreneur/peter-adeny-mr-money-mustache-blog"
+  },
+  {
+   "label": "EBSCO — Uber (company)",
+   "url": "https://ebsco.com/research-starters/business-and-management/uber-company"
+  },
+  {
+   "label": "Harvard — Chetty et al., Income and Life Expectancy (2016)",
+   "url": "https://hcp.hms.harvard.edu/publication/association-between-income-and-life-expectancy-united-states-2001-2014"
+  },
+  {
+   "label": "AARP Foundation — Response to 2025 Census poverty data",
+   "url": "https://www.aarp.org/press/releases/2026-09-15-aarp-foundation-responds-to-new-census-data-on-rising-poverty-among-older-adults/"
+  },
+  {
+   "label": "St. Louis Public Radio/NPR — Rising poverty among older adults",
+   "url": "https://stlpr.org/npr/2026-09-24/the-economic-squeeze-is-pushing-up-poverty-rates-for-older-adults"
+  },
+  {
+   "label": "Census Bureau — Poverty in the United States: 2025",
+   "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html"
+  },
+  {
+   "label": "ACL — 2023 Profile of Older Americans",
+   "url": "https://acl.gov/sites/default/files/Profile%20of%20OA/ACL_ProfileOlderAmericans2023_508.pdf"
+  },
+  {
+   "label": "GAO — More Older Adults Are Homeless (2025)",
+   "url": "https://www.gao.gov/blog/more-older-adults-are-homeless-what-can-be-done-help-vulnerable-population-unique-needs"
+  },
+  {
+   "label": "Penn Today — Aging homeless population to nearly triple by 2030",
+   "url": "https://penntoday.upenn.edu/news/report-predicts-aging-homeless-population-will-nearly-triple-2030"
+  },
+  {
+   "label": "PLANSPONSOR — Student debt not just a young person’s problem",
+   "url": "https://www.plansponsor.com/student-debt-not-just-a-young-persons-problem/"
+  }
+ ]
 }

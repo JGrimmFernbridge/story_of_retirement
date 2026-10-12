@@ -1,587 +1,604 @@
 {
-  "id": "classical",
-  "number": 1,
-  "title": "Classical",
-  "years": "Pre-1890",
-  "definition": "clas·si·cal (noun) the history of something",
-  "tagline": "The world had no word for retirement, so it built community instead.",
-  "bigQuestion": "If no society before industrialization had ‘retirement,’ how did people grow old, and what did they know that we have forgotten?",
-  "overview": "For nearly all of recorded history there was no word for retirement. The book’s first chapter treats that absence as a data point, not a gap in the record. People aged, declined and died in every civilization, yet no society organized old age around ceasing to work and living off accumulated assets. Grimm refuses to romanticize this world. It was brutal: plague, serfdom, caste, coverture that made married women legally invisible, and colonial dispossession. And yet, the chapter argues, because individuals had so little protection, communities carried the weight. Pe’ah and zakat, church xenodochia, guild welfare funds, village reciprocity, and work that shifted with age instead of ending all did that work.\n\nThis module reads that world through the three principles of Natural Order Economics: Not Poverty, Community and Generativity. It then follows them to the United States before 1890, where the first modern pieces of retirement appear. These include Revolutionary and Civil War pensions, colonial poor laws and almshouses, Black mutual aid societies, and the first corporate pensions. Across the Atlantic, Bismarck was building social insurance. In 1880, about 78 percent of American men aged 65 and older were still in the labor force. Watch closely for who was protected, who was excluded, and who drew the lines.",
-  "learningObjectives": [
-    "Explain the three principles of Natural Order Economics (Not Poverty, Community, Generativity) and identify each in at least two pre-industrial institutions.",
-    "Analyze the ‘life expectancy paradox’ by distinguishing life expectancy at birth from the lifespan of people who survived childhood.",
-    "Trace American public pensions from the 1776 Continental Congress resolution through the 1862 General Law and the 1879 Arrears Act.",
-    "Evaluate how pre-1890 institutions drew boundaries around who deserved protection. Cases include almshouses, coverture, the Freedman’s Savings Bank and exclusion laws.",
-    "Compare a pre-industrial community care system with modern retirement, and assess the book’s claim that the classical world offers ‘a blueprint.’"
-  ],
-  "policyEvents": [
-    {
-      "year": 1601,
-      "title": "Poor Relief Act (England)",
-      "type": "legislation",
-      "detail": "England’s Elizabethan poor law made the parish responsible for its own poor. Relief was funded by a compulsory local poor rate collected by overseers. The law sorted the poor into categories: the ‘impotent’ poor, including the aged, were to be cared for in almshouses, and the able-bodied were to be set to work. It also made poor parents and children responsible for each other.",
-      "significance": "Colonial legislatures adopted laws patterned on the Elizabethan poor laws, producing the local, residence-based American almshouse system. Its line between ‘deserving’ and ‘undeserving’ poor is an early form of Seed 1 (Segregation & Boundaries)."
-    },
-    {
-      "year": 1776,
-      "title": "Continental Congress disability pension resolution",
-      "type": "legislation",
-      "detail": "A resolution of August 26, 1776 promised soldiers disabled in service half their monthly pay for life. Because Congress could not raise money through taxation, by 1785 the states were paying these pensions.",
-      "significance": "America’s first public pension promise compensated sacrifice, not old age. Over the next 130 years that distinction would quietly erode (Seed 2: Government Involvement)."
-    },
-    {
-      "year": 1818,
-      "endYear": 1832,
-      "title": "Revolutionary War service pension acts",
-      "type": "legislation",
-      "detail": "The act of March 18, 1818 pensioned Revolutionary veterans who had served nine months and were in need of their country’s support. Officers received $20 a month and enlisted men $8. An act of June 7, 1832 extended full benefits to veterans with two years’ service, and proportional benefits to those who had served at least six months; later acts opened pensions to militia veterans and widows.",
-      "significance": "These were the first U.S. pensions based on service and need rather than injury. By the 1810s, poverty among aging veterans had become a public problem, a preview of the long slide from ‘wounded’ to ‘old.’"
-    },
-    {
-      "year": 1862,
-      "title": "Civil War pension ‘General Law’",
-      "type": "legislation",
-      "detail": "The act of July 14, 1862 pensioned Union officers and enlisted men disabled since March 4, 1861 by wounds or disease contracted in the line of duty. Rates were proportional to disability, from $8 a month for a totally disabled private up to $30 for senior officers. Widows received the husband’s pension for life or until remarriage, and minor children received it if no widow survived.",
-      "significance": "This act became the foundation of America’s largest income-support system before the New Deal. The pension rolls grew from 7,916 people in 1861 to 324,968 by 1885."
-    },
-    {
-      "year": 1865,
-      "endYear": 1874,
-      "title": "Freedman’s Savings and Trust Company",
-      "type": "policy",
-      "detail": "Congress chartered the bank, and Lincoln signed the act on March 3, 1865. In less than a decade an estimated 70,000 depositors, most of them formerly enslaved people and their families, deposited more than $57 million in total. An 1870 charter change loosened its investment rules. Mismanagement, fraud and the Panic of 1873 followed, and the bank closed on June 29, 1874.",
-      "significance": "The bank paid out dividends totaling 62 percent of what depositors were owed, but roughly half of depositors never claimed them. A savings institution chartered by the federal government for freedpeople failed within a decade, an early case of Seeds 1 and 7."
-    },
-    {
-      "year": 1875,
-      "title": "American Express creates the first formal U.S. private pension",
-      "type": "policy",
-      "detail": "The American Express Company created the first formal private pension plan in the United States in 1875. Early employer plans like it were typically noncontributory, unfunded and discretionary. The employer treated the pension as a gift it could reduce or end at will, not a legal right.",
-      "significance": "The corporate pension begins as a management tool. It is a precursor of Seed 8 (The Promise), which the book dates to the period after 1946."
-    },
-    {
-      "year": 1879,
-      "title": "Arrears of Pensions Act",
-      "type": "legislation",
-      "detail": "The act let Union veterans with approved claims collect back payments dating to their discharge. It set off a flood of applications and a sharp rise in pension spending.",
-      "significance": "The act helped revive the Grand Army of the Republic as a pension lobby. It also shows a pattern the book identifies: benefits that start modest and expand under political pressure."
-    },
-    {
-      "year": 1880,
-      "title": "Baltimore & Ohio Railroad Relief Department",
-      "type": "policy",
-      "detail": "The B&O created its Relief Department in 1880. The B&O Railroad Museum’s archive calls it the railroad industry’s first employer-run health insurance and pension plan.",
-      "significance": "Industrial pensions began where work was most dangerous and corporations most bureaucratic. This plants the urban-industrial side of Seed 7 (Two Americas)."
-    },
-    {
-      "year": 1883,
-      "endYear": 1884,
-      "title": "Bismarck’s sickness and accident insurance (Germany)",
-      "type": "legislation",
-      "detail": "The Anti-Socialist Law of October 1878 banned socialist organizations. Bismarck then turned to insurance. An 1881 imperial message declared that people ‘disabled from work by age and invalidity have a well-grounded claim to care from the state.’ Sickness insurance followed in 1883 and accident insurance in 1884.",
-      "significance": "Seed 2 (Government Involvement) is planted here. The book reads social insurance as political management, a line that leads to the 1889 old-age law examined in the Conception unit."
-    },
-    {
-      "year": 1887,
-      "title": "Cleveland vetoes the Dependent Pension Bill",
-      "type": "policy",
-      "detail": "On February 11, 1887, President Grover Cleveland vetoed a bill to pension Union veterans who could not support themselves, however they had become disabled. He cited its cost, the difficulty of measuring dependence, and the likelihood of fraud. The House could not override the veto.",
-      "significance": "The fight was over whether a pension compensates service or supports need. It previewed the Dependent Pension Act that Congress passed three years later."
-    }
-  ],
-  "marketDrops": [
-    {
-      "year": 1837,
-      "endYear": 1844,
-      "name": "Panic of 1837",
-      "decline": "343 of about 850 U.S. banks closed entirely; 62 more failed in part",
-      "detail": "On May 10, 1837, New York City banks stopped paying out gold and silver. A land bubble had burst, the 1836 Specie Circular had drained coin westward, and cotton prices had fallen 25 percent in February and March 1837. A depression of nearly seven years followed, with most accounts placing full recovery in 1844.",
-      "retirementImpact": "No one had a pension to lose; older Americans’ security was land, family and bank deposits. When over 40 percent of banks failed, deposits were not safe either."
-    },
-    {
-      "year": 1857,
-      "endYear": 1858,
-      "name": "Panic of 1857",
-      "decline": "Nationwide suspension of gold and silver payments; NBER contraction June 1857 – December 1858 (18 months)",
-      "detail": "On August 24, 1857, the New York branch of the Ohio Life Insurance and Trust Company suspended payments, a failure tied to fraud by its managers. In September the SS Central America sank with gold that New York banks were waiting for. Railroad stocks had peaked that July, and several lines shut down or went bankrupt.",
-      "retirementImpact": "The largely agrarian South suffered little, while the industrial and railroad North was hit hard. Financial risk was already falling differently on the two Americas (Seed 7)."
-    },
-    {
-      "year": 1873,
-      "endYear": 1879,
-      "name": "Panic of 1873 and the Long Depression",
-      "decline": "NYSE closed for 10 days; at least 100 banks failed; 65-month NBER contraction (Oct 1873 – Mar 1879)",
-      "detail": "Jay Cooke and Company, overextended in Northern Pacific Railway bonds, failed on September 18, 1873. Two days later the New York Stock Exchange closed for the first time in its history and stayed shut for ten days. The National Bureau of Economic Research (NBER) dates the downturn from October 1873 to March 1879, a 65-month contraction and the longest in its records.",
-      "retirementImpact": "The panic helped bring down the Freedman’s Savings Bank in 1874. It wiped out savings that formerly enslaved people had been building for their families’ futures."
-    }
-  ],
-  "socialMovements": [
-    {
-      "year": 1787,
-      "name": "Free African Society and Black mutual aid",
-      "detail": "Richard Allen and Absalom Jones founded the Free African Society in Philadelphia in 1787. Members paid one shilling a month ‘to support one another in sickness, and for the benefit of their widows and fatherless children.’",
-      "significance": "It is a textbook case of the Community principle. People with little protection from the established order built their own risk pool, a pattern the book traces from medieval guilds to labor unions."
-    },
-    {
-      "year": 1848,
-      "name": "Seneca Falls and women’s property rights",
-      "detail": "The Seneca Falls Convention met July 19–20, 1848. Its Declaration of Sentiments, drafted by Elizabeth Cady Stanton, charged that man ‘has taken from her all right in property, even to the wages she earns.’ That April, New York’s Married Women’s Property Act had let married women keep property they brought into marriage or received from others, and it became a model for other states.",
-      "significance": "Women’s old-age security ran through marriage. Property reform slowly began to give wives and widows assets of their own."
-    },
-    {
-      "year": 1866,
-      "endYear": 1890,
-      "name": "Grand Army of the Republic",
-      "detail": "Union veterans founded the Grand Army of the Republic (GAR) in Decatur, Illinois, on April 6, 1866. It revived in the 1880s and peaked at about 410,000 members in 1890. Historian Stuart McConnell called it ‘the most powerful single-issue political lobby of the late nineteenth century.’",
-      "significance": "Organized beneficiaries pushed pensions from compensation for injury toward general support. The GAR was the first great American pension lobby."
-    },
-    {
-      "year": 1886,
-      "name": "Eight-hour movement and the Haymarket affair",
-      "detail": "On May 1, 1886, an estimated 300,000 to 500,000 workers struck nationwide for an eight-hour day, including 30,000 to 40,000 in Chicago. At a Haymarket Square rally on May 4, a bomb and the gunfire that followed killed seven police officers and at least four civilians. Eight anarchists were convicted, though only two were present when the bomb exploded. Four were hanged in November 1887, and Governor John Peter Altgeld pardoned three survivors in 1893.",
-      "significance": "Industrial workers began fighting over the terms of the wage bargain itself. The book connects this struggle to the later fights for pensions and Social Security."
-    }
-  ],
-  "inequities": [
-    {
-      "title": "Coverture and the widow’s precarity",
-      "detail": "Under common law a married woman had almost no legal existence apart from her husband. She could not own property, make contracts or keep wages in her own name. A woman’s old age therefore depended on her husband living or her family being willing to support her. As the book puts it, widowhood was ‘financial ruin.’"
-    },
-    {
-      "title": "Unequal pensions for Black Union veterans",
-      "detail": "About 179,000 Black soldiers served in the Union Army. Research by BYU political scientist Sven Wilson found the Pension Bureau approved 83 percent of white applications and 77 percent of Black applications from wounded veterans in 1865–1878. By the 1880s it approved claims from uninjured white veterans at more than twice the Black rate. Black veterans also often lacked the hospital records the bureau demanded, and white officials decided their claims."
-    },
-    {
-      "title": "Chinese Exclusion Act (1882)",
-      "detail": "Signed by Chester A. Arthur on May 6, 1882, the act suspended immigration by Chinese laborers and barred Chinese residents from citizenship. It was extended in 1892, made permanent in 1902 and repealed only in 1943. Chinese workers had done much of the Central Pacific’s manual labor on the transcontinental railroad finished in 1869."
-    },
-    {
-      "title": "The Dawes Act and Indigenous dispossession",
-      "detail": "The General Allotment Act of 1887 broke up communally held reservation land into individual parcels, 160 acres for a head of household. ‘Surplus’ land was opened to others. By the time allotment ended in 1934, land held by Native Americans had fallen from 138 million to 48 million acres. The book describes this kind of destruction of working community systems as violent dismantling."
-    },
-    {
-      "title": "The poorhouse becomes an old-age home",
-      "detail": "Inherited from English poor law, the almshouse was the public answer to destitution. Historian Michael Katz found that, in Erie County, New York, ‘by the end of the century, the poorhouse clearly was becoming an old age home.’ As other groups were moved out, the elderly were the only ones left. For aging people without family or savings, the community’s last resort carried the stigma of pauperism."
-    }
-  ],
-  "historicalContext": [
-    {
-      "year": 1346,
-      "endYear": 1353,
-      "title": "The Black Death",
-      "detail": "Plague killed an estimated 25 to 60 percent of Europe’s population between 1346 and 1353. The book uses catastrophes like this to show why survival depended on community rather than individual planning."
-    },
-    {
-      "year": 1797,
-      "title": "Thomas Paine’s Agrarian Justice",
-      "detail": "Written in the winter of 1795–96 and published in an English edition in 1797, Paine’s pamphlet proposed a national fund to support the aged and young people starting out. It was to be paid for by a 10 percent tax on inherited property, an early design for social insurance."
-    },
-    {
-      "year": 1861,
-      "endYear": 1865,
-      "title": "The Civil War",
-      "detail": "More than 2.2 million people served in Union forces, and 140,414 died in battle, with 224,097 more deaths from other causes in the theater of war. The war left a generation of disabled and aging veterans, and the pension system that became America’s first mass old-age support."
-    },
-    {
-      "year": 1869,
-      "title": "Transcontinental railroad completed",
-      "detail": "The rails met at Promontory Summit, Utah Territory, on May 10, 1869. Railroads tied together a national industrial economy and became early builders of formal employee pension systems."
-    },
-    {
-      "year": 1880,
-      "title": "Old men still work",
-      "detail": "In 1880 about 78 percent of American men aged 65 and older were in the labor force: 87 percent of those living on farms and 66 percent of those who did not (Costa). For most people, old age meant changing work, not ending it."
-    }
-  ],
-  "seeds": [
-    {
-      "seed": 1,
-      "stage": "planted",
-      "detail": "Segregation & Boundaries is older than retirement itself. Poor laws sorted the ‘deserving’ poor from the ‘undeserving.’ Coverture erased married women’s property, and caste and serfdom fixed deprivation at birth. Before 1890 the United States also wrote exclusion into law, from the Chinese Exclusion Act to the Dawes Act and unequal pension approvals for Black veterans."
-    },
-    {
-      "seed": 2,
-      "stage": "planted",
-      "detail": "Two governments begin experimenting with support in old age. The United States does it through veterans’ pensions (1776, 1818, 1862, 1879), and Germany through Bismarck’s insurance laws (1883–1884), which lead to the 1889 old-age law. Both mix real protection with political management: pensions to reward loyalty, insurance to undercut socialists."
-    },
-    {
-      "seed": 3,
-      "stage": "planted",
-      "detail": "This is only a precursor of 65 = Old and Done, because no fixed age of ‘old’ yet existed. Elders changed roles rather than leaving: the Roman paterfamilias, the Confucian counselor, Indigenous keepers of communal memory. Pre-1890 American pensions turned on service, disability and need, not birthdays. The number 65 appears nowhere yet, and that is the point."
-    },
-    {
-      "seed": 7,
-      "stage": "planted",
-      "detail": "Before 1890 the divide runs North versus South and farm versus factory. Union pension money flowed to Northern veterans, while Confederate veterans and most Black Southerners were outside it. Farm men kept working in old age far more than other men (87 versus 66 percent in 1880)."
-    },
-    {
-      "seed": 8,
-      "stage": "planted",
-      "detail": "This is a precursor only, since the book dates The Promise to the corporate pension era after 1946. Its first form appears at American Express (1875) and in the B&O Relief Department (1880). These early plans were discretionary gifts, not contracts, and the employer could withdraw them."
-    }
-  ],
-  "twoPersonLens": {
-    "year": 1890,
-    "older": {
-      "born": 1830,
-      "headline": "Retirement? Never heard of it",
-      "text": "Born in 1830, they were seven when the Panic of 1837 closed hundreds of banks and twenty-seven when the Panic of 1857 hit. In their early thirties came the Civil War. If they served in the Union army and came home wounded, the 1862 law paid a few dollars a month. Now, in 1890, they are sixty, and they have never once thought about retiring; the word means nothing to them. Most men their age are still working, and on the farm they simply shift to lighter tasks. Children, a congregation or a lodge will carry their old age. If all of those fail, the county poorhouse will. This summer, though, Congress passes the Dependent Pension Act. Old soldiers are about to learn that being worn out can be reason enough to be paid."
-    },
-    "younger": {
-      "born": 1870,
-      "headline": "The generation that will be told to stop",
-      "text": "Born in 1870, five years after the Civil War ended, they turn twenty in 1890. They are walking toward the factory gate rather than the family field. They will be twenty-three when the Panic of 1893 pushes unemployment to an estimated 17 to 19 percent, thirty-seven in the Panic of 1907, and fifty-nine when the market crashes in 1929. They will be sixty-five in 1935, the year Social Security is signed. Yet its first monthly retirement check will not go out until January 1940, when they are about seventy. Nothing in their upbringing suggests that work ends. They are the generation that will eventually be told it must."
-    },
-    "irony": "The man who never imagined retiring will be among the first paid simply for growing old; the boy raised to work until he dropped will be among the first told he has to stop."
+ "id": "classical",
+ "number": 1,
+ "title": "Classical",
+ "years": "Pre-1890",
+ "definition": "clas·si·cal (noun) the history of something",
+ "tagline": "The world had no word for retirement, so it built community instead.",
+ "bigQuestion": "If no society before industrialization had ‘retirement,’ how did people grow old, and what did they know that we have forgotten?",
+ "overview": "For nearly all of recorded history there was no word for retirement. The book’s first chapter treats that absence as a data point, not a gap in the record. People aged, declined and died in every civilization, yet no society organized old age around ceasing to work and living off accumulated assets. Grimm refuses to romanticize this world. It was brutal: plague, serfdom, caste, coverture that made married women legally invisible, and colonial dispossession. And yet, the chapter argues, because individuals had so little protection, communities carried the weight. Pe’ah and zakat, church xenodochia, guild welfare funds, village reciprocity, and work that shifted with age instead of ending all did that work.\n\nThis module reads that world through the three principles of Natural Order Economics: Not Poverty, Community and Generativity. It then follows them to the United States before 1890, where the first modern pieces of retirement appear. These include Revolutionary and Civil War pensions, colonial poor laws and almshouses, Black mutual aid societies, and the first corporate pensions. Across the Atlantic, Bismarck was building social insurance. In 1880, about 78 percent of American men aged 65 and older were still in the labor force. Watch closely for who was protected, who was excluded, and who drew the lines.",
+ "learningObjectives": [
+  "Explain the three principles of Natural Order Economics (Not Poverty, Community, Generativity) and identify each in at least two pre-industrial institutions.",
+  "Analyze the ‘life expectancy paradox’ by distinguishing life expectancy at birth from the lifespan of people who survived childhood.",
+  "Trace American public pensions from the 1776 Continental Congress resolution through the 1862 General Law and the 1879 Arrears Act.",
+  "Evaluate how pre-1890 institutions drew boundaries around who deserved protection. Cases include almshouses, coverture, the Freedman’s Savings Bank and exclusion laws.",
+  "Compare a pre-industrial community care system with modern retirement, and assess the book’s claim that the classical world offers ‘a blueprint.’"
+ ],
+ "policyEvents": [
+  {
+   "year": 1601,
+   "title": "Poor Relief Act (England)",
+   "type": "legislation",
+   "detail": "England’s Elizabethan poor law made the parish responsible for its own poor. Relief was funded by a compulsory local poor rate collected by overseers. The law sorted the poor into categories: the ‘impotent’ poor, including the aged, were to be cared for in almshouses, and the able-bodied were to be set to work. It also made poor parents and children responsible for each other.",
+   "significance": "Colonial legislatures adopted laws patterned on the Elizabethan poor laws, producing the local, residence-based American almshouse system. Its line between ‘deserving’ and ‘undeserving’ poor is an early form of Seed 1 (Segregation & Boundaries)."
   },
-  "keyTerms": [
-    {
-      "term": "Natural Order Economics",
-      "definition": "Grimm’s framework of three principles: Not Poverty (sufficiency as a floor), Community (risk shared and pooled) and Generativity (contributing across the whole lifespan). The book argues pre-industrial societies built these in and industrialization broke all three at once."
-    },
-    {
-      "term": "Pe’ah",
-      "definition": "The biblical requirement (Leviticus 19:9; 23:22) to leave the corners of a field unharvested for the poor. The book reads it as an agricultural welfare system written into religious law."
-    },
-    {
-      "term": "Zakat",
-      "definition": "Required almsgiving and one of the Five Pillars of Islam, customarily 2.5 percent of wealth above a minimum threshold. It goes to set categories of people, including the poor, the needy and those in debt."
-    },
-    {
-      "term": "Xenodochium",
-      "definition": "A church-run hostel or hospital that first appeared in the Byzantine world, serving travelers and the needy. Related institutions specialized in the aged (gerocomium), the sick and orphans."
-    },
-    {
-      "term": "Guild",
-      "definition": "A medieval association of craftsmen or merchants that regulated a trade. Guilds kept welfare funds for sick or elderly members and supported members’ widows and orphans, an early form of pooled risk."
-    },
-    {
-      "term": "Almshouse (poorhouse)",
-      "definition": "A locally funded institution for the destitute, inherited from English poor law. By the late nineteenth century many American poorhouses were becoming old-age homes of last resort."
-    },
-    {
-      "term": "Coverture",
-      "definition": "The common-law doctrine that folded a married woman’s legal identity into her husband’s. She could not own property, make contracts or keep wages in her own name."
-    },
-    {
-      "term": "Mutual aid society",
-      "definition": "A member-run organization in which people paid regular dues to support members who fell sick and the families of members who died. It was community insurance built from below."
-    },
-    {
-      "term": "Life expectancy at birth",
-      "definition": "The average lifespan of all babies born in a given period. In pre-industrial societies infant and child deaths pulled it down, so it badly understates how long people who survived childhood actually lived."
-    }
-  ],
-  "keyFigures": [
-    {
-      "name": "Otto von Bismarck",
-      "role": "German chancellor who paired the 1878 Anti-Socialist Law with social insurance: sickness (1883), accident (1884) and, in 1889, old age and disability. He told critics, ‘Call it socialism or whatever you like. It is the same to me.’"
-    },
-    {
-      "name": "Thomas Paine",
-      "role": "In Agrarian Justice (written 1795–96), he proposed a national fund, paid for by a 10 percent tax on inherited property, to support the aged and young adults. It was one of the earliest designs for social insurance."
-    },
-    {
-      "name": "Richard Allen and Absalom Jones",
-      "role": "Founders of Philadelphia’s Free African Society (1787), a dues-funded mutual aid society for sick members and for the widows and children of members who died."
-    },
-    {
-      "name": "Frederick Douglass",
-      "role": "Elected president of the Freedman’s Savings and Trust Company in March 1874, he put in $10,000 of his own money. He then concluded he was ‘married to a corpse’ and recommended that Congress close the bank."
-    },
-    {
-      "name": "Grover Cleveland",
-      "role": "As president he vetoed the 1887 Dependent Pension Bill as too costly and open to fraud. The veto framed the debate between pensions as compensation for service and pensions as general support."
-    }
-  ],
-  "primarySources": [
-    {
-      "title": "Preamble and Articles of the Free African Society",
-      "year": 1787,
-      "source": "PBS, Africans in America",
-      "url": "https://www.pbs.org/wgbh/aia/part3/3h465.html",
-      "why": "Look for how members defined mutual obligation, and for who was included and who was excluded."
-    },
-    {
-      "title": "Imperial message on social insurance, with Bismarck’s Reichstag remarks",
-      "year": 1881,
-      "source": "SSA Historian’s Office",
-      "url": "https://www.ssa.gov/history/ottob.html",
-      "why": "Compare the humanitarian language (‘a well-grounded claim to care from the state’) with the political motives the book identifies."
-    },
-    {
-      "title": "Veteran’s Pensions: The Law and Its Administration From the Revolutionary War to the Civil War",
-      "year": 1893,
-      "source": "VCU Social Welfare History Project",
-      "url": "https://socialwelfare.library.vcu.edu/social-security/veterans-pensions-early-history/",
-      "why": "Trace how eligibility moved from disability toward service and need, and note how an 1893 writer judged the system’s growth."
-    },
-    {
-      "title": "Freedman’s Savings and Trust Company depositor records",
-      "year": 1865,
-      "source": "National Archives",
-      "url": "https://www.archives.gov/research/african-americans/freedmans-bank",
-      "why": "The signature cards record depositors’ ages, birthplaces and occupations. Ask what these savers were planning for, and what the bank’s failure took from them."
-    }
-  ],
-  "discussionQuestions": [
-    "The book insists the classical world was ‘not a golden age,’ yet calls its architecture of mutual obligation ‘a blueprint.’ Using evidence on coverture, serfdom, almshouses or the Dawes Act, argue whether that blueprint can be separated from the injustices that came with it.",
-    "Grimm treats the absence of a word for retirement as ‘a data point.’ Yet the 1818 service pension act and Paine’s Agrarian Justice show people thinking about support in old age well before 1890. Do these examples weaken the claim that retirement ‘did not exist,’ or confirm that what existed was something different?",
-    "Choose two institutions from this module, such as pe’ah, zakat, a guild, the Free African Society or an almshouse. Which Natural Order principles does each embody, and which does each violate?",
-    "In 1880, 87 percent of older farm men were in the labor force, compared with 66 percent of other older men. Is that evidence of the ‘evolving and embedded’ work the book describes, of economic necessity, or of both? What evidence would help you decide?",
-    "The book calls the treatment of the aging ‘a moral and philosophical question masquerading as a financial one.’ What would a retirement system designed from moral obligation, rather than from individual accounts, look like in practice?",
-    "The Freedman’s Savings Bank, the Chinese Exclusion Act and unequal pension approvals for Black veterans all came before 1890. How do they support the claim that Seed 1 (Segregation & Boundaries) is older than retirement itself?"
-  ],
-  "assignment": {
-    "title": "Then and Now: A Community Care System Through the Natural Order Lens",
-    "type": "Primary source analysis",
-    "prompt": "Choose one community care system from before 1890 and at least one primary text that describes it. Options include pe’ah (Leviticus 19:9–10), zakat, a medieval guild ordinance, the 1601 Poor Relief Act, the Free African Society’s articles (1787), Bismarck’s 1881 imperial message, or a Revolutionary or Civil War pension law. Analyze the system through all three Natural Order principles: Not Poverty, Community and Generativity. Then compare it with the main tools of modern American retirement, Social Security and the 401(k): who carries the risk, who is included, and what is expected of the aging person? Address the injustices of your system honestly. Close by evaluating the book’s claim that the classical world offers ‘a blueprint.’ Which part is worth recovering, and which part must stay behind?",
-    "deliverable": "1,200–1,500 word analytical essay citing at least one primary source and at least two scholarly or official secondary sources (Chicago or MLA).",
-    "points": 100,
-    "rubric": [
-      {
-        "criterion": "Primary source analysis & historical context",
-        "points": 30,
-        "exemplary": "Reads the primary text closely, with precise quotation, and places it accurately in its time, place and social order.",
-        "proficient": "Analyzes the source accurately with some context; the quotations support the points made.",
-        "developing": "Mostly summarizes the source; context is thin or has minor errors.",
-        "beginning": "Misreads the source, gives no context, or uses no primary source."
-      },
-      {
-        "criterion": "Application of the three Natural Order principles",
-        "points": 25,
-        "exemplary": "Applies all three principles with nuance, showing where the system honors and where it violates each one.",
-        "proficient": "Applies all three principles accurately but unevenly.",
-        "developing": "Applies one or two principles, or uses them as labels without analysis.",
-        "beginning": "Principles are missing or misdefined."
-      },
-      {
-        "criterion": "Comparison with modern retirement & evaluation of the book’s claim",
-        "points": 25,
-        "exemplary": "Builds a clear argument comparing risk, inclusion and expectations, weighs the ‘blueprint’ claim with evidence, and takes a defensible position.",
-        "proficient": "Makes a sound comparison and takes a position, with some evidence.",
-        "developing": "The comparison is superficial or the position is asserted without support.",
-        "beginning": "No real comparison or evaluation."
-      },
-      {
-        "criterion": "Writing, organization & citation",
-        "points": 20,
-        "exemplary": "Clear thesis, logical structure, clean prose, and correct citations that meet the source requirements.",
-        "proficient": "Organized and readable, with minor citation or style errors.",
-        "developing": "Organization or prose gets in the way of the argument, or a source requirement is missed.",
-        "beginning": "Disorganized, with missing or improper citations."
-      }
-    ]
+  {
+   "year": 1776,
+   "title": "Continental Congress disability pension resolution",
+   "type": "legislation",
+   "detail": "A resolution of August 26, 1776 promised soldiers disabled in service half their monthly pay for life. Because Congress could not raise money through taxation, by 1785 the states were paying these pensions.",
+   "significance": "America’s first public pension promise compensated sacrifice, not old age. Over the next 130 years that distinction would quietly erode (Seed 2: Government Involvement)."
   },
-  "quiz": [
-    {
-      "q": "In 1880, about what share of American men aged 65 and older were in the labor force?",
-      "options": [
-        "About 25 percent",
-        "About 50 percent",
-        "About 78 percent",
-        "About 95 percent"
-      ],
-      "answer": 2,
-      "explain": "Economic historian Dora Costa’s census-based estimate for 1880 is about 78 percent. Most older men kept working, especially on farms."
-    },
-    {
-      "q": "What did the biblical law of pe’ah require?",
-      "options": [
-        "A tithe paid to priests",
-        "Leaving the corners of a field unharvested for the poor",
-        "A tax on inherited property",
-        "A guild fund for funerals"
-      ],
-      "answer": 1,
-      "explain": "Pe’ah (Leviticus 19:9; 23:22) required farmers to leave the corners of their fields for the poor. The book calls it an agricultural welfare system written into religious law."
-    },
-    {
-      "q": "Which company created the first formal private pension plan in the United States, in 1875?",
-      "options": [
-        "The Pennsylvania Railroad",
-        "American Express",
-        "Standard Oil",
-        "The Baltimore & Ohio Railroad"
-      ],
-      "answer": 1,
-      "explain": "American Express created the first formal U.S. private pension in 1875. The B&O’s Relief Department followed in 1880, and the Pennsylvania Railroad’s plan in 1900."
-    },
-    {
-      "q": "Who became president of the Freedman’s Savings and Trust Company in March 1874 and then recommended that Congress close it?",
-      "options": [
-        "Frederick Douglass",
-        "Booker T. Washington",
-        "Richard Allen",
-        "W. E. B. Du Bois"
-      ],
-      "answer": 0,
-      "explain": "Frederick Douglass invested $10,000 of his own money, concluded he was ‘married to a corpse,’ and advised closing the bank, which shut on June 29, 1874."
-    },
-    {
-      "q": "According to the book’s ‘life expectancy paradox,’ what mainly explains the low average life expectancy at birth in pre-industrial societies?",
-      "options": [
-        "Most adults died in their thirties",
-        "Very high infant and child mortality pulled the average down",
-        "People stopped working at 40",
-        "Census records were incomplete"
-      ],
-      "answer": 1,
-      "explain": "Deaths among infants and children dragged the average down. People who survived childhood often lived into their fifties, sixties and beyond."
-    }
-  ],
-  "sources": [
-    {
-      "label": "SSA Historian’s Office — Otto von Bismarck",
-      "url": "https://www.ssa.gov/history/ottob.html"
-    },
-    {
-      "label": "SSA Historian’s Office — Thomas Paine",
-      "url": "https://www.ssa.gov/history/tpaine3.html"
-    },
-    {
-      "label": "SSA Historian’s Office — Social Security Act of 1935 (benefit start dates)",
-      "url": "https://www.ssa.gov/history/35act.html"
-    },
-    {
-      "label": "SSA Historian’s Office — Ida May Fuller, first monthly check (1940)",
-      "url": "https://www.ssa.gov/history/imf.html"
-    },
-    {
-      "label": "SSA Historian’s Office — Life Expectancy for Social Security",
-      "url": "https://www.ssa.gov/history/lifeexpect.html"
-    },
-    {
-      "label": "VCU Social Welfare History Project — Veteran’s Pensions, Revolutionary War to Civil War",
-      "url": "https://socialwelfare.library.vcu.edu/social-security/veterans-pensions-early-history/"
-    },
-    {
-      "label": "VCU Social Welfare History Project — Poor Relief in Early America",
-      "url": "https://socialwelfare.library.vcu.edu/programs/poor-relief-early-amer/"
-    },
-    {
-      "label": "National Archives, Prologue — Civil War pension system",
-      "url": "https://www.archives.gov/publications/prologue/2010/spring/civilwarpension.html"
-    },
-    {
-      "label": "National Archives, Prologue — Freedman’s Savings and Trust Company",
-      "url": "https://www.archives.gov/publications/prologue/1997/summer/freedmans-savings-and-trust.html"
-    },
-    {
-      "label": "National Archives — Freedman’s Bank records",
-      "url": "https://www.archives.gov/research/african-americans/freedmans-bank"
-    },
-    {
-      "label": "National Archives — Chinese Exclusion Act (1882)",
-      "url": "https://www.archives.gov/milestone-documents/chinese-exclusion-act"
-    },
-    {
-      "label": "EH.Net — Economic History of Retirement in the United States",
-      "url": "https://eh.net/encyclopedia/economic-history-of-retirement-in-the-united-states/"
-    },
-    {
-      "label": "Costa, The Evolution of Retirement, ch. 2 (NBER)",
-      "url": "https://www.nber.org/chapters/c6108.pdf"
-    },
-    {
-      "label": "SSA Social Security Bulletin — early private pension plans",
-      "url": "https://ssa.gov/policy/docs/ssb/v16n3/v16n3p7.pdf"
-    },
-    {
-      "label": "B&O Railroad Museum — Relief Department records finding aid",
-      "url": "https://www.borail.org/wp-content/uploads/2024/10/BO-Relief-Records-FindingAid.pdf"
-    },
-    {
-      "label": "Federal Reserve History — Banking Panics of the Gilded Age",
-      "url": "https://www.federalreservehistory.org/essays/banking_panics_of_the_gilded_age"
-    },
-    {
-      "label": "NBER — U.S. Business Cycle Expansions and Contractions",
-      "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
-    },
-    {
-      "label": "Panic of 1837 (overview citing Bancroft 1902, Temin 1969, Rousseau 2002)",
-      "url": "https://en.wikipedia.org/wiki/Panic_of_1837"
-    },
-    {
-      "label": "Panic of 1857 (overview)",
-      "url": "https://en.wikipedia.org/wiki/Panic_of_1857"
-    },
-    {
-      "label": "Dependent and Disability Pension Act — Cleveland veto & Arrears Act (citing McConnell, Glasson)",
-      "url": "https://en.wikipedia.org/wiki/Dependent_and_Disability_Pension_Act"
-    },
-    {
-      "label": "Grand Army of the Republic (citing McConnell)",
-      "url": "https://en.wikipedia.org/wiki/Grand_Army_of_the_Republic"
-    },
-    {
-      "label": "BYU News — Racial discrimination in Union Army pensions",
-      "url": "https://news.byu.edu/news/racial-discrimination-union-army-pensions-detailed-new-study"
-    },
-    {
-      "label": "Essential Civil War Curriculum — Civil War Pensions",
-      "url": "https://www.essentialcivilwarcurriculum.com/civil-war-pensions.html"
-    },
-    {
-      "label": "Free African Society",
-      "url": "https://en.wikipedia.org/wiki/Free_African_Society"
-    },
-    {
-      "label": "Seneca Falls Convention",
-      "url": "https://en.wikipedia.org/wiki/Seneca_Falls_Convention"
-    },
-    {
-      "label": "Married Women’s Property Acts in the United States",
-      "url": "https://en.wikipedia.org/wiki/Married_Women%27s_Property_Acts_in_the_United_States"
-    },
-    {
-      "label": "Haymarket affair",
-      "url": "https://en.wikipedia.org/wiki/Haymarket_affair"
-    },
-    {
-      "label": "EBSCO Research Starters — Anti-Socialist Law of 1878",
-      "url": "https://www.ebsco.com/research-starters/history/anti-socialist-law-1878"
-    },
-    {
-      "label": "Encyclopedia of the Great Plains — Dawes General Allotment Act",
-      "url": "https://plainshumanities.unl.edu/encyclopedia/doc/egp.law.015.html"
-    },
-    {
-      "label": "Katz, ‘Poorhouses and the Origins of the Public Old Age Home,’ Milbank Quarterly (1984)",
-      "url": "https://www.milbank.org/wp-content/uploads/mq/volume-62/issue-01/62-1-Poorhouses-and-the-Origins-of-the-Public-Old-Age-Home.pdf"
-    },
-    {
-      "label": "Poor Relief Act 1601",
-      "url": "https://en.wikipedia.org/wiki/Poor_Relief_Act_1601"
-    },
-    {
-      "label": "U.S. Department of Veterans Affairs — America’s Wars fact sheet",
-      "url": "https://www.va.gov/opa/publications/factsheets/fs_americas_wars.pdf"
-    },
-    {
-      "label": "First transcontinental railroad",
-      "url": "https://en.wikipedia.org/wiki/First_transcontinental_railroad"
-    },
-    {
-      "label": "Black Death",
-      "url": "https://en.wikipedia.org/wiki/Black_Death"
-    },
-    {
-      "label": "Pe’ah",
-      "url": "https://en.wikipedia.org/wiki/Pe%27ah"
-    },
-    {
-      "label": "Zakat",
-      "url": "https://en.wikipedia.org/wiki/Zakat"
-    },
-    {
-      "label": "Xenodochium",
-      "url": "https://en.wikipedia.org/wiki/Xenodochium"
-    },
-    {
-      "label": "Guild",
-      "url": "https://en.wikipedia.org/wiki/Guild"
-    }
+  {
+   "year": 1818,
+   "endYear": 1832,
+   "title": "Revolutionary War service pension acts",
+   "type": "legislation",
+   "detail": "The act of March 18, 1818 pensioned Revolutionary veterans who had served nine months and were in need of their country’s support. Officers received $20 a month and enlisted men $8. An act of June 7, 1832 extended full benefits to veterans with two years’ service, and proportional benefits to those who had served at least six months; later acts opened pensions to militia veterans and widows.",
+   "significance": "These were the first U.S. pensions based on service and need rather than injury. By the 1810s, poverty among aging veterans had become a public problem, a preview of the long slide from ‘wounded’ to ‘old.’"
+  },
+  {
+   "year": 1862,
+   "title": "Civil War pension ‘General Law’",
+   "type": "legislation",
+   "detail": "The act of July 14, 1862 pensioned Union officers and enlisted men disabled since March 4, 1861 by wounds or disease contracted in the line of duty. Rates were proportional to disability, from $8 a month for a totally disabled private up to $30 for senior officers. Widows received the husband’s pension for life or until remarriage, and minor children received it if no widow survived.",
+   "significance": "This act became the foundation of America’s largest income-support system before the New Deal. The pension rolls grew from 7,916 people in 1861 to 324,968 by 1885."
+  },
+  {
+   "year": 1865,
+   "endYear": 1874,
+   "title": "Freedman’s Savings and Trust Company",
+   "type": "policy",
+   "detail": "Congress chartered the bank, and Lincoln signed the act on March 3, 1865. In less than a decade an estimated 70,000 depositors, most of them formerly enslaved people and their families, deposited more than $57 million in total. An 1870 charter change loosened its investment rules. Mismanagement, fraud and the Panic of 1873 followed, and the bank closed on June 29, 1874.",
+   "significance": "The bank paid out dividends totaling 62 percent of what depositors were owed, but roughly half of depositors never claimed them. A savings institution chartered by the federal government for freedpeople failed within a decade, an early case of Seeds 1 and 7."
+  },
+  {
+   "year": 1875,
+   "title": "American Express creates the first formal U.S. private pension",
+   "type": "policy",
+   "detail": "The American Express Company created the first formal private pension plan in the United States in 1875. Early employer plans like it were typically noncontributory, unfunded and discretionary. The employer treated the pension as a gift it could reduce or end at will, not a legal right.",
+   "significance": "The corporate pension begins as a management tool. It is a precursor of Seed 8 (The Promise), which the book dates to the period after 1946."
+  },
+  {
+   "year": 1879,
+   "title": "Arrears of Pensions Act",
+   "type": "legislation",
+   "detail": "The act let Union veterans with approved claims collect back payments dating to their discharge. It set off a flood of applications and a sharp rise in pension spending.",
+   "significance": "The act helped revive the Grand Army of the Republic as a pension lobby. It also shows a pattern the book identifies: benefits that start modest and expand under political pressure."
+  },
+  {
+   "year": 1880,
+   "title": "Baltimore & Ohio Railroad Relief Department",
+   "type": "policy",
+   "detail": "The B&O created its Relief Department in 1880. The B&O Railroad Museum’s archive calls it the railroad industry’s first employer-run health insurance and pension plan.",
+   "significance": "Industrial pensions began where work was most dangerous and corporations most bureaucratic. This plants the urban-industrial side of Seed 7 (Two Americas)."
+  },
+  {
+   "year": 1883,
+   "endYear": 1884,
+   "title": "Bismarck’s sickness and accident insurance (Germany)",
+   "type": "legislation",
+   "detail": "The Anti-Socialist Law of October 1878 banned socialist organizations. Bismarck then turned to insurance. An 1881 imperial message declared that people ‘disabled from work by age and invalidity have a well-grounded claim to care from the state.’ Sickness insurance followed in 1883 and accident insurance in 1884.",
+   "significance": "Seed 2 (Government Involvement) is planted here. The book reads social insurance as political management, a line that leads to the 1889 old-age law examined in the Conception unit."
+  },
+  {
+   "year": 1887,
+   "title": "Cleveland vetoes the Dependent Pension Bill",
+   "type": "policy",
+   "detail": "On February 11, 1887, President Grover Cleveland vetoed a bill to pension Union veterans who could not support themselves, however they had become disabled. He cited its cost, the difficulty of measuring dependence, and the likelihood of fraud. The House could not override the veto.",
+   "significance": "The fight was over whether a pension compensates service or supports need. It previewed the Dependent Pension Act that Congress passed three years later."
+  }
+ ],
+ "marketDrops": [
+  {
+   "year": 1837,
+   "endYear": 1844,
+   "name": "Panic of 1837",
+   "decline": "343 of about 850 U.S. banks closed entirely; 62 more failed in part",
+   "detail": "On May 10, 1837, New York City banks stopped paying out gold and silver. A land bubble had burst, the 1836 Specie Circular had drained coin westward, and cotton prices had fallen 25 percent in February and March 1837. A depression of nearly seven years followed, with most accounts placing full recovery in 1844.",
+   "retirementImpact": "No one had a pension to lose; older Americans’ security was land, family and bank deposits. When over 40 percent of banks failed, deposits were not safe either."
+  },
+  {
+   "year": 1857,
+   "endYear": 1858,
+   "name": "Panic of 1857",
+   "decline": "Nationwide suspension of gold and silver payments; NBER contraction June 1857 – December 1858 (18 months)",
+   "detail": "On August 24, 1857, the New York branch of the Ohio Life Insurance and Trust Company suspended payments, a failure tied to fraud by its managers. In September the SS Central America sank with gold that New York banks were waiting for. Railroad stocks had peaked that July, and several lines shut down or went bankrupt.",
+   "retirementImpact": "The largely agrarian South suffered little, while the industrial and railroad North was hit hard. Financial risk was already falling differently on the two Americas (Seed 7)."
+  },
+  {
+   "year": 1873,
+   "endYear": 1879,
+   "name": "Panic of 1873 and the Long Depression",
+   "decline": "NYSE closed for 10 days; at least 100 banks failed; 65-month NBER contraction (Oct 1873 – Mar 1879)",
+   "detail": "Jay Cooke and Company, overextended in Northern Pacific Railway bonds, failed on September 18, 1873. Two days later the New York Stock Exchange closed for the first time in its history and stayed shut for ten days. The National Bureau of Economic Research (NBER) dates the downturn from October 1873 to March 1879, a 65-month contraction and the longest in its records.",
+   "retirementImpact": "The panic helped bring down the Freedman’s Savings Bank in 1874. It wiped out savings that formerly enslaved people had been building for their families’ futures."
+  }
+ ],
+ "socialMovements": [
+  {
+   "year": 1787,
+   "name": "Free African Society and Black mutual aid",
+   "detail": "Richard Allen and Absalom Jones founded the Free African Society in Philadelphia in 1787. Members paid one shilling a month ‘to support one another in sickness, and for the benefit of their widows and fatherless children.’",
+   "significance": "It is a textbook case of the Community principle. People with little protection from the established order built their own risk pool, a pattern the book traces from medieval guilds to labor unions."
+  },
+  {
+   "year": 1848,
+   "name": "Seneca Falls and women’s property rights",
+   "detail": "The Seneca Falls Convention met July 19–20, 1848. Its Declaration of Sentiments, drafted by Elizabeth Cady Stanton, charged that man ‘has taken from her all right in property, even to the wages she earns.’ That April, New York’s Married Women’s Property Act had let married women keep property they brought into marriage or received from others, and it became a model for other states.",
+   "significance": "Women’s old-age security ran through marriage. Property reform slowly began to give wives and widows assets of their own."
+  },
+  {
+   "year": 1866,
+   "endYear": 1890,
+   "name": "Grand Army of the Republic",
+   "detail": "Union veterans founded the Grand Army of the Republic (GAR) in Decatur, Illinois, on April 6, 1866. It revived in the 1880s and peaked at about 410,000 members in 1890. Historian Stuart McConnell called it ‘the most powerful single-issue political lobby of the late nineteenth century.’",
+   "significance": "Organized beneficiaries pushed pensions from compensation for injury toward general support. The GAR was the first great American pension lobby."
+  },
+  {
+   "year": 1886,
+   "name": "Eight-hour movement and the Haymarket affair",
+   "detail": "On May 1, 1886, an estimated 300,000 to 500,000 workers struck nationwide for an eight-hour day, including 30,000 to 40,000 in Chicago. At a Haymarket Square rally on May 4, a bomb and the gunfire that followed killed seven police officers and at least four civilians. Eight anarchists were convicted, though only two were present when the bomb exploded. Four were hanged in November 1887, and Governor John Peter Altgeld pardoned three survivors in 1893.",
+   "significance": "Industrial workers began fighting over the terms of the wage bargain itself. The book connects this struggle to the later fights for pensions and Social Security."
+  }
+ ],
+ "inequities": [
+  {
+   "title": "Coverture and the widow’s precarity",
+   "detail": "Under common law a married woman had almost no legal existence apart from her husband. She could not own property, make contracts or keep wages in her own name. A woman’s old age therefore depended on her husband living or her family being willing to support her. As the book puts it, widowhood was ‘financial ruin.’",
+   "vars": [
+    "gender"
+   ]
+  },
+  {
+   "title": "Unequal pensions for Black Union veterans",
+   "detail": "About 179,000 Black soldiers served in the Union Army. Research by BYU political scientist Sven Wilson found the Pension Bureau approved 83 percent of white applications and 77 percent of Black applications from wounded veterans in 1865–1878. By the 1880s it approved claims from uninjured white veterans at more than twice the Black rate. Black veterans also often lacked the hospital records the bureau demanded, and white officials decided their claims.",
+   "vars": [
+    "race"
+   ]
+  },
+  {
+   "title": "Chinese Exclusion Act (1882)",
+   "detail": "Signed by Chester A. Arthur on May 6, 1882, the act suspended immigration by Chinese laborers and barred Chinese residents from citizenship. It was extended in 1892, made permanent in 1902 and repealed only in 1943. Chinese workers had done much of the Central Pacific’s manual labor on the transcontinental railroad finished in 1869.",
+   "vars": [
+    "immigration",
+    "race"
+   ]
+  },
+  {
+   "title": "The Dawes Act and Indigenous dispossession",
+   "detail": "The General Allotment Act of 1887 broke up communally held reservation land into individual parcels, 160 acres for a head of household. ‘Surplus’ land was opened to others. By the time allotment ended in 1934, land held by Native Americans had fallen from 138 million to 48 million acres. The book describes this kind of destruction of working community systems as violent dismantling.",
+   "vars": [
+    "race",
+    "place"
+   ]
+  },
+  {
+   "title": "The poorhouse becomes an old-age home",
+   "detail": "Inherited from English poor law, the almshouse was the public answer to destitution. Historian Michael Katz found that, in Erie County, New York, ‘by the end of the century, the poorhouse clearly was becoming an old age home.’ As other groups were moved out, the elderly were the only ones left. For aging people without family or savings, the community’s last resort carried the stigma of pauperism.",
+   "vars": [
+    "income"
+   ]
+  }
+ ],
+ "historicalContext": [
+  {
+   "year": 1346,
+   "endYear": 1353,
+   "title": "The Black Death",
+   "detail": "Plague killed an estimated 25 to 60 percent of Europe’s population between 1346 and 1353. The book uses catastrophes like this to show why survival depended on community rather than individual planning."
+  },
+  {
+   "year": 1797,
+   "title": "Thomas Paine’s Agrarian Justice",
+   "detail": "Written in the winter of 1795–96 and published in an English edition in 1797, Paine’s pamphlet proposed a national fund to support the aged and young people starting out. It was to be paid for by a 10 percent tax on inherited property, an early design for social insurance."
+  },
+  {
+   "year": 1861,
+   "endYear": 1865,
+   "title": "The Civil War",
+   "detail": "More than 2.2 million people served in Union forces, and 140,414 died in battle, with 224,097 more deaths from other causes in the theater of war. The war left a generation of disabled and aging veterans, and the pension system that became America’s first mass old-age support."
+  },
+  {
+   "year": 1869,
+   "title": "Transcontinental railroad completed",
+   "detail": "The rails met at Promontory Summit, Utah Territory, on May 10, 1869. Railroads tied together a national industrial economy and became early builders of formal employee pension systems."
+  },
+  {
+   "year": 1880,
+   "title": "Old men still work",
+   "detail": "In 1880 about 78 percent of American men aged 65 and older were in the labor force: 87 percent of those living on farms and 66 percent of those who did not (Costa). For most people, old age meant changing work, not ending it."
+  }
+ ],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "planted",
+   "detail": "Segregation & Boundaries is older than retirement itself. Poor laws sorted the ‘deserving’ poor from the ‘undeserving.’ Coverture erased married women’s property, and caste and serfdom fixed deprivation at birth. Before 1890 the United States also wrote exclusion into law, from the Chinese Exclusion Act to the Dawes Act and unequal pension approvals for Black veterans."
+  },
+  {
+   "seed": 2,
+   "stage": "planted",
+   "detail": "Two governments begin experimenting with support in old age. The United States does it through veterans’ pensions (1776, 1818, 1862, 1879), and Germany through Bismarck’s insurance laws (1883–1884), which lead to the 1889 old-age law. Both mix real protection with political management: pensions to reward loyalty, insurance to undercut socialists."
+  },
+  {
+   "seed": 3,
+   "stage": "planted",
+   "detail": "This is only a precursor of 65 = Old and Done, because no fixed age of ‘old’ yet existed. Elders changed roles rather than leaving: the Roman paterfamilias, the Confucian counselor, Indigenous keepers of communal memory. Pre-1890 American pensions turned on service, disability and need, not birthdays. The number 65 appears nowhere yet, and that is the point."
+  },
+  {
+   "seed": 7,
+   "stage": "planted",
+   "detail": "Before 1890 the divide runs North versus South and farm versus factory. Union pension money flowed to Northern veterans, while Confederate veterans and most Black Southerners were outside it. Farm men kept working in old age far more than other men (87 versus 66 percent in 1880)."
+  },
+  {
+   "seed": 8,
+   "stage": "planted",
+   "detail": "This is a precursor only, since the book dates The Promise to the corporate pension era after 1946. Its first form appears at American Express (1875) and in the B&O Relief Department (1880). These early plans were discretionary gifts, not contracts, and the employer could withdraw them."
+  }
+ ],
+ "twoPersonLens": {
+  "year": 1890,
+  "older": {
+   "born": 1830,
+   "headline": "Retirement? Never heard of it",
+   "text": "Born in 1830, they were seven when the Panic of 1837 closed hundreds of banks and twenty-seven when the Panic of 1857 hit. In their early thirties came the Civil War. If they served in the Union army and came home wounded, the 1862 law paid a few dollars a month. Now, in 1890, they are sixty, and they have never once thought about retiring; the word means nothing to them. Most men their age are still working, and on the farm they simply shift to lighter tasks. Children, a congregation or a lodge will carry their old age. If all of those fail, the county poorhouse will. This summer, though, Congress passes the Dependent Pension Act. Old soldiers are about to learn that being worn out can be reason enough to be paid."
+  },
+  "younger": {
+   "born": 1870,
+   "headline": "The generation that will be told to stop",
+   "text": "Born in 1870, five years after the Civil War ended, they turn twenty in 1890. They are walking toward the factory gate rather than the family field. They will be twenty-three when the Panic of 1893 pushes unemployment to an estimated 17 to 19 percent, thirty-seven in the Panic of 1907, and fifty-nine when the market crashes in 1929. They will be sixty-five in 1935, the year Social Security is signed. Yet its first monthly retirement check will not go out until January 1940, when they are about seventy. Nothing in their upbringing suggests that work ends. They are the generation that will eventually be told it must."
+  },
+  "irony": "The man who never imagined retiring will be among the first paid simply for growing old; the boy raised to work until he dropped will be among the first told he has to stop."
+ },
+ "keyTerms": [
+  {
+   "term": "Natural Order Economics",
+   "definition": "Grimm’s framework of three principles: Not Poverty (sufficiency as a floor), Community (risk shared and pooled) and Generativity (contributing across the whole lifespan). The book argues pre-industrial societies built these in and industrialization broke all three at once."
+  },
+  {
+   "term": "Pe’ah",
+   "definition": "The biblical requirement (Leviticus 19:9; 23:22) to leave the corners of a field unharvested for the poor. The book reads it as an agricultural welfare system written into religious law."
+  },
+  {
+   "term": "Zakat",
+   "definition": "Required almsgiving and one of the Five Pillars of Islam, customarily 2.5 percent of wealth above a minimum threshold. It goes to set categories of people, including the poor, the needy and those in debt."
+  },
+  {
+   "term": "Xenodochium",
+   "definition": "A church-run hostel or hospital that first appeared in the Byzantine world, serving travelers and the needy. Related institutions specialized in the aged (gerocomium), the sick and orphans."
+  },
+  {
+   "term": "Guild",
+   "definition": "A medieval association of craftsmen or merchants that regulated a trade. Guilds kept welfare funds for sick or elderly members and supported members’ widows and orphans, an early form of pooled risk."
+  },
+  {
+   "term": "Almshouse (poorhouse)",
+   "definition": "A locally funded institution for the destitute, inherited from English poor law. By the late nineteenth century many American poorhouses were becoming old-age homes of last resort."
+  },
+  {
+   "term": "Coverture",
+   "definition": "The common-law doctrine that folded a married woman’s legal identity into her husband’s. She could not own property, make contracts or keep wages in her own name."
+  },
+  {
+   "term": "Mutual aid society",
+   "definition": "A member-run organization in which people paid regular dues to support members who fell sick and the families of members who died. It was community insurance built from below."
+  },
+  {
+   "term": "Life expectancy at birth",
+   "definition": "The average lifespan of all babies born in a given period. In pre-industrial societies infant and child deaths pulled it down, so it badly understates how long people who survived childhood actually lived."
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Otto von Bismarck",
+   "role": "German chancellor who paired the 1878 Anti-Socialist Law with social insurance: sickness (1883), accident (1884) and, in 1889, old age and disability. He told critics, ‘Call it socialism or whatever you like. It is the same to me.’"
+  },
+  {
+   "name": "Thomas Paine",
+   "role": "In Agrarian Justice (written 1795–96), he proposed a national fund, paid for by a 10 percent tax on inherited property, to support the aged and young adults. It was one of the earliest designs for social insurance."
+  },
+  {
+   "name": "Richard Allen and Absalom Jones",
+   "role": "Founders of Philadelphia’s Free African Society (1787), a dues-funded mutual aid society for sick members and for the widows and children of members who died."
+  },
+  {
+   "name": "Frederick Douglass",
+   "role": "Elected president of the Freedman’s Savings and Trust Company in March 1874, he put in $10,000 of his own money. He then concluded he was ‘married to a corpse’ and recommended that Congress close the bank."
+  },
+  {
+   "name": "Grover Cleveland",
+   "role": "As president he vetoed the 1887 Dependent Pension Bill as too costly and open to fraud. The veto framed the debate between pensions as compensation for service and pensions as general support."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "Preamble and Articles of the Free African Society",
+   "year": 1787,
+   "source": "PBS, Africans in America",
+   "url": "https://www.pbs.org/wgbh/aia/part3/3h465.html",
+   "why": "Look for how members defined mutual obligation, and for who was included and who was excluded."
+  },
+  {
+   "title": "Imperial message on social insurance, with Bismarck’s Reichstag remarks",
+   "year": 1881,
+   "source": "SSA Historian’s Office",
+   "url": "https://www.ssa.gov/history/ottob.html",
+   "why": "Compare the humanitarian language (‘a well-grounded claim to care from the state’) with the political motives the book identifies."
+  },
+  {
+   "title": "Veteran’s Pensions: The Law and Its Administration From the Revolutionary War to the Civil War",
+   "year": 1893,
+   "source": "VCU Social Welfare History Project",
+   "url": "https://socialwelfare.library.vcu.edu/social-security/veterans-pensions-early-history/",
+   "why": "Trace how eligibility moved from disability toward service and need, and note how an 1893 writer judged the system’s growth."
+  },
+  {
+   "title": "Freedman’s Savings and Trust Company depositor records",
+   "year": 1865,
+   "source": "National Archives",
+   "url": "https://www.archives.gov/research/african-americans/freedmans-bank",
+   "why": "The signature cards record depositors’ ages, birthplaces and occupations. Ask what these savers were planning for, and what the bank’s failure took from them."
+  }
+ ],
+ "discussionQuestions": [
+  "The book insists the classical world was ‘not a golden age,’ yet calls its architecture of mutual obligation ‘a blueprint.’ Using evidence on coverture, serfdom, almshouses or the Dawes Act, argue whether that blueprint can be separated from the injustices that came with it.",
+  "Grimm treats the absence of a word for retirement as ‘a data point.’ Yet the 1818 service pension act and Paine’s Agrarian Justice show people thinking about support in old age well before 1890. Do these examples weaken the claim that retirement ‘did not exist,’ or confirm that what existed was something different?",
+  "Choose two institutions from this module, such as pe’ah, zakat, a guild, the Free African Society or an almshouse. Which Natural Order principles does each embody, and which does each violate?",
+  "In 1880, 87 percent of older farm men were in the labor force, compared with 66 percent of other older men. Is that evidence of the ‘evolving and embedded’ work the book describes, of economic necessity, or of both? What evidence would help you decide?",
+  "The book calls the treatment of the aging ‘a moral and philosophical question masquerading as a financial one.’ What would a retirement system designed from moral obligation, rather than from individual accounts, look like in practice?",
+  "The Freedman’s Savings Bank, the Chinese Exclusion Act and unequal pension approvals for Black veterans all came before 1890. How do they support the claim that Seed 1 (Segregation & Boundaries) is older than retirement itself?"
+ ],
+ "assignment": {
+  "title": "Then and Now: A Community Care System Through the Natural Order Lens",
+  "type": "Primary source analysis",
+  "prompt": "Choose one community care system from before 1890 and at least one primary text that describes it. Options include pe’ah (Leviticus 19:9–10), zakat, a medieval guild ordinance, the 1601 Poor Relief Act, the Free African Society’s articles (1787), Bismarck’s 1881 imperial message, or a Revolutionary or Civil War pension law. Analyze the system through all three Natural Order principles: Not Poverty, Community and Generativity. Then compare it with the main tools of modern American retirement, Social Security and the 401(k): who carries the risk, who is included, and what is expected of the aging person? Address the injustices of your system honestly. Close by evaluating the book’s claim that the classical world offers ‘a blueprint.’ Which part is worth recovering, and which part must stay behind?",
+  "deliverable": "1,200–1,500 word analytical essay citing at least one primary source and at least two scholarly or official secondary sources (Chicago or MLA).",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Primary source analysis & historical context",
+    "points": 30,
+    "exemplary": "Reads the primary text closely, with precise quotation, and places it accurately in its time, place and social order.",
+    "proficient": "Analyzes the source accurately with some context; the quotations support the points made.",
+    "developing": "Mostly summarizes the source; context is thin or has minor errors.",
+    "beginning": "Misreads the source, gives no context, or uses no primary source."
+   },
+   {
+    "criterion": "Application of the three Natural Order principles",
+    "points": 25,
+    "exemplary": "Applies all three principles with nuance, showing where the system honors and where it violates each one.",
+    "proficient": "Applies all three principles accurately but unevenly.",
+    "developing": "Applies one or two principles, or uses them as labels without analysis.",
+    "beginning": "Principles are missing or misdefined."
+   },
+   {
+    "criterion": "Comparison with modern retirement & evaluation of the book’s claim",
+    "points": 25,
+    "exemplary": "Builds a clear argument comparing risk, inclusion and expectations, weighs the ‘blueprint’ claim with evidence, and takes a defensible position.",
+    "proficient": "Makes a sound comparison and takes a position, with some evidence.",
+    "developing": "The comparison is superficial or the position is asserted without support.",
+    "beginning": "No real comparison or evaluation."
+   },
+   {
+    "criterion": "Writing, organization & citation",
+    "points": 20,
+    "exemplary": "Clear thesis, logical structure, clean prose, and correct citations that meet the source requirements.",
+    "proficient": "Organized and readable, with minor citation or style errors.",
+    "developing": "Organization or prose gets in the way of the argument, or a source requirement is missed.",
+    "beginning": "Disorganized, with missing or improper citations."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "In 1880, about what share of American men aged 65 and older were in the labor force?",
+   "options": [
+    "About 25 percent",
+    "About 50 percent",
+    "About 78 percent",
+    "About 95 percent"
+   ],
+   "answer": 2,
+   "explain": "Economic historian Dora Costa’s census-based estimate for 1880 is about 78 percent. Most older men kept working, especially on farms."
+  },
+  {
+   "q": "What did the biblical law of pe’ah require?",
+   "options": [
+    "A tithe paid to priests",
+    "Leaving the corners of a field unharvested for the poor",
+    "A tax on inherited property",
+    "A guild fund for funerals"
+   ],
+   "answer": 1,
+   "explain": "Pe’ah (Leviticus 19:9; 23:22) required farmers to leave the corners of their fields for the poor. The book calls it an agricultural welfare system written into religious law."
+  },
+  {
+   "q": "Which company created the first formal private pension plan in the United States, in 1875?",
+   "options": [
+    "The Pennsylvania Railroad",
+    "American Express",
+    "Standard Oil",
+    "The Baltimore & Ohio Railroad"
+   ],
+   "answer": 1,
+   "explain": "American Express created the first formal U.S. private pension in 1875. The B&O’s Relief Department followed in 1880, and the Pennsylvania Railroad’s plan in 1900."
+  },
+  {
+   "q": "Who became president of the Freedman’s Savings and Trust Company in March 1874 and then recommended that Congress close it?",
+   "options": [
+    "Frederick Douglass",
+    "Booker T. Washington",
+    "Richard Allen",
+    "W. E. B. Du Bois"
+   ],
+   "answer": 0,
+   "explain": "Frederick Douglass invested $10,000 of his own money, concluded he was ‘married to a corpse,’ and advised closing the bank, which shut on June 29, 1874."
+  },
+  {
+   "q": "According to the book’s ‘life expectancy paradox,’ what mainly explains the low average life expectancy at birth in pre-industrial societies?",
+   "options": [
+    "Most adults died in their thirties",
+    "Very high infant and child mortality pulled the average down",
+    "People stopped working at 40",
+    "Census records were incomplete"
+   ],
+   "answer": 1,
+   "explain": "Deaths among infants and children dragged the average down. People who survived childhood often lived into their fifties, sixties and beyond."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SSA Historian’s Office — Otto von Bismarck",
+   "url": "https://www.ssa.gov/history/ottob.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Thomas Paine",
+   "url": "https://www.ssa.gov/history/tpaine3.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Social Security Act of 1935 (benefit start dates)",
+   "url": "https://www.ssa.gov/history/35act.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Ida May Fuller, first monthly check (1940)",
+   "url": "https://www.ssa.gov/history/imf.html"
+  },
+  {
+   "label": "SSA Historian’s Office — Life Expectancy for Social Security",
+   "url": "https://www.ssa.gov/history/lifeexpect.html"
+  },
+  {
+   "label": "VCU Social Welfare History Project — Veteran’s Pensions, Revolutionary War to Civil War",
+   "url": "https://socialwelfare.library.vcu.edu/social-security/veterans-pensions-early-history/"
+  },
+  {
+   "label": "VCU Social Welfare History Project — Poor Relief in Early America",
+   "url": "https://socialwelfare.library.vcu.edu/programs/poor-relief-early-amer/"
+  },
+  {
+   "label": "National Archives, Prologue — Civil War pension system",
+   "url": "https://www.archives.gov/publications/prologue/2010/spring/civilwarpension.html"
+  },
+  {
+   "label": "National Archives, Prologue — Freedman’s Savings and Trust Company",
+   "url": "https://www.archives.gov/publications/prologue/1997/summer/freedmans-savings-and-trust.html"
+  },
+  {
+   "label": "National Archives — Freedman’s Bank records",
+   "url": "https://www.archives.gov/research/african-americans/freedmans-bank"
+  },
+  {
+   "label": "National Archives — Chinese Exclusion Act (1882)",
+   "url": "https://www.archives.gov/milestone-documents/chinese-exclusion-act"
+  },
+  {
+   "label": "EH.Net — Economic History of Retirement in the United States",
+   "url": "https://eh.net/encyclopedia/economic-history-of-retirement-in-the-united-states/"
+  },
+  {
+   "label": "Costa, The Evolution of Retirement, ch. 2 (NBER)",
+   "url": "https://www.nber.org/chapters/c6108.pdf"
+  },
+  {
+   "label": "SSA Social Security Bulletin — early private pension plans",
+   "url": "https://ssa.gov/policy/docs/ssb/v16n3/v16n3p7.pdf"
+  },
+  {
+   "label": "B&O Railroad Museum — Relief Department records finding aid",
+   "url": "https://www.borail.org/wp-content/uploads/2024/10/BO-Relief-Records-FindingAid.pdf"
+  },
+  {
+   "label": "Federal Reserve History — Banking Panics of the Gilded Age",
+   "url": "https://www.federalreservehistory.org/essays/banking_panics_of_the_gilded_age"
+  },
+  {
+   "label": "NBER — U.S. Business Cycle Expansions and Contractions",
+   "url": "https://www.nber.org/research/data/us-business-cycle-expansions-and-contractions"
+  },
+  {
+   "label": "Panic of 1837 (overview citing Bancroft 1902, Temin 1969, Rousseau 2002)",
+   "url": "https://en.wikipedia.org/wiki/Panic_of_1837"
+  },
+  {
+   "label": "Panic of 1857 (overview)",
+   "url": "https://en.wikipedia.org/wiki/Panic_of_1857"
+  },
+  {
+   "label": "Dependent and Disability Pension Act — Cleveland veto & Arrears Act (citing McConnell, Glasson)",
+   "url": "https://en.wikipedia.org/wiki/Dependent_and_Disability_Pension_Act"
+  },
+  {
+   "label": "Grand Army of the Republic (citing McConnell)",
+   "url": "https://en.wikipedia.org/wiki/Grand_Army_of_the_Republic"
+  },
+  {
+   "label": "BYU News — Racial discrimination in Union Army pensions",
+   "url": "https://news.byu.edu/news/racial-discrimination-union-army-pensions-detailed-new-study"
+  },
+  {
+   "label": "Essential Civil War Curriculum — Civil War Pensions",
+   "url": "https://www.essentialcivilwarcurriculum.com/civil-war-pensions.html"
+  },
+  {
+   "label": "Free African Society",
+   "url": "https://en.wikipedia.org/wiki/Free_African_Society"
+  },
+  {
+   "label": "Seneca Falls Convention",
+   "url": "https://en.wikipedia.org/wiki/Seneca_Falls_Convention"
+  },
+  {
+   "label": "Married Women’s Property Acts in the United States",
+   "url": "https://en.wikipedia.org/wiki/Married_Women%27s_Property_Acts_in_the_United_States"
+  },
+  {
+   "label": "Haymarket affair",
+   "url": "https://en.wikipedia.org/wiki/Haymarket_affair"
+  },
+  {
+   "label": "EBSCO Research Starters — Anti-Socialist Law of 1878",
+   "url": "https://www.ebsco.com/research-starters/history/anti-socialist-law-1878"
+  },
+  {
+   "label": "Encyclopedia of the Great Plains — Dawes General Allotment Act",
+   "url": "https://plainshumanities.unl.edu/encyclopedia/doc/egp.law.015.html"
+  },
+  {
+   "label": "Katz, ‘Poorhouses and the Origins of the Public Old Age Home,’ Milbank Quarterly (1984)",
+   "url": "https://www.milbank.org/wp-content/uploads/mq/volume-62/issue-01/62-1-Poorhouses-and-the-Origins-of-the-Public-Old-Age-Home.pdf"
+  },
+  {
+   "label": "Poor Relief Act 1601",
+   "url": "https://en.wikipedia.org/wiki/Poor_Relief_Act_1601"
+  },
+  {
+   "label": "U.S. Department of Veterans Affairs — America’s Wars fact sheet",
+   "url": "https://www.va.gov/opa/publications/factsheets/fs_americas_wars.pdf"
+  },
+  {
+   "label": "First transcontinental railroad",
+   "url": "https://en.wikipedia.org/wiki/First_transcontinental_railroad"
+  },
+  {
+   "label": "Black Death",
+   "url": "https://en.wikipedia.org/wiki/Black_Death"
+  },
+  {
+   "label": "Pe’ah",
+   "url": "https://en.wikipedia.org/wiki/Pe%27ah"
+  },
+  {
+   "label": "Zakat",
+   "url": "https://en.wikipedia.org/wiki/Zakat"
+  },
+  {
+   "label": "Xenodochium",
+   "url": "https://en.wikipedia.org/wiki/Xenodochium"
+  },
+  {
+   "label": "Guild",
+   "url": "https://en.wikipedia.org/wiki/Guild"
+  }
+ ]
 }

@@ -1,371 +1,441 @@
 {
-  "id": "correction",
-  "number": 8,
-  "title": "Correction",
-  "years": "Today",
-  "definition": "cor·rec·tion (noun) the beginning of something",
-  "tagline": "Correction is not an innovation. It is a return.",
-  "bigQuestion": "Once the humanitarian question is separated from the retirement question, what should we build, and what should we stop building?",
-  "overview": "The final chapter opens with an apology. Grimm, a credentialed financial advisor, says his profession spent decades telling a story that does not hold up and helped build the system it now has to critique. The chapter then moves through four steps. The Knot names the central error: confusing an ancient humanitarian question (how do we care for people as they age?) with a 130-year-old structural one (how does each individual fund thirty years of not working?). The Wrestling asks openly whether retirement as we know it is a good idea at all, and the author declines to settle that for you. The Circle describes his own answer for households living in the system as it is: orchestration, coordinating every financial tool as one system instead of hunting for the single best product. The Kick tells readers that the failure was never personal, and names who they are once they see the system for what it is: “an educated heretic.”\n\nThis module is thematic, not chronological. It sets the book’s framework beside real corrective ideas already being tested, including state auto-IRAs, the federal Saver’s Match, children’s seed accounts, multigenerational living, the village model and Social Security reform options. These are presented neutrally so you can judge them by evidence and by the three Natural Order principles: Not Poverty, Community and Generativity.",
-  "learningObjectives": [
-    "Distinguish the humanitarian question from the structural question (the Knot) and classify current retirement policies by which question they answer.",
-    "Explain the three Natural Order principles (Not Poverty, Community, Generativity) and use them as explicit criteria to evaluate a policy or practice.",
-    "Evaluate real-world corrective proposals (state auto-IRAs, the Saver’s Match, children’s seed accounts, Social Security solvency options, the village and multigenerational models) on evidence, cost and trade-offs.",
-    "Analyze the book’s orchestration (“Magic Circle”) concept, distinguishing household-level corrections from society-level ones and assessing its limits.",
-    "Design and defend a correction for a real family or community that applies all three Natural Order principles."
-  ],
-  "policyEvents": [
-    {
-      "year": 1983,
-      "title": "Precedent: The 1983 Social Security Amendments",
-      "type": "legislation",
-      "detail": "Signed April 20, 1983 (P.L. 98-21), the amendments drew on recommendations from the National Commission on Social Security Reform and combined several levers. They made up to half of benefits taxable for higher-income recipients, phased the full retirement age up to 67, accelerated scheduled payroll-tax increases, delayed a cost-of-living adjustment and brought new federal employees into Social Security from 1984.",
-      "significance": "It is the clearest precedent that a structural fix can be negotiated across parties. Students should note that it spread the costs across workers, retirees and government."
-    },
-    {
-      "year": 2017,
-      "title": "OregonSaves: The First State Auto-IRA",
-      "type": "policy",
-      "detail": "Launched in October 2017, OregonSaves was the first state program to enroll workers automatically in payroll-deduction IRAs when their employers offered no plan. As of August 31, 2026, 15 reporting state auto-IRA programs held more than $3.4 billion across more than 1.4 million funded accounts (Georgetown Center for Retirement Initiatives).",
-      "significance": "It redirects the Segregation & Boundaries seed by reaching workers the employer system leaves out, while keeping individual ownership and market risk."
-    },
-    {
-      "year": 2019,
-      "title": "CalSavers Launches Statewide",
-      "type": "policy",
-      "detail": "California’s program launched July 1, 2019, with a default contribution of 5% of pay that workers can change or opt out of. Employers with five or more employees and no retirement plan had to offer a plan or facilitate CalSavers on deadlines from 2020 to 2022. At launch the state estimated that more than 7 million Californians lacked a workplace plan; by June 30, 2026, CalSavers held about $1.88 billion across 652,929 funded accounts.",
-      "significance": "It uses a collective tool, a state mandate plus a default, to build individual savings. Is that Community, or Individualism with better plumbing?"
-    },
-    {
-      "year": 2025,
-      "title": "Children’s Seed Accounts (“Trump Accounts”)",
-      "type": "legislation",
-      "detail": "Administered through the IRS, these are a new type of individual retirement account designed for minors. A federal pilot deposits $1,000 for U.S.-citizen children born from January 1, 2025, through December 31, 2028, and general contributions opened July 4, 2026. The IRS reported more than 4 million children enrolled, with over a million families electing the pilot deposit.",
-      "significance": "Supporters see wealth-building that starts at birth and compounds across a lifetime. Critics ask whether it extends Individualism into infancy. Evaluate it against Generativity and Not Poverty."
-    },
-    {
-      "year": 2026,
-      "title": "The Social Security Solvency Menu (2026 Trustees Report)",
-      "type": "policy",
-      "detail": "The 2026 Trustees calculate that the 75-year deficit could be eliminated by raising the combined payroll tax immediately from 12.4% to 16.83%, by cutting all scheduled benefits immediately by 25.9%, or by a combination of the two. Lawmakers have also proposed changes to the retirement age, the benefit formula and the taxable-earnings cap. CRS estimates show the cost of delay: acting only at depletion would require roughly a 4.9-point tax increase or a 28.5% benefit cut.",
-      "significance": "The options are structural answers to a structural question, and each assigns the cost to a different group. That makes the choice a moral one as well as an actuarial one."
-    },
-    {
-      "year": 2027,
-      "title": "The Saver’s Match Begins",
-      "type": "legislation",
-      "detail": "Under SECURE 2.0, the federal government will deposit a match of 50% on up to $2,000 of a lower- or moderate-income saver’s retirement contributions, up to $1,000 a year. The match starts with 2027 contributions and is paid in 2028. In August 2026 the Treasury and IRS announced their intent to issue implementing regulations.",
-      "significance": "Public money flows to the savers the system has served least, redirecting the Two Americas seed. Whether a match is enough without a guaranteed floor is open to debate."
-    }
-  ],
-  "marketDrops": [],
-  "socialMovements": [
-    {
-      "year": 2001,
-      "name": "The Village Movement",
-      "detail": "Beacon Hill Village, founded in Boston in 2001, pioneered a member-run model in which older adults pay dues and receive volunteer help with transportation, errands and home tasks so they can stay in their own homes, with vetted professionals for the rest. By 2015 the Village to Village Network counted 251 member organizations serving about 25,000 members.",
-      "significance": "It rebuilds Community as neighbor-to-neighbor risk sharing rather than as a financial product: the classical answer in modern form."
-    }
-  ],
-  "inequities": [
-    {
-      "title": "Who a Correction Must Reach First",
-      "detail": "In March 2026, only 48% of the lowest-paid quarter of private-sector workers had access to a workplace retirement plan, and 22% participated. For part-time workers the figures were 44% and 20% (BLS). Any correction that builds on the employer system starts by missing these workers."
-    },
-    {
-      "title": "The Floor Is Already Communal",
-      "detail": "Census data show Social Security moved 28.8 million people out of poverty in 2025, more than any other program. Yet an AARP Foundation analysis puts SPM poverty among Americans aged 65 and older at 15.4% in 2025, which suggests the existing floor is real but too low for millions."
-    },
-    {
-      "title": "Unequal Years to Collect",
-      "detail": "The 2016 Chetty study found a life-expectancy gap at age 40 of 14.6 years for men and 10.1 years for women between the richest and poorest 1%. Corrections tied to a single age, whether raising it or lowering it, land differently on people who can expect very different lifespans."
-    }
-  ],
-  "historicalContext": [
-    {
-      "year": 2010,
-      "title": "Inception and the “Kick”",
-      "detail": "In Christopher Nolan’s 2010 film Inception, a sudden jolt called a “kick” wakes dreamers from layered dreams. The book uses the image for its own purpose: a jolt that wakes readers from an idea of retirement planted so deeply it feels like their own."
-    },
-    {
-      "year": 2021,
-      "title": "The Return of the Multigenerational Household",
-      "detail": "Pew Research found that 59.7 million Americans, 18% of the population, lived in multigenerational households in 2021, up from 7% in 1971. Some families choose it for care, others out of financial necessity: the old Community answer returning under modern pressures."
-    }
-  ],
-  "seeds": [
-    {
-      "seed": 1,
-      "stage": "harvest",
-      "detail": "Uproot by designing for the excluded first. Programs that automatically reach workers with no employer plan, such as state auto-IRAs, and floors that cover everyone redraw the 1935 boundary instead of defending it."
-    },
-    {
-      "seed": 2,
-      "stage": "harvest",
-      "detail": "Redirect government from political management to a deliberate floor. The 1983 Amendments show that Congress can make shared structural repairs; the book’s Not Poverty principle asks that the floor be designed on purpose rather than improvised under pressure."
-    },
-    {
-      "seed": 3,
-      "stage": "harvest",
-      "detail": "Replace the cliff at 65 with Generativity: work that changes shape instead of stopping, and contribution that follows capacity. Phased retirement, mentoring and caregiving roles let older adults keep contributing without a forty-year sprint to a single exit."
-    },
-    {
-      "seed": 4,
-      "stage": "harvest",
-      "detail": "Demote markets from the plan to one tool within it. In the book’s orchestration framework, investments work alongside insurance, tax strategy and income coordination, and pooled-risk arrangements protect people from having to retire on the day of a crash."
-    },
-    {
-      "seed": 5,
-      "stage": "harvest",
-      "detail": "Weave rest across the whole lifespan instead of saving it all for the end. The Wrestling asks whether the real wants beneath “I want to retire” (time with grandchildren, relief from work that harms the body, meaningful work) need a thirty-year vacation, or a different kind of life."
-    },
-    {
-      "seed": 6,
-      "stage": "harvest",
-      "detail": "Uproot the hunt for speed by redefining the goal as sufficiency. When the target is a secure floor, held up by community, rather than an ever-larger “number,” the gamble loses its appeal."
-    },
-    {
-      "seed": 7,
-      "stage": "harvest",
-      "detail": "Close the gap between the two Americas by making coordinated, whole-picture planning available beyond the wealthy, as the book says Fernbridge aims to do for middle-class families, and by aiming public money (Saver’s Match, auto-IRAs) at those the system served least."
-    },
-    {
-      "seed": 8,
-      "stage": "harvest",
-      "detail": "Redirect the Promise from a single employer’s pledge to shared, enforceable obligation, the covenant the Classical chapter describes. Risk spread across a community does not depend on one institution keeping its word."
-    },
-    {
-      "seed": 9,
-      "stage": "harvest",
-      "detail": "Uproot the shame first: “it’s not your fault.” Then redirect personal responsibility into coordination, both inside the household (orchestration) and across households (villages, multigenerational homes, public floors), so that no one carries alone what a community can share."
-    }
-  ],
-  "twoPersonLens": {
-    "year": 2026,
-    "older": {
-      "born": 1966,
-      "headline": "The Elder at Your Kitchen Table",
-      "text": "She was 15 in 1981, when the first 401(k) plans appeared, and spent her career inside the system that replaced the pension. She was 42 when the 2008 crash cut the market by more than half, and 56 when stocks and bonds fell together. Today she is 60. Her full retirement age is 67, which she reaches in 2033, the year after the Trustees project the retirement trust fund will be depleted. Ask her “who gave you that dream?” and she may pause, then name what she actually wants: work that doesn’t hurt, time with grandchildren, a reason to get up. For her, the correction starts with that question, not with a number."
-    },
-    "younger": {
-      "born": 2006,
-      "headline": "The Student in This Seat",
-      "text": "He is 20, sitting in this classroom. He starts work at a time when there are about 2.6 workers paying into Social Security for each beneficiary, and when part-time workers have retirement-plan access only 44% of the time. If he takes a job in California at a small firm with no plan, CalSavers may enroll him automatically. If he saves in 2027, Washington may match half of it. He turns 67 in 2073. Unlike every 20-year-old before him in this history, he has seen the system’s design, who built it and where it breaks. He can still choose what he wants from his life before anyone hands him a dream."
-    },
-    "irony": "For the first time in this history, the 60-year-old and the 20-year-old can ask the same question, “who gave us this dream?”, at the same table, before either has been fully consumed by the answer."
+ "id": "correction",
+ "number": 8,
+ "title": "Correction",
+ "years": "Today",
+ "definition": "cor·rec·tion (noun) the beginning of something",
+ "tagline": "Correction is not an innovation. It is a return.",
+ "bigQuestion": "Once the humanitarian question is separated from the retirement question, what should we build, and what should we stop building?",
+ "overview": "The final chapter opens with an apology. Grimm, a credentialed financial advisor, says his profession spent decades telling a story that does not hold up and helped build the system it now has to critique. The chapter then moves through four steps. The Knot names the central error: confusing an ancient humanitarian question (how do we care for people as they age?) with a 130-year-old structural one (how does each individual fund thirty years of not working?). The Wrestling asks openly whether retirement as we know it is a good idea at all, and the author declines to settle that for you. The Circle describes his own answer for households living in the system as it is: orchestration, coordinating every financial tool as one system instead of hunting for the single best product. The Kick tells readers that the failure was never personal, and names who they are once they see the system for what it is: “an educated heretic.”\n\nThis module is thematic, not chronological. It sets the book’s framework beside real corrective ideas already being tested, including state auto-IRAs, the federal Saver’s Match, children’s seed accounts, multigenerational living, the village model and Social Security reform options. These are presented neutrally so you can judge them by evidence and by the three Natural Order principles: Not Poverty, Community and Generativity.",
+ "learningObjectives": [
+  "Distinguish the humanitarian question from the structural question (the Knot) and classify current retirement policies by which question they answer.",
+  "Explain the three Natural Order principles (Not Poverty, Community, Generativity) and use them as explicit criteria to evaluate a policy or practice.",
+  "Evaluate real-world corrective proposals (state auto-IRAs, the Saver’s Match, children’s seed accounts, Social Security solvency options, the village and multigenerational models) on evidence, cost and trade-offs.",
+  "Analyze the book’s orchestration (“Magic Circle”) concept, distinguishing household-level corrections from society-level ones and assessing its limits.",
+  "Design and defend a correction for a real family or community that applies all three Natural Order principles."
+ ],
+ "policyEvents": [
+  {
+   "year": 1983,
+   "title": "Precedent: The 1983 Social Security Amendments",
+   "type": "legislation",
+   "detail": "Signed April 20, 1983 (P.L. 98-21), the amendments drew on recommendations from the National Commission on Social Security Reform and combined several levers. They made up to half of benefits taxable for higher-income recipients, phased the full retirement age up to 67, accelerated scheduled payroll-tax increases, delayed a cost-of-living adjustment and brought new federal employees into Social Security from 1984.",
+   "significance": "It is the clearest precedent that a structural fix can be negotiated across parties. Students should note that it spread the costs across workers, retirees and government."
   },
-  "keyTerms": [
-    {
-      "term": "The Knot (the Conflation)",
-      "definition": "The book’s name for confusing two questions: the ancient humanitarian one (how do we care for people as they age?) and the modern structural one (how does each individual fund thirty years of not working?)."
-    },
-    {
-      "term": "Not Poverty",
-      "definition": "The first Natural Order principle: sufficiency as a floor, held in place by something bigger than one person’s savings account."
-    },
-    {
-      "term": "Community",
-      "definition": "The second Natural Order principle: risk shared and pooled across a group, so that no individual bears alone what a community can spread."
-    },
-    {
-      "term": "Generativity",
-      "definition": "The third Natural Order principle: contribution sustained across the whole lifespan, changing with capacity instead of stopping at a fixed age."
-    },
-    {
-      "term": "Orchestration (the Magic Circle)",
-      "definition": "Grimm’s planning method of arranging every available tool (tax, insurance, investments, income, risk, estate) to work together as one system, instead of asking which single product is best."
-    },
-    {
-      "term": "The Kick",
-      "definition": "Borrowed from Inception, the book’s term for the jolt that wakes a reader from an inherited dream of retirement. The question “who gave you that dream?” is its smallest form."
-    },
-    {
-      "term": "Educated heretic",
-      "definition": "The book’s name for a person who understands the retirement system’s history, logic, appeal and math, can see where it breaks, and builds alternatives rather than only tearing down."
-    },
-    {
-      "term": "State auto-IRA",
-      "definition": "A state-run program that enrolls workers in payroll-deduction IRAs by default when their employer offers no plan. OregonSaves (2017) was the first."
-    },
-    {
-      "term": "Phased retirement",
-      "definition": "Reducing hours or responsibilities gradually instead of stopping all at once. It is one practical form of the Generativity principle."
-    }
-  ],
-  "keyFigures": [
-    {
-      "name": "Jonathan Grimm",
-      "role": "Financial advisor, financial ethicist and the book’s author. The Correction chapter opens with his apology for his industry and closes with his own orchestration method, so readers should weigh both his insider knowledge and his stake in the remedy."
-    },
-    {
-      "name": "Christopher Nolan",
-      "role": "Director of The Prestige (2006) and Inception (2010), which supply the book’s framing devices: “Are you watching closely?”, the kick and an idea planted so deep it feels like your own."
-    },
-    {
-      "name": "Otto von Bismarck",
-      "role": "The German chancellor whose 1889 old-age pension, payable at 70, is where the book’s 130-year experiment begins. The Correction asks what a society would build if it started from the humanitarian question instead."
-    },
-    {
-      "name": "Maggie Kuhn",
-      "role": "Founder of the Gray Panthers (1970) after a forced retirement at 65. Her intergenerational slogan, “Age and Youth in Action,” anticipates the Community and Generativity principles."
-    }
-  ],
-  "primarySources": [
-    {
-      "title": "2026 Trustees Report, Section IV.B: Long-Range Estimates",
-      "year": 2026,
-      "source": "Social Security Administration, Office of the Chief Actuary",
-      "url": "https://www.ssa.gov/oact/TR/2026/IV_B_LRest.html",
-      "why": "Read the neutral menu of solvency options and identify which group bears the cost under each."
-    },
-    {
-      "title": "Social Security Amendments of 1983: Legislative History and Summary",
-      "year": 1983,
-      "source": "SSA History",
-      "url": "https://www.ssa.gov/history/1983amend.html",
-      "why": "Note how the package mixed revenue and benefit changes, as a model for negotiated structural repair."
-    },
-    {
-      "title": "CalSavers Launches Statewide (press release)",
-      "year": 2019,
-      "source": "California State Treasurer",
-      "url": "https://www.treasurer.ca.gov/news/releases/2019/20190701/66.pdf",
-      "why": "Identify the problem the program was designed to solve and the defaults it relies on."
-    },
-    {
-      "title": "State Program Performance Data — Historical Trends",
-      "year": 2026,
-      "source": "Georgetown University Center for Retirement Initiatives",
-      "url": "https://cri.georgetown.edu/states/state-data/historical-trends",
-      "why": "Track assets and funded accounts across state auto-IRAs, and ask what “success” should mean."
-    },
-    {
-      "title": "The Demographics of Multigenerational Households",
-      "year": 2022,
-      "source": "Pew Research Center",
-      "url": "https://www.pewresearch.org/social-trends/2022/03/24/the-demographics-of-multigenerational-households/",
-      "why": "Ask whether the rise of multigenerational living is a choice, a necessity or both, and what that implies for the Community principle."
-    }
-  ],
-  "discussionQuestions": [
-    "Use the Knot. Choose one institution (Social Security, the 401(k), Medicare or a state auto-IRA) and argue which question it answers: the humanitarian one, the structural one or both. What would change if it were redesigned to answer the other?",
-    "Challenge the book: Social Security moved 28.8 million people out of poverty in 2025. Does that show that modern institutions can answer the humanitarian question collectively, and does the book’s call for a “return” underrate what already works?",
-    "The Circle section describes the author’s own firm’s method. How should readers weigh a diagnosis offered by someone who also offers a remedy? What evidence would show that orchestration is a structural correction rather than a better individual product?",
-    "The book asserts that “only about seventeen percent of your financial outcome is within your control.” What data and definitions would you need to test that claim, and why might it matter whether it is true?",
-    "Ask yourself “who gave you that dream?” Trace one element of your own picture of later life (an age, a place, an activity, a number) back to one of the nine seeds.",
-    "Rank the correctives in this module (auto-IRAs, the Saver’s Match, children’s seed accounts, Social Security levers, villages, multigenerational homes) by how well each honors Not Poverty, Community and Generativity. Which ones redecorate Individualism instead of correcting it?"
-  ],
-  "assignment": {
-    "title": "Design a Correction",
-    "type": "Capstone proposal",
-    "prompt": "Choose a real family (your own, with permission, or an interviewed household) or a real community (a neighborhood, congregation, workplace, union local or town). Diagnose its current approach to aging using the Knot: where are the humanitarian and structural questions confused? Trace at least three of the nine seeds at work. Then design a correction that explicitly applies all three Natural Order principles: a sufficiency floor (Not Poverty), a shared-risk mechanism (Community) and a pathway for contribution across the lifespan (Generativity). Draw on at least two real-world models from this module and cite evidence about how they have worked. Address costs, trade-offs and who could object. Close with a one-paragraph reflection on how your own answer to “who gave you that dream?” changed over the course.",
-    "deliverable": "A 2,000–2,500-word proposal, a one-page visual “circle” diagram of the correction and a 5-minute presentation, with at least eight cited sources, at least three of them official data or primary sources.",
-    "points": 100,
-    "rubric": [
-      {
-        "criterion": "Diagnosis & evidence",
-        "points": 25,
-        "exemplary": "Precisely identifies where the humanitarian and structural questions are confused, traces three or more seeds with specific evidence, and grounds the analysis in current, cited data.",
-        "proficient": "Sound diagnosis and seed-tracing with adequate evidence; some claims are general.",
-        "developing": "Diagnosis is vague or seeds are named without evidence.",
-        "beginning": "Little or no diagnosis; claims are unsupported."
-      },
-      {
-        "criterion": "Application of the Natural Order principles",
-        "points": 30,
-        "exemplary": "All three principles are built into concrete mechanisms (a defined floor, a real risk pool, a contribution pathway) that work together as a coherent system.",
-        "proficient": "All three principles are addressed, though one is thinner or less concrete.",
-        "developing": "Principles are named rather than built into the design, or one is missing.",
-        "beginning": "The design does not engage the principles."
-      },
-      {
-        "criterion": "Feasibility, trade-offs & fairness",
-        "points": 25,
-        "exemplary": "Realistically sizes costs, names who pays and who benefits, anticipates objections (including from the book’s critics), and adapts lessons from real models.",
-        "proficient": "Addresses costs and trade-offs reasonably but leaves some objections unanswered.",
-        "developing": "Feasibility is asserted rather than shown, and trade-offs are largely ignored.",
-        "beginning": "The proposal is impractical or one-sided, with no trade-offs considered."
-      },
-      {
-        "criterion": "Communication & reflection",
-        "points": 20,
-        "exemplary": "Clear, compelling proposal and diagram; a confident, well-timed presentation; and an honest, specific reflection on how the student’s own “dream” changed.",
-        "proficient": "Clear proposal and presentation with a thoughtful but general reflection.",
-        "developing": "Organization or the visual is weak; the reflection is superficial.",
-        "beginning": "Missing components, unclear communication or no reflection."
-      }
-    ]
+  {
+   "year": 2017,
+   "title": "OregonSaves: The First State Auto-IRA",
+   "type": "policy",
+   "detail": "Launched in October 2017, OregonSaves was the first state program to enroll workers automatically in payroll-deduction IRAs when their employers offered no plan. As of August 31, 2026, 15 reporting state auto-IRA programs held more than $3.4 billion across more than 1.4 million funded accounts (Georgetown Center for Retirement Initiatives).",
+   "significance": "It redirects the Segregation & Boundaries seed by reaching workers the employer system leaves out, while keeping individual ownership and market risk."
   },
-  "quiz": [
-    {
-      "q": "According to the book, what two questions does “the Knot” confuse?",
-      "options": [
-        "How to beat inflation and how to pick funds",
-        "How we care for people as they age, and how each individual funds thirty years of not working",
-        "Whether to choose a Roth or a Traditional account, and when to claim Social Security",
-        "How to retire early, and how to avoid taxes"
-      ],
-      "answer": 1,
-      "explain": "The book argues that the ancient humanitarian question was merged with a 130-year-old structural one, and that untying the two is the first correction."
-    },
-    {
-      "q": "Which Natural Order principle means “sufficiency as a floor”?",
-      "options": ["Generativity", "Community", "Not Poverty", "Individualism"],
-      "answer": 2,
-      "explain": "Not Poverty is a floor of sufficiency held in place by something bigger than one person’s savings. Community is shared risk, and Generativity is contribution across the lifespan."
-    },
-    {
-      "q": "What question does orchestration (the Magic Circle) ask instead of “which product is best”?",
-      "options": [
-        "Which fund has the highest return",
-        "How every available tool can be arranged to work together as one system",
-        "When to stop working",
-        "How to avoid all market risk"
-      ],
-      "answer": 1,
-      "explain": "Orchestration coordinates tax, insurance, investment, income, risk and estate tools as a system rather than optimizing any one of them."
-    },
-    {
-      "q": "What does a state auto-IRA program such as OregonSaves (2017) or CalSavers (2019) do?",
-      "options": [
-        "Guarantees a lifetime pension",
-        "Enrolls workers by default in payroll-deduction IRAs when their employer offers no plan",
-        "Replaces Social Security",
-        "Requires all workers to buy annuities"
-      ],
-      "answer": 1,
-      "explain": "These programs use automatic enrollment to reach workers without workplace plans. Workers can change their contribution rate or opt out."
-    },
-    {
-      "q": "In the book, what is an “educated heretic”?",
-      "options": [
-        "Someone who rejects all financial planning",
-        "A cynic who has given up",
-        "Someone who understands the system’s history, logic, appeal and math, sees where it breaks and builds rather than only tearing down",
-        "A financial advisor who sells alternative products"
-      ],
-      "answer": 2,
-      "explain": "The book closes by naming the reader an educated heretic: neither an outsider nor a cynic, but someone who has followed the evidence past the point where it got comfortable."
-    }
-  ],
-  "sources": [
-    {"label": "SSA — 2026 Trustees Report, Long-Range Estimates (IV.B)", "url": "https://www.ssa.gov/oact/TR/2026/IV_B_LRest.html"},
-    {"label": "SSA — 2026 Trustees Report Highlights", "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html"},
-    {"label": "SSA — 2026 Trustees Report, Table IV.B4 (workers per beneficiary)", "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html"},
-    {"label": "SSA History — 1983 Social Security Amendments", "url": "https://www.ssa.gov/history/1983amend.html"},
-    {"label": "FedWeek — Growing cost of delaying Social Security action (CRS figures)", "url": "https://www.fedweek.com/retirement-financial-planning/reports-show-growing-cost-of-delaying-action-on-social-security-funding/"},
-    {"label": "Georgetown CRI — State Program Performance Data", "url": "https://cri.georgetown.edu/states/state-data/historical-trends"},
-    {"label": "California State Treasurer — CalSavers launch release (2019)", "url": "https://www.treasurer.ca.gov/news/releases/2019/20190701/66.pdf"},
-    {"label": "ASPPA — Mid-year report card for state auto-IRAs (2026)", "url": "https://www.asppa-net.org/news/2026/7/mid-year-report-card-gains-for-the-big-3-state-auto-iras/"},
-    {"label": "PSCA — Saver’s Match guidance ahead of 2027 launch", "url": "https://www.psca.org/news/psca-news/2026/8/savers-match-guidance-coming-ahead-of-2027-launch/"},
-    {"label": "JD Supra — SECURE 2.0 as enacted", "url": "https://www.jdsupra.com/legalnews/secure-2-0-act-of-2022-as-enacted-5325428/"},
-    {"label": "The College Investor — IRS: 4 million children enrolled in Trump Accounts", "url": "https://thecollegeinvestor.com/78011/trump-accounts-4-million-kids-enrolled-irs-says/"},
-    {"label": "Pew Research — Demographics of Multigenerational Households", "url": "https://www.pewresearch.org/social-trends/2022/03/24/the-demographics-of-multigenerational-households/"},
-    {"label": "Beacon Hill Village — overview", "url": "https://en.wikipedia.org/wiki/Beacon_Hill_Village"},
-    {"label": "Gray Panthers — overview", "url": "https://en.wikipedia.org/wiki/Gray_Panthers"},
-    {"label": "BLS — Employee Benefits, retirement table, March 2026", "url": "https://www.bls.gov/news.release/ebs2.t01.htm"},
-    {"label": "Census Bureau — Poverty in the United States: 2025", "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html"},
-    {"label": "AARP Foundation — Response to 2025 Census poverty data", "url": "https://www.aarp.org/press/releases/2026-09-15-aarp-foundation-responds-to-new-census-data-on-rising-poverty-among-older-adults/"},
-    {"label": "Harvard — Chetty et al., Income and Life Expectancy (2016)", "url": "https://hcp.hms.harvard.edu/publication/association-between-income-and-life-expectancy-united-states-2001-2014"}
+  {
+   "year": 2019,
+   "title": "CalSavers Launches Statewide",
+   "type": "policy",
+   "detail": "California’s program launched July 1, 2019, with a default contribution of 5% of pay that workers can change or opt out of. Employers with five or more employees and no retirement plan had to offer a plan or facilitate CalSavers on deadlines from 2020 to 2022. At launch the state estimated that more than 7 million Californians lacked a workplace plan; by June 30, 2026, CalSavers held about $1.88 billion across 652,929 funded accounts.",
+   "significance": "It uses a collective tool, a state mandate plus a default, to build individual savings. Is that Community, or Individualism with better plumbing?"
+  },
+  {
+   "year": 2025,
+   "title": "Children’s Seed Accounts (“Trump Accounts”)",
+   "type": "legislation",
+   "detail": "Administered through the IRS, these are a new type of individual retirement account designed for minors. A federal pilot deposits $1,000 for U.S.-citizen children born from January 1, 2025, through December 31, 2028, and general contributions opened July 4, 2026. The IRS reported more than 4 million children enrolled, with over a million families electing the pilot deposit.",
+   "significance": "Supporters see wealth-building that starts at birth and compounds across a lifetime. Critics ask whether it extends Individualism into infancy. Evaluate it against Generativity and Not Poverty."
+  },
+  {
+   "year": 2026,
+   "title": "The Social Security Solvency Menu (2026 Trustees Report)",
+   "type": "policy",
+   "detail": "The 2026 Trustees calculate that the 75-year deficit could be eliminated by raising the combined payroll tax immediately from 12.4% to 16.83%, by cutting all scheduled benefits immediately by 25.9%, or by a combination of the two. Lawmakers have also proposed changes to the retirement age, the benefit formula and the taxable-earnings cap. CRS estimates show the cost of delay: acting only at depletion would require roughly a 4.9-point tax increase or a 28.5% benefit cut.",
+   "significance": "The options are structural answers to a structural question, and each assigns the cost to a different group. That makes the choice a moral one as well as an actuarial one."
+  },
+  {
+   "year": 2027,
+   "title": "The Saver’s Match Begins",
+   "type": "legislation",
+   "detail": "Under SECURE 2.0, the federal government will deposit a match of 50% on up to $2,000 of a lower- or moderate-income saver’s retirement contributions, up to $1,000 a year. The match starts with 2027 contributions and is paid in 2028. In August 2026 the Treasury and IRS announced their intent to issue implementing regulations.",
+   "significance": "Public money flows to the savers the system has served least, redirecting the Two Americas seed. Whether a match is enough without a guaranteed floor is open to debate."
+  }
+ ],
+ "marketDrops": [],
+ "socialMovements": [
+  {
+   "year": 2001,
+   "name": "The Village Movement",
+   "detail": "Beacon Hill Village, founded in Boston in 2001, pioneered a member-run model in which older adults pay dues and receive volunteer help with transportation, errands and home tasks so they can stay in their own homes, with vetted professionals for the rest. By 2015 the Village to Village Network counted 251 member organizations serving about 25,000 members.",
+   "significance": "It rebuilds Community as neighbor-to-neighbor risk sharing rather than as a financial product: the classical answer in modern form."
+  }
+ ],
+ "inequities": [
+  {
+   "title": "Who a Correction Must Reach First",
+   "detail": "In March 2026, only 48% of the lowest-paid quarter of private-sector workers had access to a workplace retirement plan, and 22% participated. For part-time workers the figures were 44% and 20% (BLS). Any correction that builds on the employer system starts by missing these workers.",
+   "vars": [
+    "income",
+    "job"
+   ]
+  },
+  {
+   "title": "The Floor Is Already Communal",
+   "detail": "Census data show Social Security moved 28.8 million people out of poverty in 2025, more than any other program. Yet an AARP Foundation analysis puts SPM poverty among Americans aged 65 and older at 15.4% in 2025, which suggests the existing floor is real but too low for millions.",
+   "vars": [
+    "income"
+   ]
+  },
+  {
+   "title": "Unequal Years to Collect",
+   "detail": "The 2016 Chetty study found a life-expectancy gap at age 40 of 14.6 years for men and 10.1 years for women between the richest and poorest 1%. Corrections tied to a single age, whether raising it or lowering it, land differently on people who can expect very different lifespans.",
+   "vars": [
+    "income",
+    "longevity"
+   ]
+  }
+ ],
+ "historicalContext": [
+  {
+   "year": 2010,
+   "title": "Inception and the “Kick”",
+   "detail": "In Christopher Nolan’s 2010 film Inception, a sudden jolt called a “kick” wakes dreamers from layered dreams. The book uses the image for its own purpose: a jolt that wakes readers from an idea of retirement planted so deeply it feels like their own."
+  },
+  {
+   "year": 2021,
+   "title": "The Return of the Multigenerational Household",
+   "detail": "Pew Research found that 59.7 million Americans, 18% of the population, lived in multigenerational households in 2021, up from 7% in 1971. Some families choose it for care, others out of financial necessity: the old Community answer returning under modern pressures."
+  }
+ ],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "harvest",
+   "detail": "Uproot by designing for the excluded first. Programs that automatically reach workers with no employer plan, such as state auto-IRAs, and floors that cover everyone redraw the 1935 boundary instead of defending it."
+  },
+  {
+   "seed": 2,
+   "stage": "harvest",
+   "detail": "Redirect government from political management to a deliberate floor. The 1983 Amendments show that Congress can make shared structural repairs; the book’s Not Poverty principle asks that the floor be designed on purpose rather than improvised under pressure."
+  },
+  {
+   "seed": 3,
+   "stage": "harvest",
+   "detail": "Replace the cliff at 65 with Generativity: work that changes shape instead of stopping, and contribution that follows capacity. Phased retirement, mentoring and caregiving roles let older adults keep contributing without a forty-year sprint to a single exit."
+  },
+  {
+   "seed": 4,
+   "stage": "harvest",
+   "detail": "Demote markets from the plan to one tool within it. In the book’s orchestration framework, investments work alongside insurance, tax strategy and income coordination, and pooled-risk arrangements protect people from having to retire on the day of a crash."
+  },
+  {
+   "seed": 5,
+   "stage": "harvest",
+   "detail": "Weave rest across the whole lifespan instead of saving it all for the end. The Wrestling asks whether the real wants beneath “I want to retire” (time with grandchildren, relief from work that harms the body, meaningful work) need a thirty-year vacation, or a different kind of life."
+  },
+  {
+   "seed": 6,
+   "stage": "harvest",
+   "detail": "Uproot the hunt for speed by redefining the goal as sufficiency. When the target is a secure floor, held up by community, rather than an ever-larger “number,” the gamble loses its appeal."
+  },
+  {
+   "seed": 7,
+   "stage": "harvest",
+   "detail": "Close the gap between the two Americas by making coordinated, whole-picture planning available beyond the wealthy, as the book says Fernbridge aims to do for middle-class families, and by aiming public money (Saver’s Match, auto-IRAs) at those the system served least."
+  },
+  {
+   "seed": 8,
+   "stage": "harvest",
+   "detail": "Redirect the Promise from a single employer’s pledge to shared, enforceable obligation, the covenant the Classical chapter describes. Risk spread across a community does not depend on one institution keeping its word."
+  },
+  {
+   "seed": 9,
+   "stage": "harvest",
+   "detail": "Uproot the shame first: “it’s not your fault.” Then redirect personal responsibility into coordination, both inside the household (orchestration) and across households (villages, multigenerational homes, public floors), so that no one carries alone what a community can share."
+  }
+ ],
+ "twoPersonLens": {
+  "year": 2026,
+  "older": {
+   "born": 1966,
+   "headline": "The Elder at Your Kitchen Table",
+   "text": "She was 15 in 1981, when the first 401(k) plans appeared, and spent her career inside the system that replaced the pension. She was 42 when the 2008 crash cut the market by more than half, and 56 when stocks and bonds fell together. Today she is 60. Her full retirement age is 67, which she reaches in 2033, the year after the Trustees project the retirement trust fund will be depleted. Ask her “who gave you that dream?” and she may pause, then name what she actually wants: work that doesn’t hurt, time with grandchildren, a reason to get up. For her, the correction starts with that question, not with a number."
+  },
+  "younger": {
+   "born": 2006,
+   "headline": "The Student in This Seat",
+   "text": "He is 20, sitting in this classroom. He starts work at a time when there are about 2.6 workers paying into Social Security for each beneficiary, and when part-time workers have retirement-plan access only 44% of the time. If he takes a job in California at a small firm with no plan, CalSavers may enroll him automatically. If he saves in 2027, Washington may match half of it. He turns 67 in 2073. Unlike every 20-year-old before him in this history, he has seen the system’s design, who built it and where it breaks. He can still choose what he wants from his life before anyone hands him a dream."
+  },
+  "irony": "For the first time in this history, the 60-year-old and the 20-year-old can ask the same question, “who gave us this dream?”, at the same table, before either has been fully consumed by the answer."
+ },
+ "keyTerms": [
+  {
+   "term": "The Knot (the Conflation)",
+   "definition": "The book’s name for confusing two questions: the ancient humanitarian one (how do we care for people as they age?) and the modern structural one (how does each individual fund thirty years of not working?)."
+  },
+  {
+   "term": "Not Poverty",
+   "definition": "The first Natural Order principle: sufficiency as a floor, held in place by something bigger than one person’s savings account."
+  },
+  {
+   "term": "Community",
+   "definition": "The second Natural Order principle: risk shared and pooled across a group, so that no individual bears alone what a community can spread."
+  },
+  {
+   "term": "Generativity",
+   "definition": "The third Natural Order principle: contribution sustained across the whole lifespan, changing with capacity instead of stopping at a fixed age."
+  },
+  {
+   "term": "Orchestration (the Magic Circle)",
+   "definition": "Grimm’s planning method of arranging every available tool (tax, insurance, investments, income, risk, estate) to work together as one system, instead of asking which single product is best."
+  },
+  {
+   "term": "The Kick",
+   "definition": "Borrowed from Inception, the book’s term for the jolt that wakes a reader from an inherited dream of retirement. The question “who gave you that dream?” is its smallest form."
+  },
+  {
+   "term": "Educated heretic",
+   "definition": "The book’s name for a person who understands the retirement system’s history, logic, appeal and math, can see where it breaks, and builds alternatives rather than only tearing down."
+  },
+  {
+   "term": "State auto-IRA",
+   "definition": "A state-run program that enrolls workers in payroll-deduction IRAs by default when their employer offers no plan. OregonSaves (2017) was the first."
+  },
+  {
+   "term": "Phased retirement",
+   "definition": "Reducing hours or responsibilities gradually instead of stopping all at once. It is one practical form of the Generativity principle."
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Jonathan Grimm",
+   "role": "Financial advisor, financial ethicist and the book’s author. The Correction chapter opens with his apology for his industry and closes with his own orchestration method, so readers should weigh both his insider knowledge and his stake in the remedy."
+  },
+  {
+   "name": "Christopher Nolan",
+   "role": "Director of The Prestige (2006) and Inception (2010), which supply the book’s framing devices: “Are you watching closely?”, the kick and an idea planted so deep it feels like your own."
+  },
+  {
+   "name": "Otto von Bismarck",
+   "role": "The German chancellor whose 1889 old-age pension, payable at 70, is where the book’s 130-year experiment begins. The Correction asks what a society would build if it started from the humanitarian question instead."
+  },
+  {
+   "name": "Maggie Kuhn",
+   "role": "Founder of the Gray Panthers (1970) after a forced retirement at 65. Her intergenerational slogan, “Age and Youth in Action,” anticipates the Community and Generativity principles."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "2026 Trustees Report, Section IV.B: Long-Range Estimates",
+   "year": 2026,
+   "source": "Social Security Administration, Office of the Chief Actuary",
+   "url": "https://www.ssa.gov/oact/TR/2026/IV_B_LRest.html",
+   "why": "Read the neutral menu of solvency options and identify which group bears the cost under each."
+  },
+  {
+   "title": "Social Security Amendments of 1983: Legislative History and Summary",
+   "year": 1983,
+   "source": "SSA History",
+   "url": "https://www.ssa.gov/history/1983amend.html",
+   "why": "Note how the package mixed revenue and benefit changes, as a model for negotiated structural repair."
+  },
+  {
+   "title": "CalSavers Launches Statewide (press release)",
+   "year": 2019,
+   "source": "California State Treasurer",
+   "url": "https://www.treasurer.ca.gov/news/releases/2019/20190701/66.pdf",
+   "why": "Identify the problem the program was designed to solve and the defaults it relies on."
+  },
+  {
+   "title": "State Program Performance Data — Historical Trends",
+   "year": 2026,
+   "source": "Georgetown University Center for Retirement Initiatives",
+   "url": "https://cri.georgetown.edu/states/state-data/historical-trends",
+   "why": "Track assets and funded accounts across state auto-IRAs, and ask what “success” should mean."
+  },
+  {
+   "title": "The Demographics of Multigenerational Households",
+   "year": 2022,
+   "source": "Pew Research Center",
+   "url": "https://www.pewresearch.org/social-trends/2022/03/24/the-demographics-of-multigenerational-households/",
+   "why": "Ask whether the rise of multigenerational living is a choice, a necessity or both, and what that implies for the Community principle."
+  }
+ ],
+ "discussionQuestions": [
+  "Use the Knot. Choose one institution (Social Security, the 401(k), Medicare or a state auto-IRA) and argue which question it answers: the humanitarian one, the structural one or both. What would change if it were redesigned to answer the other?",
+  "Challenge the book: Social Security moved 28.8 million people out of poverty in 2025. Does that show that modern institutions can answer the humanitarian question collectively, and does the book’s call for a “return” underrate what already works?",
+  "The Circle section describes the author’s own firm’s method. How should readers weigh a diagnosis offered by someone who also offers a remedy? What evidence would show that orchestration is a structural correction rather than a better individual product?",
+  "The book asserts that “only about seventeen percent of your financial outcome is within your control.” What data and definitions would you need to test that claim, and why might it matter whether it is true?",
+  "Ask yourself “who gave you that dream?” Trace one element of your own picture of later life (an age, a place, an activity, a number) back to one of the nine seeds.",
+  "Rank the correctives in this module (auto-IRAs, the Saver’s Match, children’s seed accounts, Social Security levers, villages, multigenerational homes) by how well each honors Not Poverty, Community and Generativity. Which ones redecorate Individualism instead of correcting it?"
+ ],
+ "assignment": {
+  "title": "Design a Correction",
+  "type": "Capstone proposal",
+  "prompt": "Choose a real family (your own, with permission, or an interviewed household) or a real community (a neighborhood, congregation, workplace, union local or town). Diagnose its current approach to aging using the Knot: where are the humanitarian and structural questions confused? Trace at least three of the nine seeds at work. Then design a correction that explicitly applies all three Natural Order principles: a sufficiency floor (Not Poverty), a shared-risk mechanism (Community) and a pathway for contribution across the lifespan (Generativity). Draw on at least two real-world models from this module and cite evidence about how they have worked. Address costs, trade-offs and who could object. Close with a one-paragraph reflection on how your own answer to “who gave you that dream?” changed over the course.",
+  "deliverable": "A 2,000–2,500-word proposal, a one-page visual “circle” diagram of the correction and a 5-minute presentation, with at least eight cited sources, at least three of them official data or primary sources.",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Diagnosis & evidence",
+    "points": 25,
+    "exemplary": "Precisely identifies where the humanitarian and structural questions are confused, traces three or more seeds with specific evidence, and grounds the analysis in current, cited data.",
+    "proficient": "Sound diagnosis and seed-tracing with adequate evidence; some claims are general.",
+    "developing": "Diagnosis is vague or seeds are named without evidence.",
+    "beginning": "Little or no diagnosis; claims are unsupported."
+   },
+   {
+    "criterion": "Application of the Natural Order principles",
+    "points": 30,
+    "exemplary": "All three principles are built into concrete mechanisms (a defined floor, a real risk pool, a contribution pathway) that work together as a coherent system.",
+    "proficient": "All three principles are addressed, though one is thinner or less concrete.",
+    "developing": "Principles are named rather than built into the design, or one is missing.",
+    "beginning": "The design does not engage the principles."
+   },
+   {
+    "criterion": "Feasibility, trade-offs & fairness",
+    "points": 25,
+    "exemplary": "Realistically sizes costs, names who pays and who benefits, anticipates objections (including from the book’s critics), and adapts lessons from real models.",
+    "proficient": "Addresses costs and trade-offs reasonably but leaves some objections unanswered.",
+    "developing": "Feasibility is asserted rather than shown, and trade-offs are largely ignored.",
+    "beginning": "The proposal is impractical or one-sided, with no trade-offs considered."
+   },
+   {
+    "criterion": "Communication & reflection",
+    "points": 20,
+    "exemplary": "Clear, compelling proposal and diagram; a confident, well-timed presentation; and an honest, specific reflection on how the student’s own “dream” changed.",
+    "proficient": "Clear proposal and presentation with a thoughtful but general reflection.",
+    "developing": "Organization or the visual is weak; the reflection is superficial.",
+    "beginning": "Missing components, unclear communication or no reflection."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "According to the book, what two questions does “the Knot” confuse?",
+   "options": [
+    "How to beat inflation and how to pick funds",
+    "How we care for people as they age, and how each individual funds thirty years of not working",
+    "Whether to choose a Roth or a Traditional account, and when to claim Social Security",
+    "How to retire early, and how to avoid taxes"
+   ],
+   "answer": 1,
+   "explain": "The book argues that the ancient humanitarian question was merged with a 130-year-old structural one, and that untying the two is the first correction."
+  },
+  {
+   "q": "Which Natural Order principle means “sufficiency as a floor”?",
+   "options": [
+    "Generativity",
+    "Community",
+    "Not Poverty",
+    "Individualism"
+   ],
+   "answer": 2,
+   "explain": "Not Poverty is a floor of sufficiency held in place by something bigger than one person’s savings. Community is shared risk, and Generativity is contribution across the lifespan."
+  },
+  {
+   "q": "What question does orchestration (the Magic Circle) ask instead of “which product is best”?",
+   "options": [
+    "Which fund has the highest return",
+    "How every available tool can be arranged to work together as one system",
+    "When to stop working",
+    "How to avoid all market risk"
+   ],
+   "answer": 1,
+   "explain": "Orchestration coordinates tax, insurance, investment, income, risk and estate tools as a system rather than optimizing any one of them."
+  },
+  {
+   "q": "What does a state auto-IRA program such as OregonSaves (2017) or CalSavers (2019) do?",
+   "options": [
+    "Guarantees a lifetime pension",
+    "Enrolls workers by default in payroll-deduction IRAs when their employer offers no plan",
+    "Replaces Social Security",
+    "Requires all workers to buy annuities"
+   ],
+   "answer": 1,
+   "explain": "These programs use automatic enrollment to reach workers without workplace plans. Workers can change their contribution rate or opt out."
+  },
+  {
+   "q": "In the book, what is an “educated heretic”?",
+   "options": [
+    "Someone who rejects all financial planning",
+    "A cynic who has given up",
+    "Someone who understands the system’s history, logic, appeal and math, sees where it breaks and builds rather than only tearing down",
+    "A financial advisor who sells alternative products"
+   ],
+   "answer": 2,
+   "explain": "The book closes by naming the reader an educated heretic: neither an outsider nor a cynic, but someone who has followed the evidence past the point where it got comfortable."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SSA — 2026 Trustees Report, Long-Range Estimates (IV.B)",
+   "url": "https://www.ssa.gov/oact/TR/2026/IV_B_LRest.html"
+  },
+  {
+   "label": "SSA — 2026 Trustees Report Highlights",
+   "url": "https://www.ssa.gov/oact/TR/2026/II_A_highlights.html"
+  },
+  {
+   "label": "SSA — 2026 Trustees Report, Table IV.B4 (workers per beneficiary)",
+   "url": "https://www.ssa.gov/oact/TR/2026/lr4b4.html"
+  },
+  {
+   "label": "SSA History — 1983 Social Security Amendments",
+   "url": "https://www.ssa.gov/history/1983amend.html"
+  },
+  {
+   "label": "FedWeek — Growing cost of delaying Social Security action (CRS figures)",
+   "url": "https://www.fedweek.com/retirement-financial-planning/reports-show-growing-cost-of-delaying-action-on-social-security-funding/"
+  },
+  {
+   "label": "Georgetown CRI — State Program Performance Data",
+   "url": "https://cri.georgetown.edu/states/state-data/historical-trends"
+  },
+  {
+   "label": "California State Treasurer — CalSavers launch release (2019)",
+   "url": "https://www.treasurer.ca.gov/news/releases/2019/20190701/66.pdf"
+  },
+  {
+   "label": "ASPPA — Mid-year report card for state auto-IRAs (2026)",
+   "url": "https://www.asppa-net.org/news/2026/7/mid-year-report-card-gains-for-the-big-3-state-auto-iras/"
+  },
+  {
+   "label": "PSCA — Saver’s Match guidance ahead of 2027 launch",
+   "url": "https://www.psca.org/news/psca-news/2026/8/savers-match-guidance-coming-ahead-of-2027-launch/"
+  },
+  {
+   "label": "JD Supra — SECURE 2.0 as enacted",
+   "url": "https://www.jdsupra.com/legalnews/secure-2-0-act-of-2022-as-enacted-5325428/"
+  },
+  {
+   "label": "The College Investor — IRS: 4 million children enrolled in Trump Accounts",
+   "url": "https://thecollegeinvestor.com/78011/trump-accounts-4-million-kids-enrolled-irs-says/"
+  },
+  {
+   "label": "Pew Research — Demographics of Multigenerational Households",
+   "url": "https://www.pewresearch.org/social-trends/2022/03/24/the-demographics-of-multigenerational-households/"
+  },
+  {
+   "label": "Beacon Hill Village — overview",
+   "url": "https://en.wikipedia.org/wiki/Beacon_Hill_Village"
+  },
+  {
+   "label": "Gray Panthers — overview",
+   "url": "https://en.wikipedia.org/wiki/Gray_Panthers"
+  },
+  {
+   "label": "BLS — Employee Benefits, retirement table, March 2026",
+   "url": "https://www.bls.gov/news.release/ebs2.t01.htm"
+  },
+  {
+   "label": "Census Bureau — Poverty in the United States: 2025",
+   "url": "https://www.census.gov/library/publications/2026/demo/p60-290.html"
+  },
+  {
+   "label": "AARP Foundation — Response to 2025 Census poverty data",
+   "url": "https://www.aarp.org/press/releases/2026-09-15-aarp-foundation-responds-to-new-census-data-on-rising-poverty-among-older-adults/"
+  },
+  {
+   "label": "Harvard — Chetty et al., Income and Life Expectancy (2016)",
+   "url": "https://hcp.hms.harvard.edu/publication/association-between-income-and-life-expectancy-united-states-2001-2014"
+  }
+ ]
 }

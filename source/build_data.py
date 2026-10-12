@@ -78,37 +78,78 @@ def main():
     course = json.load(open(f"{BASE}/context/course.json", encoding="utf-8"))
 
     # ---- timeline items
+    MT = json.load(open(f"{BASE}/context/master_timeline.json", encoding="utf-8"))
+    HAND = {x["id"]: x["hand"] for x in MT["matches"]}
+    # a few existing entries belong in the lanes his legend uses (culture / technology, money)
+    REASSIGN = {"conception-his-0": ("culture", "tech"), "classical-his-3": ("culture", "tech"), "collapse-his-0": ("culture", "tech"),
+                "climax-his-4": ("markets", "money"), "codify-his-1": ("markets", "money")}
+    LIST_OF = {"policy": "policyEvents", "markets": "marketDrops", "movements": "socialMovements", "history": "historicalContext", "culture": "cultureEvents"}
+    era_of = lambda y: next(k for k, v in ERAS.items() if v["start"] <= y < v["end"])
     items, seen = [], []
     lane_of = {"policyEvents": "policy", "marketDrops": "markets",
-               "socialMovements": "movements", "historicalContext": "context"}
+               "socialMovements": "movements", "historicalContext": "history"}
     skip_prefix = ("precedent:", "historical analog:", "scenario:")
     for m in modules:
         mid = m["id"]
+        m.setdefault("cultureEvents", [])
+        moved = []
         for key, lane in lane_of.items():
             for idx, e in enumerate(m.get(key, [])):
                 title = e.get("title") or e.get("name")
+                e["itemId"] = None
                 if title.lower().startswith(skip_prefix):
                     continue
                 if mid == "conclusion" and "trustees" not in title.lower():
                     continue
-                if mid == "correction" and lane == "context" and "inception" in title.lower():
+                if mid == "correction" and lane == "history" and "inception" in title.lower():
                     continue
                 w = norm_words(title)
-                dup = False
-                for (ln, yr, ws) in seen:
+                dup = None
+                for (ln, yr, ws, oid) in seen:
                     if ln == lane and abs(yr - e["year"]) <= 1 and ws and w and len(w & ws) / len(w | ws) >= 0.4:
-                        dup = True; break
+                        dup = oid; break
                 if dup:
+                    e["itemId"] = dup
                     continue
-                seen.append((lane, e["year"], w))
-                typ = e.get("type") if lane == "policy" else {"markets": "crisis", "movements": "movement", "context": "context"}[lane]
+                iid = f"{mid}-{key[:3]}-{idx}"
+                seen.append((lane, e["year"], w, iid))
+                typ = e.get("type") if lane == "policy" else {"markets": "crisis", "movements": "movement", "history": "history"}[lane]
+                ln, typ = REASSIGN.get(iid, (lane, typ or "policy"))
+                e["itemId"] = iid
+                e["type"] = typ
+                if iid in HAND:
+                    e["master"] = True; e["hand"] = HAND[iid]
                 items.append({
-                    "id": f"{mid}-{key[:3]}-{idx}", "lane": lane, "type": typ or "policy",
+                    "id": iid, "lane": ln, "type": typ,
                     "year": e["year"], "endYear": e.get("endYear"), "title": title,
                     "detail": e.get("detail", ""), "significance": e.get("significance") or e.get("retirementImpact") or "",
                     "decline": e.get("decline"), "module": mid,
                     "projected": e["year"] > 2026 or title.lower().startswith("projected"),
+                    "master": iid in HAND, "hand": HAND.get(iid),
                 })
+                if ln != lane:
+                    moved.append((key, e, LIST_OF[ln]))
+        for key, e, dest in moved:
+            m[key].remove(e); m[dest].append(e)
+    # the author's master timeline: entries that were not yet on the line
+    for a in MT["add"]:
+        mod = era_of(a["year"])
+        items.append({"id": a["id"], "lane": a["lane"], "type": a["type"], "year": a["year"], "endYear": a.get("endYear"),
+                      "title": a["title"], "detail": a["detail"], "significance": a.get("significance", ""), "decline": a.get("decline"),
+                      "module": mod, "projected": a["year"] > 2026, "master": True, "hand": a["hand"]})
+        m = next(x for x in modules if x["id"] == mod)
+        m.setdefault(LIST_OF[a["lane"]], []).append({"year": a["year"], "endYear": a.get("endYear"), "title": a["title"], "detail": a["detail"],
+                                                   "significance": a.get("significance", ""), "decline": a.get("decline"), "type": a["type"],
+                                                   "itemId": a["id"], "master": True, "hand": a["hand"]})
+    for m in modules:
+        for key in LIST_OF.values():
+            if key in m:
+                m[key].sort(key=lambda e: (e["year"], e.get("endYear") or e["year"]))
+    # his bracketed notes, as their own lane
+    for n in MT["notes"]:
+        items.append({"id": n["id"], "lane": "notes", "type": "note", "year": n["year"], "endYear": n.get("endYear"), "title": n["text"],
+                      "detail": n["detail"], "significance": "", "decline": None, "color": n.get("color"), "module": era_of(n["year"]),
+                      "projected": False, "master": True, "hand": n["text"]})
     # one addition from the author's own timeline
     items.append({"id": "grimm-pension-peak", "lane": "policy", "type": "policy", "year": 1979, "endYear": None,
                   "title": "Pension coverage peaks",
@@ -118,8 +159,8 @@ def main():
     for s in seeds_lens["seeds"]:
         items.append({"id": f"seed-{s['n']}", "lane": "seeds", "type": "seed", "year": s["year"], "endYear": None,
                       "title": f"Seed {s['n']}: {s['name']}", "detail": s["root"], "significance": s["short"],
-                      "decline": None, "seed": s["n"], "module": next(k for k, v in ERAS.items() if v["start"] <= s["year"] < v["end"]),
-                      "projected": False})
+                      "decline": None, "seed": s["n"], "module": era_of(s["year"]),
+                      "projected": False, "master": True, "hand": s.get("hand")})
 
     # ---- two-person lens
     lens = []
@@ -150,7 +191,15 @@ def main():
         "eras": [{"id": k, **v} for k, v in ERAS.items()],
         "modules": sorted(modules, key=lambda m: m["unit"]), "seeds": seeds_lens["seeds"], "lens": lens, "items": items,
         "sp": sp, "course": course,
+        "links": MT["links"], "threads": MT["threads"],
+        "master": {"legend": MT["legend"], "quotes": MT["quotes"], "source": MT["source"], "photo": "master-timeline.jpg",
+                   "thumb": "master-timeline-thumb.jpg", "count": sum(1 for i in items if i.get("master"))},
     }
+    ids = {i["id"] for i in items}
+    for l in MT["links"]:
+        assert l["from"] in ids and l["to"] in ids, l
+    for t in MT["threads"]:
+        assert all(i in ids for i in t["items"]), t["id"]
     os.makedirs(f"{ROOT}/build", exist_ok=True)
     json.dump(data, open(f"{ROOT}/build/data.json", "w", encoding="utf-8"), ensure_ascii=False)
     # slim copy for the browser (drop markdown source)

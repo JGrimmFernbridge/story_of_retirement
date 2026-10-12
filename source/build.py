@@ -11,7 +11,7 @@ css = open("src/styles.css", encoding="utf-8").read()
 data = open("build/data.js", encoding="utf-8").read()
 app = open("build/app.js", encoding="utf-8").read()
 config = json.load(open("site-config.json", encoding="utf-8")) if os.path.exists("site-config.json") else {}
-FONTS = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Courier+Prime:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400..650;1,6..72,400..500&display=swap"
+FONTS = "https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Courier+Prime:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400..650;1,6..72,400..500&family=Permanent+Marker&display=swap"
 REACT = ["https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js",
          "https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"]
 DESC = "An interactive course on the history of retirement by Jonathan Grimm: timeline, chapters, nine seeds, podcasts, lectures and graded assignments."
@@ -32,5 +32,8 @@ full = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
         + head() + '</head>\n<body>\n' + body() + '</body>\n</html>\n')
 open(f"{OUTDIR}/index.html", "w", encoding="utf-8").write(full)
+for f in ("master-timeline.jpg", "master-timeline-thumb.jpg"):
+    if os.path.exists(f"assets/{f}"):
+        shutil.copy(f"assets/{f}", f"{OUTDIR}/{f}"); shutil.copy(f"assets/{f}", f"preview/{f}")
 open("preview/index.html", "w", encoding="utf-8").write(head() + body())
 print(f"{OUTDIR}/index.html", len(full.encode()) // 1024, "KB")

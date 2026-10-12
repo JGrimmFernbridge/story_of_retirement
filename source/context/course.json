@@ -1,305 +1,461 @@
 {
-  "title": "The Story of Retirement",
-  "subtitle": "A history of an idea that hasn't been around that long",
-  "description": "Retirement as most Americans picture it (stop working around 65 and live off your money) is about 130 years old, and it is coming apart. This course starts where we are: the collapse of the retirement system most Americans were promised, 2010 to 2040. Then it works backward to see how we got here, through the 401(k) era, the postwar golden age, the Depression and Social Security, Bismarck's pension, and the world that had no word for retirement. Only then does it turn forward again, to where the current path leads and what a correction could look like. Students read Jonathan Grimm's history, work with an interactive timeline of policy, markets, movements and inequities, and follow nine 'seeds' from today's harvest back to their roots. The course ends with the question the book asks every reader: who gave you that dream, and what would a better answer to the human question of aging look like?",
-  "outcomes": [
-    "Trace today's retirement system back to its origins, from the 401(k) era through Social Security and Bismarck to pre-industrial community care, using dated evidence.",
-    "Explain how policy, markets, social movements and exclusions interacted in each era, and identify who each system served and who it left out.",
-    "Apply the nine-seeds framework to analyze how an idea becomes an institution, and evaluate where the framework is strong or weak.",
-    "Distinguish the humanitarian question (how do we care for people as they age?) from the structural question (what systems do we build to do it?), and analyze how the two were conflated.",
-    "Use primary sources and quantitative data (Trustees Reports, the Survey of Consumer Finances, market history) to test claims about retirement security.",
-    "Design and defend a corrective proposal grounded in evidence and in the principles of Not Poverty, Community and Generativity."
-  ],
-  "schedule": [
+ "title": "The Story of Retirement",
+ "subtitle": "A history of an idea that hasn't been around that long",
+ "description": "Retirement as most Americans picture it (stop working around 65 and live off your money) is about 130 years old, and it is coming apart. This course starts where we are: the collapse of the retirement system most Americans were promised, 2010 to 2040. Then it works backward to see how we got here, through the 401(k) era, the postwar golden age, the Depression and Social Security, Bismarck's pension, and the world that had no word for retirement. Only then does it turn forward again, to where the current path leads and what a correction could look like. Students read Jonathan Grimm's history, work with an interactive timeline of policy, markets, movements and inequities, and follow nine 'seeds' from today's harvest back to their roots. The course ends with the question the book asks every reader: who gave you that dream, and what would a better answer to the human question of aging look like?",
+ "outcomes": [
+  "Trace today's retirement system back to its origins, from the 401(k) era through Social Security and Bismarck to pre-industrial community care, using dated evidence.",
+  "Explain how policy, markets, social movements and exclusions interacted in each era, and identify who each system served and who it left out.",
+  "Apply the nine-seeds framework to analyze how an idea becomes an institution, and evaluate where the framework is strong or weak.",
+  "Distinguish the humanitarian question (how do we care for people as they age?) from the structural question (what systems do we build to do it?), and analyze how the two were conflated.",
+  "Use primary sources and quantitative data (Trustees Reports, the Survey of Consumer Finances, market history) to test claims about retirement security.",
+  "Design and defend a corrective proposal grounded in evidence and in the principles of Not Poverty, Community and Generativity."
+ ],
+ "schedule": [
+  {
+   "weeks": "Weeks 1–2",
+   "module": "collapse",
+   "focus": "Where we are: living inside the collapse"
+  },
+  {
+   "weeks": "Week 3",
+   "module": "conclusion",
+   "focus": "How to read this story: a history that begins at the end"
+  },
+  {
+   "weeks": "Weeks 4–5",
+   "module": "codify",
+   "focus": "How we got here: the 401(k) and the great risk transfer"
+  },
+  {
+   "weeks": "Weeks 6–7",
+   "module": "climax",
+   "focus": "How we got here: the golden age and its boundaries"
+  },
+  {
+   "weeks": "Week 8",
+   "module": "crucible",
+   "focus": "How we got here: Depression, Social Security and war"
+  },
+  {
+   "weeks": "Week 9",
+   "module": null,
+   "focus": "Timeline Annotation Project due; mid-course review"
+  },
+  {
+   "weeks": "Week 10",
+   "module": "conception",
+   "focus": "How we got here: Bismarck, the Civil War pension, the factory gate"
+  },
+  {
+   "weeks": "Week 11",
+   "module": "classical",
+   "focus": "The root: a world with no word for retirement"
+  },
+  {
+   "weeks": "Week 12",
+   "module": "catastrophe",
+   "focus": "Where it's heading: projections, scenarios and choices"
+  },
+  {
+   "weeks": "Weeks 13–14",
+   "module": "correction",
+   "focus": "What we do now: untying the knot"
+  },
+  {
+   "weeks": "Week 15",
+   "module": null,
+   "focus": "Capstone presentations"
+  }
+ ],
+ "grading": [
+  {
+   "component": "Unit assignments",
+   "weight": 40,
+   "detail": "Eight assignments (Units 1–8), 100 points each, graded with the rubric on each unit page."
+  },
+  {
+   "component": "Seed Journal",
+   "weight": 15,
+   "detail": "Twelve weekly entries tracing one or more of the nine seeds through the week's reading and a current news item."
+  },
+  {
+   "component": "Timeline Annotation Project",
+   "weight": 15,
+   "detail": "Mid-course project: add five well-sourced events to the timeline and argue which seed each one waters."
+  },
+  {
+   "component": "Self-checks and discussion",
+   "weight": 10,
+   "detail": "Unit self-check quizzes completed before class, plus contributions to discussion."
+  },
+  {
+   "component": "Capstone: Design a Correction",
+   "weight": 20,
+   "detail": "The Unit 9 (Correction) assignment, submitted in writing and presented in Week 15."
+  }
+ ],
+ "scale": [
+  {
+   "grade": "A",
+   "range": "93–100"
+  },
+  {
+   "grade": "A−",
+   "range": "90–92"
+  },
+  {
+   "grade": "B+",
+   "range": "87–89"
+  },
+  {
+   "grade": "B",
+   "range": "83–86"
+  },
+  {
+   "grade": "B−",
+   "range": "80–82"
+  },
+  {
+   "grade": "C+",
+   "range": "77–79"
+  },
+  {
+   "grade": "C",
+   "range": "73–76"
+  },
+  {
+   "grade": "C−",
+   "range": "70–72"
+  },
+  {
+   "grade": "D",
+   "range": "60–69"
+  },
+  {
+   "grade": "F",
+   "range": "below 60"
+  }
+ ],
+ "projects": [
+  {
+   "id": "seed-journal",
+   "title": "Seed Journal",
+   "weight": 15,
+   "prompt": "Each week, write one entry (300–400 words) that follows at least one of the nine seeds, starting from where it shows up today and tracing it back toward its root. Name the seed, quote or cite the passage from that week's chapter where you see it, then connect it to one current news story, policy debate, advertisement or conversation from your own life. End each entry with one question you can't yet answer. By Week 14 your journal should show how at least five different seeds grow across time.",
+   "deliverable": "12 entries, 300–400 words each, submitted weekly. Each entry cites the chapter and one outside source.",
+   "rubric": [
     {
-      "weeks": "Weeks 1–2",
-      "module": "collapse",
-      "focus": "Where we are: living inside the collapse"
+     "criterion": "Seed identification",
+     "points": 30,
+     "exemplary": "Names the seed precisely and shows exactly where it appears in the reading, distinguishing it from neighboring seeds.",
+     "proficient": "Names the seed and points to a relevant passage.",
+     "developing": "Names a seed but the connection to the reading is loose.",
+     "beginning": "Seed is missing or misidentified."
     },
     {
-      "weeks": "Week 3",
-      "module": "conclusion",
-      "focus": "How to read this story: a history that begins at the end"
+     "criterion": "Present-day connection",
+     "points": 30,
+     "exemplary": "Links the seed to a specific, sourced present-day example and explains the mechanism connecting past and present.",
+     "proficient": "Links to a relevant present-day example with a source.",
+     "developing": "Present-day example is general or unsourced.",
+     "beginning": "No present-day connection."
     },
     {
-      "weeks": "Weeks 4–5",
-      "module": "codify",
-      "focus": "How we got here: the 401(k) and the great risk transfer"
+     "criterion": "Growth over time",
+     "points": 25,
+     "exemplary": "Entries build on one another; the journal shows how seeds change stage across eras.",
+     "proficient": "Most entries refer back to earlier ones.",
+     "developing": "Entries stand alone with little development.",
+     "beginning": "Entries are missing or repetitive."
     },
     {
-      "weeks": "Weeks 6–7",
-      "module": "climax",
-      "focus": "How we got here: the golden age and its boundaries"
-    },
-    {
-      "weeks": "Week 8",
-      "module": "crucible",
-      "focus": "How we got here: Depression, Social Security and war"
-    },
-    {
-      "weeks": "Week 9",
-      "module": null,
-      "focus": "Timeline Annotation Project due; mid-course review"
-    },
-    {
-      "weeks": "Week 10",
-      "module": "conception",
-      "focus": "How we got here: Bismarck, the Civil War pension, the factory gate"
-    },
-    {
-      "weeks": "Week 11",
-      "module": "classical",
-      "focus": "The root: a world with no word for retirement"
-    },
-    {
-      "weeks": "Week 12",
-      "module": "catastrophe",
-      "focus": "Where it's heading: projections, scenarios and choices"
-    },
-    {
-      "weeks": "Weeks 13–14",
-      "module": "correction",
-      "focus": "What we do now: untying the knot"
-    },
-    {
-      "weeks": "Week 15",
-      "module": null,
-      "focus": "Capstone presentations"
+     "criterion": "Questions and clarity",
+     "points": 15,
+     "exemplary": "Clear prose; closing questions are specific and push the inquiry forward.",
+     "proficient": "Clear prose; questions are relevant.",
+     "developing": "Some unclear writing; questions are generic.",
+     "beginning": "Hard to follow; no questions."
     }
-  ],
-  "grading": [
+   ]
+  },
+  {
+   "id": "timeline-project",
+   "title": "Timeline Annotation Project",
+   "weight": 15,
+   "prompt": "The timeline on this site is an argument, and every argument leaves things out. Find five events (a law, court case, market event, movement, corporate decision or cultural moment) that are not on the timeline but belong in the story of retirement. For each event, write an entry in the timeline's format: year, title, a factual description and a significance statement. Then argue which seed the event waters and whether it strengthens or complicates the book's thesis. At least two of your five events must concern people the system excluded or under-served, and for those entries name more than one variable at work (income, race, sex, education, job, place, immigration, longevity, generation) rather than assigning the result to a single cause.",
+   "deliverable": "Five entries (150–250 words each) plus a 500-word reflection on what the missing events reveal. Minimum one primary source per entry.",
+   "rubric": [
     {
-      "component": "Unit assignments",
-      "weight": 40,
-      "detail": "Eight assignments (Units 1–8), 100 points each, graded with the rubric on each unit page."
+     "criterion": "Accuracy and sourcing",
+     "points": 30,
+     "exemplary": "Every date and fact is correct and supported by a primary or authoritative source.",
+     "proficient": "Facts are correct with minor sourcing gaps.",
+     "developing": "One or two factual errors or weak sources.",
+     "beginning": "Multiple errors or unsourced claims."
     },
     {
-      "component": "Seed Journal",
-      "weight": 15,
-      "detail": "Twelve weekly entries tracing one or more of the nine seeds through the week's reading and a current news item."
+     "criterion": "Selection and significance",
+     "points": 25,
+     "exemplary": "Events are genuinely consequential and their significance is argued, not asserted.",
+     "proficient": "Events are relevant and significance is explained.",
+     "developing": "Some events are marginal or significance is thin.",
+     "beginning": "Events are trivial or significance is missing."
     },
     {
-      "component": "Timeline Annotation Project",
-      "weight": 15,
-      "detail": "Mid-course project: add five well-sourced events to the timeline and argue which seed each one waters."
+     "criterion": "Seed analysis",
+     "points": 25,
+     "exemplary": "Each event is mapped to a seed with a persuasive mechanism; the student notes where the framework fits poorly.",
+     "proficient": "Each event is mapped to a plausible seed.",
+     "developing": "Seed mapping is vague or forced.",
+     "beginning": "No seed analysis."
     },
     {
-      "component": "Self-checks and discussion",
-      "weight": 10,
-      "detail": "Unit self-check quizzes completed before class, plus contributions to discussion."
-    },
-    {
-      "component": "Capstone: Design a Correction",
-      "weight": 20,
-      "detail": "The Unit 9 (Correction) assignment, submitted in writing and presented in Week 15."
+     "criterion": "Reflection and inclusion",
+     "points": 20,
+     "exemplary": "The reflection draws a real insight about what the timeline leaves out; excluded groups are treated with specificity; names several variables at work in the excluded cases.",
+     "proficient": "Thoughtful reflection; excluded groups are addressed.",
+     "developing": "Reflection is general; inclusion requirement only partly met.",
+     "beginning": "Reflection missing or inclusion requirement unmet."
     }
-  ],
-  "scale": [
+   ]
+  },
+  {
+   "id": "participation",
+   "title": "Self-checks and discussion",
+   "weight": 10,
+   "prompt": "Complete each unit's self-check before the first class session on that unit, and come ready to use the discussion questions. Good discussion builds on classmates' points, brings evidence from the reading and the timeline, and is willing to disagree with the book.",
+   "deliverable": "Self-checks completed on time; regular, evidence-based contributions to discussion.",
+   "rubric": [
     {
-      "grade": "A",
-      "range": "93–100"
+     "criterion": "Preparation",
+     "points": 40,
+     "exemplary": "All self-checks completed before class; contributions show close reading.",
+     "proficient": "Nearly all self-checks completed; contributions show reading.",
+     "developing": "Several self-checks missed; preparation uneven.",
+     "beginning": "Rarely prepared."
     },
     {
-      "grade": "A−",
-      "range": "90–92"
+     "criterion": "Use of evidence",
+     "points": 35,
+     "exemplary": "Regularly cites the chapter, timeline data or primary sources.",
+     "proficient": "Often refers to evidence.",
+     "developing": "Mostly opinion with occasional evidence.",
+     "beginning": "No evidence."
     },
     {
-      "grade": "B+",
-      "range": "87–89"
-    },
-    {
-      "grade": "B",
-      "range": "83–86"
-    },
-    {
-      "grade": "B−",
-      "range": "80–82"
-    },
-    {
-      "grade": "C+",
-      "range": "77–79"
-    },
-    {
-      "grade": "C",
-      "range": "73–76"
-    },
-    {
-      "grade": "C−",
-      "range": "70–72"
-    },
-    {
-      "grade": "D",
-      "range": "60–69"
-    },
-    {
-      "grade": "F",
-      "range": "below 60"
+     "criterion": "Engagement with others",
+     "points": 25,
+     "exemplary": "Builds on and respectfully challenges classmates, including challenging the book.",
+     "proficient": "Responds to classmates.",
+     "developing": "Speaks without engaging others.",
+     "beginning": "Rarely participates."
     }
-  ],
-  "projects": [
+   ]
+  },
+  {
+   "id": "capstone-presentation",
+   "title": "Capstone presentation",
+   "weight": 0,
+   "prompt": "In Week 15, present your Correction proposal (the Unit 9 assignment) in 8 minutes, followed by 4 minutes of questions. Open with the community or family you designed for, show the evidence that defines their problem, walk through your proposal through the three principles, and name the hardest objection to it.",
+   "deliverable": "8-minute presentation with no more than 6 slides; graded as part of the capstone (one-quarter of the capstone grade).",
+   "rubric": [
     {
-      "id": "seed-journal",
-      "title": "Seed Journal",
-      "weight": 15,
-      "prompt": "Each week, write one entry (300–400 words) that follows at least one of the nine seeds, starting from where it shows up today and tracing it back toward its root. Name the seed, quote or cite the passage from that week's chapter where you see it, then connect it to one current news story, policy debate, advertisement or conversation from your own life. End each entry with one question you can't yet answer. By Week 14 your journal should show how at least five different seeds grow across time.",
-      "deliverable": "12 entries, 300–400 words each, submitted weekly. Each entry cites the chapter and one outside source.",
-      "rubric": [
-        {
-          "criterion": "Seed identification",
-          "points": 30,
-          "exemplary": "Names the seed precisely and shows exactly where it appears in the reading, distinguishing it from neighboring seeds.",
-          "proficient": "Names the seed and points to a relevant passage.",
-          "developing": "Names a seed but the connection to the reading is loose.",
-          "beginning": "Seed is missing or misidentified."
-        },
-        {
-          "criterion": "Present-day connection",
-          "points": 30,
-          "exemplary": "Links the seed to a specific, sourced present-day example and explains the mechanism connecting past and present.",
-          "proficient": "Links to a relevant present-day example with a source.",
-          "developing": "Present-day example is general or unsourced.",
-          "beginning": "No present-day connection."
-        },
-        {
-          "criterion": "Growth over time",
-          "points": 25,
-          "exemplary": "Entries build on one another; the journal shows how seeds change stage across eras.",
-          "proficient": "Most entries refer back to earlier ones.",
-          "developing": "Entries stand alone with little development.",
-          "beginning": "Entries are missing or repetitive."
-        },
-        {
-          "criterion": "Questions and clarity",
-          "points": 15,
-          "exemplary": "Clear prose; closing questions are specific and push the inquiry forward.",
-          "proficient": "Clear prose; questions are relevant.",
-          "developing": "Some unclear writing; questions are generic.",
-          "beginning": "Hard to follow; no questions."
-        }
-      ]
+     "criterion": "Clarity of problem",
+     "points": 25,
+     "exemplary": "The audience understands exactly who the proposal serves and why, with data.",
+     "proficient": "Problem is clear.",
+     "developing": "Problem is general.",
+     "beginning": "Problem unclear."
     },
     {
-      "id": "timeline-project",
-      "title": "Timeline Annotation Project",
-      "weight": 15,
-      "prompt": "The timeline on this site is an argument, and every argument leaves things out. Find five events (a law, court case, market event, movement, corporate decision or cultural moment) that are not on the timeline but belong in the story of retirement. For each event, write an entry in the timeline's format: year, title, a factual description and a significance statement. Then argue which seed the event waters and whether it strengthens or complicates the book's thesis. At least two of your five events must concern people the system excluded or under-served.",
-      "deliverable": "Five entries (150–250 words each) plus a 500-word reflection on what the missing events reveal. Minimum one primary source per entry.",
-      "rubric": [
-        {
-          "criterion": "Accuracy and sourcing",
-          "points": 30,
-          "exemplary": "Every date and fact is correct and supported by a primary or authoritative source.",
-          "proficient": "Facts are correct with minor sourcing gaps.",
-          "developing": "One or two factual errors or weak sources.",
-          "beginning": "Multiple errors or unsourced claims."
-        },
-        {
-          "criterion": "Selection and significance",
-          "points": 25,
-          "exemplary": "Events are genuinely consequential and their significance is argued, not asserted.",
-          "proficient": "Events are relevant and significance is explained.",
-          "developing": "Some events are marginal or significance is thin.",
-          "beginning": "Events are trivial or significance is missing."
-        },
-        {
-          "criterion": "Seed analysis",
-          "points": 25,
-          "exemplary": "Each event is mapped to a seed with a persuasive mechanism; the student notes where the framework fits poorly.",
-          "proficient": "Each event is mapped to a plausible seed.",
-          "developing": "Seed mapping is vague or forced.",
-          "beginning": "No seed analysis."
-        },
-        {
-          "criterion": "Reflection and inclusion",
-          "points": 20,
-          "exemplary": "The reflection draws a real insight about what the timeline leaves out; excluded groups are treated with specificity.",
-          "proficient": "Thoughtful reflection; excluded groups are addressed.",
-          "developing": "Reflection is general; inclusion requirement only partly met.",
-          "beginning": "Reflection missing or inclusion requirement unmet."
-        }
-      ]
+     "criterion": "Proposal and principles",
+     "points": 35,
+     "exemplary": "Proposal is concrete and visibly organized around Not Poverty, Community and Generativity.",
+     "proficient": "Proposal is concrete and references the principles.",
+     "developing": "Proposal is vague or principles are named but not applied.",
+     "beginning": "No coherent proposal."
     },
     {
-      "id": "participation",
-      "title": "Self-checks and discussion",
-      "weight": 10,
-      "prompt": "Complete each unit's self-check before the first class session on that unit, and come ready to use the discussion questions. Good discussion builds on classmates' points, brings evidence from the reading and the timeline, and is willing to disagree with the book.",
-      "deliverable": "Self-checks completed on time; regular, evidence-based contributions to discussion.",
-      "rubric": [
-        {
-          "criterion": "Preparation",
-          "points": 40,
-          "exemplary": "All self-checks completed before class; contributions show close reading.",
-          "proficient": "Nearly all self-checks completed; contributions show reading.",
-          "developing": "Several self-checks missed; preparation uneven.",
-          "beginning": "Rarely prepared."
-        },
-        {
-          "criterion": "Use of evidence",
-          "points": 35,
-          "exemplary": "Regularly cites the chapter, timeline data or primary sources.",
-          "proficient": "Often refers to evidence.",
-          "developing": "Mostly opinion with occasional evidence.",
-          "beginning": "No evidence."
-        },
-        {
-          "criterion": "Engagement with others",
-          "points": 25,
-          "exemplary": "Builds on and respectfully challenges classmates, including challenging the book.",
-          "proficient": "Responds to classmates.",
-          "developing": "Speaks without engaging others.",
-          "beginning": "Rarely participates."
-        }
-      ]
+     "criterion": "Objections and evidence",
+     "points": 25,
+     "exemplary": "States the strongest objection fairly and answers it with evidence.",
+     "proficient": "Addresses an objection.",
+     "developing": "Objection is a straw man.",
+     "beginning": "No objections addressed."
     },
     {
-      "id": "capstone-presentation",
-      "title": "Capstone presentation",
-      "weight": 0,
-      "prompt": "In Week 15, present your Correction proposal (the Unit 9 assignment) in 8 minutes, followed by 4 minutes of questions. Open with the community or family you designed for, show the evidence that defines their problem, walk through your proposal through the three principles, and name the hardest objection to it.",
-      "deliverable": "8-minute presentation with no more than 6 slides; graded as part of the capstone (one-quarter of the capstone grade).",
-      "rubric": [
-        {
-          "criterion": "Clarity of problem",
-          "points": 25,
-          "exemplary": "The audience understands exactly who the proposal serves and why, with data.",
-          "proficient": "Problem is clear.",
-          "developing": "Problem is general.",
-          "beginning": "Problem unclear."
-        },
-        {
-          "criterion": "Proposal and principles",
-          "points": 35,
-          "exemplary": "Proposal is concrete and visibly organized around Not Poverty, Community and Generativity.",
-          "proficient": "Proposal is concrete and references the principles.",
-          "developing": "Proposal is vague or principles are named but not applied.",
-          "beginning": "No coherent proposal."
-        },
-        {
-          "criterion": "Objections and evidence",
-          "points": 25,
-          "exemplary": "States the strongest objection fairly and answers it with evidence.",
-          "proficient": "Addresses an objection.",
-          "developing": "Objection is a straw man.",
-          "beginning": "No objections addressed."
-        },
-        {
-          "criterion": "Delivery",
-          "points": 15,
-          "exemplary": "On time, well paced, handles questions with evidence.",
-          "proficient": "On time and clear.",
-          "developing": "Over time or hard to follow.",
-          "beginning": "Unprepared."
-        }
-      ]
+     "criterion": "Delivery",
+     "points": 15,
+     "exemplary": "On time, well paced, handles questions with evidence.",
+     "proficient": "On time and clear.",
+     "developing": "Over time or hard to follow.",
+     "beginning": "Unprepared."
     }
+   ]
+  }
+ ],
+ "howToUse": [
+  "Start where we are. Each unit opens on the timeline: find its era, switch on the Seeds and Two-Person Lens layers, and click through the events before you read.",
+  "Read the chapter, which runs sideways in the unit view, or download it. The text is the author's working draft, so you are reading a book in progress.",
+  "Use the unit's study guide, events, inequities and primary sources panels.",
+  "Listen to the podcast and watch the lecture for the era when they are posted.",
+  "Take the self-check, then complete the assignment using its rubric as your checklist."
+ ],
+ "integrity": "Cite every source you use, including AI tools, with the prompt you gave and how you used the output. Quoting the book or the course site requires a citation like any other source. The author's chapters are a draft shared for this course: please don't redistribute them outside the class.",
+ "inequity": {
+  "title": "Engaging inequity",
+  "authorWords": "Male, white, highly educated, high income earning is the primary demographic of economic success. This is not the rule but a serious data point. In every case those not in this category have a different reality, but there are many examples of those that transcend. For me and this project it is a point to illustrate in order to work towards more equality of opportunity and not equality of outcome.",
+  "framing": [
+   "Inequity runs through every unit of this course, and it is not simple. The data are clear about the pattern: in the United States, being male, white, highly educated and high-earning is the primary demographic of economic success, and of a secure retirement. In the author’s words, this is not the rule but a serious data point. People outside that category have, on average, a different reality, and there are many examples of people who transcend it.",
+   "Some groups carry disadvantages that others do not, and the disadvantages do not add up on a single scale. A wealthy member of a minority group and a poor white worker do not face the same retirement; neither do a college-educated woman and a man who left school at sixteen. So this course never assigns progress, or its absence, to one variable. It asks you to hold several at once: income, race, sex, education, job, place, immigration, longevity and generation.",
+   "The purpose, for the author and for this project, is to illustrate the pattern in order to work toward equality of opportunity, not equality of outcome. You are not asked to agree with that aim. You are asked to argue with the evidence, in both directions."
   ],
-  "howToUse": [
-    "Start where we are. Each unit opens on the timeline: find its era, switch on the Seeds and Two-Person Lens layers, and click through the events before you read.",
-    "Read the chapter, which runs sideways in the unit view, or download it. The text is the author's working draft, so you are reading a book in progress.",
-    "Use the unit's study guide, events, inequities and primary sources panels.",
-    "Listen to the podcast and watch the lecture for the era when they are posted.",
-    "Take the self-check, then complete the assignment using its rubric as your checklist."
+  "principles": [
+   {
+    "title": "More than one variable",
+    "text": "Every inequity on this site is tagged with the variables at work. When you analyze one, name at least two. The 1935 occupational exclusions were about race, and also about place (the rural South) and job (farm and household work)."
+   },
+   {
+    "title": "Hold two true facts at once",
+    "text": "In 1935, about 65 percent of Black workers and 27 percent of white workers held jobs excluded from Social Security. Because white workers were the large majority, roughly three-quarters of the excluded workers were white. Both facts are true. An honest analysis needs both."
+   },
+   {
+    "title": "Find the mechanism",
+    "text": "A gap is a measurement, not an explanation. Ask what rule, market or habit produced it: an occupational exclusion, an appraisal manual, a vesting cliff, a tax deduction worth more to a high earner than a low one."
+   },
+   {
+    "title": "Averages describe groups, not people",
+    "text": "A median is a statement about a distribution. It predicts nothing about the person in front of you, and it does not erase the many who have done far better than their group’s average, or far worse."
+   },
+   {
+    "title": "Rules change; effects linger",
+    "text": "Redlining was banned in 1968. The home equity it denied for a generation did not come back. Expect lags of decades between a rule and its full consequences, in both directions."
+   },
+   {
+    "title": "Name the debate",
+    "text": "Scholars disagree about causes. The 1935 exclusions have been read as a racial bargain with Southern Democrats and as an administrative choice about collecting payroll taxes from farms and households. Present both readings and the evidence for each, then say which you find stronger."
+   },
+   {
+    "title": "Evidence, not stereotype",
+    "text": "Cite the dataset, the year and the measure. “Women have less saved” is a stereotype; “the average retired-worker benefit for women was $1,780 a month in December 2024, against $2,181 for men (SSA)” is evidence a classmate can check."
+   }
   ],
-  "integrity": "Cite every source you use, including AI tools, with the prompt you gave and how you used the output. Quoting the book or the course site requires a citation like any other source. The author's chapters are a draft shared for this course: please don't redistribute them outside the class."
+  "variables": [
+   {
+    "id": "income",
+    "label": "Wealth & income",
+    "fact": "Among private-industry workers in the top tenth of wages, 94 percent had access to a retirement plan in March 2026 and 84 percent took part. Among part-time workers, 44 percent had access and 20 percent took part.",
+    "source": "Bureau of Labor Statistics, National Compensation Survey, March 2026.",
+    "where": "Collapse, Codify, Conclusion, Correction."
+   },
+   {
+    "id": "race",
+    "label": "Race & ethnicity",
+    "fact": "Median family wealth in 2022: white families $285,000; Hispanic families $61,600; Black families $44,900. At the same time, conditional on their parents’ income, Black and white women earn about the same; the gap is driven by men’s employment and wages, and Hispanic Americans show relatively high upward mobility.",
+    "source": "Federal Reserve, Survey of Consumer Finances 2022; Chetty, Hendren, Jones & Porter, “Race and Economic Opportunity in the United States” (2018).",
+    "where": "Classical, Crucible, Climax, Codify, Collapse, Conclusion."
+   },
+   {
+    "id": "gender",
+    "label": "Sex & gender",
+    "fact": "The average retired-worker benefit in December 2024 was $2,181 a month for men and $1,780 for women. Among people 65 and older, poverty is higher for women (10.5 percent) than men (7.4 percent), and highest for women over 80 (13.4 percent).",
+    "source": "Social Security Administration, Fast Facts & Figures 2025; KFF analysis of Census data, 2015–2017 averages.",
+    "where": "Classical, Conception, Crucible, Climax, Codify, Catastrophe."
+   },
+   {
+    "id": "education",
+    "label": "Education",
+    "fact": "Median family net worth in 2022 by the education of the household head: no high-school diploma $38,100; high-school diploma $106,800; some college $136,500; college degree $464,600.",
+    "source": "Federal Reserve, Survey of Consumer Finances 2022.",
+    "where": "Climax (the GI Bill), Codify, Collapse."
+   },
+   {
+    "id": "job",
+    "label": "Job",
+    "fact": "Private pension coverage peaked at about 38 percent of private-sector workers in 1979. Today a union worker is far more likely to have a plan than a nonunion one (91 versus 70 percent access), and a full-time worker than a part-time one (81 versus 44 percent).",
+    "source": "Employee Benefit Research Institute; Bureau of Labor Statistics, March 2026.",
+    "where": "Conception, Crucible, Climax, Codify, Collapse, Correction."
+   },
+   {
+    "id": "place",
+    "label": "Place",
+    "fact": "In 1930 about two-thirds of American homes had electricity and about a quarter of rural homes did. Where you grow up still matters: Black boys who move earlier in childhood to low-poverty neighborhoods with little racial bias and many Black fathers present earn more as adults, but fewer than 5 percent of Black children grow up in such places.",
+    "source": "U.S. Census and the Rural Electrification Administration; Chetty et al. (2018).",
+    "where": "Classical, Conception, Crucible (redlining, the GI Bill)."
+   },
+   {
+    "id": "immigration",
+    "label": "Immigration",
+    "fact": "Children of immigrants have climbed the income ladder faster than children of U.S.-born parents at the same income, for families from nearly every sending country, in the 1880–1910 cohorts and in modern data alike. Transcending the average is, for this group, the historical norm.",
+    "source": "Abramitzky, Boustan, Jácome & Pérez, “Intergenerational Mobility of Immigrants in the United States over Two Centuries,” American Economic Review (2021).",
+    "where": "Classical (Chinese Exclusion), Conception (immigrant workers)."
+   },
+   {
+    "id": "longevity",
+    "label": "Longevity",
+    "fact": "At age 40, men in the top 1 percent of income could expect to live 14.6 years longer than men in the bottom 1 percent; for women the gap was 10.1 years. From 2001 to 2014 life expectancy rose 2.3 years for the richest 5 percent of men and 0.3 years for the poorest 5 percent.",
+    "source": "Chetty et al., “The Association Between Income and Life Expectancy in the United States, 2001–2014,” JAMA (2016).",
+    "where": "Collapse, Codify, Catastrophe, Correction."
+   },
+   {
+    "id": "generation",
+    "label": "Generation",
+    "fact": "Median family net worth in 2022: under 35, $39,000; 65 to 74, $409,900; 75 and over, $335,600. Among people 65 and older, poverty rises with age, from 8.2 percent at 65–69 to 11.4 percent at 80 and over.",
+    "source": "Federal Reserve, Survey of Consumer Finances 2022; KFF, 2015–2017 averages.",
+    "where": "Collapse, Codify, Catastrophe."
+   }
+  ],
+  "questions": [
+   "The author’s aim is equality of opportunity, not equality of outcome. Define each in one sentence. Then take one inequity from any unit and say which kind it is. Could a reasonable classmate classify it the other way? What evidence would settle it?",
+   "Test the inequity funnel. Find one “Who was left out” entry where the author’s order (wealth, then gender, then ethnicity, then education) explains the outcome, and one where it does not. What would you add to the funnel, or reorder, and on what evidence?",
+   "Pick any “Who was left out” entry and list every variable at work. Which one does the entry lead with? Rewrite its first sentence leading with a different variable, and say what the new version reveals and what it hides.",
+   "In 1935 most Black workers were excluded from Social Security, and most excluded workers were white. Write the paragraph a historian of race would write about this and the paragraph a historian of labor would write. Where do they agree, and which paragraph would a farm worker’s daughter recognize?",
+   "Children of immigrants have climbed the income ladder faster than the children of the U.S.-born for more than a century, while the Black-white wealth gap has barely moved in decades. What does this pair of facts suggest about which mechanisms (law, housing, credit, schooling, family, place) matter most?",
+   "Describe someone, from history, the news or your own family, who transcended the average of their group. Name the specific opportunities that made it possible. Which of those were available to everyone in that group, and which were luck?",
+   "Redlining was banned in 1968, yet the wealth gap it helped create is measurable in 2022. Does a rule change count as a correction if its effects persist? Design one policy that would widen opportunity without dictating outcomes, and name who would object."
+  ],
+  "funnel": {
+   "title": "The inequity funnel",
+   "intro": "The author’s working theory of how the variables rank. He offers it as a hypothesis, not a finding: four levels, in order, with poverty waiting at the mouth of the funnel for anyone who falls through. Test it against the evidence in every unit.",
+   "levels": [
+    {
+     "n": 1,
+     "id": "income",
+     "name": "Wealth",
+     "his": "Wealth seems to transcend the others. It doesn’t completely eliminate bias, stereotype and the rest, but it is the one variable with a bit of transcendence.",
+     "evidence": "Conditional on their parents’ income, Black and white women earn about the same as adults: at the same starting point, that gap closes. Black men do not; raised at the same family income, they earn less than white men in 99 percent of U.S. neighborhoods (Chetty, Hendren, Jones & Porter, 2018). Wealth transcends, and does not erase."
+    },
+    {
+     "n": 2,
+     "id": "gender",
+     "name": "Gender",
+     "his": "There is much debate in our times around this, but there is a legacy male/female bias that seems bigger than any culture or any social construct.",
+     "evidence": "Among people 65 and older, women are poorer than men inside every racial group: white women 8.0 percent against white men 5.6; Black women 20.4 against Black men 16.2; Hispanic women 19.7 against Hispanic men 14.1 (KFF, 2015–2017 averages). The average retired-worker benefit is $1,780 a month for women and $2,181 for men (SSA, December 2024)."
+    },
+    {
+     "n": 3,
+     "id": "race",
+     "name": "Ethnicity",
+     "his": "Caucasian and Asian have a preference position compared to others, given the data I have surveyed.",
+     "evidence": "Median household income in 2023: Asian $112,800; white non-Hispanic $89,050; Hispanic $65,540; Black $56,490 (Census). Median family wealth in 2022: white $285,000; Hispanic $61,600; Black $44,900 (Survey of Consumer Finances). The exceptions are real: Hispanic Americans show relatively high upward mobility across generations, and the children of immigrants from nearly every country outclimb the children of the U.S.-born (Chetty et al.; Abramitzky, Boustan, Jácome & Pérez)."
+    },
+    {
+     "n": 4,
+     "id": "education",
+     "name": "Education",
+     "his": "A highly educated minority is different than a low-educated Caucasian. It is a multi-variable calculus that cannot be reduced to one of these variables.",
+     "evidence": "Median family net worth in 2022 runs from $38,100 for households headed by someone without a high-school diploma to $464,600 with a college degree (SCF). Education does not cancel the levels above it: from 1992 to 2013 the median wealth of college-educated white families rose about 86 percent and of college-educated Asian families about 90 percent, while it fell about 56 percent for college-educated Black families and 27 percent for college-educated Hispanic families (Federal Reserve Bank of St. Louis, Emmons & Noeth, 2015)."
+    }
+   ],
+   "mouth": "Poverty is the most equal opportunity player in the world. It does not care about any of this, but there are contributing factors.",
+   "contributing": [
+    "job",
+    "place",
+    "immigration",
+    "longevity",
+    "generation"
+   ],
+   "caveat": "A funnel ranks average effects; it is not a formula. The levels interact (a wealthy woman, a poor white man, a college-educated immigrant, a Black college graduate whose home lost half its value in 2008), which is why every “Who was left out” entry carries more than one tag. Students are asked to find one entry where the order holds and one where it breaks."
+  }
+ }
 }

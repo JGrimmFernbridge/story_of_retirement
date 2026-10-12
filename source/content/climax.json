@@ -1,478 +1,605 @@
 {
-  "id": "climax",
-  "number": 4,
-  "title": "Climax",
-  "years": "1950–1980",
-  "definition": "cli·max (noun) the height of something",
-  "tagline": "For thirty years retirement worked—once, for some, and never again at scale.",
-  "bigQuestion": "Was the golden age of retirement a model we could rebuild, or an anomaly we mistook for one?",
-  "overview": "From roughly 1950 to 1980, the book argues, retirement actually worked—materially, for millions of Americans, for the first time in history. Social Security expanded and finally kept pace with inflation; union-negotiated pensions spread through steel, autos, rubber, and mining; and Medicare, created in 1965, armored older households against the medical bills that had ruined so many. Leisure stopped being a moment and became a destination: in 1960 about 100,000 people turned out for the opening weekend of Sun City, Arizona. Elderly poverty fell from 35.2 percent in 1959 to 14.6 percent in 1974.\n\nGrimm’s central claim is that this was an anomaly, not a model. It rested on ten pillars that could not last—five economic (manufacturing hegemony, a demographic dividend, cheap energy, capital markets with limited global competition, productivity growth) and five social (institutional trust, an intergenerational compact, a culture of deferred gratification, geographic stability, and the one-earner nuclear family as a design specification).\n\nBy the 1970s the pillars were cracking: the dollar left gold, oil quadrupled, stocks fell 48 percent, and inflation passed 11 percent. Congress answered with ERISA, the IRA, and, almost unnoticed, Section 401(k). Your task in this module is to weigh the book’s thesis against the evidence of what actually worked.",
-  "learningObjectives": [
-    "Explain how Social Security expansion, defined-benefit pensions, and Medicare combined into the “three-legged stool” of postwar retirement security.",
-    "Evaluate the book’s “anomaly vs. model” thesis by testing each of the ten pillars against economic and demographic data.",
-    "Analyze who was included in and excluded from the golden age, using evidence on pension coverage, vesting, race, and sex.",
-    "Trace how the shocks of 1971–1980—the end of gold convertibility, the oil embargo, the 1973–74 bear market, and stagflation—strained the system.",
-    "Compare the retirement prospects of the 1920 and 1960 birth cohorts at the 1980 threshold using the Two-Person Lens."
-  ],
-  "policyEvents": [
-    {
-      "year": 1950,
-      "title": "Social Security Amendments of 1950",
-      "type": "legislation",
-      "detail": "Signed by President Truman on August 28, 1950, the amendments raised benefits for current beneficiaries by an average of about 77 percent and extended coverage to roughly 10 million more people, including regularly employed farm and domestic workers and most of the nonfarm self-employed. State and local government and nonprofit employees could join on an elective basis.",
-      "significance": "Social Security moved from a modest floor toward an adequate base income—the leg of the stool that would carry the most weight and outlast the others."
-    },
-    {
-      "year": 1950,
-      "title": "The “Treaty of Detroit”",
-      "type": "policy",
-      "detail": "On May 23, 1950, General Motors and the United Auto Workers reached a five-year contract—a private collective-bargaining agreement—that included a fully funded pension of $125 a month counting Social Security, continued cost-of-living raises, and GM payment of half the cost of health coverage. Fortune magazine dubbed it the “Treaty of Detroit.”",
-      "significance": "The Promise (seed 8) in its purest form: long-term security in exchange for labor peace, tying a worker’s old age to one company’s fortunes."
-    },
-    {
-      "year": 1956,
-      "title": "Disability insurance and early retirement",
-      "type": "legislation",
-      "detail": "After a 1954 “disability freeze” protected the records of disabled workers, the 1956 amendments paid cash benefits to disabled workers aged 50–64 and to disabled adult children. They also let women claim reduced retirement benefits at 62; the 1961 amendments extended the age-62 option to men.",
-      "significance": "Age 62 created an earlier exit ramp without retiring the cultural meaning of 65—seed 3 now had a soft and a hard boundary."
-    },
-    {
-      "year": 1965,
-      "title": "Medicare and Medicaid",
-      "type": "legislation",
-      "detail": "President Johnson signed the law on July 30, 1965, at the Truman Library in Independence, Missouri, and Harry Truman became Medicare’s first enrollee. Nearly 20 million beneficiaries enrolled in Medicare in its first three years.",
-      "significance": "The third leg of the stool: the book argues medical catastrophe had been retirement’s hidden enemy, and Medicare armored older households against it."
-    },
-    {
-      "year": 1967,
-      "title": "Age Discrimination in Employment Act",
-      "type": "legislation",
-      "detail": "The ADEA barred employment discrimination against workers aged 40 to 65. Congress raised the upper limit to 70 in 1978 and eliminated it in 1986, ending most mandatory retirement.",
-      "significance": "As first written, the law protected workers only until 65—quietly confirming 65 = Old and Done (seed 3) even as it fought age bias."
-    },
-    {
-      "year": 1972,
-      "title": "Social Security Amendments of 1972",
-      "type": "legislation",
-      "detail": "A July 1972 law raised benefits 20 percent and created automatic cost-of-living adjustments, first paid in January 1975. An October 1972 law created Supplemental Security Income (SSI), a federal means-tested benefit for aged, blind, and disabled people that began January 1, 1974.",
-      "significance": "The book calls automatic COLAs the high-water mark of the program’s ambition: for the first time, inflation could not quietly erode a promised benefit."
-    },
-    {
-      "year": 1974,
-      "title": "Employee Retirement Income Security Act (ERISA)",
-      "type": "legislation",
-      "detail": "Signed by President Ford on September 2, 1974, ERISA set federal standards for private-plan reporting, funding, participation, vesting, and fiduciary conduct and created the Pension Benefit Guaranty Corporation to insure defined-benefit pensions. It also created the individual retirement account for workers without an employer plan, with deductible contributions up to the lesser of $1,500 or 15 percent of earnings.",
-      "significance": "ERISA protected The Promise after Studebaker—but its IRA quietly introduced the individual account into federal retirement policy."
-    },
-    {
-      "year": 1977,
-      "title": "Social Security Amendments of 1977",
-      "type": "legislation",
-      "detail": "Stagflation had exposed a flaw in the 1972 COLA method that over-indexed benefits for new retirees and threatened solvency. The 1977 amendments raised payroll taxes and the taxable wage base, slightly reduced future benefits, and switched to wage indexing, with a transition that produced the so-called “notch” for people born in 1917–1921.",
-      "significance": "The first major retrenchment: the anomaly’s arithmetic had to be repaired, and the people who paid were the cohort about to retire."
-    },
-    {
-      "year": 1978,
-      "title": "Revenue Act of 1978: Section 401(k)",
-      "type": "legislation",
-      "detail": "Signed by President Carter on November 6, 1978, a tax bill added Section 401(k) to the Internal Revenue Code, effective January 1, 1980, letting employees defer part of their pay into qualified plans before tax. The same law created simplified employee pensions (SEPs).",
-      "significance": "Grimm writes that the rules of the game were rewritten in 1978 and the players were not informed; historians of the provision note it was not designed to replace pensions."
-    }
-  ],
-  "marketDrops": [
-    {
-      "year": 1961,
-      "endYear": 1962,
-      "name": "The Kennedy Slide",
-      "decline": "−28.0% (S&P 500, Dec. 12, 1961 – June 26, 1962)",
-      "detail": "Stocks fell 28 percent in about six months in the middle of the postwar boom. The S&P 500 regained its prior high in September 1963.",
-      "retirementImpact": "A quick recovery reinforced the era’s belief that markets bend but do not break—while most workers’ retirement income still came from pooled, guaranteed sources."
-    },
-    {
-      "year": 1968,
-      "endYear": 1970,
-      "name": "The 1968–70 bear market",
-      "decline": "−36.1% (S&P 500, Nov. 29, 1968 – May 26, 1970)",
-      "detail": "As inflation rose and the economy slid into the 1969–70 recession, the S&P 500 lost more than a third of its value. It did not break even until March 1972.",
-      "retirementImpact": "For anyone counting on stocks, it was the first serious postwar test of the Market Growth seed (4); most workers’ retirement income still came from guaranteed sources."
-    },
-    {
-      "year": 1973,
-      "endYear": 1974,
-      "name": "The oil-shock bear market",
-      "decline": "−48.2% (S&P 500, Jan. 11, 1973 – Oct. 3, 1974)",
-      "detail": "The oil embargo, accelerating inflation, and recession drove the S&P 500 down by nearly half; ERISA was signed a month before the bottom. The index did not regain its 1973 high until July 1980, and with inflation above 11 percent in 1974, real losses ran deeper still.",
-      "retirementImpact": "Pension sponsors watched invested assets shrink just as ERISA’s new funding standards arrived—pressure the book links to the corporate appetite for alternatives such as the 401(k)."
-    }
-  ],
-  "socialMovements": [
-    {
-      "year": 1958,
-      "name": "AARP",
-      "detail": "Retired teacher Ethel Percy Andrus, who had founded the National Retired Teachers Association in 1947, incorporated the American Association of Retired Persons on July 1, 1958, after hundreds of non-teachers wrote asking for access to affordable health insurance.",
-      "significance": "Retirees became an organized constituency—a consumer market and, before long, one of the most influential lobbies in American politics."
-    },
-    {
-      "year": 1961,
-      "endYear": 1965,
-      "name": "National Council of Senior Citizens and the Medicare campaign",
-      "detail": "Formally announced in July 1961 with seed money from the AFL-CIO and unions such as the UAW and Steelworkers, the NCSC organized union retirees through rallies—including a televised event at Madison Square Garden—letter-writing, and pressure on opponents to win health insurance for the aged.",
-      "significance": "Organized labor carried its fight for security beyond the bargaining table into national politics, helping deliver Medicare in 1965."
-    },
-    {
-      "year": 1970,
-      "name": "Gray Panthers",
-      "detail": "Forced to retire from her job with the Presbyterian Church at 65 in 1970, Maggie Kuhn and friends in similar circumstances founded the group that became the Gray Panthers. It campaigned on pension rights and age discrimination under the banner of “young and old together.”",
-      "significance": "The first organized challenge to 65 = Old and Done (seed 3); the movement helped bring about the end of most forced-retirement rules."
-    }
-  ],
-  "inequities": [
-    {
-      "title": "A golden age for a minority",
-      "detail": "Private pensions covered about 22 percent of private wage and salary workers in 1950 and about 44 percent at the end of 1974. In 1979, at the system’s height, 38 percent of private-sector wage and salary workers participated in a defined-benefit plan—so even at the peak, most private-sector workers were not in the kind of pension the era is remembered for."
-    },
-    {
-      "title": "The vesting cliff",
-      "detail": "Before ERISA there was no federal minimum vesting standard. When Studebaker closed its South Bend plant and terminated its pension in 1963, about 3,600 older retirees received full benefits, about 4,000 active workers received roughly 15 percent of what they expected, and thousands under 40 lost their benefits entirely."
-    },
-    {
-      "title": "Women by design",
-      "detail": "The book calls the one-earner household a “design specification”: wives’ security came through husbands’ earnings records and pensions. Divorced wives became eligible for Social Security spousal benefits only in 1965, and until the Retirement Equity Act of 1984 a worker could waive his pension’s survivor benefit without his wife’s written consent."
-    },
-    {
-      "title": "The color line of the bloom",
-      "detail": "Farm and domestic workers—disproportionately Black—were not fully covered by Social Security until 1954, and federal law did not prohibit employment discrimination by race or sex until Title VII of the Civil Rights Act, signed July 2, 1964. Exclusion from union, pension-bearing jobs and from redlined suburbs meant the era’s three legs of security were unevenly available by race."
-    },
-    {
-      "title": "Poverty at the peak",
-      "detail": "Elderly poverty fell dramatically—from 35.2 percent in 1959 to 14.6 percent in 1974—but it never vanished. In 1980, at the close of the golden age, 15.7 percent of Americans 65 and older still lived below the official poverty line."
-    }
-  ],
-  "historicalContext": [
-    {
-      "year": 1960,
-      "title": "The demographic dividend shrinks",
-      "detail": "The ratio of covered workers to Social Security beneficiaries fell from 16.5 in 1950 to 5.1 in 1960 and 3.2 by 1980 as the program matured. Meanwhile a man reaching 65 could expect about 13.1 more years in 1950 and 14.6 in 1980; a woman, 16.2 and 19.1."
-    },
-    {
-      "year": 1964,
-      "title": "Civil Rights Act",
-      "detail": "Signed July 2, 1964, the Act’s Title VII prohibited employment discrimination based on race, color, religion, sex, or national origin and created the Equal Employment Opportunity Commission."
-    },
-    {
-      "year": 1971,
-      "title": "The Nixon shock",
-      "detail": "On August 15, 1971, President Nixon ended the dollar’s convertibility to gold, imposed a 90-day wage and price freeze, and added a 10 percent import surcharge. The Bretton Woods system that had anchored the postwar order soon collapsed."
-    },
-    {
-      "year": 1973,
-      "endYear": 1974,
-      "title": "The oil embargo",
-      "detail": "Arab oil producers embargoed the United States from October 19, 1973, to March 1974, and the price of oil nearly quadrupled, from about $2.90 to $11.65 a barrel. The book reads the embargo as the announcement that cheap energy—one of its five economic pillars—had ended."
-    },
-    {
-      "year": 1976,
-      "title": "The first index fund for individual investors",
-      "detail": "John Bogle launched the First Index Investment Trust (now the Vanguard 500 Index Fund) on August 31, 1976. It hoped to raise $50–150 million and raised a little more than $11 million, an outcome Bogle called “an abject failure.”"
-    },
-    {
-      "year": 1979,
-      "endYear": 1980,
-      "title": "Stagflation peaks",
-      "detail": "U.S. consumer-price inflation reached 11.1 percent in 1974, 11.3 percent in 1979, and 13.5 percent in 1980, alongside weak growth. Fixed incomes without cost-of-living protection lost purchasing power rapidly."
-    }
-  ],
-  "seeds": [
-    {
-      "seed": 1,
-      "stage": "growing",
-      "detail": "Formal exclusions narrowed—farm and domestic workers were fully covered by 1954 and Title VII banned job discrimination in 1964—but boundaries persisted through pension coverage, redlined housing, and the uneven reach of union jobs. The book calls this the seed of boundaries operating inside the bloom."
-    },
-    {
-      "seed": 2,
-      "stage": "blooming",
-      "detail": "Washington built out every leg of the stool: coverage expansion (1950), disability insurance (1956), Medicare (1965), automatic COLAs and SSI (1972), and ERISA’s pension protections (1974). The same era created the IRA (1974) and Section 401(k) (1978), the instruments of the next chapter."
-    },
-    {
-      "seed": 3,
-      "stage": "growing",
-      "detail": "Sixty-five hardened into an identity: the ADEA protected workers only until 65, leaving retirement at 65 enforceable, and age 62 added an earlier exit without changing the endpoint. The Gray Panthers’ founding in 1970 began the first organized resistance."
-    },
-    {
-      "seed": 4,
-      "stage": "sprouting",
-      "detail": "Defined-contribution plan assets more than doubled from $74 billion in 1975 to $162 billion in 1980, and Bogle’s 1976 index fund offered individuals a low-cost way into the whole market. The 1973–74 bear market tested the belief that stocks reliably rise and could carry retirement."
-    },
-    {
-      "seed": 5,
-      "stage": "blooming",
-      "detail": "The seed planted in the 1920s blooms. Sun City’s 1960 opening drew about 100,000 visitors and a Time cover story, and retirement became a lifestyle with its own communities, products, and imagery. The book: leisure was not escape, it was arrival."
-    },
-    {
-      "seed": 7,
-      "stage": "growing",
-      "detail": "The industrial, unionized, covered America collected pensions, Social Security, and Medicare together; workers outside those sectors relied on Social Security alone or, after 1974, SSI. The stool had three legs for some Americans and one for others."
-    },
-    {
-      "seed": 8,
-      "stage": "blooming",
-      "detail": "The Treaty of Detroit made the employer pension a cultural norm: thirty years with one company, then a check for life. Studebaker’s 1963 failure showed how fragile The Promise was, and ERISA’s 1974 rescue confirmed that its failure was experienced as betrayal."
-    }
-  ],
-  "twoPersonLens": {
-    "year": 1980,
-    "older": {
-      "born": 1920,
-      "headline": "Cashing out the promise",
-      "text": "Born in 1920, they were nine when the market crashed and thirteen when one in four workers had no job. They turned twenty the year Ida May Fuller received the first check, and spent their early twenties in uniform. The GI Bill, a union card, a pension negotiated in the Treaty of Detroit era, a house in the suburbs—they built the golden age and lived inside it. Now 60, they can see the finish line: a defined-benefit check for life, Social Security that has risen with inflation since 1975, Medicare at 65. One small betrayal: as a “notch baby,” born 1917–1921, their benefit will be smaller than a neighbor born a few years earlier. Still, they are about to collect on the promise."
-    },
-    "younger": {
-      "born": 1960,
-      "headline": "Handed a calculator",
-      "text": "Born in 1960, the year Sun City opened, they were five when Medicare passed and grew up assuming pensions, suburbs, and rising wages were simply how life works—the anomaly, though told it was the template. They were thirteen when the oil embargo hit and fourteen when stocks bottomed after losing nearly half their value. Now 20, they enter a labor market with inflation above 13 percent, the year Section 401(k) takes effect. Within a few years their full Social Security retirement age will be pushed to 67, and their employer will more likely offer an account than a pension. They will be in their late forties when the 2008 crash cuts stocks by more than half."
-    },
-    "irony": "In 1980 the 60-year-old was cashing out a promise; the 20-year-old was being handed a calculator and told “good luck.”"
+ "id": "climax",
+ "number": 4,
+ "title": "Climax",
+ "years": "1950–1980",
+ "definition": "cli·max (noun) the height of something",
+ "tagline": "For thirty years retirement worked—once, for some, and never again at scale.",
+ "bigQuestion": "Was the golden age of retirement a model we could rebuild, or an anomaly we mistook for one?",
+ "overview": "From roughly 1950 to 1980, the book argues, retirement actually worked—materially, for millions of Americans, for the first time in history. Social Security expanded and finally kept pace with inflation; union-negotiated pensions spread through steel, autos, rubber, and mining; and Medicare, created in 1965, armored older households against the medical bills that had ruined so many. Leisure stopped being a moment and became a destination: in 1960 about 100,000 people turned out for the opening weekend of Sun City, Arizona. Elderly poverty fell from 35.2 percent in 1959 to 14.6 percent in 1974.\n\nGrimm’s central claim is that this was an anomaly, not a model. It rested on ten pillars that could not last—five economic (manufacturing hegemony, a demographic dividend, cheap energy, capital markets with limited global competition, productivity growth) and five social (institutional trust, an intergenerational compact, a culture of deferred gratification, geographic stability, and the one-earner nuclear family as a design specification).\n\nBy the 1970s the pillars were cracking: the dollar left gold, oil quadrupled, stocks fell 48 percent, and inflation passed 11 percent. Congress answered with ERISA, the IRA, and, almost unnoticed, Section 401(k). Your task in this module is to weigh the book’s thesis against the evidence of what actually worked.",
+ "learningObjectives": [
+  "Explain how Social Security expansion, defined-benefit pensions, and Medicare combined into the “three-legged stool” of postwar retirement security.",
+  "Evaluate the book’s “anomaly vs. model” thesis by testing each of the ten pillars against economic and demographic data.",
+  "Analyze who was included in and excluded from the golden age, using evidence on pension coverage, vesting, race, and sex.",
+  "Trace how the shocks of 1971–1980—the end of gold convertibility, the oil embargo, the 1973–74 bear market, and stagflation—strained the system.",
+  "Compare the retirement prospects of the 1920 and 1960 birth cohorts at the 1980 threshold using the Two-Person Lens."
+ ],
+ "policyEvents": [
+  {
+   "year": 1950,
+   "title": "Social Security Amendments of 1950",
+   "type": "legislation",
+   "detail": "Signed by President Truman on August 28, 1950, the amendments raised benefits for current beneficiaries by an average of about 77 percent and extended coverage to roughly 10 million more people, including regularly employed farm and domestic workers and most of the nonfarm self-employed. State and local government and nonprofit employees could join on an elective basis.",
+   "significance": "Social Security moved from a modest floor toward an adequate base income—the leg of the stool that would carry the most weight and outlast the others."
   },
-  "keyTerms": [
-    {
-      "term": "Three-legged stool",
-      "definition": "The metaphor for postwar retirement income resting on Social Security, employer pensions, and personal savings; the book’s draft adds Medicare to the government leg."
-    },
-    {
-      "term": "Anomaly vs. model",
-      "definition": "Grimm’s distinction: a model has transferable mechanisms that can be studied and rebuilt, while an anomaly depends on unrepeatable conditions. The book argues 1950–1980 was an anomaly mistaken for a model."
-    },
-    {
-      "term": "Cost-of-living adjustment (COLA)",
-      "definition": "An automatic increase in benefits tied to inflation. Social Security’s automatic COLAs, enacted in 1972, were first paid in 1975."
-    },
-    {
-      "term": "Vesting",
-      "definition": "The point at which a worker earns a non-forfeitable right to pension benefits. ERISA set the first federal minimum vesting standards in 1974."
-    },
-    {
-      "term": "Pension Benefit Guaranty Corporation (PBGC)",
-      "definition": "The federal agency created by ERISA to insure private defined-benefit pensions when plans fail. It paid its first pension check, for $140.75, on February 28, 1975."
-    },
-    {
-      "term": "Individual retirement account (IRA)",
-      "definition": "A tax-favored personal retirement account created by ERISA in 1974, initially for workers without an employer plan."
-    },
-    {
-      "term": "Supplemental Security Income (SSI)",
-      "definition": "A federal means-tested cash benefit for low-income aged, blind, and disabled people, created in 1972 and paid from January 1974."
-    },
-    {
-      "term": "Stagflation",
-      "definition": "The combination of high inflation and weak economic growth that marked the 1970s, eroding fixed incomes and straining pension finances."
-    },
-    {
-      "term": "Index fund",
-      "definition": "A fund that holds the securities in a market index rather than picking stocks. Bogle’s 1976 fund made the approach available to individual investors."
-    }
-  ],
-  "keyFigures": [
-    {
-      "name": "Walter Reuther",
-      "role": "President of the United Auto Workers whose 1950 contract with General Motors—the “Treaty of Detroit”—set the pattern for funded pensions, health coverage, and cost-of-living raises in exchange for long-term labor peace."
-    },
-    {
-      "name": "Ethel Percy Andrus",
-      "role": "Retired teacher who founded the National Retired Teachers Association in 1947 and AARP in 1958, turning retirees into an organized constituency."
-    },
-    {
-      "name": "Del Webb",
-      "role": "Developer whose company opened Sun City, Arizona, on January 1, 1960, giving the Search for Leisure (seed 5) a physical address and a marketable image."
-    },
-    {
-      "name": "Maggie Kuhn",
-      "role": "Forced out of her church job at 65 in 1970, she co-founded the Gray Panthers and challenged mandatory retirement and the idea that age 65 marks the end of usefulness."
-    },
-    {
-      "name": "Jacob Javits",
-      "role": "New York senator who introduced pension reform legislation in 1967 after the Studebaker failure, beginning the push that produced ERISA in 1974."
-    }
-  ],
-  "primarySources": [
-    {
-      "title": "The Social Security Act Amendments of 1950: A Summary and Legislative History",
-      "year": 1950,
-      "source": "SSA History",
-      "url": "https://ssa.gov/history/1950amend.html",
-      "why": "Identify which groups were newly covered and how planners justified the size of the benefit increase."
-    },
-    {
-      "title": "LBJ’s remarks at the signing of the Medicare bill, Independence, Missouri",
-      "year": 1965,
-      "source": "SSA History",
-      "url": "https://www.ssa.gov/history/lbjstmts.html",
-      "why": "Notice how Johnson frames Medicare as a moral obligation to older Americans—and how he links it to Truman’s earlier failed attempt."
-    },
-    {
-      "title": "Legislative history of the Social Security Amendments of 1972",
-      "year": 1972,
-      "source": "SSA History",
-      "url": "https://www.ssa.gov/history/1972amend.html",
-      "why": "Trace how automatic COLAs were justified and what assumptions about inflation and wages were built into them."
-    },
-    {
-      "title": "The Social Security “Notch” archive",
-      "year": 1977,
-      "source": "SSA History",
-      "url": "https://www.ssa.gov/history/notchfile1.html",
-      "why": "Follow how a technical fix to the 1972 formula became a lasting grievance for the cohort born in 1917–1921."
-    },
-    {
-      "title": "Private Pension Plan Bulletin Historical Tables and Graphs, 1975–2023",
-      "year": 1975,
-      "source": "U.S. Department of Labor, EBSA",
-      "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf",
-      "why": "Use Tables E1 and E7 to see how many defined-benefit and defined-contribution plans and participants existed at the end of the golden age."
-    }
-  ],
-  "discussionQuestions": [
-    "Choose two of the book’s ten pillars—one economic, one social. What evidence shows each pillar was in place from 1950 to 1980, and what evidence shows it eroding by 1980?",
-    "Test the book’s argument: elderly poverty fell from 35.2 percent in 1959 to 14.6 percent in 1974, largely through deliberate legislation (benefit increases, Medicare, COLAs, SSI). Does this record suggest that at least part of the golden age was a replicable model rather than an accident of conditions? Use data to defend your answer.",
-    "Studebaker’s 1963 failure and ERISA’s 1974 response show The Promise being broken and then repaired. Why might the book describe broken pension promises as a moral betrayal rather than a financial loss?",
-    "Sun City sold retirement as a reward. How did the Search for Leisure change what Americans expected retirement to be, and who could afford the version being sold?",
-    "If the system was designed around a one-earner household, what happened to people who did not fit the design—single women, divorced wives, workers in uncovered or nonunion jobs?",
-    "Congress created the IRA (1974) and Section 401(k) (1978) while the defined-benefit system was at its height. Were these complements to the pension system, or the first move toward replacing it? What evidence would you need to decide?"
-  ],
-  "assignment": {
-    "title": "Anomaly or Model? A Debate Brief",
-    "type": "Debate brief with data",
-    "prompt": "You will be assigned a side: the golden age of retirement (1950–1980) was (A) an unrepeatable anomaly, as the book argues, or (B) a replicable model whose core mechanisms could be rebuilt today. Using the book’s ten pillars as your framework, evaluate at least six pillars with quantitative evidence—for example, worker-to-beneficiary ratios, elderly poverty rates, pension coverage, inflation, oil prices, or life expectancy at 65. For each pillar, state whether it was a condition (unrepeatable) or a mechanism (designable), and why. Include one chart you build from an official data source. Anticipate the strongest two arguments from the other side and rebut them. End with a one-paragraph policy implication: what, if anything, from 1950–1980 should be rebuilt?",
-    "deliverable": "1,500–1,800 word debate brief with one original chart, at least five cited sources (at least three official data sources such as SSA, Census, BLS, or DOL), and a 3-minute opening statement for in-class debate.",
-    "points": 100,
-    "rubric": [
-      {
-        "criterion": "Use of evidence & data",
-        "points": 30,
-        "exemplary": "Each of six or more pillars is assessed with accurate, well-chosen data from official sources; the chart is clear, correctly labeled, and central to the argument.",
-        "proficient": "Most pillars supported with accurate data; chart present and readable.",
-        "developing": "Data thin, partly inaccurate, or not tied to specific pillars; chart decorative.",
-        "beginning": "Little or no data; chart missing or misleading."
-      },
-      {
-        "criterion": "Analytical framework",
-        "points": 30,
-        "exemplary": "Sharply distinguishes conditions from mechanisms for each pillar and shows how pillars depended on one another.",
-        "proficient": "Applies the condition/mechanism distinction consistently with some interdependence noted.",
-        "developing": "Framework applied unevenly or mostly descriptive.",
-        "beginning": "Framework absent or misunderstood."
-      },
-      {
-        "criterion": "Engagement with counterarguments",
-        "points": 20,
-        "exemplary": "States the opposing side’s two strongest arguments fairly and rebuts them with evidence.",
-        "proficient": "Addresses two counterarguments with reasonable rebuttals.",
-        "developing": "Counterarguments weak, straw-manned, or only partly answered.",
-        "beginning": "No engagement with the other side."
-      },
-      {
-        "criterion": "Policy implication & communication",
-        "points": 20,
-        "exemplary": "Concise, specific implication that follows from the analysis; brief and oral statement are polished and persuasive.",
-        "proficient": "Clear implication and organized presentation with minor lapses.",
-        "developing": "Implication vague or disconnected; presentation uneven.",
-        "beginning": "No implication; disorganized."
-      }
-    ]
+  {
+   "year": 1950,
+   "title": "The “Treaty of Detroit”",
+   "type": "policy",
+   "detail": "On May 23, 1950, General Motors and the United Auto Workers reached a five-year contract—a private collective-bargaining agreement—that included a fully funded pension of $125 a month counting Social Security, continued cost-of-living raises, and GM payment of half the cost of health coverage. Fortune magazine dubbed it the “Treaty of Detroit.”",
+   "significance": "The Promise (seed 8) in its purest form: long-term security in exchange for labor peace, tying a worker’s old age to one company’s fortunes."
   },
-  "quiz": [
-    {
-      "q": "What did the Social Security Amendments of 1972 add that the book calls the program’s high-water mark?",
-      "options": [
-        "Medicare",
-        "Automatic cost-of-living adjustments, first paid in 1975",
-        "Disability insurance",
-        "Coverage for farm workers"
-      ],
-      "answer": 1,
-      "explain": "The 1972 amendments created automatic COLAs, first paid in January 1975, so that inflation could no longer quietly erode benefits."
-    },
-    {
-      "q": "What happened to Studebaker workers’ pensions when the company closed its South Bend plant in 1963?",
-      "options": [
-        "The PBGC paid everyone in full",
-        "Older retirees were paid in full, about 4,000 active workers got roughly 15 percent, and most under 40 got nothing",
-        "All workers received lump sums equal to their contributions",
-        "The UAW took over the plan and paid full benefits"
-      ],
-      "answer": 1,
-      "explain": "With no federal insurance yet, about 3,600 older retirees got full benefits, about 4,000 active workers got roughly 15 percent, and thousands under 40 lost everything; the PBGC did not exist until 1974."
-    },
-    {
-      "q": "Which of these did ERISA (1974) NOT do?",
-      "options": [
-        "Create the Pension Benefit Guaranty Corporation",
-        "Set minimum vesting and funding standards",
-        "Create the individual retirement account",
-        "Create Section 401(k)"
-      ],
-      "answer": 3,
-      "explain": "Section 401(k) came from the Revenue Act of 1978, effective in 1980; ERISA created the PBGC, the IRA, and federal vesting and funding standards."
-    },
-    {
-      "q": "How did the ratio of covered workers to Social Security beneficiaries change from 1950 to 1980?",
-      "options": [
-        "It rose from 3.2 to 16.5",
-        "It stayed near 5",
-        "It fell from 16.5 to 3.2",
-        "It fell from 159 to 42"
-      ],
-      "answer": 2,
-      "explain": "As the program matured, the ratio fell from 16.5 in 1950 to 3.2 in 1980—the demographic dividend the book counts among its five economic pillars."
-    },
-    {
-      "q": "What triggered Maggie Kuhn’s founding of the group that became the Gray Panthers in 1970?",
-      "options": [
-        "Being forced to retire at 65",
-        "The passage of Medicare",
-        "The Studebaker bankruptcy",
-        "The 1973 oil embargo"
-      ],
-      "answer": 0,
-      "explain": "Kuhn was forced to retire from her job with the Presbyterian Church at 65 and organized others in the same situation."
-    }
-  ],
-  "sources": [
-    {"label": "SSA — Social Security Act Amendments of 1950", "url": "https://ssa.gov/history/1950amend.html"},
-    {"label": "SSA — Brief History of Social Security", "url": "https://www.ssa.gov/history/briefhistory3.html"},
-    {"label": "SSA — 1972 Amendments legislative history", "url": "https://www.ssa.gov/history/1972amend.html"},
-    {"label": "SSA — The Notch archive", "url": "https://www.ssa.gov/history/notchfile1.html"},
-    {"label": "SSA — LBJ Medicare signing remarks", "url": "https://www.ssa.gov/history/lbjstmts.html"},
-    {"label": "SSA — Ratio of covered workers to beneficiaries", "url": "https://www.ssa.gov/history/ratios.html"},
-    {"label": "SSA — Life expectancy at 65 by cohort", "url": "https://www.ssa.gov/history/lifeexpect.html"},
-    {"label": "DeWitt, Social Security Bulletin 70(4) — farm and domestic coverage 1950/1954", "url": "https://www.ssa.gov/policy/docs/ssb/v70n4/v70n4p49.html"},
-    {"label": "Skolnik, “Private Pension Plans, 1950–74,” Social Security Bulletin", "url": "https://www.ssa.gov/policy/docs/ssb/v39n6/v39n6p3.pdf"},
-    {"label": "CRS R41479 — Social Security spousal and survivor benefits", "url": "https://www.everycrsreport.com/files/20190206_R41479_9dd58a12f19d5f8169be00c92b77272757011d84.html"},
-    {"label": "Reuther’s Treaty of Detroit", "url": "https://en.wikipedia.org/wiki/Reuther%27s_Treaty_of_Detroit"},
-    {"label": "Lawyers, Guns & Money — Labor history: May 23, 1950", "url": "https://www.lawyersgunsmoneyblog.com/2018/05/day-labor-history-may-23-1950"},
-    {"label": "LBJ Presidential Library — Medicare and Medicaid Act", "url": "https://www.lbjlibrary.org/news-and-press/media-kits/medicare-and-medicaid"},
-    {"label": "CRS — ADEA legal overview", "url": "https://www.everycrsreport.com/files/20100623_RL34652_9b42b12308b299998a4ac68411ef96babfb64c11.html"},
-    {"label": "CRS 97-479 — ADEA amendments of 1978 and 1986", "url": "https://www.everycrsreport.com/reports/97-479.html"},
-    {"label": "PBGC — History", "url": "https://www.pbgc.gov/about/who-we-are/history"},
-    {"label": "PBGC — Studebaker", "url": "https://www.pbgc.gov/about/pbgc-pensions-studebaker"},
-    {"label": "ICI — Happy Birthday ERISA", "url": "https://www.ici.org/viewpoints/view_14_HB_ERISA"},
-    {"label": "CRS 96-20 — IRA legislative history", "url": "https://www.everycrsreport.com/reports/96-20.html"},
-    {"label": "PSCA — 401(k) history", "url": "https://www.psca.org/node/242"},
-    {"label": "ASPPA — The “real” 401(k) Day", "url": "https://www.asppa-net.org/news/2025/11/the-real-401k-day/"},
-    {"label": "Workforce — Rise and fall of employer-sponsored pension plans", "url": "https://workforce.com/news/the-rise-and-fall-of-employer-sponsored-pension-plans"},
-    {"label": "EBRI — DB and DC participation, 1979 vs. 2017", "url": "https://www.ebri.org/retirement/content/only-11-percent-of-us-private-sector-wage-and-salary-workers-participate-in-defined-benefit-pension-plans"},
-    {"label": "AARP — Founding days", "url": "https://www.aarp.org/about-aarp/history/aarp-founding-days/"},
-    {"label": "Sun City, Arizona", "url": "https://en.wikipedia.org/wiki/Sun_City,_Arizona"},
-    {"label": "Alliance for Retired Americans (NCSC history)", "url": "https://en.wikipedia.org/wiki/Alliance_for_Retired_Americans"},
-    {"label": "National Women’s Hall of Fame — Maggie Kuhn", "url": "https://www.womenofthehall.org/inductee/maggie-kuhn/"},
-    {"label": "National Archives — Civil Rights Act of 1964", "url": "https://www.archives.gov/milestone-documents/civil-rights-act"},
-    {"label": "Federal Reserve History — Nixon ends gold convertibility", "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"},
-    {"label": "Federal Reserve History — Oil Shock of 1973–74", "url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74"},
-    {"label": "Vanguard — 50 years of indexing", "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/50-years-50-facts-indexing-since-1976.html"},
-    {"label": "Yardeni Research — S&P 500 bear market tables", "url": "https://archive.yardeni.com/pub/sp500corrbeartables.pdf"},
-    {"label": "Stacker/KEYT — S&P 500 corrections and recovery times since 1950", "url": "https://keyt.com/stacker-business-economy/2026/08/12/every-major-stock-market-correction-since-1950-and-how-long-recovery-took/"},
-    {"label": "FRED — Poverty rate, people 65 and over (Census)", "url": "https://fred.stlouisfed.org/data/HSTPOVAR65YOBPPP"},
-    {"label": "FRED — U.S. consumer-price inflation (World Bank)", "url": "https://fred.stlouisfed.org/data/FPCPITOTLZGUSA"},
-    {"label": "SSA — Full retirement age by year of birth", "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"},
-    {"label": "Grimm, A Concise History of Retirement (draft), Chapter 4", "url": "https://docs.google.com/document/d/1P0EMAca6c4jzB47BAsQLuZUq3Jdl3hvQ3nMszjFixXA"}
+  {
+   "year": 1956,
+   "title": "Disability insurance and early retirement",
+   "type": "legislation",
+   "detail": "After a 1954 “disability freeze” protected the records of disabled workers, the 1956 amendments paid cash benefits to disabled workers aged 50–64 and to disabled adult children. They also let women claim reduced retirement benefits at 62; the 1961 amendments extended the age-62 option to men.",
+   "significance": "Age 62 created an earlier exit ramp without retiring the cultural meaning of 65—seed 3 now had a soft and a hard boundary."
+  },
+  {
+   "year": 1965,
+   "title": "Medicare and Medicaid",
+   "type": "legislation",
+   "detail": "President Johnson signed the law on July 30, 1965, at the Truman Library in Independence, Missouri, and Harry Truman became Medicare’s first enrollee. Nearly 20 million beneficiaries enrolled in Medicare in its first three years.",
+   "significance": "The third leg of the stool: the book argues medical catastrophe had been retirement’s hidden enemy, and Medicare armored older households against it."
+  },
+  {
+   "year": 1967,
+   "title": "Age Discrimination in Employment Act",
+   "type": "legislation",
+   "detail": "The ADEA barred employment discrimination against workers aged 40 to 65. Congress raised the upper limit to 70 in 1978 and eliminated it in 1986, ending most mandatory retirement.",
+   "significance": "As first written, the law protected workers only until 65—quietly confirming 65 = Old and Done (seed 3) even as it fought age bias."
+  },
+  {
+   "year": 1972,
+   "title": "Social Security Amendments of 1972",
+   "type": "legislation",
+   "detail": "A July 1972 law raised benefits 20 percent and created automatic cost-of-living adjustments, first paid in January 1975. An October 1972 law created Supplemental Security Income (SSI), a federal means-tested benefit for aged, blind, and disabled people that began January 1, 1974.",
+   "significance": "The book calls automatic COLAs the high-water mark of the program’s ambition: for the first time, inflation could not quietly erode a promised benefit."
+  },
+  {
+   "year": 1974,
+   "title": "Employee Retirement Income Security Act (ERISA)",
+   "type": "legislation",
+   "detail": "Signed by President Ford on September 2, 1974, ERISA set federal standards for private-plan reporting, funding, participation, vesting, and fiduciary conduct and created the Pension Benefit Guaranty Corporation to insure defined-benefit pensions. It also created the individual retirement account for workers without an employer plan, with deductible contributions up to the lesser of $1,500 or 15 percent of earnings.",
+   "significance": "ERISA protected The Promise after Studebaker—but its IRA quietly introduced the individual account into federal retirement policy."
+  },
+  {
+   "year": 1977,
+   "title": "Social Security Amendments of 1977",
+   "type": "legislation",
+   "detail": "Stagflation had exposed a flaw in the 1972 COLA method that over-indexed benefits for new retirees and threatened solvency. The 1977 amendments raised payroll taxes and the taxable wage base, slightly reduced future benefits, and switched to wage indexing, with a transition that produced the so-called “notch” for people born in 1917–1921.",
+   "significance": "The first major retrenchment: the anomaly’s arithmetic had to be repaired, and the people who paid were the cohort about to retire."
+  },
+  {
+   "year": 1978,
+   "title": "Revenue Act of 1978: Section 401(k)",
+   "type": "legislation",
+   "detail": "Signed by President Carter on November 6, 1978, a tax bill added Section 401(k) to the Internal Revenue Code, effective January 1, 1980, letting employees defer part of their pay into qualified plans before tax. The same law created simplified employee pensions (SEPs).",
+   "significance": "Grimm writes that the rules of the game were rewritten in 1978 and the players were not informed; historians of the provision note it was not designed to replace pensions."
+  }
+ ],
+ "marketDrops": [
+  {
+   "year": 1961,
+   "endYear": 1962,
+   "name": "The Kennedy Slide",
+   "decline": "−28.0% (S&P 500, Dec. 12, 1961 – June 26, 1962)",
+   "detail": "Stocks fell 28 percent in about six months in the middle of the postwar boom. The S&P 500 regained its prior high in September 1963.",
+   "retirementImpact": "A quick recovery reinforced the era’s belief that markets bend but do not break—while most workers’ retirement income still came from pooled, guaranteed sources."
+  },
+  {
+   "year": 1968,
+   "endYear": 1970,
+   "name": "The 1968–70 bear market",
+   "decline": "−36.1% (S&P 500, Nov. 29, 1968 – May 26, 1970)",
+   "detail": "As inflation rose and the economy slid into the 1969–70 recession, the S&P 500 lost more than a third of its value. It did not break even until March 1972.",
+   "retirementImpact": "For anyone counting on stocks, it was the first serious postwar test of the Market Growth seed (4); most workers’ retirement income still came from guaranteed sources."
+  },
+  {
+   "year": 1973,
+   "endYear": 1974,
+   "name": "The oil-shock bear market",
+   "decline": "−48.2% (S&P 500, Jan. 11, 1973 – Oct. 3, 1974)",
+   "detail": "The oil embargo, accelerating inflation, and recession drove the S&P 500 down by nearly half; ERISA was signed a month before the bottom. The index did not regain its 1973 high until July 1980, and with inflation above 11 percent in 1974, real losses ran deeper still.",
+   "retirementImpact": "Pension sponsors watched invested assets shrink just as ERISA’s new funding standards arrived—pressure the book links to the corporate appetite for alternatives such as the 401(k)."
+  }
+ ],
+ "socialMovements": [
+  {
+   "year": 1958,
+   "name": "AARP",
+   "detail": "Retired teacher Ethel Percy Andrus, who had founded the National Retired Teachers Association in 1947, incorporated the American Association of Retired Persons on July 1, 1958, after hundreds of non-teachers wrote asking for access to affordable health insurance.",
+   "significance": "Retirees became an organized constituency—a consumer market and, before long, one of the most influential lobbies in American politics."
+  },
+  {
+   "year": 1961,
+   "endYear": 1965,
+   "name": "National Council of Senior Citizens and the Medicare campaign",
+   "detail": "Formally announced in July 1961 with seed money from the AFL-CIO and unions such as the UAW and Steelworkers, the NCSC organized union retirees through rallies—including a televised event at Madison Square Garden—letter-writing, and pressure on opponents to win health insurance for the aged.",
+   "significance": "Organized labor carried its fight for security beyond the bargaining table into national politics, helping deliver Medicare in 1965."
+  },
+  {
+   "year": 1970,
+   "name": "Gray Panthers",
+   "detail": "Forced to retire from her job with the Presbyterian Church at 65 in 1970, Maggie Kuhn and friends in similar circumstances founded the group that became the Gray Panthers. It campaigned on pension rights and age discrimination under the banner of “young and old together.”",
+   "significance": "The first organized challenge to 65 = Old and Done (seed 3); the movement helped bring about the end of most forced-retirement rules."
+  }
+ ],
+ "inequities": [
+  {
+   "title": "A golden age for a minority",
+   "detail": "Private pensions covered about 22 percent of private wage and salary workers in 1950 and about 44 percent at the end of 1974. In 1979, at the system’s height, 38 percent of private-sector wage and salary workers participated in a defined-benefit plan—so even at the peak, most private-sector workers were not in the kind of pension the era is remembered for.",
+   "vars": [
+    "job"
+   ]
+  },
+  {
+   "title": "The vesting cliff",
+   "detail": "Before ERISA there was no federal minimum vesting standard. When Studebaker closed its South Bend plant and terminated its pension in 1963, about 3,600 older retirees received full benefits, about 4,000 active workers received roughly 15 percent of what they expected, and thousands under 40 lost their benefits entirely.",
+   "vars": [
+    "job"
+   ]
+  },
+  {
+   "title": "Women by design",
+   "detail": "The book calls the one-earner household a “design specification”: wives’ security came through husbands’ earnings records and pensions. Divorced wives became eligible for Social Security spousal benefits only in 1965, and until the Retirement Equity Act of 1984 a worker could waive his pension’s survivor benefit without his wife’s written consent.",
+   "vars": [
+    "gender"
+   ]
+  },
+  {
+   "title": "The color line of the bloom",
+   "detail": "Farm and domestic workers—disproportionately Black—were not fully covered by Social Security until 1954, and federal law did not prohibit employment discrimination by race or sex until Title VII of the Civil Rights Act, signed July 2, 1964. Exclusion from union, pension-bearing jobs and from redlined suburbs meant the era’s three legs of security were unevenly available by race.",
+   "vars": [
+    "race",
+    "job"
+   ]
+  },
+  {
+   "title": "Poverty at the peak",
+   "detail": "Elderly poverty fell dramatically—from 35.2 percent in 1959 to 14.6 percent in 1974—but it never vanished. In 1980, at the close of the golden age, 15.7 percent of Americans 65 and older still lived below the official poverty line.",
+   "vars": [
+    "income"
+   ]
+  }
+ ],
+ "historicalContext": [
+  {
+   "year": 1960,
+   "title": "The demographic dividend shrinks",
+   "detail": "The ratio of covered workers to Social Security beneficiaries fell from 16.5 in 1950 to 5.1 in 1960 and 3.2 by 1980 as the program matured. Meanwhile a man reaching 65 could expect about 13.1 more years in 1950 and 14.6 in 1980; a woman, 16.2 and 19.1."
+  },
+  {
+   "year": 1964,
+   "title": "Civil Rights Act",
+   "detail": "Signed July 2, 1964, the Act’s Title VII prohibited employment discrimination based on race, color, religion, sex, or national origin and created the Equal Employment Opportunity Commission."
+  },
+  {
+   "year": 1971,
+   "title": "The Nixon shock",
+   "detail": "On August 15, 1971, President Nixon ended the dollar’s convertibility to gold, imposed a 90-day wage and price freeze, and added a 10 percent import surcharge. The Bretton Woods system that had anchored the postwar order soon collapsed."
+  },
+  {
+   "year": 1973,
+   "endYear": 1974,
+   "title": "The oil embargo",
+   "detail": "Arab oil producers embargoed the United States from October 19, 1973, to March 1974, and the price of oil nearly quadrupled, from about $2.90 to $11.65 a barrel. The book reads the embargo as the announcement that cheap energy—one of its five economic pillars—had ended."
+  },
+  {
+   "year": 1976,
+   "title": "The first index fund for individual investors",
+   "detail": "John Bogle launched the First Index Investment Trust (now the Vanguard 500 Index Fund) on August 31, 1976. It hoped to raise $50–150 million and raised a little more than $11 million, an outcome Bogle called “an abject failure.”"
+  },
+  {
+   "year": 1979,
+   "endYear": 1980,
+   "title": "Stagflation peaks",
+   "detail": "U.S. consumer-price inflation reached 11.1 percent in 1974, 11.3 percent in 1979, and 13.5 percent in 1980, alongside weak growth. Fixed incomes without cost-of-living protection lost purchasing power rapidly."
+  }
+ ],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "growing",
+   "detail": "Formal exclusions narrowed—farm and domestic workers were fully covered by 1954 and Title VII banned job discrimination in 1964—but boundaries persisted through pension coverage, redlined housing, and the uneven reach of union jobs. The book calls this the seed of boundaries operating inside the bloom."
+  },
+  {
+   "seed": 2,
+   "stage": "blooming",
+   "detail": "Washington built out every leg of the stool: coverage expansion (1950), disability insurance (1956), Medicare (1965), automatic COLAs and SSI (1972), and ERISA’s pension protections (1974). The same era created the IRA (1974) and Section 401(k) (1978), the instruments of the next chapter."
+  },
+  {
+   "seed": 3,
+   "stage": "growing",
+   "detail": "Sixty-five hardened into an identity: the ADEA protected workers only until 65, leaving retirement at 65 enforceable, and age 62 added an earlier exit without changing the endpoint. The Gray Panthers’ founding in 1970 began the first organized resistance."
+  },
+  {
+   "seed": 4,
+   "stage": "sprouting",
+   "detail": "Defined-contribution plan assets more than doubled from $74 billion in 1975 to $162 billion in 1980, and Bogle’s 1976 index fund offered individuals a low-cost way into the whole market. The 1973–74 bear market tested the belief that stocks reliably rise and could carry retirement."
+  },
+  {
+   "seed": 5,
+   "stage": "blooming",
+   "detail": "The seed planted in the 1920s blooms. Sun City’s 1960 opening drew about 100,000 visitors and a Time cover story, and retirement became a lifestyle with its own communities, products, and imagery. The book: leisure was not escape, it was arrival."
+  },
+  {
+   "seed": 7,
+   "stage": "growing",
+   "detail": "The industrial, unionized, covered America collected pensions, Social Security, and Medicare together; workers outside those sectors relied on Social Security alone or, after 1974, SSI. The stool had three legs for some Americans and one for others."
+  },
+  {
+   "seed": 8,
+   "stage": "blooming",
+   "detail": "The Treaty of Detroit made the employer pension a cultural norm: thirty years with one company, then a check for life. Studebaker’s 1963 failure showed how fragile The Promise was, and ERISA’s 1974 rescue confirmed that its failure was experienced as betrayal."
+  }
+ ],
+ "twoPersonLens": {
+  "year": 1980,
+  "older": {
+   "born": 1920,
+   "headline": "Cashing out the promise",
+   "text": "Born in 1920, they were nine when the market crashed and thirteen when one in four workers had no job. They turned twenty the year Ida May Fuller received the first check, and spent their early twenties in uniform. The GI Bill, a union card, a pension negotiated in the Treaty of Detroit era, a house in the suburbs—they built the golden age and lived inside it. Now 60, they can see the finish line: a defined-benefit check for life, Social Security that has risen with inflation since 1975, Medicare at 65. One small betrayal: as a “notch baby,” born 1917–1921, their benefit will be smaller than a neighbor born a few years earlier. Still, they are about to collect on the promise."
+  },
+  "younger": {
+   "born": 1960,
+   "headline": "Handed a calculator",
+   "text": "Born in 1960, the year Sun City opened, they were five when Medicare passed and grew up assuming pensions, suburbs, and rising wages were simply how life works—the anomaly, though told it was the template. They were thirteen when the oil embargo hit and fourteen when stocks bottomed after losing nearly half their value. Now 20, they enter a labor market with inflation above 13 percent, the year Section 401(k) takes effect. Within a few years their full Social Security retirement age will be pushed to 67, and their employer will more likely offer an account than a pension. They will be in their late forties when the 2008 crash cuts stocks by more than half."
+  },
+  "irony": "In 1980 the 60-year-old was cashing out a promise; the 20-year-old was being handed a calculator and told “good luck.”"
+ },
+ "keyTerms": [
+  {
+   "term": "Three-legged stool",
+   "definition": "The metaphor for postwar retirement income resting on Social Security, employer pensions, and personal savings; the book’s draft adds Medicare to the government leg."
+  },
+  {
+   "term": "Anomaly vs. model",
+   "definition": "Grimm’s distinction: a model has transferable mechanisms that can be studied and rebuilt, while an anomaly depends on unrepeatable conditions. The book argues 1950–1980 was an anomaly mistaken for a model."
+  },
+  {
+   "term": "Cost-of-living adjustment (COLA)",
+   "definition": "An automatic increase in benefits tied to inflation. Social Security’s automatic COLAs, enacted in 1972, were first paid in 1975."
+  },
+  {
+   "term": "Vesting",
+   "definition": "The point at which a worker earns a non-forfeitable right to pension benefits. ERISA set the first federal minimum vesting standards in 1974."
+  },
+  {
+   "term": "Pension Benefit Guaranty Corporation (PBGC)",
+   "definition": "The federal agency created by ERISA to insure private defined-benefit pensions when plans fail. It paid its first pension check, for $140.75, on February 28, 1975."
+  },
+  {
+   "term": "Individual retirement account (IRA)",
+   "definition": "A tax-favored personal retirement account created by ERISA in 1974, initially for workers without an employer plan."
+  },
+  {
+   "term": "Supplemental Security Income (SSI)",
+   "definition": "A federal means-tested cash benefit for low-income aged, blind, and disabled people, created in 1972 and paid from January 1974."
+  },
+  {
+   "term": "Stagflation",
+   "definition": "The combination of high inflation and weak economic growth that marked the 1970s, eroding fixed incomes and straining pension finances."
+  },
+  {
+   "term": "Index fund",
+   "definition": "A fund that holds the securities in a market index rather than picking stocks. Bogle’s 1976 fund made the approach available to individual investors."
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Walter Reuther",
+   "role": "President of the United Auto Workers whose 1950 contract with General Motors—the “Treaty of Detroit”—set the pattern for funded pensions, health coverage, and cost-of-living raises in exchange for long-term labor peace."
+  },
+  {
+   "name": "Ethel Percy Andrus",
+   "role": "Retired teacher who founded the National Retired Teachers Association in 1947 and AARP in 1958, turning retirees into an organized constituency."
+  },
+  {
+   "name": "Del Webb",
+   "role": "Developer whose company opened Sun City, Arizona, on January 1, 1960, giving the Search for Leisure (seed 5) a physical address and a marketable image."
+  },
+  {
+   "name": "Maggie Kuhn",
+   "role": "Forced out of her church job at 65 in 1970, she co-founded the Gray Panthers and challenged mandatory retirement and the idea that age 65 marks the end of usefulness."
+  },
+  {
+   "name": "Jacob Javits",
+   "role": "New York senator who introduced pension reform legislation in 1967 after the Studebaker failure, beginning the push that produced ERISA in 1974."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "The Social Security Act Amendments of 1950: A Summary and Legislative History",
+   "year": 1950,
+   "source": "SSA History",
+   "url": "https://ssa.gov/history/1950amend.html",
+   "why": "Identify which groups were newly covered and how planners justified the size of the benefit increase."
+  },
+  {
+   "title": "LBJ’s remarks at the signing of the Medicare bill, Independence, Missouri",
+   "year": 1965,
+   "source": "SSA History",
+   "url": "https://www.ssa.gov/history/lbjstmts.html",
+   "why": "Notice how Johnson frames Medicare as a moral obligation to older Americans—and how he links it to Truman’s earlier failed attempt."
+  },
+  {
+   "title": "Legislative history of the Social Security Amendments of 1972",
+   "year": 1972,
+   "source": "SSA History",
+   "url": "https://www.ssa.gov/history/1972amend.html",
+   "why": "Trace how automatic COLAs were justified and what assumptions about inflation and wages were built into them."
+  },
+  {
+   "title": "The Social Security “Notch” archive",
+   "year": 1977,
+   "source": "SSA History",
+   "url": "https://www.ssa.gov/history/notchfile1.html",
+   "why": "Follow how a technical fix to the 1972 formula became a lasting grievance for the cohort born in 1917–1921."
+  },
+  {
+   "title": "Private Pension Plan Bulletin Historical Tables and Graphs, 1975–2023",
+   "year": 1975,
+   "source": "U.S. Department of Labor, EBSA",
+   "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf",
+   "why": "Use Tables E1 and E7 to see how many defined-benefit and defined-contribution plans and participants existed at the end of the golden age."
+  }
+ ],
+ "discussionQuestions": [
+  "Choose two of the book’s ten pillars—one economic, one social. What evidence shows each pillar was in place from 1950 to 1980, and what evidence shows it eroding by 1980?",
+  "Test the book’s argument: elderly poverty fell from 35.2 percent in 1959 to 14.6 percent in 1974, largely through deliberate legislation (benefit increases, Medicare, COLAs, SSI). Does this record suggest that at least part of the golden age was a replicable model rather than an accident of conditions? Use data to defend your answer.",
+  "Studebaker’s 1963 failure and ERISA’s 1974 response show The Promise being broken and then repaired. Why might the book describe broken pension promises as a moral betrayal rather than a financial loss?",
+  "Sun City sold retirement as a reward. How did the Search for Leisure change what Americans expected retirement to be, and who could afford the version being sold?",
+  "If the system was designed around a one-earner household, what happened to people who did not fit the design—single women, divorced wives, workers in uncovered or nonunion jobs?",
+  "Congress created the IRA (1974) and Section 401(k) (1978) while the defined-benefit system was at its height. Were these complements to the pension system, or the first move toward replacing it? What evidence would you need to decide?"
+ ],
+ "assignment": {
+  "title": "Anomaly or Model? A Debate Brief",
+  "type": "Debate brief with data",
+  "prompt": "You will be assigned a side: the golden age of retirement (1950–1980) was (A) an unrepeatable anomaly, as the book argues, or (B) a replicable model whose core mechanisms could be rebuilt today. Using the book’s ten pillars as your framework, evaluate at least six pillars with quantitative evidence—for example, worker-to-beneficiary ratios, elderly poverty rates, pension coverage, inflation, oil prices, or life expectancy at 65. For each pillar, state whether it was a condition (unrepeatable) or a mechanism (designable), and why. Include one chart you build from an official data source. Anticipate the strongest two arguments from the other side and rebut them. End with a one-paragraph policy implication: what, if anything, from 1950–1980 should be rebuilt?",
+  "deliverable": "1,500–1,800 word debate brief with one original chart, at least five cited sources (at least three official data sources such as SSA, Census, BLS, or DOL), and a 3-minute opening statement for in-class debate.",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Use of evidence & data",
+    "points": 30,
+    "exemplary": "Each of six or more pillars is assessed with accurate, well-chosen data from official sources; the chart is clear, correctly labeled, and central to the argument.",
+    "proficient": "Most pillars supported with accurate data; chart present and readable.",
+    "developing": "Data thin, partly inaccurate, or not tied to specific pillars; chart decorative.",
+    "beginning": "Little or no data; chart missing or misleading."
+   },
+   {
+    "criterion": "Analytical framework",
+    "points": 30,
+    "exemplary": "Sharply distinguishes conditions from mechanisms for each pillar and shows how pillars depended on one another.",
+    "proficient": "Applies the condition/mechanism distinction consistently with some interdependence noted.",
+    "developing": "Framework applied unevenly or mostly descriptive.",
+    "beginning": "Framework absent or misunderstood."
+   },
+   {
+    "criterion": "Engagement with counterarguments",
+    "points": 20,
+    "exemplary": "States the opposing side’s two strongest arguments fairly and rebuts them with evidence.",
+    "proficient": "Addresses two counterarguments with reasonable rebuttals.",
+    "developing": "Counterarguments weak, straw-manned, or only partly answered.",
+    "beginning": "No engagement with the other side."
+   },
+   {
+    "criterion": "Policy implication & communication",
+    "points": 20,
+    "exemplary": "Concise, specific implication that follows from the analysis; brief and oral statement are polished and persuasive.",
+    "proficient": "Clear implication and organized presentation with minor lapses.",
+    "developing": "Implication vague or disconnected; presentation uneven.",
+    "beginning": "No implication; disorganized."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "What did the Social Security Amendments of 1972 add that the book calls the program’s high-water mark?",
+   "options": [
+    "Medicare",
+    "Automatic cost-of-living adjustments, first paid in 1975",
+    "Disability insurance",
+    "Coverage for farm workers"
+   ],
+   "answer": 1,
+   "explain": "The 1972 amendments created automatic COLAs, first paid in January 1975, so that inflation could no longer quietly erode benefits."
+  },
+  {
+   "q": "What happened to Studebaker workers’ pensions when the company closed its South Bend plant in 1963?",
+   "options": [
+    "The PBGC paid everyone in full",
+    "Older retirees were paid in full, about 4,000 active workers got roughly 15 percent, and most under 40 got nothing",
+    "All workers received lump sums equal to their contributions",
+    "The UAW took over the plan and paid full benefits"
+   ],
+   "answer": 1,
+   "explain": "With no federal insurance yet, about 3,600 older retirees got full benefits, about 4,000 active workers got roughly 15 percent, and thousands under 40 lost everything; the PBGC did not exist until 1974."
+  },
+  {
+   "q": "Which of these did ERISA (1974) NOT do?",
+   "options": [
+    "Create the Pension Benefit Guaranty Corporation",
+    "Set minimum vesting and funding standards",
+    "Create the individual retirement account",
+    "Create Section 401(k)"
+   ],
+   "answer": 3,
+   "explain": "Section 401(k) came from the Revenue Act of 1978, effective in 1980; ERISA created the PBGC, the IRA, and federal vesting and funding standards."
+  },
+  {
+   "q": "How did the ratio of covered workers to Social Security beneficiaries change from 1950 to 1980?",
+   "options": [
+    "It rose from 3.2 to 16.5",
+    "It stayed near 5",
+    "It fell from 16.5 to 3.2",
+    "It fell from 159 to 42"
+   ],
+   "answer": 2,
+   "explain": "As the program matured, the ratio fell from 16.5 in 1950 to 3.2 in 1980—the demographic dividend the book counts among its five economic pillars."
+  },
+  {
+   "q": "What triggered Maggie Kuhn’s founding of the group that became the Gray Panthers in 1970?",
+   "options": [
+    "Being forced to retire at 65",
+    "The passage of Medicare",
+    "The Studebaker bankruptcy",
+    "The 1973 oil embargo"
+   ],
+   "answer": 0,
+   "explain": "Kuhn was forced to retire from her job with the Presbyterian Church at 65 and organized others in the same situation."
+  }
+ ],
+ "sources": [
+  {
+   "label": "SSA — Social Security Act Amendments of 1950",
+   "url": "https://ssa.gov/history/1950amend.html"
+  },
+  {
+   "label": "SSA — Brief History of Social Security",
+   "url": "https://www.ssa.gov/history/briefhistory3.html"
+  },
+  {
+   "label": "SSA — 1972 Amendments legislative history",
+   "url": "https://www.ssa.gov/history/1972amend.html"
+  },
+  {
+   "label": "SSA — The Notch archive",
+   "url": "https://www.ssa.gov/history/notchfile1.html"
+  },
+  {
+   "label": "SSA — LBJ Medicare signing remarks",
+   "url": "https://www.ssa.gov/history/lbjstmts.html"
+  },
+  {
+   "label": "SSA — Ratio of covered workers to beneficiaries",
+   "url": "https://www.ssa.gov/history/ratios.html"
+  },
+  {
+   "label": "SSA — Life expectancy at 65 by cohort",
+   "url": "https://www.ssa.gov/history/lifeexpect.html"
+  },
+  {
+   "label": "DeWitt, Social Security Bulletin 70(4) — farm and domestic coverage 1950/1954",
+   "url": "https://www.ssa.gov/policy/docs/ssb/v70n4/v70n4p49.html"
+  },
+  {
+   "label": "Skolnik, “Private Pension Plans, 1950–74,” Social Security Bulletin",
+   "url": "https://www.ssa.gov/policy/docs/ssb/v39n6/v39n6p3.pdf"
+  },
+  {
+   "label": "CRS R41479 — Social Security spousal and survivor benefits",
+   "url": "https://www.everycrsreport.com/files/20190206_R41479_9dd58a12f19d5f8169be00c92b77272757011d84.html"
+  },
+  {
+   "label": "Reuther’s Treaty of Detroit",
+   "url": "https://en.wikipedia.org/wiki/Reuther%27s_Treaty_of_Detroit"
+  },
+  {
+   "label": "Lawyers, Guns & Money — Labor history: May 23, 1950",
+   "url": "https://www.lawyersgunsmoneyblog.com/2018/05/day-labor-history-may-23-1950"
+  },
+  {
+   "label": "LBJ Presidential Library — Medicare and Medicaid Act",
+   "url": "https://www.lbjlibrary.org/news-and-press/media-kits/medicare-and-medicaid"
+  },
+  {
+   "label": "CRS — ADEA legal overview",
+   "url": "https://www.everycrsreport.com/files/20100623_RL34652_9b42b12308b299998a4ac68411ef96babfb64c11.html"
+  },
+  {
+   "label": "CRS 97-479 — ADEA amendments of 1978 and 1986",
+   "url": "https://www.everycrsreport.com/reports/97-479.html"
+  },
+  {
+   "label": "PBGC — History",
+   "url": "https://www.pbgc.gov/about/who-we-are/history"
+  },
+  {
+   "label": "PBGC — Studebaker",
+   "url": "https://www.pbgc.gov/about/pbgc-pensions-studebaker"
+  },
+  {
+   "label": "ICI — Happy Birthday ERISA",
+   "url": "https://www.ici.org/viewpoints/view_14_HB_ERISA"
+  },
+  {
+   "label": "CRS 96-20 — IRA legislative history",
+   "url": "https://www.everycrsreport.com/reports/96-20.html"
+  },
+  {
+   "label": "PSCA — 401(k) history",
+   "url": "https://www.psca.org/node/242"
+  },
+  {
+   "label": "ASPPA — The “real” 401(k) Day",
+   "url": "https://www.asppa-net.org/news/2025/11/the-real-401k-day/"
+  },
+  {
+   "label": "Workforce — Rise and fall of employer-sponsored pension plans",
+   "url": "https://workforce.com/news/the-rise-and-fall-of-employer-sponsored-pension-plans"
+  },
+  {
+   "label": "EBRI — DB and DC participation, 1979 vs. 2017",
+   "url": "https://www.ebri.org/retirement/content/only-11-percent-of-us-private-sector-wage-and-salary-workers-participate-in-defined-benefit-pension-plans"
+  },
+  {
+   "label": "AARP — Founding days",
+   "url": "https://www.aarp.org/about-aarp/history/aarp-founding-days/"
+  },
+  {
+   "label": "Sun City, Arizona",
+   "url": "https://en.wikipedia.org/wiki/Sun_City,_Arizona"
+  },
+  {
+   "label": "Alliance for Retired Americans (NCSC history)",
+   "url": "https://en.wikipedia.org/wiki/Alliance_for_Retired_Americans"
+  },
+  {
+   "label": "National Women’s Hall of Fame — Maggie Kuhn",
+   "url": "https://www.womenofthehall.org/inductee/maggie-kuhn/"
+  },
+  {
+   "label": "National Archives — Civil Rights Act of 1964",
+   "url": "https://www.archives.gov/milestone-documents/civil-rights-act"
+  },
+  {
+   "label": "Federal Reserve History — Nixon ends gold convertibility",
+   "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"
+  },
+  {
+   "label": "Federal Reserve History — Oil Shock of 1973–74",
+   "url": "https://www.federalreservehistory.org/essays/oil-shock-of-1973-74"
+  },
+  {
+   "label": "Vanguard — 50 years of indexing",
+   "url": "https://corporate.vanguard.com/content/corporatesite/us/en/corp/articles/50-years-50-facts-indexing-since-1976.html"
+  },
+  {
+   "label": "Yardeni Research — S&P 500 bear market tables",
+   "url": "https://archive.yardeni.com/pub/sp500corrbeartables.pdf"
+  },
+  {
+   "label": "Stacker/KEYT — S&P 500 corrections and recovery times since 1950",
+   "url": "https://keyt.com/stacker-business-economy/2026/08/12/every-major-stock-market-correction-since-1950-and-how-long-recovery-took/"
+  },
+  {
+   "label": "FRED — Poverty rate, people 65 and over (Census)",
+   "url": "https://fred.stlouisfed.org/data/HSTPOVAR65YOBPPP"
+  },
+  {
+   "label": "FRED — U.S. consumer-price inflation (World Bank)",
+   "url": "https://fred.stlouisfed.org/data/FPCPITOTLZGUSA"
+  },
+  {
+   "label": "SSA — Full retirement age by year of birth",
+   "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+  },
+  {
+   "label": "Grimm, A Concise History of Retirement (draft), Chapter 4",
+   "url": "https://docs.google.com/document/d/1P0EMAca6c4jzB47BAsQLuZUq3Jdl3hvQ3nMszjFixXA"
+  }
+ ]
 }

@@ -9,23 +9,36 @@ const MOD = Object.fromEntries(MODS.map(m => [m.id, m]));
 const ERA_IDS = ["collapse", "codify", "climax", "crucible", "conception", "classical", "catastrophe"]; // course order: today, then back, then ahead
 const ENTRY_YEAR = 2010; // visitors arrive at the start of Collapse: today
 
+// Colors follow the legend on the author's hand-drawn master timeline: crashes red, money green, history blue, culture pink, technology orange, seeds brown.
 const TYPE = {
   legislation: { label: "Legislation", color: "var(--t-legislation)" },
   policy: { label: "Policy", color: "var(--t-policy)" },
   crisis: { label: "Market drop", color: "var(--t-crisis)" },
+  money: { label: "Money", color: "var(--t-money)" },
   movement: { label: "Social movement", color: "var(--t-movement)" },
-  context: { label: "Context", color: "var(--t-context)" },
+  history: { label: "History", color: "var(--t-history)" },
+  context: { label: "History", color: "var(--t-history)" },
+  culture: { label: "Culture", color: "var(--t-culture)" },
+  tech: { label: "Technology", color: "var(--t-tech)" },
   seed: { label: "Seed", color: "var(--t-seed)" },
   lens: { label: "Two-Person Lens", color: "var(--t-lens)" },
+  note: { label: "Author's note", color: "var(--t-note)" },
 };
 const LANES = [
   { id: "policy", label: "Law & policy", color: "var(--t-legislation)" },
-  { id: "markets", label: "Market drops", color: "var(--t-crisis)" },
+  { id: "markets", label: "Markets & money", color: "var(--t-crisis)" },
   { id: "movements", label: "Movements", color: "var(--t-movement)" },
-  { id: "context", label: "Context", color: "var(--t-context)" },
+  { id: "history", label: "History", color: "var(--t-history)" },
+  { id: "culture", label: "Culture & tech", color: "var(--t-culture)" },
   { id: "seeds", label: "Nine seeds", color: "var(--t-seed)" },
   { id: "lens", label: "Two lives", color: "var(--t-lens)" },
+  { id: "notes", label: "Author's notes", color: "var(--t-note)" },
 ];
+const ITEM = Object.fromEntries(D.items.map(i => [i.id, i]));
+const LINKS = D.links || [], THREADS = D.threads || [], MASTER = D.master || { legend: [], quotes: [] };
+const linksOf = id => LINKS.filter(l => l.from === id || l.to === id);
+const threadOf = id => THREADS.find(t => t.items.includes(id)) || null;
+const VAR_LABEL = { income: "Wealth & income", race: "Race & ethnicity", gender: "Sex & gender", education: "Education", job: "Job", place: "Place", immigration: "Immigration", longevity: "Longevity", generation: "Generation" };
 const LANE_ORDER = Object.fromEntries(LANES.map((l, i) => [l.id, i]));
 const STAGES = ["planted", "sprouting", "growing", "blooming", "harvest"];
 const eraColor = id => `var(--era-${id})`;
@@ -58,6 +71,8 @@ const Icon = {
   book: I(<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5zM4 19a2 2 0 0 1 2-2h13" />),
   mic: I(<g><rect x="9" y="3" width="6" height="11" rx="3" /><path d="M5 11a7 7 0 0 0 14 0M12 18v3" /></g>),
   info: I(<g><circle cx="12" cy="12" r="9" /><path d="M12 11v6M12 7.5h.01" /></g>),
+  pen: I(<path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />),
+  zoom: I(<g><circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3M11 8v6M8 11h6" /></g>),
 };
 
 /* ================================================================ MEDIA SERVICE */
@@ -156,20 +171,25 @@ function Marker({ it, x, x2, y, sel, onPick, fs }) {
   const c = TYPE[it.type] ? TYPE[it.type].color : "var(--t-policy)";
   const lab = trunc(itemLabel(it), LABEL_MAX);
   let shape, lx = x + 9;
-  if (it.lane === "markets") {
+  if (it.lane === "markets" && it.type !== "money") {
     const w = Math.max(6, x2 - x);
     shape = <g><rect x={x} y={y - 4} width={w} height={8} rx={2} style={{ fill: c }} /><path d={`M${x - 4} ${y - 9} h8 l-4 5z`} style={{ fill: c }} /></g>;
     lx = x + w + 6;
+  } else if (it.type === "money") {
+    shape = <g><circle cx={x} cy={y} r={5.5} style={{ fill: c }} /><text x={x} y={y + 3} textAnchor="middle" style={{ fill: "var(--kraft)", fontSize: 8, fontWeight: 800 }}>$</text></g>;
   } else if (it.type === "seed") {
-    shape = <g><path d={`M${x} ${y - 8} L${x + 8} ${y} L${x} ${y + 8} L${x - 8} ${y}Z`} style={{ fill: c }} /><text x={x} y={y + 3.5} textAnchor="middle" style={{ fill: "var(--kraft)", fontSize: 9, fontWeight: 800 }}>{it.seed}</text></g>;
+    // a seed in the ground, sprouting: brown with a green shoot, as on his master timeline
+    shape = <g><path d={`M${x} ${y - 7} q0 -5 4.5 -6.5 M${x} ${y - 7} q-1 -3 -3.5 -3.5`} style={{ fill: "none", stroke: "var(--t-sprout)", strokeWidth: 1.8, strokeLinecap: "round" }} /><circle cx={x} cy={y} r={7.5} style={{ fill: c }} /><text x={x} y={y + 3.5} textAnchor="middle" style={{ fill: "var(--kraft)", fontSize: 9, fontWeight: 800 }}>{it.seed}</text></g>;
     lx = x + 12;
+  } else if (it.type === "tech") {
+    shape = <path d={`M${x} ${y - 5.5} L${x + 5.5} ${y} L${x} ${y + 5.5} L${x - 5.5} ${y}Z`} style={{ fill: c }} />;
   } else if (it.type === "lens") {
     shape = <g style={{ fill: c }}><circle cx={x - 4} cy={y} r={4} /><circle cx={x + 4} cy={y} r={4} style={{ fillOpacity: .55 }} /></g>;
     lx = x + 11;
   } else if (it.type === "movement") {
     shape = <rect x={x - 4.5} y={y - 4.5} width={9} height={9} rx={2} style={{ fill: c }} />;
   } else {
-    const r = it.type === "context" ? 4 : 5;
+    const r = it.type === "history" || it.type === "culture" ? 4.2 : 5;
     shape = it.projected
       ? <circle cx={x} cy={y} r={r} style={{ fill: "var(--kraft)", stroke: c, strokeWidth: 1.8, strokeDasharray: "2 1.5" }} />
       : <circle cx={x} cy={y} r={r} style={{ fill: c }} />;
@@ -180,11 +200,28 @@ function Marker({ it, x, x2, y, sel, onPick, fs }) {
       onClick={() => onPick(it.id)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPick(it.id); } }}>
       <title>{aria}</title>
       <circle className="halo" cx={x} cy={y} r={10} style={{ fill: "transparent", stroke: "none" }} />
+      {it.master && <circle className="ring" cx={x} cy={y} r={it.type === "seed" ? 10.5 : 8} />}
       {shape}
       <text className="lab" x={lx} y={y + fs * .36} style={{ fill: "var(--kraft-ink)", fontSize: fs, fontWeight: sel ? 700 : 500 }}>{lab}</text>
     </g>
   );
 }
+
+// his bracketed notes, drawn as brackets with his words in a handwriting face
+function NoteMark({ it, x, x2, y, sel, onPick, fs }) {
+  const w = Math.max(14, x2 - x), c = it.color || "var(--t-note)";
+  const aria = `${yrs(it.year, it.endYear)}, author's note: ${it.title}`;
+  return (
+    <g className={"mk note" + (sel ? " sel" : "")} role="button" tabIndex={0} aria-label={aria} data-mk="1"
+      onClick={() => onPick(it.id)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPick(it.id); } }}>
+      <title>{aria}</title>
+      <rect className="halo" x={x - 4} y={y - fs - 8} width={Math.max(w, trunc(it.title, NOTE_MAX).length * fs * .62) + 8} height={fs + 16} rx={6} style={{ fill: "transparent", stroke: "none" }} />
+      <path d={`M${x} ${y - 3} v6 h${w} v-6`} style={{ fill: "none", stroke: c, strokeWidth: 1.6, strokeLinecap: "round" }} />
+      <text className="lab hand" x={x + 1} y={y - 5} style={{ fill: c, fontSize: fs + 1.5 }}>{trunc(it.title, NOTE_MAX)}</text>
+    </g>
+  );
+}
+const NOTE_MAX = 60;
 
 function useSize(ref) {
   const [s, setS] = useState({ w: window.innerWidth, h: Math.max(400, window.innerHeight - 110) });
@@ -196,7 +233,27 @@ function useSize(ref) {
   return s;
 }
 
-function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeom, navRef, welcome, setWelcome }) {
+// the arrows he drew between entries, shown for whichever entry is selected
+const LINK_COLOR = { seed: "var(--t-sprout)", echo: "var(--t-lens)", arrow: "var(--kraft-ink)" };
+function LinkCurves({ sel, pos }) {
+  return (
+    <g className="links" aria-hidden="true">
+      {linksOf(sel.id).map((l, i) => {
+        const a = pos[l.from], b = pos[l.to]; if (!a || !b) return null;
+        const c = LINK_COLOR[l.kind] || LINK_COLOR.arrow;
+        const dx = b.x - a.x, dy = b.y - a.y, len = Math.max(1, Math.hypot(dx, dy));
+        const bend = Math.min(90, 18 + len * .18) * (dy >= 0 ? -1 : 1);
+        const mx = (a.x + b.x) / 2 - dy / len * bend, my = (a.y + b.y) / 2 + dx / len * bend;
+        const tx = b.x - mx, ty = b.y - my, tl = Math.max(1, Math.hypot(tx, ty)), ux = tx / tl, uy = ty / tl;
+        const ex = b.x - ux * 11, ey = b.y - uy * 11;
+        const head = `M${ex - uy * 4} ${ey + ux * 4} L${b.x - ux * 9} ${b.y - uy * 9} L${ex + uy * 4} ${ey - ux * 4}`;
+        return <g key={i}><path d={`M${a.x} ${a.y} Q${mx} ${my} ${ex} ${ey}`} style={{ fill: "none", stroke: c, strokeWidth: 1.8, strokeDasharray: "5 4", strokeLinecap: "round" }} /><path d={head} style={{ fill: "none", stroke: c, strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round" }} /></g>;
+      })}
+    </g>
+  );
+}
+
+function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, setGeom, navRef, welcome, setWelcome }) {
   const stageRef = useRef(null);
   const size = useSize(stageRef);
   const phone = size.w < 700;
@@ -205,20 +262,21 @@ function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeo
   const LEAD_W = Math.round(Math.min(440, Math.max(300, size.w * (phone ? .9 : .32))));
   const CLOSE_W = Math.round(Math.min(980, Math.max(340, size.w * (phone ? 1 : .8))));
   const HEAD = phone ? 112 : 136;
-  const visible = useMemo(() => D.items.filter(it => layers[it.lane]), [layers]);
+  const visible = useMemo(() => D.items.filter(it => layers[it.lane] && (!layers.masterOnly || it.master)), [layers]);
   const ordered = useMemo(() => [...visible].sort((a, b) => a.year - b.year || LANE_ORDER[a.lane] - LANE_ORDER[b.lane]), [visible]);
 
   const layout = useMemo(() => {
     const charW = phone ? 5.6 : 6.1;
     const rowsByLane = {}, rowOf = {};
+    const NOTE_EXTRA = 9; // the notes lane needs room for his handwriting above each bracket
     LANES.forEach(l => {
-      if (!layers[l.id]) return;
-      const its = D.items.filter(i => i.lane === l.id).sort((a, b) => X(a.year) - X(b.year));
+      const its = visible.filter(i => i.lane === l.id).sort((a, b) => X(a.year) - X(b.year));
+      if (!its.length) return;
       const ends = [];
       its.forEach(it => {
         const x0 = X(it.year) - 10;
-        const bar = it.lane === "markets" ? Math.max(6, X(it.endYear || it.year) - X(it.year)) : 0;
-        const w = bar + 24 + trunc(itemLabel(it), LABEL_MAX).length * charW;
+        const bar = (it.lane === "markets" && it.type !== "money") || it.lane === "notes" ? Math.max(6, X(it.endYear || it.year) - X(it.year)) : 0;
+        const w = it.lane === "notes" ? Math.max(bar, trunc(it.title, NOTE_MAX).length * charW * 1.15) + 24 : bar + 24 + trunc(itemLabel(it), LABEL_MAX).length * charW;
         let r = ends.findIndex(e => e <= x0); if (r === -1) { r = ends.length; ends.push(0); }
         ends[r] = x0 + w; rowOf[it.id] = r;
       });
@@ -227,21 +285,22 @@ function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeo
     const SPH = layers.sp ? (phone ? 80 : 98) : 0, AXIS = 38, GAP = 10;
     const totalRows = Object.values(rowsByLane).reduce((a, b) => a + b, 0);
     const nl = Object.keys(rowsByLane).length;
-    const fixed = HEAD + AXIS + SPH + (layers.sp ? 26 : 6) + nl * GAP;
+    const fixed = HEAD + AXIS + SPH + (layers.sp ? 26 : 6) + nl * GAP + (rowsByLane.notes ? rowsByLane.notes * NOTE_EXTRA : 0);
     const rowH = Math.max(15, Math.min(23, Math.floor((size.h - fixed) / Math.max(1, totalRows))));
     let top = HEAD; const lanes = [], pos = {};
     LANES.forEach(l => {
-      if (!layers[l.id]) return;
-      const h = rowsByLane[l.id] * rowH + GAP;
+      if (!rowsByLane[l.id]) return;
+      const rh = rowH + (l.id === "notes" ? NOTE_EXTRA : 0);
+      const h = rowsByLane[l.id] * rh + GAP;
       lanes.push({ ...l, top, h });
-      D.items.filter(i => i.lane === l.id).forEach(it => {
-        pos[it.id] = { x: X(it.year), x2: X(it.endYear || it.year), y: top + GAP / 2 + rowOf[it.id] * rowH + rowH / 2 };
+      visible.filter(i => i.lane === l.id).forEach(it => {
+        pos[it.id] = { x: X(it.year), x2: X(it.endYear || it.year), y: top + GAP / 2 + rowOf[it.id] * rh + rh / 2 + (l.id === "notes" ? 4 : 0) };
       });
       top += h;
     });
     const spTop = top + (layers.sp ? 22 : 0), axisY = spTop + SPH + (layers.sp ? 6 : 4);
     return { lanes, pos, spTop, SPH, axisY, H: Math.max(size.h, axisY + AXIS), fs: rowH >= 18 ? 11 : 10 };
-  }, [layers, scale, size.h, phone]);
+  }, [visible, scale, size.h, phone, layers.sp]);
 
   useEffect(() => { setGeom({ OPEN_W: LEAD_W, CLOSE_W, scale, total: LEAD_W + scale.W + CLOSE_W }); }, [LEAD_W, CLOSE_W, scale]);
 
@@ -327,7 +386,7 @@ function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeo
     <div className="stage" ref={stageRef} style={{ "--sticky-left": welcome && !phone ? Math.min(466, size.w - 300) + "px" : "14px" }}>
       <div className="viewport" ref={viewportRef} tabIndex={-1} aria-label="Timeline of the history of retirement. Scroll sideways to move through time.">
         <div className="track" style={{ "--canvas-h": layout.H + "px" }}>
-          <LeadIn width={LEAD_W} toToday={() => navRef.current.today()} />
+          <LeadIn width={LEAD_W} toToday={() => navRef.current.today()} openSheet={openSheet} />
           <div className="canvas" style={{ width: W }}>
             <svg width={W} height={layout.H} role="img" aria-label="Timeline lanes">
               <defs>
@@ -363,8 +422,10 @@ function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeo
                   {[1871, 1930, 1990].map(y => <text key={y} x={X(y) + 4} y={layout.spTop - 4} style={{ fill: "var(--kraft-muted)", fontSize: 10, fontFamily: "var(--f-type)" }}>S&amp;P 500 (Shiller composite before 1957), January average, log scale · shaded = market drops</text>)}
                 </g>
               )}
-              {visible.map(it => layout.pos[it.id] && (
-                <Marker key={it.id} it={it} x={layout.pos[it.id].x} x2={layout.pos[it.id].x2} y={layout.pos[it.id].y} fs={layout.fs} sel={it.id === selId} onPick={pick} />
+              {sel && <LinkCurves sel={sel} pos={layout.pos} />}
+              {visible.map(it => layout.pos[it.id] && (it.lane === "notes"
+                ? <NoteMark key={it.id} it={it} x={layout.pos[it.id].x} x2={layout.pos[it.id].x2} y={layout.pos[it.id].y} fs={layout.fs} sel={it.id === selId} onPick={pick} />
+                : <Marker key={it.id} it={it} x={layout.pos[it.id].x} x2={layout.pos[it.id].x2} y={layout.pos[it.id].y} fs={layout.fs} sel={it.id === selId} onPick={pick} />
               ))}
               <line x1={0} x2={W} y1={axisY} y2={axisY} style={{ stroke: "var(--kraft-ink)", strokeOpacity: .5 }} />
               {ticks.map(t => (
@@ -407,13 +468,13 @@ function Stage({ layers, selId, pick, openModule, openSheet, viewportRef, setGeo
       </div>
       {welcome && <Welcome close={() => setWelcome(false)} openModule={openModule} openSheet={openSheet} nav={navRef} />}
       {!welcome && !sel && <button className="btn small about-chip" onClick={() => { setWelcome(true); navRef.current.today(); }}>{Icon.info}About this story</button>}
-      {sel && <Drawer sel={sel} idx={idx} total={ordered.length} step={step} close={() => pick(null)} openModule={openModule} openSheet={openSheet} />}
+      {sel && <Drawer sel={sel} idx={idx} total={ordered.length} step={step} go={go} close={() => pick(null)} openModule={openModule} openSheet={openSheet} />}
     </div>
   );
 }
 
 function Welcome({ close, openModule, openSheet, nav }) {
-  const n = D.items.filter(i => !["seeds", "lens"].includes(i.lane)).length;
+  const n = D.items.filter(i => !["seeds", "lens", "notes"].includes(i.lane)).length;
   const yearsOld = new Date().getFullYear() - 1889;
   return (
     <aside className="welcome" aria-label="Welcome">
@@ -435,6 +496,7 @@ function Welcome({ close, openModule, openSheet, nav }) {
             <button className="btn" onClick={() => { close(); nav.current.ahead(); }}>What's coming{Icon.right}</button>
           </div>
         </div>
+        <p className="lede" style={{ fontSize: 14.5 }}>The line began as a sheet of kraft paper: the author's hand-drawn master timeline. Everything on that sheet is here, ringed <span className="ring-demo" aria-hidden="true" /> and in his own words. <button className="linkish" onClick={() => openSheet("master")}>See the original</button></p>
         <div className="howto"><span>Scroll or drag sideways</span><span><kbd>←</kbd><kbd>→</kbd> keys</span><span>Click an era's name to open its chapter</span><span>Click any marker to read that moment</span></div>
       </div>
       <div className="w-foot">
@@ -445,7 +507,7 @@ function Welcome({ close, openModule, openSheet, nav }) {
   );
 }
 
-function LeadIn({ width, toToday }) {
+function LeadIn({ width, toToday, openSheet }) {
   return (
     <section className="opening scroll-y" style={{ width, overflowY: "auto" }} aria-label="The beginning">
       <div className="eyebrow">The beginning</div>
@@ -453,6 +515,13 @@ function LeadIn({ width, toToday }) {
       <p className="sub">For most of human history there was no word for it. People grew old inside families, guilds and congregations, and contribution changed shape instead of stopping.</p>
       <p className="lede" style={{ fontSize: 15.5 }}>Travel right to watch the idea get conceived, forged, perfected for one generation, codified, and come apart.</p>
       <div><button className="btn" onClick={toToday}>Back to today {Icon.right}</button></div>
+      <div className="master-card">
+        <button className="thumb" onClick={() => openSheet("master")} aria-label="Open the author's hand-drawn master timeline"><img src={MASTER.thumb} alt="" loading="lazy" /></button>
+        <div className="eyebrow">The author's master timeline</div>
+        <p className="hand" style={{ fontSize: 17, lineHeight: 1.3 }}>“{MASTER.quotes[0]}”</p>
+        <p style={{ fontSize: 13.5, color: "var(--kraft-muted)" }}>Drawn by hand on kraft paper before any of this was a website. Every entry on it is on this line, ringed, with his words. <button className="linkish" onClick={() => openSheet("master")}>See the original</button></p>
+        <div className="legend-dots">{MASTER.legend.filter(l => l.key !== "dates").map(l => <span key={l.key}><i style={{ background: l.color }} />{l.label}</span>)}</div>
+      </div>
     </section>
   );
 }
@@ -464,6 +533,7 @@ function Closing({ width, openModule, openSheet }) {
     ["course", "The course", "Schedule, grading, every assignment and its rubric."],
     ["media", "Podcasts & lectures", "Listen to and watch each era's episode and lecture."],
     ["index", "Every event", "The whole timeline as a list, era by era."],
+    ["master", "The master timeline", "The author's hand-drawn original, and where each note landed."],
   ];
   return (
     <section className="closing scroll-y" style={{ width, overflowY: "auto" }} aria-label="Correction and course materials">
@@ -483,14 +553,17 @@ function Closing({ width, openModule, openSheet }) {
   );
 }
 
-function Drawer({ sel, idx, total, step, close, openModule, openSheet }) {
+function Drawer({ sel, idx, total, step, go, close, openModule, openSheet }) {
   const t = TYPE[sel.type] || TYPE.policy;
   const lens = sel.lens ? D.lens.find(l => l.id === sel.lens) : null;
   const seed = sel.seed ? D.seeds.find(s => s.n === sel.seed) : null;
   const m = MOD[sel.module];
   const ref = useRef(null);
   useEffect(() => { if (ref.current) ref.current.scrollTop = 0; }, [sel.id]);
-  const panelFor = lens ? "lens" : { markets: "markets", movements: "movements", context: "context", seeds: "seeds" }[sel.lane] || "overview";
+  const panelFor = lens ? "lens" : { markets: "markets", movements: "movements", history: "history", culture: "culture", seeds: "seeds" }[sel.lane] || "overview";
+  const conns = linksOf(sel.id).map(l => ({ l, o: ITEM[l.from === sel.id ? l.to : l.from] })).filter(c => c.o);
+  const thread = threadOf(sel.id);
+  const isNote = sel.type === "note";
   return (
     <aside className="drawer" aria-label="Event detail" aria-live="polite">
       <div className="drawer-head">
@@ -499,6 +572,7 @@ function Drawer({ sel, idx, total, step, close, openModule, openSheet }) {
           <span className="tnum">{yrs(sel.year, sel.endYear)}</span>
           {sel.projected && <span>projected</span>}
           {m && <span>· {m.title}</span>}
+          {sel.master && <span className="ring-tag" title="On the author's hand-drawn master timeline"><span className="ring-demo" aria-hidden="true" />master timeline</span>}
         </div>
         <button className="icon-btn" onClick={close} aria-label="Close detail">{Icon.close}</button>
       </div>
@@ -514,9 +588,37 @@ function Drawer({ sel, idx, total, step, close, openModule, openSheet }) {
           </div>
         ) : (
           <>
-            <p className="txt">{sel.detail}</p>
+            {isNote ? <p className="txt" style={{ fontSize: 16 }}>{sel.detail}</p> : <p className="txt">{sel.detail}</p>}
             {sel.significance && <p className="why"><b>{seed ? "The seed in one line" : "Why it matters"}</b>{sel.significance}</p>}
           </>
+        )}
+        {sel.hand && (
+          <div className="master-block">
+            <div className="eyebrow">{isNote ? "His note, as written" : seed ? "Where he planted it" : "On the master timeline"}</div>
+            <p className="hand">{sel.hand}</p>
+            <button className="linkish" onClick={() => openSheet("master", "photo")}>See the hand-drawn original</button>
+          </div>
+        )}
+        {conns.length > 0 && (
+          <div className="conns">
+            <div className="eyebrow">His arrows connect this to</div>
+            {conns.map(({ l, o }) => (
+              <button key={o.id} className="conn" onClick={() => go(o.id)} style={{ "--lc": LINK_COLOR[l.kind] || LINK_COLOR.arrow }}>
+                <span className="dir" aria-hidden="true">{l.from === sel.id ? "→" : "←"}</span>
+                <span className="what">{itemLabel(o)}</span>
+                <span className="type tnum">{yrs(o.year, o.endYear)}</span>
+              </button>
+            ))}
+          </div>
+        )}
+        {thread && (
+          <div className="thread" style={{ "--tc": thread.color }}>
+            <div className="eyebrow">Thread · {thread.title}</div>
+            <p>{thread.summary}</p>
+            <div className="steps" role="group" aria-label={thread.title}>
+              {thread.items.map((id, i) => <button key={id} className={"stp" + (id === sel.id ? " cur" : "")} aria-current={id === sel.id ? "step" : undefined} onClick={() => go(id)}><span className="tnum">{i + 1} · {ITEM[id].year}</span><span>{trunc(ITEM[id].title, 44)}</span></button>)}
+            </div>
+          </div>
         )}
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {m && <button className="btn small primary" onClick={() => openModule(m.id, panelFor)}>Open {m.title}</button>}
@@ -750,16 +852,16 @@ function Quiz({ m }) {
 }
 
 function EvList({ list, kind, mid, onShow }) {
-  const key = { policy: "pol", markets: "mar", movements: "soc", context: "his" }[kind];
   return (
     <ul className="evlist">
       {list.map((e, i) => {
-        const itemId = `${mid}-${key}-${i}`, onLine = D.items.some(x => x.id === itemId);
+        const itemId = e.itemId, onLine = !!(itemId && ITEM[itemId]), t = TYPE[e.type];
         return (
           <li key={i}>
-            <div className="yr tnum">{yrs(e.year, e.endYear)}{e.decline && <span style={{ color: "var(--t-crisis)", marginLeft: 8 }}>{e.decline}</span>}</div>
+            <div className="yr tnum">{t && <span className="sq" style={{ background: t.color }} title={t.label} />}{yrs(e.year, e.endYear)}{e.decline && <span style={{ color: "var(--t-crisis)", marginLeft: 8 }}>{e.decline}</span>}{e.master && <span className="ring-tag" title="On the author's hand-drawn master timeline"><span className="ring-demo" aria-hidden="true" />master timeline</span>}</div>
             {onLine ? <button className="t" onClick={() => onShow(itemId)} title="Show on the timeline">{e.title || e.name}</button> : <div style={{ fontWeight: 700 }}>{e.title || e.name}</div>}
             <div className="d">{e.detail}</div>
+            {e.hand && <div className="hand-line hand">{e.hand}</div>}
             {(e.significance || e.retirementImpact) && <div className="s"><b>{kind === "markets" ? "For retirement: " : "Why it matters: "}</b>{e.significance || e.retirementImpact}</div>}
           </li>
         );
@@ -768,7 +870,7 @@ function EvList({ list, kind, mid, onShow }) {
   );
 }
 
-function moduleSheet(m, { openModule, showItem, close }) {
+function moduleSheet(m, { openModule, openSheet, showItem, close }) {
   const extra = D.lens.filter(l => l.module === m.id && l.source === "author");
   const P = [];
   P.push({ id: "overview", tab: "Overview", w: 620, cls: "scroll-y", node: (
@@ -803,11 +905,22 @@ function moduleSheet(m, { openModule, showItem, close }) {
         </div>); })}
     </>
   ) });
-  [["policy", "policyEvents", "Law & policy", "var(--t-legislation)", 520], ["markets", "marketDrops", "Market drops", "var(--t-crisis)", 460], ["movements", "socialMovements", "Social movements", "var(--t-movement)", 460], ["context", "historicalContext", "Historical context", "var(--t-context)", 460]].forEach(([k, f, t, c, w]) => {
+  [["policy", "policyEvents", "Law & policy", "var(--t-legislation)", 520], ["markets", "marketDrops", "Markets & money", "var(--t-crisis)", 460], ["movements", "socialMovements", "Social movements", "var(--t-movement)", 460], ["history", "historicalContext", "History", "var(--t-history)", 460], ["culture", "cultureEvents", "Culture & technology", "var(--t-culture)", 440]].forEach(([k, f, t, c, w]) => {
     if (m[f] && m[f].length) P.push({ id: k, tab: "Events", w, cls: "scroll-y", label: t, node: (<><h3><span className="sq" style={{ background: c }} />{t}</h3><EvList list={m[f]} kind={k} mid={m.id} onShow={showItem} /></>) });
   });
-  P.push({ id: "inequities", tab: "Who was left out", w: 520, cls: "scroll-y", node: (
-    <><h3>Inequities: who was served and who was left out</h3>{m.inequities.map(q => <div key={q.title}><div style={{ fontWeight: 700, marginBottom: 4 }}>{q.title}</div><p style={{ color: "var(--ink-2)" }}>{q.detail}</p></div>)}</>
+  P.push({ id: "inequities", tab: "Who was left out", w: 540, cls: "scroll-y", node: (
+    <>
+      <h3>Inequities: who was served and who was left out</h3>
+      <p className="ineq-note">Each entry names the variables at work. Hold more than one at a time, and read these against <button className="linkish" onClick={() => openSheet("course", "ineq-funnel")}>the author's inequity funnel</button> and <button className="linkish" onClick={() => openSheet("course", "ineq-frame")}>how this course engages inequity</button>.</p>
+      {m.inequities.map(q => (
+        <div key={q.title} className="ineq">
+          <div className="chips">{(q.vars || []).map(v => <span key={v} className="chip var" data-v={v}>{VAR_LABEL[v] || v}</span>)}</div>
+          <div style={{ fontWeight: 700, marginBottom: 4 }}>{q.title}</div>
+          <p style={{ color: "var(--ink-2)" }}>{q.detail}</p>
+        </div>
+      ))}
+      <div className="prompt"><b>Before you move on. </b>Pick one entry and name a second variable at work that it does not lead with. What changes when you lead with that one, and what does the author's distinction between equality of opportunity and equality of outcome do to your reading?</div>
+    </>
   ) });
   P.push({ id: "study", tab: "Study guide", w: 540, cls: "scroll-y", node: (
     <><h3>Learning objectives</h3><ul className="objs">{m.learningObjectives.map((o, i) => <li key={i}>{o}</li>)}</ul>
@@ -984,7 +1097,7 @@ function SeedChart() {
           <thead><tr><th style={{ textAlign: "left" }}>Seed</th>{GARDEN_COLS.map(c => <th key={c}><span style={{ display: "block", height: 4, borderRadius: 2, background: eraColor(c), margin: "0 auto 5px", width: 26 }} />{MOD[c].title}<span className="y">{MOD[c].years}</span></th>)}</tr></thead>
           <tbody>{D.seeds.map(s => (
             <tr key={s.n}>
-              <th scope="row"><span style={{ color: "var(--t-seed)", fontFamily: "var(--f-display)", fontStretch: "125%", fontWeight: 800, marginRight: 8 }}>{s.n}</span>{s.name}<span className="g">{s.group} · takes root {s.year}</span></th>
+              <th scope="row"><span style={{ color: "var(--t-seed)", fontFamily: "var(--f-display)", fontStretch: "125%", fontWeight: 800, marginRight: 8 }}>{s.n}</span>{s.name}<span className="g">{s.group} · on the master timeline {s.year}</span></th>
               {GARDEN_COLS.map(c => { const st = stageOf(s.n, c), on = cell.seed === s.n && cell.mod === c; return <td key={c}><button className={"gcell" + (on ? " sel" : "")} aria-pressed={on} aria-label={`${s.name} in ${MOD[c].title}: ${st ? st.stage : "not present"}`} onClick={() => setCell({ seed: s.n, mod: c })}><StageGlyph stage={st ? st.stage : null} /></button></td>; })}
             </tr>))}</tbody>
         </table>
@@ -1003,8 +1116,9 @@ function seedsSheet() {
     const trail = GARDEN_COLS.map(mid => ({ mid, st: MOD[mid].seeds.find(x => x.seed === s.n) }));
     P.push({ id: "seed-" + s.n, tab: "The nine seeds", w: 440, cls: "scroll-y seed-panel", label: s.name, node: (
       <>
-        <div style={{ display: "flex", gap: 12, alignItems: "baseline" }}><span className="seednum" style={{ fontSize: 40 }}>{s.n}</span><div><h4 style={{ fontSize: 20 }}>{s.name}</h4><div className="eyebrow">{s.group} seed · takes root {s.year}</div></div></div>
+        <div style={{ display: "flex", gap: 12, alignItems: "baseline" }}><span className="seednum" style={{ fontSize: 40 }}>{s.n}</span><div><h4 style={{ fontSize: 20 }}>{s.name}</h4><div className="eyebrow">{s.group} seed · on the master timeline {s.year}</div></div></div>
         <p className="short">{s.short}</p>
+        {s.hand && <div className="master-block"><div className="eyebrow">Where he planted it, in his hand</div><p className="hand">{s.hand}</p></div>}
         <p className="root">{s.root}</p>
         <h3 style={{ marginTop: 6 }}>From today back to the root, then ahead</h3>
         <ul className="seed-trail">{trail.map(({ mid, st }) => <li key={mid}><StageGlyph stage={st ? st.stage : null} size={26} /><div><b>{MOD[mid].title}</b> <span className="type" style={{ fontSize: 12, color: "var(--muted)" }}>{st ? st.stage : "not yet present"}</span>{st && <div style={{ marginTop: 2 }}>{st.detail}</div>}</div></li>)}</ul>
@@ -1013,11 +1127,82 @@ function seedsSheet() {
   });
   return P;
 }
+function Funnel({ F }) {
+  // four levels narrowing to the mouth, where poverty waits
+  const W = 420, top = 18, lh = 58, gap = 6;
+  const widths = [400, 330, 260, 190];
+  return (
+    <div className="funnel">
+      <svg viewBox={`0 0 ${W} ${top + 4 * (lh + gap) + 70}`} role="img" aria-label="The inequity funnel: wealth, gender, ethnicity, education, narrowing to poverty">
+        {F.levels.map((l, i) => {
+          const w0 = widths[i], w1 = widths[i + 1] || 150, y = top + i * (lh + gap);
+          return (
+            <g key={l.id}>
+              <path d={`M${(W - w0) / 2} ${y} H${(W + w0) / 2} L${(W + w1) / 2} ${y + lh} H${(W - w1) / 2} Z`} className="lvl" data-v={l.id} />
+              <text x={W / 2} y={y + 25} textAnchor="middle" className="n">{l.n}</text>
+              <text x={W / 2} y={y + 45} textAnchor="middle" className="t">{l.name}</text>
+            </g>
+          );
+        })}
+        <path d={`M${(W - 150) / 2 + 18} ${top + 4 * (lh + gap)} h114 v26 h-114 Z`} className="mouth" />
+        <text x={W / 2} y={top + 4 * (lh + gap) + 18} textAnchor="middle" className="m">POVERTY</text>
+        <text x={W / 2} y={top + 4 * (lh + gap) + 48} textAnchor="middle" className="s">the most equal-opportunity player in the world</text>
+      </svg>
+    </div>
+  );
+}
 function courseSheet(openModule) {
   const C = D.course;
   const wColors = ["var(--accent)", "var(--t-seed)", "var(--t-legislation)", "var(--t-movement)", "var(--t-crisis)"];
   const P = [];
   P.push({ id: "about", tab: "About", w: 640, cls: "scroll-y", node: (<><h3>Course description</h3><p className="big">{C.description}</p><h3>By the end, students will be able to</h3><ul className="objs">{C.outcomes.map((o, i) => <li key={i}>{o}</li>)}</ul></>) });
+  const Q = C.inequity;
+  if (Q) {
+    P.push({ id: "ineq-frame", tab: "Engaging inequity", w: 600, cls: "scroll-y", label: "Engaging inequity: the frame", node: (
+      <><h3>Engaging inequity · the frame</h3>{Q.framing.map((t, i) => <p key={i} className="big">{t}</p>)}
+        <blockquote className="author-words">“{Q.authorWords}”<cite>— {D.meta.byline}</cite></blockquote></>
+    ) });
+    if (Q.funnel) {
+      const F = Q.funnel;
+      P.push({ id: "ineq-funnel", tab: "Engaging inequity", w: 900, cls: "scroll-y", label: "The inequity funnel", node: (
+        <>
+          <h3>{F.title} · the author's working theory</h3>
+          <div className="funnel-grid">
+            <div>
+              <p className="big">{F.intro}</p>
+              <Funnel F={F} />
+              <p className="hand" style={{ fontSize: 19, lineHeight: 1.3, color: "var(--paper-ink)", marginTop: 8 }}>“{F.mouth}”</p>
+              <p className="eyebrow" style={{ marginTop: 10 }}>Contributing factors, under the four levels</p>
+              <div className="chips">{F.contributing.map(v => <span key={v} className="chip var" data-v={v}>{VAR_LABEL[v] || v}</span>)}</div>
+            </div>
+            <ol className="levels">
+              {F.levels.map(l => (
+                <li key={l.id} className="level" data-v={l.id}>
+                  <div className="lv-head"><span className="chip var" data-v={l.id}>{l.n} · {l.name}</span></div>
+                  <blockquote className="his">“{l.his}”</blockquote>
+                  <p className="ev"><b>Against the data. </b>{l.evidence}</p>
+                </li>
+              ))}
+              <li className="level caveat"><p className="ev">{F.caveat}</p></li>
+            </ol>
+          </div>
+        </>
+      ) });
+    }
+    P.push({ id: "ineq-principles", tab: "Engaging inequity", w: 560, cls: "scroll-y", label: "Seven working principles", node: (
+      <><h3>Seven working principles</h3><ol className="principles">{Q.principles.map(p => <li key={p.title}><b>{p.title}</b><p>{p.text}</p></li>)}</ol></>
+    ) });
+    P.push({ id: "ineq-data", tab: "Engaging inequity", w: 860, cls: "scroll-y", label: "Nine variables, with data", node: (
+      <><h3>Nine variables · one checked data point each</h3>
+        <p style={{ color: "var(--ink-2)", maxWidth: "70ch" }}>Every “Who was left out” entry in the units is tagged with these. Each card gives one measurement a student can cite and check, and the units where that variable does the most work.</p>
+        <div className="var-grid">{Q.variables.map(v => (
+          <div key={v.id} className="var-card"><span className="chip var" data-v={v.id}>{v.label}</span><p className="fact">{v.fact}</p><p className="src">{v.source}</p><p className="units">On the timeline: {v.where}</p></div>
+        ))}</div></>
+    ) });
+    P.push({ id: "ineq-questions", tab: "Engaging inequity", w: 580, cls: "scroll-y", label: "Discussion: opportunity and outcome", node: (
+      <><h3>Discussion · equality of opportunity, equality of outcome</h3><ol className="qs">{Q.questions.map((q, i) => <li key={i}>{q}</li>)}</ol></>
+    ) });
+  }
   P.push({ id: "schedule", tab: "Schedule", w: 820, cls: "scroll-y", node: (
     <><h3>Fifteen weeks</h3><table className="sched"><thead><tr><th>When</th><th>Unit</th><th>Focus</th><th>Assignment</th></tr></thead>
       <tbody>{C.schedule.map(s => { const m = s.module ? MOD[s.module] : null; return <tr key={s.weeks}><td>{s.weeks}</td><td>{m ? <button onClick={() => openModule(m.id, "overview")}>{m.unit}. {m.title}</button> : "—"}</td><td>{s.focus}</td><td>{m ? <button style={{ fontWeight: 500 }} onClick={() => openModule(m.id, "assignment")}>{m.assignment.title}</button> : ""}</td></tr>; })}</tbody></table></>
@@ -1061,6 +1246,58 @@ function mediaSheet(openModule, openInstructor) {
   P.push({ id: "post", tab: "Instructors", w: 520, cls: "scroll-y", node: <InstructorPanel /> });
   return P;
 }
+/* ---------------- the author's hand-drawn master timeline */
+function PhotoStrip() {
+  const [zoom, setZoom] = useState(false);
+  return (
+    <div className={"photo-wrap" + (zoom ? " zoom" : "")}>
+      <div className="photo-tools"><span className="eyebrow">The original · scroll sideways to read it · ringed entries on the line come from here</span><button className="btn small" onClick={() => setZoom(z => !z)} aria-pressed={zoom}>{Icon.zoom}{zoom ? "Fit to height" : "Zoom in"}</button></div>
+      <img src={MASTER.photo} alt="The author's hand-drawn master timeline on kraft paper, running from 1602 to today, with seeds, crashes, money, history, culture and technology in colored ink" />
+    </div>
+  );
+}
+function MasterList({ showItem }) {
+  const list = D.items.filter(i => i.master).sort((a, b) => a.year - b.year || LANE_ORDER[a.lane] - LANE_ORDER[b.lane]);
+  return (
+    <>
+      <h3>Where each note landed · {list.length} entries</h3>
+      <ul className="evlist">{list.map(it => { const t = TYPE[it.type] || TYPE.policy; return (
+        <li key={it.id}>
+          <div className="yr tnum"><span className="pill" style={{ background: t.color, marginRight: 8 }}>{t.label}</span>{yrs(it.year, it.endYear)}</div>
+          <button className="t" onClick={() => showItem(it.id)} title="Show on the timeline">{it.lane === "notes" ? it.title : itemLabel(it)}</button>
+          {it.hand && it.lane !== "notes" && <div className="hand-line hand">{it.hand}</div>}
+        </li>); })}</ul>
+    </>
+  );
+}
+function ThreadPanel({ t, showItem }) {
+  return (
+    <div className="thread" style={{ "--tc": t.color, border: 0, padding: 0, background: "transparent" }}>
+      <h3>Thread · {t.title}</h3>
+      <p className="big">{t.summary}</p>
+      <div className="steps">{t.items.map((id, i) => <button key={id} className="stp" onClick={() => showItem(id)}><span className="tnum">{i + 1} · {ITEM[id].year}</span><span>{ITEM[id].title}</span></button>)}</div>
+    </div>
+  );
+}
+function masterSheet(showItem, showMasterOnly) {
+  const P = [];
+  P.push({ id: "about", tab: "The original", w: 560, cls: "scroll-y", node: (
+    <>
+      <h3>The author's hand-drawn master timeline</h3>
+      <p className="big">Before any of this was a website, it was one long sheet of kraft paper. {D.meta.byline} drew the whole story on it by hand: dates along the bottom, the nine seeds where he saw them take root, crashes in red, money in green, history in blue, culture in pink, technology in orange, and arrows between the moments that explain each other.</p>
+      <p className="big">Everything on that sheet is on the interactive line. Entries that come from it carry a thin ring, and his words for each appear in the entry's “On the master timeline” note. His bracketed notes have a lane of their own, in his hand.</p>
+      <div className="legend-grid">{MASTER.legend.map(l => <span key={l.key}><i style={{ background: l.color }} />{l.label}</span>)}</div>
+      <div className="quotes">{MASTER.quotes.map((q, i) => <p key={i} className="hand">{q}</p>)}<div className="eyebrow" style={{ marginTop: 4 }}>Written across the top of the sheet</div></div>
+      <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}><button className="btn primary" onClick={showMasterOnly}>Show only his entries on the line {Icon.right}</button></div>
+      <p className="eyebrow">Scroll right for the photograph, then every note and where it landed →</p>
+    </>
+  ) });
+  P.push({ id: "photo", tab: "Photograph", cls: "photo", label: "The photograph", node: <PhotoStrip /> });
+  P.push({ id: "landed", tab: "Every note", w: 560, cls: "scroll-y", node: <MasterList showItem={showItem} /> });
+  THREADS.forEach(t => P.push({ id: "t-" + t.id, tab: "Threads", w: 500, cls: "scroll-y", label: t.title, node: <ThreadPanel t={t} showItem={showItem} /> }));
+  return P;
+}
+
 function IndexPanel({ era, showItem }) {
   const [open, setOpen] = useState(null);
   const items = D.items.filter(i => eraOfYear(i.year) === era).sort((a, b) => a.year - b.year || LANE_ORDER[a.lane] - LANE_ORDER[b.lane]);
@@ -1086,10 +1323,10 @@ function App() {
   const media = useMediaService();
   const viewportRef = useRef(null), navRef = useRef({ today() {}, beginning() {}, ahead() {} });
   const [geom, setGeom] = useState(null);
-  const [layers, setLayers] = useState({ policy: true, markets: true, movements: true, context: true, seeds: true, lens: true, sp: true });
+  const [layers, setLayers] = useState({ policy: true, markets: true, movements: true, history: true, culture: true, seeds: true, lens: true, notes: true, sp: true, masterOnly: false });
   const [selId, setSelId] = useState(null);
   const [welcome, setWelcome] = useState(true);
-  const [sheet, setSheet] = useState(() => { try { const m = location.hash.match(/^#module-(\w+)$/); return m && MOD[m[1]] ? { type: "module", id: m[1], panel: "overview", k: 1 } : null; } catch (e) { return null; } });
+  const [sheet, setSheet] = useState(() => { try { const h = location.hash; const m = h.match(/^#module-(\w+)$/); if (m && MOD[m[1]]) return { type: "module", id: m[1], panel: "overview", k: 1 }; const t = h.match(/^#(seeds|course|media|index|master)$/); return t ? { type: t[1], k: 1 } : null; } catch (e) { return null; } });
   const [ins, setIns] = useState(false), [layersOpen, setLayersOpen] = useState(false);
 
   const pick = useCallback(id => { setSelId(id); if (id) setWelcome(false); }, []);
@@ -1098,7 +1335,7 @@ function App() {
   const closeSheet = useCallback(() => { setSheet(null); setHash("timeline"); setTimeout(() => viewportRef.current && viewportRef.current.focus({ preventScroll: true }), 0); }, []);
   const showItem = useCallback(id => {
     const it = D.items.find(i => i.id === id); if (!it) return;
-    setLayers(l => (l[it.lane] ? l : { ...l, [it.lane]: true })); setSheet(null); setHash("timeline"); pick(id);
+    setLayers(l => ({ ...l, [it.lane]: true, masterOnly: l.masterOnly && !it.master ? false : l.masterOnly })); setSheet(null); setHash("timeline"); pick(id);
   }, [pick]);
 
   useEffect(() => {
@@ -1120,11 +1357,12 @@ function App() {
     if (sheet.type === "module") {
       const m = MOD[sheet.id], pv = prevMod(m.id), nx = nextMod(m.id);
       sheetEl = <Sheet key={m.id + sheet.k} band={bandOf(m.id)} eyebrow={`Unit ${m.unit} · ${m.role} · ${m.years}`} title={m.title} onClose={closeSheet} start={sheet.panel}
-        panels={moduleSheet(m, { openModule, showItem, close: closeSheet })}
+        panels={moduleSheet(m, { openModule, openSheet, showItem, close: closeSheet })}
         nav={<>{pv && <button className="icon-btn" aria-label={`Previous: ${pv.title}`} title={pv.title} onClick={() => openModule(pv.id, "overview")}>{Icon.left}</button>}{nx && <button className="icon-btn" aria-label={`Next: ${nx.title}`} title={nx.title} onClick={() => openModule(nx.id, "overview")}>{Icon.right}</button>}</>} />;
     } else if (sheet.type === "seeds") sheetEl = <Sheet key={"s" + sheet.k} band="var(--t-seed)" eyebrow="Sowing and reaping" title="The nine seeds" onClose={closeSheet} start={sheet.panel} panels={seedsSheet()} />;
     else if (sheet.type === "course") sheetEl = <Sheet key={"c" + sheet.k} band="var(--accent)" eyebrow="For students and instructors" title="The course" onClose={closeSheet} start={sheet.panel} panels={courseSheet(openModule)} />;
     else if (sheet.type === "media") sheetEl = <Sheet key={"m" + sheet.k} band="var(--t-lens)" eyebrow="Listen and watch" title="Podcasts & lectures" onClose={closeSheet} start={sheet.panel} panels={mediaSheet(openModule, () => setIns(true))} />;
+    else if (sheet.type === "master") sheetEl = <Sheet key={"mt" + sheet.k} band="var(--t-note)" eyebrow="In the author's hand" title="The master timeline" onClose={closeSheet} start={sheet.panel} panels={masterSheet(showItem, () => { setLayers(l => ({ ...l, masterOnly: true, notes: true, seeds: true })); closeSheet(); pick(null); navRef.current.today(); })} />;
     else if (sheet.type === "index") sheetEl = <Sheet key={"i" + sheet.k} band="var(--kraft-ink)" eyebrow="The whole line as a list" title="Every event" onClose={closeSheet} start={sheet.panel || "collapse"} panels={indexSheet(showItem)} />;
   }
 
@@ -1137,6 +1375,7 @@ function App() {
             <button onClick={() => navRef.current.today()}><span>Today</span></button>
             <button onClick={() => openSheet("index")}>{Icon.list}<span className="hide-sm">Every event</span></button>
             <button onClick={() => openSheet("seeds")}>{Icon.seed}<span className="hide-sm">Nine seeds</span></button>
+            <button onClick={() => openSheet("master")}>{Icon.pen}<span className="hide-sm">Master timeline</span></button>
             <button onClick={() => openSheet("course")}>{Icon.book}<span>Course</span></button>
             <button onClick={() => openSheet("media")}>{Icon.mic}<span className="hide-sm">Podcasts & lectures</span></button>
             <button aria-expanded={layersOpen} onClick={() => setLayersOpen(o => !o)}>{Icon.layers}<span className="hide-sm">Layers</span></button>
@@ -1148,11 +1387,12 @@ function App() {
               {[...LANES, { id: "sp", label: "S&P 500 line", color: "var(--kraft-ink)" }].map(l => (
                 <label key={l.id} htmlFor={"layer-" + l.id}><input id={"layer-" + l.id} type="checkbox" checked={!!layers[l.id]} onChange={() => setLayers(s => ({ ...s, [l.id]: !s[l.id] }))} /><span className="sw" style={{ background: l.color }} />{l.label}</label>
               ))}
+              <label htmlFor="layer-master" className="master-toggle"><input id="layer-master" type="checkbox" checked={!!layers.masterOnly} onChange={() => setLayers(s => ({ ...s, masterOnly: !s.masterOnly }))} /><span className="ring-demo" aria-hidden="true" /><span>Only what's on the author's master timeline</span></label>
               <button className="btn small" style={{ justifySelf: "end" }} onClick={() => setLayersOpen(false)}>Done</button>
             </div>
           )}
         </header>
-        <Stage layers={layers} selId={selId} pick={pick} openModule={openModule} openSheet={openSheet} viewportRef={viewportRef} setGeom={setGeom} navRef={navRef} welcome={welcome} setWelcome={setWelcome} />
+        <Stage layers={layers} selId={selId} pick={pick} go={showItem} openModule={openModule} openSheet={openSheet} viewportRef={viewportRef} setGeom={setGeom} navRef={navRef} welcome={welcome} setWelcome={setWelcome} />
         <Minimap viewportRef={viewportRef} geom={geom} />
       </div>
       {sheetEl}

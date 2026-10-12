@@ -97,6 +97,19 @@ def guide_html():
         parts.append(f'<tr><td><b>{E(g["component"])}</b></td><td>{g["weight"]}%</td><td>{E(g["detail"])}</td></tr>')
     parts.append('</tbody></table><p>Grade scale: ' + " · ".join(f'{E(s["grade"])} {E(s["range"])}' for s in C["scale"]) + '</p>')
     parts.append('<h3>How to use the course site each week</h3><ol>' + "".join(f"<li>{E(h)}</li>" for h in C["howToUse"]) + f'</ol><h3>Sources and integrity</h3><p>{E(C["integrity"])}</p></section>')
+    Q = C.get("inequity")
+    if Q:
+        F = Q.get("funnel")
+        parts.append(f'<section class="chap ui"><h3 style="margin-top:0">{E(Q["title"])}</h3>' + "".join(f'<p style="font-family:Newsreader,serif;font-size:11.2pt">{E(t)}</p>' for t in Q["framing"])
+                     + f'<blockquote style="font-size:11pt">“{E(Q["authorWords"])}”<br><span class="eyebrow">— {E(D["meta"]["byline"])}</span></blockquote>')
+        if F:
+            parts.append(f'<h3>{E(F["title"])}: the author’s working theory</h3><p>{E(F["intro"])}</p><table><thead><tr><th style="width:12%">Level</th><th style="width:34%">In his words</th><th>Against the data</th></tr></thead><tbody>'
+                         + "".join(f'<tr><td><b>{l["n"]}. {E(l["name"])}</b></td><td><i>{E(l["his"])}</i></td><td>{E(l["evidence"])}</td></tr>' for l in F["levels"])
+                         + f'<tr><td><b>The mouth</b></td><td colspan="2"><i>{E(F["mouth"])}</i></td></tr></tbody></table><p>{E(F["caveat"])}</p>')
+        parts.append('<h3>Seven working principles</h3><ol>' + "".join(f'<li><b>{E(p["title"])}.</b> {E(p["text"])}</li>' for p in Q["principles"]) + '</ol>')
+        parts.append('<h3>Nine variables, one checked data point each</h3><table><thead><tr><th style="width:14%">Variable</th><th>Data point</th><th style="width:26%">Source</th></tr></thead><tbody>'
+                     + "".join(f'<tr><td><b>{E(v["label"])}</b></td><td>{E(v["fact"])}</td><td>{E(v["source"])}</td></tr>' for v in Q["variables"]) + '</tbody></table>')
+        parts.append('<h3>Discussion: equality of opportunity, equality of outcome</h3><ol>' + "".join(f"<li>{E(q)}</li>" for q in Q["questions"]) + '</ol></section>')
     parts.append('<section class="chap ui"><h3 style="margin-top:0">Course-wide projects</h3>')
     for p in C["projects"]:
         w = f'{p["weight"]}% of grade' if p["weight"] else "part of the capstone"

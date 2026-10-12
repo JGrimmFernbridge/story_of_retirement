@@ -1,649 +1,667 @@
 {
-  "id": "codify",
-  "number": 5,
-  "title": "Codify",
-  "years": "1980–2010",
-  "definition": "cod·i·fy (verb) the standardization of something",
-  "tagline": "The word stayed. The thing it described was quietly replaced.",
-  "bigQuestion": "When the anomaly ended, what did America standardize in its place—and who was handed the risk?",
-  "overview": "By 1980, the book argues, retirement had looked like it worked for thirty years, so America codified it. But what was standardized was not the pooled, guaranteed arrangement of the golden age. In 1981 the IRS issued rules that let workers save part of their pay before tax through Section 401(k), Congress opened IRAs to every worker, and a new political language—Ronald Reagan’s “government is the problem”—recast collective arrangements as dependence. In 1980 active participants in private defined-benefit plans outnumbered those in defined-contribution plans 30.1 million to 18.9 million; by 2010 the figures were 17.2 million and 73.4 million.\n\nGrimm calls this the Great Risk Transfer: investment, longevity, and inflation risk moved from institutions to individuals and was sold as freedom—control, portability, choice. An industry grew to manage the transfer; mutual-fund assets rose from about $135 billion in 1980 to $11.8 trillion in 2010. Meanwhile Social Security was repaired in 1983 by taxing some benefits and raising the full retirement age to 67.\n\nThree crashes—1987, 2000–02, and 2007–09—tested the new system on the people now carrying its risk. This is the era, the book says, when all nine seeds are in full bloom. Your job is to weigh the case against the 401(k) model alongside the evidence its defenders would offer.",
-  "learningObjectives": [
-    "Trace the legal and political steps—from Section 401(k) and ERTA through the 1983 Social Security amendments, the Roth IRA, and the Pension Protection Act—by which the defined-contribution model became the standard.",
-    "Analyze the Great Risk Transfer by identifying which risks (investment, longevity, inflation, behavioral) moved from employers to workers.",
-    "Evaluate distributional evidence on access to plans, account balances, and the tax benefits of retirement saving across income and racial groups.",
-    "Assess how the 1987, 2000–02, and 2007–09 market declines affected workers at different ages under a defined-contribution system.",
-    "Construct and critique arguments for and against the book’s claim that the 401(k) era replaced retirement with a counterfeit."
-  ],
-  "policyEvents": [
-    {
-      "year": 1981,
-      "title": "Economic Recovery Tax Act (ERTA)",
-      "type": "legislation",
-      "detail": "Signed by President Reagan on August 13, 1981, at his California ranch, ERTA cut marginal income-tax rates and opened IRAs to every worker, raising the annual limit to the lesser of $2,000 or 100 percent of earnings ($2,250 for a worker with a nonworking spouse). IRA participation rose quickly afterward.",
-      "significance": "Tax policy began treating every worker as an individual saver—Individualism (seed 9) written into the code in its arrival year."
-    },
-    {
-      "year": 1981,
-      "title": "IRS issues 401(k) regulations",
-      "type": "policy",
-      "detail": "Section 401(k) had taken effect January 1, 1980, but employers hesitated until the IRS issued regulations on November 10, 1981, clarifying that employees could defer part of their salary before tax. Benefits consultant Ted Benna’s firm, the Johnson Companies, adopted an early plan in 1981, and many large employers’ plans began operating in January 1982.",
-      "significance": "The administrative date many call the 401(k)’s birthday; historians of the provision note it was not designed to replace pensions—which is exactly what the book says it came to do."
-    },
-    {
-      "year": 1983,
-      "title": "Social Security Amendments of 1983",
-      "type": "legislation",
-      "detail": "Signed April 20, 1983, after the Greenspan Commission reported in January 1983 that the retirement trust fund could run out of money as early as August 1983, the law made up to half of benefits taxable above $25,000 (single) or $32,000 (joint) of income, delayed a COLA, covered new federal employees, and accelerated payroll-tax increases. It also raised the full retirement age in two stages from 65 to 67, beginning with people born in 1938 and fully phased in for those born in 1960 or later.",
-      "significance": "The first time Washington moved the retirement age—quietly loosening 65 = Old and Done (seed 3) by statute while the culture kept the number."
-    },
-    {
-      "year": 1984,
-      "title": "Retirement Equity Act",
-      "type": "legislation",
-      "detail": "The law lowered the minimum age for pension-plan participation from 25 to 21, required a spouse’s written consent before a worker could waive survivor benefits, and stopped counting a one-year maternity or paternity leave as a break in service. The Older Women’s League advocated for it.",
-      "significance": "A rare repair to the one-earner “design specification,” acknowledging that women’s security had depended on husbands’ choices."
-    },
-    {
-      "year": 1986,
-      "title": "Tax Reform Act of 1986",
-      "type": "legislation",
-      "detail": "TRA ’86 imposed a $7,000 annual cap on pre-tax 401(k) deferrals beginning in 1987, tightened nondiscrimination testing, required faster vesting, and limited deductible IRA contributions for workers covered by employer plans above income thresholds. The share of tax filers with wage income making deductible IRA contributions fell from 18.6 percent in 1985 to 4.2 percent by 1995.",
-      "significance": "Shows how sensitive individual saving is to tax design—and how quickly voluntary participation falls when incentives change."
-    },
-    {
-      "year": 1997,
-      "title": "Taxpayer Relief Act: the Roth IRA",
-      "type": "legislation",
-      "detail": "Signed by President Clinton on August 5, 1997, the law created the Roth IRA, effective January 1, 1998: contributions are made after tax and qualified withdrawals are tax-free. It also raised income limits for deductible traditional IRAs and allowed penalty-free withdrawals for higher education and first-home purchases.",
-      "significance": "Another individual account, another tax choice for the saver to optimize—the system grew more complex as it grew more personal."
-    },
-    {
-      "year": 2001,
-      "title": "Economic Growth and Tax Relief Reconciliation Act (EGTRRA)",
-      "type": "legislation",
-      "detail": "Signed June 7, 2001, EGTRRA raised the 401(k) deferral limit from $11,000 in 2002 to $15,000 in 2006, raised the IRA limit in steps to $5,000 by 2008, added “catch-up” contributions for savers 50 and older, authorized Roth 401(k) contributions beginning in 2006, and created a nonrefundable “saver’s credit” of up to $1,000 for lower-income contributors.",
-      "significance": "Higher limits mostly help those who can already save the maximum; the saver’s credit was a modest attempt to reach those who could not."
-    },
-    {
-      "year": 2003,
-      "title": "Medicare Modernization Act: Part D",
-      "type": "legislation",
-      "detail": "Signed December 8, 2003, the law created a voluntary outpatient prescription-drug benefit, Medicare Part D, beginning January 1, 2006. Under the 2006 standard design, beneficiaries paid the full cost of drugs between $2,250 in total spending and $3,600 in out-of-pocket costs—the coverage gap known as the “doughnut hole.”",
-      "significance": "The health leg of the stool expanded, but through a market of private plans that retirees had to compare and choose among themselves."
-    },
-    {
-      "year": 2005,
-      "title": "Bush’s personal-accounts proposal",
-      "type": "policy",
-      "detail": "After his 2004 reelection, President George W. Bush made voluntary personal retirement accounts within Social Security his top domestic priority, pressing the case in his 2005 State of the Union and on national tours. Public disapproval of his handling of Social Security rose from 48 to 64 percent by June, and by October Bush acknowledged the effort had failed.",
-      "significance": "The high-water mark of Individualism (seed 9): Social Security was the one leg of the stool the public refused to convert into an individual account."
-    },
-    {
-      "year": 2006,
-      "title": "Pension Protection Act",
-      "type": "legislation",
-      "detail": "Signed August 17, 2006, the PPA made it easier for employers to enroll workers in 401(k) plans automatically and protected fiduciaries who invest non-directing participants in “qualified default investment alternatives,” such as target-date or balanced funds.",
-      "significance": "A tacit admission that the do-it-yourself model needed defaults to work: the system began quietly making choices for savers it had said were in control."
-    }
-  ],
-  "marketDrops": [
-    {
-      "year": 1980,
-      "endYear": 1982,
-      "name": "The Volcker-era bear market",
-      "decline": "−27.1% (S&P 500, Nov. 28, 1980 – Aug. 12, 1982)",
-      "detail": "As inflation peaked at 13.5 percent in 1980 and the Federal Reserve tightened to break it, stocks fell for nearly two years. The S&P 500 regained its prior high by November 1982, launching a long bull market.",
-      "retirementImpact": "The first 401(k) plans opened near a market bottom, so early participants experienced the model at its most flattering."
-    },
-    {
-      "year": 1987,
-      "name": "Black Monday",
-      "decline": "−22.6% in one day (Dow, Oct. 19, 1987); −33.5% (S&P 500, Aug. 25 – Dec. 4, 1987)",
-      "detail": "The Dow fell 508 points, or 22.6 percent, on October 19, 1987—still its largest one-day percentage loss. The Fed promised liquidity the next morning, and stocks surpassed their pre-crash highs in less than two years.",
-      "retirementImpact": "A fast recovery reinforced the Market Growth seed (4): crashes looked like buying opportunities to anyone with decades left to wait."
-    },
-    {
-      "year": 2000,
-      "endYear": 2002,
-      "name": "The dot-com crash",
-      "decline": "−49.1% (S&P 500, Mar. 24, 2000 – Oct. 9, 2002); Nasdaq −78%",
-      "detail": "The Nasdaq Composite peaked at 5,048.62 on March 10, 2000, and fell 78 percent by October 2002; the S&P 500 lost nearly half its value. The S&P did not fully recover until May 2007—months before the next crash began.",
-      "retirementImpact": "Workers in their 50s lost years of accumulation just as they entered their final saving decade, and Enron employees learned what concentration in employer stock could do."
-    },
-    {
-      "year": 2007,
-      "endYear": 2009,
-      "name": "The Global Financial Crisis",
-      "decline": "−56.8% (S&P 500, Oct. 9, 2007 – Mar. 9, 2009)",
-      "detail": "The S&P 500 lost more than half its value in 17 months, and in October 2008 CBO Director Peter Orszag told Congress that American workers had lost more than $2 trillion in retirement savings over the previous 15 months. The index did not regain its 2007 closing high until March 2013.",
-      "retirementImpact": "The defining test of the Great Risk Transfer: the book’s “Two Clocks” portraits show a 60-year-old who did everything right losing her plan at exactly the wrong moment."
-    }
-  ],
-  "socialMovements": [
-    {
-      "year": 1980,
-      "name": "Older Women’s League (OWL)",
-      "detail": "Founded by Tish Sommers and Laurie Shields after an October 1980 White House mini-conference on older women in Des Moines, OWL organized around the economic and retirement security of midlife and older women. It successfully advocated for the Retirement Equity Act of 1984.",
-      "significance": "Named the gap the one-earner design left for divorced, widowed, and caregiving women, and won a statutory repair."
-    },
-    {
-      "year": 1983,
-      "endYear": 1994,
-      "name": "The “Notch Baby” campaign",
-      "detail": "From the early 1980s, people born in 1917–1921 organized against benefits that, after the 1977 amendments, were lower than those of people born just before them; more than 100 bills were introduced, but none became law. In December 1994 a congressionally created commission concluded that the benefits were equitable and that no remedy was warranted.",
-      "significance": "A grievance about formula design became a durable movement—proof of how personally Americans now experienced Social Security as a promise."
-    },
-    {
-      "year": 2005,
-      "name": "The fight over personal accounts",
-      "detail": "Opposition to President Bush’s 2005 personal-accounts plan united congressional Democrats, divided Republicans, and grew as the president campaigned: Gallup found disapproval of his handling of Social Security rising from 48 to 64 percent between the State of the Union and June. The effort was abandoned by the fall.",
-      "significance": "Public resistance drew a line around Social Security as a pooled, guaranteed program even as private retirement became almost entirely individual."
-    }
-  ],
-  "inequities": [
-    {
-      "title": "Upside-down tax benefits",
-      "detail": "Because deductions are worth more at higher tax rates and higher earners contribute more, the top fifth of earners received about 70 percent of the tax benefits from new defined-contribution contributions and almost 60 percent of IRA tax benefits, according to a 2004 Urban–Brookings Tax Policy Center analysis. CBO estimates for 2019 found roughly 60 percent of the benefit went to the top fifth of households and about 1.5 percent to the bottom fifth."
-    },
-    {
-      "title": "Access depends on your job",
-      "detail": "In 2007, 61.5 percent of workers in the top earnings quartile were offered a defined-contribution plan and 53.9 percent participated; in the bottom quartile, 29.7 percent were offered one and 17.0 percent participated. A system built on employer sponsorship replicates the Two Americas (seed 7)."
-    },
-    {
-      "title": "The median is not the model",
-      "detail": "In 2007, before the crash, 62.4 percent of households headed by someone aged 55–64 had any retirement account, and the median balance among those that did was $100,000—far short of what industry rules of thumb said a household needed. Nearly four in ten near-retirement households had no account at all."
-    },
-    {
-      "title": "The racial wealth gap after the crash",
-      "detail": "Pew Research found that median household net worth fell 16 percent for white households, 53 percent for Black households, and 66 percent for Hispanic households from 2005 to 2009. By 2009 the median white household held 20 times the wealth of the median Black household ($113,149 vs. $5,677) and 18 times that of the median Hispanic household."
-    },
-    {
-      "title": "Longer lives, smaller balances",
-      "detail": "Individual accounts must be stretched over an individual lifespan, and in 1990 a woman reaching 65 could expect about 19.6 more years versus 15.3 for a man. Women who interrupted paid work for caregiving entered the DC era with fewer years of contributions, while needing their savings to last longer."
-    }
-  ],
-  "historicalContext": [
-    {
-      "year": 1981,
-      "title": "Reagan, Thatcher, and the new individualism",
-      "detail": "Reagan’s first inaugural declared that “in this present crisis, government is not the solution to our problem; government is the problem.” In a 1987 interview with Woman’s Own, Margaret Thatcher said “there is no such thing as society”—a line she later complained was quoted without her point that people also owe duties to their neighbors."
-    },
-    {
-      "year": 1980,
-      "endYear": 2010,
-      "title": "The mutual-fund boom",
-      "detail": "Mutual-fund assets grew from $134.8 billion across 564 funds in 1980 to $11.8 trillion across more than 7,500 funds in 2010. Defined-contribution plan assets grew from $162 billion to $3.8 trillion over the same span."
-    },
-    {
-      "year": 1994,
-      "title": "Contract with America",
-      "detail": "Released September 27, 1994, the House Republican platform included a “Senior Citizens Fairness Act” to raise the Social Security earnings limit, repeal the 1993 increase in the taxation of benefits, and create tax incentives for private long-term-care insurance."
-    },
-    {
-      "year": 2001,
-      "title": "Enron’s collapse",
-      "detail": "At the end of 2000, 62 percent of the assets in Enron’s 401(k) plan were invested in Enron stock. Shares that traded above $80 in January 2001 were worth less than 70 cents by January 2002, after the company filed for bankruptcy on December 2, 2001."
-    },
-    {
-      "year": 2001,
-      "title": "China joins the WTO",
-      "detail": "The World Trade Organization approved China’s accession on November 10, 2001, accelerating the global competition the book links to the end of American manufacturing hegemony and the geographic stability that had anchored lifelong employment."
-    },
-    {
-      "year": 2007,
-      "endYear": 2009,
-      "title": "The Great Recession",
-      "detail": "The recession ran from December 2007 to June 2009, the longest since World War II at the time; Lehman Brothers failed in September 2008, unemployment peaked at 10 percent in October 2009, and household net worth fell by about $14 trillion."
-    }
-  ],
-  "seeds": [
-    {
-      "seed": 1,
-      "stage": "blooming",
-      "detail": "Boundaries no longer needed explicit exclusions: they now ran through who worked for an employer that offered a plan, who earned enough to contribute, and who held wealth to fall back on. The 2009 racial wealth gap—20 to 1 between white and Black median households—shows how earlier exclusions compounded."
-    },
-    {
-      "seed": 2,
-      "stage": "blooming",
-      "detail": "Government remained deeply involved but changed roles—from provider to tax subsidizer and rule-writer for private accounts: ERTA, TRA ’86, the Roth IRA, EGTRRA, and the PPA. It also rescued and trimmed Social Security in 1983 and refused to privatize it in 2005."
-    },
-    {
-      "seed": 3,
-      "stage": "blooming",
-      "detail": "The 1983 amendments began moving the full retirement age to 67 and the ADEA ended most mandatory retirement in 1986, yet 65 remained the cultural endpoint—and Medicare eligibility stayed at 65. The book says this era codified age 65."
-    },
-    {
-      "seed": 4,
-      "stage": "blooming",
-      "detail": "With the 401(k), the belief that markets reliably rise became the engine of private retirement. Quick recoveries after 1982 and 1987 seemed to confirm it; the 2000–02 and 2007–09 declines of roughly 49 and 57 percent tested it on people with no time left to wait."
-    },
-    {
-      "seed": 5,
-      "stage": "blooming",
-      "detail": "The book argues this era codified leisure as the escape and work as something to flee. Financial marketing sold “your number” as the price of a golf-and-grandchildren retirement that, Grimm writes, most savers would never be able to fund."
-    },
-    {
-      "seed": 6,
-      "stage": "blooming",
-      "detail": "The 1990s bull market and the dot-com mania revived speculation as a path to retirement: the Nasdaq peaked at 5,048.62 in March 2000 and then fell 78 percent by October 2002."
-    },
-    {
-      "seed": 7,
-      "stage": "blooming",
-      "detail": "Access to the new system tracked income: in 2007 top-quartile earners were more than three times as likely as bottom-quartile earners to participate in a defined-contribution plan. The Two Americas now divided those with accounts from those without."
-    },
-    {
-      "seed": 8,
-      "stage": "blooming",
-      "detail": "The Promise reached full flower and began to wither in the same era: defined-benefit plans fell from about 170,000 in 1985 to about 47,000 in 2010. For workers, the shift felt less like a policy change than a broken covenant."
-    },
-    {
-      "seed": 9,
-      "stage": "blooming",
-      "detail": "Individualism arrives in 1981—the IRS’s 401(k) rules, universal IRAs, and Reagan’s inaugural—and blooms within a decade. The book’s summary: it converts systemic failure into personal failure. “The plan didn’t fail you. You failed the plan.”"
-    }
-  ],
-  "twoPersonLens": {
-    "year": 2010,
-    "older": {
-      "born": 1950,
-      "headline": "Still time to panic",
-      "text": "Born in 1950, she was 31 when the IRS issued the rules that made the 401(k) usable, and she spent her career as the system changed underneath her—from a pension promised by the company to an account she was told to manage herself. She did everything right: thirty-plus years of work, steady contributions, a portfolio that grew through the bull markets of the 1990s. She had a number, close enough that retiring at her full retirement age of 66 felt like a plan. Then, in her late fifties, the market fell 57 percent. She lost savings not because she was reckless but because she was exactly where the system told her to be—fully invested, trusting the model—when the model failed. She’s still working, because the math doesn’t close."
-    },
-    "younger": {
-      "born": 1990,
-      "headline": "Already improvising",
-      "text": "Born in 1990, he has never known a world without the 401(k). He was eleven when Enron’s employees watched their retirement accounts collapse with the company’s stock, and a teenager when the longest recession since World War II began. Now 20, he enters a labor market where unemployment recently peaked at 10 percent, carrying student debt that shapes what any first job can offer. The wealth-building decade earlier generations used to lay a foundation has been lost at the start—not to bad choices, but to timing. His full retirement age is 67, his employer offers an account rather than a pension, and his planning app tells him to save more than he earns. He has moved past grief into improvisation."
-    },
-    "irony": "The 60-year-old still has time to panic; the 20-year-old has already moved past grief into improvisation—and neither was ever asked who gave them the dream."
+ "id": "codify",
+ "number": 5,
+ "title": "Codify",
+ "years": "1980–2010",
+ "definition": "cod·i·fy (verb) the standardization of something",
+ "tagline": "The word stayed. The thing it described was quietly replaced.",
+ "bigQuestion": "When the anomaly ended, what did America standardize in its place—and who was handed the risk?",
+ "overview": "By 1980, the book argues, retirement had looked like it worked for thirty years, so America codified it. But what was standardized was not the pooled, guaranteed arrangement of the golden age. In 1981 the IRS issued rules that let workers save part of their pay before tax through Section 401(k), Congress opened IRAs to every worker, and a new political language—Ronald Reagan’s “government is the problem”—recast collective arrangements as dependence. In 1980 active participants in private defined-benefit plans outnumbered those in defined-contribution plans 30.1 million to 18.9 million; by 2010 the figures were 17.2 million and 73.4 million.\n\nGrimm calls this the Great Risk Transfer: investment, longevity, and inflation risk moved from institutions to individuals and was sold as freedom—control, portability, choice. An industry grew to manage the transfer; mutual-fund assets rose from about $135 billion in 1980 to $11.8 trillion in 2010. Meanwhile Social Security was repaired in 1983 by taxing some benefits and raising the full retirement age to 67.\n\nThree crashes—1987, 2000–02, and 2007–09—tested the new system on the people now carrying its risk. This is the era, the book says, when all nine seeds are in full bloom. Your job is to weigh the case against the 401(k) model alongside the evidence its defenders would offer.",
+ "learningObjectives": [
+  "Trace the legal and political steps—from Section 401(k) and ERTA through the 1983 Social Security amendments, the Roth IRA, and the Pension Protection Act—by which the defined-contribution model became the standard.",
+  "Analyze the Great Risk Transfer by identifying which risks (investment, longevity, inflation, behavioral) moved from employers to workers.",
+  "Evaluate distributional evidence on access to plans, account balances, and the tax benefits of retirement saving across income and racial groups.",
+  "Assess how the 1987, 2000–02, and 2007–09 market declines affected workers at different ages under a defined-contribution system.",
+  "Construct and critique arguments for and against the book’s claim that the 401(k) era replaced retirement with a counterfeit."
+ ],
+ "policyEvents": [
+  {
+   "year": 1981,
+   "title": "Economic Recovery Tax Act (ERTA)",
+   "type": "legislation",
+   "detail": "Signed by President Reagan on August 13, 1981, at his California ranch, ERTA cut marginal income-tax rates and opened IRAs to every worker, raising the annual limit to the lesser of $2,000 or 100 percent of earnings ($2,250 for a worker with a nonworking spouse). IRA participation rose quickly afterward.",
+   "significance": "Tax policy began treating every worker as an individual saver—Individualism (seed 9) written into the code in its arrival year."
   },
-  "keyTerms": [
-    {
-      "term": "Defined-contribution (DC) plan",
-      "definition": "A retirement plan, such as a 401(k), in which contributions go into an individual account; the eventual benefit depends on contributions and investment returns, and the worker bears the risk."
-    },
-    {
-      "term": "401(k) plan",
-      "definition": "A DC plan named for the tax-code section added in 1978 that lets employees defer part of their salary before tax, often with an employer match."
-    },
-    {
-      "term": "The Great Risk Transfer",
-      "definition": "Grimm’s term for the shift of investment, longevity, and inflation risk from employers’ pooled pensions to individual workers’ accounts, presented to workers as freedom and choice."
-    },
-    {
-      "term": "Counterfeit (the book’s usage)",
-      "definition": "The book’s charge that the individual account kept the name “retirement” while sharing none of the pooled-risk, guaranteed-income substance of what it replaced."
-    },
-    {
-      "term": "Full retirement age (FRA)",
-      "definition": "The age at which Social Security pays an unreduced benefit. The 1983 amendments raised it gradually from 65 to 67 for people born in 1960 or later."
-    },
-    {
-      "term": "Roth IRA",
-      "definition": "An individual retirement account created in 1997 that is funded with after-tax dollars and allows tax-free qualified withdrawals."
-    },
-    {
-      "term": "Automatic enrollment",
-      "definition": "A plan design that enrolls workers in a 401(k) by default unless they opt out. The Pension Protection Act of 2006 made it safer for employers to adopt."
-    },
-    {
-      "term": "Qualified default investment alternative (QDIA)",
-      "definition": "A default investment, such as a target-date or balanced fund, into which a plan may place participants who make no choice, with fiduciary protection for the employer."
-    },
-    {
-      "term": "“Your number”",
-      "definition": "The industry’s single dollar figure for a comfortable retirement. The book argues it turned a social question—how do we care for the aging?—into a personal one: did you save enough?"
-    }
-  ],
-  "keyFigures": [
-    {
-      "name": "Ted Benna",
-      "role": "Pennsylvania benefits consultant often called the “father of the 401(k)” for designing an early plan with pre-tax employee contributions and an employer match at the Johnson Companies in 1981. He later became a critic, saying the plan “was never intended to be what it is today.”"
-    },
-    {
-      "name": "Ronald Reagan",
-      "role": "President from 1981 to 1989 whose first inaugural framed government as the problem and who signed ERTA (1981) and the 1983 Social Security rescue—an embodiment of both the individualist turn and the limits of it."
-    },
-    {
-      "name": "Margaret Thatcher",
-      "role": "British prime minister from 1979 to 1990 whose 1987 remark that “there is no such thing as society” became shorthand, often stripped of her context, for the era’s individualism."
-    },
-    {
-      "name": "Alan Greenspan",
-      "role": "Chaired the National Commission on Social Security Reform, whose January 1983 report led to the 1983 amendments that taxed some benefits and raised the full retirement age to 67."
-    }
-  ],
-  "primarySources": [
-    {
-      "title": "Ronald Reagan, First Inaugural Address",
-      "year": 1981,
-      "source": "Avalon Project, Yale Law School",
-      "url": "https://avalon.law.yale.edu/20th_century/reagan1.asp",
-      "why": "Read the full sentence around “government is the problem,” including “in this present crisis,” and ask how the qualifier changes its meaning."
-    },
-    {
-      "title": "Report of the National Commission on Social Security Reform (Greenspan Commission)",
-      "year": 1983,
-      "source": "SSA History",
-      "url": "https://www.ssa.gov/history/reports/gspan.html",
-      "why": "Note how the commission framed the financing crisis and which burdens it chose to spread across workers, retirees, and the future."
-    },
-    {
-      "title": "The Republican Contract with America",
-      "year": 1994,
-      "source": "American Presidency Project, UC Santa Barbara",
-      "url": "https://www.presidency.ucsb.edu/documents/the-republican-contract-with-america",
-      "why": "Read the Senior Citizens Fairness Act: what does it assume about older Americans, work, and private insurance?"
-    },
-    {
-      "title": "Pension Protection Act implementation release",
-      "year": 2006,
-      "source": "U.S. Department of Labor",
-      "url": "https://www.dol.gov/newsroom/releases/ebsa/ebsa20060926",
-      "why": "Look at how the government justified automatic enrollment and default investments—and what that implies about the do-it-yourself model."
-    },
-    {
-      "title": "Private Pension Plan Bulletin Historical Tables and Graphs, 1975–2023",
-      "year": 2010,
-      "source": "U.S. Department of Labor, EBSA",
-      "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf",
-      "why": "Use Tables E1, E7, and E10 to measure the shift from DB to DC plans in plans, participants, and assets."
-    }
-  ],
-  "discussionQuestions": [
-    "The book calls the 401(k) a counterfeit that kept the name “retirement.” Which features of a defined-benefit pension did it drop, and which (portability, ownership, inheritability) did it add? Is “counterfeit” the right word?",
-    "Test the book’s argument: defenders of the 401(k) model point out that elderly poverty fell from 15.7 percent in 1980 to 8.9 percent in 2010, that DC accounts are portable for workers who change jobs, and that the PPA’s automatic enrollment raised participation. Using data, weigh these points against the book’s claim that the era codified a catastrophe.",
-    "Social Security survived two very different reform efforts in this era—a bipartisan rescue in 1983 and a failed privatization push in 2005. Why did one succeed and the other fail, and what does that say about the public’s view of pooled versus individual risk?",
-    "Tax incentives for retirement saving flow mostly to higher earners. Is that an unavoidable feature of tax-based incentives or a design choice? Propose one change and predict its effects.",
-    "Enron employees held 62 percent of their 401(k) assets in company stock. Was that a failure of individual judgment, of plan design, or of the system’s premise that workers should manage their own risk?",
-    "Compare the two people in the 2010 Two-Person Lens. Which risks did each face that a defined-benefit pension would have absorbed, and which would remain even with a pension?"
-  ],
-  "assignment": {
-    "title": "Following the Risk: A DB-to-DC Data Investigation",
-    "type": "Data investigation with chart and policy memo",
-    "prompt": "Investigate the Great Risk Transfer with official data. Using the Department of Labor’s Private Pension Plan Bulletin Historical Tables (Tables E1, E7, E10) and at least one Survey of Consumer Finances source (Federal Reserve or a CRS/GAO summary), build two charts: (1) active participants in DB vs. DC plans, 1975–2010; and (2) median retirement-account balances or account ownership by age or income group. Then test one of the book’s claims against your data—for example, its statement that two-thirds of workers had DB plans in the early 1980s (compare EBRI’s 38 percent of private wage and salary workers in 1979 and DOL’s participant counts), or its claim about median balances for workers aged 55–64. Finally, write a memo to a congressional staffer explaining which risks moved, to whom, and what one policy could do about it.",
-    "deliverable": "Two original charts with source notes, a 300-word methods-and-data appendix, and a 1,000–1,200 word policy memo citing at least four sources (at least three official).",
-    "points": 100,
-    "rubric": [
-      {
-        "criterion": "Data accuracy & sourcing",
-        "points": 30,
-        "exemplary": "Pulls correct figures from official tables, documents table numbers and definitions (e.g., active participants vs. workers), and notes limitations such as double-counting of workers in multiple plans.",
-        "proficient": "Figures accurate and sourced; minor gaps in definitions or limitations.",
-        "developing": "Some figures inaccurate or loosely sourced; definitions confused.",
-        "beginning": "Data largely inaccurate, unsourced, or missing."
-      },
-      {
-        "criterion": "Charts & visual communication",
-        "points": 20,
-        "exemplary": "Charts are clear, honest (appropriate axes and scales), labeled with units and sources, and each makes one point a reader grasps in seconds.",
-        "proficient": "Charts accurate and labeled with minor design issues.",
-        "developing": "Charts cluttered, mislabeled, or only loosely tied to the argument.",
-        "beginning": "Charts missing or misleading."
-      },
-      {
-        "criterion": "Testing the book’s claim",
-        "points": 25,
-        "exemplary": "Precisely states one claim, reconciles differing measures, and reaches a fair, evidence-based judgment—whether confirming, qualifying, or refuting it.",
-        "proficient": "Tests a claim with relevant data; judgment reasonable but reconciliation of measures is partial.",
-        "developing": "Restates the claim with limited or mismatched data.",
-        "beginning": "No genuine test of a claim."
-      },
-      {
-        "criterion": "Policy memo",
-        "points": 25,
-        "exemplary": "Identifies specific risks (investment, longevity, inflation, behavioral) and who bears them; recommends one feasible policy with trade-offs; concise, professional prose.",
-        "proficient": "Clear analysis and recommendation; trade-offs only partly addressed.",
-        "developing": "Analysis general; recommendation vague or disconnected from data.",
-        "beginning": "Memo missing key elements or unclear."
-      }
-    ]
+  {
+   "year": 1981,
+   "title": "IRS issues 401(k) regulations",
+   "type": "policy",
+   "detail": "Section 401(k) had taken effect January 1, 1980, but employers hesitated until the IRS issued regulations on November 10, 1981, clarifying that employees could defer part of their salary before tax. Benefits consultant Ted Benna’s firm, the Johnson Companies, adopted an early plan in 1981, and many large employers’ plans began operating in January 1982.",
+   "significance": "The administrative date many call the 401(k)’s birthday; historians of the provision note it was not designed to replace pensions—which is exactly what the book says it came to do."
   },
-  "quiz": [
-    {
-      "q": "Section 401(k) was added to the tax code in 1978. What happened on November 10, 1981?",
-      "options": [
-        "Congress repealed defined-benefit pensions",
-        "The IRS issued regulations allowing pre-tax salary deferrals, unlocking widespread adoption",
-        "The first Roth IRA was opened",
-        "ERISA was signed"
-      ],
-      "answer": 1,
-      "explain": "The IRS regulations clarified that employees could defer salary before tax, and many large employers launched plans in January 1982."
-    },
-    {
-      "q": "Which change did the 1983 Social Security Amendments make?",
-      "options": [
-        "Created automatic COLAs",
-        "Gradually raised the full retirement age from 65 to 67",
-        "Created Medicare Part D",
-        "Lowered the early retirement age to 60"
-      ],
-      "answer": 1,
-      "explain": "The amendments phased in an FRA of 67 for people born in 1960 or later and also made up to half of benefits taxable for higher-income beneficiaries."
-    },
-    {
-      "q": "Between 1980 and 2010, how did active participants in private DB and DC plans change (DOL data)?",
-      "options": [
-        "DB rose from 18.9 to 73.4 million",
-        "Both stayed roughly constant",
-        "DB fell from 30.1 to 17.2 million while DC rose from 18.9 to 73.4 million",
-        "DC fell by half"
-      ],
-      "answer": 2,
-      "explain": "DOL Table E7 shows the reversal at the heart of the Great Risk Transfer."
-    },
-    {
-      "q": "What share of Enron’s 401(k) plan assets was invested in Enron stock at the end of 2000?",
-      "options": [
-        "About 10 percent",
-        "About 25 percent",
-        "About 62 percent",
-        "100 percent"
-      ],
-      "answer": 2,
-      "explain": "About 62 percent of plan assets were in company stock, which lost nearly all its value by early 2002."
-    },
-    {
-      "q": "What did the Pension Protection Act of 2006 encourage?",
-      "options": [
-        "Converting Social Security into personal accounts",
-        "Automatic enrollment in 401(k) plans with protected default investments",
-        "Abolishing IRAs",
-        "Mandatory defined-benefit pensions for large employers"
-      ],
-      "answer": 1,
-      "explain": "The PPA eased automatic enrollment and created a fiduciary safe harbor for qualified default investment alternatives."
-    }
-  ],
-  "sources": [
-    {
-      "label": "CRS 96-20 — IRA legislative history (ERTA, TRA ’86, Roth)",
-      "url": "https://www.everycrsreport.com/reports/96-20.html"
-    },
-    {
-      "label": "Reagan Library blog — ERTA of 1981",
-      "url": "https://reagan.blogs.archives.gov/2016/08/15/reaganomics-the-economic-recovery-tax-act-of-1981"
-    },
-    {
-      "label": "PSCA — 401(k) history",
-      "url": "https://www.psca.org/node/242"
-    },
-    {
-      "label": "PSCA — 401(k) contribution-limit history (TRA ’86)",
-      "url": "https://www.psca.org/node/237"
-    },
-    {
-      "label": "ASPPA — The “real” 401(k) Day",
-      "url": "https://www.asppa-net.org/news/2025/11/the-real-401k-day/"
-    },
-    {
-      "label": "History.com — Ted Benna and the 401(k)",
-      "url": "https://www.history.com/articles/meet-the-man-who-invented-modern-retirement-401k"
-    },
-    {
-      "label": "401(k) — history and Pension Protection Act",
-      "url": "https://en.wikipedia.org/wiki/401(k)"
-    },
-    {
-      "label": "SSA — 1983 Amendments legislative history",
-      "url": "https://www.ssa.gov/history/1983amend.html"
-    },
-    {
-      "label": "SSA — Greenspan Commission report",
-      "url": "https://www.ssa.gov/history/reports/gspan.html"
-    },
-    {
-      "label": "SSA — Brief History of Social Security",
-      "url": "https://www.ssa.gov/history/briefhistory3.html"
-    },
-    {
-      "label": "SSA — Full retirement age by year of birth",
-      "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
-    },
-    {
-      "label": "SSA — The Notch archive",
-      "url": "https://www.ssa.gov/history/notchfile1.html"
-    },
-    {
-      "label": "SSA — Life expectancy at 65 by cohort",
-      "url": "https://www.ssa.gov/history/lifeexpect.html"
-    },
-    {
-      "label": "SSA — Ratio of covered workers to beneficiaries",
-      "url": "https://www.ssa.gov/history/ratios.html"
-    },
-    {
-      "label": "Christian Science Monitor (1984) — Retirement Equity Act provisions",
-      "url": "https://www.csmonitor.com/1984/0808/080842.html"
-    },
-    {
-      "label": "Older Women’s League",
-      "url": "https://en.wikipedia.org/wiki/Older_Women%27s_League"
-    },
-    {
-      "label": "Workforce — Legislative history of employee benefits",
-      "url": "https://www.workforce.com/news/legislative-history-of-employee-benefits"
-    },
-    {
-      "label": "CRS 97-479 — ADEA amendments",
-      "url": "https://www.everycrsreport.com/reports/97-479.html"
-    },
-    {
-      "label": "Taxpayer Relief Act of 1997",
-      "url": "https://en.wikipedia.org/wiki/Taxpayer_Relief_Act_of_1997"
-    },
-    {
-      "label": "CRS RS20629 — EGTRRA pension provisions",
-      "url": "https://www.everycrsreport.com/reports/RS20629.html"
-    },
-    {
-      "label": "Journal of Accountancy (2001) — EGTRRA catch-up contributions",
-      "url": "https://www.journalofaccountancy.com/issues/2001/nov/newtaxlawpermitscatchupemployeeplancontributions/"
-    },
-    {
-      "label": "CRS RL31966 — Medicare Modernization Act overview",
-      "url": "https://www.everycrsreport.com/reports/RL31966.html"
-    },
-    {
-      "label": "Brookings — Why the 2005 Social Security initiative failed",
-      "url": "https://www.brookings.edu/articles/why-the-2005-social-security-initiative-failed-and-what-it-means-for-the-future/"
-    },
-    {
-      "label": "U.S. DOL — Pension Protection Act release (2006)",
-      "url": "https://www.dol.gov/newsroom/releases/ebsa/ebsa20060926"
-    },
-    {
-      "label": "U.S. DOL — Private Pension Plan Bulletin Historical Tables",
-      "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf"
-    },
-    {
-      "label": "EBRI — DB and DC participation, 1979 vs. 2017",
-      "url": "https://www.ebri.org/retirement/content/only-11-percent-of-us-private-sector-wage-and-salary-workers-participate-in-defined-benefit-pension-plans"
-    },
-    {
-      "label": "CRS RL30922 — Retirement Savings and Household Wealth in 2007",
-      "url": "https://www.everycrsreport.com/reports/RL30922.html"
-    },
-    {
-      "label": "Urban Institute — Distributional Effects of DC Plans and IRAs (2004)",
-      "url": "https://www.urban.org/research/publication/distributional-effects-defined-contribution-plans-and-individual-retirement-accounts"
-    },
-    {
-      "label": "Center for American Progress — CBO 2019 distribution of retirement tax benefits",
-      "url": "https://www.americanprogress.org/article/tax-breaks-for-retirement-savings-do-not-help-the-workers-who-need-them-most/"
-    },
-    {
-      "label": "Pew Research Center — Wealth gaps rise to record highs (2011)",
-      "url": "https://www.pewresearch.org/social-trends/2011/07/26/wealth-gaps-rise-to-record-highs-between-whites-blacks-hispanics/"
-    },
-    {
-      "label": "CRS — Enron bankruptcy and employer stock in retirement plans",
-      "url": "https://legistorm.com/reports/view/crs/216324/Enron_Bankruptcy_and_Employer_Stock_in_Retirement_Plans.html"
-    },
-    {
-      "label": "ICI Fact Book — Mutual fund total net assets",
-      "url": "https://icifactbook.org/2022/pdf/22-fb-table01.pdf"
-    },
-    {
-      "label": "Avalon Project — Reagan First Inaugural Address",
-      "url": "https://avalon.law.yale.edu/20th_century/reagan1.asp"
-    },
-    {
-      "label": "Big Issue — Thatcher’s “no such thing as society” in context",
-      "url": "https://www.bigissue.com/news/politics/margaret-thatcher-no-such-thing-as-society/"
-    },
-    {
-      "label": "American Presidency Project — Contract with America",
-      "url": "https://www.presidency.ucsb.edu/documents/the-republican-contract-with-america"
-    },
-    {
-      "label": "WTO — China accession approved (2001)",
-      "url": "https://www.wto.org/english/news_e/pres01_e/pr252_e.htm"
-    },
-    {
-      "label": "Federal Reserve History — Stock Market Crash of 1987",
-      "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987"
-    },
-    {
-      "label": "Federal Reserve History — The Great Recession",
-      "url": "https://www.federalreservehistory.org/essays/great-recession-of-200709"
-    },
-    {
-      "label": "Federal Reserve History — The Great Recession and its aftermath",
-      "url": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
-    },
-    {
-      "label": "Dot-com bubble (Nasdaq peak and decline)",
-      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
-    },
-    {
-      "label": "Yardeni Research — S&P 500 bear market tables",
-      "url": "https://archive.yardeni.com/pub/sp500corrbeartables.pdf"
-    },
-    {
-      "label": "Stacker/KEYT — S&P 500 corrections and recovery times since 1950",
-      "url": "https://keyt.com/stacker-business-economy/2026/08/12/every-major-stock-market-correction-since-1950-and-how-long-recovery-took/"
-    },
-    {
-      "label": "House Education & Labor hearing (Oct. 2008) — Orszag on $2 trillion in retirement losses",
-      "url": "https://www.govinfo.gov/content/pkg/CHRG-110hhrg45031/html/CHRG-110hhrg45031.htm"
-    },
-    {
-      "label": "FRED — Poverty rate, people 65 and over (Census)",
-      "url": "https://fred.stlouisfed.org/data/HSTPOVAR65YOBPPP"
-    },
-    {
-      "label": "FRED — U.S. consumer-price inflation (World Bank)",
-      "url": "https://fred.stlouisfed.org/data/FPCPITOTLZGUSA"
-    },
-    {
-      "label": "Federal Reserve History — The Great Inflation",
-      "url": "https://www.federalreservehistory.org/essays/great-inflation"
-    },
-    {
-      "label": "Grimm, A Concise History of Retirement (draft), Chapters 5–6",
-      "url": "https://docs.google.com/document/d/1P0EMAca6c4jzB47BAsQLuZUq3Jdl3hvQ3nMszjFixXA"
-    }
+  {
+   "year": 1983,
+   "title": "Social Security Amendments of 1983",
+   "type": "legislation",
+   "detail": "Signed April 20, 1983, after the Greenspan Commission reported in January 1983 that the retirement trust fund could run out of money as early as August 1983, the law made up to half of benefits taxable above $25,000 (single) or $32,000 (joint) of income, delayed a COLA, covered new federal employees, and accelerated payroll-tax increases. It also raised the full retirement age in two stages from 65 to 67, beginning with people born in 1938 and fully phased in for those born in 1960 or later.",
+   "significance": "The first time Washington moved the retirement age—quietly loosening 65 = Old and Done (seed 3) by statute while the culture kept the number."
+  },
+  {
+   "year": 1984,
+   "title": "Retirement Equity Act",
+   "type": "legislation",
+   "detail": "The law lowered the minimum age for pension-plan participation from 25 to 21, required a spouse’s written consent before a worker could waive survivor benefits, and stopped counting a one-year maternity or paternity leave as a break in service. The Older Women’s League advocated for it.",
+   "significance": "A rare repair to the one-earner “design specification,” acknowledging that women’s security had depended on husbands’ choices."
+  },
+  {
+   "year": 1986,
+   "title": "Tax Reform Act of 1986",
+   "type": "legislation",
+   "detail": "TRA ’86 imposed a $7,000 annual cap on pre-tax 401(k) deferrals beginning in 1987, tightened nondiscrimination testing, required faster vesting, and limited deductible IRA contributions for workers covered by employer plans above income thresholds. The share of tax filers with wage income making deductible IRA contributions fell from 18.6 percent in 1985 to 4.2 percent by 1995.",
+   "significance": "Shows how sensitive individual saving is to tax design—and how quickly voluntary participation falls when incentives change."
+  },
+  {
+   "year": 1997,
+   "title": "Taxpayer Relief Act: the Roth IRA",
+   "type": "legislation",
+   "detail": "Signed by President Clinton on August 5, 1997, the law created the Roth IRA, effective January 1, 1998: contributions are made after tax and qualified withdrawals are tax-free. It also raised income limits for deductible traditional IRAs and allowed penalty-free withdrawals for higher education and first-home purchases.",
+   "significance": "Another individual account, another tax choice for the saver to optimize—the system grew more complex as it grew more personal."
+  },
+  {
+   "year": 2001,
+   "title": "Economic Growth and Tax Relief Reconciliation Act (EGTRRA)",
+   "type": "legislation",
+   "detail": "Signed June 7, 2001, EGTRRA raised the 401(k) deferral limit from $11,000 in 2002 to $15,000 in 2006, raised the IRA limit in steps to $5,000 by 2008, added “catch-up” contributions for savers 50 and older, authorized Roth 401(k) contributions beginning in 2006, and created a nonrefundable “saver’s credit” of up to $1,000 for lower-income contributors.",
+   "significance": "Higher limits mostly help those who can already save the maximum; the saver’s credit was a modest attempt to reach those who could not."
+  },
+  {
+   "year": 2003,
+   "title": "Medicare Modernization Act: Part D",
+   "type": "legislation",
+   "detail": "Signed December 8, 2003, the law created a voluntary outpatient prescription-drug benefit, Medicare Part D, beginning January 1, 2006. Under the 2006 standard design, beneficiaries paid the full cost of drugs between $2,250 in total spending and $3,600 in out-of-pocket costs—the coverage gap known as the “doughnut hole.”",
+   "significance": "The health leg of the stool expanded, but through a market of private plans that retirees had to compare and choose among themselves."
+  },
+  {
+   "year": 2005,
+   "title": "Bush’s personal-accounts proposal",
+   "type": "policy",
+   "detail": "After his 2004 reelection, President George W. Bush made voluntary personal retirement accounts within Social Security his top domestic priority, pressing the case in his 2005 State of the Union and on national tours. Public disapproval of his handling of Social Security rose from 48 to 64 percent by June, and by October Bush acknowledged the effort had failed.",
+   "significance": "The high-water mark of Individualism (seed 9): Social Security was the one leg of the stool the public refused to convert into an individual account."
+  },
+  {
+   "year": 2006,
+   "title": "Pension Protection Act",
+   "type": "legislation",
+   "detail": "Signed August 17, 2006, the PPA made it easier for employers to enroll workers in 401(k) plans automatically and protected fiduciaries who invest non-directing participants in “qualified default investment alternatives,” such as target-date or balanced funds.",
+   "significance": "A tacit admission that the do-it-yourself model needed defaults to work: the system began quietly making choices for savers it had said were in control."
+  }
+ ],
+ "marketDrops": [
+  {
+   "year": 1980,
+   "endYear": 1982,
+   "name": "The Volcker-era bear market",
+   "decline": "−27.1% (S&P 500, Nov. 28, 1980 – Aug. 12, 1982)",
+   "detail": "As inflation peaked at 13.5 percent in 1980 and the Federal Reserve tightened to break it, stocks fell for nearly two years. The S&P 500 regained its prior high by November 1982, launching a long bull market.",
+   "retirementImpact": "The first 401(k) plans opened near a market bottom, so early participants experienced the model at its most flattering."
+  },
+  {
+   "year": 1987,
+   "name": "Black Monday",
+   "decline": "−22.6% in one day (Dow, Oct. 19, 1987); −33.5% (S&P 500, Aug. 25 – Dec. 4, 1987)",
+   "detail": "The Dow fell 508 points, or 22.6 percent, on October 19, 1987—still its largest one-day percentage loss. The Fed promised liquidity the next morning, and stocks surpassed their pre-crash highs in less than two years.",
+   "retirementImpact": "A fast recovery reinforced the Market Growth seed (4): crashes looked like buying opportunities to anyone with decades left to wait."
+  },
+  {
+   "year": 2000,
+   "endYear": 2002,
+   "name": "The dot-com crash",
+   "decline": "−49.1% (S&P 500, Mar. 24, 2000 – Oct. 9, 2002); Nasdaq −78%",
+   "detail": "The Nasdaq Composite peaked at 5,048.62 on March 10, 2000, and fell 78 percent by October 2002; the S&P 500 lost nearly half its value. The S&P did not fully recover until May 2007—months before the next crash began.",
+   "retirementImpact": "Workers in their 50s lost years of accumulation just as they entered their final saving decade, and Enron employees learned what concentration in employer stock could do."
+  },
+  {
+   "year": 2007,
+   "endYear": 2009,
+   "name": "The Global Financial Crisis",
+   "decline": "−56.8% (S&P 500, Oct. 9, 2007 – Mar. 9, 2009)",
+   "detail": "The S&P 500 lost more than half its value in 17 months, and in October 2008 CBO Director Peter Orszag told Congress that American workers had lost more than $2 trillion in retirement savings over the previous 15 months. The index did not regain its 2007 closing high until March 2013.",
+   "retirementImpact": "The defining test of the Great Risk Transfer: the book’s “Two Clocks” portraits show a 60-year-old who did everything right losing her plan at exactly the wrong moment."
+  }
+ ],
+ "socialMovements": [
+  {
+   "year": 1980,
+   "name": "Older Women’s League (OWL)",
+   "detail": "Founded by Tish Sommers and Laurie Shields after an October 1980 White House mini-conference on older women in Des Moines, OWL organized around the economic and retirement security of midlife and older women. It successfully advocated for the Retirement Equity Act of 1984.",
+   "significance": "Named the gap the one-earner design left for divorced, widowed, and caregiving women, and won a statutory repair."
+  },
+  {
+   "year": 1983,
+   "endYear": 1994,
+   "name": "The “Notch Baby” campaign",
+   "detail": "From the early 1980s, people born in 1917–1921 organized against benefits that, after the 1977 amendments, were lower than those of people born just before them; more than 100 bills were introduced, but none became law. In December 1994 a congressionally created commission concluded that the benefits were equitable and that no remedy was warranted.",
+   "significance": "A grievance about formula design became a durable movement—proof of how personally Americans now experienced Social Security as a promise."
+  },
+  {
+   "year": 2005,
+   "name": "The fight over personal accounts",
+   "detail": "Opposition to President Bush’s 2005 personal-accounts plan united congressional Democrats, divided Republicans, and grew as the president campaigned: Gallup found disapproval of his handling of Social Security rising from 48 to 64 percent between the State of the Union and June. The effort was abandoned by the fall.",
+   "significance": "Public resistance drew a line around Social Security as a pooled, guaranteed program even as private retirement became almost entirely individual."
+  }
+ ],
+ "inequities": [
+  {
+   "title": "Upside-down tax benefits",
+   "detail": "Because deductions are worth more at higher tax rates and higher earners contribute more, the top fifth of earners received about 70 percent of the tax benefits from new defined-contribution contributions and almost 60 percent of IRA tax benefits, according to a 2004 Urban–Brookings Tax Policy Center analysis. CBO estimates for 2019 found roughly 60 percent of the benefit went to the top fifth of households and about 1.5 percent to the bottom fifth.",
+   "vars": [
+    "income"
+   ]
+  },
+  {
+   "title": "Access depends on your job",
+   "detail": "In 2007, 61.5 percent of workers in the top earnings quartile were offered a defined-contribution plan and 53.9 percent participated; in the bottom quartile, 29.7 percent were offered one and 17.0 percent participated. A system built on employer sponsorship replicates the Two Americas (seed 7).",
+   "vars": [
+    "job",
+    "income"
+   ]
+  },
+  {
+   "title": "The median is not the model",
+   "detail": "In 2007, before the crash, 62.4 percent of households headed by someone aged 55–64 had any retirement account, and the median balance among those that did was $100,000—far short of what industry rules of thumb said a household needed. Nearly four in ten near-retirement households had no account at all.",
+   "vars": [
+    "income",
+    "generation"
+   ]
+  },
+  {
+   "title": "The racial wealth gap after the crash",
+   "detail": "Pew Research found that median household net worth fell 16 percent for white households, 53 percent for Black households, and 66 percent for Hispanic households from 2005 to 2009. By 2009 the median white household held 20 times the wealth of the median Black household ($113,149 vs. $5,677) and 18 times that of the median Hispanic household.",
+   "vars": [
+    "race"
+   ]
+  },
+  {
+   "title": "Longer lives, smaller balances",
+   "detail": "Individual accounts must be stretched over an individual lifespan, and in 1990 a woman reaching 65 could expect about 19.6 more years versus 15.3 for a man. Women who interrupted paid work for caregiving entered the DC era with fewer years of contributions, while needing their savings to last longer.",
+   "vars": [
+    "gender",
+    "longevity"
+   ]
+  }
+ ],
+ "historicalContext": [
+  {
+   "year": 1981,
+   "title": "Reagan, Thatcher, and the new individualism",
+   "detail": "Reagan’s first inaugural declared that “in this present crisis, government is not the solution to our problem; government is the problem.” In a 1987 interview with Woman’s Own, Margaret Thatcher said “there is no such thing as society”—a line she later complained was quoted without her point that people also owe duties to their neighbors."
+  },
+  {
+   "year": 1980,
+   "endYear": 2010,
+   "title": "The mutual-fund boom",
+   "detail": "Mutual-fund assets grew from $134.8 billion across 564 funds in 1980 to $11.8 trillion across more than 7,500 funds in 2010. Defined-contribution plan assets grew from $162 billion to $3.8 trillion over the same span."
+  },
+  {
+   "year": 1994,
+   "title": "Contract with America",
+   "detail": "Released September 27, 1994, the House Republican platform included a “Senior Citizens Fairness Act” to raise the Social Security earnings limit, repeal the 1993 increase in the taxation of benefits, and create tax incentives for private long-term-care insurance."
+  },
+  {
+   "year": 2001,
+   "title": "Enron’s collapse",
+   "detail": "At the end of 2000, 62 percent of the assets in Enron’s 401(k) plan were invested in Enron stock. Shares that traded above $80 in January 2001 were worth less than 70 cents by January 2002, after the company filed for bankruptcy on December 2, 2001."
+  },
+  {
+   "year": 2001,
+   "title": "China joins the WTO",
+   "detail": "The World Trade Organization approved China’s accession on November 10, 2001, accelerating the global competition the book links to the end of American manufacturing hegemony and the geographic stability that had anchored lifelong employment."
+  },
+  {
+   "year": 2007,
+   "endYear": 2009,
+   "title": "The Great Recession",
+   "detail": "The recession ran from December 2007 to June 2009, the longest since World War II at the time; Lehman Brothers failed in September 2008, unemployment peaked at 10 percent in October 2009, and household net worth fell by about $14 trillion."
+  }
+ ],
+ "seeds": [
+  {
+   "seed": 1,
+   "stage": "blooming",
+   "detail": "Boundaries no longer needed explicit exclusions: they now ran through who worked for an employer that offered a plan, who earned enough to contribute, and who held wealth to fall back on. The 2009 racial wealth gap—20 to 1 between white and Black median households—shows how earlier exclusions compounded."
+  },
+  {
+   "seed": 2,
+   "stage": "blooming",
+   "detail": "Government remained deeply involved but changed roles—from provider to tax subsidizer and rule-writer for private accounts: ERTA, TRA ’86, the Roth IRA, EGTRRA, and the PPA. It also rescued and trimmed Social Security in 1983 and refused to privatize it in 2005."
+  },
+  {
+   "seed": 3,
+   "stage": "blooming",
+   "detail": "The 1983 amendments began moving the full retirement age to 67 and the ADEA ended most mandatory retirement in 1986, yet 65 remained the cultural endpoint—and Medicare eligibility stayed at 65. The book says this era codified age 65."
+  },
+  {
+   "seed": 4,
+   "stage": "blooming",
+   "detail": "With the 401(k), the belief that markets reliably rise became the engine of private retirement. Quick recoveries after 1982 and 1987 seemed to confirm it; the 2000–02 and 2007–09 declines of roughly 49 and 57 percent tested it on people with no time left to wait."
+  },
+  {
+   "seed": 5,
+   "stage": "blooming",
+   "detail": "The book argues this era codified leisure as the escape and work as something to flee. Financial marketing sold “your number” as the price of a golf-and-grandchildren retirement that, Grimm writes, most savers would never be able to fund."
+  },
+  {
+   "seed": 6,
+   "stage": "blooming",
+   "detail": "The 1990s bull market and the dot-com mania revived speculation as a path to retirement: the Nasdaq peaked at 5,048.62 in March 2000 and then fell 78 percent by October 2002."
+  },
+  {
+   "seed": 7,
+   "stage": "blooming",
+   "detail": "Access to the new system tracked income: in 2007 top-quartile earners were more than three times as likely as bottom-quartile earners to participate in a defined-contribution plan. The Two Americas now divided those with accounts from those without."
+  },
+  {
+   "seed": 8,
+   "stage": "blooming",
+   "detail": "The Promise reached full flower and began to wither in the same era: defined-benefit plans fell from about 170,000 in 1985 to about 47,000 in 2010. For workers, the shift felt less like a policy change than a broken covenant."
+  },
+  {
+   "seed": 9,
+   "stage": "blooming",
+   "detail": "Individualism arrives in 1981—the IRS’s 401(k) rules, universal IRAs, and Reagan’s inaugural—and blooms within a decade. The book’s summary: it converts systemic failure into personal failure. “The plan didn’t fail you. You failed the plan.”"
+  }
+ ],
+ "twoPersonLens": {
+  "year": 2010,
+  "older": {
+   "born": 1950,
+   "headline": "Still time to panic",
+   "text": "Born in 1950, she was 31 when the IRS issued the rules that made the 401(k) usable, and she spent her career as the system changed underneath her—from a pension promised by the company to an account she was told to manage herself. She did everything right: thirty-plus years of work, steady contributions, a portfolio that grew through the bull markets of the 1990s. She had a number, close enough that retiring at her full retirement age of 66 felt like a plan. Then, in her late fifties, the market fell 57 percent. She lost savings not because she was reckless but because she was exactly where the system told her to be—fully invested, trusting the model—when the model failed. She’s still working, because the math doesn’t close."
+  },
+  "younger": {
+   "born": 1990,
+   "headline": "Already improvising",
+   "text": "Born in 1990, he has never known a world without the 401(k). He was eleven when Enron’s employees watched their retirement accounts collapse with the company’s stock, and a teenager when the longest recession since World War II began. Now 20, he enters a labor market where unemployment recently peaked at 10 percent, carrying student debt that shapes what any first job can offer. The wealth-building decade earlier generations used to lay a foundation has been lost at the start—not to bad choices, but to timing. His full retirement age is 67, his employer offers an account rather than a pension, and his planning app tells him to save more than he earns. He has moved past grief into improvisation."
+  },
+  "irony": "The 60-year-old still has time to panic; the 20-year-old has already moved past grief into improvisation—and neither was ever asked who gave them the dream."
+ },
+ "keyTerms": [
+  {
+   "term": "Defined-contribution (DC) plan",
+   "definition": "A retirement plan, such as a 401(k), in which contributions go into an individual account; the eventual benefit depends on contributions and investment returns, and the worker bears the risk."
+  },
+  {
+   "term": "401(k) plan",
+   "definition": "A DC plan named for the tax-code section added in 1978 that lets employees defer part of their salary before tax, often with an employer match."
+  },
+  {
+   "term": "The Great Risk Transfer",
+   "definition": "Grimm’s term for the shift of investment, longevity, and inflation risk from employers’ pooled pensions to individual workers’ accounts, presented to workers as freedom and choice."
+  },
+  {
+   "term": "Counterfeit (the book’s usage)",
+   "definition": "The book’s charge that the individual account kept the name “retirement” while sharing none of the pooled-risk, guaranteed-income substance of what it replaced."
+  },
+  {
+   "term": "Full retirement age (FRA)",
+   "definition": "The age at which Social Security pays an unreduced benefit. The 1983 amendments raised it gradually from 65 to 67 for people born in 1960 or later."
+  },
+  {
+   "term": "Roth IRA",
+   "definition": "An individual retirement account created in 1997 that is funded with after-tax dollars and allows tax-free qualified withdrawals."
+  },
+  {
+   "term": "Automatic enrollment",
+   "definition": "A plan design that enrolls workers in a 401(k) by default unless they opt out. The Pension Protection Act of 2006 made it safer for employers to adopt."
+  },
+  {
+   "term": "Qualified default investment alternative (QDIA)",
+   "definition": "A default investment, such as a target-date or balanced fund, into which a plan may place participants who make no choice, with fiduciary protection for the employer."
+  },
+  {
+   "term": "“Your number”",
+   "definition": "The industry’s single dollar figure for a comfortable retirement. The book argues it turned a social question—how do we care for the aging?—into a personal one: did you save enough?"
+  }
+ ],
+ "keyFigures": [
+  {
+   "name": "Ted Benna",
+   "role": "Pennsylvania benefits consultant often called the “father of the 401(k)” for designing an early plan with pre-tax employee contributions and an employer match at the Johnson Companies in 1981. He later became a critic, saying the plan “was never intended to be what it is today.”"
+  },
+  {
+   "name": "Ronald Reagan",
+   "role": "President from 1981 to 1989 whose first inaugural framed government as the problem and who signed ERTA (1981) and the 1983 Social Security rescue—an embodiment of both the individualist turn and the limits of it."
+  },
+  {
+   "name": "Margaret Thatcher",
+   "role": "British prime minister from 1979 to 1990 whose 1987 remark that “there is no such thing as society” became shorthand, often stripped of her context, for the era’s individualism."
+  },
+  {
+   "name": "Alan Greenspan",
+   "role": "Chaired the National Commission on Social Security Reform, whose January 1983 report led to the 1983 amendments that taxed some benefits and raised the full retirement age to 67."
+  }
+ ],
+ "primarySources": [
+  {
+   "title": "Ronald Reagan, First Inaugural Address",
+   "year": 1981,
+   "source": "Avalon Project, Yale Law School",
+   "url": "https://avalon.law.yale.edu/20th_century/reagan1.asp",
+   "why": "Read the full sentence around “government is the problem,” including “in this present crisis,” and ask how the qualifier changes its meaning."
+  },
+  {
+   "title": "Report of the National Commission on Social Security Reform (Greenspan Commission)",
+   "year": 1983,
+   "source": "SSA History",
+   "url": "https://www.ssa.gov/history/reports/gspan.html",
+   "why": "Note how the commission framed the financing crisis and which burdens it chose to spread across workers, retirees, and the future."
+  },
+  {
+   "title": "The Republican Contract with America",
+   "year": 1994,
+   "source": "American Presidency Project, UC Santa Barbara",
+   "url": "https://www.presidency.ucsb.edu/documents/the-republican-contract-with-america",
+   "why": "Read the Senior Citizens Fairness Act: what does it assume about older Americans, work, and private insurance?"
+  },
+  {
+   "title": "Pension Protection Act implementation release",
+   "year": 2006,
+   "source": "U.S. Department of Labor",
+   "url": "https://www.dol.gov/newsroom/releases/ebsa/ebsa20060926",
+   "why": "Look at how the government justified automatic enrollment and default investments—and what that implies about the do-it-yourself model."
+  },
+  {
+   "title": "Private Pension Plan Bulletin Historical Tables and Graphs, 1975–2023",
+   "year": 2010,
+   "source": "U.S. Department of Labor, EBSA",
+   "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf",
+   "why": "Use Tables E1, E7, and E10 to measure the shift from DB to DC plans in plans, participants, and assets."
+  }
+ ],
+ "discussionQuestions": [
+  "The book calls the 401(k) a counterfeit that kept the name “retirement.” Which features of a defined-benefit pension did it drop, and which (portability, ownership, inheritability) did it add? Is “counterfeit” the right word?",
+  "Test the book’s argument: defenders of the 401(k) model point out that elderly poverty fell from 15.7 percent in 1980 to 8.9 percent in 2010, that DC accounts are portable for workers who change jobs, and that the PPA’s automatic enrollment raised participation. Using data, weigh these points against the book’s claim that the era codified a catastrophe.",
+  "Social Security survived two very different reform efforts in this era—a bipartisan rescue in 1983 and a failed privatization push in 2005. Why did one succeed and the other fail, and what does that say about the public’s view of pooled versus individual risk?",
+  "Tax incentives for retirement saving flow mostly to higher earners. Is that an unavoidable feature of tax-based incentives or a design choice? Propose one change and predict its effects.",
+  "Enron employees held 62 percent of their 401(k) assets in company stock. Was that a failure of individual judgment, of plan design, or of the system’s premise that workers should manage their own risk?",
+  "Compare the two people in the 2010 Two-Person Lens. Which risks did each face that a defined-benefit pension would have absorbed, and which would remain even with a pension?"
+ ],
+ "assignment": {
+  "title": "Following the Risk: A DB-to-DC Data Investigation",
+  "type": "Data investigation with chart and policy memo",
+  "prompt": "Investigate the Great Risk Transfer with official data. Using the Department of Labor’s Private Pension Plan Bulletin Historical Tables (Tables E1, E7, E10) and at least one Survey of Consumer Finances source (Federal Reserve or a CRS/GAO summary), build two charts: (1) active participants in DB vs. DC plans, 1975–2010; and (2) median retirement-account balances or account ownership by age or income group. Then test one of the book’s claims against your data—for example, its statement that two-thirds of workers had DB plans in the early 1980s (compare EBRI’s 38 percent of private wage and salary workers in 1979 and DOL’s participant counts), or its claim about median balances for workers aged 55–64. Finally, write a memo to a congressional staffer explaining which risks moved, to whom, and what one policy could do about it.",
+  "deliverable": "Two original charts with source notes, a 300-word methods-and-data appendix, and a 1,000–1,200 word policy memo citing at least four sources (at least three official).",
+  "points": 100,
+  "rubric": [
+   {
+    "criterion": "Data accuracy & sourcing",
+    "points": 30,
+    "exemplary": "Pulls correct figures from official tables, documents table numbers and definitions (e.g., active participants vs. workers), and notes limitations such as double-counting of workers in multiple plans.",
+    "proficient": "Figures accurate and sourced; minor gaps in definitions or limitations.",
+    "developing": "Some figures inaccurate or loosely sourced; definitions confused.",
+    "beginning": "Data largely inaccurate, unsourced, or missing."
+   },
+   {
+    "criterion": "Charts & visual communication",
+    "points": 20,
+    "exemplary": "Charts are clear, honest (appropriate axes and scales), labeled with units and sources, and each makes one point a reader grasps in seconds.",
+    "proficient": "Charts accurate and labeled with minor design issues.",
+    "developing": "Charts cluttered, mislabeled, or only loosely tied to the argument.",
+    "beginning": "Charts missing or misleading."
+   },
+   {
+    "criterion": "Testing the book’s claim",
+    "points": 25,
+    "exemplary": "Precisely states one claim, reconciles differing measures, and reaches a fair, evidence-based judgment—whether confirming, qualifying, or refuting it.",
+    "proficient": "Tests a claim with relevant data; judgment reasonable but reconciliation of measures is partial.",
+    "developing": "Restates the claim with limited or mismatched data.",
+    "beginning": "No genuine test of a claim."
+   },
+   {
+    "criterion": "Policy memo",
+    "points": 25,
+    "exemplary": "Identifies specific risks (investment, longevity, inflation, behavioral) and who bears them; recommends one feasible policy with trade-offs; concise, professional prose.",
+    "proficient": "Clear analysis and recommendation; trade-offs only partly addressed.",
+    "developing": "Analysis general; recommendation vague or disconnected from data.",
+    "beginning": "Memo missing key elements or unclear."
+   }
   ]
+ },
+ "quiz": [
+  {
+   "q": "Section 401(k) was added to the tax code in 1978. What happened on November 10, 1981?",
+   "options": [
+    "Congress repealed defined-benefit pensions",
+    "The IRS issued regulations allowing pre-tax salary deferrals, unlocking widespread adoption",
+    "The first Roth IRA was opened",
+    "ERISA was signed"
+   ],
+   "answer": 1,
+   "explain": "The IRS regulations clarified that employees could defer salary before tax, and many large employers launched plans in January 1982."
+  },
+  {
+   "q": "Which change did the 1983 Social Security Amendments make?",
+   "options": [
+    "Created automatic COLAs",
+    "Gradually raised the full retirement age from 65 to 67",
+    "Created Medicare Part D",
+    "Lowered the early retirement age to 60"
+   ],
+   "answer": 1,
+   "explain": "The amendments phased in an FRA of 67 for people born in 1960 or later and also made up to half of benefits taxable for higher-income beneficiaries."
+  },
+  {
+   "q": "Between 1980 and 2010, how did active participants in private DB and DC plans change (DOL data)?",
+   "options": [
+    "DB rose from 18.9 to 73.4 million",
+    "Both stayed roughly constant",
+    "DB fell from 30.1 to 17.2 million while DC rose from 18.9 to 73.4 million",
+    "DC fell by half"
+   ],
+   "answer": 2,
+   "explain": "DOL Table E7 shows the reversal at the heart of the Great Risk Transfer."
+  },
+  {
+   "q": "What share of Enron’s 401(k) plan assets was invested in Enron stock at the end of 2000?",
+   "options": [
+    "About 10 percent",
+    "About 25 percent",
+    "About 62 percent",
+    "100 percent"
+   ],
+   "answer": 2,
+   "explain": "About 62 percent of plan assets were in company stock, which lost nearly all its value by early 2002."
+  },
+  {
+   "q": "What did the Pension Protection Act of 2006 encourage?",
+   "options": [
+    "Converting Social Security into personal accounts",
+    "Automatic enrollment in 401(k) plans with protected default investments",
+    "Abolishing IRAs",
+    "Mandatory defined-benefit pensions for large employers"
+   ],
+   "answer": 1,
+   "explain": "The PPA eased automatic enrollment and created a fiduciary safe harbor for qualified default investment alternatives."
+  }
+ ],
+ "sources": [
+  {
+   "label": "CRS 96-20 — IRA legislative history (ERTA, TRA ’86, Roth)",
+   "url": "https://www.everycrsreport.com/reports/96-20.html"
+  },
+  {
+   "label": "Reagan Library blog — ERTA of 1981",
+   "url": "https://reagan.blogs.archives.gov/2016/08/15/reaganomics-the-economic-recovery-tax-act-of-1981"
+  },
+  {
+   "label": "PSCA — 401(k) history",
+   "url": "https://www.psca.org/node/242"
+  },
+  {
+   "label": "PSCA — 401(k) contribution-limit history (TRA ’86)",
+   "url": "https://www.psca.org/node/237"
+  },
+  {
+   "label": "ASPPA — The “real” 401(k) Day",
+   "url": "https://www.asppa-net.org/news/2025/11/the-real-401k-day/"
+  },
+  {
+   "label": "History.com — Ted Benna and the 401(k)",
+   "url": "https://www.history.com/articles/meet-the-man-who-invented-modern-retirement-401k"
+  },
+  {
+   "label": "401(k) — history and Pension Protection Act",
+   "url": "https://en.wikipedia.org/wiki/401(k)"
+  },
+  {
+   "label": "SSA — 1983 Amendments legislative history",
+   "url": "https://www.ssa.gov/history/1983amend.html"
+  },
+  {
+   "label": "SSA — Greenspan Commission report",
+   "url": "https://www.ssa.gov/history/reports/gspan.html"
+  },
+  {
+   "label": "SSA — Brief History of Social Security",
+   "url": "https://www.ssa.gov/history/briefhistory3.html"
+  },
+  {
+   "label": "SSA — Full retirement age by year of birth",
+   "url": "https://www.ssa.gov/benefits/retirement/planner/agereduction.html"
+  },
+  {
+   "label": "SSA — The Notch archive",
+   "url": "https://www.ssa.gov/history/notchfile1.html"
+  },
+  {
+   "label": "SSA — Life expectancy at 65 by cohort",
+   "url": "https://www.ssa.gov/history/lifeexpect.html"
+  },
+  {
+   "label": "SSA — Ratio of covered workers to beneficiaries",
+   "url": "https://www.ssa.gov/history/ratios.html"
+  },
+  {
+   "label": "Christian Science Monitor (1984) — Retirement Equity Act provisions",
+   "url": "https://www.csmonitor.com/1984/0808/080842.html"
+  },
+  {
+   "label": "Older Women’s League",
+   "url": "https://en.wikipedia.org/wiki/Older_Women%27s_League"
+  },
+  {
+   "label": "Workforce — Legislative history of employee benefits",
+   "url": "https://www.workforce.com/news/legislative-history-of-employee-benefits"
+  },
+  {
+   "label": "CRS 97-479 — ADEA amendments",
+   "url": "https://www.everycrsreport.com/reports/97-479.html"
+  },
+  {
+   "label": "Taxpayer Relief Act of 1997",
+   "url": "https://en.wikipedia.org/wiki/Taxpayer_Relief_Act_of_1997"
+  },
+  {
+   "label": "CRS RS20629 — EGTRRA pension provisions",
+   "url": "https://www.everycrsreport.com/reports/RS20629.html"
+  },
+  {
+   "label": "Journal of Accountancy (2001) — EGTRRA catch-up contributions",
+   "url": "https://www.journalofaccountancy.com/issues/2001/nov/newtaxlawpermitscatchupemployeeplancontributions/"
+  },
+  {
+   "label": "CRS RL31966 — Medicare Modernization Act overview",
+   "url": "https://www.everycrsreport.com/reports/RL31966.html"
+  },
+  {
+   "label": "Brookings — Why the 2005 Social Security initiative failed",
+   "url": "https://www.brookings.edu/articles/why-the-2005-social-security-initiative-failed-and-what-it-means-for-the-future/"
+  },
+  {
+   "label": "U.S. DOL — Pension Protection Act release (2006)",
+   "url": "https://www.dol.gov/newsroom/releases/ebsa/ebsa20060926"
+  },
+  {
+   "label": "U.S. DOL — Private Pension Plan Bulletin Historical Tables",
+   "url": "https://www.dol.gov/sites/default/files/ebsa/researchers/statistics/retirement-bulletins/private-pension-plan-bulletin-historical-tables-and-graphs.pdf"
+  },
+  {
+   "label": "EBRI — DB and DC participation, 1979 vs. 2017",
+   "url": "https://www.ebri.org/retirement/content/only-11-percent-of-us-private-sector-wage-and-salary-workers-participate-in-defined-benefit-pension-plans"
+  },
+  {
+   "label": "CRS RL30922 — Retirement Savings and Household Wealth in 2007",
+   "url": "https://www.everycrsreport.com/reports/RL30922.html"
+  },
+  {
+   "label": "Urban Institute — Distributional Effects of DC Plans and IRAs (2004)",
+   "url": "https://www.urban.org/research/publication/distributional-effects-defined-contribution-plans-and-individual-retirement-accounts"
+  },
+  {
+   "label": "Center for American Progress — CBO 2019 distribution of retirement tax benefits",
+   "url": "https://www.americanprogress.org/article/tax-breaks-for-retirement-savings-do-not-help-the-workers-who-need-them-most/"
+  },
+  {
+   "label": "Pew Research Center — Wealth gaps rise to record highs (2011)",
+   "url": "https://www.pewresearch.org/social-trends/2011/07/26/wealth-gaps-rise-to-record-highs-between-whites-blacks-hispanics/"
+  },
+  {
+   "label": "CRS — Enron bankruptcy and employer stock in retirement plans",
+   "url": "https://legistorm.com/reports/view/crs/216324/Enron_Bankruptcy_and_Employer_Stock_in_Retirement_Plans.html"
+  },
+  {
+   "label": "ICI Fact Book — Mutual fund total net assets",
+   "url": "https://icifactbook.org/2022/pdf/22-fb-table01.pdf"
+  },
+  {
+   "label": "Avalon Project — Reagan First Inaugural Address",
+   "url": "https://avalon.law.yale.edu/20th_century/reagan1.asp"
+  },
+  {
+   "label": "Big Issue — Thatcher’s “no such thing as society” in context",
+   "url": "https://www.bigissue.com/news/politics/margaret-thatcher-no-such-thing-as-society/"
+  },
+  {
+   "label": "American Presidency Project — Contract with America",
+   "url": "https://www.presidency.ucsb.edu/documents/the-republican-contract-with-america"
+  },
+  {
+   "label": "WTO — China accession approved (2001)",
+   "url": "https://www.wto.org/english/news_e/pres01_e/pr252_e.htm"
+  },
+  {
+   "label": "Federal Reserve History — Stock Market Crash of 1987",
+   "url": "https://www.federalreservehistory.org/essays/stock-market-crash-of-1987"
+  },
+  {
+   "label": "Federal Reserve History — The Great Recession",
+   "url": "https://www.federalreservehistory.org/essays/great-recession-of-200709"
+  },
+  {
+   "label": "Federal Reserve History — The Great Recession and its aftermath",
+   "url": "https://www.federalreservehistory.org/essays/great-recession-and-its-aftermath"
+  },
+  {
+   "label": "Dot-com bubble (Nasdaq peak and decline)",
+   "url": "https://en.wikipedia.org/wiki/Dot-com_bubble"
+  },
+  {
+   "label": "Yardeni Research — S&P 500 bear market tables",
+   "url": "https://archive.yardeni.com/pub/sp500corrbeartables.pdf"
+  },
+  {
+   "label": "Stacker/KEYT — S&P 500 corrections and recovery times since 1950",
+   "url": "https://keyt.com/stacker-business-economy/2026/08/12/every-major-stock-market-correction-since-1950-and-how-long-recovery-took/"
+  },
+  {
+   "label": "House Education & Labor hearing (Oct. 2008) — Orszag on $2 trillion in retirement losses",
+   "url": "https://www.govinfo.gov/content/pkg/CHRG-110hhrg45031/html/CHRG-110hhrg45031.htm"
+  },
+  {
+   "label": "FRED — Poverty rate, people 65 and over (Census)",
+   "url": "https://fred.stlouisfed.org/data/HSTPOVAR65YOBPPP"
+  },
+  {
+   "label": "FRED — U.S. consumer-price inflation (World Bank)",
+   "url": "https://fred.stlouisfed.org/data/FPCPITOTLZGUSA"
+  },
+  {
+   "label": "Federal Reserve History — The Great Inflation",
+   "url": "https://www.federalreservehistory.org/essays/great-inflation"
+  },
+  {
+   "label": "Grimm, A Concise History of Retirement (draft), Chapters 5–6",
+   "url": "https://docs.google.com/document/d/1P0EMAca6c4jzB47BAsQLuZUq3Jdl3hvQ3nMszjFixXA"
+  }
+ ]
 }
