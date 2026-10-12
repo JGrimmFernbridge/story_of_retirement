@@ -289,9 +289,9 @@ table.rubric tfoot td { font-weight: 700; background: var(--surface-2); }
 
 /* seeds */
 .garden-wrap { overflow: auto; }
-table.garden { border-collapse: collapse; width: 100%; min-width: 820px; }
+table.garden { border-collapse: collapse; width: 100%; min-width: 900px; }
 table.garden th, table.garden td { padding: 0; border-top: 1px solid var(--line); }
-table.garden thead th { border-top: 0; padding: 8px 4px; font-family: var(--f-display); font-stretch: 100%; font-size: 11.5px; text-transform: uppercase; font-weight: 800; text-align: center; }
+table.garden thead th { border-top: 0; padding: 8px 3px; font-family: var(--f-display); font-stretch: 92%; font-size: 11px; letter-spacing: 0; text-transform: uppercase; font-weight: 800; text-align: center; }
 table.garden thead th .y { display: block; font-family: var(--f-type); font-weight: 400; font-size: 10.5px; color: var(--muted); text-transform: none; }
 table.garden tbody th { text-align: left; padding: 8px 12px 8px 0; font-weight: 700; font-size: 14px; white-space: nowrap; }
 table.garden tbody th .g { display: block; font-family: var(--f-type); font-weight: 400; font-size: 11px; color: var(--muted); }

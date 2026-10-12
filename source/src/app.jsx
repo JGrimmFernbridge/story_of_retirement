@@ -1121,14 +1121,14 @@ function InstructorModal({ onClose }) {
 }
 
 /* ---------------- other click-in views */
-const GARDEN_COLS = ["collapse", "codify", "climax", "crucible", "conception", "classical", "catastrophe", "correction"]; // from today's harvest back to the root, then ahead
+const GARDEN_COLS = ["classical", "conception", "crucible", "climax", "codify", "collapse", "catastrophe", "correction"]; // chronological: watch each seed grow left to right
 function SeedChart() {
-  const [cell, setCell] = useState({ seed: 9, mod: "collapse" });
+  const [cell, setCell] = useState({ seed: 1, mod: "classical" });
   const stageOf = (n, mid) => MOD[mid].seeds.find(x => x.seed === n) || null;
   const cur = stageOf(cell.seed, cell.mod), seed = D.seeds.find(s => s.n === cell.seed);
   return (
     <>
-      <h3>Each seed traced back from today to its root, then ahead · select a cell</h3>
+      <h3>Each seed from its root to today, then ahead · left to right · select a cell</h3>
       <div className="garden-wrap">
         <table className="garden">
           <thead><tr><th style={{ textAlign: "left" }}>Seed</th>{GARDEN_COLS.map(c => <th key={c}><span style={{ display: "block", height: 4, borderRadius: 2, background: eraColor(c), margin: "0 auto 5px", width: 26 }} />{MOD[c].title}<span className="y">{MOD[c].years}</span></th>)}</tr></thead>
@@ -1157,7 +1157,7 @@ function seedsSheet() {
         <p className="short">{s.short}</p>
         {s.hand && <div className="master-block"><div className="eyebrow">Where he planted it, in his hand</div><p className="hand">{s.hand}</p></div>}
         <p className="root">{s.root}</p>
-        <h3 style={{ marginTop: 6 }}>From today back to the root, then ahead</h3>
+        <h3 style={{ marginTop: 6 }}>From the root to today, then ahead</h3>
         <ul className="seed-trail">{trail.map(({ mid, st }) => <li key={mid}><StageGlyph stage={st ? st.stage : null} size={26} /><div><b>{MOD[mid].title}</b> <span className="type" style={{ fontSize: 12, color: "var(--muted)" }}>{st ? st.stage : "not yet present"}</span>{st && <div style={{ marginTop: 2 }}>{st.detail}</div>}</div></li>)}</ul>
       </>
     ) });
