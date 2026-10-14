@@ -85,6 +85,14 @@
    "type": "policy",
    "detail": "In 1948 the National Labor Relations Board ruled that Inland Steel had to bargain with the United Steelworkers over its retirement plan. On September 23, 1948, the Seventh Circuit Court of Appeals upheld the ruling, reasoning that pensions are part of the wage structure and a condition of employment.",
    "significance": "Once pensions were a mandatory subject of bargaining, unions could strike for them—opening the way to the 1949–1950 pension settlements in steel and autos."
+  },
+  {
+   "year": 1924,
+   "title": "Indian Citizenship Act",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "Signed June 2, 1924, the act granted U.S. citizenship to Native Americans born in the United States. Several states kept them from voting for decades afterward.",
+   "significance": "Citizenship arrived eleven years before Social Security, and the vote in some states not until the 1960s."
   }
  ],
  "marketDrops": [
@@ -263,7 +271,15 @@
    "headline": "The contract, mistaken for gravity",
    "text": "Born in 1930, they have no memory of a world without electricity; the car and the telephone are ordinary household facts. Crisis was the weather of their childhood, not the rupture of something stable. Now 20, they watch suburbs rise and consumer goods flood the stores, and expansion feels like simply how things are. They will spend their working years in the postwar boom. Defined-benefit pensions will be normal and corporate loyalty assumed; thirty years with one company that then takes care of you will feel less like a hard-won social contract than a law of nature. They will retire around 1990, and by then the contract will already be slipping out from under them. Standing at the threshold in 1950, they have no reason to examine what they are walking into. It simply looks like the future."
   },
-  "irony": "The 60-year-old who signed the contract knew exactly what they were buying; the 20-year-old who inherited it had no idea what it cost."
+  "irony": "The 60-year-old who signed the contract knew exactly what they were buying; the 20-year-old who inherited it had no idea what it cost.",
+  "byGender": {
+   "headline": "Covered through him",
+   "text": "The 1939 amendments wrote her in as a dependent: a wife or widow qualified through a covered husband’s record (today up to half his benefit). Domestic service, the work most women did for pay, was excluded outright. In 1950 she signs the same survival insurance he does, but her name is on it only as his wife."
+  },
+  "byRace": {
+   "headline": "Excluded by occupation, then by address",
+   "text": "The 1935 Act left out agricultural and domestic workers: about 65 percent of Black workers held such jobs, against 27 percent of white workers. The FHA’s underwriting manual rationed home loans by race, and the GI Bill ran through local offices: in 1947 Black borrowers received 2 of more than 3,200 VA home loans made in 13 Mississippi cities. The 60-year-old Black worker of 1950 signs a contract with pages missing."
+  }
  },
  "keyTerms": [
   {

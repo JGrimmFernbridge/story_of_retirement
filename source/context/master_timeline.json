@@ -1035,6 +1035,27 @@
     "m-fair-access-2021"
    ],
    "summary": "Equal pay (1963), credit without a husband’s signature (1974), business loans without a male co-signer (1988), and the current fight over fair access to banking: each step widened who could build wealth in their own name."
+  },
+  {
+   "id": "rights",
+   "title": "Rights: who counts",
+   "color": "var(--t-rights)",
+   "src": "course",
+   "items": [
+    "classical-soc-4",
+    "conception-his-4",
+    "crucible-pol-10",
+    "climax-his-1",
+    "climax-pol-9",
+    "m-fair-housing-1968",
+    "climax-pol-11",
+    "climax-pol-13",
+    "m-ecoa-1974",
+    "codify-pol-10",
+    "collapse-pol-10",
+    "collapse-pol-11"
+   ],
+   "summary": "A course thread, not from the sheet: the humanitarian law on the line, from seventy-two years of organizing for the vote to the two decisions that bookend Roe. Each step changed who the monetary law would later protect."
   }
  ]
 }

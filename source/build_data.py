@@ -87,7 +87,13 @@ def main():
     HAND = {x["id"]: x["hand"] for x in MT["matches"]}
     # a few existing entries belong in the lanes his legend uses (culture / technology, money)
     REASSIGN = {"conception-his-0": ("culture", "tech"), "classical-his-3": ("culture", "tech"), "collapse-his-0": ("culture", "tech"),
-                "climax-his-4": ("markets", "money"), "codify-his-1": ("markets", "money")}
+                "climax-his-4": ("markets", "money"), "codify-his-1": ("markets", "money"),
+                "conception-his-4": ("policy", "legislation"), "climax-his-1": ("policy", "legislation")}
+    # law & policy comes in two kinds, as the author put it: monetary (green) and humanitarian (purple)
+    HUMANITARIAN = {"conception-his-4", "climax-his-1", "m-equal-pay-1963", "m-fair-housing-1968", "m-ecoa-1974", "m-wboa-1988", "m-brown-1954"}
+    def domain_of(iid, e, lane):
+        if lane != "policy": return None
+        return "humanitarian" if (iid in HUMANITARIAN or e.get("domain") == "humanitarian") else "monetary"
     LIST_OF = {"policy": "policyEvents", "markets": "marketDrops", "movements": "socialMovements", "history": "historicalContext", "culture": "cultureEvents"}
     era_of = lambda y: next(k for k, v in ERAS.items() if v["start"] <= y < v["end"])
     items, seen = [], []
@@ -122,6 +128,7 @@ def main():
                 ln, typ = REASSIGN.get(iid, (lane, typ or "policy"))
                 e["itemId"] = iid
                 e["type"] = typ
+                e["domain"] = domain_of(iid, e, ln)
                 if iid in HAND:
                     e["master"] = True; e["hand"] = HAND[iid]
                 items.append({
@@ -130,7 +137,7 @@ def main():
                     "detail": e.get("detail", ""), "significance": e.get("significance") or e.get("retirementImpact") or "",
                     "decline": e.get("decline"), "module": mid,
                     "projected": e["year"] > 2026 or title.lower().startswith("projected"),
-                    "master": iid in HAND, "hand": HAND.get(iid),
+                    "master": iid in HAND, "hand": HAND.get(iid), "domain": e["domain"],
                 })
                 if ln != lane:
                     moved.append((key, e, LIST_OF[ln]))
@@ -138,14 +145,16 @@ def main():
             m[key].remove(e); m[dest].append(e)
     # the author's master timeline: entries that were not yet on the line
     for a in MT["add"]:
+        if a["id"] == "m-brown-1954": a["lane"], a["type"] = "policy", "policy"
         mod = era_of(a["year"])
         items.append({"id": a["id"], "lane": a["lane"], "type": a["type"], "year": a["year"], "endYear": a.get("endYear"),
                       "title": a["title"], "detail": a["detail"], "significance": a.get("significance", ""), "decline": a.get("decline"),
-                      "module": mod, "projected": a["year"] > 2026, "master": True, "hand": a["hand"], "src": a.get("src", "sheet")})
+                      "module": mod, "projected": a["year"] > 2026, "master": True, "hand": a["hand"], "src": a.get("src", "sheet"),
+                      "domain": domain_of(a["id"], a, a["lane"])})
         m = next(x for x in modules if x["id"] == mod)
         m.setdefault(LIST_OF[a["lane"]], []).append({"year": a["year"], "endYear": a.get("endYear"), "title": a["title"], "detail": a["detail"],
                                                    "significance": a.get("significance", ""), "decline": a.get("decline"), "type": a["type"],
-                                                   "itemId": a["id"], "master": True, "hand": a["hand"]})
+                                                   "itemId": a["id"], "master": True, "hand": a["hand"], "domain": domain_of(a["id"], a, a["lane"])})
     for m in modules:
         for key in LIST_OF.values():
             if key in m:
@@ -160,7 +169,7 @@ def main():
                   "title": "Pension coverage peaks",
                   "detail": "About 38% of private-sector wage and salary workers participated in a defined-benefit pension in 1979, the high-water mark (EBRI). The share declines nearly every year afterward.",
                   "significance": "The people who believe retirement works are largely those who entered the workforce in this narrow window.",
-                  "decline": None, "module": "climax", "projected": False})
+                  "decline": None, "module": "climax", "projected": False, "domain": "monetary"})
     for s in seeds_lens["seeds"]:
         items.append({"id": f"seed-{s['n']}", "lane": "seeds", "type": "seed", "year": s["year"], "endYear": None,
                       "title": f"Seed {s['n']}: {s['name']}", "detail": s["root"], "significance": s["short"],

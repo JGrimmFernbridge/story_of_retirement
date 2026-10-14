@@ -85,6 +85,22 @@
    "type": "policy",
    "detail": "Projected. The 2026 Trustees Report (released June 9, 2026) projects that OASI reserves will be depleted in the fourth quarter of 2032. Payroll taxes would then cover about 78% of scheduled benefits, falling to 62% by 2100. CBO’s September 2026 projections are more pessimistic, with exhaustion in fiscal 2032 and a 26% cut. Medicare’s Hospital Insurance fund is projected to be depleted in 2033, when 89% of costs would be payable.",
    "significance": "The book wrote “mid-2030s” and “75–80%,” and the newest official projections move the date earlier. This is the hinge between Collapse and Catastrophe. It is a projection under current law, not a certainty, because Congress can act."
+  },
+  {
+   "year": 2015,
+   "title": "Obergefell v. Hodges",
+   "type": "policy",
+   "domain": "humanitarian",
+   "detail": "On June 26, 2015, the Supreme Court held that same-sex couples have a constitutional right to marry.",
+   "significance": "Spousal and survivor benefits, the oldest humanitarian machinery in Social Security, now reached couples the 1939 amendments never imagined."
+  },
+  {
+   "year": 2022,
+   "title": "Dobbs v. Jackson Women’s Health Organization",
+   "type": "policy",
+   "domain": "humanitarian",
+   "detail": "On June 24, 2022, the Supreme Court overturned Roe v. Wade, returning abortion law to the states.",
+   "significance": "Half a century after Roe, the question moved back to the states, and with it the map of where women’s working lives are shaped."
   }
  ],
  "marketDrops": [
@@ -133,6 +149,19 @@
    "name": "The Great Resignation and the Pandemic Retirement Wave",
    "detail": "Quits reached a then-series high of 4.5 million in November 2021 (BLS JOLTS). One estimate counted more than 2.4 million “excess” retirements by August 2021. The St. Louis Fed found that the excess peaked in late 2021 and had disappeared by late 2024.",
    "significance": "The surge and its fade suggest that retirement timing tracks markets and circumstances rather than a fixed plan or age."
+  },
+  {
+   "year": 2013,
+   "endYear": 2020,
+   "title": "Black Lives Matter",
+   "detail": "The movement began in 2013 and reached its largest protests in the summer of 2020 after the killing of George Floyd.",
+   "significance": "The racial wealth gap entered the retirement conversation as a public question, not only an academic one."
+  },
+  {
+   "year": 2017,
+   "title": "#MeToo",
+   "detail": "In October 2017 the #MeToo movement spread worldwide, bringing workplace harassment into public view.",
+   "significance": "Who can stay in a job, and on what terms, is a retirement question."
   }
  ],
  "inequities": [
@@ -266,7 +295,15 @@
    "headline": "Never Entered It",
    "text": "He was a toddler when Lehman failed and fifteen when the pandemic shut his school. At 20 he works two jobs, one of them through an app. As a part-timer, he belongs to a group in which only 44% of private-sector workers have access to a retirement plan and only 20% take part. He has no pension to lose and no 401(k) to watch, because the system his grandparents retired on never reached him. He turns 67 in 2072. Without reform, the Trustees project that payable retirement benefits will slide from about 78% of scheduled at depletion toward 62% by 2100. He is not grieving the dream. He never downloaded it."
   },
-  "irony": "The 60-year-old is racing to leave a system as its exit narrows, while the 20-year-old is told to save for a system that never let him in."
+  "irony": "The 60-year-old is racing to leave a system as its exit narrows, while the 20-year-old is told to save for a system that never let him in.",
+  "byGender": {
+   "headline": "Nearly 17 percent",
+   "text": "Among Americans 65 and older, Supplemental Poverty Measure poverty reached 15.4 percent in 2025; for older women it is nearly 17 percent (AARP Foundation). The average retired-worker benefit is $1,780 a month for women and $2,181 for men (SSA, December 2024). She outlives him, and the money."
+  },
+  "byRace": {
+   "headline": "$36,800",
+   "text": "The Federal Reserve’s 2025 Survey of Consumer Finances puts median net worth at $36,800 for Black families, down 25 percent since 2022, against $332,100 for white families and $79,600 for Hispanic families. The 60-year-old of 2025 is not one person."
+  }
  },
  "keyTerms": [
   {

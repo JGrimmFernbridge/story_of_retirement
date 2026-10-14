@@ -249,7 +249,15 @@
    "headline": "The first to be paid to stop",
    "text": "Born in 1900, they have never known a world without the automobile, and the assembly line was running by the time they turned thirteen. At seventeen they watched the country go to war, and at eighteen they survived a flu that killed people their own age. In 1920 they are twenty and entering a wage economy that is still volatile. Ahead are the 1929 crash at twenty-nine and the Social Security Act at thirty-five. They turn sixty-five in 1965, the year Medicare is signed. For many in their generation, especially white men in industrial jobs, stopping at 65 will feel like the natural shape of a life. Nobody will tell them that the forced exit at a fixed age is a corporate invention as young as they are."
   },
-  "irony": "The sixty-year-old built the industrial economy that made retirement necessary and will never have one; the twenty-year-old will take that economy’s exit as a birthright."
+  "irony": "The sixty-year-old built the industrial economy that made retirement necessary and will never have one; the twenty-year-old will take that economy’s exit as a birthright.",
+  "byGender": {
+   "headline": "The first to vote, not the first to be paid to stop",
+   "text": "In 1920 she could vote for the first time. Any pension she might draw was still her husband’s; the mothers’ aid laws spreading from Missouri and Illinois paid only widows judged deserving. If she worked for pay it was likely in domestic service or a garment loft like the Triangle Shirtwaist Company, where 123 of the 146 dead in 1911 were women and girls."
+  },
+  "byRace": {
+   "headline": "Who could afford to stop",
+   "text": "In 1900, 84.1 percent of Black men aged 65 and over were still in the labor force, against 64.4 percent of white men. About 90 percent of Black Americans still lived in the South, where Confederate veterans could not draw a federal pension and state pensions paid about a third as much. The first retirement system reached them last, if at all."
+  }
  },
  "keyTerms": [
   {

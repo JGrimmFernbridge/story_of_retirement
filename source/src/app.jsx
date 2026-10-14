@@ -40,6 +40,9 @@ const linksOf = id => LINKS.filter(l => l.from === id || l.to === id);
 const threadOf = id => THREADS.find(t => t.items.includes(id)) || null;
 const VAR_LABEL = { income: "Wealth & income", race: "Race & ethnicity", gender: "Sex & gender", education: "Education", job: "Job", place: "Place", immigration: "Immigration", longevity: "Longevity", generation: "Generation" };
 const LANE_ORDER = Object.fromEntries(LANES.map((l, i) => [l.id, i]));
+// law & policy comes in two kinds: monetary (green) and humanitarian (purple)
+const colorOf = it => (it.domain === "humanitarian" ? "var(--t-rights)" : (TYPE[it.type] ? TYPE[it.type].color : "var(--t-policy)"));
+const labelOf = it => (it.lane === "policy" && it.domain ? `${it.domain === "humanitarian" ? "Humanitarian" : "Monetary"} ${it.type === "legislation" ? "law" : "policy"}` : (TYPE[it.type] ? TYPE[it.type].label : ""));
 const STAGES = ["planted", "sprouting", "growing", "blooming", "harvest"];
 const eraColor = id => `var(--era-${id})`;
 const bandOf = id => (id === "conclusion" ? "var(--ink)" : eraColor(id));
@@ -168,8 +171,9 @@ const LABEL_MAX = 30;
 
 /* ================================================================ TIMELINE STAGE */
 function Marker({ it, x, x2, y, sel, onPick, fs }) {
-  const c = TYPE[it.type] ? TYPE[it.type].color : "var(--t-policy)";
+  const c = colorOf(it);
   const lab = trunc(itemLabel(it), LABEL_MAX);
+  const span = it.endYear && it.endYear > it.year && !(it.lane === "markets" && it.type !== "money") ? Math.max(8, x2 - x) : 0;
   let shape, lx = x + 9;
   if (it.lane === "markets" && it.type !== "money") {
     const w = Math.max(6, x2 - x);
@@ -177,6 +181,9 @@ function Marker({ it, x, x2, y, sel, onPick, fs }) {
     lx = x + w + 6;
   } else if (it.type === "money") {
     shape = <g><circle cx={x} cy={y} r={5.5} style={{ fill: c }} /><text x={x} y={y + 3} textAnchor="middle" style={{ fill: "var(--kraft)", fontSize: 8, fontWeight: 800 }}>$</text></g>;
+  } else if (it.domain === "humanitarian") {
+    // an equals sign: law about who counts
+    shape = <g><circle cx={x} cy={y} r={5.5} style={{ fill: c }} /><path d={`M${x - 3} ${y - 1.6} h6 M${x - 3} ${y + 1.6} h6`} style={{ stroke: "var(--kraft)", strokeWidth: 1.4, strokeLinecap: "round" }} /></g>;
   } else if (it.type === "seed") {
     // a seed in the ground, sprouting: brown with a green shoot, as on his master timeline
     shape = <g><path d={`M${x} ${y - 7} q0 -5 4.5 -6.5 M${x} ${y - 7} q-1 -3 -3.5 -3.5`} style={{ fill: "none", stroke: "var(--t-sprout)", strokeWidth: 1.8, strokeLinecap: "round" }} /><circle cx={x} cy={y} r={7.5} style={{ fill: c }} /><text x={x} y={y + 3.5} textAnchor="middle" style={{ fill: "var(--kraft)", fontSize: 9, fontWeight: 800 }}>{it.seed}</text></g>;
@@ -194,12 +201,13 @@ function Marker({ it, x, x2, y, sel, onPick, fs }) {
       ? <circle cx={x} cy={y} r={r} style={{ fill: "var(--kraft)", stroke: c, strokeWidth: 1.8, strokeDasharray: "2 1.5" }} />
       : <circle cx={x} cy={y} r={r} style={{ fill: c }} />;
   }
-  const aria = `${yrs(it.year, it.endYear)}, ${it.title}, ${TYPE[it.type] ? TYPE[it.type].label : ""}`;
+  const aria = `${yrs(it.year, it.endYear)}, ${it.title}, ${labelOf(it)}`;
   return (
     <g className={"mk" + (sel ? " sel" : "")} role="button" tabIndex={0} aria-label={aria} data-mk="1"
       onClick={() => onPick(it.id)} onKeyDown={e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onPick(it.id); } }}>
       <title>{aria}</title>
       <circle className="halo" cx={x} cy={y} r={10} style={{ fill: "transparent", stroke: "none" }} />
+      {span > 0 && <g className="span"><rect x={x} y={y + 6} width={span} height={3} rx={1.5} style={{ fill: c, fillOpacity: .5 }} /><rect x={x + span - 1.5} y={y + 3} width={1.5} height={9} style={{ fill: c, fillOpacity: .8 }} /></g>}
       {it.master && <circle className="ring" cx={x} cy={y} r={it.type === "seed" ? 10.5 : 8} />}
       {shape}
       <text className="lab" x={lx} y={y + fs * .36} style={{ fill: "var(--kraft-ink)", fontSize: fs, fontWeight: sel ? 700 : 500 }}>{lab}</text>
@@ -275,7 +283,7 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
     return () => ro.disconnect();
   }, [size.w, phone]);
-  const visible = useMemo(() => D.items.filter(it => layers[it.lane] && (!layers.masterOnly || it.master)), [layers]);
+  const visible = useMemo(() => D.items.filter(it => layers[it.lane] && (!layers.masterOnly || it.master) && (it.lane !== "policy" || (it.domain === "humanitarian" ? layers.policyHumanitarian !== false : layers.policyMonetary !== false))), [layers]);
   const ordered = useMemo(() => [...visible].sort((a, b) => a.year - b.year || LANE_ORDER[a.lane] - LANE_ORDER[b.lane]), [visible]);
 
   const layout = useMemo(() => {
@@ -288,8 +296,9 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
       const ends = [];
       its.forEach(it => {
         const x0 = X(it.year) - 10;
-        const bar = (it.lane === "markets" && it.type !== "money") || it.lane === "notes" ? Math.max(6, X(it.endYear || it.year) - X(it.year)) : 0;
-        const w = it.lane === "notes" ? Math.max(bar, trunc(it.title, NOTE_MAX).length * charW * 1.15) + 24 : bar + 24 + trunc(itemLabel(it), LABEL_MAX).length * charW;
+        const spanW = it.endYear && it.endYear > it.year ? Math.max(6, X(it.endYear) - X(it.year)) : 0;
+        const bar = (it.lane === "markets" && it.type !== "money") || it.lane === "notes" ? Math.max(6, spanW) : 0;
+        const w = it.lane === "notes" ? Math.max(bar, trunc(it.title, NOTE_MAX).length * charW * 1.15) + 24 : Math.max(bar + 24 + trunc(itemLabel(it), LABEL_MAX).length * charW, spanW + 10);
         let r = ends.findIndex(e => e <= x0); if (r === -1) { r = ends.length; ends.push(0); }
         ends[r] = x0 + w; rowOf[it.id] = r;
       });
@@ -545,7 +554,7 @@ function LeadIn({ width, toToday, openSheet }) {
         <div className="eyebrow">The author's master timeline</div>
         <p className="hand" style={{ fontSize: 17, lineHeight: 1.3 }}>“{MASTER.quotes[0]}”</p>
         <p style={{ fontSize: 13.5, color: "var(--kraft-muted)" }}>Drawn by hand on kraft paper before any of this was a website. Every entry on it is on this line, ringed, with his words. <button className="linkish" onClick={() => openSheet("master")}>See the original</button></p>
-        <div className="legend-dots">{MASTER.legend.filter(l => l.key !== "dates").map(l => <span key={l.key}><i style={{ background: l.color }} />{l.label}</span>)}</div>
+        <div className="legend-dots">{MASTER.legend.filter(l => l.key !== "dates").map(l => <span key={l.key}><i style={{ background: l.color }} />{l.label}</span>)}<span><i style={{ background: "var(--t-legislation)" }} />Monetary law</span><span><i style={{ background: "var(--t-rights)" }} />Humanitarian law</span></div>
       </div>
     </section>
   );
@@ -579,7 +588,7 @@ function Closing({ width, openModule, openSheet }) {
 }
 
 function Drawer({ sel, idx, total, step, go, close, openModule, openSheet }) {
-  const t = TYPE[sel.type] || TYPE.policy;
+  const t = { label: labelOf(sel) || "Policy", color: colorOf(sel) };
   const lens = sel.lens ? D.lens.find(l => l.id === sel.lens) : null;
   const seed = sel.seed ? D.seeds.find(s => s.n === sel.seed) : null;
   const m = MOD[sel.module];
@@ -638,7 +647,7 @@ function Drawer({ sel, idx, total, step, go, close, openModule, openSheet }) {
         )}
         {thread && (
           <div className="thread" style={{ "--tc": thread.color }}>
-            <div className="eyebrow">Thread · {thread.title}</div>
+            <div className="eyebrow">{thread.src === "course" ? "Course thread" : "Thread"} · {thread.title}</div>
             <p>{thread.summary}</p>
             <div className="steps" role="group" aria-label={thread.title}>
               {thread.items.map((id, i) => <button key={id} className={"stp" + (id === sel.id ? " cur" : "")} aria-current={id === sel.id ? "step" : undefined} onClick={() => go(id)}><span className="tnum">{i + 1} · {ITEM[id].year}</span><span>{trunc(ITEM[id].title, 44)}</span></button>)}
@@ -848,6 +857,13 @@ function LensCard({ lens }) {
         ))}
       </div>
       <div className="foot">{lens.irony}</div>
+      {(lens.byGender || lens.byRace) && (
+        <div className="lens-pair lens-vars">
+          {lens.byGender && <div><div className="eyebrow"><span className="chip var" data-v="gender">Sex & gender</span> same threshold</div><h5>{lens.byGender.headline}</h5><p>{lens.byGender.text}</p></div>}
+          {lens.byRace && <div><div className="eyebrow"><span className="chip var" data-v="race">Race & ethnicity</span> same threshold</div><h5>{lens.byRace.headline}</h5><p>{lens.byRace.text}</p></div>}
+          <div className="lens-note">Course expansion: these two readings are drafted from the unit’s “Who was left out” entries and the timeline, applying the author’s lens by sex and by race. They are not the author’s text.</div>
+        </div>
+      )}
       {lens.authorNotes && lens.authorNotes.length > 0 && (
         <div className="master-block" style={{ borderRadius: 0 }}>
           <div className="eyebrow">From the author's notebook</div>
@@ -900,9 +916,10 @@ function EvList({ list, kind, mid, onShow }) {
     <ul className="evlist">
       {list.map((e, i) => {
         const itemId = e.itemId, onLine = !!(itemId && ITEM[itemId]), t = TYPE[e.type];
+        const sq = e.domain === "humanitarian" ? { color: "var(--t-rights)", label: "Humanitarian law" } : t;
         return (
           <li key={i}>
-            <div className="yr tnum">{t && <span className="sq" style={{ background: t.color }} title={t.label} />}{yrs(e.year, e.endYear)}{e.decline && <span style={{ color: "var(--t-crisis)", marginLeft: 8 }}>{e.decline}</span>}{e.master && <span className="ring-tag" title="On the author's hand-drawn master timeline"><span className="ring-demo" aria-hidden="true" />master timeline</span>}</div>
+            <div className="yr tnum">{sq && <span className="sq" style={{ background: sq.color }} title={sq.label} />}{yrs(e.year, e.endYear)}{e.decline && <span style={{ color: "var(--t-crisis)", marginLeft: 8 }}>{e.decline}</span>}{e.master && <span className="ring-tag" title="On the author's hand-drawn master timeline"><span className="ring-demo" aria-hidden="true" />master timeline</span>}</div>
             {onLine ? <button className="t" onClick={() => onShow(itemId)} title="Show on the timeline">{e.title || e.name}</button> : <div style={{ fontWeight: 700 }}>{e.title || e.name}</div>}
             <div className="d">{e.detail}</div>
             {e.hand && <div className="hand-line hand">{e.hand}</div>}
@@ -959,7 +976,18 @@ function moduleSheet(m, { openModule, openSheet, showItem, close }) {
         </div>); })}
     </>
   ) });
-  [["policy", "policyEvents", "Law & policy", "var(--t-legislation)", 520], ["markets", "marketDrops", "Markets & money", "var(--t-crisis)", 460], ["movements", "socialMovements", "Social movements", "var(--t-movement)", 460], ["history", "historicalContext", "History", "var(--t-history)", 460], ["culture", "cultureEvents", "Culture & technology", "var(--t-culture)", 440]].forEach(([k, f, t, c, w]) => {
+  if (m.policyEvents && m.policyEvents.length) {
+    const mon = m.policyEvents.filter(e => e.domain !== "humanitarian"), hum = m.policyEvents.filter(e => e.domain === "humanitarian");
+    P.push({ id: "policy", tab: "Events", w: 540, cls: "scroll-y", label: "Law & policy", node: (
+      <>
+        <h3><span className="sq" style={{ background: "var(--t-legislation)" }} />Law & policy · monetary</h3>
+        {mon.length ? <EvList list={mon} kind="policy" mid={m.id} onShow={showItem} /> : <p style={{ color: "var(--muted)" }}>None in this era.</p>}
+        <h3 style={{ marginTop: 10 }}><span className="sq" style={{ background: "var(--t-rights)" }} />Law & policy · humanitarian</h3>
+        {hum.length ? <EvList list={hum} kind="policy" mid={m.id} onShow={showItem} /> : <p style={{ color: "var(--muted)" }}>None in this era.</p>}
+      </>
+    ) });
+  }
+  [["markets", "marketDrops", "Markets & money", "var(--t-crisis)", 460], ["movements", "socialMovements", "Social movements", "var(--t-movement)", 460], ["history", "historicalContext", "History", "var(--t-history)", 460], ["culture", "cultureEvents", "Culture & technology", "var(--t-culture)", 440]].forEach(([k, f, t, c, w]) => {
     if (m[f] && m[f].length) P.push({ id: k, tab: "Events", w, cls: "scroll-y", label: t, node: (<><h3><span className="sq" style={{ background: c }} />{t}</h3><EvList list={m[f]} kind={k} mid={m.id} onShow={showItem} /></>) });
   });
   P.push({ id: "inequities", tab: "Who was left out", w: 540, cls: "scroll-y", node: (
@@ -1315,7 +1343,7 @@ function MasterList({ showItem }) {
   return (
     <>
       <h3>Where each note landed · {list.length} entries</h3>
-      <ul className="evlist">{list.map(it => { const t = TYPE[it.type] || TYPE.policy; return (
+      <ul className="evlist">{list.map(it => { const t = { label: labelOf(it) || "Policy", color: colorOf(it) }; return (
         <li key={it.id}>
           <div className="yr tnum"><span className="pill" style={{ background: t.color, marginRight: 8 }}>{t.label}</span>{yrs(it.year, it.endYear)}</div>
           <button className="t" onClick={() => showItem(it.id)} title="Show on the timeline">{it.lane === "notes" ? it.title : itemLabel(it)}</button>
@@ -1433,7 +1461,7 @@ function IndexPanel({ era, showItem }) {
   return (
     <>
       <h3><span className="sq" style={{ background: eraColor(era) }} />{MOD[era].title} · {MOD[era].years} · {items.length} items</h3>
-      <ul className="evlist">{items.map(it => { const t = TYPE[it.type] || TYPE.policy; const lens = it.lens ? D.lens.find(l => l.id === it.lens) : null; return (
+      <ul className="evlist">{items.map(it => { const t = { label: labelOf(it) || "Policy", color: colorOf(it) }; const lens = it.lens ? D.lens.find(l => l.id === it.lens) : null; return (
         <li key={it.id}>
           <div className="yr tnum"><span className="pill" style={{ background: t.color, marginRight: 8 }}>{t.label}</span>{yrs(it.year, it.endYear)}</div>
           <button className="t" aria-expanded={open === it.id} onClick={() => setOpen(open === it.id ? null : it.id)}>{lens ? (lens.source === "author" ? `${lens.label}: two lives` : `Two lives in ${lens.year}`) : it.title}</button>
@@ -1514,7 +1542,15 @@ function App() {
             <div className="layers-pop" role="dialog" aria-label="Timeline layers">
               <div className="eyebrow">Show on the timeline</div>
               {[...LANES, { id: "sp", label: "S&P 500 line", color: "var(--kraft-ink)" }].map(l => (
-                <label key={l.id} htmlFor={"layer-" + l.id}><input id={"layer-" + l.id} type="checkbox" checked={!!layers[l.id]} onChange={() => setLayers(s => ({ ...s, [l.id]: !s[l.id] }))} /><span className="sw" style={{ background: l.color }} />{l.label}</label>
+                <React.Fragment key={l.id}>
+                  <label htmlFor={"layer-" + l.id}><input id={"layer-" + l.id} type="checkbox" checked={!!layers[l.id]} onChange={() => setLayers(s => ({ ...s, [l.id]: !s[l.id] }))} /><span className="sw" style={{ background: l.color }} />{l.label}</label>
+                  {l.id === "policy" && layers.policy && (
+                    <div className="sub-toggles">
+                      <label htmlFor="layer-pm"><input id="layer-pm" type="checkbox" checked={layers.policyMonetary !== false} onChange={() => setLayers(s => ({ ...s, policyMonetary: s.policyMonetary === false }))} /><span className="sw" style={{ background: "var(--t-legislation)" }} />Monetary law & policy</label>
+                      <label htmlFor="layer-ph"><input id="layer-ph" type="checkbox" checked={layers.policyHumanitarian !== false} onChange={() => setLayers(s => ({ ...s, policyHumanitarian: s.policyHumanitarian === false }))} /><span className="sw" style={{ background: "var(--t-rights)" }} />Humanitarian law & policy</label>
+                    </div>
+                  )}
+                </React.Fragment>
               ))}
               {layers.sp && geom && geom.spHidden && <div className="eyebrow" style={{ fontSize: 11, textTransform: "none", letterSpacing: 0 }}>The S&P line is stepping aside because this window is short; make the window taller to see it.</div>}
               <label htmlFor="layer-master" className="master-toggle"><input id="layer-master" type="checkbox" checked={!!layers.masterOnly} onChange={() => setLayers(s => ({ ...s, masterOnly: !s.masterOnly }))} /><span className="ring-demo" aria-hidden="true" /><span>Only what's on the author's master timeline</span></label>

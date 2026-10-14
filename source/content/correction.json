@@ -163,7 +163,15 @@
    "headline": "The Student in This Seat",
    "text": "He is 20, sitting in this classroom. He starts work at a time when there are about 2.6 workers paying into Social Security for each beneficiary, and when part-time workers have retirement-plan access only 44% of the time. If he takes a job in California at a small firm with no plan, CalSavers may enroll him automatically. If he saves in 2027, Washington may match half of it. He turns 67 in 2073. Unlike every 20-year-old before him in this history, he has seen the system’s design, who built it and where it breaks. He can still choose what he wants from his life before anyone hands him a dream."
   },
-  "irony": "For the first time in this history, the 60-year-old and the 20-year-old can ask the same question, “who gave us this dream?”, at the same table, before either has been fully consumed by the answer."
+  "irony": "For the first time in this history, the 60-year-old and the 20-year-old can ask the same question, “who gave us this dream?”, at the same table, before either has been fully consumed by the answer.",
+  "byGender": {
+   "headline": "Who a Correction must reach first, by sex",
+   "text": "Fifty-five percent of single women are projected to run short; the average retired-worker benefit is $1,780 a month for women against $2,181 for men; elder poverty for women is nearly 17 percent. A correction tied to one age, or one household type, repeats the 1939 design."
+  },
+  "byRace": {
+   "headline": "Who a Correction must reach first, by race",
+   "text": "Only 48 percent of the lowest-paid quarter of private-sector workers have access to a workplace plan; median Black family wealth is $36,800; men in the richest 1 percent live 14.6 years longer than men in the poorest. A correction that builds on the employer system starts behind, and a correction tied to a single age lands on different lives."
+  }
  },
  "keyTerms": [
   {

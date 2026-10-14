@@ -87,6 +87,22 @@
    "type": "policy",
    "detail": "On February 11, 1887, President Grover Cleveland vetoed a bill to pension Union veterans who could not support themselves, however they had become disabled. He cited its cost, the difficulty of measuring dependence, and the likelihood of fraud. The House could not override the veto.",
    "significance": "The fight was over whether a pension compensates service or supports need. It previewed the Dependent Pension Act that Congress passed three years later."
+  },
+  {
+   "year": 1882,
+   "title": "Chinese Exclusion Act",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "Signed May 6, 1882, the act suspended immigration by Chinese laborers and barred Chinese residents from citizenship. It was extended in 1892, made permanent in 1902 and repealed only in 1943.",
+   "significance": "The first federal law to bar a people by name. The workers who built the Central Pacific could not become citizens of the country they connected."
+  },
+  {
+   "year": 1887,
+   "title": "Dawes Act",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "The General Allotment Act of February 8, 1887 broke communally held reservation land into individual parcels and opened the ‘surplus’ to others. By the time allotment ended in 1934, Native-held land had fallen by about two-thirds.",
+   "significance": "Old age on the land had been the one retirement that did not need a pension. Allotment took the land."
   }
  ],
  "marketDrops": [
@@ -140,6 +156,13 @@
    "name": "Eight-hour movement and the Haymarket affair",
    "detail": "On May 1, 1886, an estimated 300,000 to 500,000 workers struck nationwide for an eight-hour day, including 30,000 to 40,000 in Chicago. At a Haymarket Square rally on May 4, a bomb and the gunfire that followed killed seven police officers and at least four civilians. Eight anarchists were convicted, though only two were present when the bomb exploded. Four were hanged in November 1887, and Governor John Peter Altgeld pardoned three survivors in 1893.",
    "significance": "Industrial workers began fighting over the terms of the wage bargain itself. The book connects this struggle to the later fights for pensions and Social Security."
+  },
+  {
+   "year": 1848,
+   "endYear": 1920,
+   "title": "The women’s suffrage movement",
+   "detail": "From the Seneca Falls convention of 1848 to the ratification of the Nineteenth Amendment on August 18, 1920: seventy-two years of organizing for the vote.",
+   "significance": "The longest of the rights movements on this line, and the first to change who could vote on everything that followed."
   }
  ],
  "inequities": [
@@ -249,7 +272,15 @@
    "headline": "The generation that will be told to stop",
    "text": "Born in 1870, five years after the Civil War ended, they turn twenty in 1890. They are walking toward the factory gate rather than the family field. They will be twenty-three when the Panic of 1893 pushes unemployment to an estimated 17 to 19 percent, thirty-seven in the Panic of 1907, and fifty-nine when the market crashes in 1929. They will be sixty-five in 1935, the year Social Security is signed. Yet its first monthly retirement check will not go out until January 1940, when they are about seventy. Nothing in their upbringing suggests that work ends. They are the generation that will eventually be told it must."
   },
-  "irony": "The man who never imagined retiring will be among the first paid simply for growing old; the boy raised to work until he dropped will be among the first told he has to stop."
+  "irony": "The man who never imagined retiring will be among the first paid simply for growing old; the boy raised to work until he dropped will be among the first told he has to stop.",
+  "byGender": {
+   "headline": "A widow at the threshold",
+   "text": "Under coverture she could not own property, make contracts or keep wages in her own name; her old age depended on her husband living, or on her family’s willingness. The 1890 pension act let a Union veteran’s widow qualify, but only if she had no support beyond her daily labor and had married him before the law passed: $8 a month, $2 per child. Her security was his service."
+  },
+  "byRace": {
+   "headline": "A Black veteran at the threshold",
+   "text": "About 179,000 Black soldiers served in the Union Army. The Pension Bureau approved 83 percent of white and 77 percent of Black applications from wounded veterans in 1865–1878, and the gap widened in the 1880s. Chinese workers who built the Central Pacific were barred from citizenship in 1882; the Dawes Act of 1887 began breaking up Native land. The first American retirement system was a veterans’ system, and the color line ran through it."
+  }
  },
  "keyTerms": [
   {

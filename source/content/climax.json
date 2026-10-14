@@ -77,6 +77,47 @@
    "type": "legislation",
    "detail": "Signed by President Carter on November 6, 1978, a tax bill added Section 401(k) to the Internal Revenue Code, effective January 1, 1980, letting employees defer part of their pay into qualified plans before tax. The same law created simplified employee pensions (SEPs).",
    "significance": "Grimm writes that the rules of the game were rewritten in 1978 and the players were not informed; historians of the provision note it was not designed to replace pensions."
+  },
+  {
+   "year": 1965,
+   "title": "Voting Rights Act",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "Signed August 6, 1965, the act banned literacy tests and put federal oversight over voting rules in states with a history of discrimination.",
+   "significance": "The vote is how retirement policy gets changed. Who held it decided whose old age the next fifty years of law would protect."
+  },
+  {
+   "year": 1965,
+   "title": "Immigration and Nationality Act",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "Signed October 3, 1965, the Hart–Celler Act ended the national-origins quota system in place since 1924 and opened immigration from Asia, Africa and Latin America.",
+   "significance": "The workers who would pay into Social Security in the 2020s came, in large part, through this door."
+  },
+  {
+   "year": 1972,
+   "title": "Title IX",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "Signed June 23, 1972, Title IX of the Education Amendments barred sex discrimination in any education program receiving federal money.",
+   "significance": "Education is the strongest predictor of later wealth on this site’s data. This opened it."
+  },
+  {
+   "year": 1972,
+   "endYear": 1982,
+   "title": "The Equal Rights Amendment passes Congress, then fails ratification",
+   "type": "policy",
+   "domain": "humanitarian",
+   "detail": "Congress sent the ERA to the states on March 22, 1972. Thirty-five of the needed thirty-eight states ratified it before the extended deadline expired on June 30, 1982.",
+   "significance": "The one rights measure of the era that did not become law, and a marker of how contested the ground was."
+  },
+  {
+   "year": 1973,
+   "title": "Roe v. Wade",
+   "type": "policy",
+   "domain": "humanitarian",
+   "detail": "On January 22, 1973, the Supreme Court held 7–2 that the Constitution protects a right to abortion. The decision was overturned by Dobbs v. Jackson Women’s Health Organization on June 24, 2022.",
+   "significance": "The most polarizing decision of the era, and for the course a marker of how far questions of family, work and women’s lives had moved into federal law."
   }
  ],
  "marketDrops": [
@@ -124,6 +165,25 @@
    "name": "Gray Panthers",
    "detail": "Forced to retire from her job with the Presbyterian Church at 65 in 1970, Maggie Kuhn and friends in similar circumstances founded the group that became the Gray Panthers. It campaigned on pension rights and age discrimination under the banner of “young and old together.”",
    "significance": "The first organized challenge to 65 = Old and Done (seed 3); the movement helped bring about the end of most forced-retirement rules."
+  },
+  {
+   "year": 1963,
+   "title": "The March on Washington: “I Have a Dream”",
+   "detail": "On August 28, 1963, about 250,000 people gathered at the Lincoln Memorial for the March on Washington for Jobs and Freedom, where Martin Luther King Jr. delivered the “I Have a Dream” speech.",
+   "significance": "Jobs were in the march’s name. The Civil Rights Act followed within a year."
+  },
+  {
+   "year": 1963,
+   "endYear": 1982,
+   "title": "The women’s movement",
+   "detail": "From The Feminine Mystique and the Equal Pay Act in 1963 through Title IX, Roe and the Equal Credit Opportunity Act, to the ERA deadline in 1982.",
+   "significance": "Two decades in which the one-earner household the golden age was designed around stopped being the only legal design."
+  },
+  {
+   "year": 1969,
+   "title": "Stonewall",
+   "detail": "The uprising at the Stonewall Inn in New York began June 28, 1969, and is counted as the start of the modern gay rights movement.",
+   "significance": ""
   }
  ],
  "inequities": [
@@ -247,7 +307,15 @@
    "headline": "Handed a calculator",
    "text": "Born in 1960, the year Sun City opened, they were five when Medicare passed and grew up assuming pensions, suburbs, and rising wages were simply how life works—the anomaly, though told it was the template. They were thirteen when the oil embargo hit and fourteen when stocks bottomed after losing nearly half their value. Now 20, they enter a labor market with inflation above 13 percent, the year Section 401(k) takes effect. Within a few years their full Social Security retirement age will be pushed to 67, and their employer will more likely offer an account than a pension. They will be in their late forties when the 2008 crash cuts stocks by more than half."
   },
-  "irony": "In 1980 the 60-year-old was cashing out a promise; the 20-year-old was being handed a calculator and told “good luck.”"
+  "irony": "In 1980 the 60-year-old was cashing out a promise; the 20-year-old was being handed a calculator and told “good luck.”",
+  "byGender": {
+   "headline": "Women by design",
+   "text": "The golden age’s household was a design specification: his earnings record, his pension, her security through both. Divorced wives became eligible for spousal Social Security only in 1965; until the Retirement Equity Act of 1984 a husband could waive a survivor’s pension without his wife’s consent; she could not get credit in her own name until 1974. At 60 in 1980 she has arrived at the peak of a system that counted her as a dependent."
+  },
+  "byRace": {
+   "headline": "The color line of the bloom",
+   "text": "Farm and domestic workers were not fully covered by Social Security until 1954, and employment discrimination by race was legal until Title VII in 1964. The pensions of the golden age followed the unionized industries, and the home equity followed the suburbs the FHA had drawn. The 60-year-old Black worker of 1980 spent the first half of his career outside the recipe."
+  }
  },
  "keyTerms": [
   {

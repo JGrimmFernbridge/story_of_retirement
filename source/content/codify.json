@@ -84,6 +84,14 @@
    "type": "legislation",
    "detail": "Signed August 17, 2006, the PPA made it easier for employers to enroll workers in 401(k) plans automatically and protected fiduciaries who invest non-directing participants in “qualified default investment alternatives,” such as target-date or balanced funds.",
    "significance": "A tacit admission that the do-it-yourself model needed defaults to work: the system began quietly making choices for savers it had said were in control."
+  },
+  {
+   "year": 1990,
+   "title": "Americans with Disabilities Act",
+   "type": "legislation",
+   "domain": "humanitarian",
+   "detail": "Signed July 26, 1990, the ADA prohibited discrimination on the basis of disability in employment, public services and public accommodations.",
+   "significance": "Disability is the oldest reason people leave work before they planned to. This was the first law to say the workplace had to adapt rather than the worker exit."
   }
  ],
  "marketDrops": [
@@ -277,7 +285,15 @@
   "authorNotes": [
    "His ladder for the 60-year-old of 1980, born 1920: horse and buggy to personal computers. Age 10, the Great Depression. 20, World War II. 30, nukes. 40, space. 50, Vietnam, the Summer of Love, Watergate. 60, 1980.",
    "For those entering the system in 1980: a young-worker boom. Boomers born 1946–64 are the workforce of 1980 at ages 16–34 and of 2010 at 46–64, born in stability and earning in the boom. The newborns of 1980 enter work at the dot-com peak."
-  ]
+  ],
+  "byGender": {
+   "headline": "Longer lives, smaller balances",
+   "text": "Individual accounts must stretch over an individual lifespan: in 1990 a woman reaching 65 could expect 19.6 more years, against 15.3 for a man. Years out of paid work for caregiving meant fewer contributions. At the threshold of 2010 she holds the smaller balance and the longer bill."
+  },
+  "byRace": {
+   "headline": "The crash, by household",
+   "text": "From 2005 to 2009 median net worth fell 16 percent for white households, 53 percent for Black households and 66 percent for Hispanic households (Pew). By 2009 the median white household held 20 times the wealth of the median Black household. The losses at the threshold of 2010 were not shared evenly."
+  }
  },
  "keyTerms": [
   {
