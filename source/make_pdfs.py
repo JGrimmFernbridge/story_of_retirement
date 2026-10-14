@@ -118,7 +118,9 @@ def guide_html():
     for m in D["modules"]:
         a = m["assignment"]
         parts.append(f'<section class="chap ui"><div class="band" style="background:{ERA_HEX[m["id"]]}"></div><div class="eyebrow">Unit {m["unit"]} · {E(m["role"])} · {E(m["years"])} · {E(m["chapterLabel"])}</div>'
-                     f'<h1 class="ct" style="font-size:30pt">{E(m["title"])}</h1><p class="q" style="font-family:Newsreader,serif">{E(m["bigQuestion"])}</p>'
+                     f'<h1 class="ct" style="font-size:30pt">{E(m["title"])}</h1>'
+                     + (f'<p class="eyebrow" style="margin:-4pt 0 6pt">In the author’s first sketch (November 18, 2024): {E(m["balance"]["name"])} · {E(m["balance"]["span"])}. ' + E(" ".join(m["balance"]["points"])) + '</p>' if m.get("balance") else "")
+                     + f'<p class="q" style="font-family:Newsreader,serif">{E(m["bigQuestion"])}</p>'
                      '<h4>Learning objectives</h4><ul>' + "".join(f"<li>{E(o)}</li>" for o in m["learningObjectives"]) + '</ul>'
                      '<h4>Discussion questions</h4><ol>' + "".join(f"<li>{E(q)}</li>" for q in m["discussionQuestions"]) + '</ol>'
                      '<h4>Key terms</h4><dl class="cols">' + "".join(f'<div><dt>{E(t["term"])}</dt><dd>{E(t["definition"])}</dd></div>' for t in m["keyTerms"]) + '</dl>'

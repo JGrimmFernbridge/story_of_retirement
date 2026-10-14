@@ -268,7 +268,7 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
     const el = stageRef.current; if (!el) return;
     const measure = () => {
       let h = 0; el.querySelectorAll(".era-sticky").forEach(n => { h = Math.max(h, n.offsetHeight); });
-      if (h) setHeadMeasured(prev => (Math.abs(prev - (h + 10)) > 1 ? h + 10 : prev));
+      if (h) setHeadMeasured(prev => (Math.abs(prev - (h + 8)) > 1 ? h + 8 : prev));
     };
     measure();
     const ro = new ResizeObserver(measure); el.querySelectorAll(".era-sticky").forEach(n => ro.observe(n));
@@ -472,6 +472,7 @@ function Stage({ layers, selId, pick, go, openModule, openSheet, viewportRef, se
                   <div className="era-sticky">
                     <div className="era-meta"><span className="chipdot" style={{ background: eraColor(e.id) }} />Unit {m.unit} · {m.years} · {m.role.toLowerCase()}</div>
                     <button className="era-name" onClick={() => openModule(e.id, "overview")} aria-label={`Open ${m.title}, ${m.years}`}>{m.title}</button>
+                    {m.balance && <div className="era-sub hand">{m.balance.name}</div>}
                     {!phone && size.h >= 720 && <div className="era-tag">{m.tagline}</div>}
                     <button className="era-open" onClick={() => openModule(e.id, "chapter")}>Read the chapter{Icon.right}</button>
                   </div>
@@ -922,6 +923,16 @@ function moduleSheet(m, { openModule, openSheet, showItem, close }) {
       <p className="lead">{m.tagline}</p>
       <div className="bigq"><div className="eyebrow">The big question</div><p className="q">{m.bigQuestion}</p></div>
       <div className="big">{m.overview.split(/\n\n+/).map((p, i) => <p key={i}>{p}</p>)}</div>
+      {m.balance && (
+        <div className="balance-block">
+          <div className="eyebrow">In the author's first sketch · November 18, 2024</div>
+          <div className="hand" style={{ fontSize: 22, lineHeight: 1.2, color: "var(--paper-ink)" }}>{m.balance.name}<span className="type" style={{ fontSize: 12, marginLeft: 10, color: "#7d6a52" }}>{m.balance.span}</span></div>
+          {m.balance.seesaw.length > 0 && <div className="seesaw-grid" style={{ gridTemplateColumns: m.balance.seesaw.length > 1 ? "1fr 1fr" : "minmax(0, 240px)" }}>{m.balance.seesaw.map(s => <Seesaw key={s.label} s={s} />)}</div>}
+          <ul className="balance-pts">{m.balance.points.map((t, i) => <li key={i} className="hand">{t}</li>)}</ul>
+          {m.balance.first && <div className="type" style={{ fontSize: 12.5, color: "#7d6a52" }}>His first name for these years: {m.balance.first}</div>}
+          <p style={{ fontSize: 14.5, color: "var(--ink-2)" }}>{m.balance.line} <button className="linkish" onClick={() => openSheet("master", "nb-balance")}>See the whole sketch</button></p>
+        </div>
+      )}
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
         <a className="btn" href={m.downloads.pdf} download target="_blank" rel="noopener">{Icon.down}Chapter PDF</a>
         {ERA_IDS.includes(m.id) && <button className="btn" onClick={() => { const f = D.items.filter(i => i.module === m.id && i.lane === "policy").sort((a, b) => a.year - b.year)[0]; if (f) showItem(f.id); }}>Show this era on the timeline</button>}
@@ -1474,7 +1485,7 @@ function App() {
   if (sheet) {
     if (sheet.type === "module") {
       const m = MOD[sheet.id], pv = prevMod(m.id), nx = nextMod(m.id);
-      sheetEl = <Sheet key={m.id + sheet.k} band={bandOf(m.id)} eyebrow={`Unit ${m.unit} · ${m.role} · ${m.years}`} title={m.title} onClose={closeSheet} start={sheet.panel}
+      sheetEl = <Sheet key={m.id + sheet.k} band={bandOf(m.id)} eyebrow={`Unit ${m.unit} · ${m.role} · ${m.years}${m.balance ? " · " + m.balance.name : ""}`} title={m.title} onClose={closeSheet} start={sheet.panel}
         panels={moduleSheet(m, { openModule, openSheet, showItem, close: closeSheet })}
         nav={<>{pv && <button className="icon-btn" aria-label={`Previous: ${pv.title}`} title={pv.title} onClick={() => openModule(pv.id, "overview")}>{Icon.left}</button>}{nx && <button className="icon-btn" aria-label={`Next: ${nx.title}`} title={nx.title} onClick={() => openModule(nx.id, "overview")}>{Icon.right}</button>}</>} />;
     } else if (sheet.type === "seeds") sheetEl = <Sheet key={"s" + sheet.k} band="var(--t-seed)" eyebrow="Sowing and reaping" title="The nine seeds" onClose={closeSheet} start={sheet.panel} panels={seedsSheet()} />;

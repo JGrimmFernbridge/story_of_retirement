@@ -79,6 +79,8 @@ def main():
     notebook = json.load(open(f"{BASE}/context/notebook.json", encoding="utf-8"))
     for pg in notebook["pages"]:
         pg["file"] = f"notes/p{pg['n']:02d}.jpg"
+    for m in modules:
+        m["balance"] = notebook.get("byEra", {}).get(m["id"])
 
     # ---- timeline items
     MT = json.load(open(f"{BASE}/context/master_timeline.json", encoding="utf-8"))

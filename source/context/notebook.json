@@ -449,5 +449,176 @@
    "n": 18,
    "caption": "Draft, Correction and Catastrophe: who the model works for, and the generational divide"
   }
- ]
+ ],
+ "byEra": {
+  "classical": {
+   "name": "The pre-retirement era",
+   "span": "pre-1890",
+   "first": null,
+   "seesaw": [
+    {
+     "label": "Pre-1890",
+     "name": "Pre-retirement era",
+     "left": "Work",
+     "right": "Income",
+     "tilt": "left",
+     "note": "no concept of retirement; farm to factory"
+    }
+   ],
+   "points": [
+    "There was really no concept of retirement like we currently have before the 1900s.",
+    "Family farm economy → factory.",
+    "No globalization. No modern medicine. Low life expectancy."
+   ],
+   "line": "Work on one side, income on the other, and the beam tips toward work."
+  },
+  "conception": {
+   "name": "Government support: abroad",
+   "span": "1890–1920",
+   "first": "1890–1920 · gov’t abroad",
+   "seesaw": [
+    {
+     "label": "1890–1950",
+     "name": "Government support",
+     "left": "Work · assets · Social Security",
+     "right": "Income",
+     "tilt": "left",
+     "note": "Germany, WWI, the 20s, the Depression, WWII"
+    }
+   ],
+   "points": [
+    "Germany. WWI. Forced retirement.",
+    "Work, assets and Social Security on one side; income on the other. The beam tips toward work for sixty years."
+   ],
+   "line": "The first of his two government-support decades: the idea arrives from abroad."
+  },
+  "crucible": {
+   "name": "Government support: the U.S.",
+   "span": "1920–1950",
+   "first": "1920–1950 · gov’t U.S.",
+   "seesaw": [
+    {
+     "label": "1890–1950",
+     "name": "Government support",
+     "left": "Work · assets · Social Security",
+     "right": "Income",
+     "tilt": "left",
+     "note": "Germany, WWI, the 20s, the Depression, WWII"
+    }
+   ],
+   "points": [
+    "Roaring 20’s. Great Depression. WWII. Social Security.",
+    "Work, assets and Social Security on one side; income on the other."
+   ],
+   "line": "The second government-support era: the United States writes its own version."
+  },
+  "climax": {
+   "name": "The optional retirement era",
+   "span": "1950–1970, then the individual retirement era begins",
+   "first": "1950–1980 · optional",
+   "seesaw": [
+    {
+     "label": "1950–1970",
+     "name": "Optional retirement era",
+     "left": "Five pillars",
+     "right": "Income",
+     "tilt": "level",
+     "note": "it worked: income, low expense, life expectancy, medical, simplicity"
+    },
+    {
+     "label": "1970–1990",
+     "name": "Individual retirement era",
+     "left": "Assets",
+     "right": "Income",
+     "tilt": "left",
+     "note": "expansion, asset acquisition, a new money mind"
+    }
+   ],
+   "points": [
+    "It worked. Five pillars: income, low expense (asset cost), life expectancy, medical, simplicity.",
+    "From 1970: 1950’s support, expansion, asset acquisition, a new $ mind. Assets begin to carry what work and the pillars once did."
+   ],
+   "line": "The one era where the beam sits level. He called it optional because for the first time stopping was a choice, and it worked."
+  },
+  "codify": {
+   "name": "The individual retirement era, then the shift",
+   "span": "1970–1990 and 1990–2010",
+   "first": "1980–2010 · entitled",
+   "seesaw": [
+    {
+     "label": "1970–1990",
+     "name": "Individual retirement era",
+     "left": "Assets",
+     "right": "Income",
+     "tilt": "left",
+     "note": "expansion, asset acquisition, a new money mind"
+    },
+    {
+     "label": "1990–2010",
+     "name": "The shift",
+     "left": "Fewer assets",
+     "right": "Opposite five pillars",
+     "tilt": "right",
+     "note": "same game, no ability to play it"
+    }
+   ],
+   "points": [
+    "1970–1990: assets against income. Expansion, asset acquisition, a new $ mind.",
+    "1990–2010, the shift: same game with no ability to play it. Those that began work after 1990. Exact opposite conditions from what worked."
+   ],
+   "line": "His first name for these years was entitled: the pillars came down and the game was kept."
+  },
+  "collapse": {
+   "name": "The death of retirement era",
+   "span": "2010–2040",
+   "first": "2010–2040 · death",
+   "seesaw": [
+    {
+     "label": "2010–2040",
+     "name": "Death of retirement era",
+     "left": "",
+     "right": "",
+     "tilt": "broken",
+     "note": "flat income, rising cost, long life, medical, complex"
+    }
+   ],
+   "points": [
+    "Broken.",
+    "Flat income. Rising cost. Long life. Medical $$$. Complex."
+   ],
+   "line": "The beam does not tip. It breaks."
+  },
+  "catastrophe": {
+   "name": "R.I.P.",
+   "span": "2040",
+   "first": null,
+   "seesaw": [
+    {
+     "label": "2040",
+     "name": "R.I.P.",
+     "left": "",
+     "right": "Income",
+     "tilt": "right",
+     "note": "what can we do? work, five pillars, a new model"
+    }
+   ],
+   "points": [
+    "Income alone on the beam, and nothing left to balance it.",
+    "What can we do?"
+   ],
+   "line": "His 2040 panel is a headstone with a question under it."
+  },
+  "correction": {
+   "name": "What can we do?",
+   "span": "today",
+   "first": null,
+   "seesaw": [],
+   "points": [
+    "Work.",
+    "Five pillars: social community.",
+    "Magic Circle: a new $ model."
+   ],
+   "line": "The answer he wrote under R.I.P., in three lines, on November 18, 2024."
+  }
+ }
 }
