@@ -619,6 +619,8 @@ function Drawer({ sel, idx, total, step, go, close, openModule, openSheet }) {
               <div key={k}><div className="who">{role} · age {age} · born {lens[k].born}</div><h4>{lens[k].headline}</h4><p>{lens[k].text}</p></div>
             ))}
             <p className="irony">{lens.irony}</p>
+            {(lens.byGender || lens.byRace) && <div className="eyebrow" style={{ marginTop: 4 }}>The same threshold, by sex and by race</div>}
+            <LensVars lens={lens} compact />
           </div>
         ) : (
           <>
@@ -857,19 +859,26 @@ function LensCard({ lens }) {
         ))}
       </div>
       <div className="foot">{lens.irony}</div>
-      {(lens.byGender || lens.byRace) && (
-        <div className="lens-pair lens-vars">
-          {lens.byGender && <div><div className="eyebrow"><span className="chip var" data-v="gender">Sex & gender</span> same threshold</div><h5>{lens.byGender.headline}</h5><p>{lens.byGender.text}</p></div>}
-          {lens.byRace && <div><div className="eyebrow"><span className="chip var" data-v="race">Race & ethnicity</span> same threshold</div><h5>{lens.byRace.headline}</h5><p>{lens.byRace.text}</p></div>}
-          <div className="lens-note">Course expansion: these two readings are drafted from the unit’s “Who was left out” entries and the timeline, applying the author’s lens by sex and by race. They are not the author’s text.</div>
-        </div>
-      )}
       {lens.authorNotes && lens.authorNotes.length > 0 && (
         <div className="master-block" style={{ borderRadius: 0 }}>
           <div className="eyebrow">From the author's notebook</div>
           {lens.authorNotes.map((t, i) => <p key={i} className="hand" style={{ fontSize: 16 }}>{t}</p>)}
         </div>
       )}
+    </div>
+  );
+}
+
+// the same threshold read by sex and by race: course expansion, drafted from the unit's inequity entries
+function LensVars({ lens, compact }) {
+  if (!lens.byGender && !lens.byRace) return null;
+  return (
+    <div className={"lens-card lens-vars-card" + (compact ? " compact" : "")}>
+      <div className="lens-pair lens-vars">
+        {lens.byGender && <div><div className="eyebrow"><span className="chip var" data-v="gender">Sex & gender</span> {lens.year}, same threshold</div><h5>{lens.byGender.headline}</h5><p>{lens.byGender.text}</p></div>}
+        {lens.byRace && <div><div className="eyebrow"><span className="chip var" data-v="race">Race & ethnicity</span> {lens.year}, same threshold</div><h5>{lens.byRace.headline}</h5><p>{lens.byRace.text}</p></div>}
+      </div>
+      <div className="lens-note">Course expansion: drafted from this unit’s “Who was left out” entries and the timeline, applying the author’s lens by sex and by race. Not the author’s text.</div>
     </div>
   );
 }
@@ -960,8 +969,10 @@ function moduleSheet(m, { openModule, openSheet, showItem, close }) {
   P.push({ id: "chapter", tab: "Chapter", cls: "chapter", label: "Chapter text", node: <ChapterCols m={m} /> });
   P.push({ id: "lens", tab: "Two lives", w: 760, cls: "scroll-y", node: (
     <>
-      <h3>The Two-Person Lens · same year, two realities</h3>
+      <h3>The Two-Person Lens · same year, two realities · by age</h3>
       <LensCard lens={m.twoPersonLens} />
+      {(m.twoPersonLens.byGender || m.twoPersonLens.byRace) && <h3 style={{ marginTop: 6 }}>The same threshold · by sex and by race</h3>}
+      <LensVars lens={m.twoPersonLens} />
       {extra.map(l => <div key={l.id} style={{ display: "grid", gap: 10 }}><h3>From the author's lens notes · {l.label}</h3><LensCard lens={l} /></div>)}
     </>
   ) });

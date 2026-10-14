@@ -182,7 +182,8 @@ def main():
         if m["id"] == "conclusion":
             continue
         t = m["twoPersonLens"]
-        lens.append({"year": t["year"], "module": m["id"], "label": m["title"], "older": t["older"], "younger": t["younger"], "irony": t["irony"], "source": "module"})
+        lens.append({"year": t["year"], "module": m["id"], "label": m["title"], "older": t["older"], "younger": t["younger"], "irony": t["irony"], "source": "module",
+                     "byGender": t.get("byGender"), "byRace": t.get("byRace")})
     for x in seeds_lens["extraLens"]:
         mod = next(k for k, v in ERAS.items() if v["start"] <= x["year"] < v["end"])
         lens.append({**x, "module": mod, "source": "author"})
