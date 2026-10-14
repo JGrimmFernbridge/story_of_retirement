@@ -1351,6 +1351,7 @@ function NotebookTheme({ t, go }) {
     <>
       <div className="nb-head"><span className="chipdot" style={{ background: bandOf(t.era) }} /><h3 style={{ margin: 0 }}>{t.title}</h3></div>
       {t.tag && <div className="eyebrow">{t.tag}</div>}
+      {t.dated && <div className="hand" style={{ color: "var(--paper-ink)", fontSize: 15 }}>dated {t.dated}</div>}
       <div className="master-block">
         {t.his.map((line, i) => <p key={i} className="hand" style={{ fontSize: 16.5 }}>{line}</p>)}
       </div>
@@ -1369,7 +1370,7 @@ function NotebookPages({ pages }) {
         {pages.map(p => (
           <figure key={p.n} className={open === p.n ? "open" : ""}>
             <button onClick={() => setOpen(open === p.n ? null : p.n)} aria-expanded={open === p.n} aria-label={`Page ${p.n}: ${p.caption}`}><img src={p.file} alt="" loading="lazy" /></button>
-            <figcaption><span className="tnum">{p.n}</span> {p.caption}</figcaption>
+            <figcaption><span className="tnum">{p.n === 0 ? "11/18/24" : p.n}</span> {p.caption}</figcaption>
           </figure>
         ))}
       </div>
