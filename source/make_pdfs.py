@@ -10,54 +10,60 @@ D = json.load(open(ROOT / "build" / "data.json", encoding="utf-8"))
 NM = ROOT / "node_modules"
 E = html.escape
 
+# The Future Poor brand: Source Serif 4 headings, Public Sans body, navy and gold
 CSS = f"""
-@font-face {{ font-family: Archivo; src: url('file://{NM}/@fontsource-variable/archivo/files/archivo-latin-standard-normal.woff2') format('woff2'); font-weight: 100 900; font-stretch: 62% 125%; }}
-@font-face {{ font-family: Newsreader; src: url('file://{NM}/@fontsource-variable/newsreader/files/newsreader-latin-standard-normal.woff2') format('woff2'); font-weight: 200 800; }}
-@font-face {{ font-family: Newsreader; font-style: italic; src: url('file://{NM}/@fontsource-variable/newsreader/files/newsreader-latin-standard-italic.woff2') format('woff2'); font-weight: 200 800; }}
-@font-face {{ font-family: 'Courier Prime'; src: url('file://{NM}/@fontsource/courier-prime/files/courier-prime-latin-400-normal.woff2') format('woff2'); font-weight: 400; }}
-@font-face {{ font-family: 'Courier Prime'; src: url('file://{NM}/@fontsource/courier-prime/files/courier-prime-latin-700-normal.woff2') format('woff2'); font-weight: 700; }}
-@page {{ size: Letter; margin: 0.85in 0.95in 0.9in; }}
+@font-face {{ font-family: 'Source Serif 4'; src: url('file://{NM}/@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2') format('woff2'); font-weight: 200 900; }}
+@font-face {{ font-family: 'Source Serif 4'; font-style: italic; src: url('file://{NM}/@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-italic.woff2') format('woff2'); font-weight: 200 900; }}
+@font-face {{ font-family: 'Public Sans'; src: url('file://{NM}/@fontsource-variable/public-sans/files/public-sans-latin-wght-normal.woff2') format('woff2'); font-weight: 100 900; }}
+@font-face {{ font-family: 'Public Sans'; font-style: italic; src: url('file://{NM}/@fontsource-variable/public-sans/files/public-sans-latin-wght-italic.woff2') format('woff2'); font-weight: 100 900; }}
+@page {{ size: Letter; margin: 0.85in 0.95in 0.95in; }}
 * {{ box-sizing: border-box; }}
-body {{ font-family: Newsreader, Georgia, serif; font-size: 11.6pt; line-height: 1.55; color: #16181d; margin: 0; }}
-.eyebrow {{ font-family: 'Courier Prime', monospace; font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; color: #5e6573; }}
-h1.ct {{ font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 800; font-size: 40pt; line-height: .95; text-transform: uppercase; margin: 6pt 0 8pt; }}
-.def {{ font-family: 'Courier Prime', monospace; font-size: 10pt; color: #5e6573; }}
-.sub {{ font-style: italic; font-size: 14pt; color: #363b46; margin: 6pt 0 0; }}
+:root {{ --navy: #1a2a3a; --sage: #4a6b6c; --gold: #d4a359; --pearl: #eff2f4; --text: #2d3142; --muted: #5a6070; --line: #cbd3da; }}
+body {{ font-family: 'Public Sans', system-ui, sans-serif; font-size: 10.6pt; line-height: 1.6; color: var(--text); margin: 0; }}
+.eyebrow {{ font-family: 'Public Sans', sans-serif; font-size: 8pt; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--sage); }}
+h1.ct {{ font-family: 'Source Serif 4', Georgia, serif; font-weight: 800; font-size: 36pt; line-height: 1.0; letter-spacing: -.01em; color: var(--navy); margin: 6pt 0 8pt; }}
+.def {{ font-family: 'Public Sans', sans-serif; font-size: 9pt; font-weight: 600; color: var(--muted); }}
+.sub {{ font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 600; font-size: 14pt; color: var(--navy); margin: 6pt 0 0; }}
 .band {{ height: 6pt; border-radius: 3pt; width: 64pt; margin-bottom: 14pt; }}
-.epi {{ font-style: italic; font-size: 13pt; color: #363b46; margin: 16pt 0 18pt; max-width: 34em; }}
-.epi cite {{ display: block; font-style: normal; font-family: 'Courier Prime', monospace; font-size: 9pt; color: #5e6573; margin-top: 4pt; }}
-.chapter-head {{ border-bottom: 1px solid #c9ced6; padding-bottom: 14pt; margin-bottom: 18pt; }}
+.epi {{ font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 600; font-size: 13pt; color: var(--navy); margin: 16pt 0 18pt; max-width: 34em; }}
+.epi cite {{ display: block; font-style: normal; font-family: 'Public Sans', sans-serif; font-weight: 700; font-size: 8.5pt; color: var(--muted); margin-top: 4pt; }}
+.chapter-head {{ border-bottom: 1px solid var(--line); padding-bottom: 14pt; margin-bottom: 18pt; }}
 p {{ margin: 0 0 .8em; orphans: 3; widows: 3; }}
-h2 {{ font-family: Archivo, sans-serif; font-stretch: 112%; font-weight: 800; font-size: 12.5pt; text-transform: uppercase; letter-spacing: .02em; margin: 1.6em 0 .6em; break-after: avoid; }}
-blockquote {{ margin: 1em 0; padding-left: 14pt; border-left: 2.5pt solid #a9b0bc; font-style: italic; color: #363b46; }}
-.note {{ font-family: Archivo, sans-serif; font-size: 9pt; color: #5e6573; border: 1px dashed #a9b0bc; border-radius: 6pt; padding: 7pt 9pt; margin-bottom: 16pt; }}
+h2 {{ font-family: 'Source Serif 4', serif; font-weight: 800; font-size: 15pt; line-height: 1.15; letter-spacing: -.01em; color: var(--navy); margin: 1.6em 0 .5em; break-after: avoid; }}
+blockquote {{ margin: 1em 0; padding-left: 14pt; border-left: 2.5pt solid var(--gold); font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 600; color: var(--navy); }}
+.note {{ font-size: 9pt; color: var(--muted); border: 1px dashed #aeb9c4; border-radius: 10pt; padding: 7pt 10pt; margin-bottom: 16pt; }}
 .chap {{ break-before: page; }}
 .title-page {{ height: 9.1in; display: flex; flex-direction: column; justify-content: center; }}
-.title-page h1 {{ font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 800; font-size: 58pt; line-height: .9; text-transform: uppercase; margin: 0; }}
-.title-page h1 span {{ display: block; font-weight: 300; font-size: 22pt; letter-spacing: .14em; color: #5e6573; margin-bottom: 6pt; }}
-.toc {{ list-style: none; padding: 0; margin: 0; font-family: Archivo, sans-serif; }}
-.toc li {{ display: flex; gap: 10pt; padding: 7pt 0; border-top: 1px solid #d3d8df; font-size: 11pt; }}
-.toc .n {{ font-family: 'Courier Prime', monospace; color: #5e6573; width: 70pt; }}
-.toc .y {{ margin-left: auto; font-family: 'Courier Prime', monospace; color: #5e6573; }}
+.title-page .brandband {{ background: var(--navy); border-radius: 18pt; padding: 22pt 26pt; display: flex; align-items: center; gap: 18pt; margin-bottom: 28pt; }}
+.title-page .brandband img {{ height: 64pt; width: auto; }}
+.title-page .brandband .tag {{ font-family: 'Public Sans', sans-serif; font-weight: 800; font-size: 9pt; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); border-left: 1px solid rgba(250,250,250,.35); padding-left: 18pt; }}
+.title-page h1 {{ font-family: 'Source Serif 4', serif; font-weight: 800; font-size: 54pt; line-height: .95; letter-spacing: -.015em; color: var(--navy); margin: 0; }}
+.title-page h1 span {{ display: block; font-family: 'Public Sans', sans-serif; font-weight: 800; font-size: 11pt; letter-spacing: 3px; text-transform: uppercase; color: var(--sage); margin-bottom: 10pt; }}
+.toc {{ list-style: none; padding: 0; margin: 0; }}
+.toc li {{ display: flex; gap: 10pt; padding: 7pt 0; border-top: 1px solid var(--line); font-size: 10.5pt; }}
+.toc .n {{ font-weight: 700; color: var(--sage); width: 70pt; }}
+.toc .y {{ margin-left: auto; color: var(--muted); }}
 /* guide */
-.ui {{ font-family: Archivo, sans-serif; font-size: 9.6pt; line-height: 1.45; }}
-h3 {{ font-family: Archivo, sans-serif; font-stretch: 112%; font-weight: 800; font-size: 13pt; margin: 18pt 0 6pt; break-after: avoid; }}
-h4 {{ font-family: 'Courier Prime', monospace; font-weight: 700; font-size: 8.5pt; letter-spacing: .08em; text-transform: uppercase; color: #5e6573; margin: 14pt 0 5pt; break-after: avoid; }}
+.ui {{ font-size: 9.6pt; line-height: 1.5; }}
+h3 {{ font-family: 'Source Serif 4', serif; font-weight: 800; font-size: 14pt; color: var(--navy); margin: 18pt 0 6pt; break-after: avoid; }}
+h4 {{ font-family: 'Public Sans', sans-serif; font-weight: 800; font-size: 8pt; letter-spacing: 2px; text-transform: uppercase; color: var(--sage); margin: 14pt 0 5pt; break-after: avoid; }}
 ul, ol {{ margin: 0 0 8pt; padding-left: 16pt; }}
 li {{ margin-bottom: 3pt; }}
-table {{ width: 100%; border-collapse: collapse; font-family: Archivo, sans-serif; font-size: 8.2pt; line-height: 1.35; margin: 4pt 0 10pt; break-inside: auto; }}
-th, td {{ border: 1px solid #c9ced6; padding: 5pt 6pt; vertical-align: top; text-align: left; }}
-thead th {{ background: #eef0f3; font-family: 'Courier Prime', monospace; font-size: 7.5pt; letter-spacing: .05em; text-transform: uppercase; }}
+table {{ width: 100%; border-collapse: collapse; font-size: 8.2pt; line-height: 1.4; margin: 4pt 0 10pt; break-inside: auto; }}
+th, td {{ border: 1px solid var(--line); padding: 5pt 6pt; vertical-align: top; text-align: left; }}
+thead th {{ background: var(--pearl); font-weight: 800; font-size: 7.5pt; letter-spacing: 1.5px; text-transform: uppercase; color: var(--sage); }}
 tr {{ break-inside: avoid; }}
-.q {{ font-size: 13.5pt; font-style: italic; margin: 6pt 0 10pt; }}
-dl {{ margin: 0; }} dt {{ font-weight: 700; font-family: Archivo, sans-serif; font-size: 9.6pt; }} dd {{ margin: 0 0 6pt; font-family: Archivo, sans-serif; font-size: 9.6pt; color: #363b46; }}
+.q {{ font-family: 'Source Serif 4', serif; font-style: italic; font-weight: 600; font-size: 13pt; color: var(--navy); margin: 6pt 0 10pt; }}
+dl {{ margin: 0; }} dt {{ font-weight: 700; font-size: 9.6pt; color: var(--navy); }} dd {{ margin: 0 0 6pt; font-size: 9.6pt; color: var(--text); }}
 .cols {{ columns: 2; column-gap: 22pt; }}
 .cols > * {{ break-inside: avoid; }}
 """
+LOGO = (ROOT / "assets" / "brand" / "tfp-logo-stacked-on-navy.svg").as_uri()
+DISCLOSURE = "For educational content only, not investment, insurance, tax or legal advice. As a fiduciary, Jonathan and his team offer professional financial advice through Fernbridge Advisors, LLC. www.fernbridge.us"
 ERA_HEX = {"classical": "#9FE1CB", "conception": "#B5D4F4", "crucible": "#FAC775", "climax": "#C0DD97", "codify": "#CECBF6",
            "collapse": "#F4C0D1", "catastrophe": "#F7C1C1", "correction": "#E7DFCB", "conclusion": "#16181d"}
-FOOT = ('<div style="width:100%;font-family:Helvetica,Arial,sans-serif;font-size:7.5px;color:#6b7280;padding:0 0.95in;display:flex;justify-content:space-between">'
-        '<span>{left}</span><span><span class="pageNumber"></span></span></div>')
+FOOT = ('<div style="width:100%;font-family:Helvetica,Arial,sans-serif;font-size:6.6px;line-height:1.35;color:#5a6070;padding:0 0.95in;display:flex;justify-content:space-between;gap:14px;align-items:flex-end">'
+        '<span style="max-width:86%"><b style="color:#1a2a3a;letter-spacing:1px">{left}</b><br>' + DISCLOSURE + '</span><span><span class="pageNumber"></span></span></div>')
 
 
 def chapter_html(m, standalone=True):
@@ -83,7 +89,8 @@ def rubric_table(rub):
 
 def guide_html():
     C = D["course"]
-    parts = [f'<div class="title-page"><div class="eyebrow">Course guide · {E(D["meta"]["byline"])} · {E(D["meta"]["org"])}</div>'
+    parts = [f'<div class="title-page"><div class="brandband"><img src="{LOGO}" alt="The Future Poor"><span class="tag">Let’s fix retirement</span></div>'
+             f'<div class="eyebrow">Course guide · {E(D["meta"]["byline"])} · {E(D["meta"]["org"])}</div>'
              f'<h1><span>The story of</span>Retirement</h1><p class="sub" style="margin-top:14pt">{E(D["meta"]["subtitle"])}</p>'
              f'<p style="margin-top:24pt;max-width:34em">{E(C["description"])}</p></div>']
     parts.append('<section class="chap ui"><h3 style="margin-top:0">Course outcomes</h3><p>By the end of the course, students will be able to:</p><ol>' + "".join(f"<li>{E(o)}</li>" for o in C["outcomes"]) + '</ol>')
@@ -135,7 +142,7 @@ def render(pg, html_str, out, left):
     pg.goto(path.as_uri()); pg.wait_for_load_state("load"); pg.evaluate("document.fonts.ready")
     pg.pdf(path=str(out), format="Letter", print_background=True, display_header_footer=True,
            header_template="<span></span>", footer_template=FOOT.format(left=E(left)),
-           margin={"top": "0.85in", "bottom": "0.9in", "left": "0.95in", "right": "0.95in"})
+           margin={"top": "0.85in", "bottom": "0.95in", "left": "0.95in", "right": "0.95in"})
 
 
 def main():
@@ -146,7 +153,7 @@ def main():
         for m in book:
             render(pg, doc(chapter_html(m), f'{m["title"]} — The Story of Retirement'), OUT / f"{m['number']:02d}-{m['id']}.pdf", left)
         toc = "".join(f'<li><span class="n">{"Opening" if m["number"] == 0 else "Chapter " + str(m["number"])}</span><span>{E(m["title"])}</span><span class="y">{E(m["years"])}</span></li>' for m in book)
-        full = (f'<div class="title-page"><div class="eyebrow">{E(D["meta"]["byline"])} · {E(D["meta"]["org"])}</div><h1><span>The story of</span>Retirement</h1>'
+        full = (f'<div class="title-page"><div class="brandband"><img src="{LOGO}" alt="The Future Poor"><span class="tag">Let’s fix retirement</span></div><div class="eyebrow">{E(D["meta"]["byline"])} · {E(D["meta"]["org"])}</div><h1><span>The story of</span>Retirement</h1>'
                 f'<p class="sub" style="margin-top:14pt">{E(D["meta"]["subtitle"])}</p><p class="def" style="margin-top:18pt">From Conception to Catastrophe · Working draft, 2026</p></div>'
                 f'<section class="chap"><div class="eyebrow">Contents</div><ul class="toc" style="margin-top:10pt">{toc}</ul>'
                 f'<p class="note" style="margin-top:22pt">This is the author’s working draft of {E(D["meta"]["book"])}, shared for course use. The Catastrophe chapter is in progress. Please don’t redistribute outside the course.</p></section>'

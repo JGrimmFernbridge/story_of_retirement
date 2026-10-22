@@ -8,6 +8,9 @@ const MODS = D.modules;
 const MOD = Object.fromEntries(MODS.map(m => [m.id, m]));
 const ERA_IDS = ["collapse", "codify", "climax", "crucible", "conception", "classical", "catastrophe"]; // course order: today, then back, then ahead
 const ENTRY_YEAR = 2010; // visitors arrive at the start of Collapse: today
+// The Future Poor brand: the compliance line every public screen carries, word for word
+const DISCLOSURE = "For educational content only, not investment, insurance, tax or legal advice. As a fiduciary, Jonathan and his team offer professional financial advice through Fernbridge Advisors, LLC.";
+const BRAND = { lockup: "brand/tfp-lockup@1x.png", lockup2x: "brand/tfp-lockup.png", mark: "brand/tfp-mark.svg", mission: "Let’s fix retirement." };
 
 // Colors follow the legend on the author's hand-drawn master timeline: crashes red, money green, history blue, culture pink, technology orange, seeds brown.
 const TYPE = {
@@ -515,7 +518,8 @@ function Welcome({ close, openModule, openSheet, nav }) {
       <div className="w-body scroll-y">
         <div className="eyebrow">A course by {D.meta.byline} · {D.meta.org}</div>
         <h1 className="title-card"><span className="thin">The story of</span>Retirement</h1>
-        <p className="today">It starts here, with today: <b>Collapse</b> 2010–2040, the years we are living through.</p>
+        <p className="today">Your story starts with today, then traces how we got here.</p>
+        <p className="lede" style={{ fontSize: 16.5, color: "var(--ink)" }}>It starts here: <b className="era-chip">Collapse</b>, 2010–2040, the years we are living through.</p>
         <p className="lede">Retirement as we know it is only about {yearsOld} years old. To your left is how we got here, all the way back to a world with no word for retirement. To your right is where it is heading if nothing changes. The course runs the same way: today first, then back through how we got here.</p>
         <p className="watching">Are you watching closely?</p>
         <div className="facts">
@@ -524,7 +528,7 @@ function Welcome({ close, openModule, openSheet, nav }) {
           <div><b className="tnum">{n}</b><span>dated events on the line</span></div>
         </div>
         <div className="w-actions">
-          <button className="btn primary" onClick={() => openModule("collapse", "overview")}>Start with where we are: Collapse {Icon.right}</button>
+          <button className="btn gold" onClick={() => openModule("collapse", "overview")}>Start with where we are: Collapse {Icon.right}</button>
           <div className="row">
             <button className="btn" onClick={() => { close(); nav.current.beginning(); }}>{Icon.left}How we got here</button>
             <button className="btn" onClick={() => { close(); nav.current.ahead(); }}>What's coming{Icon.right}</button>
@@ -563,22 +567,22 @@ function LeadIn({ width, toToday, openSheet }) {
 function Closing({ width, openModule, openSheet }) {
   const m = MOD.correction;
   const cards = [
-    ["seeds", "The nine seeds", "Follow each idea from planting to harvest across every era."],
-    ["course", "The course", "Schedule, grading, every assignment and its rubric."],
-    ["media", "Podcasts & lectures", "Listen to and watch each era's episode and lecture."],
-    ["index", "Every event", "The whole timeline as a list, era by era."],
-    ["master", "Master timeline & notebook", "The hand-drawn original, where each note landed, and the author's working notes."],
+    ["seeds", "The nine seeds", "Follow each idea from planting to harvest across every era.", "t-navy"],
+    ["course", "The course", "Schedule, grading, every assignment and its rubric.", "t-pearl"],
+    ["media", "Podcasts & lectures", "Listen to and watch each era's episode and lecture.", "t-sage"],
+    ["index", "Every event", "The whole timeline as a list, era by era.", "t-pearl"],
+    ["master", "Master timeline & notebook", "The hand-drawn original, where each note landed, and the author's working notes.", "t-gold"],
   ];
   return (
     <section className="closing scroll-y" style={{ width, overflowY: "auto" }} aria-label="Correction and course materials">
       <div className="eyebrow">Unit {m.unit} · {m.role}</div>
       <h2 className="title-card" style={{ fontSize: "clamp(36px, 6.4vh, 80px)" }}>{m.title}</h2>
       <p className="sub" style={{ maxWidth: "36ch" }}>{m.tagline}</p>
-      <div><button className="btn primary" onClick={() => openModule("correction", "overview")}>Open the final chapter {Icon.right}</button></div>
+      <div><button className="btn gold" onClick={() => openModule("correction", "overview")}>Open the final chapter {Icon.right}</button></div>
       <div className="closing-grid">
-        {cards.map(([id, t, d]) => (
-          <button key={id} className="kcard click" onClick={() => openSheet(id)}>
-            <h3 style={{ fontSize: 17 }}>{t}</h3><p style={{ fontSize: 15 }}>{d}</p>
+        {cards.map(([id, t, d, fill]) => (
+          <button key={id} className={"kcard click " + fill} onClick={() => openSheet(id)}>
+            <h3>{t}</h3><p>{d}</p><span className="go">Open →</span>
           </button>
         ))}
       </div>
@@ -1495,7 +1499,7 @@ function App() {
   const [selId, setSelId] = useState(null);
   const [welcome, setWelcome] = useState(true);
   const [sheet, setSheet] = useState(() => { try { const h = location.hash; const m = h.match(/^#module-(\w+)$/); if (m && MOD[m[1]]) return { type: "module", id: m[1], panel: "overview", k: 1 }; const t = h.match(/^#(seeds|course|media|index|master)$/); return t ? { type: t[1], k: 1 } : null; } catch (e) { return null; } });
-  const [ins, setIns] = useState(false), [layersOpen, setLayersOpen] = useState(false);
+  const [ins, setIns] = useState(false), [layersOpen, setLayersOpen] = useState(false), [discOpen, setDiscOpen] = useState(false);
 
   const pick = useCallback(id => { setSelId(id); if (id) setWelcome(false); }, []);
   const openModule = useCallback((id, panel) => { setSheet({ type: "module", id, panel: panel || "overview", k: Date.now() }); setHash("module-" + id); }, []);
@@ -1538,7 +1542,12 @@ function App() {
     <MediaCtx.Provider value={media}>
       <div className="app">
         <header className="topbar">
-          <button className="brand" onClick={() => { setWelcome(true); navRef.current.today(); }}>The Story of Retirement</button>
+          <button className="brand" onClick={() => { setWelcome(true); navRef.current.today(); }} aria-label="The Future Poor: The Story of Retirement. Back to today">
+            <img className="lockup" src="brand/tfp-logo-stacked-on-navy.svg" alt="The Future Poor" />
+            <img className="lockup-sm" src={BRAND.mark} alt="The Future Poor" />
+            <span className="sep" aria-hidden="true" />
+            <span>The Story of Retirement</span>
+          </button>
           <nav className="top-links" aria-label="Views">
             <button onClick={() => navRef.current.today()}><span>Today</span></button>
             <button onClick={() => openSheet("index")}>{Icon.list}<span className="hide-sm">Every event</span></button>
@@ -1571,6 +1580,13 @@ function App() {
         </header>
         <Stage layers={layers} selId={selId} pick={pick} go={showItem} openModule={openModule} openSheet={openSheet} viewportRef={viewportRef} setGeom={setGeom} navRef={navRef} welcome={welcome} setWelcome={setWelcome} />
         <Minimap viewportRef={viewportRef} geom={geom} />
+        <footer className={"foot" + (discOpen ? " open" : "")}>
+          <button className="disc" onClick={() => setDiscOpen(o => !o)} aria-expanded={discOpen} aria-label={discOpen ? "Collapse the disclosure" : "Expand the disclosure"}>
+            <b>Disclosures<span className="caret" aria-hidden="true">{discOpen ? " ▾" : " ▸"}</span></b>
+            <span className="disc-text">{DISCLOSURE} <a href="https://www.fernbridge.us" target="_blank" rel="noopener" onClick={e => e.stopPropagation()}>www.fernbridge.us</a></span>
+          </button>
+          <span className="mission">{BRAND.mission}</span>
+        </footer>
       </div>
       {sheetEl}
       {ins && <InstructorModal onClose={() => setIns(false)} />}

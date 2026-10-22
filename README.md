@@ -21,6 +21,10 @@ A horizontal course site on the history of retirement by Jonathan Grimm (Fernbri
 - Long video lectures play best from YouTube (unlisted) or Vimeo: paste the link instead of uploading the file.
 - Stored recordings are visible in Netlify under **Data & Storage → Blobs → course-media**.
 
+## The look
+
+Everything around the timeline follows The Future Poor brand kit (`source/assets/brand/`): Source Serif 4 headings, Public Sans body, navy and gold, pill buttons, 24px tiles, the stacked logo in the top bar and the Disclosure in the footer of every screen and every PDF. The timeline itself keeps its own colors and faces (the author's legend, Archivo era names, the typewriter axis). Brand tokens sit at the top of `source/src/styles.css`; the brand styling is the last section of that file.
+
 ## The master timeline
 
 The author's hand-drawn master timeline is in the site three ways: as the photograph (`public/master-timeline.jpg`, shown on the **Master timeline** view), as entries on the interactive line (each one ringed, with his words in its "On the master timeline" note), and as the **Author's notes** lane. The transcription lives in `source/context/master_timeline.json`: `matches` attach his words to entries that already existed, `add` holds the entries that came only from the sheet, `notes` are his bracketed notes, `links` are his arrows and `threads` are the sequences he underlined (redlining; money in your own name). Edit that file and rebuild to change any of it.
